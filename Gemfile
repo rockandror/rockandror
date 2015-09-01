@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 
 #inline css in html emails
 gem 'premailer-rails'
+gem 'email_validator'
 
 group :development  do
   gem 'letter_opener_web', '~> 1.2.0'

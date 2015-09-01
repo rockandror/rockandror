@@ -21,4 +21,9 @@ describe Contact do
     expect(contact).to be_invalid
   end        
 
+  it 'is invalid without wrong email' do
+    contact.email = "email@example."
+    expect(contact).to be_invalid
+  end          
+
 end

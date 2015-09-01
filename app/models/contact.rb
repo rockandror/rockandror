@@ -6,6 +6,7 @@ class Contact
   attr_accessor :name, :email, :message
 
   validates_presence_of :name, :email, :message
+  validates :email, :email => true
 
   def initialize(attributes = {})
     attributes.each do |name, value|
