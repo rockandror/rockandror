@@ -12,3 +12,7 @@ Ofrecemos a nuestros clientes acceso a:
 - Informes detallados del trabajo del equipo.
 - Código fuente (Github/Bitbucket)
 - Comunicación directa con el equipo de trabajo.
+
+Url producción:
+[rockandror.com](http://www.rockandror.com)
+Email de contacto. [info@rockandror.com](mailto:http://www.rockandror.com)
