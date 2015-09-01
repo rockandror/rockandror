@@ -1,0 +1,7 @@
+<% if notice.present? %>
+  <div class="alert alert-info autodismissable">
+    <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+    <h4><i class="icon fa fa-info"></i> ¡Acción realizada con éxito!</h4>
+    <%= notice %>
+  </div>
+<% end %>
