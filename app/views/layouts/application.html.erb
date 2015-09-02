@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RockAndRor - Desarrollo web ágil a medida">
+  <meta name="author" content="rockandror.com">
+
   <title>Rockadndror</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -8,8 +14,12 @@
 </head>
 <body>
 
-<%= render "shared/notice" %>
-<%= yield %>
+  <%= render "shared/navbar" %>
+
+  <div class="container">
+    <%= render "shared/notice" %>
+    <%= yield %>
+  </div>
 
 </body>
 </html>

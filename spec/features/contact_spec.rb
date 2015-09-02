@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "contact request" do
+feature 'contact request' do
 
   scenario 'should be send' do
     visit root_path

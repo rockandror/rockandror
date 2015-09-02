@@ -1,7 +1,7 @@
 // Table of Contents
 //
 // 01. Global styles
-// 02. Header
+// 02. Navbar/Header
 // 03. Footer
 // 04. Forms
 // 05. Alerts
@@ -15,6 +15,7 @@
 }
 
 body{
+  padding-top: 50px;
   background: $body-bg;
   font-family: $font-family-sans-serif;
   font-size: rem-calc(13);
@@ -22,7 +23,7 @@ body{
   text-rendering: optimizeLegibility;
 }
 
-// 02. Header
+// 02. Navbar/Header
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // 03. Footer
@@ -33,6 +34,9 @@ body{
 
 // 05. Alerts
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+.alert{
+  margin-top: 20px;
+}
 
 // 06. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
