@@ -3,7 +3,7 @@ class ContactController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.valid?
-      ContactMailer.notification(@contact).deliver
+      ContactMailer.notification(@contact).deliver_now
       redirect_to root_path, notice: "Gracias por contactar con nosotros. Le atenderemos en cuanto sea posible."
     else
       render "welcome/home"
