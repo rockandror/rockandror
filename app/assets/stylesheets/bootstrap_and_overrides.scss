@@ -1,0 +1,15 @@
+// Table of Contents
+//
+// 01. Global variables
+// 02. Bootstrap import
+
+// 01. Global variables
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$body-bg: whitesmoke;
+$font-family-sans-serif: "Open Sans", Arial, serif;
+
+
+// 02. Bootstrap import
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import "bootstrap-sprockets";
+@import "bootstrap";
