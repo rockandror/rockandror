@@ -3,6 +3,7 @@ require 'rails_helper'
 feature 'Main page' do
   scenario 'should render main sections' do
     visit root_path
+    
     expect(page).to have_css('div.intro', count: 1)
     expect(page).to have_css('div.about', count: 1)
     expect(page).to have_css('div.tecnology', count: 1)
