@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 
-gem 'sqlite3'
-
 gem 'rails-i18n'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -21,20 +19,18 @@ gem 'fastclick-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
-#inline css in html emails
 gem 'premailer-rails'
 gem 'email_validator'
 
 group :development  do
+  gem 'sqlite3'
   gem 'letter_opener_web', '~> 1.2.0'
 end
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'byebug'
-  # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
@@ -51,5 +47,7 @@ group :production do
   gem 'rails_12factor'
 end
 
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+group :doc do
+  gem 'sdoc', '~> 0.4.0'
+end
+
