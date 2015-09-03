@@ -6,10 +6,35 @@
 // 01. Global variables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 $body-bg: whitesmoke;
-$font-family-sans-serif: "Open Sans", Arial, serif;
+$font-family-sans-serif: 'Titillium Web', sans-serif;
+$brand:#163d4a;
+$link:#00858d;
+$sprite:url('sprite.png');
 
-
+.gradient{
+  background: #163d4a; /* Old browsers */
+  background: -moz-linear-gradient(top,  #163d4a 0%, #206076 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#163d4a), color-stop(100%,#206076)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #163d4a 0%,#206076 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #163d4a 0%,#206076 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163d4a', endColorstr='#206076',GradientType=0 ); /* IE6-9 */
+}
 // 02. Bootstrap import
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// 03. Bootstrap override style class
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+a,.btn{transition: all 0.5s ease;border:none;}
+a{color:$link;}
+.btn-primary{
+  background: $link;
+  &:hover{background: darken($link,3%);}
+}
+
+
+
+
