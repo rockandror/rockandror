@@ -9,9 +9,18 @@
 
 // 01. Global styles
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 *, html {
   margin: 0;
   padding: 0;
+   
+   
 }
 body{
   padding-top: 50px;
@@ -22,19 +31,63 @@ body{
   text-rendering: optimizeLegibility;
 }
 section, nav {
-    opacity: 0;
+    opacity: 1;
     -webkit-transition:opacity .6s;
     -moz-transition:opacity .6s;
     -o-transition:opacity .6s;
     transition: opacity .6s;
 }
-.loaded section, .loaded nav {
-    opacity: 1;
-}
+#nav2{
+  width: 80px;
+  height: 80px;
+  position:absolute;
+  top: 0px;
+  background: $brand;
+  left:0;
+  right:0;
+  z-index: 99999;
+  margin: 0px auto;
+  opacity: 0;
+  .logo{
+    width: 70px;
+    height: 50px;
+    background: $sprite;
+    background-position: 10 -3px;
+    display: block;
+    float: left;
+    margin: 0px auto;
+    margin-top: 6px;
+  }
+  span{
+    border: 1px solid red;
+    display: block;
 
+  }
+}
+ 
+//hide show section on scroll
+.hidden-section{opacity:0;}
+.visible-section{opacity:1;}
+
+//Hide show navbar
+.headroom--unpinned {
+  transform: translateY(-100%);
+  #nav2{
+    opacity: 1;
+    transform: translateY(100%);
+  }
+}
+.headroom--pinned {
+  transform: translateY(0%);
+    #nav2{
+      opacity: 1;
+    }
+}
+ 
 // 02. Navbar/Header
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 nav{
+  transition: transform 200ms linear;
   background: $brand;
   min-height: 50px;
   padding-bottom: 15px;
@@ -43,7 +96,11 @@ nav{
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 300;
-    color:#e5e5e5;
+    &:hover{
+      background: none;
+      color:white;
+      text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.7);
+     }
     .logo{
       width: 50px;
       height: 50px;
@@ -62,7 +119,7 @@ nav{
       color:#e5e5e5;
       font-size: 20px;
       font-weight: 200;
-      &:hover{background: none;color:$link;}
+      &:hover,&:focus{background: none;color:$link;}
     }
   }
 }
@@ -81,8 +138,7 @@ nav{
 
 // 06. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
+ 
 
 // Intro Section
  .intro{
@@ -92,26 +148,33 @@ nav{
     background-attachment: fixed;
     background-size: cover;
     background-image: url("1.jpg");
+   
   h1{
     font-size: 157px;
     letter-spacing: -13px;
     font-weight: 700;
-    color:#fff;
+    color:#FDF8F8;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.7);
     margin: 0px;
-    padding-top: 140px;
-  }
+    padding-top: 120px;
+     -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E2E1E1;
+
+
+   }
   h2{
     text-align: center;
-    letter-spacing:4px;
+    letter-spacing:3px;
     font-size: 40px;
     font-weight:600;
-    color:$brand;
+    color:$link;
     text-transform: uppercase;
     margin: 0px;
     text-indent: 20px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+
   }
   lead{
     text-align: center;
@@ -128,13 +191,18 @@ nav{
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 40px;
     position: relative;
-    &:after{
+    &:hover:after{
+       border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 30px solid darken($link, 3%);   
+      }
+     &:after{
       content: '';
       position: absolute;
       left: 38%;
-      top:100px;
+      top:60px;
       width: 0;
       height: 0;
       border-left: 30px solid transparent;
@@ -184,18 +252,12 @@ nav{
 
 //Tecnology
 .tecnology{
-  padding: 80px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("tecnology.jpg");
-  h2{
-    color:$brand;
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  span{font-size: 20px;}
+  border-top: 10px solid $brand;
+  border-bottom: 10px solid $brand;  
   .logo{
     margin-top: 60px;
     width:6.4%;
@@ -254,4 +316,101 @@ nav{
      }
     }
   }
+}
+//Contact now
+.contactnow{
+    padding: 130px;
+    height:550px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("office.jpg");
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  h2{
+    font-weight: 600;
+    font-size: 60px;
+  }
+  .btn{
+    margin-top: 50px;
+    font-size: 24px;
+  }
+}
+
+//Team
+.team{
+  background: white;
+  border-bottom:30px solid $link;
+  .person{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 200;
+    .inner{
+      border: 1px solid grey;
+      padding: 30px;
+      background: white;
+      strong{
+        display: block;
+        margin-top: 20px;
+      }
+      i{display: block;}
+      p{text-align: justify;padding: 10px;}
+      a{font-size: 15px;margin-right: 10px;}
+    }
+  }
+}
+
+//Contact
+.contact{
+  padding: 50px;
+  label{display: none;}
+  textarea{height:200px;}
+  .btn{text-transform: uppercase;}
+  h3{
+    font-weight: 700;
+    color:$link;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: 2px solid $link;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .circle{
+    border-radius: 50%;
+    width: 250px;
+    height:250px;
+    margin: 0px auto;
+    margin-top: 20px;
+    background: $link;
+    color:white;
+    text-transform: uppercase;
+    strong{
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 20px;
+    }
+    .logo{
+      background: $sprite;
+      background-position: -465px -4px;
+      width: 90px;
+      height: 87px;
+      margin: 0px auto;
+      margin-top: 15px;
+    }
+  }
+}
+
+//Same class
+.tecnology,.team{
+  padding: 130px;
+  h2{
+    color:$link;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  span{font-size: 20px;}
 }

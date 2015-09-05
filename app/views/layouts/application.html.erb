@@ -13,7 +13,10 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="loading">
+<body>
+  <div class="loading gradient-radial">
+    <div class="spin-box"></div>
+  </div>
   <%= render "shared/navbar" %>
   <%= render "shared/notice" %>
   <%= yield %>
