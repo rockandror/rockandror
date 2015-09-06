@@ -32,7 +32,7 @@ body{
 }
 
 
- 
+
 section, nav {
     opacity: 1;
     -webkit-transition:opacity .6s;
@@ -143,9 +143,7 @@ nav{
 
 // 05. Alerts
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-.alert{
-  margin-top: 20px;
-}
+.alert{margin-top: 20px;}
 
 // 06. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -304,7 +302,7 @@ nav{
   border-bottom: 10px solid $brand;  
   text-align: center;
   img{margin-top: 40px;}
-
+  h2{font-size: 50px;}
   .logo{
     margin-top: 60px;
     width:6.4%;
@@ -457,7 +455,7 @@ nav{
   padding: 130px;
   h2{
     color:$link;
-    font-size: 32px;
+ //   font-size: 32px;
     font-weight: 600;
     text-transform: uppercase;
   }
