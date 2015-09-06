@@ -1,15 +1,58 @@
 // Table of Contents
 //
 // 01. Global variables
-// 02. Bootstrap import
+// 02. Bootstrap import + ovveride
+// 03. Generic class style
 
 // 01. Global variables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 $body-bg: whitesmoke;
-$font-family-sans-serif: "Open Sans", Arial, serif;
+$font-family-sans-serif: 'Titillium Web', sans-serif;
+$brand:#163d4a;
+$link:#00858d;
+$sprite:url('sprite.png');
 
-
-// 02. Bootstrap import
+// 02. Bootstrap import + ovveride
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 @import "bootstrap-sprockets";
 @import "bootstrap";
+a,:after,.btn{
+  transition: all 0.5s ease;
+  border:none;
+  border-radius: 0px;
+}
+a{
+  color:$link;
+  &:focus{background: none;color:$link;text-decoration: none;}
+  &:hover{text-decoration: none;}
+}
+ 
+.btn-primary{
+  background: $link;
+  &:hover{background: darken($link,3%);}
+  &:focus{background: $link;}
+}
+.form-control{height: 50px;}
+
+//03. Generic class style
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.gradient{
+  background: #163d4a; /* Old browsers */
+  background: -moz-linear-gradient(top,  #163d4a 0%, #206076 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#163d4a), color-stop(100%,#206076)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #163d4a 0%,#206076 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #163d4a 0%,#206076 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163d4a', endColorstr='#206076',GradientType=0 ); /* IE6-9 */
+}
+.gradient-radial{
+  background: #206076; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #206076 0%, #163d4a 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#206076), color-stop(100%,#163d4a)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #206076 0%,#163d4a 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206076', endColorstr='#163d4a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
