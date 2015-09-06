@@ -16,6 +16,8 @@ gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'bootstrap_form'
 gem 'animate.css-rails', '~> 3.1.0'
+gem 'nprogress-rails'
+
 
 gem 'premailer-rails'
 gem 'email_validator'
@@ -29,8 +31,8 @@ group :development, :test do
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'fuubar'
-  gem 'launchy'
   gem 'quiet_assets'
+  gem 'launchy'
   gem 'letter_opener_web', '~> 1.3.0'
   gem 'i18n-tasks'
   gem 'bullet'
