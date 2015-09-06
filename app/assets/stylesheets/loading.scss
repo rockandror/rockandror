@@ -20,19 +20,21 @@
   height: 15px;
   box-shadow: 15px 15px $brand, -15px 15px white, -15px -15px $brand, 15px -15px white;
   -webkit-animation: spin ease infinite 4s;
+  -moz-animation: spin ease infinite 4s;
+  animation:spin ease infinite 4s;
 }
+
 @-webkit-keyframes spin {
   0%,
-  100% {
-    box-shadow: 15px 15px $brand, -15px 15px white, -15px -15px $brand, 15px -15px white;
-  }
-  25% {
-    box-shadow: -15px 15px white, -15px -15px $brand, 15px -15px white, 15px 15px $brand;
-  }
-  50% {
-    box-shadow: -15px -15px $brand, 15px -15px white, 15px 15px $brand, -15px 15px white;
-  }
-  75% {
-    box-shadow: 15px -15px white, 15px 15px $brand, -15px 15px white, -15px -15px $brand;
-  }
+  100% {box-shadow: 15px 15px $brand, -15px 15px white, -15px -15px $brand, 15px -15px white;}
+  25% {box-shadow: -15px 15px white, -15px -15px $brand, 15px -15px white, 15px 15px $brand;}
+  50% {box-shadow: -15px -15px $brand, 15px -15px white, 15px 15px $brand, -15px 15px white;}
+  75% {box-shadow: 15px -15px white, 15px 15px $brand, -15px 15px white, -15px -15px $brand;}
+}
+@keyframes spin {
+  0%,
+  100% {box-shadow: 15px 15px $brand, -15px 15px white, -15px -15px $brand, 15px -15px white;}
+  25% {box-shadow: -15px 15px white, -15px -15px $brand, 15px -15px white, 15px 15px $brand;}
+  50% {box-shadow: -15px -15px $brand, 15px -15px white, 15px 15px $brand, -15px 15px white;}
+  75% {box-shadow: 15px -15px white, 15px 15px $brand, -15px 15px white, -15px -15px $brand;}
 }

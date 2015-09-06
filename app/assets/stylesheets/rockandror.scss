@@ -150,12 +150,33 @@ nav{
 
 // Intro Section
  .intro{
+    
+    video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    //background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg) no-repeat;
+    background-size: cover;
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+
+    }
+  height:750px;
+/*
     height:750px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-image: url("1.jpg");
+  */
    
   h1{
     font-size: 157px;
