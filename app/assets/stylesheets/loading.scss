@@ -18,22 +18,21 @@
   border-radius: 100%;
   width: 15px;
   height: 15px;
-  box-shadow: 15px 15px #4f4d49, -15px 15px #dfdfdf,
-             -15px -15px #4f4d49, 15px -15px #dfdfdf;
+  box-shadow: 15px 15px $brand, -15px 15px white, -15px -15px $brand, 15px -15px white;
   -webkit-animation: spin ease infinite 4s;
 }
 @-webkit-keyframes spin {
   0%,
   100% {
-    box-shadow: 15px 15px #4f4d49, -15px 15px #dfdfdf, -15px -15px #4f4d49, 15px -15px #dfdfdf;
+    box-shadow: 15px 15px $brand, -15px 15px white, -15px -15px $brand, 15px -15px white;
   }
   25% {
-    box-shadow: -15px 15px #dfdfdf, -15px -15px #4f4d49, 15px -15px #dfdfdf, 15px 15px #4f4d49;
+    box-shadow: -15px 15px white, -15px -15px $brand, 15px -15px white, 15px 15px $brand;
   }
   50% {
-    box-shadow: -15px -15px #4f4d49, 15px -15px #dfdfdf, 15px 15px #4f4d49, -15px 15px #dfdfdf;
+    box-shadow: -15px -15px $brand, 15px -15px white, 15px 15px $brand, -15px 15px white;
   }
   75% {
-    box-shadow: 15px -15px #dfdfdf, 15px 15px #4f4d49, -15px 15px #dfdfdf, -15px -15px #4f4d49;
+    box-shadow: 15px -15px white, 15px 15px $brand, -15px 15px white, -15px -15px $brand;
   }
 }

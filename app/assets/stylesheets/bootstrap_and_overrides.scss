@@ -23,13 +23,14 @@ a,:after,.btn{
 }
 a{
   color:$link;
-  &:focus{background: none;}
+  &:focus{background: none;color:$link;text-decoration: none;}
   &:hover{text-decoration: none;}
 }
  
 .btn-primary{
   background: $link;
   &:hover{background: darken($link,3%);}
+  &:focus{background: $link;}
 }
 .form-control{height: 50px;}
 
