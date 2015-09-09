@@ -36,7 +36,7 @@
     letter-spacing:3px;
     font-size: 40px;
     font-weight:600;
-    color:$link;
+    color:$link-color;
     text-transform: uppercase;
     margin: 0px;
     text-indent: 20px;
@@ -60,9 +60,9 @@
     margin-top: 40px;
     position: relative;
     &:hover:after{
-       border-left: 30px solid transparent;
+      border-left: 30px solid transparent;
       border-right: 30px solid transparent;
-      border-top: 30px solid darken($link, 3%);   
+      border-top: 30px solid darken($link-color,3%);   
       }
      &:after{
       content: '';
@@ -73,9 +73,10 @@
       height: 0;
       border-left: 30px solid transparent;
       border-right: 30px solid transparent;
-      border-top: 30px solid $link;
+      border-top: 30px solid $brand-primary;
       clear: both;
     }
+    
   }
 }
 // 02. About
@@ -97,8 +98,8 @@
     height: 430px;
     border-radius: 50%;
     border:10px solid white;
-    background-color: $brand;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(lighten($brand,4%),.5) 35px, rgba(lighten($brand,4%),.5) 70px);
+    background-color: $brand-primary;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(lighten($brand-primary,4%),.5) 35px, rgba(lighten($brand-primary,4%),.5) 70px);
     box-shadow: 0px 0px 25px rgba(white, 0.3);
     span{
       position: absolute;
@@ -108,7 +109,7 @@
       bottom: 0px;
       display: block;
       margin: 0px auto;
-      border-top: 2px solid $link;
+      border-top: 2px solid $link-color;
       font-size: 23px;
       line-height: 23px;
       padding-top: 16px;
@@ -125,7 +126,7 @@
       bottom: 0px;
       right: 0px;
       margin: 0px auto;
-      border: 1px $link dashed;
+      border: 1px $link-color dashed;
       z-index: -2;
     }
     .guz,.seb,.sen,.ale{
@@ -153,8 +154,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("tecnology.jpg");
-  border-top: 10px solid $brand;
-  border-bottom: 10px solid $brand;  
+  border-top: 10px solid $brand-primary;
+  border-bottom: 10px solid $brand-primary;  
   text-align: center;
   img{margin-top: 40px;}
   h2{font-size: 50px;}
@@ -244,7 +245,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .team{
   background: white;
-  border-bottom:30px solid $link;
+  border-bottom:30px solid $link-color;
   .person{
     margin-top: 100px;
     text-align: center;
@@ -272,11 +273,11 @@
   .btn{text-transform: uppercase;}
   h3{
     font-weight: 700;
-    color:$link;
+    color:$link-color;
     display: inline-block;
     text-transform: uppercase;
     font-size: 20px;
-    border-bottom: 2px solid $link;
+    border-bottom: 2px solid $link-color;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -287,7 +288,7 @@
     height:250px;
     margin: 0px auto;
     margin-top: 20px;
-    background: $link;
+    background: $link-color;
     color:white;
     text-transform: uppercase;
     strong{
@@ -309,7 +310,7 @@
 .tecnology,.team{
   padding: 130px;
   h2{
-    color:$link;
+    color:$link-color;
  //   font-size: 32px;
     font-weight: 600;
     text-transform: uppercase;

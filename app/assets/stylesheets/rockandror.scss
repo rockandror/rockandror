@@ -10,10 +10,7 @@
 
 // 00. Global Variables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-//$body-bg: whitesmoke;
-//$font-family-sans-serif: 'Titillium Web', sans-serif;
-$brand:#163d4a;
-$link:#00858d;
+
 $sprite:url('sprite.png');
 
 // 01. Global styles
@@ -65,35 +62,104 @@ section, nav {
       opacity: 0;
     }
 }
+//Remove firefox border dotted
+a:focus, a:active, 
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+}
+
+a,:after,.btn{
+  transition: all 0.5s ease;
+  border:none;
+  &:hover,&:focus{
+    text-decoration: none;
+    outline: none;
+    color: $link-color;
+  }
+}
+.btn-primary{
+  &:hover{
+    background: darken($link-color,3%);
+    color: white;
+  }
+  &:focus{
+    background: $brand-primary;
+  }
+  &:active{
+    background: red;
+  }
+}
+/*
+a{
+  color:$link-color;
+  &:focus{
+  background: none;
+  color:$link-color;
+  text-decoration: none;
+  }
+  &:hover{
+  text-decoration: none;
+  }
+}
+*/
+//Gradient background linear
+.gradient{
+  background: #163d4a; /* Old browsers */
+  background: -moz-linear-gradient(top,  #163d4a 0%, #206076 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#163d4a), color-stop(100%,#206076)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #163d4a 0%,#206076 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #163d4a 0%,#206076 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163d4a', endColorstr='#206076',GradientType=0 ); /* IE6-9 */
+}
+//Gradient backgorund radial
+.gradient-radial{
+  background: #206076; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #206076 0%, #163d4a 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#206076), color-stop(100%,#163d4a)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #206076 0%,#163d4a 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206076', endColorstr='#163d4a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
  
 // 02. Navbar/Header
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 nav{
   transition: transform 200ms linear;
-  background: $brand;
+  background: $brand-primary;
   min-height: 50px;
   padding-bottom: 15px;
   padding-top: 15px;
-  .navbar-brand{
+  .navbar-brand-primary{
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 300;
+    line-height: 50px;
     &:hover{
       background: none;
       color:white;
       text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.7);
+      text-decoration: none;
      }
-    .logo{
+  }
+  .logo{
       width: 50px;
       height: 50px;
       background: $sprite;
       background-position: 0 -4px;
       display: block;
       float: left;
-      margin-top: -13px;
+      margin-top:0px;
     }
-  }
-  
   #navbar{
     font-size: 15px;
     font-weight: 300;
@@ -101,7 +167,7 @@ nav{
       color:#e5e5e5;
       font-size: 20px;
       font-weight: 200;
-      &:hover,&:focus{background: none;color:$link;}
+      &:hover,&:focus{background: none;color:$link-color;}
     }
   }
 }
@@ -111,7 +177,7 @@ nav{
   height: 80px;
   position:absolute;
   top: 0px;
-  background: $brand;
+  background: $brand-primary;
   left:0;
   right:0;
   z-index: 99999;
@@ -140,7 +206,7 @@ nav{
   }
 }
 
-
+.alert-danger{color:#fff;}
 // 03. Footer
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -149,7 +215,19 @@ nav{
 
 // 05. Alerts
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-.alert{margin-top: 20px;}
+.alert{
+  margin-top:30px;
+  margin-bottom:0px;
+}
 
 // 06. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+svg {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 2em auto;
+  border: 1px solid red;
+}

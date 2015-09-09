@@ -16,7 +16,7 @@
 // $gray-light:             lighten($gray-base, 46.7%) // #777
 // $gray-lighter:           lighten($gray-base, 93.5%) // #eee
 
-//$brand-primary:         darken(#428bca, 6.5%);
+  $brand-primary:          #163d4a;
 // $brand-success:         #5cb85c
 // $brand-info:            #5bc0de
 // $brand-warning:         #f0ad4e
@@ -28,12 +28,12 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
- $body-bg:red;
+$body-bg:whitesmoke;
 //** Global text color on `<body>`.
 // $text-color:            $gray-dark
 
 //** Global textual link color.
-// $link-color:            $brand-primary
+$link-color:          #00858d;
 //** Link hover color set via `darken()` function.
 // $link-hover-color:      darken($link-color, 15%)
 //** Link hover decoration.
@@ -43,8 +43,7 @@
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-
-// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-family-sans-serif:   'Titillium Web', sans-serif;
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
@@ -108,8 +107,8 @@
 // $line-height-large:         1.3333333 // extra decimals for Win 8.1 Chrome
 // $line-height-small:         1.5
 
-// $border-radius-base:        4px
-// $border-radius-large:       6px
+  $border-radius-base:        0px;
+  $border-radius-large:       0px;
 // $border-radius-small:       3px
 
 //** Global color for active items (e.g., navs or dropdowns).
@@ -154,8 +153,8 @@
 // $btn-default-bg:                 #fff
 // $btn-default-border:             #ccc
 
-// $btn-primary-color:              #fff
-// $btn-primary-bg:                 $brand-primary
+$btn-primary-color:              $link-color;
+$btn-primary-bg:                 $brand-primary;
 // $btn-primary-border:             darken($btn-primary-bg, 5%)
 
 // $btn-success-color:              #fff
@@ -212,7 +211,7 @@
 // $input-color-placeholder:        #999
 
 //** Default `.form-control` height
-// $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2)
+$input-height-base:              50px;
 //** Large `.form-control` height
 // $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2)
 //** Small `.form-control` height
@@ -502,21 +501,21 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-// $state-success-text:             #3c763d
-// $state-success-bg:               #dff0d8
+ $state-success-text:             #fff;
+  $state-success-bg:               #2E7021;
 // $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%)
 
-// $state-info-text:                #31708f
-// $state-info-bg:                  #d9edf7
+// $state-info-text:                #fff;
+// $state-info-bg:                  #2E7021;
 // $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%)
 
 // $state-warning-text:             #8a6d3b
 // $state-warning-bg:               #fcf8e3
 // $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%)
 
-// $state-danger-text:              #a94442
-// $state-danger-bg:                #f2dede
-// $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%)
+  //$state-danger-text:              white;
+  $state-danger-bg:                #860B0B;
+  //$state-danger-border:          #860B0B;
 
 
 //== Tooltips

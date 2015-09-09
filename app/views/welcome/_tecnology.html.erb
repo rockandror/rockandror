@@ -3,7 +3,25 @@
    <h2>Tecnologia</h2>
    <span>Elastic and transparent work on projects require big dose of changes – that’s why we work with:
    </span>
-  <%= image_tag 'responsive_design.png', class: "img-responsive center-block" %>
+
+<style type="text/css">
+.item--svg-clip-path-svg image,
+.item--svg-clip-path-html img {
+  clip-path: url(#clipping);
+  }
+  </style>
+
+<div class="item item--svg-clip-path-svg">
+    <div class="demo">
+      <svg width="200" height="300">
+        <image xlink:href="http://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" width="200" height="300" />
+      </svg>
+    </div>  
+
+   
+
+
+ 
    <div class="row text-center">
      <a href="#" class="logo"><span class="rails" data-toggle="tooltip" data-placement="top" title="rails"></span></a>
      <a href="#" class="logo" ><span class="coffescript" data-toggle="tooltip" data-placement="top" title="coffe script"></span></a>

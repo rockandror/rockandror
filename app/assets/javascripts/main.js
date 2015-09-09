@@ -3,7 +3,8 @@ $(window).load(function() {
   // start up after 2sec no matter what
   window.setTimeout(function(){
     $(".loading").fadeOut();
-  }, 2000);
+  }, 1000);
+  scrollalert();
 });
  
 $(function () {
@@ -19,7 +20,8 @@ $(function () {
     }
   });
   headroom.init();
- 
+  
+  //Init tooltips 
   $('[data-toggle="tooltip"]').tooltip();
 
   //On scroll, show section 
@@ -27,6 +29,7 @@ $(function () {
     classToAdd: 'visible-section animated fadeIn', // Class to add to the elements when they are visible
     offset: 200    
   });
+
   
   //Scroll to section on click menu button
   $('a[href*=#]:not([href=#])').click(function() {
@@ -42,4 +45,10 @@ $(function () {
     }
   });
 })
- 
+
+//notice check if alert danger exist only home page and scroll to contact
+function scrollalert(){
+  if ($('#alert-danger').length){
+    $("html, body").delay(3000).animate({scrollTop: $('#contact').offset().top }, 2000);
+  }
+}
