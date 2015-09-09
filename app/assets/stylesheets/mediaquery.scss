@@ -1,11 +1,18 @@
 @media(max-width:767px){
   #home{
-    h1{
-    font-size:6em;
-    letter-spacing:-7px; 
-    }  
-    .cd-words-wrapper{text-align: center;}
+    .intro{
+      height: 600px;
+      h1{
+      font-size:5.5em;
+      letter-spacing:-7px; 
+      }
+      h2{
+        font-size: 2em;
+      }
+      .cd-words-wrapper{text-align: center;}
+    }
     .about{
+      text-align: center;
       h2{
         text-align: center;
         font-size: 3em;
