@@ -95,19 +95,7 @@ a,:after,.btn{
     background: red;
   }
 }
-/*
-a{
-  color:$link-color;
-  &:focus{
-  background: none;
-  color:$link-color;
-  text-decoration: none;
-  }
-  &:hover{
-  text-decoration: none;
-  }
-}
-*/
+
 //Gradient background linear
 .gradient{
   background: #163d4a; /* Old browsers */
@@ -139,6 +127,10 @@ nav{
   min-height: 50px;
   padding-bottom: 15px;
   padding-top: 15px;
+  .fa{
+    color: $link-color;
+    &:hover{color:white;}
+  }
   .navbar-brand-primary{
     text-transform: uppercase;
     font-size: 25px;

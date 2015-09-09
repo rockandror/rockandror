@@ -1,14 +1,14 @@
 <section class="contact" id="contact">
   <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-6 col-xs-12">
       <%= bootstrap_form_for @contact do |f| %>
         <%= f.text_field :name, placeholder: 'Nombre o Empresa', label: "Nombre" %>
         <%= f.text_field :email, placeholder: 'Email', label: "Email" %>
         <%= f.text_area :message, placeholder: 'Mensaje', label: "Mensaje" %>
-        <%= f.submit "Enviar", class: "btn btn-lg btn-primary pull-right" %>
+        <%= f.submit "Enviar", class: "btn btn-lg btn-primary" %>
       <% end %>
     </div>
-    <div class="col-md-6 text-center">
+    <div class="col-md-6 col-xs-12 text-center">
       <h3>Contact</h3><br>
       <%= link_to "info@rockandror.com"  %>
       <br>

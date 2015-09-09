@@ -82,7 +82,6 @@
 // 02. About
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .about{
-  padding: 180px;
   color:white;
   h2{
     margin-left: 40px;
@@ -222,7 +221,6 @@
 // 04. Contact now
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .contactnow{
-    padding: 130px;
     height:750px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -267,7 +265,7 @@
 // 06. Contact
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .contact{
-  padding: 50px;
+  padding-top: 50px;
   label{display: none;}
   textarea{height:200px;}
   .btn{text-transform: uppercase;}
@@ -307,8 +305,11 @@
   }
 }
 //Same class
+.about,.tecnology,.team{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .tecnology,.team{
-  padding: 130px;
   h2{
     color:$link-color;
  //   font-size: 32px;
