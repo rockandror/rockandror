@@ -15,7 +15,9 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'bootstrap_form'
+gem 'animate.css-rails', '~> 3.1.0'
 gem 'nprogress-rails'
+
 
 gem 'premailer-rails'
 gem 'email_validator'

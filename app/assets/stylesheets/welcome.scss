@@ -1,0 +1,320 @@
+// Table of Contents
+//
+// 01. Intro
+// 02. About
+// 03. Tecnology
+// 04. Contact now
+// 05. Team
+// 06. Contact
+
+// 01. Intro
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+ .intro{
+    height:750px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("1.jpg");
+   
+  h1{
+    font-size: 157px;
+    letter-spacing: -13px;
+    font-weight: 700;
+    color:#FDF8F8;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.7);
+    margin: 0px;
+    padding-top: 120px;
+     -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E2E1E1;
+
+   }
+  h2{
+    text-align: center;
+    letter-spacing:3px;
+    font-size: 40px;
+    font-weight:600;
+    color:$link-color;
+    text-transform: uppercase;
+    margin: 0px;
+    text-indent: 20px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+  }
+  lead{
+    text-align: center;
+    color:#fff;
+    font-size: 22px;
+    display: block;
+  }
+  .btn-primary{
+    display: block;
+    width: 260px;
+    margin: 0px auto;
+    height: 60px;
+    line-height: 46px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+    position: relative;
+    &:hover:after{
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 30px solid darken($link-color,3%);   
+      }
+     &:after{
+      content: '';
+      position: absolute;
+      left: 38%;
+      top:60px;
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 30px solid $brand-primary;
+      clear: both;
+    }
+    
+  }
+}
+// 02. About
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.about{
+  color:white;
+  h2{
+    margin-left: 40px;
+    color:white;
+    font-size: 48px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    span{font-weight: 600;}
+  }    
+  .circle{
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    border:10px solid white;
+    background-color: $brand-primary;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(lighten($brand-primary,4%),.5) 35px, rgba(lighten($brand-primary,4%),.5) 70px);
+    box-shadow: 0px 0px 25px rgba(white, 0.3);
+    span{
+      position: absolute;
+      top: 260px;
+      left: 75px;
+      right: 182px;
+      bottom: 0px;
+      display: block;
+      margin: 0px auto;
+      border-top: 2px solid $link-color;
+      font-size: 23px;
+      line-height: 23px;
+      padding-top: 16px;
+      text-align: center;
+    }
+    &:after{
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      width:445px;
+      height: 445px;
+      top: -7px;
+      left: -110px;
+      bottom: 0px;
+      right: 0px;
+      margin: 0px auto;
+      border: 1px $link-color dashed;
+      z-index: -2;
+    }
+    .guz,.seb,.sen,.ale{
+      width: 87px;
+      height: 100px;
+      background: $sprite;
+      display: inline-block;
+      margin-right: 5px;
+      margin-top: 130px;
+    }
+    .guz{background-position: -81px -11px;margin-left:20px;}
+    .seb{background-position: -178px -11px;}
+    .sen{background-position: -273px -11px;}
+    .ale{background-position: -375px -11px;}
+  }    
+  h3{
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+}
+// 03. Tecnology
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.tecnology{
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("tecnology.jpg");
+  border-top: 10px solid $brand-primary;
+  border-bottom: 10px solid $brand-primary;  
+  text-align: center;
+  img{margin-top: 40px;}
+  h2{font-size: 50px;}
+  .logo{
+    margin-top: 60px;
+    width:6.4%;
+    border-radius: 50%;
+    margin-right: 10px;
+    height:73px;
+    border: 1px solid grey;
+    display: inline-block;
+    span{
+      text-align: center;
+      background: $sprite;
+      width: 65px;
+      display: block;
+      height: 65px;
+      border-radius: 50%;
+      margin-top: 3px;
+      margin-left: 3px;
+
+      &.rails{background-position: 11px 135px;
+        &:hover{background-position: 11px 74px;}
+      }
+      &.coffescript{background-position: -43px 135px;
+       &:hover{background-position: -43px 74px;}
+     }
+      &.html5{background-position: -95px 135px;
+       &:hover{background-position: -95px 74px;}
+     }
+      &.github{background-position: -149px 135px;
+        &:hover{background-position: -149px 74px;}
+      }
+      &.javascript{background-position: -203px 135px;
+        &:hover{background-position: -203px 74px;}
+      }
+      &.css3{background-position: -254px 135px;
+        &:hover{background-position: -254px 74px;}
+      }
+      &.sass{background-position: -308px 135px;
+        &:hover{background-position: -308px 74px;}
+      }
+      &.sql{background-position: -362px 135px;
+       &:hover{background-position: -362px 74px;}
+     }
+      &.postress{background-position: -415px 135px;
+       &:hover{background-position: -415px 74px;}
+     }
+      &.bootstrap{background-position: -467px 135px;
+       &:hover{background-position: -467px 74px;}
+     }
+      &.heroku{background-position: -520px 135px;
+       &:hover{background-position: -520px 74px;}
+     }
+      &.w3c{background-position: -571px 135px;
+       &:hover{background-position: -571px 74px;}
+     }
+      &.jquery{background-position: -628px 135px;
+       &:hover{background-position: -628px 74px;}
+     }
+    }
+  }
+}
+// 04. Contact now
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.contactnow{
+    height:750px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("office.jpg");
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  h2{
+    font-weight: 600;
+    font-size: 60px;
+    padding-top: 80px;
+  }
+  .btn{
+    margin-top: 50px;
+    font-size: 24px;
+  }
+}
+// 05. Team
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.team{
+  background: white;
+  border-bottom:30px solid $link-color;
+  .person{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 200;
+    .inner{
+      border: 1px solid grey;
+      padding: 30px;
+      background: white;
+      strong{
+        display: block;
+        margin-top: 20px;
+      }
+      i{display: block;}
+      p{text-align: justify;padding: 10px;}
+      a{font-size: 15px;margin-right: 10px;}
+    }
+  }
+}
+// 06. Contact
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.contact{
+  padding-top: 50px;
+  label{display: none;}
+  textarea{height:200px;}
+  .btn{text-transform: uppercase;}
+  h3{
+    font-weight: 700;
+    color:$link-color;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: 2px solid $link-color;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .circle{
+    border-radius: 50%;
+    width: 250px;
+    height:250px;
+    margin: 0px auto;
+    margin-top: 20px;
+    background: $link-color;
+    color:white;
+    text-transform: uppercase;
+    strong{
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 20px;
+    }
+    .logo{
+      background: $sprite;
+      background-position: -465px -4px;
+      width: 90px;
+      height: 87px;
+      margin: 0px auto;
+      margin-top: 15px;
+    }
+  }
+}
+//Same class
+.about,.tecnology,.team{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.tecnology,.team{
+  h2{
+    color:$link-color;
+ //   font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  span{font-size: 20px;}
+}

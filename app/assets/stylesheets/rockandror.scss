@@ -1,5 +1,6 @@
 // Table of Contents
 //
+// 00. Global Variables
 // 01. Global styles
 // 02. Navbar/Header
 // 03. Footer
@@ -7,8 +8,20 @@
 // 05. Alerts
 // 06. Tables
 
+// 00. Global Variables
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$sprite:url('sprite.png');
+
 // 01. Global styles
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 *, html {
   margin: 0;
   padding: 0;
@@ -23,9 +36,167 @@ body{
   text-rendering: optimizeLegibility;
 }
 
+section, nav {
+    opacity: 1;
+    -webkit-transition:opacity .6s;
+    -moz-transition:opacity .6s;
+    -o-transition:opacity .6s;
+    transition: opacity .6s;
+}
+ 
+//hide show section on scroll
+.hidden-section{opacity:0;}
+.visible-section{opacity:1;}
+
+//Hide show navbar
+.headroom--unpinned {
+  transform: translateY(-100%);
+  #nav-close{
+    opacity: 1;
+    transform: translateY(100%);
+  }
+}
+.headroom--pinned {
+  transform: translateY(0%);
+    #nav-close{
+      opacity: 0;
+    }
+}
+//Remove Firefox dotted 
+.btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
+outline: none;border:  none; box-shadow: none;} 
+@-moz-document url-prefix() { 
+  a {
+    &:active, &:focus{
+      outline: none;
+      border:  none;
+    }
+  }
+}
+
+a,:after,.btn{
+  transition: all 0.5s ease;
+  border:none;
+  &:hover,&:focus{
+    text-decoration: none;
+    outline: none;
+    color: $link-color;
+  }
+}
+.btn-primary{
+  &:hover{
+    background: darken($link-color,3%);
+    color: white;
+  }
+  &:focus{
+    background: $brand-primary;
+  }
+  &:active{
+    background: red;
+  }
+}
+
+//Gradient background linear
+.gradient{
+  background: #163d4a; /* Old browsers */
+  background: -moz-linear-gradient(top,  #163d4a 0%, #206076 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#163d4a), color-stop(100%,#206076)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #163d4a 0%,#206076 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #163d4a 0%,#206076 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163d4a', endColorstr='#206076',GradientType=0 ); /* IE6-9 */
+}
+//Gradient backgorund radial
+.gradient-radial{
+  background: #206076; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #206076 0%, #163d4a 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#206076), color-stop(100%,#163d4a)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #206076 0%,#163d4a 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206076', endColorstr='#163d4a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+ 
 // 02. Navbar/Header
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+nav{
+  transition: transform 200ms linear;
+  background: $brand-primary;
+  min-height: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  .fa{
+    color: $link-color;
+    &:hover{color:white;}
+  }
+  .navbar-brand-primary{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 50px;
+    &:hover{
+      background: none;
+      color:white;
+      text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+     }
+  }
+  .logo{
+      width: 50px;
+      height: 50px;
+      background: $sprite;
+      background-position: 0 -4px;
+      display: block;
+      float: left;
+      margin-top:0px;
+    }
+  #navbar{
+    font-size: 15px;
+    font-weight: 300;
+    a{
+      color:#e5e5e5;
+      font-size: 20px;
+      font-weight: 200;
+      &:hover,&:focus{background: none;color:$link-color;}
+    }
+  }
+}
 
+#nav-close{
+  width: 80px;
+  height: 80px;
+  position:absolute;
+  top: 0px;
+  background: $brand-primary;
+  left:0;
+  right:0;
+  z-index: 99999;
+  margin: 0px auto;
+  opacity: 0;
+  border-bottom-right-radius:8px;
+  border-bottom-left-radius:8px;
+  &:hover{ 
+    color:white;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+  }
+  .logo{
+    width: 76px;
+    height: 50px;
+    background: $sprite;
+    background-position: 14px -3px;
+    display: block;
+    float: left;
+    margin: 0px auto;
+    margin-top: 6px;
+  }
+  span{
+    display:block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
 // 03. Footer
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -35,8 +206,10 @@ body{
 // 05. Alerts
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .alert{
-  margin-top: 20px;
+  margin-top:30px;
+  margin-bottom:0px;
 }
+.alert-danger{color:#fff;}
 
 // 06. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
