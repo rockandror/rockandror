@@ -32,6 +32,7 @@ $(function () {
 
   
   //Scroll to section on click menu button
+ /*
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -44,6 +45,8 @@ $(function () {
       }
     }
   });
+  */
+
 })
 
 //notice check if alert danger exist only home page and scroll to contact

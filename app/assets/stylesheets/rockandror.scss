@@ -224,10 +224,22 @@ nav{
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-svg {
-  display: block;
-  width: 200px;
-  height: 200px;
-  margin: 2em auto;
-  border: 1px solid red;
+ 
+.gallery{
+  .clip-svg {
+  -webkit-clip-path: url(#myClip);
+  clip-path: url(#myClip); 
+  }
+img {
+width: 120px;
+margin: 20px;
+//animation: move 2s alternate infinite linear;
+//-webkit-animation: move 2s alternate infinite linear;
+}
+
+  @keyframes move {
+    to {
+      margin-left: 100px;
+    }
+  }
 }
