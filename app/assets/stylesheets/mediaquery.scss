@@ -23,31 +23,36 @@
         text-align: center;
       }
       .circle{
+        position: relative;
+        margin:0px auto;
         width:23em;
         height:23em;
         &:after{
           border: none;
         }
+
         span{
           font-size:15px;
-          right:62px;
-          top:192px;
-          left: 59px;
+          right:15%;
+          top:182px;
+          left: 10%;
         }
          .guz,.seb,.sen,.ale{
           background-size: 550px;
           height: 80px;
-          width: 61px;
-          margin-top: 92px;
+          width: 63px;
+          margin-left:0px;
+          margin-top: 78px;
          }
-         .guz{background-position: -60px -11px;}
-         .seb{background-position: -136px -11px;}
-         .sen{background-position: -213px -11px;}
+         .guz{background-position: -63px -11px;}
+         .seb{background-position: -139px -11px;}
+         .sen{background-position: -216px -11px;}
          .ale{background-position: -293px -11px;}
       }
     }  
     .tecnology{
       .logo{width: 19.4%;}
+
     }
     .contactnow{
       h2{font-size:3em;}
@@ -55,6 +60,12 @@
   }
   
 }
-@media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
+@media(min-width:768px){
+ 
+}
+@media(min-width:992px){
+  
+}
+@media(min-width:1200px){
+  
+}

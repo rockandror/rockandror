@@ -143,7 +143,7 @@
   }    
   h3{
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 600;
   }
 }
 // 03. Tecnology
@@ -160,59 +160,69 @@
   h2{font-size: 50px;}
   .logo{
     margin-top: 60px;
-    width:6.4%;
-    border-radius: 50%;
+    width:6%;
     margin-right: 10px;
-    height:73px;
-    border: 1px solid grey;
     display: inline-block;
-    span{
-      text-align: center;
-      background: $sprite;
-      width: 65px;
+    &:after {
+      content: "";
       display: block;
-      height: 65px;
+      width: 100%;
+      height:0;
+      padding-bottom: 100%;
+      border: 1px solid grey; 
+      -moz-border-radius: 50%; 
+      -webkit-border-radius: 50%; 
       border-radius: 50%;
-      margin-top: 3px;
-      margin-left: 3px;
-
-      &.rails{background-position: 11px 135px;
-        &:hover{background-position: 11px 74px;}
+    }
+    span{
+      margin-left: 0.3em;
+      float: left;
+      width: 80%;
+      padding-top: 71%;
+      line-height: 1em;
+      margin-top: 0.7em;
+      text-align: center;
+      color: white;
+      background: $sprite;
+      margin-top: 11px;
+  
+      &.rails{background-position: 6px 130px;
+        &:hover{background-position: 6px 69px;}
       }
-      &.coffescript{background-position: -43px 135px;
-       &:hover{background-position: -43px 74px;}
+      &.coffescript{background-position: -48px 126px;
+       &:hover{background-position: -48px 74px;}
      }
-      &.html5{background-position: -95px 135px;
-       &:hover{background-position: -95px 74px;}
+      &.html5{background-position: -100px 126px;
+       &:hover{background-position: -100px 74px;}
      }
-      &.github{background-position: -149px 135px;
+      &.github{background-position: -149px 126px;
         &:hover{background-position: -149px 74px;}
       }
-      &.javascript{background-position: -203px 135px;
+      &.javascript{background-position: -203px 126px;
         &:hover{background-position: -203px 74px;}
       }
-      &.css3{background-position: -254px 135px;
+      &.css3{background-position: -254px 126px;
         &:hover{background-position: -254px 74px;}
       }
-      &.sass{background-position: -308px 135px;
+      &.sass{background-position: -308px 126px;
         &:hover{background-position: -308px 74px;}
       }
-      &.sql{background-position: -362px 135px;
+      &.sql{background-position: -362px 126px;
        &:hover{background-position: -362px 74px;}
      }
-      &.postress{background-position: -415px 135px;
+      &.postress{background-position: -415px 126px;
        &:hover{background-position: -415px 74px;}
      }
-      &.bootstrap{background-position: -467px 135px;
+      &.bootstrap{background-position: -467px 126px;
        &:hover{background-position: -467px 74px;}
      }
-      &.heroku{background-position: -520px 135px;
+      &.heroku{background-position: -520px 126px;
        &:hover{background-position: -520px 74px;}
      }
-      &.w3c{background-position: -571px 135px;
+      &.w3c{background-position: -571px 126px;
        &:hover{background-position: -571px 74px;}
      }
-      &.jquery{background-position: -628px 135px;
+      &.jquery{background-position: -628px 126px;
        &:hover{background-position: -628px 74px;}
      }
     }
