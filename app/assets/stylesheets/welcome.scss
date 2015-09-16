@@ -10,59 +10,42 @@
 // 01. Intro
 // - - - - - - - - - - - - - - - - - - - - - - - - -
  .intro{
-    height:750px;
+    height:800px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("1.jpg");
+    background-image: url("2.jpg");
+    margin-top: -20px;
    
   h1{
-    font-size: 157px;
-    letter-spacing: -13px;
+    font-size: 4em;
+    letter-spacing: -4px;
     font-weight: 700;
-    color:#FDF8F8;
+    color:$brand-primary;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.7);
-    margin: 0px;
-    padding-top: 120px;
-     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #E2E1E1;
-
+    padding-top: 230px;
    }
-  h2{
-    text-align: center;
-    letter-spacing:3px;
-    font-size: 40px;
-    font-weight:600;
-    color:$link-color;
-    text-transform: uppercase;
-    margin: 0px;
-    text-indent: 20px;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
-  }
+  
   lead{
     text-align: center;
-    color:#fff;
-    font-size: 22px;
+    color:$brand-primary;
+    font-size: 1.8em;
     display: block;
+    font-weight: 600;
+    margin-top: -17px;
   }
   .btn-primary{
     display: block;
     width: 260px;
     margin: 0px auto;
-    height: 60px;
-    line-height: 46px;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 40px;
+    margin-top: 130px;
     position: relative;
     &:hover:after{
       border-left: 30px solid transparent;
       border-right: 30px solid transparent;
-      border-top: 30px solid darken($link-color,3%);   
+      border-top: 30px solid darken($brand-primary,3%);   
       }
      &:after{
       content: '';
@@ -81,8 +64,15 @@
 }
 // 02. About
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  
 .about{
+  position: relative;
   color:white;
+  color: white;
+  background: -webkit-repeating-linear-gradient(45deg, $brand-primary, $brand-primary 10px, darken($brand-primary , 3%) 10px, darken($brand-primary , 3%) 65px);
+  background: repeating-linear-gradient(45deg, $brand-primary, $brand-primary 10px, darken($brand-primary , 3%) 10px, darken($brand-primary , 3%) 65px);
+
   h2{
     margin-left: 40px;
     color:white;
@@ -97,9 +87,9 @@
     height: 430px;
     border-radius: 50%;
     border:10px solid white;
-    background-color: $brand-primary;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(lighten($brand-primary,4%),.5) 35px, rgba(lighten($brand-primary,4%),.5) 70px);
-    box-shadow: 0px 0px 25px rgba(white, 0.3);
+    background:transparent;
+    //background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(lighten($brand-primary,4%),.5) 35px, rgba(lighten($brand-primary,4%),.5) 70px);
+    
     span{
       position: absolute;
       top: 260px;
@@ -108,7 +98,7 @@
       bottom: 0px;
       display: block;
       margin: 0px auto;
-      border-top: 2px solid $link-color;
+      border-top: 2px solid $brand-primary;
       font-size: 23px;
       line-height: 23px;
       padding-top: 16px;
@@ -125,7 +115,7 @@
       bottom: 0px;
       right: 0px;
       margin: 0px auto;
-      border: 1px $link-color dashed;
+      border: 1px $brand-primary dashed;
       z-index: -2;
     }
     .guz,.seb,.sen,.ale{
@@ -149,18 +139,19 @@
 // 03. Tecnology
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .tecnology{
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("tecnology.jpg");
-  border-top: 10px solid $brand-primary;
-  border-bottom: 10px solid $brand-primary;  
-  text-align: center;
+  background: white;
+  min-height: 750px;
+  border-bottom: 30px solid $brand-primary;  
   img{margin-top: 40px;}
-  h2{font-size: 50px;}
+  h2{
+    color: $brand-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
   .logo{
     margin-top: 60px;
     width:6%;
+    height: 0;
     margin-right: 10px;
     display: inline-block;
     &:after {
@@ -186,44 +177,44 @@
       background: $sprite;
       margin-top: 11px;
   
-      &.rails{background-position: 6px 130px;
-        &:hover{background-position: 6px 69px;}
+      &.rails{background-position: 0px 266px;
+        &:hover{background-position: 0px 206px;}
       }
-      &.coffescript{background-position: -48px 126px;
-       &:hover{background-position: -48px 74px;}
+      &.coffescript{background-position: -60px 266px;
+       &:hover{background-position: -60px 206px;}
      }
-      &.html5{background-position: -100px 126px;
-       &:hover{background-position: -100px 74px;}
+      &.html5{background-position: -120px 266px;
+       &:hover{background-position: -120px 206px;}
      }
-      &.github{background-position: -149px 126px;
-        &:hover{background-position: -149px 74px;}
+      &.github{background-position: -180px 266px;
+        &:hover{background-position: -180px 206px;}
       }
-      &.javascript{background-position: -203px 126px;
-        &:hover{background-position: -203px 74px;}
+      &.javascript{background-position: -240px 266px;
+        &:hover{background-position: -240px 206px;}
       }
-      &.css3{background-position: -254px 126px;
-        &:hover{background-position: -254px 74px;}
+      &.css3{background-position: -300px 266px;
+        &:hover{background-position: -300px 206px;}
       }
-      &.sass{background-position: -308px 126px;
-        &:hover{background-position: -308px 74px;}
+      &.sass{background-position: -360px 266px;
+        &:hover{background-position: -360px 206px;}
       }
-      &.sql{background-position: -362px 126px;
-       &:hover{background-position: -362px 74px;}
+      &.sql{background-position: -420px 266px;
+       &:hover{background-position: -420px 206px;}
      }
-      &.postress{background-position: -415px 126px;
-       &:hover{background-position: -415px 74px;}
+      &.postress{background-position: -480px 266px;
+       &:hover{background-position: -480px 206px;}
      }
-      &.bootstrap{background-position: -467px 126px;
-       &:hover{background-position: -467px 74px;}
+      &.bootstrap{background-position: -540px 266px;
+       &:hover{background-position: -540px 206px;}
      }
-      &.heroku{background-position: -520px 126px;
-       &:hover{background-position: -520px 74px;}
+      &.heroku{background-position: -600px 266px;
+       &:hover{background-position: -600px 206px;}
      }
-      &.w3c{background-position: -571px 126px;
-       &:hover{background-position: -571px 74px;}
+      &.w3c{background-position: -660px 266px;
+       &:hover{background-position: -660px 206px;}
      }
-      &.jquery{background-position: -628px 126px;
-       &:hover{background-position: -628px 74px;}
+      &.jquery{background-position: -720px 266px;
+       &:hover{background-position: -720px 206px;}
      }
     }
   }
@@ -240,22 +231,32 @@
     text-align: center;
     text-transform: uppercase;
   h2{
-    font-weight: 600;
-    font-size: 60px;
-    padding-top: 80px;
+    font-weight: 700;
+    font-size: 4em;
+    padding-top: 3em;
+    color:$brand-primary;
+  }
+  h3{
+    text-transform: lowercase;
+    color:grey;
   }
   .btn{
     margin-top: 50px;
-    font-size: 24px;
   }
 }
 // 05. Team
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .team{
   background: white;
-  border-bottom:30px solid $link-color;
+  border-bottom:30px solid $brand-primary;
+  h2{
+    color: $brand-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  span{font-size: 20px;}
   .person{
-    margin-top: 100px;
+    margin-top: 20px;
     text-align: center;
     font-weight: 200;
     .inner{
@@ -275,17 +276,17 @@
 // 06. Contact
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .contact{
-  padding-top: 50px;
+  padding-top: 2em;
+  padding-bottom: 2em;
   label{display: none;}
   textarea{height:200px;}
-  .btn{text-transform: uppercase;}
   h3{
     font-weight: 700;
-    color:$link-color;
+    color:$brand-primary;
     display: inline-block;
     text-transform: uppercase;
     font-size: 20px;
-    border-bottom: 2px solid $link-color;
+    border-bottom: 2px solid $brand-primary;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -296,35 +297,24 @@
     height:250px;
     margin: 0px auto;
     margin-top: 20px;
-    background: $link-color;
-    color:white;
+    border:3px solid $brand-primary;
     text-transform: uppercase;
     strong{
+      color:$brand-primary;
       display: inline-block;
-      margin-top: 40px;
       font-size: 20px;
     }
     .logo{
       background: $sprite;
-      background-position: -465px -4px;
-      width: 90px;
-      height: 87px;
+      background-position: -11px -44px;
+      width: 60px;
+      height: 47px;
       margin: 0px auto;
-      margin-top: 15px;
+      margin-top: 35px;
     }
   }
 }
-//Same class
 .about,.tecnology,.team{
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.tecnology,.team{
-  h2{
-    color:$link-color;
- //   font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  span{font-size: 20px;}
+  padding-top: 7em;
+  padding-bottom: 7em;
 }

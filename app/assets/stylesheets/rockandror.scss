@@ -11,7 +11,7 @@
 // 00. Global Variables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$sprite:url('sprite.png');
+$sprite:url('sprite.svg');
 
 // 01. Global styles
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -28,7 +28,6 @@ $sprite:url('sprite.png');
 }
 
 body{
-  padding-top: 50px;
   background: $body-bg;
   font-family: $font-family-sans-serif;
   font-size: rem-calc(13);
@@ -44,6 +43,21 @@ section, nav {
     transition: opacity .6s;
 }
  
+//Block landscape
+.no-landscape{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  &.gradient-radial{
+    display: none;
+  }
+}
 //hide show section on scroll
 .hidden-section{opacity:0;}
 .visible-section{opacity:1;}
@@ -84,9 +98,13 @@ a,:after,.btn{
   }
 }
 .btn-primary{
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#fff;
   &:hover{
     background: darken($link-color,3%);
-    color: white;
+    color: #fff;
   }
   &:focus{
     background: $brand-primary;
@@ -98,39 +116,73 @@ a,:after,.btn{
 
 //Gradient background linear
 .gradient{
-  background: #163d4a; /* Old browsers */
-  background: -moz-linear-gradient(top,  #163d4a 0%, #206076 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#163d4a), color-stop(100%,#206076)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #163d4a 0%,#206076 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #163d4a 0%,#206076 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #163d4a 0%,#206076 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163d4a', endColorstr='#206076',GradientType=0 ); /* IE6-9 */
+  background: $brand-primary; /* Old browsers */
+  background: -moz-linear-gradient(top,  $brand-primary 0%, lighten($brand-primary,10%) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$brand-primary), color-stop(100%,lighten($brand-primary,10%))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $brand-primary 0%,lighten($brand-primary,10%) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $brand-primary 0%,lighten($brand-primary,10%) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $brand-primary 0%,lighten($brand-primary,10%) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $brand-primary 0%,lighten($brand-primary,10%) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary', endColorstr='lighten($brand-primary,10%)',GradientType=0 ); /* IE6-9 */
 }
 //Gradient backgorund radial
 .gradient-radial{
-  background: #206076; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #206076 0%, #163d4a 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#206076), color-stop(100%,#163d4a)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #206076 0%,#163d4a 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #206076 0%,#163d4a 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206076', endColorstr='#163d4a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: lighten($brand-primary,10%); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  lighten($brand-primary,10%) 0%, $brand-primary 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,lighten($brand-primary,10%)), color-stop(100%,$brand-primary)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($brand-primary,10%)', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
- 
+
+.logo{
+  width: 105px;
+  height: 102px;
+  background: $sprite;
+  display: block;
+  background-position: -932px 122px; 
+}
+
+.logosvg{
+  width: 105px;
+  height: 102px;
+  display: block;
+  #circle-outer{}
+  #circle{}
+  #body{}
+  #left_eyes{}
+  #right_eyes{}
+  &:hover{
+    #body{
+      filter:url(#blur-effect-1);
+    }
+  }
+}
+
+@-webkit-keyframes se{
+    0%{transform: scale(1);}
+    100%{transform: scale(2);}
+  }
+  @keyframes se{
+    0%{transform: scale(1);}
+    100%{transform: scale(2);}
+  }
+
 // 02. Navbar/Header
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 nav{
   transition: transform 200ms linear;
-  background: $brand-primary;
-  min-height: 50px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  background: transparent;
   .fa{
-    color: $link-color;
-    &:hover{color:white;}
+    color: $brand-primary;
+    &:hover{
+      color:$link-color;
+    }
   }
+  li{width: 140px;}
+  .cont-logo{margin-top: -50px;}
   .navbar-brand-primary{
     text-transform: uppercase;
     font-size: 25px;
@@ -143,26 +195,33 @@ nav{
       text-decoration: none;
      }
   }
-  .logo{
-      width: 50px;
-      height: 50px;
-      background: $sprite;
-      background-position: 0 -4px;
-      display: block;
-      float: left;
-      margin-top:0px;
-    }
   #navbar{
-    font-size: 15px;
+    margin-top: 70px;
     font-weight: 300;
+    font-size: 1.2em;
+    text-transform: uppercase;
     a{
-      color:#e5e5e5;
-      font-size: 20px;
-      font-weight: 200;
-      &:hover,&:focus{background: none;color:$link-color;}
+      color:$brand-primary;
+      &:hover,&:focus{
+        background: none;
+        color:#68527f;
+      }
+      &.active{
+        font-weight: 700;
+        color:#68527f;
+      }
     }
   }
 }
+.navbar-inner{text-align:center;}
+.nav.nav-center {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin:0;
+    float:none;
+}
+
 
 #nav-close{
   width: 80px;
@@ -213,3 +272,4 @@ nav{
 
 // 06. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+.navbar-fixed-top{background: white;}
