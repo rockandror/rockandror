@@ -64,15 +64,12 @@
 }
 // 02. About
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  
 .about{
   position: relative;
   color:white;
   color: white;
   background: -webkit-repeating-linear-gradient(45deg, $brand-primary, $brand-primary 10px, darken($brand-primary , 3%) 10px, darken($brand-primary , 3%) 65px);
   background: repeating-linear-gradient(45deg, $brand-primary, $brand-primary 10px, darken($brand-primary , 3%) 10px, darken($brand-primary , 3%) 65px);
-
   h2{
     margin-left: 40px;
     color:white;
@@ -82,25 +79,23 @@
     margin-bottom: 60px;
     span{font-weight: 600;}
   }    
+  h3{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
   .circle{
     width: 430px;
     height: 430px;
     border-radius: 50%;
     border:10px solid white;
     background:transparent;
-    //background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(lighten($brand-primary,4%),.5) 35px, rgba(lighten($brand-primary,4%),.5) 70px);
-    
     span{
-      position: absolute;
-      top: 260px;
-      left: 75px;
-      right: 182px;
       bottom: 0px;
       display: block;
       margin: 0px auto;
-      border-top: 2px solid $brand-primary;
-      font-size: 23px;
+      font-size: 1.6em;
       line-height: 23px;
+      padding: 20px;
       padding-top: 16px;
       text-align: center;
     }
@@ -131,10 +126,6 @@
     .sen{background-position: -273px -11px;}
     .ale{background-position: -375px -11px;}
   }    
-  h3{
-    text-transform: uppercase;
-    font-weight: 600;
-  }
 }
 // 03. Tecnology
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -149,8 +140,8 @@
     text-transform: uppercase;
   }
   .logo{
-    margin-top: 60px;
-    width:6%;
+    margin-top: 80px;
+    width: 70px;
     height: 0;
     margin-right: 10px;
     display: inline-block;
@@ -176,7 +167,7 @@
       color: white;
       background: $sprite;
       margin-top: 11px;
-  
+      &:hover{cursor: pointer;}
       &.rails{background-position: 0px 266px;
         &:hover{background-position: 0px 206px;}
       }
@@ -240,9 +231,7 @@
     text-transform: lowercase;
     color:grey;
   }
-  .btn{
-    margin-top: 50px;
-  }
+  .btn{margin-top: 50px;}
 }
 // 05. Team
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -256,7 +245,7 @@
   }
   span{font-size: 20px;}
   .person{
-    margin-top: 20px;
+    margin-top: 60px;
     text-align: center;
     font-weight: 200;
     .inner{

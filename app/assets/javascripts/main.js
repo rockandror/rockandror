@@ -1,24 +1,13 @@
 //Preload
- 
 $(window).load(function() {
-  // start up after 2sec no matter what
-  window.setTimeout(function(){
-    $(".loading").fadeOut();
-  }, 1000);
-  scrollalert();
+  preload();
 });
   
 $(function () {
   //headroom
   headroom();
-  
-  //remove hidden class section if XS
-  if (window.innerHeight > window.innerWidth) { 
-    } else {
-      scrollPage();
-    }
-
-  //Auto close navbar XS mode on click outside
+  checkHeight();
+  //Auto close navbar on click outside in XS mode
   $('body').bind('click', function(e) {
     if(jQuery(e.target).closest('.navbar').length == 0) {
       console.log("fuori");
@@ -32,11 +21,6 @@ $(function () {
   //Auto close navbar XS mode on click link navbar
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
-  });
-
-  $(".nav a").on("click", function(){
-    $(".nav").find(".active").removeClass("active");
-    $(this).parent().addClass("active");
   });
 
   //tooltips 
@@ -58,10 +42,27 @@ $(function () {
   });
 })
 
+//Preload
+function preload(){
+  window.setTimeout(function(){
+    $(".loading").fadeOut();
+  }, 1000);
+  scrollalert();
+}
+
 //check if alert danger exist in home page and scroll to contact
 function scrollalert(){
   if ($('#alert-danger').length){
     $("html, body").delay(3000).animate({scrollTop: $('#contact').offset().top }, 2000);
+  }
+}
+
+
+//If XS, remove effects fadein section on scroll
+function checkHeight(){
+if (window.innerHeight > window.innerWidth) { 
+  } else {
+    scrollPage();
   }
 }
 
@@ -87,3 +88,4 @@ function scrollPage(){
       offset: 200    
     });
   }
+

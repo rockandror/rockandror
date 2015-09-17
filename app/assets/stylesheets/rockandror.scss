@@ -43,7 +43,7 @@ section, nav {
     transition: opacity .6s;
 }
  
-//Block landscape
+//Block landscape mode
 .no-landscape{
   position:fixed;
   top: 0;
@@ -97,6 +97,7 @@ a,:after,.btn{
     color: $link-color;
   }
 }
+
 .btn-primary{
   font-size: 2em;
   text-transform: uppercase;
@@ -136,53 +137,21 @@ a,:after,.btn{
   background: radial-gradient(ellipse at center,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($brand-primary,10%)', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-
-.logo{
-  width: 105px;
-  height: 102px;
-  background: $sprite;
-  display: block;
-  background-position: -932px 122px; 
-}
-
-.logosvg{
-  width: 105px;
-  height: 102px;
-  display: block;
-  #circle-outer{}
-  #circle{}
-  #body{}
-  #left_eyes{}
-  #right_eyes{}
-  &:hover{
-    #body{
-      filter:url(#blur-effect-1);
-    }
-  }
-}
-
-@-webkit-keyframes se{
-    0%{transform: scale(1);}
-    100%{transform: scale(2);}
-  }
-  @keyframes se{
-    0%{transform: scale(1);}
-    100%{transform: scale(2);}
-  }
-
 // 02. Navbar/Header
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 nav{
   transition: transform 200ms linear;
-  background: transparent;
-  .fa{
-    color: $brand-primary;
-    &:hover{
-      color:$link-color;
-    }
+  background: white;
+  .nav-center {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin:0;
+    float:none;
   }
-  li{width: 140px;}
-  .cont-logo{margin-top: -50px;}
+  .fa{color: $brand-primary;
+    &:hover{color:$link-color;}
+  }
   .navbar-brand-primary{
     text-transform: uppercase;
     font-size: 25px;
@@ -200,6 +169,7 @@ nav{
     font-weight: 300;
     font-size: 1.2em;
     text-transform: uppercase;
+    li{width: 140px;}
     a{
       color:$brand-primary;
       &:hover,&:focus{
@@ -214,47 +184,21 @@ nav{
   }
 }
 .navbar-inner{text-align:center;}
-.nav.nav-center {
-    display: inline-block;
-    left: 0;
-    right: 0;
-    margin:0;
-    float:none;
+//Logo sprite XS
+.logo{
+  width: 105px;
+  height: 102px;
+  background: $sprite;
+  display: block;
+  background-position: -932px 122px; 
 }
 
-
-#nav-close{
-  width: 80px;
-  height: 80px;
-  position:absolute;
-  top: 0px;
-  background: $brand-primary;
-  left:0;
-  right:0;
-  z-index: 99999;
-  margin: 0px auto;
-  opacity: 0;
-  border-bottom-right-radius:8px;
-  border-bottom-left-radius:8px;
-  &:hover{ 
-    color:white;
-    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
-  }
-  .logo{
-    width: 76px;
-    height: 50px;
-    background: $sprite;
-    background-position: 14px -3px;
-    display: block;
-    float: left;
-    margin: 0px auto;
-    margin-top: 6px;
-  }
-  span{
-    display:block;
-    text-align: center;
-    text-transform: uppercase;
-  }
+//Single logo svg for future animation
+.logosvg{
+  width: 105px;
+  height: 102px;
+  display: block;
+  margin-top: -50px;
 }
 // 03. Footer
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -272,4 +216,3 @@ nav{
 
 // 06. Tables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-.navbar-fixed-top{background: white;}
