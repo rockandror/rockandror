@@ -1,0 +1,38 @@
+.loading{ 
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  height: 100%;
+  overflow: hidden;
+}
+.spin-box {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  box-shadow: 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary, 15px -15px white;
+  -webkit-animation: spin ease infinite 4s;
+  -moz-animation: spin ease infinite 4s;
+}
+@-webkit-keyframes spin {
+  0%,
+  100% {box-shadow: 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary, 15px -15px white;}
+  25% {box-shadow: -15px 15px white, -15px -15px $brand-primary, 15px -15px white, 15px 15px $brand-primary;}
+  50% {box-shadow: -15px -15px $brand-primary, 15px -15px white, 15px 15px $brand-primary, -15px 15px white;}
+  75% {box-shadow: 15px -15px white, 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary;}
+}
+@keyframes spin {
+  0%,
+  100% {box-shadow: 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary, 15px -15px white;}
+  25% {box-shadow: -15px 15px white, -15px -15px $brand-primary, 15px -15px white, 15px 15px $brand-primary;}
+  50% {box-shadow: -15px -15px $brand-primary, 15px -15px white, 15px 15px $brand-primary, -15px 15px white;}
+  75% {box-shadow: 15px -15px white, 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary;}
+}
