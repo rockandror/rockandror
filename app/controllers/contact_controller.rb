@@ -8,9 +8,6 @@ class ContactController < ApplicationController
     else
         flash.now[:alert]= "errores en el formulario"
         render "welcome/home"
-       # redirect_to root_path, alert: "Hubo errores en el formulario"
-
-
     end    
   end
 
