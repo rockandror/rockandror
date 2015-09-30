@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("2.jpg");
+    background-image: image-url("2.jpg");
     margin-top: -20px;
    
   h1{
@@ -217,7 +217,7 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("office.jpg");
+    background-image: image-url("office.jpg");
     color: white;
     text-align: center;
     text-transform: uppercase;
