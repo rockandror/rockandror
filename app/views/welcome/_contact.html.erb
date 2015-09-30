@@ -1,8 +1,28 @@
-<div class="contact">
-  <%= bootstrap_form_for @contact do |f| %>
-    <%= f.text_field :name, placeholder: 'Nombre u Organización', label: "Nombre" %>
-    <%= f.text_field :email, placeholder: 'Email', label: "Email" %>
-    <%= f.text_area :message, placeholder: 'Mensaje', label: "Mensaje" %>
-    <%= f.submit "Enviar" %>
-  <% end %>
-</div>
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="col-md-6 col-xs-12">
+      <h3 class="hidden-md hidden-lg">Contactos</h3>
+      <%= bootstrap_form_for @contact do |f| %>
+        <%= f.text_field :name, placeholder: 'Nombre o Empresa', label: "Nombre" %>
+        <%= f.text_field :email, placeholder: 'Email', label: "Email" %>
+        <%= f.text_area :message, placeholder: 'Mensaje', label: "Mensaje" %>
+        <%= f.submit "Enviar", class: "btn btn-lg btn-primary" %>
+      <% end %>
+    </div>
+    <div class="col-md-6 col-xs-12 text-center">
+      <h3 class="hidden-xs">Contact</h3><br>
+      <%= mail_to "info@rockandror.com"  %>
+      <br>
+      <span>
+      Tel: +34 605 526 618<br>
+      Palma de Mallorca, España<br>
+      </span>
+      <div class="circle">
+        <div class="logo"></div>
+        <strong>Rock&Ror</strong><br>
+        <span>desarrollo web agil a medida</span>
+        <span>©Copyright 2015</span>
+      </div>
+    </div>
+  </div>
+</section>

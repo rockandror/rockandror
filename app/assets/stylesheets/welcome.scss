@@ -1,0 +1,311 @@
+// Table of Contents
+//
+// 01. Intro
+// 02. About
+// 03. Tecnology
+// 04. Contact now
+// 05. Team
+// 06. Contact
+
+// 01. Intro
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+ .intro{
+    height:800px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("2.jpg");
+    margin-top: -20px;
+   
+  h1{
+    font-size: 4em;
+    letter-spacing: -4px;
+    font-weight: 700;
+    color:$brand-primary;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 230px;
+   }
+  
+  lead{
+    text-align: center;
+    color:$brand-primary;
+    font-size: 1.8em;
+    display: block;
+    font-weight: 600;
+    margin-top: -17px;
+  }
+  .btn-primary{
+    display: block;
+    width: 260px;
+    margin: 0px auto;
+    margin-top: 130px;
+    position: relative;
+    &:hover:after{
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 30px solid darken($brand-primary,3%);   
+      }
+     &:after{
+      content: '';
+      position: absolute;
+      left: 38%;
+      top:60px;
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 30px solid $brand-primary;
+      clear: both;
+    }
+    
+  }
+}
+// 02. About
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.about{
+  position: relative;
+  color:white;
+  color: white;
+  background: -webkit-repeating-linear-gradient(45deg, $brand-primary, $brand-primary 10px, darken($brand-primary , 3%) 10px, darken($brand-primary , 3%) 65px);
+  background: repeating-linear-gradient(45deg, $brand-primary, $brand-primary 10px, darken($brand-primary , 3%) 10px, darken($brand-primary , 3%) 65px);
+  h2{
+    margin-left: 40px;
+    color:white;
+    font-size: 48px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    span{font-weight: 600;}
+  }    
+  h3{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .circle{
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    border:10px solid white;
+    background:transparent;
+    span{
+      bottom: 0px;
+      display: block;
+      margin: 0px auto;
+      font-size: 1.6em;
+      line-height: 23px;
+      padding: 20px;
+      padding-top: 16px;
+      text-align: center;
+    }
+    &:after{
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      width:445px;
+      height: 445px;
+      top: -7px;
+      left: -110px;
+      bottom: 0px;
+      right: 0px;
+      margin: 0px auto;
+      border: 1px $brand-primary dashed;
+      z-index: -2;
+    }
+    .guz,.seb,.sen,.ale{
+      width: 87px;
+      height: 100px;
+      background: $sprite;
+      display: inline-block;
+      margin-right: 5px;
+      margin-top: 130px;
+    }
+    .guz{background-position: -81px -11px;margin-left:20px;}
+    .seb{background-position: -178px -11px;}
+    .sen{background-position: -273px -11px;}
+    .ale{background-position: -375px -11px;}
+  }    
+}
+// 03. Tecnology
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.tecnology{
+  background: white;
+  min-height: 750px;
+  border-bottom: 30px solid $brand-primary;  
+  img{margin-top: 40px;}
+  h2{
+    color: $brand-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .logo{
+    margin-top: 80px;
+    width: 70px;
+    height: 0;
+    margin-right: 10px;
+    display: inline-block;
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height:0;
+      padding-bottom: 100%;
+      border: 1px solid grey; 
+      -moz-border-radius: 50%; 
+      -webkit-border-radius: 50%; 
+      border-radius: 50%;
+    }
+    span{
+      margin-left: 0.3em;
+      float: left;
+      width: 80%;
+      padding-top: 71%;
+      line-height: 1em;
+      margin-top: 0.7em;
+      text-align: center;
+      color: white;
+      background: $sprite;
+      margin-top: 11px;
+      &:hover{cursor: pointer;}
+      &.rails{background-position: 0px 266px;
+        &:hover{background-position: 0px 206px;}
+      }
+      &.coffescript{background-position: -60px 266px;
+       &:hover{background-position: -60px 206px;}
+     }
+      &.html5{background-position: -120px 266px;
+       &:hover{background-position: -120px 206px;}
+     }
+      &.github{background-position: -180px 266px;
+        &:hover{background-position: -180px 206px;}
+      }
+      &.javascript{background-position: -240px 266px;
+        &:hover{background-position: -240px 206px;}
+      }
+      &.css3{background-position: -300px 266px;
+        &:hover{background-position: -300px 206px;}
+      }
+      &.sass{background-position: -360px 266px;
+        &:hover{background-position: -360px 206px;}
+      }
+      &.sql{background-position: -420px 266px;
+       &:hover{background-position: -420px 206px;}
+     }
+      &.postress{background-position: -480px 266px;
+       &:hover{background-position: -480px 206px;}
+     }
+      &.bootstrap{background-position: -540px 266px;
+       &:hover{background-position: -540px 206px;}
+     }
+      &.heroku{background-position: -600px 266px;
+       &:hover{background-position: -600px 206px;}
+     }
+      &.w3c{background-position: -660px 266px;
+       &:hover{background-position: -660px 206px;}
+     }
+      &.jquery{background-position: -720px 266px;
+       &:hover{background-position: -720px 206px;}
+     }
+    }
+  }
+}
+// 04. Contact now
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.contactnow{
+    height:750px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("office.jpg");
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  h2{
+    font-weight: 700;
+    font-size: 4em;
+    padding-top: 3em;
+    color:$brand-primary;
+  }
+  h3{
+    text-transform: lowercase;
+    color:grey;
+  }
+  .btn{margin-top: 50px;}
+}
+// 05. Team
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.team{
+  background: white;
+  border-bottom:30px solid $brand-primary;
+  h2{
+    color: $brand-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  span{font-size: 20px;}
+  .person{
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 200;
+
+    .inner{
+      border: 1px solid grey;
+      padding: 20px;
+      background: white;
+      height: 635px;
+      strong{
+        display: block;
+        margin-top: 20px;
+      }
+      i{display: block;}
+      p{text-align: justify;padding: 10px;}
+      a{font-size: 15px;margin-right: 10px;}
+    }
+  }
+}
+// 06. Contact
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.contact{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  label{display: none;}
+  textarea{height:200px;}
+  h3{
+    font-weight: 700;
+    color:$brand-primary;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-bottom: 2px solid $brand-primary;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .circle{
+    border-radius: 50%;
+    width: 250px;
+    height:250px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border:3px solid $brand-primary;
+    text-transform: uppercase;
+    strong{
+      color:$brand-primary;
+      display: inline-block;
+      font-size: 20px;
+    }
+    .logo{
+      background: $sprite;
+      background-position: -11px -44px;
+      width: 60px;
+      height: 47px;
+      margin: 0px auto;
+      margin-top: 55px;
+    }
+  }
+}
+.about,.tecnology,.team{
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
