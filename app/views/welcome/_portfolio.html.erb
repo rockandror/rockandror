@@ -1,0 +1,53 @@
+<section class="portfolio" id="scroll_to_portfolio">
+  <div class="container">
+    <h2>PORTFOLIO</h2>
+    <h3>Algunas de nuestros últimos trabajos</h3>
+    <div id="carousel-portfolio" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-portfolio" data-slide-to="1"></li>
+        <li data-target="#carousel-portfolio" data-slide-to="2"></li>
+        <li data-target="#carousel-portfolio" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag("1.jpg") %>
+          <div class="carousel-caption">
+            Catamaran Oasis
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("2.jpg") %>
+          <div class="carousel-caption">
+            EatBooking
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("1.jpg") %>
+          <div class="carousel-caption">
+            Trickking
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("2.jpg") %>
+          <div class="carousel-caption">
+            Comete los Cabos
+          </div>
+        </div>                   
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-portfolio" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-portfolio" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>

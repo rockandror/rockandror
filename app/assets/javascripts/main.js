@@ -27,7 +27,7 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 
   //scroll to section on click button menu  
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('a[href*=#scroll_to_]:not([href=#])').click(function() {
    // $('.navbar-toggle').click();  
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -68,23 +68,27 @@ if (window.innerHeight > window.innerWidth) {
 
 //Headroom
 function headroom(){ 
-   var myElement = document.querySelector("nav");
-    var headroom = new Headroom(myElement, {
-      "offset": 40,
-      "tolerance": 5,
-      "classes": {
-        "initial": "animated",
-        "pinned": "headroom-pinned",
-        "unpinned": "headroom--unpinned"
-      }
-    });
-    headroom.init();
+ var myElement = document.querySelector("nav");
+ var headroom = new Headroom(myElement, {
+    "offset": 40,
+    "tolerance": 5,
+    "classes": {
+      "initial": "animated",
+      "pinned": "headroom-pinned",
+      "unpinned": "headroom--unpinned"
+    }
+  });
+  headroom.init();
 }
 
 //on scroll, show section 
 function scrollPage(){
-    $('section').addClass("hidden-section").viewportChecker({
-      classToAdd: 'visible-section animated fadeIn',// Class to add to the elements when they are visible
-      offset: 200    
-    });
-  }
+  $('section').addClass("hidden-section").viewportChecker({
+    classToAdd: 'visible-section animated fadeIn',// Class to add to the elements when they are visible
+    offset: 200    
+  });
+}
+
+jQuery(function() { 
+  $('.carousel').carousel();
+});
