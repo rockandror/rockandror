@@ -8,7 +8,6 @@
 <% if alert.present? %>
   <div class="alert alert-danger text-center" id="alert-danger">
     <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-    <h4>¡Hubo un error!</h4>
-    <%= alert %>
+    <h4>¡Hubo un error! / <%= alert %> </h4>
   </div>
 <% end %>

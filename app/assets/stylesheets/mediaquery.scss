@@ -1,3 +1,12 @@
+@media(min-width:767px){
+  .team{
+    .person{ 
+       .inner{
+        height: 620px;
+       }
+    }
+  }  
+}
 @media(max-width:767px){
   nav {
     background: white;
@@ -9,6 +18,13 @@
         width: 65px;
         height: 42px;
         background-position: -10px -45px; 
+      }
+    }
+    .team{
+      .person{ 
+         .inner{
+          height: 700px;
+         }
       }
     }
   }
@@ -73,6 +89,13 @@
 }
 @media(max-width:768px){
   .about,.tecnology,.team{text-align: center;}
+  .team{
+      .person{ 
+         .inner{
+          /*height: 700px;*/
+         }
+      }
+    }
 }
 
 @media(min-width:769px)and(max-width:980px){
@@ -91,6 +114,13 @@
         margin-top: 50px;
       }
     }
+    .team{
+    .person{ 
+       .inner{
+        height: 650px;
+       }
+    }
+  }  
   }
 }
 
@@ -143,6 +173,9 @@
       margin-bottom: 30px;
       margin-top: 50px;
     }
+  }
+  .cd-headline.slide .cd-words-wrapper{
+    text-align: center;
   }
 }
 
