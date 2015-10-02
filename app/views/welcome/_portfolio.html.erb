@@ -1,0 +1,57 @@
+<section class="portfolio" id="scroll_to_portfolio">
+  <div class="container">
+    <h2>PORTFOLIO</h2>
+    <h3>Algunos de nuestros últimos proyectos</h3>
+    <div id="carousel-portfolio" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-portfolio" data-slide-to="1"></li>
+        <li data-target="#carousel-portfolio" data-slide-to="2"></li>
+        <li data-target="#carousel-portfolio" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag("eatbooking.png") %>
+          <div class="carousel-caption">
+            Tecnologia: Rails4, PostgreSQL, Bootstrap, Sass, Redsys, Responsive
+            <p><%= link_to 'eatbooking.com', 'http://www.eatbooking.com', target: :blank %></p>         
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("trickking.png") %>
+          <div class="carousel-caption">
+            Tecnologia: Rails4, PostgreSQL, Bootstrap, Sass, Stripe, Responsive
+            <p><%= link_to 'oasiscatamaran.com', 'www.oasiscatamaran.com', target: :blank %></p>            
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("catamaran-oasis.png") %>
+          <div class="carousel-caption">
+            Tecnologia: Rails4, PostgreSQL, Bootstrap, Sass, Responsive
+            <p><%= link_to 'trickking.com', 'trickking.herokuapp.com', target: :blank %></p>            
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag("cometeloscabos.png") %>
+          <div class="carousel-caption">
+            Tecnologia: CakePHP, MySQL, Bootstrap, Responsive
+            <p><%= link_to 'cometeloscabos.com', 'www.cometeloscabos.com', target: :blank %></p>         
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-portfolio" role="button" data-slide="prev">
+        <span class="fa fa-angle-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-portfolio" role="button" data-slide="next">
+        <span class="fa fa-angle-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>

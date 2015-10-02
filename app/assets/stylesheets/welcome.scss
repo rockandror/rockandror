@@ -5,7 +5,8 @@
 // 03. Tecnology
 // 04. Contact now
 // 05. Team
-// 06. Contact
+// 06. Carousel
+// 07. Contact
 
 // 01. Intro
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -272,7 +273,38 @@
     }
   }
 }
-// 06. Contact
+// 06. Portofilio
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+.portfolio{
+  padding-top: 7em;
+  padding-bottom: 7em;
+  h2{
+    color: $brand-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  #carousel-portfolio{
+    .carousel-inner{padding-bottom: 130px;}
+    .carousel-caption{
+      color:grey;
+      text-shadow:none;
+      bottom: -90px;
+    }
+    .carousel-indicators{
+      bottom:0px;
+      li{
+        border-color:$brand-primary;
+        &.active{background: $brand-primary;}
+      }
+    }
+    .carousel-control{
+      background: none;
+      color:$brand-primary;
+      span.fa{position: absolute;bottom: 3%;}
+    }
+  }
+}
+// 07. Contact
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .contact{
   padding-top: 2em;
