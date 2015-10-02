@@ -165,13 +165,15 @@ nav{
      }
   }
   #navbar{
-    margin-top: 70px;
     font-weight: 300;
     font-size: 1.2em;
     text-transform: uppercase;
-    li{width: 140px;}
+    li{}
     a{
       color:$brand-primary;
+      padding-top:25px;
+      padding-bottom: 0px;
+      line-height: 40px;
       &:hover,&:focus{
         background: none;
         color:#68527f;
@@ -199,6 +201,10 @@ nav{
   height: 102px;
   display: block;
   margin-top: -50px;
+  img{
+    width: 60px;
+    margin-top: 40px;
+  }
 }
 // 03. Footer
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -209,8 +215,9 @@ nav{
 // 05. Alerts
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .alert{
-  margin-top:30px;
+  margin-top:80px;
   margin-bottom:0px;
+  h4{margin-bottom: 0px;}
 }
 .alert-danger{color:#fff;}
 
