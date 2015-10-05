@@ -31,11 +31,6 @@
   #home{
     .intro{
       height: 600px;
-      h1{
-        font-size:4.5em;
-        letter-spacing:-7px; 
-        padding-top: 70px;
-      }
       h2{font-size: 2em;}
       .btn-primary{margin-top:20px;}
     }
@@ -49,8 +44,7 @@
         font-size: 3em;
         margin-bottom: 30px;
       }
-      h3{text-align: center;}
-      .circle{
+       .circle{
         position: relative;
         margin:0px auto;
         width:23em;
@@ -76,8 +70,7 @@
       }
     }  
     .contactnow{
-      background: none;
-      h2{font-size:3em;}
+       h2{font-size:3em;}
     }
     .contact{
       .btn-primary{
@@ -89,17 +82,18 @@
 }
 @media(max-width:768px){
   .about,.tecnology,.team{text-align: center;}
-  .team{
-      .person{ 
-         .inner{
-          /*height: 700px;*/
-         }
-      }
-    }
+  .about .text {
+    text-align: left;
+    font-size: 12px;
+  }
+  .intro h1{
+    padding-top: 120px;
+  }
 }
 
 @media(min-width:769px)and(max-width:980px){
-  #home{  
+  .nav > li > a{padding: 6px;border: 1px solid red;}
+  #home{
     .intro{
       h1{
         font-size:3em;
@@ -115,12 +109,10 @@
       }
     }
     .team{
-    .person{ 
-       .inner{
-        height: 650px;
-       }
-    }
-  }  
+      .person{ 
+        .inner{height: 650px;}
+      }
+    }  
   }
 }
 
@@ -168,6 +160,20 @@
   }
 }
 @media (max-width: 480px) {
+  .home{
+    .intro{
+      h1{
+        font-size: 3.7em;
+        letter-spacing: 0px;
+        padding-top: 90px;
+      }
+    }
+  }
+  .about{
+    .text{text-align: left;font-size: 12px;}
+    h2{text-align: left;}
+    h3{text-align: left;}
+  }
   .tecnology{
     .logo{
       margin-bottom: 30px;
@@ -177,12 +183,23 @@
   .cd-headline.slide .cd-words-wrapper{
     text-align: center;
   }
-}
-
-@media(max-width:320px){
-  .about{
-    .circle{
-      display: none;
-    }
+  .contact{
+    h3{text-align: center;display: block;}
   }
 }
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .nav > li > a{
+    padding: 9px;
+  }
+  #home .team .person .inner{
+    height: 670px;
+  }
+}
+
+ 
+ 
