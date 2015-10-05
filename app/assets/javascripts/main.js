@@ -80,7 +80,7 @@ function headroom(){
   });
   headroom.init();
 }
-
+ 
 //on scroll, show section 
 function scrollPage(){
   $('section').addClass("hidden-section").viewportChecker({
@@ -88,6 +88,15 @@ function scrollPage(){
     offset: 200    
   });
 }
+//Btn up
+var $win = $(window);
+$win.scroll(function () {
+  if ($win.scrollTop() == 0)
+    $('#btn-up').hide();
+  else if ($win.height() + $win.scrollTop() == $(document).height()) { 
+    $('#btn-up').show();
+  }
+});
 
 jQuery(function() { 
   $('.carousel').carousel();
