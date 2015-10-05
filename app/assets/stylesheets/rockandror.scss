@@ -168,15 +168,14 @@ nav{
     font-weight: 300;
     font-size: 1.2em;
     text-transform: uppercase;
-    li{}
-    a{
+     a{
       color:$brand-primary;
       padding-top:25px;
       padding-bottom: 0px;
       line-height: 40px;
       &:hover,&:focus{
         background: none;
-        color:#68527f;
+        font-weight: 700; 
       }
       &.active{
         font-weight: 700;
