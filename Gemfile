@@ -17,7 +17,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'bootstrap_form'
 gem 'animate.css-rails', '~> 3.1.0'
 gem 'nprogress-rails'
-
+gem "non-stupid-digest-assets"
 
 gem 'premailer-rails'
 gem 'email_validator'
