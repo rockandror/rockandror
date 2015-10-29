@@ -1,0 +1,40 @@
+%section#scroll_to_portfolio.portfolio
+  .container
+    %h2 PORTFOLIO
+    %h3 Algunos de nuestros últimos proyectos
+    #carousel-portfolio.carousel.slide{"data-ride" => "carousel"}
+      / Indicators
+      %ol.carousel-indicators
+        %li.active{"data-slide-to" => "0", "data-target" => "#carousel-portfolio"}
+        %li{"data-slide-to" => "1", "data-target" => "#carousel-portfolio"}
+        %li{"data-slide-to" => "2", "data-target" => "#carousel-portfolio"}
+        %li{"data-slide-to" => "3", "data-target" => "#carousel-portfolio"}
+      / Wrapper for slides
+      .carousel-inner{:role => "listbox"}
+        .item.active
+          = image_tag("eatbooking.png")
+          .carousel-caption
+            Tecnologia: Rails4, PostgreSQL, Bootstrap, Sass, Redsys, Responsive
+            %p= link_to 'eatbooking.com', 'http://www.eatbooking.com', target: :blank
+        .item
+          = image_tag("trickking.png")
+          .carousel-caption
+            Tecnologia: Rails4, PostgreSQL, Bootstrap, Sass, Stripe, Responsive
+            %p= link_to 'trickking.com', 'http://trickking.herokuapp.com', target: :blank
+        .item
+          = image_tag("catamaran-oasis.png")
+          .carousel-caption
+            Tecnologia: Rails4, PostgreSQL, Bootstrap, Sass, Responsive
+            %p= link_to 'oasiscatamaran.com', 'http://www.oasiscatamaran.com', target: :blank
+        .item
+          = image_tag("cometeloscabos.png")
+          .carousel-caption
+            Tecnologia: CakePHP, MySQL, Bootstrap, Responsive
+            %p= link_to 'cometeloscabos.com', 'http://www.cometeloscabos.com', target: :blank
+      / Controls
+      %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-portfolio", :role => "button"}
+        %span.fa.fa-angle-left{"aria-hidden" => "true"}
+        %span.sr-only Previous
+      %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-portfolio", :role => "button"}
+        %span.fa.fa-angle-right{"aria-hidden" => "true"}
+        %span.sr-only Next

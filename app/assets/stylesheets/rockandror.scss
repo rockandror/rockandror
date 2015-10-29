@@ -94,7 +94,7 @@ a,:after,.btn{
   &:hover,&:focus{
     text-decoration: none;
     outline: none;
-    color: $link-color;
+    color: $secondary-color;
   }
 }
 
@@ -104,11 +104,11 @@ a,:after,.btn{
   font-weight: 700;
   color:#fff;
   &:hover{
-    background: darken($link-color,3%);
+    background: darken($secondary-color,3%);
     color: #fff;
   }
   &:focus{
-    background: $brand-primary;
+    background: $primary-color;
   }
   &:active{
     background: red;
@@ -123,7 +123,7 @@ a,:after,.btn{
   right: 30px;
   z-index: 9;
   border-radius: 50%;
-  background: $brand-primary;
+  background: $primary-color;
   opacity: .3;
   &:hover{
     opacity: 1;
@@ -138,25 +138,25 @@ a,:after,.btn{
 
 //Gradient background linear
 .gradient{
-  background: $brand-primary; /* Old browsers */
-  background: -moz-linear-gradient(top,  $brand-primary 0%, lighten($brand-primary,10%) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$brand-primary), color-stop(100%,lighten($brand-primary,10%))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  $brand-primary 0%,lighten($brand-primary,10%) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  $brand-primary 0%,lighten($brand-primary,10%) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  $brand-primary 0%,lighten($brand-primary,10%) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  $brand-primary 0%,lighten($brand-primary,10%) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-primary', endColorstr='lighten($brand-primary,10%)',GradientType=0 ); /* IE6-9 */
+  background: $primary-color; /* Old browsers */
+  background: -moz-linear-gradient(top,  $primary-color 0%, lighten($primary-color,10%) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$primary-color), color-stop(100%,lighten($primary-color,10%))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $primary-color 0%,lighten($primary-color,10%) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $primary-color 0%,lighten($primary-color,10%) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $primary-color 0%,lighten($primary-color,10%) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $primary-color 0%,lighten($primary-color,10%) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='lighten($primary-color,10%)',GradientType=0 ); /* IE6-9 */
 }
 //Gradient backgorund radial
 .gradient-radial{
-  background: lighten($brand-primary,10%); /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  lighten($brand-primary,10%) 0%, $brand-primary 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,lighten($brand-primary,10%)), color-stop(100%,$brand-primary)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  lighten($brand-primary,10%) 0%,$brand-primary 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($brand-primary,10%)', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: lighten($primary-color,10%); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%, $primary-color 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,lighten($primary-color,10%)), color-stop(100%,$primary-color)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%,$primary-color 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%,$primary-color 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%,$primary-color 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  lighten($primary-color,10%) 0%,$primary-color 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($primary-color,10%)', endColorstr='$primary-color',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 // 02. Navbar/Header
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -170,8 +170,8 @@ nav{
     margin:0;
     float:none;
   }
-  .fa{color: $brand-primary;
-    &:hover{color:$link-color;}
+  .fa{color: $primary-color;
+    &:hover{color:$secondary-color;}
   }
   .navbar-brand-primary{
     text-transform: uppercase;
@@ -190,7 +190,7 @@ nav{
     font-size: 1.2em;
     text-transform: uppercase;
      a{
-      color:$brand-primary;
+      color:$primary-color;
       padding-top:25px;
       padding-bottom: 0px;
       line-height: 40px;

@@ -13,11 +13,9 @@ gem 'turbolinks'
 gem 'jquery-turbolinks', '~> 0.2.1'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
-
+gem 'normalize-rails'
 gem 'foundation-rails'
-gem 'haml'
-gem 'bootstrap-sass', '~> 3.3.4'
-gem 'bootstrap_form'
+gem "haml-rails", "~> 0.9"
 gem 'animate.css-rails', '~> 3.1.0'
 gem 'nprogress-rails'
 gem "non-stupid-digest-assets"

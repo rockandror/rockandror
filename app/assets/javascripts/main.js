@@ -5,7 +5,7 @@ $(window).load(function() {
   
 $(function () {
   //headroom
-  headroom();
+  //headroom();
   checkHeight();
   //Auto close navbar on click outside in XS mode
   $('body').bind('click', function(e) {
@@ -82,12 +82,15 @@ function headroom(){
 }
  
 //on scroll, show section 
+/*
 function scrollPage(){
   $('section').addClass("hidden-section").viewportChecker({
     classToAdd: 'visible-section animated fadeIn',// Class to add to the elements when they are visible
     offset: 200    
   });
 }
+*/
+
 //Btn up
 var $win = $(window);
 $win.scroll(function () {

@@ -1,0 +1,23 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui", :name => "viewport"}/
+    %meta{:content => "Desarrollo web en Palma de Mallorca. Expertos desarrolladores y diseñadores web. Desarrollo web agil a medida para toda España.", :name => "description"}/
+    %meta{:content => "rockandror, desarrollo web ágil a medida, desarrollo Ruby on Rails, desarrollo Ror, desarrollo web", :name => "keywords"}/
+    %meta{:content => "rockandror.com", :name => "author"}/
+    %meta{:content => "mXNBRXCqbOYP9B5OIPiHpEDeM8tHM4jEWIjsqsqqlh0", :name => "google-site-verification"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700", :rel => "stylesheet", :type => "text/css"}/
+    = favicon_link_tag 'favicon.ico'
+    %title= content_for?(:title) ? yield(:title) : "foundation-rails"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "vendor/modernizr"
+    = javascript_include_tag "application", 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    = render "shared/navbar"
+    = render "shared/notice"
+    = yield

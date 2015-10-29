@@ -8,30 +8,35 @@
 // 06. Carousel
 // 07. Contact
 
+ 
+
 // 01. Intro
 // - - - - - - - - - - - - - - - - - - - - - - - - -
  .intro{
-    height:800px;
+    height:650px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    //background-attachment: fixed;
+    position: relative;
+    z-index: 9;
     background-size: cover;
-    background-image: image-url("2.jpg");
+    background-image: image-url("intro-bg.png");
     margin-top: -20px;
    
   h1{
     font-size: 5em;
     letter-spacing: -4px;
-    font-weight: 700;
-    color:$brand-primary;
+    font-weight: 300;
+    color:white;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 230px;
+    margin-top:3em;
+    margin-bottom: 0px;
    }
   
   lead{
     text-align: center;
-    color:$brand-primary;
+    color:$primary-color;
     font-size: 1.8em;
     display: block;
     font-weight: 300;
@@ -43,36 +48,20 @@
     margin: 0px auto;
     margin-top: 130px;
     position: relative;
-    &:hover:after{
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-      border-top: 30px solid darken($brand-primary,3%);   
-      }
-     &:after{
-      content: '';
-      position: absolute;
-      left: 38%;
-      top:60px;
-      width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-      border-top: 30px solid $brand-primary;
-      clear: both;
-    }
   }
   .cd-headline{margin-top: 60px;}
 }
 // 02. About
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .about{
+  margin-top: -40px;
+  border: 1px solid red;
   position: relative;
   color:white;
   color: white;
-  background: -webkit-repeating-linear-gradient(45deg, $brand-primary, $brand-primary 10px, darken($brand-primary , 3%) 10px, darken($brand-primary , 3%) 65px);
-  background: repeating-linear-gradient(45deg, $brand-primary, $brand-primary 10px, darken($brand-primary , 3%) 10px, darken($brand-primary , 3%) 65px);
+  background: -webkit-repeating-linear-gradient(45deg, $primary-color, $primary-color 10px, darken($primary-color , 3%) 10px, darken($primary-color , 3%) 65px);
+  background: repeating-linear-gradient(45deg, $primary-color, $primary-color 10px, darken($primary-color , 3%) 10px, darken($primary-color , 3%) 65px);
   h2{
-    /*margin-left: 40px;*/
     color:white;
     font-size: 48px;
     font-weight: 200;
@@ -114,7 +103,7 @@
       bottom: 0px;
       right: 0px;
       margin: 0px auto;
-      border: 1px $brand-primary dashed;
+      border: 1px $primary-color dashed;
       z-index: -2;
     }
     .guz,.seb,.sen,.ale{
@@ -139,10 +128,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: image-url("tecnology.png");
-  border-bottom: 30px solid $brand-primary;  
+  border-bottom: 30px solid $primary-color;  
   img{margin-top: 40px;}
   h2{
-    color: $brand-primary;
+    color: $primary-color;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -249,9 +238,9 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .team{
   background: white;
-  border-bottom:30px solid $brand-primary;
+  border-bottom:30px solid $primary-color;
   h2{
-    color: $brand-primary;
+    color: $primary-color;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -282,7 +271,7 @@
   padding-top: 7em;
   padding-bottom: 7em;
   h2{
-    color: $brand-primary;
+    color: $primary-color;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -296,13 +285,13 @@
     .carousel-indicators{
       bottom:0px;
       li{
-        border-color:$brand-primary;
-        &.active{background: $brand-primary;}
+        border-color:$primary-color;
+        &.active{background: $primary-color;}
       }
     }
     .carousel-control{
       background: none;
-      color:$brand-primary;
+      color:$primary-color;
       span.fa{position: absolute;bottom: 3%;}
     }
   }
@@ -316,11 +305,11 @@
   textarea{height:200px;}
   h3{
     font-weight: 700;
-    color:$brand-primary;
+    color:$primary-color;
     display: inline-block;
     text-transform: uppercase;
     font-size: 20px;
-    border-bottom: 2px solid $brand-primary;
+    border-bottom: 2px solid $primary-color;
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -331,10 +320,10 @@
     height:250px;
     margin: 0px auto;
     margin-top: 20px;
-    border:3px solid $brand-primary;
+    border:3px solid $primary-color;
     text-transform: uppercase;
     strong{
-      color:$brand-primary;
+      color:$primary-color;
       display: inline-block;
       font-size: 20px;
     }
