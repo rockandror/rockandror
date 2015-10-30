@@ -4,6 +4,7 @@
 //= require headroom
 //= require viewportchecker
 //= require foundation
+//= require slidetext
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
