@@ -24,7 +24,7 @@ $(function () {
   });
 
   //tooltips 
-  $('[data-toggle="tooltip"]').tooltip();
+  //$('[data-toggle="tooltip"]').tooltip();
 
   //scroll to section on click button menu  
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
@@ -62,7 +62,7 @@ function scrollalert(){
 function checkHeight(){
 if (window.innerHeight > window.innerWidth) { 
   } else {
-    scrollPage();
+    //scrollPage();
   }
 }
 
@@ -92,6 +92,7 @@ function scrollPage(){
 */
 
 //Btn up
+/*
 var $win = $(window);
 $win.scroll(function () {
   if ($win.scrollTop() == 0)
@@ -100,7 +101,8 @@ $win.scroll(function () {
     $('#btn-up').show();
   }
 });
+*/
 
 jQuery(function() { 
-  $('.carousel').carousel();
+//  $('.carousel').carousel();
 });

@@ -5,4 +5,12 @@
 //= require viewportchecker
 //= require foundation
 //= require_tree .
+
 $(function(){ $(document).foundation(); });
+
+// $(window).scroll(function(){
+//   var wScroll = $(this).scrollTop();
+//   $('.faces').css({
+//       'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+//   });
+// });
