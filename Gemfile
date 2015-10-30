@@ -22,6 +22,11 @@ gem "non-stupid-digest-assets"
 gem 'premailer-rails'
 gem 'email_validator'
 
+# Monitoring
+gem 'newrelic_rpm'
+# Error monitoring
+gem 'rollbar', '~> 2.5.1'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
