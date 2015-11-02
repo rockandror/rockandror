@@ -1,0 +1,16 @@
+@-moz-document url-prefix() {
+  .home{margin-top: -100px;}
+  .top-bar{
+    .name{
+      div{
+        margin-top: -35px;
+      }
+    }
+  }
+  .intro-bottom{
+    .intro-bottom-overlay {
+      mix-blend-mode:normal;
+      opacity: .8;
+    }
+  }
+}

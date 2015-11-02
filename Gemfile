@@ -16,7 +16,7 @@ gem 'font-awesome-rails'
 gem 'normalize-rails'
 gem 'foundation-rails'
 gem "haml-rails", "~> 0.9"
-gem 'animate.css-rails', '~> 3.1.0'
+gem 'slick_rails'
 gem 'nprogress-rails'
 gem "non-stupid-digest-assets"
 

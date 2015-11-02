@@ -4,6 +4,29 @@ $(window).load(function() {
 });
   
 $(function () {
+  $(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
+    $('.moon').css({
+        'transform' : 'translate(0px, '+ wScroll * 2 +'%)'
+    });
+    $('.faces').css({
+        'transform' : 'translate(0px,  '+ '-' + wScroll / 2 +'%)'
+    });
+    $('.title').css({
+        'transform' : 'translate(0px,  '+ wScroll / 2 +'%)'
+    });
+  });
+
+
+ $('.gallery').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    cssEase: 'linear'
+  });
+
   //headroom
   //headroom();
   checkHeight();
