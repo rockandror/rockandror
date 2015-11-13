@@ -1,0 +1,27 @@
+.portfolio{
+  @extend .padding-all;
+  background: #EAEAEA;
+  h2{
+    @include text($primary-color,uppercase,null);
+  }
+  #carousel-portfolio{
+    .carousel-inner{padding-bottom: 130px;}
+    .carousel-caption{
+      color:grey;
+      text-shadow:none;
+      bottom: -90px;
+    }
+    .carousel-indicators{
+      bottom:0px;
+      li{
+        border-color:$primary-color;
+        &.active{background: $primary-color;}
+      }
+    }
+    .carousel-control{
+      background: none;
+      color:$primary-color;
+      span.fa{position: absolute;bottom: 3%;}
+    }
+  }
+}

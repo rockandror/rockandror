@@ -1,0 +1,7 @@
+.about{
+  @extend .padding-all;
+  @extend .gradient-clear;
+  h3{ @include text($secondary-color,uppercase, null); }
+  img{margin-bottom: 2em;}
+  a{margin-top:3em;}
+}

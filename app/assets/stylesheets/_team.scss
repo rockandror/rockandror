@@ -1,0 +1,32 @@
+.team{
+  @extend .padding-all;
+  background: $primary-color;
+  h2{@include text(white,uppercase,null);}
+  .columns{
+    .section{
+      @include fullheight(null, center, null);
+      .columns{
+        display: flex;
+        flex-direction: column;
+      }
+      div{
+        padding: 5px;
+        .text{
+          background: white;
+        }
+        .senen{
+          background:$color-senen;
+        }
+        .carlos{
+          background:$color-carlos;
+        }
+        .sebastia{
+          background:$color-sebastia;
+        }
+        .alle{
+          background: $color-alle;
+        }
+      }
+    }        
+  }
+}
