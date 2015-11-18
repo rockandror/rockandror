@@ -1,30 +1,35 @@
-%section#scroll_to_contact.contact
-  .container
-    .col-md-6.col-xs-12
-      %h3.hidden-md.hidden-lg Contactos
-      = bootstrap_form_for @contact do |f|
-        = f.text_field :name, placeholder: 'Nombre o Empresa', label: "Nombre"
-        = f.text_field :email, placeholder: 'Email', label: "Email"
-        = f.text_area :message, placeholder: 'Mensaje', label: "Mensaje"
-        = f.submit "Enviar", class: "btn btn-lg btn-primary"
-    .col-md-6.col-xs-12.text-center
-      %h3.hidden-xs Contact
-      %br/
-      = mail_to "info@rockandror.com"
-      %br/
-      %span
-        Tel: +34 605 526 618
-        %br/
-        Palma de Mallorca, España
-        %br/
-        %br/
-        = link_to "", "https://www.facebook.com/RockRor-916000665159036/timeline/?ref=tn_tnmn", class: "fa fa-facebook fa-2x", target: :blank
-        = link_to "", "https://twitter.com/rocknroragile", class: "fa fa-twitter fa-2x", target: :blank
-      .circle
-        .logo
-        %strong Rock&amp;Ror
-        %br/
-        %span desarrollo web agil a medida
-        %span ©Copyright 2015
-  %a#btn-up.btn-up{:href => "#scroll_to_intro"}
-    %i.fa.fa-arrow-up
+%section.contact
+  .row
+    .small-12.columns
+      .row.small-6.columns
+        %h3 ROCK YOUR PRODUCT AND TRUST IN ROR
+        = form_for @contact do |f|
+          = f.text_field :name, placeholder: 'Nombre o Empresa', label: "Nombre"
+          = f.text_field :email, placeholder: 'Email', label: "Email"
+          = f.text_area :message, placeholder: 'Mensaje', label: "Mensaje"
+          = f.submit "Contacta ahora", class: "button"
+      .small-6.columns.info
+        %h3 Contact 
+        %hr
+        %span
+          Tel: +34 605 526 618
+          %br/
+          Palma de Mallorca, España
+          %br
+          = mail_to "info@rockandror.com"
+        %hr
+          © copyright 2015 / 
+          = link_to 'Privacy'
+          /
+          = link_to 'Condition'
+          %br
+          Iconos by 
+          =link_to 'Freepik', 'www.flaticon.com', target: :blank
+        %hr
+        %div.logo
+          %div.name
+            =image_tag "logo.svg"
+            %div
+              %a{:href => "#"}Rock&Ror
+              %span delimit  
+            %span.slogan desarrollo web agil a medida

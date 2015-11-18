@@ -10,7 +10,6 @@
 
 // 00. Global Variables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-
 $sprite:image-url('sprite.svg');
 $color-alle: #8dbc43;
 $color-senen: #35b4b7;
@@ -33,11 +32,28 @@ $color-carlos: #e22522;
   .padding-all{
      padding:5em 0px 5em 0px;
   }
-  // .test{ 
-  //   display: flex;
-  //   justify-content: center; 
-  //   align-items: center;
-  // }
+  .logo{
+    .name{
+      padding-top: 14px;
+      div{
+        text-transform: uppercase;
+        line-height: 11px;
+        display:block;
+        font-size: 1.3em;
+        float: right;
+        margin-top:15px;
+        margin-left: 10px; 
+        span{
+          line-height:0;
+          font-size: 10px;
+          letter-spacing: 11px;
+          color:#a8568e;
+          display: block;
+          margin-top:12px; 
+        }
+      }
+    }
+  }
   //Push height div
   @mixin fullheight($display, $justify, $align) {
     display: $display;
@@ -207,6 +223,15 @@ a,:after,.btn{
   background: -ms-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%,$primary-color 100%); /* IE10+ */
   background: radial-gradient(ellipse at center,  lighten($primary-color,10%) 0%,$primary-color 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($primary-color,10%)', endColorstr='$primary-color',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+//Gradient backgorund radial violeta
+.gradient-radial-vioeleta{
+  background: rgb(68,53,86);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM0NDM1NTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjIxYTJiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(68,53,86,1) 0%, rgba(34,26,43,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(68,53,86,1) 0%,rgba(34,26,43,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(68,53,86,1) 0%,rgba(34,26,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#443556', endColorstr='#221a2b',GradientType=1 );
 }
 // 02. Navbar/Header
 // - - - - - - - - - - - - - - - - - - - - - - - - -

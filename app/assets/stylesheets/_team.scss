@@ -1,31 +1,74 @@
 .team{
   @extend .padding-all;
-  background: $primary-color;
-  h2{@include text(white,uppercase,null);}
-  .columns{
-    .section{
-      @include fullheight(null, center, null);
-      .columns{
-        display: flex;
-        flex-direction: column;
+  @extend .gradient-radial-vioeleta;
+  border-bottom:3px solid $secondary-color;
+  h2{
+    @include text(white,uppercase,null);
+    display: inline-block;
+  }
+  .lead{
+    color: white;
+    margin-left: 11em;
+    display: block;
+    margin-top: -44px;
+  }
+  .section{
+    @include fullheight(null, center, null);
+    margin-top: 2em;
+    .columns{
+      display: flex;
+      flex-direction: column;
+      strong,i{
+        text-align: center;
+        display: block;
+        color:white;
+        margin-top: .5em;
       }
-      div{
-        padding: 5px;
-        .text{
-          background: white;
+      i{padding: 1em;}
+      .circle{
+        background:white;
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        margin: 0px auto;
+      }
+    }
+    div{
+      padding: 5px;
+      padding-bottom: 2em;
+      padding-top: 2em;
+      .text{
+        background: white;
+        font-size: 1em;
+        padding: 1em;
+        line-height: 1.4em;
+        text-align: justify;
+        .social{
+          text-align: center;
+          a{
+            padding: 0em 1em 0em 1em;
+          }
         }
-        .senen{
-          background:$color-senen;
-        }
-        .carlos{
-          background:$color-carlos;
-        }
-        .sebastia{
-          background:$color-sebastia;
-        }
-        .alle{
-          background: $color-alle;
-        }
+      }
+      img{
+        margin-top: -30px;
+      }
+      .senen{
+        background:$color-senen;
+        .circle{border:6px solid #46A6B7;}
+      }
+      .carlos{
+        background:$color-carlos;
+        .circle{border:6px solid #C40000;}
+      }
+      .sebastia{
+        background:$color-sebastia;
+        .circle{border:6px solid #FFB500;}
+      }
+      .alle{
+        background: $color-alle;
+        .circle{border:6px solid #C0CD91;}
       }
     }        
   }

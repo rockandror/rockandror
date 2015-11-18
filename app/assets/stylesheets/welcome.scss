@@ -1,6 +1,6 @@
 // Table of Contents
 .home{
-  margin-top: -80px;
+   margin-top: -80px;
 }
 // 01. Intro
 @import 'intro' ;
@@ -52,6 +52,11 @@
 // 06. Portofilio
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 @import 'portfolio' ;
+
+// 0x. Followus
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'followus' ;
+
 // 07. Contact
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 @import 'contact' ;
