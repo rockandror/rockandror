@@ -1,4 +1,5 @@
 .services{ 
+  @extend .padding-all;
   h2,h3{@include text($primary-color,uppercase,null);}
   .cont{
     &:hover{

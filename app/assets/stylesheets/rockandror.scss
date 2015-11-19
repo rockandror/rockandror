@@ -10,6 +10,19 @@
 
 // 00. Global Variables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+#scroll_to_intro,
+#scroll_to_about,
+#scroll_to_tecnology,
+#scroll_to_howworks,
+#scroll_to_services,
+#scroll_to_portfolio,
+#scroll_to_team,
+#scroll_to_followus,
+#scroll_to_contact
+{
+  //border:1px solid red;
+  opacity: 0;
+}
 $sprite:image-url('sprite.svg');
 $color-alle: #8dbc43;
 $color-senen: #35b4b7;
@@ -30,7 +43,7 @@ $color-carlos: #e22522;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 );
   }
   .padding-all{
-     padding:5em 0px 5em 0px;
+     padding:11em 0px 5em 0px;
   }
   .logo{
     .name{
@@ -78,6 +91,21 @@ $color-carlos: #e22522;
     display: $display;
     text-align:$align; 
   }
+
+.addopacity {
+  animation: opacity 2s;
+  -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 // 01. Global styles
 // - - - - - - - - - - - - - - - - - - - - - - - - -

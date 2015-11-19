@@ -12,19 +12,18 @@
     display: block;
     margin-top: -44px;
   }
+  .eqWrap {
+    display: flex;
+  }
   .section{
-    @include fullheight(null, center, null);
     margin-top: 2em;
-    .columns{
-      display: flex;
-      flex-direction: column;
-      strong,i{
-        text-align: center;
-        display: block;
-        color:white;
-        margin-top: .5em;
-      }
-      i{padding: 1em;}
+    .eq {
+      padding: 10px;
+      background:white;
+      padding: 0px;
+      margin: 1em;
+      position: relative;
+      padding-bottom: 2em;
       .circle{
         background:white;
         border-radius: 50%;
@@ -32,44 +31,48 @@
         height: 160px;
         overflow: hidden;
         margin: 0px auto;
+        img{margin-top: -10px;}
       }
-    }
-    div{
-      padding: 5px;
-      padding-bottom: 2em;
-      padding-top: 2em;
+      strong,i{
+        text-align: center;
+        display: block;
+        color:white;
+        margin-top: .5em;
+      }
       .text{
-        background: white;
-        font-size: 1em;
-        padding: 1em;
-        line-height: 1.4em;
         text-align: justify;
-        .social{
-          text-align: center;
-          a{
-            padding: 0em 1em 0em 1em;
-          }
+      }
+      i{padding: 1em;}
+      .social{
+        position: absolute;
+        bottom: 2em;
+        left: 0;
+        right: 0;
+        text-align: center;
+        a{
+          margin: 0px 1em 0px 1em;
         }
       }
-      img{
-        margin-top: -30px;
-      }
-      .senen{
-        background:$color-senen;
-        .circle{border:6px solid #46A6B7;}
-      }
-      .carlos{
-        background:$color-carlos;
-        .circle{border:6px solid #C40000;}
-      }
-      .sebastia{
-        background:$color-sebastia;
-        .circle{border:6px solid #FFB500;}
-      }
-      .alle{
-        background: $color-alle;
-        .circle{border:6px solid #C0CD91;}
-      }
-    }        
-  }
+    }
+    .senen,.carlos,.sebastia,.alle{
+      padding-top: 3em;
+      padding-bottom: 3em;
+    }
+    .senen{
+      background:$color-senen;
+      .circle{border:6px solid #46A6B7;}
+    }
+    .carlos{
+      background:$color-carlos;
+      .circle{border:6px solid #C40000;}
+    }
+    .sebastia{
+      background:$color-sebastia;
+      .circle{border:6px solid #FFB500;}
+    }
+    .alle{
+      background: $color-alle;
+      .circle{border:6px solid #C0CD91;}
+    }
+  }          
 }
