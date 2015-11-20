@@ -10,7 +10,7 @@
 
 // 00. Global Variables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-#scroll_to_intro,
+
 #scroll_to_about,
 #scroll_to_tecnology,
 #scroll_to_howworks,
@@ -44,6 +44,13 @@ $color-carlos: #e22522;
   }
   .padding-all{
      padding:11em 0px 5em 0px;
+  }
+  .centerheight{
+    top: 30%;
+    position: absolute;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
   }
   .logo{
     .name{

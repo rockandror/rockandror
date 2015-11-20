@@ -6,5 +6,4 @@ function preload(){
   window.setTimeout(function(){
     $(".loading").fadeOut();
   }, 1000);
-  scrollalert();
 }
