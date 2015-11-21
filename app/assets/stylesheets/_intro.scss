@@ -4,8 +4,17 @@
     //background-image: image-url("intro-bg.png");
     //filter: blur(4px);  
     position: relative;
+    -webkit-animation: hue 30s linear infinite;
+    -moz-animation: hue 30s linear infinite;
+    animation: hue 30s linear infinite;
     width: 100%;
     z-index: 1;
+    @-webkit-keyframes hue { 
+     100% { -webkit-filter:hue-rotate(120deg); }  
+    }
+    @keyframes hue { 
+     100% { filter:hue-rotate(120deg); }  
+    }
   }
   .intro-opacity-animation,
   .intro-mask,
@@ -24,8 +33,11 @@
     background: black;  
     -webkit-mask-image: url("intro-mask.png");
     -webkit-mask-position: center bottom;
+    mask-image: url("intro-mask.png");
+    -moz-mask-position: center bottom;
     animation: AnimationName 5s ease-in;
     animation-fill-mode: forwards;
+    
     @keyframes AnimationName { 
       0%{  
         opacity: 1;
