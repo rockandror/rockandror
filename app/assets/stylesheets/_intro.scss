@@ -46,7 +46,7 @@
     position: absolute;
     width: 100%;
     z-index: 9;
-    top: 0;
+    //top: 0;
     mix-blend-mode: multiply;
   }
 
@@ -96,14 +96,13 @@
       position: relative;
       z-index: 3;
       text-align: center;
-      top: 45%;
+      top: 3em;
       margin:0px auto;
       .guz,.seb,.sen,.ale{
         width: 87px;
         height: 110px;
         background: $sprite;
         display: inline-block;
-        margin-right: 5px;
         margin-top: 30px;
         zoom: 1.8; 
       }
