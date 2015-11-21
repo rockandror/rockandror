@@ -1,6 +1,6 @@
 .team{
   @extend .padding-all;
-  @extend .gradient-radial-vioeleta;
+  @extend .gradient-radial-violeta;
   border-bottom:3px solid $secondary-color;
   h2{
     @include text(white,uppercase,null);

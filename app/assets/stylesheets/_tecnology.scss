@@ -1,6 +1,7 @@
 .tecnology{
   @extend .padding-all;
   position: relative;
+
   h2{
     @include text($primary-color,uppercase,null);
     text-align: right;
@@ -14,9 +15,11 @@
     font-weight: 200;
   }  
   img{margin-top: 40px;}
-
+  .cont{
+    margin-top: 10%;
+  }
   .logo{
-    width: 20%;
+     
     height: 102px;
     background: $sprite;
     display: block;

@@ -47,21 +47,6 @@ section, nav {
     transition: opacity .6s;
 }
  
-//Block landscape mode
-.no-landscape{
-  position:fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999999;
-  height: 100%;
-  overflow: hidden;
-  display: none;
-  &.gradient-radial{
-    display: none;
-  }
-}
 //hide show section on scroll
 .hidden-section{opacity:0;}
 .visible-section{opacity:1;}

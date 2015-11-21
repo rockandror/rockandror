@@ -32,24 +32,40 @@
   }
 
   .tecnology { 
-
     min-height: none;
     h2,p{text-align: center;}
-    .logo{
-       width: 30%;
-    }
+  }
+  .tecnology .logo span{
+    margin-left: 0.2em;
+    margin-top:18%;
   }
   .team .eqWrap{
     display: block;
+  }
+  .team .section .eq{
+     margin: 0px; 
+     margin-bottom:1em;
+     padding:30px;
+      background: none;
+  }
+  .team .section .eq .social{
+    position: relative;
+    bottom: 2em;
+    text-align: center;
+    background: white;
+    padding-bottom: 2em;
+  } 
+  .team .section .eq .text{
+    background: white;
   }
   .contact .info{
     padding: 0em;
   }
 } 
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
+ 
 // Medium screens
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {
+ } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
@@ -65,6 +81,9 @@
   }
   .home{
     margin-top: -80px;
+  }
+  .tecnology{
+    .logo{width: 20%;}
   }
 }
  /* min-width 1025px, large screens */
