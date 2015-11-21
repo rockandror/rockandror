@@ -1,13 +1,27 @@
-  .top-bar{
-  background: none;
+.top-bar{
+  &.expanded{
+    z-index: 100069;
+    text-align: center;
+    .right{
+      margin-top: 19%;
+      background: rgba(0,0,0,.8);
+      position: fixed;
+      bottom: 0;
+      top: 0px;
+      li{
+        margin-bottom: 2em;
+      }
+    }
+  }
   .name{
     padding-top: 14px;
+    img{float: left;}
     div{
       text-transform: uppercase;
       line-height: 11px;
       display:block;
       font-size: 1.3em;
-      float: right;
+      //float: right;
       margin-top:15px;
       margin-left: 10px; 
       span{
