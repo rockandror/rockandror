@@ -5,7 +5,7 @@ $(function () {
       $('.pageSection').each(function (index) {
         if (windowTop > ($(this).position().top - ($(window).height() / 1.2))){
             $('.pageSection:eq(' + index + ')').addClass('addopacity');
-            //console.log($('.pageSection:eq(' + index + ')').attr('id'));
+            console.log($('.pageSection:eq(' + index + ')').attr('id'));
           }
           if (windowTop >= 300) {
            $('.contain-to-grid').css( 'background', 'black' );        

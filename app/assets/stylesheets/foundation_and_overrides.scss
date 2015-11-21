@@ -1475,6 +1475,9 @@ $topbar-height: rem-calc(75);
 // $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
 // $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
 
+$topbar-breakpoint: (1025px) !default; // Change to 9999px for always mobile layout
+$topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
+
 // Top-bar input styles
 // $topbar-input-height: rem-calc(28);
 
