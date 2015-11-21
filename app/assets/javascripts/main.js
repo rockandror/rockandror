@@ -19,8 +19,10 @@ $(function () {
       }
     }
   });
+  //check if alert danger exist in home page and scroll to contact
 })
 
+ 
 
 //check if alert danger exist in home page and scroll to contact
 // function scrollalert(){

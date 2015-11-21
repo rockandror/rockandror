@@ -20,99 +20,10 @@
 #scroll_to_followus,
 #scroll_to_contact
 {
-  //border:1px solid red;
   opacity: 0;
 }
-$sprite:image-url('sprite.svg');
-$color-alle: #8dbc43;
-$color-senen: #35b4b7;
-$color-sebastia: #f5ad3e;  
-$color-carlos: #e22522;
-  // -- extend class 
-  .bg-primary-color{background: $primary-color;}
-  .bg-secondary-color{background: $secondary-color;}
-  .gradient-clear{
-    background: rgb(255,255,255);
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3MiUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjJmMmYyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(247,247,247,1) 50%, rgba(242,242,242,1) 72%, rgba(242,242,242,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(247,247,247,1)), color-stop(72%,rgba(242,242,242,1)), color-stop(100%,rgba(242,242,242,1)));
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 );
-  }
-  .padding-all{
-     padding:11em 0px 5em 0px;
-  }
-  .centerheight{
-    top: 30%;
-    position: absolute;
-    margin: 0px auto;
-    left: 0;
-    right: 0;
-  }
-  .logo{
-    .name{
-      padding-top: 14px;
-      div{
-        text-transform: uppercase;
-        line-height: 11px;
-        display:block;
-        font-size: 1.3em;
-        float: right;
-        margin-top:15px;
-        margin-left: 10px; 
-        span{
-          line-height:0;
-          font-size: 10px;
-          letter-spacing: 11px;
-          color:#a8568e;
-          display: block;
-          margin-top:12px; 
-        }
-      }
-    }
-  }
-  //Push height div
-  @mixin fullheight($display, $justify, $align) {
-    display: $display;
-    justify-content: $justify; 
-    align-items: $align;
-  }
-  //H1 h2 h3 h4 h5 
-  @mixin text($color, $transform, $size) {
-    color: $color; 
-    text-transform: $transform;
-    font-size: $size;
-  }
-  //Icons
-  @mixin icons($color, $size, $display, $align) {
-    color: $color; 
-    font-size: $size;
-    display: $display;
-    text-align:$align; 
-  }
-  //Img
-  @mixin position($display, $align) {
-    display: $display;
-    text-align:$align; 
-  }
-
-.addopacity {
-  animation: opacity 2s;
-  -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
-  animation-fill-mode: forwards;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+ 
+  
 
 // 01. Global styles
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -211,39 +122,7 @@ a,:after,.btn{
     margin-top: 8px;
   }
 }
-
-//Gradient backgruund linear
-.gradient{
-  background: $primary-color; /* Old browsers */
-  background: -moz-linear-gradient(top,  $primary-color 0%, lighten($primary-color,10%) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$primary-color), color-stop(100%,lighten($primary-color,10%))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  $primary-color 0%,lighten($primary-color,10%) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  $primary-color 0%,lighten($primary-color,10%) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  $primary-color 0%,lighten($primary-color,10%) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  $primary-color 0%,lighten($primary-color,10%) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='lighten($primary-color,10%)',GradientType=0 ); /* IE6-9 */
-}
-//Gradient backgruund radial
-.gradient-radial{
-  background: lighten($primary-color,10%); /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%, $primary-color 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,lighten($primary-color,10%)), color-stop(100%,$primary-color)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%,$primary-color 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%,$primary-color 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%,$primary-color 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  lighten($primary-color,10%) 0%,$primary-color 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($primary-color,10%)', endColorstr='$primary-color',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-//Gradient backgruund radial violeta
-.gradient-radial-vioeleta{
-  background: rgb(68,53,86);
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM0NDM1NTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjIxYTJiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(68,53,86,1) 0%, rgba(34,26,43,1) 100%);
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(68,53,86,1) 0%,rgba(34,26,43,1) 100%);
-  background: radial-gradient(ellipse at center,  rgba(68,53,86,1) 0%,rgba(34,26,43,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#443556', endColorstr='#221a2b',GradientType=1 );
-}
-
+ 
 
 // 05. Alerts
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -252,7 +131,7 @@ a,:after,.btn{
   width: 100%;
   z-index: 2;
   text-align: center;
-  top: 0;
+  top: 76px;
    
 }
 .success{
