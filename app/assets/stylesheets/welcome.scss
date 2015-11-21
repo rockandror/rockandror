@@ -1,64 +1,15 @@
 @import 'colors' ;
-// Table of Contents
+@import 'intro';
+@import 'newssocial'; 
+@import 'about';
+@import 'tecnology';
+@import 'howworks';
+@import 'services';
+@import 'team' ;
+@import 'portfolio' ;
+@import 'followus' ;
+@import 'contact' ;
+
 .home{
    margin-top: -80px;
 }
-
-// 01. Intro
-@import 'intro' ;
-// 02. News social
-@import 'newssocial' ; 
-// 0x. About
-@import 'about' ;
-// 03. Tecnology
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-@import 'tecnology' ;
-@import 'howworks' ;
-// 04. Contact now
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-// .contactnow{
-//   height:750px;
-//   background-position: 50% 50%;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-image: image-url("office.jpg");
-//   color: white;
-//   text-align: center;
-//   text-transform: uppercase;
-//   h2{
-//     font-weight: 700;
-//     font-size: 4em;
-//     padding-top: 3em;
-//     color:white;
-//   }
-//   h3{
-//     text-transform: lowercase;
-//     color:#DDC7F9;
-//   }
-//   .btn{margin-top: 50px;}
-//   .push{
-//     padding: 10px;
-//     height: 750px;
-//     background: rgba(68,53,86,.8);
-//   }
-// }
-
-// 0x. Services
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-@import 'services' ;
-
-// 05. Team
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-@import 'team' ;
- 
-// 06. Portofilio
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-@import 'portfolio' ;
-
-// 0x. Followus
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-@import 'followus' ;
-
-// 07. Contact
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-@import 'contact' ;

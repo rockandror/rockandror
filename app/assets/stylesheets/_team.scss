@@ -6,11 +6,8 @@
     @include text(white,uppercase,null);
     display: inline-block;
   }
-  .lead{
+  p{
     color: white;
-    margin-left: 11em;
-    display: block;
-    margin-top: -44px;
   }
   .eqWrap {
     display: flex;
