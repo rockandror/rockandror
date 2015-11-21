@@ -1,5 +1,3 @@
-//Check this code - i don't know if work
-//Auto close navbar on click outside in XS mode
 $(function () {
   // Changing menu dependent on section
   $(window).scroll(function() {
@@ -15,10 +13,10 @@ $(function () {
       });
   }).scroll();
 
-  //Auto close navbar XS mode on click link navbar
-  $(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
-  });
+  $('.top-bar-section ul.right li a').click(function() {
+    console.log("s");
+       $('.top-bar').removeClass('expanded');
+     });
 
   $('body').bind('click', function(e) {
     if(jQuery(e.target).closest('.navbar').length == 0) {

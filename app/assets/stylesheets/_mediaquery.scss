@@ -11,11 +11,40 @@
     .name div{
       float: left;
     }
+     .title-area{
+      padding-left: 1em;
+     } 
   }
   .intro .intro-opacity-animation, .intro .intro-mask, .intro .intro-image{
     height: 570px;
+
   }
-  
+  .intro #viewport .title{  margin-top: 23%;}
+  .intro #viewport .title h1{
+    font-size: 4em;
+    margin-top: 1em;
+  }  
+  .intro-bottom{
+    margin-top: -19px;
+  }
+  .intro-bottom .cd-headline{
+    margin-top: 50%;
+  }
+
+  .tecnology { 
+
+    min-height: none;
+    h2,p{text-align: center;}
+    .logo{
+       width: 30%;
+    }
+  }
+  .team .eqWrap{
+    display: block;
+  }
+  .contact .info{
+    padding: 0em;
+  }
 } 
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
@@ -26,10 +55,18 @@
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
- .top-bar{
+  .top-bar{
     background: none;
+    .top-bar{
+     .title-area{
+       padding-left: 1em;
+     } 
+    }
   }
- }
+  .home{
+    margin-top: -80px;
+  }
+}
  /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */

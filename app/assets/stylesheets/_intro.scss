@@ -57,6 +57,7 @@
     overflow: hidden;
     height: 620px;
     width: 100%;
+    text-align: center;
     .stars {
       background-image: image-url("stars.png");
       position: absolute;
@@ -79,29 +80,23 @@
     .title{
       z-index: 3;
       position: relative;
-      margin-top:17%;
+      margin-top:7%;
       h1{
         @include text(white,uppercase, 5em);
         letter-spacing: -4px;
         font-weight: 300;
-        text-align: center;
-        margin-top:1.4em;
-        margin-bottom: 0px;
-      }
+       }
       lead{
         text-align: center;
         color:white;
         font-size: 1.8em;
         display: block;
         font-weight: 300;
-        margin-top: -17px;
       }
     }  
     .faces{
       position: relative;
       z-index: 3;
-      text-align: center;
-      top: 3em;
       margin:0px auto;
       .guz,.seb,.sen,.ale{
         width: 87px;

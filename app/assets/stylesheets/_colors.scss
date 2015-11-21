@@ -49,9 +49,7 @@ $color-carlos: #e22522;
     background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 );
   }
-  .padding-all{
-     padding:11em 0px 5em 0px;
-  }
+   
   .centerheight{
     top: 30%;
     position: absolute;
@@ -105,6 +103,15 @@ $color-carlos: #e22522;
     display: $display;
     text-align:$align; 
   }
+  //Padding
+  // @mixin padding($top, $right, $bottom, $right) {
+  // .padding-all{
+  //    padding:11em 0px 5em 0px;
+  // }
+  
+  .padding-all{
+      padding:11em 0px 5em 0px;
+    }
 
 .addopacity {
   animation: opacity 2s;

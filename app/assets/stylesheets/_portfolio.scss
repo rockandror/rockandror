@@ -11,6 +11,9 @@
   }
   .slick-prev:before,
   .slick-next:before{
-    color: $primary-color;
+    display: none;
   }
+   .slick-next{
+    right: -15px;
+   }
 }

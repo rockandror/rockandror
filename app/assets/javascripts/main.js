@@ -19,10 +19,6 @@ $(function () {
       }
     }
   });
-  $('.top-bar-section ul.right li a').click(function() {
-    console.log("s");
-       $('.top-bar').removeClass('expanded');
-     });
 })
  
 //Btn up
