@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258px" height="437px" viewBox="0 0 258 437" version="1.1">
+  <defs>
+    <filter id="bolt-inner-shadow">
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur
+        stdDeviation="8"
+        result="offset-blur"
+      />
+      <feComposite
+        operator='out'
+        in='SourceGraphic'
+        in2='offset-blur'
+        result='inverse'
+      />
+      <feFlood
+        flood-color='6B2C22'
+        flood-opacity='1'
+        result='color'
+      />
+    
+      <!-- Clip color inside shadow -->
+      <feComposite
+        operator='in'
+        in='color'
+        in2='inverse'
+        result='shadow'
+      />
+    
+      <!-- Put shadow over original object -->
+      <feComposite
+        operator='over'
+        in='shadow'
+        in2='SourceGraphic'
+      />
+    </filter>
+  </defs>
+  <path d="M12 240.2 L221.733736 6 L165.795158 192.5 L245.547254 191.8 L35.813518 426 L91.7520965 239.5 Z M12 240.2" class="bolt loading">
+</svg>

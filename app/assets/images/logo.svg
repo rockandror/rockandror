@@ -2,13 +2,13 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="49.534px" height="49.18px" viewBox="0 0 49.534 49.18" enable-background="new 0 0 49.534 49.18" xml:space="preserve">
+	 width="49.534px" height="49.18px" viewBox="0 0 49.534 49.18" enable-background="new 0 0 49.534 49.18" xml:space="preserve" id="#ico-failure">
 <g>
 	<g>
-		<g>
+		<g >
 			<circle fill="#7A69A5" cx="18.234" cy="20.717" r="1.463"/>
 			<circle fill="#7A69A5" cx="33.777" cy="20.717" r="1.463"/>
-			<path fill="#7A69A5" d="M40.466,21.113v-0.586c0-0.983-0.259-1.992-0.774-3.021c-0.229-0.517-0.64-1.051-1.231-1.605
+			<path class="pulse" d="M40.466,21.113v-0.586c0-0.983-0.259-1.992-0.774-3.021c-0.229-0.517-0.64-1.051-1.231-1.605
 				c-1.326-1.404-3.163-2.105-5.5-2.105h-0.717H19.697h-0.714c-2.338,0-4.175,0.701-5.501,2.105
 				c-0.591,0.554-1.002,1.089-1.232,1.605c-0.516,1.03-0.773,2.038-0.773,3.021v0.586c0,1.509,0.654,2.984,1.964,4.427
 				c0.837,0.801,1.601,1.316,2.292,1.546c-1.74,1.853-2.607,4.301-2.607,7.347h4.167v-0.315c0-2.253,0.912-4.044,2.733-5.37
@@ -20,6 +20,6 @@
 				c0.659,0,1.281,0.23,1.859,0.688c0.678,0.66,1.017,1.394,1.017,2.206C36.32,20.928,36.285,21.175,36.226,21.472z"/>
 		</g>
 	</g>
-	<circle fill="none" stroke="#7A69A5" stroke-miterlimit="10" cx="25.154" cy="24.59" r="22.398"/>
+	<circle fill="none" class="circle1"  stroke-miterlimit="10" cx="25.154" cy="24.59" r="22.398"/>
 </g>
 </svg>

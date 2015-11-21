@@ -1,3 +1,13 @@
+ svg{
+      float: left;
+      circle{
+        stroke:$primary-color;
+      }
+      path{
+        fill: $primary-color;
+      }
+    }
+ 
 .top-bar{
   &.expanded{
     z-index: 100069;
@@ -14,9 +24,9 @@
   }
   .name{
     padding-top: 14px;
-    img{
-      float: left;
-    }
+
+    
+     
     div{
       text-transform: uppercase;
       line-height: 11px;

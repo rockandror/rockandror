@@ -126,6 +126,10 @@ GEM
       i18n
       term-ansicolor (>= 1.3.2)
       terminal-table (>= 1.5.1)
+    inline_svg (0.6.1)
+      activesupport (>= 4.0.4)
+      loofah (>= 2.0)
+      nokogiri (~> 1.6)
     jquery-rails (4.0.5)
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
@@ -299,6 +303,7 @@ DEPENDENCIES
   haml-rails (~> 0.9)
   headroom-rails
   i18n-tasks
+  inline_svg
   jquery-rails
   jquery-turbolinks (~> 0.2.1)
   launchy

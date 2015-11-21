@@ -20,6 +20,7 @@ gem 'headroom-rails'
 gem "haml-rails", "~> 0.9"
 gem 'slick_rails'
 gem 'nprogress-rails'
+gem 'inline_svg'
 gem "non-stupid-digest-assets"
 gem 'premailer-rails'
 gem 'email_validator'
