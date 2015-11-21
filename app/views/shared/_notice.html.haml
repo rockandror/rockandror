@@ -1,10 +1,9 @@
 - if notice.present?
-  .alert.alert-success.text-center
-    %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", :type => "button"} ×
-    %h4 ¡Acción realizada con éxito!
+  .alert-box.success{"data-alert" => ""}
+    ¡Acción realizada con éxito!
+    %a.close{:href => "#"} &times;
     = notice
 - if alert.present?
-  #alert-danger.alert.alert-danger.text-center
-    %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", :type => "button"} ×
-    %h4
-      ¡Hubo un error! / #{alert}
+  .alert-box.alert{"data-alert" => ""}
+    ¡Hubo un error! / #{alert}
+    %a.close{:href => "#"} &times;

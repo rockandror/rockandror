@@ -162,32 +162,7 @@ section, nav {
 //hide show section on scroll
 .hidden-section{opacity:0;}
 .visible-section{opacity:1;}
-
-//Hide show navbar
-.headroom--unpinned {
-  transform: translateY(-100%);
-  #nav-close{
-    opacity: 1;
-    transform: translateY(100%);
-  }
-}
-.headroom--pinned {
-  transform: translateY(0%);
-    #nav-close{
-      opacity: 0;
-    }
-}
-//Remove Firefox dotted 
-.btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
-outline: none;border:  none; box-shadow: none;} 
-@-moz-document url-prefix() { 
-  a {
-    &:active, &:focus{
-      outline: none;
-      border:  none;
-    }
-  }
-}
+ 
 
 a,:after,.btn{
   transition: all 0.5s ease;
@@ -237,7 +212,7 @@ a,:after,.btn{
   }
 }
 
-//Gradient background linear
+//Gradient backgruund linear
 .gradient{
   background: $primary-color; /* Old browsers */
   background: -moz-linear-gradient(top,  $primary-color 0%, lighten($primary-color,10%) 100%); /* FF3.6+ */
@@ -248,7 +223,7 @@ a,:after,.btn{
   background: linear-gradient(to bottom,  $primary-color 0%,lighten($primary-color,10%) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='lighten($primary-color,10%)',GradientType=0 ); /* IE6-9 */
 }
-//Gradient backgorund radial
+//Gradient backgruund radial
 .gradient-radial{
   background: lighten($primary-color,10%); /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover,  lighten($primary-color,10%) 0%, $primary-color 100%); /* FF3.6+ */
@@ -259,7 +234,7 @@ a,:after,.btn{
   background: radial-gradient(ellipse at center,  lighten($primary-color,10%) 0%,$primary-color 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($primary-color,10%)', endColorstr='$primary-color',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-//Gradient backgorund radial violeta
+//Gradient backgruund radial violeta
 .gradient-radial-vioeleta{
   background: rgb(68,53,86);
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM0NDM1NTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjIxYTJiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -268,88 +243,23 @@ a,:after,.btn{
   background: radial-gradient(ellipse at center,  rgba(68,53,86,1) 0%,rgba(34,26,43,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#443556', endColorstr='#221a2b',GradientType=1 );
 }
-// 02. Navbar/Header
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-nav{
-  transition: transform 200ms linear;
-  background: white;
-  .nav-center {
-    display: inline-block;
-    left: 0;
-    right: 0;
-    margin:0;
-    float:none;
-  }
-  .fa{color: $primary-color;
-    &:hover{color:$secondary-color;}
-  }
-  .navbar-brand-primary{
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 50px;
-    &:hover{
-      background: none;
-      color:white;
-      text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.7);
-      text-decoration: none;
-     }
-  }
-  #navbar{
-    font-weight: 300;
-    font-size: 1.2em;
-    text-transform: uppercase;
-     a{
-      color:$primary-color;
-      padding-top:25px;
-      padding-bottom: 0px;
-      line-height: 40px;
-      &:hover,&:focus{
-        background: none;
-        font-weight: 700; 
-      }
-      &.active{
-        font-weight: 700;
-        color:#68527f;
-      }
-    }
-  }
-}
-.navbar-inner{text-align:center;}
-//Logo sprite XS
-.logo{
-  //width: 105px;
-  //height: 102px;
-  //background: $sprite;
-  //display: block;
-  //background-position: -932px 122px; 
-}
 
-//Single logo svg for future animation
-.logosvg{
-  width: 105px;
-  height: 102px;
-  display: block;
-  margin-top: -50px;
-  img{
-    width: 60px;
-    margin-top: 40px;
-  }
-}
-// 03. Footer
-// - - - - - - - - - - - - - - - - - - - - - - - - -
-
-// 04. Forms
-// - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // 05. Alerts
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-.alert{
-  margin-top:80px;
-  margin-bottom:0px;
-  h4{margin-bottom: 0px;}
+.alert-box{
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  top: 0;
+   
 }
-.alert-danger{color:#fff;}
-
-// 06. Tables
-// - - - - - - - - - - - - - - - - - - - - - - - - -
+.success{
+  background:green;
+  color:#fff;
+}
+.danger{
+  background:red;
+  color:#fff;
+}

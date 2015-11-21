@@ -52,3 +52,54 @@
     }
   } 
 } 
+
+
+// 02. Navbar/Header
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+nav{
+  transition: transform 200ms linear;
+  background: white;
+  .nav-center {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin:0;
+    float:none;
+  }
+  .fa{color: $primary-color;
+    &:hover{color:$secondary-color;}
+  }
+  .navbar-brand-primary{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 50px;
+    &:hover{
+      background: none;
+      color:white;
+      text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+     }
+  }
+  #navbar{
+    font-weight: 300;
+    font-size: 1.2em;
+    text-transform: uppercase;
+     a{
+      color:$primary-color;
+      padding-top:25px;
+      padding-bottom: 0px;
+      line-height: 40px;
+      &:hover,&:focus{
+        background: none;
+        font-weight: 700; 
+      }
+      &.active{
+        font-weight: 700;
+        color:#68527f;
+      }
+    }
+  }
+}
+.navbar-inner{text-align:center;}
+ 
