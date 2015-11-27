@@ -6,6 +6,7 @@
 //= require preload
 //= require navbar
 //= require portfolio
+//= require team
 //= require slidetext
 
 //= require slick

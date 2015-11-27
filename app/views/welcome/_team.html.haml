@@ -4,51 +4,59 @@
       %h2 Equipo
       %p Apasionados del desarrollo a medida te ayudamos a desarrollar tus ideas.
       .row.section.eqWrap
-        .small-12.medium-3.eq.columns
-          %div.carlos
-            %div.circle
-              = image_tag "carlos.png"
-            %strong Carlos Guzm&#xE1;n
-            %i Ingeniero de software. Desarrollador Ror/.Net Co-fundador
-          %div.text.eq
-            Carlos es un apasionado del buen c&#xF3;digo. No descansa hasta encontrar la mejor soluci&#xF3;n a un problema. Le encanta hacer skate y un buen videojuego.
-          %div.social
-            = link_to "", "", class: "fa fa-github-alt fa-1x", target: :blank
-            = link_to "", "", class: "fa fa-twitter fa-1x", target: :blank
-            = link_to "", "", class: "fa fa-linkedin fa-1x", target: :blank
-        .small-12.medium-3.eq.columns
-          %div.sebastia
-            %div.circle
-              = image_tag "sebastia.png"
-            %strong Sebasti&#xE0; Roig
-            %i Ingeniero de software. Desarrollador Ror/Java. Co-fundador
-          %div.text.eq
-            Valora su tiempo como ninguno, le apasionan las metodolog&#xED;as &#xE1;giles y las buenas pr&#xE1;cticas en el desarrollo del software. No deja escapar la oportunidad de una buena barbacoa
-          %div.social
-            = link_to "", "", class: "fa fa-github-alt fa-1x", target: :blank
-            = link_to "", "", class: "fa fa-twitter fa-1x", target: :blank
-            = link_to "", "", class: "fa fa-linkedin fa-1x", target: :blank
-        .small-12.medium-3.eq.columns
-          %div.senen
-            %div.circle
-              = image_tag "senen_rodero.png"
-            %strong Sen&#xE9;n Rodero
-            %i Ingeniero Inform&#xE1;tico. Desarrollador Ror/Java/Php Co-fundador
-          %div.text.eq
-            A Sen&#xE9;n le gusta escribir c&#xF3;digo de calidad y las metodologias &#xE1;giles de desarrollo. Actualmente disfruta trabajando con RubyOnRails. Surfer de nacimiento, siempre est&#xE1; atento a las buenas olas.
-          %div.social
-            = link_to "", "", class: "fa fa-github-alt fa-1x", target: :blank
-            = link_to "", "", class: "fa fa-twitter fa-1x", target: :blank
-            = link_to "", "", class: "fa fa-linkedin fa-1x", target: :blank
-        .small-12.medium-3.text.eq.columns
-          %div.alle
-            %div.circle
-              = image_tag "alessandro.png"
-            %strong Alessandro Cuoghi
-            %i Dise&#xF1;ador, desarrollador de interfaces de usuario. Co-fundador
-          %div.text.eq
-            Alessandro es la mente que da color y vida a las creaciones de Rock  Ror. Experimentado dise&#xF1;ador que le gusta ofrecer interficies de usuario bonitas, sencillas y usables. Tambi&#xE9;n le encanta hacer skate.
-          %div.social
-            = link_to "", "", class: "fa fa-github-alt fa-1x", target: :blank
-            = link_to "", "", class: "fa fa-twitter fa-1x", target: :blank
-            = link_to "", "", class: "fa fa-linkedin fa-1x", target: :blank
+        .small-12.medium-3.columns.flip-container
+          %div.flipper  
+            %div.carlos.front
+              %div 
+                = image_tag "guman.jpg"
+                %span.flaticon-horror5
+              %strong Carlos Guzm&#xE1;n
+              %i Ingeniero de software. Desarrollador Ror/.Net Co-fundador
+            %div.text.back
+              Carlos es un apasionado del buen c&#xF3;digo. No descansa hasta encontrar la mejor soluci&#xF3;n a un problema. Le encanta hacer skate y un buen videojuego.
+              %div.social
+                = link_to "", "", class: "fa fa-github-alt fa-1x", target: :blank
+                = link_to "", "", class: "fa fa-twitter fa-1x", target: :blank
+                = link_to "", "", class: "fa fa-linkedin fa-1x", target: :blank
+        .small-12.medium-3.columns.flip-container
+          %div.flipper  
+            %div.sebastia.front
+              %div
+                = image_tag "sebastia.jpg"
+                %span.flaticon-monsters4
+              %strong Sebasti&#xE0; Roig
+              %i Ingeniero de software. Desarrollador Ror/Java. Co-fundador
+            %div.text.back
+              Valora su tiempo como ninguno, le apasionan las metodolog&#xED;as &#xE1;giles y las buenas pr&#xE1;cticas en el desarrollo del software. No deja escapar la oportunidad de una buena barbacoa
+              %div.social
+                = link_to "", "", class: "fa fa-github-alt fa-1x", target: :blank
+                = link_to "", "", class: "fa fa-twitter fa-1x", target: :blank
+                = link_to "", "", class: "fa fa-linkedin fa-1x", target: :blank
+        .small-12.medium-3.columns.flip-container
+          %div.flipper
+            %div.senen.front
+              %div
+                = image_tag "senen.jpg"
+                %span.flaticon-alien13
+              %strong Sen&#xE9;n Rodero
+              %i Ingeniero Inform&#xE1;tico. Desarrollador Ror/Java/Php Co-fundador
+            %div.text.back
+              A Sen&#xE9;n le gusta escribir c&#xF3;digo de calidad y las metodologias &#xE1;giles de desarrollo. Actualmente disfruta trabajando con RubyOnRails. Surfer de nacimiento, siempre est&#xE1; atento a las buenas olas.
+              %div.social
+                = link_to "", "", class: "fa fa-github-alt fa-1x", target: :blank
+                = link_to "", "", class: "fa fa-twitter fa-1x", target: :blank
+                = link_to "", "", class: "fa fa-linkedin fa-1x", target: :blank
+        .small-12.medium-3.text.columns.flip-container
+          %div.flipper
+            %div.alle.front
+              %div
+                = image_tag "alessandro.jpg"
+                %span.flaticon-alien17
+              %strong Alessandro Cuoghi
+              %i Dise&#xF1;ador, desarrollador de interfaces de usuario. Co-fundador
+            %div.text.back
+              Alessandro es la mente que da color y vida a las creaciones de Rock  Ror. Experimentado dise&#xF1;ador que le gusta ofrecer interficies de usuario bonitas, sencillas y usables. Tambi&#xE9;n le encanta hacer skate.
+              %div.social
+                = link_to "", "", class: "fa fa-github-alt fa-1x", target: :blank
+                = link_to "", "", class: "fa fa-twitter fa-1x", target: :blank
+                = link_to "", "", class: "fa fa-linkedin fa-1x", target: :blank

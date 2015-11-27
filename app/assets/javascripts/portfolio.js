@@ -4,6 +4,7 @@ $(function () {
     speed: 500,
     fade: true,
     autoplay: true,
+    dots: true,
     cssEase: 'linear'
   });
 });

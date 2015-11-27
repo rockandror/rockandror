@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 
@@ -24,6 +24,8 @@ gem 'inline_svg'
 gem "non-stupid-digest-assets"
 gem 'premailer-rails'
 gem 'email_validator'
+gem 'rb-fsevent'
+gem 'guard-livereload'
 
 group :development, :test do
   gem 'sqlite3'
