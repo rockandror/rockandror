@@ -31,10 +31,10 @@
       width: 100%;
       height:0;
       padding-bottom: 100%;
-      border: 1px solid grey; 
-      -moz-border-radius: 50%; 
-      -webkit-border-radius: 50%; 
-      border-radius: 50%;
+      // border: 1px solid grey; 
+      // -moz-border-radius: 50%; 
+      // -webkit-border-radius: 50%; 
+      // border-radius: 50%;
     }
     span{
       margin-left: 0.4em;
@@ -83,6 +83,15 @@
      }
      &.jquery{background-position: -720px 266px;
        &:hover{background-position: -720px 206px;}
+     }
+     &.foundation{background-position: -897px 266px;
+       &:hover{background-position: -897px 206px;}
+     }
+     &.il{background-position: -778px 266px;
+       &:hover{background-position: -778px 206px;}
+     }
+     &.ps{background-position: -838px 266px;
+       &:hover{background-position: -838px 206px;}
      }
     }
   }
