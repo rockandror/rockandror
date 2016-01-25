@@ -46,10 +46,8 @@
     position: absolute;
     width: 100%;
     z-index: 9;
-    //top: 0;
     mix-blend-mode: multiply;
   }
-
   #viewport{
     position: absolute;
     top: 0px;
@@ -94,7 +92,6 @@
     }
   }
 }
-
 .intro-bottom{
   text-align: center;
   position: relative;
@@ -174,4 +171,3 @@
     margin-top: 4%;
   }
 }
- 

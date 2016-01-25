@@ -50,6 +50,9 @@
 
 
 .back {
+  height: 420px;
+  padding: 2em;
+  text-align: center;
   background: white;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -84,24 +87,7 @@
         -o-perspective: 1000;
         perspective: 1000;
       }
-    .eq {
-      //padding: 10px;
-      //background:white;
-      //padding: 0px;
-      //margin: 1em;
-      //position: relative;
-     // padding-bottom: 2em;
-       
-      // strong,i{
-      //   text-align: center;
-      //   display: block;
-      //   color:white;
-      // }
-      // strong{
-      //   font-size: 1.5em;
-      //   padding-top: 1em;
-      // }
-       
+    .eq {       
       i{padding: 1em;}
       .social{
         
