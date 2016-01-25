@@ -1,20 +1,9 @@
 .intro{
   .intro-image{
-    background: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-4.jpg);
-    //background-image: image-url("intro-bg.png");
-    //filter: blur(4px);  
+    background: url(space-wallpapers-4.jpg);
     position: relative;
-    -webkit-animation: hue 30s linear infinite;
-    -moz-animation: hue 30s linear infinite;
-    animation: hue 30s linear infinite;
     width: 100%;
     z-index: 1;
-    @-webkit-keyframes hue { 
-     100% { -webkit-filter:hue-rotate(120deg); }  
-    }
-    @keyframes hue { 
-     100% { filter:hue-rotate(120deg); }  
-    }
   }
   .intro-opacity-animation,
   .intro-mask,
@@ -37,7 +26,6 @@
     -moz-mask-position: center bottom;
     animation: AnimationName 5s ease-in;
     animation-fill-mode: forwards;
-    
     @keyframes AnimationName { 
       0%{  
         opacity: 1;
@@ -70,25 +58,6 @@
     height: 620px;
     width: 100%;
     text-align: center;
-    .stars {
-      background-image: image-url("stars.png");
-      position: absolute;
-      z-index: 1;
-      width: 100%;  
-      height: 100%;
-      background-size: cover;
-      opacity: .8;
-      -webkit-animation:bgscroll 3s infinite linear;
-      -moz-animation:bgscroll 3s infinite linear;
-      @-webkit-keyframes bgscroll {
-        from {background-position:0 0;}
-        to {background-position:0 -520px;}
-      }
-      @keyframes bgscroll {
-        from {background-position:0 0;}
-        to {background-position:0 -520px;}
-      }
-    }
     .title{
       z-index: 3;
       position: relative;
