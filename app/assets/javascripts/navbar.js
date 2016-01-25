@@ -1,8 +1,6 @@
 $(function () {
   $(document).on("scroll", onScroll);
-  
   function onScroll(event){
-
     var windowTop = Math.max($('body').scrollTop(), $('html').scrollTop());  
     $('.pageSection').each(function (index) {
       if (windowTop > ($(this).position().top - ($(window).height() / 1.2))){

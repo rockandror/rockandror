@@ -11,11 +11,12 @@
   .home{
     margin-top: -150px;
   }
+  .intro-mask,
   .intro-opacity-animation{
-    
-  }
-
-  .intro-bottom{
+    display: none; 
+  }   
+  .intro-bottom{ 
+    margin-top: 0;
     .intro-bottom-overlay {
        opacity: .8;
     }
@@ -28,7 +29,11 @@
       }
     } 
   }
-}
-
-
    
+  .team .eqWrap .flip-container .flipper .front { position: relative; }
+  .team .eqWrap .flip-container .flipper .back {
+    position: absolute;  
+    top: 0;
+    z-index: 9;
+  } 
+}

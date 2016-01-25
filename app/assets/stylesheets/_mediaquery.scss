@@ -17,7 +17,6 @@
   }
   .intro .intro-opacity-animation, .intro .intro-mask, .intro .intro-image{
     height: 570px;
-
   }
   .intro #viewport .title{  margin-top: 23%;}
   .intro #viewport .title h1{
@@ -40,7 +39,7 @@
     margin-top:18%;
   }
   .team .eqWrap{
-    display: block;
+    //display: block;
   }
   .team .section .eq{
      margin: 0px; 
@@ -70,7 +69,7 @@
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 .tecnology{
     .logo{width: 25%;}
-    background: red;
+    // background: red;
   }
   .top-bar .title-area{
     width: 100%;
@@ -91,7 +90,10 @@
     margin-top: -80px;
   }
   .tecnology{
-    .logo{width: 20%;}
+    .logo{
+      width: 20%;
+
+    }
   }
 }
  /* min-width 1025px, large screens */
@@ -110,12 +112,34 @@
 
 //Orientation Ipad 
 @media all and (orientation:portrait) {
-  .tecnology{
-    .logo{width: 20%;}
-   //medi background: red;
+
+  .team{ 
+    .section,.eqWrap{
+      //display: block;
+    }
   }
+  .intro .intro-opacity-animation{
+    top:70px;
+  }
+  .tecnology{
+    .logo{
+      span{
+        width: 100%;
+        margin-top: 0.7em;
+        margin-left:0px;
+      } 
+    }
+  }
+  .contact{
+     .info{
+      padding: 0px;
+     }
+  } 
 }
 @media all and (orientation:landscape) {
+  .intro .intro-opacity-animation{
+    top:70px;
+  }
    .tecnology{
     .logo{width: 20%;}
  //   background: yellow;

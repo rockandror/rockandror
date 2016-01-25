@@ -5,7 +5,5 @@ $(function () {
     }).bind('touchend', function(){
       console.log("back");
     //$(this).removeClass('select');
-  });
-
-  
+  });  
 });

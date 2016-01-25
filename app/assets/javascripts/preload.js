@@ -7,7 +7,6 @@ function preload(){
     $(".loading").fadeOut();
   }, 1000);
   scrollalert();
-  console.log("ok");
 }
 
 function scrollalert(){

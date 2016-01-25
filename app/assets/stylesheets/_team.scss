@@ -9,7 +9,7 @@
   p{color: white;}
   
 .eqWrap {
-  display: flex;
+  //display: flex;
   .flip-container {
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
@@ -39,9 +39,14 @@
         -o-backface-visibility: hidden;
         backface-visibility: hidden;
         display: block;
-        position: absolute;
+        //position: absolute;
+        //top: 0;
+        //left: 0;
+      }
+      .back {
+       position: absolute;
         top: 0;
-        left: 0;
+        left: 0; 
       }
     }
   }

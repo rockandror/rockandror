@@ -1,4 +1,7 @@
 .about{
+  .block-text{
+    border:1px solid red;
+  }
   @extend .padding-all;
   @extend .gradient-clear;
   h3{ @include text($secondary-color,uppercase, null); }
