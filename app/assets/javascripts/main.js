@@ -1,5 +1,6 @@
 $(function () {
   //alert( $( window ).width());
+  jQuery.scrollSpeed(100, 800);
   //Set section height window height
   // $("#scroll_to_about, #scroll_to_tecnology,#scroll_to_howworks,#scroll_to_services,#scroll_to_portfolio,#scroll_to_team,#scroll_to_contact").css({ minHeight: $(window).innerHeight() + 'px' });
   $(window).resize(function() {
