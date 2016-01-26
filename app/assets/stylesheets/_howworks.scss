@@ -1,5 +1,5 @@
 .howworks{
-  @extend .padding-all;
+  //@extend .padding-all;
   @extend .gradient-clear;
   h2{@include text($primary-color,uppercase,null);}
   i{@include icons($primary-color, 16em, block, center);} 

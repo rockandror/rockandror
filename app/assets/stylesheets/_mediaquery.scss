@@ -1,8 +1,3 @@
-// Small screens
-@media only screen { 
- 
-}
-/* Define mobile styles */
 @media only screen and (max-width: 40em) { 
   .top-bar{
     background: rgba(0, 0, 0, 0.7);
@@ -11,70 +6,99 @@
     .name div{
       float: left;
     }
-     .title-area{
+    .title-area{
       padding-left: 1em;
-     } 
+    } 
   }
   .intro .intro-opacity-animation, .intro .intro-mask, .intro .intro-image{
     height: 570px;
   }
   .intro #viewport .title{  margin-top: 23%;}
+  
   .intro #viewport .title h1{
-    font-size: 4em;
+    font-size: 3em;
     margin-top: 1em;
   }  
+  .intro #viewport .title lead{
+   margin-top:0px;  
+ }
   .intro-bottom{
+    display: none;
     margin-top: -19px;
   }
   .intro-bottom .cd-headline{
     margin-top: 50%;
   }
-
   .tecnology { 
     min-height: none;
     h2,p{text-align: center;}
   }
-  .tecnology .logo span{
-    margin-left: 0.2em;
-    margin-top:18%;
-  }
-  .team .eqWrap{
-    //display: block;
-  }
+
+  
   .team .section .eq{
-     margin: 0px; 
-     margin-bottom:1em;
-     padding:30px;
-      background: none;
-  }
-  .team .section .eq .social{
-    position: relative;
-    bottom: 2em;
-    text-align: center;
-    background: white;
-    padding-bottom: 2em;
-  } 
-  .team .section .eq .text{
-    background: white;
-  }
-  .contact .info{
-    padding: 0em;
+   margin: 0px; 
+   margin-bottom:1em;
+   padding:30px;
+   background: none;
+ }
+ .team .section .eq .social{
+  position: relative;
+  bottom: 2em;
+  text-align: center;
+  background: white;
+  padding-bottom: 2em;
+} 
+.team .section .eq .text{
+  background: white;
+}
+.flip-container{
+  margin-top:1em; 
+}
+
+.team .section .senen strong, .team .section .carlos strong, .team .section .sebastia strong, .team .section .alle strong{
+  font-size: 1em;
+}  
+
+.about,.tecnology,.howworks,.portfolio,.contact,.team,.followus {
+  @include padding(5em, 0em, 5em, 0em);
+}
+
+.contact{
+  text-align: center;
+    h3{
+      padding-bottom: 1em;
+    }
   }
 } 
- 
+
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  .about,.tecnology,.howworks,.portfolio,.contact,.team,.followus {
+   @include padding(5em, 0em, 5em, 0em);
+  }
  } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-.tecnology{
+
+ @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .tecnology{
     .logo{width: 25%;}
-    // background: red;
   }
   .top-bar .title-area{
     width: 100%;
   }
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+//max 320
+@media only screen and (max-width:320px) {
+  .tecnology{
+    .logo{
+      span{
+        width: 100%;
+        padding-top: 90%;
+      } 
+    }
+  }
+}
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
@@ -84,8 +108,8 @@
      .title-area{
        padding-left: 1em;
      } 
-    }
-  }
+   }
+ }
   .home{
     margin-top: -80px;
   }
@@ -96,52 +120,95 @@
     }
   }
 }
- /* min-width 1025px, large screens */
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  
-} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+//Iphone 6 and 6s
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  .tecnology{
+    .logo{
+      span{
+        width: 80%;
+        padding-top: 70%;
+      } 
+    }
+  }
+}
 
-// XLarge screens
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+//Iphone 6 plus
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+  .tecnology{
+    .logo{
+      span{
+        width: 78%;
+      } 
+    }
+  }
+}
 
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
-// XXLarge screens
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .about{
+      h3{
+        font-size: 1.4em;
+      }
+    }
+    .contact{
+      h3{
+        font-size: 1em;
+      }
+    }
+}
 
 //Orientation Ipad 
 @media all and (orientation:portrait) {
-
-  .team{ 
-    .section,.eqWrap{
-      //display: block;
+  .intro { 
+    .intro-mask{
+      display: none;
     }
   }
+  // .tecnology{
+  //   .logo{
+  //     span{
+  //       width: 100%;
+  //       margin-top: 0.7em;
+  //       margin-left:0px;
+  //     } 
+  //   }
+  // }
+  .contact .info{
+    padding: 1em;
+  }
+}
+
+@media all and (orientation:landscape) {
   .intro .intro-opacity-animation{
     top:70px;
   }
+  .tecnology{
+    .logo{width: 20%;}
+  }
+}
+
+//Nexus 4
+@media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2){
   .tecnology{
     .logo{
       span{
         width: 100%;
         margin-top: 0.7em;
-        margin-left:0px;
+        //margin-left:0px;
+        border:1px solid red;
       } 
     }
-  }
-  .contact{
-     .info{
-      padding: 0px;
-     }
-  } 
-}
-@media all and (orientation:landscape) {
-  .intro .intro-opacity-animation{
-    top:70px;
-  }
-   .tecnology{
-    .logo{width: 20%;}
- //   background: yellow;
   }
 }

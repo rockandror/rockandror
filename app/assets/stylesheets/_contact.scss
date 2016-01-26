@@ -1,5 +1,4 @@
 .contact{
-  @extend .padding-all;
   font-size: 1.2em;
   background: #222;
   color:whitesmoke;
@@ -9,7 +8,10 @@
     }
   }
   .info{padding:0em 0em 0em 5em;}
-  h3{color:#fff;}
+  h3{
+    color:#fff;
+    font-size: 1.5em;
+  }
   hr{border:2px solid #333;}
   label{display: none;}
   textarea{

@@ -8,6 +8,7 @@
 //= require portfolio
 //= require team
 //= require slidetext
+//= require jquery.mousewheel
 
 //= require slick
 //= require_tree .

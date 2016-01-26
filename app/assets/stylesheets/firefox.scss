@@ -8,8 +8,9 @@
   .btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
     outline: none;border:  none; box-shadow: none;
   } 
-  .home{
-    margin-top: -150px;
+
+  .intro #viewport .title lead{
+     
   }
   .intro-mask,
   .intro-opacity-animation{
@@ -18,7 +19,7 @@
   .intro-bottom{ 
     margin-top: 0;
     .intro-bottom-overlay {
-       opacity: .8;
+       opacity: 1;
     }
   }
   #viewport{ 

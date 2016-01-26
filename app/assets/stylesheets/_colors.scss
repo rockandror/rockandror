@@ -44,7 +44,7 @@ $color-carlos: #e22522;
       line-height: 11px;
       display:block;
       font-size: 1.3em;
-      float: right;
+      //float: left;
       margin-top:15px;
       margin-left: 10px; 
       span{
@@ -82,9 +82,14 @@ $color-carlos: #e22522;
   display: $display;
   text-align:$align; 
 }
-
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top:$top;
+  padding-right:$right;
+  padding-bottom:$bottom;
+  padding-left:$left;
+}
 .padding-all{
-  padding:11em 0px 5em 0px;
+  //padding:11em 0px 5em 0px;
 }
 
 .addopacity {

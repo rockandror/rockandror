@@ -16,11 +16,12 @@ gem 'font-awesome-rails'
 gem 'normalize-rails'
 gem 'foundation-rails'
 gem 'foundation_rails_helper'
-gem 'headroom-rails'
+#gem 'headroom-rails'
 gem "haml-rails", "~> 0.9"
 gem 'slick_rails'
 gem 'nprogress-rails'
 gem 'inline_svg'
+gem "jquery-mousewheel-rails"
 gem "non-stupid-digest-assets"
 gem 'premailer-rails'
 gem 'email_validator'

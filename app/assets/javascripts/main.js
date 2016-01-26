@@ -1,8 +1,9 @@
 $(function () {
+  //alert( $( window ).width());
   //Set section height window height
-  $("#scroll_to_about, #scroll_to_tecnology,#scroll_to_howworks,#scroll_to_services,#scroll_to_portfolio,#scroll_to_team,#scroll_to_contact").css({ minHeight: $(window).innerHeight() + 'px' });
+  // $("#scroll_to_about, #scroll_to_tecnology,#scroll_to_howworks,#scroll_to_services,#scroll_to_portfolio,#scroll_to_team,#scroll_to_contact").css({ minHeight: $(window).innerHeight() + 'px' });
   $(window).resize(function() {
-    $("#scroll_to_about, #scroll_to_tecnology,#scroll_to_howworks,#scroll_to_services,#scroll_to_portfolio,#scroll_to_team,#scroll_to_contact").css({ minHeight: $(window).innerHeight() + 'px' });
+    // $("#scroll_to_about, #scroll_to_tecnology,#scroll_to_howworks,#scroll_to_services,#scroll_to_portfolio,#scroll_to_team,#scroll_to_contact").css({ minHeight: $(window).innerHeight() + 'px' });
   });
   //scroll to section on click button menu  
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {

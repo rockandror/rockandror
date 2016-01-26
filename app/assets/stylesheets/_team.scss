@@ -1,5 +1,5 @@
 .team{
-   @extend .padding-all;
+  //@extend .padding-all;
   @extend .gradient-radial-violeta;
   border-bottom:3px solid $secondary-color;
   h2{
@@ -39,9 +39,6 @@
         -o-backface-visibility: hidden;
         backface-visibility: hidden;
         display: block;
-        //position: absolute;
-        //top: 0;
-        //left: 0;
       }
       .back {
        position: absolute;

@@ -1,10 +1,7 @@
 .about{
-  .block-text{
-    border:1px solid red;
-  }
-  @extend .padding-all;
+  //@extend .padding-all;
   @extend .gradient-clear;
   h3{ @include text($secondary-color,uppercase, null); }
-  img{margin-bottom: 2em;}
+  //img{margin-bottom: 2em;}
   a{margin-top:3em;}
 }

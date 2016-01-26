@@ -1,7 +1,7 @@
 .followus{
   border-bottom:3px solid $secondary-color;
   position: relative;
-  min-height: 500px;
+  //min-height: 500px;
   .overopacity{
     background: rgba(0,0,0,.6);
     position: absolute;
@@ -10,8 +10,8 @@
     right: 0;
     left: 0;
   }
-  @extend .padding-all;
-  background: url(followus.jpg);
+  //@extend .padding-all;
+  background: url(followus-sat.jpg);
   background-repeat: no-repeat;
   background-position: -290px -610px;  
   h2{@include text(white,uppercase,null);}
