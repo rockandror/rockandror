@@ -34,9 +34,7 @@
   margin-bottom:1em;
   padding:30px;
   background: none;
-  .text{
-    background: white;
-  }
+  .text{ background: white; }
   .social{
     position: relative;
     bottom: 2em;
@@ -45,19 +43,17 @@
     padding-bottom: 2em;
   } 
 }
-.team .section .eq  
-  .flip-container{
-    margin-top:1em; 
-  }
-  .team .section .senen strong, .team .section .carlos strong, .team .section .sebastia strong, .team .section .alle strong{
-    font-size: 1em;
-  }  
-  .about,.tecnology,.howworks,.portfolio,.contact,.team,.followus {
-    @include padding(5em, 0em, 5em, 0em);
-  }
+  .flip-container{ margin-bottom:1em;}
+  .team .section .senen strong, .team .section .carlos strong, .team .section .sebastia strong, .team .section .alle strong{ font-size: 1em; }  
+  .about,.tecnology,.howworks,.portfolio,.contact,.team,.followus { @include padding(5em, 0em, 5em, 0em); }
   .contact{
     text-align: center;
     h3{padding-bottom: 1em;}
+    .name{
+      svg{margin-left: 15%;}
+      div{float: left;}
+    }
+     
   }
 } 
 // Medium screens
