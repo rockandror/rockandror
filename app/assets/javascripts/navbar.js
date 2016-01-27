@@ -11,17 +11,17 @@ $(function () {
      }
    });
     var scrollPos = $(document).scrollTop();
-    // $('.top-bar-section a').each(function () {
-    //   var currLink = $(this);
-    //   var refElement = $(currLink.attr("href"));
-    //   if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos ) {
-    //      $('.top-bar-section li').removeClass("active");
-    //      currLink.parent().addClass("active");
-    //   }
-    //   else{
-    //     currLink.removeClass("active");
-    //   }
-    // });
+    $('.top-bar-section a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos ) {
+         $('.top-bar-section li').removeClass("active");
+          //  currLink.parent().addClass("active");
+      }
+      else{
+        currLink.removeClass("active");
+      }
+    });
   }
   $('.top-bar-section ul.right li a').click(function() {
     $('.top-bar').removeClass('expanded');

@@ -24,16 +24,6 @@
     -webkit-mask-position: center bottom;
     mask-image: url("intro-mask.png");
     -moz-mask-position: center bottom;
-    animation: AnimationName 5s ease-in;
-    animation-fill-mode: forwards;
-    @keyframes AnimationName { 
-      0%{  
-        opacity: 1;
-        }
-      100%{
-        opacity: 0;
-      }
-    }
   }
   .intro-image{
     mask-image: url(intro-mask.png) ; 

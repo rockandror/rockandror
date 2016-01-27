@@ -1,5 +1,4 @@
 .tecnology{
-  //@extend .padding-all;
   position: relative;
   h2{
     @include text($primary-color,uppercase,null);

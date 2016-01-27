@@ -28,14 +28,7 @@ $color-carlos: #e22522;
   background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 );
 }
-   
-.centerheight{
-  top: 30%;
-  position: absolute;
-  margin: 0px auto;
-  left: 0;
-  right: 0;
-}
+
 .logo{
   .name{
     padding-top: 14px;
@@ -87,9 +80,6 @@ $color-carlos: #e22522;
   padding-right:$right;
   padding-bottom:$bottom;
   padding-left:$left;
-}
-.padding-all{
-  //padding:11em 0px 5em 0px;
 }
 
 .addopacity {

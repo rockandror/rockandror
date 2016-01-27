@@ -1,22 +1,14 @@
 .portfolio{
-  //@extend .padding-all;
   background: #EAEAEA;
   text-align: center;
   h2{
     @include text($primary-color,uppercase,null);
     text-align: left;
   }
-  p{
-    text-align: left;
-  }
-  .cont{
-  //  margin-top: 50%;
-  }
+  p{text-align: left;}
   .slick-prev:before,
   .slick-next:before{
     display: none;
   }
-   .slick-next{
-    right: -15px;
-   }
+   .slick-next{right: -15px;}
 }
