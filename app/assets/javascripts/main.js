@@ -1,11 +1,7 @@
 $(function () {
-  //alert( $( window ).width());
+  //Mouse scroll
   jQuery.scrollSpeed(100, 800);
-  //Set section height window height
-  // $("#scroll_to_about, #scroll_to_tecnology,#scroll_to_howworks,#scroll_to_services,#scroll_to_portfolio,#scroll_to_team,#scroll_to_contact").css({ minHeight: $(window).innerHeight() + 'px' });
-  $(window).resize(function() {
-    // $("#scroll_to_about, #scroll_to_tecnology,#scroll_to_howworks,#scroll_to_services,#scroll_to_portfolio,#scroll_to_team,#scroll_to_contact").css({ minHeight: $(window).innerHeight() + 'px' });
-  });
+    
   //scroll to section on click button menu  
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
     $('.top-bar-section ul li').removeClass('active'); 
@@ -22,13 +18,3 @@ $(function () {
     }
   });
 })
- 
-//Btn up
-// var $win = $(window);
-// $win.scroll(function () {
-//   if ($win.scrollTop() == 0)
-//     $('#btn-up').hide();
-//   else if ($win.height() + $win.scrollTop() == $(document).height()) { 
-//     $('#btn-up').show();
-//   }
-// });

@@ -1,11 +1,8 @@
 @media only screen and (max-width: 40em) { 
   .top-bar{
-    background: rgba(0, 0, 0, 0.7);
+    background:black;
     position: fixed;
     width: 100%;
-    .name div{
-      float: left;
-    }
     .title-area{
       padding-left: 1em;
     } 
@@ -74,7 +71,7 @@
 // Medium screens
 @media only screen and (min-width: 40.063em) {
   .about,.tecnology,.howworks,.portfolio,.contact,.team,.followus {
-   @include padding(5em, 0em, 5em, 0em);
+   @include padding(10em, 0em, 10em, 0em);
   }
  } /* min-width 641px, medium screens */
 

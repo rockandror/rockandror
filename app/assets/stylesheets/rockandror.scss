@@ -6,7 +6,6 @@
 #scroll_to_about,
 #scroll_to_tecnology,
 #scroll_to_howworks,
-#scroll_to_services,
 #scroll_to_portfolio,
 #scroll_to_team,
 #scroll_to_followus,
@@ -60,45 +59,24 @@ a,:after,.btn{
   }
 }
 
-.btn-primary{
-  font-size: 2em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color:#fff;
-  &:hover{
-    background: darken($secondary-color,3%);
-    color: #fff;
-  }
-  &:focus{
-    background: $primary-color;
-  }
-  &:active{
-    background: red;
-  }
-}
+// .btn-primary{
+//   font-size: 2em;
+//   text-transform: uppercase;
+//   font-weight: 700;
+//   color:#fff;
+//   &:hover{
+//     background: darken($secondary-color,3%);
+//     color: #fff;
+//   }
+//   &:focus{
+//     background: $primary-color;
+//   }
+//   &:active{
+//     background: red;
+//   }
+// }
 
-.btn-up{
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 100px;
-  right: 30px;
-  z-index: 9;
-  border-radius: 50%;
-  background: $primary-color;
-  opacity: .3;
-  &:hover{
-    opacity: 1;
-  }
-  i{
-    color:white;
-    font-size: 2em;
-    margin-left: 11px;
-    margin-top: 8px;
-  }
-}
  
-
 // 05. Alerts
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 .alert-box{

@@ -8,10 +8,6 @@
   .btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
     outline: none;border:  none; box-shadow: none;
   } 
-
-  .intro #viewport .title lead{
-     
-  }
   .intro-mask,
   .intro-opacity-animation{
     display: none; 
@@ -30,11 +26,19 @@
       }
     } 
   }
-   
   .team .eqWrap .flip-container .flipper .front { position: relative; }
   .team .eqWrap .flip-container .flipper .back {
     position: absolute;  
     top: 0;
     z-index: 9;
   } 
+}
+
+.flipper {
+  &:hover{
+    .front{
+    visibility: hidden;
+    }
+
+  }
 }
