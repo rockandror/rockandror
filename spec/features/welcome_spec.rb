@@ -14,7 +14,7 @@ feature 'Main page' do
   scenario 'should have navbar with section links' do
     visit root_path
 
-    within('#navbar ul') do
+    within('.top-bar ul.right') do
       expect(page).to have_link('Rock&Ror')
       expect(page).to have_link('Tecnologías')
       expect(page).to have_link('Equipo')

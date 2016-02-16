@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 
@@ -13,14 +13,17 @@ gem 'turbolinks'
 gem 'jquery-turbolinks', '~> 0.2.1'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
-gem 'bootstrap-sass', '~> 3.3.4'
-gem 'bootstrap_form'
-gem 'animate.css-rails', '~> 3.1.0'
+gem 'normalize-rails'
+gem 'foundation-rails'
+gem 'foundation_rails_helper'
+gem "haml-rails", "~> 0.9"
+gem 'slick_rails'
 gem 'nprogress-rails'
+gem 'inline_svg'
 gem "non-stupid-digest-assets"
-
 gem 'premailer-rails'
 gem 'email_validator'
+gem 'rb-fsevent'
 
 # Monitoring
 gem 'newrelic_rpm'

@@ -1,8 +1,12 @@
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-sprockets
 //= require turbolinks
-//= require headroom
-//= require animation-text
-//= require viewportchecker
+//= require foundation
+//= require preload
+//= require navbar
+//= require portfolio
+//= require team
+//= require slidetext
+//= require slick
 //= require_tree .
+$(function(){ $(document).foundation(); });

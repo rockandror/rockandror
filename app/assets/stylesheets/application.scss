@@ -1,8 +1,16 @@
+@import "foundation_and_overrides";
+@import "normalize-rails";
 @import "font-awesome";
-@import "animate";
-@import "bootstrap_and_overrides";
 @import "rockandror";
 @import "welcome";
+@import "navbar";
 @import "loading";
 @import "animation-text";
-@import "mediaquery";
+@import "slidetext";
+@import "flaticon";
+@import "slick";
+@import "slick-theme";
+@import "hover";
+@import "firefox";
+@import 'mediaquery';
+

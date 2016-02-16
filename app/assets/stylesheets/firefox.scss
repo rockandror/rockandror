@@ -1,0 +1,48 @@
+@-moz-document url-prefix() {
+  a {
+    &:active, &:focus{
+      outline: none;
+      border:  none;
+    }
+  }
+  .btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
+    outline: none;border:  none; box-shadow: none;
+  } 
+  .intro-mask,
+  .intro-opacity-animation{
+    display: none; 
+  }   
+  .intro-bottom{ 
+    margin-top: 0;
+    .intro-bottom-overlay {
+       opacity: 1;
+    }
+  }
+  #viewport{ 
+    .faces{
+      .guz,.seb,.sen,.ale{
+        -moz-transform: scale(1.8);
+        margin-right: 5.3em;
+      }
+    } 
+  }
+  .team .eqWrap .flip-container .flipper .front { position: relative; }
+  .team .eqWrap .flip-container .flipper .back {
+    position: absolute;  
+    top: 0;
+    z-index: 9;
+  } 
+}
+.flipper {
+  &:hover{
+    .front{
+      visibility: hidden;
+    }
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .intro .intro-image{
+    background-position: 50% 70%;
+  }
+ } /* min-width 1921px, xxlarge screens */

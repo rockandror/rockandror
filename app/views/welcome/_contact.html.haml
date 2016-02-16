@@ -1,0 +1,27 @@
+%section#scroll_to_contact.contact.pageSection
+  .row
+    .small-12.columns
+      .medium-6.columns
+        %h3 ROCK YOUR PRODUCT AND TRUST IN ROR
+        = form_for @contact do |f|
+          = f.text_field :name, placeholder: 'Nombre o Empresa', label: "Nombre"
+          = f.text_field :email, placeholder: 'Email', label: "Email"
+          = f.text_area :message, placeholder: 'Mensaje', label: "Mensaje"
+          = f.submit "Contacta ahora", class: "button"
+      .small-12.medium-6.columns.info
+        /%h3 Contact 
+        %hr
+        %span
+          Tel: +34 605 526 618
+          %br/
+          Palma de Mallorca, España
+          %br
+          = mail_to "info@rockandror.com"
+        %hr
+          © copyright 2015
+        %hr
+        %div.logo
+          %div.name
+            = inline_svg "logo.svg"
+            %div
+              %a{:href => "#"}Rock&Ror

@@ -7,6 +7,7 @@
   z-index: 999999;
   height: 100%;
   overflow: hidden;
+  background: black;
 }
 .spin-box {
   position: absolute;
@@ -18,21 +19,21 @@
   border-radius: 100%;
   width: 15px;
   height: 15px;
-  box-shadow: 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary, 15px -15px white;
+  box-shadow: 15px 15px $primary-color, -15px 15px $secondary-color, -15px -15px $primary-color, 15px -15px $secondary-color;
   -webkit-animation: spin ease infinite 4s;
   -moz-animation: spin ease infinite 4s;
 }
 @-webkit-keyframes spin {
   0%,
-  100% {box-shadow: 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary, 15px -15px white;}
-  25% {box-shadow: -15px 15px white, -15px -15px $brand-primary, 15px -15px white, 15px 15px $brand-primary;}
-  50% {box-shadow: -15px -15px $brand-primary, 15px -15px white, 15px 15px $brand-primary, -15px 15px white;}
-  75% {box-shadow: 15px -15px white, 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary;}
+  100% {box-shadow: 15px 15px $primary-color, -15px 15px $secondary-color, -15px -15px $primary-color, 15px -15px $secondary-color;}
+  25% {box-shadow: -15px 15px $secondary-color, -15px -15px $primary-color, 15px -15px $secondary-color, 15px 15px $primary-color;}
+  50% {box-shadow: -15px -15px $primary-color, 15px -15px $secondary-color, 15px 15px $primary-color, -15px 15px $secondary-color;}
+  75% {box-shadow: 15px -15px $secondary-color, 15px 15px $primary-color, -15px 15px $secondary-color, -15px -15px $primary-color;}
 }
 @keyframes spin {
   0%,
-  100% {box-shadow: 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary, 15px -15px white;}
-  25% {box-shadow: -15px 15px white, -15px -15px $brand-primary, 15px -15px white, 15px 15px $brand-primary;}
-  50% {box-shadow: -15px -15px $brand-primary, 15px -15px white, 15px 15px $brand-primary, -15px 15px white;}
-  75% {box-shadow: 15px -15px white, 15px 15px $brand-primary, -15px 15px white, -15px -15px $brand-primary;}
+  100% {box-shadow: 15px 15px $primary-color, -15px 15px $secondary-color, -15px -15px $primary-color, 15px -15px $secondary-color;}
+  25% {box-shadow: -15px 15px $secondary-color, -15px -15px $primary-color, 15px -15px $secondary-color, 15px 15px $primary-color;}
+  50% {box-shadow: -15px -15px $primary-color, 15px -15px $secondary-color, 15px 15px $primary-color, -15px 15px $secondary-color;}
+  75% {box-shadow: 15px -15px $secondary-color, 15px 15px $primary-color, -15px 15px $secondary-color, -15px -15px $primary-color;}
 }

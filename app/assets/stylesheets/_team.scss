@@ -1,0 +1,108 @@
+.team{
+  @extend .gradient-radial-violeta;
+  border-bottom:3px solid $secondary-color;
+  h2{
+    @include text(white,uppercase,null);
+    display: inline-block;
+  }
+  p{color: white;}
+  .eqWrap {
+    .flip-container {  
+      .flipper {
+        position: relative;
+        &:hover{
+          cursor: pointer;
+          .back{opacity: 1;}
+        }
+         
+        .back {
+          position: absolute;
+          top: 0;
+          background: white;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  
+  .back {
+    padding: 2em;
+    text-align: center;
+  }
+
+  .front .name {
+    font-size: 2em;
+    display: inline-block;
+    color: #f8f8f8;
+    font-family: Courier;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 60px;
+    left: 25%;
+    position: absolute;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+  }  
+  .section{
+    .eq {       
+      i{padding: 1em;}
+      .social{
+        bottom: 2em;
+        left: 0;
+        right: 0;
+        text-align: center;
+        a{
+          margin: 0px 1em 0px 1em;
+        }
+      }
+    }
+    .senen,.carlos,.sebastia,.alle{
+     padding-bottom: 3em;
+     filter: none;
+     -webkit-filter: grayscale(40%);
+     -moz-filter:    grayscale(40%);
+     -ms-filter:     grayscale(40%);
+     -o-filter:      grayscale(40%);
+     padding-bottom: 1em;
+     cursor: pointer;
+     strong,i{
+      text-align: center;
+      display: block;
+      color:white;
+    }
+    strong{
+      font-size: 1.5em;
+      padding-top: 1em;
+    }
+    .text{
+      text-align: justify;
+      background: #fff;
+    }
+
+    span{
+      position: absolute;
+      z-index: 9;
+      left: 14px;
+      text-align: center;
+      margin-top: -1em;
+      font-size: 3.5em;
+      color: #35B4B7;
+    }
+  }
+  .senen{
+    background:$color-senen;
+    span{color:$color-senen;}
+  }
+  .carlos{
+    background:$color-carlos;
+    span{color:$color-carlos;}
+  }
+  .sebastia{
+    background:$color-sebastia;
+    span{color:$color-sebastia;}
+  }
+  .alle{
+    background: $color-alle;  
+    span{color:$color-alle;}
+  }
+}          
+}

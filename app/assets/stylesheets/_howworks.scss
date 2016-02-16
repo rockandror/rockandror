@@ -1,0 +1,12 @@
+.howworks{
+  @extend .gradient-clear;
+  h2{@include text($primary-color,uppercase,null);}
+  i{@include icons($primary-color, 16em, block, center);} 
+  text-align: justify;
+  ol{text-align:left;}
+  .clients{ 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+}

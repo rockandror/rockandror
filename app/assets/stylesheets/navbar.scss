@@ -1,0 +1,72 @@
+ svg{
+  float: left;
+  circle{
+    stroke:$primary-color;
+  }
+  path{
+    fill: $primary-color;
+  }
+}
+
+.top-bar{
+  &.expanded{
+    z-index: 100069;
+    text-align: center;
+    .right{
+      background: rgba(0,0,0,.9);
+      height: 1000px;
+      z-index: 999;
+      padding-top: 20%;
+      li{
+        margin-bottom: 2em;
+      }
+    }
+  }
+  .name{
+    padding-top: 14px;     
+    div{
+      float: left;
+      text-transform: uppercase;
+      margin-top:.3em; 
+      font-size: 1.3em;
+      margin-left:.6em; 
+      span{
+        line-height:0;
+        font-size: 10px;
+        letter-spacing: 11px;
+        color:#a8568e;
+        display: block;
+        margin-top:12px; 
+      }
+    }
+  } 
+  .top-bar-section{
+    ul{
+      li{
+        background: none;
+        &:not(.has-form) a:not(.button){
+          background: none;
+          padding: 0 1rem;
+        }
+        &.active:not(.has-form) a:not(.button){
+          background: none;
+          padding-bottom: 15px;
+          border-bottom:2px solid $primary-color;
+          color:$primary-color;
+        }
+        &:not(.has-form) a:not(.button):hover{
+          background: none;
+          color:$primary-color;
+        }
+        &.active:not(.has-form) a:not(.button):hover{
+          background: none;
+        }
+        a{
+          display: inline;
+          text-transform: uppercase;
+          font-weight: 300;
+        }
+      }
+    }
+  } 
+} 
