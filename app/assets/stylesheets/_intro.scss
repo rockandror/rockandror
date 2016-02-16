@@ -1,6 +1,6 @@
 .intro{
   .intro-image{
-    background: url(space-wallpapers-1.jpg);
+    background: image-url("space-wallpapers-1.jpg");
     position: relative;
     width: 100%;
     z-index: 1;
@@ -20,13 +20,13 @@
     z-index: 15;
     top: 0;
     background: black;  
-    -webkit-mask-image: url("intro-mask.png");
+    -webkit-mask-image: image-url("intro-mask.png");
     -webkit-mask-position: center bottom;
-    mask-image: url("intro-mask.png");
+    mask-image: image-url("intro-mask.png");
     -moz-mask-position: center bottom;
   }
   .intro-image{
-    mask-image: url(intro-mask.png) ; 
+    mask-image: image-url("intro-mask.png") ; 
     mask-position: center;
   }
   .intro-mask {
