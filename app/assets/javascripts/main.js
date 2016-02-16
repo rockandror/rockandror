@@ -1,6 +1,6 @@
 $(function () {
   //Mouse scroll
-  jQuery.scrollSpeed(100, 800);
+  //jQuery.scrollSpeed(100, 800);
     
   //scroll to section on click button menu  
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
