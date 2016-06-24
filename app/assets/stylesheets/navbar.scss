@@ -1,68 +1,140 @@
- svg{
-  float: left;
-  circle{
-    stroke:$primary-color;
-  }
-  path{
-    fill: $primary-color;
+//  svg{
+//   float: left;
+//   circle{
+//     stroke:$primary-color;
+//   }
+//   path{
+//     fill: $primary-color;
+//   }
+// }
+
+.fixed{
+  background: #fff;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 130px;
+  ul{
+    padding-top: 2.2em;
   }
 }
 
 .top-bar{
-  &.expanded{
-    z-index: 100069;
-    text-align: center;
-    .right{
-      background: rgba(0,0,0,.9);
-      height: 1000px;
-      z-index: 999;
-      padding-top: 20%;
-      li{
-        margin-bottom: 2em;
+  .logo{
+      svg{
+        width: 330px;
+        fill:#9b9b9b;
+        margin-top: 9px;
       }
+    }
+  
+  // &.expanded{
+  //   z-index: 100069;
+  //   text-align: center;
+  //   .right{
+  //     background: rgba(0,0,0,.9);
+  //     height: 1000px;
+  //     z-index: 999;
+  //     padding-top: 20%; 
+  //     li{
+  //       margin-bottom: 2em;
+  //     }
+  //   }
+  // }
+
+  .name{   
+    // div{
+    //   float: left;
+    //   text-transform: uppercase;
+    //   margin-top:.3em; 
+    //   font-size: 1.3em;
+    //   margin-left:.6em; 
+    //   span{
+    //     line-height:0;
+    //     font-size: 10px;
+    //     letter-spacing: 11px;
+    //     color:#a8568e;
+    //     display: block;
+    //     margin-top:12px; 
+    //   }
+    // }
+  } 
+
+
+  #Livello_1{
+    fill:$secondary-color;
+  }
+  .animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes bounce {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
     }
   }
-  .name{
-    padding-top: 14px;     
-    div{
-      float: left;
-      text-transform: uppercase;
-      margin-top:.3em; 
-      font-size: 1.3em;
-      margin-left:.6em; 
-      span{
-        line-height:0;
-        font-size: 10px;
-        letter-spacing: 11px;
-        color:#a8568e;
-        display: block;
-        margin-top:12px; 
-      }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
     }
-  } 
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+
   .top-bar-section{
+    .right{ 
+      padding-top: 3em;
+      strong{display: block;}
+      li:not(.has-form) a:not(.button){
+        line-height: 1;
+        color:$secondary-color;
+      }
+      a{ float: left; }
+    }
+
     ul{
       li{
         background: none;
         &:not(.has-form) a:not(.button){
+          color:$primary-color;
           background: none;
-          padding: 0 1rem;
         }
         &.active:not(.has-form) a:not(.button){
           background: none;
           padding-bottom: 15px;
-          border-bottom:2px solid $primary-color;
-          color:$primary-color;
+          color:$secondary-color;
+          font-weight: 700;
+          position: relative;
+          &:after{
+            top:34px;
+            content: url(nav-cursor.svg);
+            position: absolute;
+            left: 37%;
+             -webkit-animation:bounce 1s infinite;
+          }
         }
         &:not(.has-form) a:not(.button):hover{
           background: none;
-          color:$primary-color;
+          color:$secondary-color;
         }
         &.active:not(.has-form) a:not(.button):hover{
           background: none;
+
         }
         a{
-          display: inline;
           text-transform: uppercase;
           font-weight: 300;
         }
