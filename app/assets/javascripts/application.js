@@ -4,6 +4,7 @@
 //= require foundation
 //= require preload
 //= require navbar
+//= require jquery.backgroundvideo.min
 //= require portfolio
 //= require team
 //= require slidetext

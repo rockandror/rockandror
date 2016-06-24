@@ -60,7 +60,9 @@ a,:after,.btn{
     color: $secondary-color;
   }
 }
-
+.btn-primary{
+  background: $secondary-color;
+}
 // .btn-primary{
 //   font-size: 2em;
 //   text-transform: uppercase;
@@ -77,6 +79,8 @@ a,:after,.btn{
 //     background: red;
 //   }
 // }
+
+
 
  
 // 05. Alerts

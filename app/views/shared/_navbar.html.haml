@@ -1,6 +1,8 @@
-%nav.fixed.top-bar{"data-topbar" => "", :role => "navigation"}
-  %ul.title-area.medium-4.columns
-    %li.name
+%nav.fixed.top-bar.animated-blackwhite.delay-1{"data-topbar" => "", :role => "navigation"}
+  .welcome.animated-downcentertop.delay-1
+    Welcome
+  %ul.title-area.medium-5.columns
+    %li.name.animated-left-right.delay-3
       %a.logo{:href => "#"}
         = inline_svg "logo.svg"
     / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
@@ -9,17 +11,17 @@
         %span Menu
   %section.top-bar-section
     / Right Nav Section
-    %ul.right.text-center
+    %ul.right.text-center.animated-opacity.delay-4
       %li
         %strong +34 607.320.876
         %a{:href => "#"} Envianos una email
     / Left Nav Section
     %ul.left
-      %li.active
+      %li.active.animated-downtop.delay-6
         %a{:href => "#scroll_to_about"} Home
-      %li
+      %li.animated-downtop.delay-7
         %a{:href => "#scroll_to_about"} Equipo
-      %li
+      %li.animated-downtop.delay-8
         %a{:href => "#scroll_to_about"} Servicios
 
 / %div.fixed
