@@ -78,6 +78,10 @@
   0% { height: 100%;}
   100% { height: 0%;}
 }
+@-moz-keyframes heightclose {
+  0% { height: 100%;}
+  100% { height: 0%;}
+}
 .animated-heightclose{
   -webkit-animation:heightclose 1s;
   -webkit-animation-fill-mode: forwards;
