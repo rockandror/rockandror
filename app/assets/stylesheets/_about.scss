@@ -204,3 +204,166 @@
     }
   }
 }
+
+//partecipation section
+.partecipation{
+  @extend .partecipation-pattern; 
+  .header{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background: #0077b9;
+    svg{
+      fill: white;
+      width: 94%;
+      margin-top: 8px;
+      height: auto;
+    }
+    h3{
+      @include text(white,uppercase, null);
+      font-size: 3rem;
+      font-weight: 200;
+    }
+  }
+  .content{
+    @include padding(8em, 0em, 8em, 0em);
+  }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+//How we works
+.howweworks{
+  @include padding(8em, 0em, 0em, 0em);
+  background: #0d7d8e;
+  border-top: 3em solid darken(#0d7d8e, 10%);
+  h3{
+    color:white;
+    font-size: 2.1rem;
+    font-weight: 200;  
+    span{text-decoration: underline;}
+  }
+  i{
+    padding-top: 3em;
+    color: white;
+    display: block;
+    font-size: 1.4em;
+    width: 80%;
+    margin: 0px auto;
+    font-weight: 200;  
+  }
+  .workflow{
+    @include padding(3em, 0em, 4em, 0em);
+    .block{
+      width: 12%;
+      display: block;
+      float: left;
+      fill:white;
+      padding-top: 12px;
+      height: 70px;
+      svg{
+        height: auto;
+        width: 50%;
+      }
+      svg#acceptance{ width: 36%; }
+      svg#deployment{ width: 67%; }
+      span{
+        display: block;
+        margin-top: 10px;
+        color: white;
+        font-weight: 100;
+      }
+    }
+    .arrow{
+      width: 10%;
+      display: block;
+      float: left; 
+      padding-top: 34px;
+      svg{
+        height: auto;
+        width: 80%;
+        fill:white;
+        opacity: .8;
+      }
+    }
+  }
+  .block-path{
+    position: relative;
+    #sprint-path{
+      margin-top: 50px;
+      width: 90%;
+      height: auto;
+    }  
+    .newsprint{
+      border:2px solid white;
+      padding: 1em;
+      background: #0d7d8e;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0px auto;
+      width: 200px;
+      bottom: -17px;
+      text-transform: uppercase;
+      color:white;
+    }
+  }
+  
+  .text{
+    @include padding(4em, 4em, 4em, 4em);
+    margin-top: 2em;
+    background: #0b6d7c;
+    text-align: left;
+    color:white;
+    ul{list-style: none;}
+    span{font-size: .9rem;}
+  }
+}
+//Contact now
+.contactnow{
+  @include padding(8em, 0em, 8em, 0em);
+  @extend .gradient-clear;
+  h3{
+    color:$primary-color;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  span{
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -17px;
+  }
+  i{text-decoration: underline;}
+}
+
+//Footer
+.footer{
+  @include padding(8em, 0em, 8em, 0em);
+  text-transform: uppercase;
+  ul{
+    text-align: center;
+    display: inline-block;
+  }
+  .logo{
+    fill:$primary-color;
+    padding: 1em;
+  }
+  a{
+    display: block;
+    margin-top: 2em;
+    color:$secondary-color;
+  }
+  .social{
+    svg{
+      fill:$primary-color;
+      max-height: 15px;
+      &:hover{fill:$secondary-color;}
+    }
+  }
+}
