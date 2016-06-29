@@ -2,21 +2,8 @@
   .row.text-center
     .small-12.columns
       .row.block-text
-        .medium-5.columns
-          .gallery 
-            %div
-              = image_tag("webdings-1.png")
-            %div
-              = image_tag("webdings-1.png")
-            %div
-              = image_tag("webdings-1.png")
-            %div
-              = image_tag("webdings-1.png") 
-            %div
-              = image_tag("webdings-1.png")
-            %div
-              = image_tag("webdings-1.png")
-        .medium-1.columns
+        .medium-6.columns.image
+          = image_tag("webdings/webdings-device.png")
         .medium-6.columns.text-left
           %h3 <strong>Web</strong>dings
           %span Backend / Frontend / App
@@ -25,4 +12,5 @@
           %hr.hr-light
           = link_to '+ sobre este proyecto', '', target: :blank, class: ""
           = link_to '> www.webdings.es', '', target: :blank
+          %hr.hr-light
           %small Tecnologia: Rails4, PostgreSQL, Bootstrap, Sass, Redsys, Responsive
