@@ -21,9 +21,6 @@ $(function () {
 
  
 $(document).ready(function(){
-  heightTopBar = $(".top-bar").height();
-  resizeDiv();
-
   $('.about h3').addClass("hidden").viewportChecker({
     classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
     offset: 200    
@@ -41,9 +38,7 @@ $(document).ready(function(){
   $('.webdings .image').addClass("hidden").viewportChecker({
     classToAdd: 'visible animated fadeInLeft', // Class to add to the elements when they are visible
     offset: 300
-   });   
-
-  //$('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
+   });
 
   $('.webdings .text-left').addClass("hidden").viewportChecker({
     classToAdd: 'visible animated fadeInRight', // Class to add to the elements when they are visible
@@ -182,6 +177,9 @@ $(document).ready(function(){
     });     
 
 });
+
+heightTopBar = $(".top-bar").height();
+resizeDiv();
 
 
 window.onresize = function(event) {

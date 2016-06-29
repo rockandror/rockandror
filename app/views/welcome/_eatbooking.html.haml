@@ -2,7 +2,9 @@
   .row.text-center
     .small-12.columns
       .row.block-text
-        .medium-6.columns.text-left
+        .small-12.columns.image.show-for-small-only
+          = image_tag("eatbooking/eatbooking-ipad.png")
+        .small-12.medium-6.columns.text-left
           %h3 <strong>Eat</strong>booking
           %span Backend / Frontend / App
           %small Rock’ror Personal proyect
@@ -12,6 +14,6 @@
           = link_to '> www.webdings.es', '', target: :blank
           %hr.hr-dark
           %small Tecnologia: Rails4, PostgreSQL, Bootstrap, Sass, Redsys, Responsive  
-        .medium-6.columns.image
+        .medium-6.columns.image.show-for-medium-up
           = image_tag("eatbooking/eatbooking-ipad.png")
           

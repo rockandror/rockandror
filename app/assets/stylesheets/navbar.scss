@@ -7,9 +7,15 @@
   0% { background: black; }
   100% { background: white; }
 }
+@-moz-keyframes blacktowhite {
+  0% { background: black; }
+  100% { background: white; }
+}
 .animated-blackwhite{
   -webkit-animation:blacktowhite 5s;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation:blacktowhite 5s;
+  -moz-animation-fill-mode: forwards;
 }
 /**** OPACITY ***/ 
 @-webkit-keyframes opacity {
@@ -20,11 +26,19 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+@-moz-keyframes opacity {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .animated-opacity{
   -webkit-animation:opacity 2s;
+  -moz-animation:opacity 2s;
   animation-delay: 2s;
+  -moz-animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
 }
+
 /**** DOWN TO CENTER TO TOP ***/ 
 @-webkit-keyframes downcentertop {
   0% { -webkit-transform: translateY(150px); }
@@ -39,6 +53,8 @@
 .animated-downcentertop{
   -webkit-animation:downcentertop 2s;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation:downcentertop 2s;
+  -moz-animation-fill-mode: forwards;
 }
 
 /**** TOP TO  DOWN ***/ 
@@ -67,6 +83,8 @@
 .animated-downtop{
   -webkit-animation:downtop 1s;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation:downtop 1s;
+  -moz-animation-fill-mode: forwards;
 }
 
 /* HEIGHT 100% TO  0%*/
@@ -85,6 +103,8 @@
 .animated-heightclose{
   -webkit-animation:heightclose 1s;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation:heightclose 1s;
+  -moz-animation-fill-mode: forwards;
 }
 
 
@@ -109,6 +129,10 @@
   0% { -webkit-transform: translateX(-150px); }
   100% { transform: translateY(0px); }
 }
+@-moz-keyframes leftright {
+  0% { -webkit-transform: translateX(-150px); }
+  100% { transform: translateY(0px); }
+}
 @keyframes leftright {
   0% { transform: translateX(-150px);}
   100% { transform: translateY(0px);}
@@ -118,6 +142,9 @@
   -webkit-animation:leftright 1s;
   animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation:leftright 1s;
+  -moz-animation-delay: 3s;
+  -moz-animation-fill-mode: forwards;
 }
 
 
