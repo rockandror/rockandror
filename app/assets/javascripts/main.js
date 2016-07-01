@@ -1,37 +1,31 @@
-$(function () {
+$(document).ready(function(){ 
+  
+  var btnMenuInterval;
+  
+  function btnMenuRemoveInterval() {
+    clearInterval(btnMenuInterval);
+    $(".btn-menu").css({"-webkit-transform":"translate(0px,50px)"});
+  }
 
+  function show_icon_menu(){
+    clearInterval(btnMenuInterval);
+    $(".btn-menu").css({"-webkit-transform":"translate(0px,-10px)"});
+    btnMenuInterval = setInterval(btnMenuRemoveInterval, 3000); 
+  }
 
-  //Mouse scroll
-  //jQuery.scrollSpeed(100, 800);
-
-  //scroll to section on click button menu  
-  // $('a[href*=#scroll_to_]:not([href=#])').click(function() {
-  //   $('.top-bar-section ul li').removeClass('active'); 
-  //   $( this ).parent().addClass('active');
-  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  //     var target = $(this.hash);
-  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //     if (target.length) {
-  //       $('html,body').animate({
-  //         scrollTop: target.offset().top
-  //       }, 700);
-  //       return false;
-  //     }
-  //   }
-  // });
-})
-
-
-$(document).ready(function(){
+  $(window).scroll(function(){
+    show_icon_menu();
+  })
+  
   //remove animation Smartphone
   if ($(window).width() < 375) {
     $('.webdings,.eatbooking,.oasis').removeClass('hidden');
   }else {
-    $('.about h3').addClass("hidden").viewportChecker({
+    $('.call_to_action h3').addClass("hidden").viewportChecker({
       classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
       offset: 200    
     });
-    $('.about .button').addClass("hidden").viewportChecker({
+    $('.call_to_action .button').addClass("hidden").viewportChecker({
       classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
       offset: 150    
     });
@@ -176,7 +170,7 @@ function resizeDiv() {
 
 
 // var $animation_elements = $('.animation-element');
-// var $window = $(window);
+ //var $window = $(window);
 
 // function check_if_in_view() {
 //   var window_height = $window.height();
@@ -200,5 +194,28 @@ function resizeDiv() {
 //   });
 // }
 
-// $window.on('scroll resize', check_if_in_view);
-// $window.trigger('scroll');
+
+//$window.on('scroll resize', show_icon_menu);
+//$window.trigger('scroll');
+
+
+$(function () {
+  //Mouse scroll
+  //jQuery.scrollSpeed(100, 800);
+
+  //scroll to section on click button menu  
+  // $('a[href*=#scroll_to_]:not([href=#])').click(function() {
+  //   $('.top-bar-section ul li').removeClass('active'); 
+  //   $( this ).parent().addClass('active');
+  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //     if (target.length) {
+  //       $('html,body').animate({
+  //         scrollTop: target.offset().top
+  //       }, 700);
+  //       return false;
+  //     }
+  //   }
+  // });
+})

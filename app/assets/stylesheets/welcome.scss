@@ -1,12 +1,433 @@
-// @import 'colors' ;
-// @import "animate";
-// @import "ror_animation";
-// @import 'intro';
-// @import 'about';
-// @import 'tecnology';
-// @import 'howworks';
-// @import 'team' ;
-// @import 'portfolio' ;
-// @import 'followus' ;
-// @import 'contact' ;
- 
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, html {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: $body-bg;
+  font-family: $font-family-sans-serif;
+  font-size: rem-calc(13);
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  overflow-x:hidden; 
+}
+a,:after,.btn{
+  transition: all 0.5s ease;
+  border:none;
+  color: $primary-color;
+  &:hover,&:focus{
+    text-decoration: none;
+    outline: none;
+    color: $secondary-color;
+  }
+}
+.btn-primary{ background: $secondary-color; }
+.toggle-topbar{ display: none; }
+.slick-slide:focus { outline: none; }
+.hidden{ visibility: hidden; }
+.visible{ visibility: visible;}
+.hr-dark{border-color:#363636;}
+.hr-light{border-color:#d6d6d6;}
+.hr-oasis{border-color:#41687d;}
+
+.intro{
+  position: relative;
+  background: red;
+  overflow: hidden;
+  .promotion{
+    transform: translateY(-150px);
+    background: rgba(127, 134, 148, 0.78);
+    width: 100%;
+    line-height: 4em;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    color:#cad0da;
+  }
+  .video-container-show{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -moz-transform:translateY(0);
+    position:absolute;
+    left:0;
+    right: 0;
+    background-color:#000;
+    z-index:3;
+    width: 100%;
+    height: 100%;
+  }
+  .video-container{
+    position:absolute;
+    left:0;
+    right: 0;
+    padding:0px 0px 0px 0px;
+    background-color:#000;
+    z-index:2;
+  }
+  video{
+    width: 100%;
+    height:auto;
+  }
+}
+
+.call_to_action{
+  h3{
+    @include text($primary-color,uppercase, null);
+    font-size: 2.3rem;
+    strong{display: block;}
+  }
+  a{margin-top:3em;}
+}
+
+.slick-dots{
+ bottom: -75px !important; 
+ hr{display: none;}
+  li button{
+    border:1px solid $primary-color !important;
+    border-radius: 50%;
+    opacity: 0.5;
+    &::before{
+      font-size: 10px !important;
+      color:$primary-color !important;
+      width: 18px !important;
+    }
+  }
+}
+.slick-prev,.slick-next{display: none !important;}
+
+
+.webdings,.eatbooking,.oasis{
+  @include padding(8em, 0em, 8em, 0em);
+    h3{
+      font-size: 4rem;
+      font-weight: 200;
+      line-height: 0.7;
+    }
+    span,small{
+      display: block;
+      text-transform: uppercase;
+      font-size: 1.3em;
+    }
+    small{
+      font-size:.9em;
+      font-weight: 100;
+    } 
+  .image{
+    padding-top: 7em;
+  }
+  .text-left p{
+    font-weight: 100;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }  
+}
+
+
+//webdings section
+.webdings{
+  @extend .gradient-clear;   
+  h3{ @include text($primary-color,uppercase, null); }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+
+//eatbooking section
+.eatbooking{
+  @extend .pattern-eatbooking;
+  h3{ @include text(#f3cc33,uppercase, null); }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+
+//oasis section
+.oasis{
+  background-image: url(pattern/oasis-pattern.png),
+                    linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
+  h3{ @include text(#5fc3e6,uppercase, null); }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+
+//partecipation section
+.partecipation{
+  @extend .partecipation-pattern; 
+  .header{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background: #0077b9;
+    svg{
+      fill: white;
+      width: 94%;
+      margin-top: 8px;
+      height: auto;
+    }
+    h3{
+      @include text(white,uppercase, null);
+      font-size: 3rem;
+      font-weight: 200;
+    }
+  }
+  .content{
+    @include padding(8em, 0em, 8em, 0em);
+  }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+
+//How we works
+.howweworks{
+  @include padding(8em, 0em, 0em, 0em);
+  background: #0d7d8e;
+  border-top: 3em solid darken(#0d7d8e, 10%);
+  h3{
+    color:white;
+    font-size: 2.1rem;
+    font-weight: 200;  
+    span{text-decoration: underline;}
+  }
+  i{
+    padding-top: 3em;
+    color: white;
+    display: block;
+    font-size: 1.4em;
+    width: 80%;
+    margin: 0px auto;
+    font-weight: 200;  
+  }
+  .workflow{
+    @include padding(3em, 0em, 4em, 0em);
+    .block{
+      width: 12%;
+      display: block;
+      float: left;
+      fill:white;
+      padding-top: 12px;
+      height: 70px;
+      svg{
+        height: auto;
+        width: 50%;
+      }
+      svg#acceptance{ width: 36%; }
+      svg#deployment{ width: 67%; }
+      span{
+        display: block;
+        margin-top: 10px;
+        color: white;
+        font-weight: 100;
+      }
+    }
+    .arrow{
+      width: 10%;
+      display: block;
+      float: left; 
+      padding-top: 34px;
+      svg{
+        height: auto;
+        width: 80%;
+        fill:white;
+        opacity: .8;
+      }
+    }
+  }
+  .block-path{
+    position: relative;
+    #sprint-path{
+      margin-top: 50px;
+      width: 90%;
+      height: auto;
+    }  
+    .newsprint{
+      border:2px solid white;
+      padding: 1em;
+      background: #0d7d8e;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0px auto;
+      width: 200px;
+      bottom: -17px;
+      text-transform: uppercase;
+      color:white;
+    }
+  }
+  
+  .text{
+    @include padding(4em, 4em, 4em, 4em);
+    margin-top: 2em;
+    background: #0b6d7c;
+    text-align: left;
+    color:white;
+    ul{list-style: none;}
+    span{font-size: .9rem;}
+  }
+}
+
+//Contact now
+.contactnow{
+  @include padding(8em, 0em, 8em, 0em);
+  border-bottom:10px solid #dbdbdb;
+  @extend .gradient-clear;
+  h3{
+    color:$primary-color;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  span{
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -17px;
+  }
+  strong{
+    text-decoration: underline;
+  }
+}
+
+//Footer
+.footer{
+  @include padding(8em, 0em, 8em, 0em);
+  text-transform: uppercase;
+  ul{
+    text-align: center;
+    display: inline-block;
+  }
+  .logo{
+    fill:$primary-color;
+    padding: 1em;
+  }
+  a{
+    display: block;
+    margin-top: 2em;
+    color:$secondary-color;
+  }
+  .social{
+    svg{
+      fill:$primary-color;
+      max-height: 15px;
+      &:hover{fill:$secondary-color;}
+    }
+  }
+}
+
+//Mediaquery foundation
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+  .fixed{
+    background: #fff;
+    #Livello_1{
+      width: 100%;
+      fill:$primary-color;
+      margin-top: 10px;
+    }
+  }
+   
+  .webdings,.eatbooking,.oasis{
+    a{line-height: 4em;}
+    @include padding(2em, 0em, 2em, 0em);
+    h3{font-size: 3em;}
+    h3,small,span,p,a{text-align: center;}
+  }
+  .webdings{
+    padding-top:6em;
+    .image{padding-top: 0em;}
+  }
+  .partecipation {
+    text-align: center;
+    .header h3{
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+  .howweworks{
+    .workflow{
+      .arrow{display: none;}
+      .block{
+        width: 40%;float: none;margin: 0px auto;height: auto;
+        svg#acceptance{ width: 26%; }
+        svg#deployment{ width: 37%; }
+      }
+      
+    }
+  }
+  .footer{ 
+    padding-top: 1em;
+    padding-bottom: 1em;
+   .logo{width: 90%;}
+  }
+
+  .btn-menu{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    -moz-transform:translateY(50px);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background: black;
+    z-index: 9;
+    .icon-menu{
+      fill:white;
+      margin: 0 auto;
+      display: block;
+      margin-top: 12px;
+    }
+  }
+ } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { 
+   .fixed{background: black;}
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */

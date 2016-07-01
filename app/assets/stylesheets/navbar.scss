@@ -1,6 +1,3 @@
-
-
-
 .welcome{
   font-weight: 200;
   position: absolute;
@@ -11,11 +8,8 @@
   width: 0;
   font-size: 2em;
 }
-
-
 .fixed{
   overflow: hidden;
-  background: black;
   padding-left: 2em;
   padding-right: 2em;
   height: 130px;
@@ -30,10 +24,7 @@
 .left{
   li{transform: translateY(150px);}
 }
-.right{
-  opacity: 0;
-
-}
+.right{ opacity: 0; }
 
 .top-bar{
   .name{transform: translateX(-120%);}
@@ -44,10 +35,6 @@
         margin-top: 9px;
       }
     }
-  
-  #Livello_1{
-    //fill:$secondary-color;
-  }
   .animated {
     -webkit-animation-duration: .5s;
     animation-duration: .5s;
