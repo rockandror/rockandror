@@ -1,10 +1,11 @@
 %nav.fixed.top-bar.animated-blackwhite.delay-1{"data-topbar" => "", :role => "navigation"}
-  .welcome.animated-downcentertop.delay-1
+  = inline_svg "svg/logo-center.svg" , class: 'logo show-for-small-only'
+  .welcome.animated-downcentertop.delay-1.hide-for-small-only
     Welcome
-  %ul.title-area.medium-5.columns
+  %ul.title-area.medium-5.columns.hide-for-small-only
     %li.name.animated-left-right.delay-3
       %a.logo{:href => "#"}
-        = inline_svg "svg/logo.svg"
+        = inline_svg "svg/logo.svg" 
     / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}

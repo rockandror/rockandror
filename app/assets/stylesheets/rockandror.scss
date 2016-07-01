@@ -3,16 +3,16 @@
 // 00. Global Variables
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-#scroll_to_about,
-#scroll_to_tecnology,
-#scroll_to_howworks,
-#scroll_to_portfolio,
-#scroll_to_team,
-#scroll_to_followus,
-#scroll_to_contact
-{
-  opacity: 0;
-}  
+// #scroll_to_about,
+// #scroll_to_tecnology,
+// #scroll_to_howworks,
+// #scroll_to_portfolio,
+// #scroll_to_team,
+// #scroll_to_followus,
+// #scroll_to_contact
+// {
+//   opacity: 0;
+// }  
 
 // 01. Global styles
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -37,17 +37,17 @@ body{
   overflow-x:hidden; 
 }
 
-section, nav {
-    opacity: 1;
-    -webkit-transition:opacity .6s;
-    -moz-transition:opacity .6s;
-    -o-transition:opacity .6s;
-    transition: opacity .6s;
-}
+// section, nav {
+//     opacity: 1;
+//     -webkit-transition:opacity .6s;
+//     -moz-transition:opacity .6s;
+//     -o-transition:opacity .6s;
+//     transition: opacity .6s;
+// }
  
 //hide show section on scroll
-.hidden-section{opacity:0;}
-.visible-section{opacity:1;}
+// .hidden-section{opacity:0;}
+// .visible-section{opacity:1;}
  
 
 a,:after,.btn{

@@ -1,16 +1,27 @@
-@import "foundation_and_overrides";
-@import "normalize-rails";
-@import "font-awesome";
-@import "rockandror";
-@import "welcome";
-@import "navbar";
-@import "loading";
-@import "animation-text";
-@import "slidetext";
-@import "flaticon";
-@import "slick";
-@import "slick-theme";
-@import "hover";
-@import "firefox";
-@import 'mediaquery';
+@import 'foundation_and_overrides';
+@import 'colors';
+
+@media only screen and (min-width: 40.063em) {
+  @import 'animate';
+  @import 'ror_animation';
+} 
+@import 'rockandror';
+@import 'navbar';
+@import 'about';
+
+
+
+//@import "normalize-rails";
+//@import "font-awesome";
+//@import "welcome";
+// @import 'about';
+// @import "loading";
+// @import "animation-text";
+// @import "slidetext";
+// @import "flaticon";
+// @import "slick";
+// @import "slick-theme";
+// @import "hover";
+// @import "firefox";
+// @import 'mediaquery';
 

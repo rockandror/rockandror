@@ -1,6 +1,13 @@
+#myModal.reveal-modal{"aria-hidden" => "true", "aria-labelledby" => "modalTitle", "data-reveal" => "", :role => "dialog"}
+  %h2#modalTitle Awesome. I have it.
+  %p.lead Your couch.  It is mine.
+  %p I'm a cool paragraph that lives inside of an even cooler modal. Wins!
+  %a.close-reveal-modal{"aria-label" => "Close"} ×
+  
 %section.footer
+  %a.btn-menu{"data-reveal-id" => "myModal", :href => "#"}
   .row.text-center
-    .small-6.small-centered.columns.text-center
+    .small-12.medium-6.small-centered.columns.text-center
       = inline_svg "svg/logo-center.svg" , class: 'logo'
       %hr
       Tel: +34 607 320 876 <br>
