@@ -13,8 +13,10 @@ body{
   font-size: rem-calc(13);
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  overflow-x:hidden; 
+  .reveal-modal.open & { overflow: hidden; }
 }
+
+
 a,:after,.btn{
   transition: all 0.5s ease;
   border:none;
@@ -34,6 +36,10 @@ a,:after,.btn{
 .hr-light{border-color:#d6d6d6;}
 .hr-oasis{border-color:#41687d;}
 
+#nav-modal{
+  text-align: center;
+  a{display: block;}
+}
 .intro{
   position: relative;
   background: red;
@@ -340,7 +346,34 @@ a,:after,.btn{
 
 //Mediaquery foundation
 // Small screens
-@media only screen { } /* Define mobile styles */
+@media only screen {
+ }
+
+@media only screen and (max-width: 1024px) {
+  .btn-menu{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    -moz-transform:translateY(50px);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background: black;
+    z-index: 9;
+    .icon-menu{
+      fill:white;
+      margin: 0 auto;
+      display: block;
+      margin-top: 12px;
+    }
+  } 
+} 
+
+
+/* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
   .fixed{
@@ -351,7 +384,6 @@ a,:after,.btn{
       margin-top: 10px;
     }
   }
-   
   .webdings,.eatbooking,.oasis{
     a{line-height: 4em;}
     @include padding(2em, 0em, 2em, 0em);
@@ -377,7 +409,6 @@ a,:after,.btn{
         svg#acceptance{ width: 26%; }
         svg#deployment{ width: 37%; }
       }
-      
     }
   }
   .footer{ 
@@ -385,42 +416,29 @@ a,:after,.btn{
     padding-bottom: 1em;
    .logo{width: 90%;}
   }
+  
+  
 
-  .btn-menu{
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    bottom: 0;
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    -moz-transform:translateY(50px);
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    background: black;
-    z-index: 9;
-    .icon-menu{
-      fill:white;
-      margin: 0 auto;
-      display: block;
-      margin-top: 12px;
-    }
-  }
  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
-
+@media only screen and (min-width: 64.063em) {
+}
 
 // Medium screens
 @media only screen and (min-width: 40.063em) { 
-   .fixed{background: black;}
+
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-
+  .webdings h3, .eatbooking h3, .oasis h3{font-size: 3rem;}
+  .partecipation .header{text-align: center;}
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) { 
+  .btn-menu{display: none;}
+  
+} /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 

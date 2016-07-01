@@ -1,7 +1,6 @@
-$(document).ready(function(){ 
+$(document).ready(function(){  
   
-  var btnMenuInterval;
-  
+  var btnMenuInterval;  
   function btnMenuRemoveInterval() {
     clearInterval(btnMenuInterval);
     $(".btn-menu").css({"-webkit-transform":"translate(0px,50px)"});
@@ -9,13 +8,32 @@ $(document).ready(function(){
 
   function show_icon_menu(){
     clearInterval(btnMenuInterval);
-    $(".btn-menu").css({"-webkit-transform":"translate(0px,-10px)"});
-    btnMenuInterval = setInterval(btnMenuRemoveInterval, 3000); 
+    $(".btn-menu").css({"-webkit-transform":"translate(0px,-50px)"});
+    btnMenuInterval = setInterval(btnMenuRemoveInterval, 2000); 
   }
 
   $(window).scroll(function(){
     show_icon_menu();
-  })
+  });
+
+  $('.btn-menu').on('click', function(event) {
+    $('body').css('overflow-y','hidden');
+    console.log("open!");
+    event.preventDefault();
+  });
+
+  //remove scroll into modal
+  $('#nav-modal .close-reveal-modal').on('click', function(event) {
+    $('body').css('overflow-y','auto');
+    console.log("closed");
+    event.preventDefault();
+  });
+
+  $(document).on('click tap touchstart', '.reveal-modal-bg', function() {
+    $('body').css('overflow-y','auto');
+  }); 
+  
+
   
   //remove animation Smartphone
   if ($(window).width() < 375) {
