@@ -356,6 +356,164 @@ a,:after,.btn{
   }
 }
 
+
+//Pages .webdingspage
+.webdingspage{
+  .img-background{
+    position: relative;
+    position: relative;
+    background: url(webdings/background-page.jpg);
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    overflow: hidden;
+    height: 600px;
+  }
+  .cont-introduction{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background: #fff;
+    padding: 3em;
+  }
+  .brand-design{
+    padding: 6em 3em;
+    background: #3b3b3b;
+    .content{
+      h2{
+        font-weight: 300;
+        color:#fff;
+        text-transform: uppercase;
+      }
+      svg{
+        width: 200px;
+        height: auto;
+        padding: 3rem 0rem;
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+        color:#fff;
+      }
+    }
+  }
+  .back-end{
+   padding: 6em 3em;
+    .content{
+      h2{
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      .videoWrapperIpad{
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 100%;        
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          width: 70%;
+          left: -5px;
+          right: 0px;
+          margin: 0px auto;
+        }
+      }
+
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+      ul{
+        list-style: none;
+        font-size: 1.3rem;
+      }
+    } 
+  }
+  .front-end{
+   padding: 6em 3em;
+   background:#f3f3f3;
+    .content{
+      h2{
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      .videoWrapperIpad{
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 100%;        
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          width: 70%;
+          left: -5px;
+          right: 0px;
+          margin: 0px auto;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+    } 
+  }
+  .app-mobile{
+   padding: 6em 3em;
+    .content{
+      h2{
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      .videoWrapperIphone{
+        display: block;
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 310px;
+        }  
+        video{
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          right: 0;
+          margin: 0px auto;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+    } 
+  }
+  .tecnology{
+    padding: 6em 3em;
+    background: #3b3b3b;   
+    .content{
+      h2{
+        font-weight: 300;
+        color:#fff;
+        text-transform: uppercase;
+      }
+      svg{
+        width: 200px;
+        height: auto;
+        padding: 3rem 0rem;
+        fill:white;
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: center;
+        color:#fff;
+      }
+    }
+  }
+}
+
 //Mediaquery foundation
 // Small screens
 @media only screen {
@@ -428,9 +586,6 @@ a,:after,.btn{
     padding-bottom: 1em;
    .logo{width: 90%;}
   }
-  
-  
-
  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 @media only screen and (min-width: 64.063em) {

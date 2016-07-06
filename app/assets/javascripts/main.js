@@ -33,12 +33,37 @@ $(document).ready(function(){
     $('body').css('overflow-y','auto');
   }); 
   
+   
 
-  
+  var isHomePage = document.getElementsByClassName('home');
+
+  if(!isHomePage.length){
+    console.log ("no");
+    $('nav').removeClass("animated-blackwhite");
+    $('nav').removeClass("delay-1");
+    $('nav .title-area li ').removeClass("delay-3");
+    $('nav .title-area li ').removeClass("animated-left-right");
+    $('nav .title-area li ').removeClass("name");
+    $('nav .welcome').remove();
+    $('nav .name').removeClass("animated-left-right");
+    $('nav .left > li').removeClass("animated-downtop");
+    $('nav .left > li ').removeClass("animated-opacity");
+    $('nav .right').removeClass("animated-opacity");
+    $('nav .right').removeClass("delay-4");
+    $('nav .left > li ').css('transform' , 'translateY(0px)');
+    
+
+    $('nav').css('background','#fff');
+    $('nav .right').css('opacity','1');
+
+    
+    
+  }
   //remove animation Smartphone
   if ($(window).width() < 375) {
     $('.webdings,.eatbooking,.oasis').removeClass('hidden');
-  }else {
+  //remove animation is not home
+  }else if(isHomePage.length > 0){
     $('.call_to_action h3').addClass("hidden").viewportChecker({
       classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
       offset: 200    

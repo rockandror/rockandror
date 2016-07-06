@@ -1,12 +1,11 @@
 %a.btn-menu{"data-reveal-id" => "nav-modal", :href => "#"}
   = inline_svg "svg/icon-menu.svg" , class: 'icon-menu'
-
-%nav.fixed.top-bar.animated-blackwhite.delay-1{"data-topbar" => "", :role => "navigation","data-options" => "sticky_on: small"}
+%nav.fixed.top-bar{"data-topbar" => "", :role => "navigation","data-options" => "sticky_on: small"}
   = inline_svg "svg/logo-center.svg" , class: 'logo show-for-small-only'
-  .welcome.animated-downcentertop.delay-1.hide-for-small-only
+  .welcome
     Welcome
   %ul.title-area.medium-5.columns.hide-for-small-only
-    %li.name.animated-left-right.delay-3
+    %li.name
       %a.logo{:href => "#"}
         = inline_svg "svg/logo.svg" 
     / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
@@ -15,43 +14,15 @@
         %span Menu
   %section.top-bar-section
     / Right Nav Section
-    %ul.right.text-center.animated-opacity.delay-4
+    %ul.right.text-center
       %li
         %strong +34 607.320.876
         %a{:href => "#"} Envianos una email
     / Left Nav Section
     %ul.left
-      %li.active.animated-downtop.delay-6
+      %li
         %a{:href => "#scroll_to_about"} Home
-      %li.animated-downtop.delay-7
+      %li
         %a{:href => "#scroll_to_about"} Equipo
-      %li.animated-downtop.delay-8
+      %li
         %a{:href => "#scroll_to_about"} Servicios
-
-/ %div.fixed
-/   %nav.top-bar{"data-topbar" => "", :role => "navigation"}
-/     %ul.medium-4.columns
-/       %a{:href => "#scroll_to_intro"}
-/         %li.logo
-/           = inline_svg "logo.svg"
-/           %div
-/           / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-/       %li.toggle-topbar.menu-icon
-/         %a{:href => "#"}
-/           %span
-
-/     %ul.medium-6.columns.inline-list
-/       %li
-/         %a{:href => "#scroll_to_about"} Rock&Ror
-/       %li
-/         %a{:href => "#scroll_to_howworks"} Como trabajamos  
-/       %li
-/         %a{:href => "#scroll_to_portfolio"} Portfolio
-/       %li
-/         %a{:href => "#scroll_to_team"} Equipo
-/       %li
-/         %a{:href => "#scroll_to_contact"} Contacto
-/     %ul.medium-2.columns
-/       %li
-/         %strong{:href => "#scroll_to_contact"} +34 607.320.876 
-        

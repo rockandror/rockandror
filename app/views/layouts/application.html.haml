@@ -17,7 +17,11 @@
     = javascript_include_tag "application", 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    = #render "shared/loading"
-    = render "shared/navbar"
+    
+    = render "shared/navbar_animate"
+    
+    /= render "shared/navbar"
+    
     = render "shared/notice"
     = yield
+    = render 'shared/footer'

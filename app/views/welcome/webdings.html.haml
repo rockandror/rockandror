@@ -1,0 +1,76 @@
+.webdingspage
+  .img-background
+    .cont-introduction.medium-6.columns
+      %h2 Webdings
+      %span Crea la app y la web de tu boda
+      %hr
+      %p
+        Introducion/ resumen   proyecto
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      %hr
+      = link_to '> www.webdings.es', '', target: :blank
+  .brand-design
+    .content.medium-6.medium-centered.columns
+      %h2.text-center <strong>Brand</strong> design
+      %div.text-center
+        = inline_svg "svg/webdings-logo.svg"
+      %p 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  .back-end
+    .content.medium-centered.columns.row
+      %h2.text-center <strong>Back</strong> end
+      .videoWrapperIpad.medium-12
+        /= video_player("video-ipad", "videos-new/ipad", "wedding-page/poster-ipad.jpg")
+        = image_tag "ipad.png", class: "img-play-ipad"
+        %hr
+        .medium-6.column
+          %p 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        .medium-5.column.medium-offset-1    
+          %ul
+            %li Envia invitaciones por email
+            %li Define el menú
+            %li Organiza a los invitados por mesas
+            %li Crea una galería de imágenes
+            %li Puntos de interés
+            %li Confirmación de servicios
+            %li Administrador
+            %li Configuración adaptable
+            %li Diseño customizable
+  .front-end
+    .content.medium-centered.columns.row
+      %h2.text-center <strong>Front</strong> end
+      .medium-12
+        /= video_player("video-ipad", "videos-new/ipad", "wedding-page/poster-ipad.jpg")
+        = image_tag "macbookpro.png", class: "img-play-ipad"
+        %hr
+        .medium-centered.columns
+          %p 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  .app-mobile
+    .content.medium-centered.columns.row
+      %h2.text-center <strong>App</strong> Mobile
+      .videoWrapperIphone.medium-12.text-center
+        /= video_player("video-ipad", "videos-new/ipad", "wedding-page/poster-ipad.jpg")
+        = image_tag "iphone5s_front-empty.png", class: "img-play-ipad"
+        %hr
+      .medium-centered.columns
+        %p 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+  .tecnology
+    .content.medium-centered.columns.row
+      %h2.text-center <strong>Tecnologia</strong> utilizada
+      .row.text-center
+        = inline_svg "svg/icon-responsive.svg", class: 'text-center'
+      .medium-centered.columns
+        %p 
+          Ruby onRails / Postgres / Rspec (+ 300 specs ) <br>
+          Bootstrap / Sass / Responsive <br>
+          API  / Ionic <br>
+          Photoshop / Illustrator
+  = render 'shared/contact_now'

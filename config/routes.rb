@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#home'
   post 'contact', controller: 'contact', action: 'create', as: 'contacts'
   get '/team', to: 'welcome#team', as: :team
+  get '/webdings', to: 'welcome#webdings', as: :webdings
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/devel/emails"
   end
