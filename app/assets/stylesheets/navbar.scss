@@ -65,10 +65,6 @@
     -webkit-animation-name: bounce;
     animation-name: bounce;
   }
-
-  /******/
-
-  
   .top-bar-section{
     .right{ 
       padding-top: 3em;
@@ -79,7 +75,6 @@
       }
       a{ float: left; }
     }
-
     ul{
       li{
         background: none;
@@ -107,11 +102,11 @@
         }
         &.active:not(.has-form) a:not(.button):hover{
           background: none;
-
         }
         a{
           text-transform: uppercase;
           font-weight: 300;
+          cursor: pointer;
         }
       }
     }

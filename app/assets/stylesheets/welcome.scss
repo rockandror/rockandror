@@ -15,7 +15,7 @@ body{
   text-rendering: optimizeLegibility;
   .reveal-modal.open & { overflow: hidden; }
 }
-
+h1, h2, h3, h4, h5, h6{color: $primary-color;}
 
 a,:after,.btn{
   transition: all 0.5s ease;
@@ -359,6 +359,11 @@ a,:after,.btn{
 
 //Pages .webdingspage
 .webdingspage{
+  .row{max-width: 100%;}
+  h2{
+    text-transform: uppercase;
+    font-weight: 300;
+  }
   .img-background{
     position: relative;
     position: relative;
@@ -367,24 +372,28 @@ a,:after,.btn{
     background-repeat:   no-repeat;
     background-position: center center; 
     overflow: hidden;
-    height: 600px;
+    height: 900px;
   }
   .cont-introduction{
     position: absolute;
-    top: 5rem;
+    top: 20%;
     right: 0;
+    left: 0;
+    margin: 0px auto;
     background: #fff;
     padding: 3em;
+     
+    span{text-transform: uppercase;}
+    p{
+      font-size: 1.3rem;
+      text-align: justify;
+    }
   }
   .brand-design{
     padding: 6em 3em;
     background: #3b3b3b;
     .content{
-      h2{
-        font-weight: 300;
-        color:#fff;
-        text-transform: uppercase;
-      }
+      h2{ color:#fff;}
       svg{
         width: 200px;
         height: auto;
@@ -400,10 +409,6 @@ a,:after,.btn{
   .back-end{
    padding: 6em 3em;
     .content{
-      h2{
-        font-weight: 300;
-        text-transform: uppercase;
-      }
       .videoWrapperIpad{
         img{
           position: relative;
@@ -435,16 +440,10 @@ a,:after,.btn{
    padding: 6em 3em;
    background:#f3f3f3;
     .content{
-      h2{
-        font-weight: 300;
-        text-transform: uppercase;
-      }
-      .videoWrapperIpad{
         img{
           position: relative;
-          z-index: 2;
           margin: 0px auto;
-          width: 100%;        
+          display: block;
         }
         video{
           position: absolute;
@@ -454,7 +453,6 @@ a,:after,.btn{
           right: 0px;
           margin: 0px auto;
         }
-      }
       p{
         font-size: 1.3rem;
         text-align: justify;
@@ -464,10 +462,6 @@ a,:after,.btn{
   .app-mobile{
    padding: 6em 3em;
     .content{
-      h2{
-        font-weight: 300;
-        text-transform: uppercase;
-      }
       .videoWrapperIphone{
         display: block;
         img{
@@ -494,11 +488,7 @@ a,:after,.btn{
     padding: 6em 3em;
     background: #3b3b3b;   
     .content{
-      h2{
-        font-weight: 300;
-        color:#fff;
-        text-transform: uppercase;
-      }
+      h2{ color:#fff; }
       svg{
         width: 200px;
         height: auto;
@@ -586,6 +576,12 @@ a,:after,.btn{
     padding-bottom: 1em;
    .logo{width: 90%;}
   }
+  .webdingspage{
+    text-align: center;
+    .cont-introduction{
+      position: relative;
+    }
+  }   
  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 @media only screen and (min-width: 64.063em) {

@@ -1,5 +1,4 @@
-$(document).ready(function(){  
-  
+$(document).ready(function(){    
   var btnMenuInterval;  
   function btnMenuRemoveInterval() {
     clearInterval(btnMenuInterval);
@@ -33,12 +32,9 @@ $(document).ready(function(){
     $('body').css('overflow-y','auto');
   }); 
   
-   
-
   var isHomePage = document.getElementsByClassName('home');
-
+  //remove animation navbar if not home
   if(!isHomePage.length){
-    console.log ("no");
     $('nav').removeClass("animated-blackwhite");
     $('nav').removeClass("delay-1");
     $('nav .title-area li ').removeClass("delay-3");
@@ -51,13 +47,8 @@ $(document).ready(function(){
     $('nav .right').removeClass("animated-opacity");
     $('nav .right').removeClass("delay-4");
     $('nav .left > li ').css('transform' , 'translateY(0px)');
-    
-
     $('nav').css('background','#fff');
     $('nav .right').css('opacity','1');
-
-    
-    
   }
   //remove animation Smartphone
   if ($(window).width() < 375) {
@@ -197,49 +188,22 @@ $(document).ready(function(){
       offset: 300 
     }); 
   }
+  
+  heightTopBar = $(".top-bar").height();
+  resizeDiv();
+
 });
-
-heightTopBar = $(".top-bar").height();
-resizeDiv();
-
 
 window.onresize = function(event) {
   resizeDiv();
 }
 function resizeDiv() {
   h = $(window).height() - heightTopBar;
-  $('.intro').css({'height': h + 'px'});
+  $('.intro,.webdingspage .img-background').css({'height': h + 'px'});
+  if ($(window).width() <= 374) {
+    $('.webdingspage .img-background').css({'height': '160px'});
+  } 
 }
-
-
-// var $animation_elements = $('.animation-element');
- //var $window = $(window);
-
-// function check_if_in_view() {
-//   var window_height = $window.height();
-//   var window_top_position = $window.scrollTop();
-//   var window_bottom_position = (window_top_position + window_height);
-
-//   $.each($animation_elements, function() {
-//     console.log(window_bottom_position);
-//     var $element = $(this);
-//     var element_height = $element.outerHeight();
-//     var element_top_position = $element.offset().top;
-//     var element_bottom_position = (element_top_position + element_height);
-
-//     //check to see if this current container is within viewport
-//     if ((element_bottom_position >= window_top_position) &&
-//         (element_top_position <= window_bottom_position)) {
-//       $element.addClass('in-view');
-//     } else {
-//       $element.removeClass('in-view');
-//     }
-//   });
-// }
-
-
-//$window.on('scroll resize', show_icon_menu);
-//$window.trigger('scroll');
 
 
 $(function () {
