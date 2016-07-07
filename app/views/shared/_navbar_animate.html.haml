@@ -6,52 +6,20 @@
     Welcome
   %ul.title-area.medium-5.columns.hide-for-small-only
     %li.name.animated-left-right.delay-3
-      %a.logo{:href => "#"}
+      %a.logo{:href => root_path}
         = inline_svg "svg/logo.svg" 
-    / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
         %span Menu
   %section.top-bar-section
-    / Right Nav Section
     %ul.right.text-center.animated-opacity.delay-4
       %li
         %strong +34 607.320.876
-        %a{:href => "#"} Envianos una email
-    / Left Nav Section
+        %a{:href => new_contact_path} Envianos un email
     %ul.left
       %li.active.animated-downtop.delay-6
-        %a{:href => "/"} Home
+        %a{:href => root_path} Home
       %li.animated-downtop.delay-7
         %a{:href => "team"} Equipo
       %li.animated-downtop.delay-8
         %a{:href => "services"} Servicios
-      %li.animated-downtop.delay-9
-        %a{:href => "works"} Trabajos
-/ %div.fixed
-/   %nav.top-bar{"data-topbar" => "", :role => "navigation"}
-/     %ul.medium-4.columns
-/       %a{:href => "#scroll_to_intro"}
-/         %li.logo
-/           = inline_svg "logo.svg"
-/           %div
-/           / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-/       %li.toggle-topbar.menu-icon
-/         %a{:href => "#"}
-/           %span
-
-/     %ul.medium-6.columns.inline-list
-/       %li
-/         %a{:href => "#scroll_to_about"} Rock&Ror
-/       %li
-/         %a{:href => "#scroll_to_howworks"} Como trabajamos  
-/       %li
-/         %a{:href => "#scroll_to_portfolio"} Portfolio
-/       %li
-/         %a{:href => "#scroll_to_team"} Equipo
-/       %li
-/         %a{:href => "#scroll_to_contact"} Contacto
-/     %ul.medium-2.columns
-/       %li
-/         %strong{:href => "#scroll_to_contact"} +34 607.320.876 
-        

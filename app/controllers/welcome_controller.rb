@@ -18,5 +18,5 @@ class WelcomeController < ApplicationController
 
   def oasiscatamaran
   end
-
+  
 end

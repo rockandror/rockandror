@@ -10,6 +10,3 @@
 //= require slidetext
 //= require slick
 //= require_tree .
-$(function(){
-  $(document).foundation();
-});

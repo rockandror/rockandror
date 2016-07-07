@@ -1,14 +1,19 @@
 class ContactController < ApplicationController
+  def new
+    @contact = Contact.new
+  end
 
   def create
     @contact = Contact.new(contact_params)
     if @contact.valid?
       ContactMailer.notification(@contact).deliver_now
-      redirect_to root_path, notice: "Gracias por contactar con nosotros. Le atenderemos en cuanto sea posible."
+      redirect_to greetings_path
     else
-        flash.now[:alert]= "errores en el formulario"
-        render "welcome/home"
+      render "contact/new"
     end    
+  end
+
+  def greetings
   end
 
   private
