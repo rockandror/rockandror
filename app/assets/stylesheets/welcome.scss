@@ -14,19 +14,19 @@ body{
   font-weight: normal;
   text-rendering: optimizeLegibility;
   .reveal-modal.open & { overflow: hidden; }
-}
-h1, h2, h3, h4, h5, h6{color: $primary-color;}
-
-a,:after,.btn{
-  transition: all 0.5s ease;
-  border:none;
-  color: $primary-color;
-  &:hover,&:focus{
-    text-decoration: none;
-    outline: none;
-    color: $secondary-color;
+  h1, h2, h3, h4, h5, h6{color: $primary-color;}
+  a,:after,.btn{
+    transition: all 0.5s ease;
+    border:none;
+    color: $primary-color;
+    &:hover,&:focus{
+      text-decoration: none;
+      outline: none;
+      color: $secondary-color;
+    }
   }
 }
+
 .btn-primary{ background: $secondary-color; }
 .toggle-topbar{ display: none; }
 .slick-slide:focus { outline: none; }
@@ -36,10 +36,27 @@ a,:after,.btn{
 .hr-light{border-color:#d6d6d6;}
 .hr-oasis{border-color:#41687d;}
 
+.slick-dots{
+ bottom: -75px !important; 
+ hr{display: none;}
+  li button{
+    border:1px solid $primary-color !important;
+    border-radius: 50%;
+    opacity: 0.5;
+    &::before{
+      font-size: 10px !important;
+      color:$primary-color !important;
+      width: 18px !important;
+    }
+  }
+}
+.slick-prev,.slick-next{display: none !important;}
+
 #nav-modal{
   text-align: center;
   a{display: block;}
 }
+//Section intro
 .intro{
   position: relative;
   background: url(intro3.jpg);
@@ -92,30 +109,14 @@ a,:after,.btn{
   }
 }
 
-.call_to_action{
-  h3{
-    @include text($primary-color,uppercase, null);
-    font-size: 2.3rem;
-    strong{display: block;}
-  }
-  a{margin-top:3em;}
-}
-
-.slick-dots{
- bottom: -75px !important; 
- hr{display: none;}
-  li button{
-    border:1px solid $primary-color !important;
-    border-radius: 50%;
-    opacity: 0.5;
-    &::before{
-      font-size: 10px !important;
-      color:$primary-color !important;
-      width: 18px !important;
-    }
-  }
-}
-.slick-prev,.slick-next{display: none !important;}
+// .call_to_action{
+//   h3{
+//     @include text($primary-color,uppercase, null);
+//     font-size: 2.3rem;
+//     strong{display: block;}
+//   }
+//   a{margin-top:3em;}
+// }
 
 
 .webdings,.eatbooking,.oasis{
@@ -143,9 +144,7 @@ a,:after,.btn{
     padding-bottom: 3em;
   }  
 }
-
-
-//webdings section
+//Section webdings
 .webdings{
   @extend .gradient-clear;   
   h3{ @include text($primary-color,uppercase, null); }
@@ -158,8 +157,7 @@ a,:after,.btn{
     }
   }
 }
-
-//eatbooking section
+//Section eatbooking
 .eatbooking{
   @extend .pattern-eatbooking;
   h3{ @include text(#f3cc33,uppercase, null); }
@@ -172,8 +170,7 @@ a,:after,.btn{
     }
   }
 }
-
-//oasis section
+//Section oasis
 .oasis{
   background-image: url(pattern/oasis-pattern.png),
                     linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
@@ -187,8 +184,7 @@ a,:after,.btn{
     }
   }
 }
-
-//partecipation section
+//Section partecipation
 .partecipation{
   @extend .partecipation-pattern; 
   .header{
@@ -219,8 +215,7 @@ a,:after,.btn{
     }
   }
 }
-
-//How we works
+//Section how we works
 .howweworks{
   @include padding(8em, 0em, 0em, 0em);
   background: #0d7d8e;
@@ -307,8 +302,7 @@ a,:after,.btn{
     span{font-size: .9rem;}
   }
 }
-
-//Contact now
+//Section contact now
 .contactnow{
   @include padding(8em, 0em, 8em, 0em);
   border-bottom:10px solid #dbdbdb;
@@ -329,8 +323,7 @@ a,:after,.btn{
     text-decoration: underline;
   }
 }
-
-//Footer
+//Page Footer
 .footer{
   @include padding(8em, 0em, 8em, 0em);
   text-transform: uppercase;
@@ -355,9 +348,7 @@ a,:after,.btn{
     }
   }
 }
-
-
-//Pages .webdingspage
+//Page .webdingspage
 .webdingspage{
   .img-background{ background: url(webdings/background-page.jpg); }
   .cont-introduction{ background: #fff; }
@@ -457,7 +448,6 @@ a,:after,.btn{
       }
     } 
   }
-  
   .webdingspage{
     text-align: center;
     .cont-introduction{
@@ -465,7 +455,7 @@ a,:after,.btn{
     }
   }
 }
-//Pages .eatbooking
+//Page .eatbooking
 .eatbookingpage{
   h2{ color:#f3cc33; }
   .img-background{ background: url(eatbooking/background-page.jpg); }
@@ -502,7 +492,7 @@ a,:after,.btn{
     } 
   }
 }
-//Pages .oasiscatamaran
+//Page .oasiscatamaran
 .oasiscatamaranspage{
   h2{ color: #5fc3e6; }
   .img-background{ background: url(oasis-catamaran/background-page.jpg); }
@@ -562,51 +552,25 @@ a,:after,.btn{
       }
     } 
   }
-  .app-mobile{
-   padding: 6em 3em;
-    .content{
-      .videoWrapperIphone{
-        display: block;
-        img{
-          position: relative;
-          z-index: 2;
-          margin: 0px auto;
-          width: 310px;
-        }  
-        video{
-          position: absolute;
-          z-index: 1;
-          left: 0;
-          right: 0;
-          margin: 0px auto;
-        }
-      }
-      p{
-        font-size: 1.3rem;
-        text-align: justify;
-      }
-    } 
-  }
 }
-//Contact
+//Page Contact
 .contactpage{
   .row{max-width: 100%;}
   h2{
     text-transform: uppercase;
     font-weight: 300;
-    color: #5fc3e6;
   }
   .img-background{
     background: url(intro3.jpg);
   }
   .cont-introduction{ background: white; }
+  textarea{height: 150px;}
 }
-//greetingspage
+//Page greetingspage
 .greetingspage{
   background: #f8f8f8;
   .row{max-width: 100%;}
 }
-
 .webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage,.greetingspage{
   .img-background{
     position: relative;
@@ -732,7 +696,6 @@ a,:after,.btn{
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (min-width: 64.063em) {}// Medium screens
 @media only screen and (min-width: 40.063em) {} /* min-width 641px, medium screens */
-
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
   .webdings h3, .eatbooking h3, .oasis h3{font-size: 3rem;}
   .partecipation .header{text-align: center;}
@@ -749,18 +712,13 @@ a,:after,.btn{
     }
   }
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
 // Large screens
 @media only screen and (min-width: 64.063em) { 
   .btn-menu{display: none;}
 } /* min-width 1025px, large screens */
-
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-
 // XLarge screens
 @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-
 @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
 // XXLarge screens
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */

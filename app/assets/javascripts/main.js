@@ -43,7 +43,6 @@ $(document).ready(function(){
     js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.6&appId=677931358931239";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-
 });
 
 function removeAnimation(){
@@ -70,14 +69,6 @@ function removeAnimation(){
       $('.webdings,.eatbooking,.oasis').removeClass('hidden');
     //remove animation is not home
     }else if(isHomePage.length > 0){
-      $('.call_to_action h3').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
-        offset: 200    
-      });
-      $('.call_to_action .button').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
-        offset: 150    
-      });
       //Webding section animate
       $('.webdings').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
