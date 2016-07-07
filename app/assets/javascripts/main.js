@@ -200,7 +200,7 @@ window.onresize = function(event) {
 function resizeDiv() {
   h = $(window).height() - heightTopBar;
   $('.intro,.webdingspage .img-background').css({'height': h + 'px'});
-  if ($(window).width() <= 374) {
+  if ($(window).width() <= 1024) {
     $('.webdingspage .img-background').css({'height': '160px'});
   } 
 }

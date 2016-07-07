@@ -392,6 +392,7 @@ a,:after,.btn{
   .brand-design{
     padding: 6em 3em;
     background: #3b3b3b;
+    position: relative;
     .content{
       h2{ color:#fff;}
       svg{
@@ -502,6 +503,12 @@ a,:after,.btn{
       }
     }
   }
+  .webdingspage{
+    text-align: center;
+    .cont-introduction{
+      position: relative;
+    }
+  }
 }
 
 //Mediaquery foundation
@@ -576,12 +583,14 @@ a,:after,.btn{
     padding-bottom: 1em;
    .logo{width: 90%;}
   }
+  
   .webdingspage{
     text-align: center;
     .cont-introduction{
       position: relative;
     }
   }   
+
  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 @media only screen and (min-width: 64.063em) {
@@ -589,18 +598,28 @@ a,:after,.btn{
 
 // Medium screens
 @media only screen and (min-width: 40.063em) { 
-
+  // .webdingspage{
+  //   text-align: center;
+  //   .cont-introduction{
+  //     position: relative;
+  //   }
+  // }
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
   .webdings h3, .eatbooking h3, .oasis h3{font-size: 3rem;}
   .partecipation .header{text-align: center;}
+  .webdingspage{
+    text-align: center;
+    .cont-introduction{
+      position: relative;
+    }
+  }
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 64.063em) { 
   .btn-menu{display: none;}
-  
 } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
