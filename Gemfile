@@ -24,6 +24,7 @@ gem "non-stupid-digest-assets"
 gem 'premailer-rails'
 gem 'email_validator'
 gem 'rb-fsevent'
+gem 'cookies_eu'
 
 # Monitoring
 gem 'newrelic_rpm'

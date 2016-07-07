@@ -7,6 +7,6 @@
 //= require viewportchecker
 //= require portfolio
 //= require team
-//= require slidetext
+//= require cookies_eu
 //= require slick
 //= require_tree .
