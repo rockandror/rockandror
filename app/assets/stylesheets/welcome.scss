@@ -109,16 +109,6 @@ body{
   }
 }
 
-// .call_to_action{
-//   h3{
-//     @include text($primary-color,uppercase, null);
-//     font-size: 2.3rem;
-//     strong{display: block;}
-//   }
-//   a{margin-top:3em;}
-// }
-
-
 .webdings,.eatbooking,.oasis{
   @include padding(8em, 0em, 8em, 0em);
     h3{
@@ -247,6 +237,7 @@ body{
       svg{
         height: auto;
         width: 50%;
+        zoom: 2;
       }
       svg#acceptance{ width: 36%; }
       svg#deployment{ width: 67%; }
@@ -267,6 +258,7 @@ body{
         width: 80%;
         fill:white;
         opacity: .8;
+        zoom: 3;
       }
     }
   }
@@ -289,6 +281,7 @@ body{
       bottom: -17px;
       text-transform: uppercase;
       color:white;
+      zoom:1.3;
     }
   }
   
