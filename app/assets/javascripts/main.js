@@ -109,15 +109,15 @@ function removeAnimation(){
         offset: 300
       });  
       //Partecipation section animate
-      $('.partecipation').addClass("hidden").viewportChecker({
+      $('.participation').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
         offset: 300
       });   
-      $('.partecipation .gallery').addClass("hidden").viewportChecker({
+      $('.participation .gallery').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeInLeft', // Class to add to the elements when they are visible
         offset: 300
       });
-      $('.partecipation .text').addClass("hidden").viewportChecker({
+      $('.participation .text').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeInRight', // Class to add to the elements when they are visible
         offset: 300
       });  

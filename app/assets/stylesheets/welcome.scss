@@ -184,9 +184,9 @@ body{
     }
   }
 }
-//Section partecipation
-.partecipation{
-  @extend .partecipation-pattern; 
+//Section participation
+.participation{
+  @extend .participation-pattern; 
   .header{
     padding-top: 3em;
     padding-bottom: 3em;
@@ -689,7 +689,7 @@ body{
     padding-top:6em;
     .image{padding-top: 0em;}
   }
-  .partecipation {
+  .participation {
     text-align: center;
     .header h3{
       text-align: center;
@@ -727,7 +727,7 @@ body{
 @media only screen and (min-width: 40.063em) {} /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
   .webdings h3, .eatbooking h3, .oasis h3{font-size: 3rem;}
-  .partecipation .header{text-align: center;}
+  .participation .header{text-align: center;}
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
  
