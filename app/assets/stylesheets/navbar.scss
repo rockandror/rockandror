@@ -29,16 +29,22 @@
 .right{ opacity: 0; }
 
 .top-bar{
+  .logo-center{
+    width: 80%;
+    fill:#9b9b9b;
+    margin: 0px auto;
+    margin-top: 9px;
+  }
   .name{
     transform: translateX(-120%);
   }
   .logo{
-      svg{
-        width: 330px;
-        fill:#9b9b9b;
-        margin-top: 9px;
-      }
+    svg{
+      width: 330px;
+      fill:#9b9b9b;
+      margin-top: 9px;
     }
+  }
   .animated {
     -webkit-animation-duration: .5s;
     animation-duration: .5s;
