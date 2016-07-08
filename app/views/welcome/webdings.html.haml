@@ -22,7 +22,7 @@
     .content.medium-12.small-12.large-10.columns.medium-centered
       %h2.text-center <strong>Back</strong> end
       .videoWrapperIpad.medium-12
-        /= video_player("video-ipad", "videos-new/ipad", "wedding-page/poster-ipad.jpg")
+        = video_player("video-ipad", "videos-new/ipad", "wedding-page/poster-ipad.jpg")
         = image_tag "ipad.png", class: "img-play-ipad"
         %hr
         .row
@@ -50,7 +50,7 @@
       %h2.text-center <strong>Front</strong> end
       .medium-12
         /= video_player("video-ipad", "videos-new/ipad", "wedding-page/poster-ipad.jpg")
-        = image_tag "macbookpro.png", class: "img-play-ipad"
+        = image_tag "webdings/device-commercial.jpg", class: "img-play-ipad"
         %hr
         .medium-centered.columns
           %p 
@@ -60,7 +60,7 @@
     .content.medium-12.small-12.large-10.columns.medium-centered
       %h2.text-center <strong>App</strong> Mobile
       .videoWrapperIphone.medium-12.text-center
-        /= video_player("video-ipad", "videos-new/ipad", "wedding-page/poster-ipad.jpg")
+        = video_player("video-iphone", "videos-new/iphone", "wedding-page/poster-iphone.jpg")
         = image_tag "iphone5s_front-empty.png", class: "img-play-ipad"
         %hr
       .medium-centered.columns

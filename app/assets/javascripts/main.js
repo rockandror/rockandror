@@ -199,10 +199,11 @@ function removeAnimation(){
 window.onresize = function(event) { resizeDiv(); }
 function resizeDiv() {
   h = $(window).height() - heightTopBar;
-  $('.intro,.webdingspage .img-background,.eatbookingpage .img-background,.contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
-  if ($(window).width() <= 1024) {
-    $('.webdingspage .img-background').css({'height': '160px'});
-    $('.eatbookingpage .img-background').css({'height': '160px'});
+  $('.intro,.webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
+  if ($(window).width() <= 1056) {
+    $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background').css({'height': '160px'});
+    
+
   }
 }
 

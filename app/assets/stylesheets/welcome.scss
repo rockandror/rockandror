@@ -383,8 +383,6 @@ body{
         video{
           position: absolute;
           z-index: 1;
-          width: 70%;
-          left: -5px;
           right: 0px;
           margin: 0px auto;
         }
@@ -622,6 +620,25 @@ body{
 // Small screens
 @media only screen {
 }
+// Large screens
+@media only screen and (max-width: 1072px) { 
+  .webdingspage,.eatbookingpage,.oasiscatamaranspage{
+    text-align: center;
+    .cont-introduction{
+      position: relative;
+    }
+  }
+  .webdingspage{
+    .videoWrapperIpad{
+      video{
+        width: 70%;
+        top: 10%;
+        left: -1%;
+      }      
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .btn-menu{
     width: 50px;
@@ -643,7 +660,15 @@ body{
       margin-top: 12px;
     }
   } 
+  .webdingspage{
+    .videoWrapperIphone{
+      video{
+        top: 155px;
+      }
+    } 
+  }
 } 
+
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
   .fixed{
@@ -686,37 +711,64 @@ body{
     padding-bottom: 1em;
    .logo{width: 90%;}
   }
-  
+
   .webdingspage{
-    text-align: center;
-    .cont-introduction{
-      position: relative;
+    .videoWrapperIpad{
+      video{
+        width: 70%;
+        top: 70px;
+        left: 0;
+      }      
     }
   }
+  
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (min-width: 64.063em) {}// Medium screens
 @media only screen and (min-width: 40.063em) {} /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
   .webdings h3, .eatbooking h3, .oasis h3{font-size: 3rem;}
   .partecipation .header{text-align: center;}
-  .webdingspage{
-    text-align: center;
-    .cont-introduction{
-      position: relative;
-    }
-  }
-  .eatbookingpage{
-    text-align: center;
-    .cont-introduction{
-      position: relative;
-    }
-  }
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-// Large screens
+
+ 
+ 
 @media only screen and (min-width: 64.063em) { 
   .btn-menu{display: none;}
+  .webdingspage{
+    .videoWrapperIpad{
+      video{
+        width: 70%;
+        top: 12%;
+        left: -11px;
+      }      
+    }
+    .videoWrapperIphone{
+      video{
+        top: 155px;
+        width: 250px;
+      }
+    } 
+  }
 } /* min-width 1025px, large screens */
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .webdingspage{
+    .videoWrapperIpad{
+      video{
+        //border: 1px solid red;
+        width: 71%;
+        top: 12%;
+        left: -11px;
+      }      
+    }
+    .videoWrapperIphone{
+      video{
+        border: 1px solid red;
+        top: 155px;
+        width: 250px;
+      }
+    } 
+  }
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 // XLarge screens
 @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
 @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */

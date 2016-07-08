@@ -25,7 +25,7 @@ gem 'premailer-rails'
 gem 'email_validator'
 gem 'rb-fsevent'
 gem 'cookies_eu'
-
+gem 'browser'
 # Monitoring
 gem 'newrelic_rpm'
 # Error monitoring
