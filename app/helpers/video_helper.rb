@@ -18,4 +18,10 @@ module VideoHelper
                 id: id)
   end
 
+  def youtube_video_as_background(id, src, options = {})
+    data_property = { videoURL: src, containment: 'body', autoPlay:true, mute:true, startAt:20, opacity:1, showControls: false, quality: 'highres', loop: true, align: 'center,center', showYTLogo: false}
+    data_property = data_property.merge!(options) if options.any?
+    content_tag :div, "", id: id, class: "player", "data-property": data_property.to_json
+  end
+  
 end

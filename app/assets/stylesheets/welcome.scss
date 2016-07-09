@@ -58,11 +58,11 @@ body{
 }
 //Section intro
 .intro{
-  position: relative;
   background: url(intro3.jpg);
   background-size: cover;
-  background-repeat:   no-repeat;
-  background-position: center center; 
+  background-repeat: no-repeat;
+  background-position: center center;   
+  position: relative;
   overflow: hidden;
   .promotion{
     transform: translateY(-150px);
@@ -119,7 +119,7 @@ body{
     span,small{
       display: block;
       text-transform: uppercase;
-      font-size: 1.3em;
+      font-size: 1.1em;
     }
     small{
       font-size:.9em;
