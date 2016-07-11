@@ -1,13 +1,3 @@
-.welcome{
-  font-weight: 200;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 30px;
-  margin: 0 auto;  
-  width: 0;
-  font-size: 2em;
-}
 .fixed{
   overflow: hidden;
   padding-left: 2em;
@@ -32,33 +22,6 @@
       margin-top: 9px;
     }
   }
-  .animated {
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-  }
-  @-webkit-keyframes bounce {
-    0%, 100% { -webkit-transform: translateY(0); }
-    50% { -webkit-transform: translateY(-5px);}
-  }
-  @keyframes bounce {
-    0%, 100% {transform: translateY(0);}
-    50% {transform: translateY(-5px);}
-  }
-  @-moz-keyframes bounce {
-    0%, 100% {transform: translateY(0);}
-    50% {transform: translateY(-5px);}
-  }
-  .bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -moz-animation-name: bounce;
-  }
   .top-bar-section{
     .right{ 
       padding-top: 3em;
@@ -74,29 +37,6 @@
         background: none;
         &:not(.has-form) a:not(.button){
           color:$primary-color;
-          background: none;
-        }
-        &.active:not(.has-form) a:not(.button){
-          background: none;
-          padding-bottom: 15px;
-          color:$secondary-color;
-          font-weight: 700;
-          position: relative;
-          &:after{
-            top:34px;
-            content: url(svg/nav-cursor.svg);
-            position: absolute;
-            left: 37%;
-            -webkit-animation:bounce 1s infinite;
-            -moz-animation:bounce 1s infinite;
-            animation:bounce 1s infinite;
-          }
-        }
-        &:not(.has-form) a:not(.button):hover{
-          background: none;
-          color:$secondary-color;
-        }
-        &.active:not(.has-form) a:not(.button):hover{
           background: none;
         }
         a{
