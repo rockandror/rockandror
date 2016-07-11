@@ -594,22 +594,6 @@ body{
     }
   }
 }
-
-// body{ 
-//   @media #{$small-only} and (orientation: portrait) { 
-//     border:3px solid red;
-//   }
-//   @media #{$small-only} and (orientation: landscape) { 
-//     //border:3px solid green;
-//   }
-//   @media #{$medium-up} and (orientation: portrait) {   
-//     border:3px solid green;
-//     .intro{display: none !important;}
-//   }
-//   @media #{$medium-up} and (orientation: landscape) {   
-//     //border:3px solid orange;
-//   }
-// }
  
 
 
@@ -658,13 +642,6 @@ body{
       margin-top: 12px;
     }
   } 
-  .webdingspage{
-    .videoWrapperIphone{
-      video{
-        //top: 155px;
-      }
-    } 
-  }
 } 
 
 /* Define mobile styles */
@@ -711,15 +688,21 @@ body{
    .logo{width: 90%;}
   }
 
-  .webdingspage{
-    .videoWrapperIpad{
-      video{
-        width: 70%;
-        top: 70px;
-        left: 0;
-      }      
-    }
-  }
+  // .webdingspage{
+  //   .videoWrapperIpad{
+  //     video{
+  //       width: 70%;
+  //       top: 70px;
+  //       left: 0;
+  //     }      
+  //   }
+  //   .videoWrapperIphone{
+  //     video{
+  //       top: 150px;
+  //       width: 70%;
+  //     }
+  //   } 
+  // }
   
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (min-width: 64.063em) {}// Medium screens
@@ -729,57 +712,36 @@ body{
   .participation .header{text-align: center;}
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
- 
- 
-@media only screen and (min-width: 64.063em) { 
-  .btn-menu{display: none;}
-  .webdingspage{
-    .videoWrapperIpad{
-      video{
-        width: 70%;
-        top: 12%;
-        left: -11px;
-      }      
-    }
-    .videoWrapperIphone{
-      video{
-        top: 155px;
-        width: 250px;
-      }
-    } 
-  }
-} /* min-width 1025px, large screens */
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  .webdingspage{
-    .videoWrapperIpad{
-      video{
-        //border: 1px solid red;
-        width: 71%;
-        top: 12%;
-        left: -11px;
-      }      
-    }
-    .videoWrapperIphone{
-      video{
-        //border: 1px solid red;
-        top: 155px;
-        width: 250px;
-      }
-    } 
-  }
-} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-// XLarge screens
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-// XXLarge screens
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
 
+//iPad in landscape
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  .videoWrapperIphone{
+    video{
+      top: 130px;
+      width: 28%;
+    }
+  }
+}
+//iPad in Portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .videoWrapperIphone{
+    video{
+      top: 130px;
+      width: 40%;
+    }
+  }
+}
 
 /*iPhone 6 Portrait*/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
   .videoWrapperIphone{
     video{
-      border: 1px solid red;
       top: 130px;
       width: 216px;
     }
@@ -809,6 +771,32 @@ body{
     video{
       top: 143px;
       width: 247px;
+    }
+  }
+}
+
+//iPhone 5 & 5S in portrait
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) {
+  .videoWrapperIphone{
+    video{
+      top: 143px;
+      width: 70%;
+    }
+  }
+}
+
+//iPhone 5 & 5S in landscape
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+.videoWrapperIphone{
+    video{
+      top: 143px;
+      width: 50%;
     }
   }
 }
