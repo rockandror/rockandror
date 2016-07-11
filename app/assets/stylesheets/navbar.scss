@@ -14,7 +14,7 @@
   padding-right: 2em;
   height: 130px;
   .welcome{
-    transform: translateY(150px);
+    //transform: translateY(150px);
   }
   ul{
     padding-top: 2.2em;
@@ -22,11 +22,12 @@
 }
 .left{
   li{
-    transform: translateY(150px);
+    //transform: translateY(150px);
   }
 }
-.right{ opacity: 0; }
+//.right{ opacity: 0; }
 .top-bar{
+  background: white;
   .logo-center{
     width: 80%;
     fill:#9b9b9b;
@@ -34,7 +35,7 @@
     margin-top: 9px;
   }
   .name{
-    transform: translateX(-120%);
+    //transform: translateX(-120%);
   }
   .logo{
     svg{

@@ -2,9 +2,29 @@
 @import 'colors';
 @media only screen and (min-width: 40.063em) {
   @import 'animate';
-  @import 'ror_animation';
+  //@import 'ror_animation';
 } 
 @import 'welcome';
 @import 'navbar';
 @import 'cookies_eu';
-@import 'nprogress'
+@import 'jquery.mb.YTPlayer/jquery.mb.YTPlayer.min';
+@import 'nprogress';
+
+#scroll_to_intro{
+  height: 100vh;
+  width: 100%;
+}
+#bgndVideo{
+  position: absolute;
+  display: block;  
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: initial;   
+  height: auto;  
+  z-index: 1;
+  margin: 0 auto;
+  object-fit: cover;
+  padding: 0;
+}
