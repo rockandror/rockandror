@@ -20,14 +20,12 @@
     padding-top: 2.2em;
   }
 }
-
 .left{
   li{
     transform: translateY(150px);
   }
 }
 .right{ opacity: 0; }
-
 .top-bar{
   .logo-center{
     width: 80%;
@@ -63,7 +61,6 @@
     0%, 100% {transform: translateY(0);}
     50% {transform: translateY(-5px);}
   }
-
   @-moz-keyframes bounce {
     0%, 100% {transform: translateY(0);}
     50% {transform: translateY(-5px);}
@@ -101,10 +98,9 @@
             content: url(svg/nav-cursor.svg);
             position: absolute;
             left: 37%;
-             -webkit-animation:bounce 1s infinite;
-             -moz-animation:bounce 1s infinite;
-             animation:bounce 1s infinite;
-
+            -webkit-animation:bounce 1s infinite;
+            -moz-animation:bounce 1s infinite;
+            animation:bounce 1s infinite;
           }
         }
         &:not(.has-form) a:not(.button):hover{

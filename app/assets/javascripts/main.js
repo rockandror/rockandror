@@ -45,29 +45,36 @@ $(document).ready(function(){
   }(document, 'script', 'facebook-jssdk'));
 });
 
+
+function offAnimateNavbar(){
+  $('nav').removeClass("animated-blackwhite");
+  $('nav').removeClass("delay-1");
+  $('nav .title-area li ').removeClass("delay-3");
+  $('nav .title-area li ').removeClass("animated-left-right");
+  $('nav .title-area li ').removeClass("name");
+  $('nav .welcome').remove();
+  $('nav .name').removeClass("animated-left-right");
+  $('nav .left > li').removeClass("animated-downtop");
+  $('nav .left > li ').removeClass("animated-opacity");
+  $('nav .right').removeClass("animated-opacity");
+  $('nav .right').removeClass("delay-4");
+  $('nav .left > li ').css('transform' , 'translateY(0px)');
+  $('nav').css('background','#fff');
+  $('nav .right').css('opacity','1');
+}
+
 function removeAnimation(){
-    var isHomePage = document.getElementsByClassName('home');
+  var isHomePage = document.getElementsByClassName('home');
     //remove animation navbar if not home
     if(!isHomePage.length){
-      $('nav').removeClass("animated-blackwhite");
-      $('nav').removeClass("delay-1");
-      $('nav .title-area li ').removeClass("delay-3");
-      $('nav .title-area li ').removeClass("animated-left-right");
-      $('nav .title-area li ').removeClass("name");
-      $('nav .welcome').remove();
-      $('nav .name').removeClass("animated-left-right");
-      $('nav .left > li').removeClass("animated-downtop");
-      $('nav .left > li ').removeClass("animated-opacity");
-      $('nav .right').removeClass("animated-opacity");
-      $('nav .right').removeClass("delay-4");
-      $('nav .left > li ').css('transform' , 'translateY(0px)');
-      $('nav').css('background','#fff');
-      $('nav .right').css('opacity','1');
+      offAnimateNavbar();
+    } if(isMedium()){
+      offAnimateNavbar();
     }
-    //remove animation Smartphone
+    //Remove animation Smartphone
     if ($(window).width() < 375) {
       $('.webdings,.eatbooking,.oasis').removeClass('hidden');
-    //remove animation is not home
+    //Remove animation is not home
     }else if(isHomePage.length > 0){
       //Webding section animate
       $('.webdings').addClass("hidden").viewportChecker({
@@ -194,22 +201,49 @@ function removeAnimation(){
         offset: 300 
       }); 
     }
-}
-
-window.onresize = function(event) { resizeDiv(); }
-function resizeDiv() {
-  h = $(window).height() - heightTopBar;
-  $('.intro,.webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
-  if ($(window).width() <= 1056) {
-    $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
-    
-
   }
-}
 
-var ready;
-ready = function() {
-  removeAnimation();
-  resizeDiv();
-};
-$(document).on('page:update', ready);
+
+  var isLarge, isMedium, isSmall;
+
+  isSmall = function() {
+    return matchMedia(Foundation.media_queries['small']).matches && !matchMedia(Foundation.media_queries.medium).matches;
+  };
+
+  isMedium = function() {
+    return matchMedia(Foundation.media_queries['medium']).matches && !matchMedia(Foundation.media_queries.large).matches;
+  };
+
+  isLarge = function() {
+    return matchMedia(Foundation.media_queries['large']).matches;
+  };
+
+
+  if (isSmall()) {
+    console.log("Small!");
+  }
+
+  if (isLarge()) {
+    console.log("large!");
+  }
+
+  if (isMedium()) {
+    console.log("Medium!");
+  }
+
+  window.onresize = function(event) { resizeDiv(); }
+  function resizeDiv() {
+    h = $(window).height() - heightTopBar;
+    $('.intro,.webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
+    if ($(window).width() <= 1056) {
+      $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
+      $('.intro').css('display','none');
+    }
+  }
+
+  var ready;
+  ready = function() {
+    removeAnimation();
+    resizeDiv();
+  };
+  $(document).on('page:update', ready);

@@ -609,6 +609,24 @@ body{
   }
 }
 
+body{ 
+  @media #{$small-only} and (orientation: portrait) { 
+    border:3px solid red;
+  }
+  @media #{$small-only} and (orientation: landscape) { 
+    //border:3px solid green;
+  }
+  @media #{$medium-up} and (orientation: portrait) {   
+    border:3px solid green;
+    .intro{display: none !important;}
+  }
+  @media #{$medium-up} and (orientation: landscape) {   
+    //border:3px solid orange;
+  }
+}
+ 
+
+
 //Mediaquery foundation
 // Small screens
 @media only screen {
@@ -663,6 +681,7 @@ body{
 } 
 
 /* Define mobile styles */
+
 @media only screen and (max-width: 40em) {
   .fixed{
     background: #fff;
@@ -767,3 +786,33 @@ body{
 @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 // XXLarge screens
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+
+
+/*iPhone 6 Portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
+  body{
+     border:3px solid orange;
+  }
+}
+/*iPhone 6 landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
+   body{
+    border:3px solid green;
+    .intro{display: none !important;}
+  }
+}
+
+/*iPhone 6+ Portrait*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
+  body{
+     border:3px solid brown;
+  }
+}
+
+/*iPhone 6+ landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) { 
+  body{
+     border:3px solid yellow;
+     .intro{display: none !important;}
+  }
+}
