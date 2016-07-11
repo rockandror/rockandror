@@ -13,19 +13,10 @@
   padding-left: 2em;
   padding-right: 2em;
   height: 130px;
-  .welcome{
-    //transform: translateY(150px);
-  }
   ul{
     padding-top: 2.2em;
   }
 }
-.left{
-  li{
-    //transform: translateY(150px);
-  }
-}
-//.right{ opacity: 0; }
 .top-bar{
   background: white;
   .logo-center{
@@ -33,9 +24,6 @@
     fill:#9b9b9b;
     margin: 0px auto;
     margin-top: 9px;
-  }
-  .name{
-    //transform: translateX(-120%);
   }
   .logo{
     svg{

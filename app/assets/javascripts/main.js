@@ -48,7 +48,7 @@ $(document).ready(function(){
 window.onresize = function(event) { resizeDiv(); }
 function resizeDiv() {
   h = $(window).height() - heightTopBar;
-  $('.webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
+  $('.intro, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
   if ($(window).width() <= 1056) {
     $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
   }

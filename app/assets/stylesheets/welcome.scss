@@ -64,24 +64,10 @@ body{
   background-position: center center;   
   position: relative;
   overflow: hidden;
-  .promotion{
-    transform: translateY(-150px);
-    background: rgba(127, 134, 148, 0.78);
-    width: 100%;
-    line-height: 4em;
-    position: absolute;
-    z-index: 3;
-    text-align: center;
-    color:#cad0da;
-  }
   .video-container-show{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -moz-transform:translateY(0);
     position:absolute;
     left:0;
     right: 0;
-    background-color:#000;
     z-index:3;
     width: 100%;
     height: 100%;
@@ -92,7 +78,7 @@ body{
       font-size:3.4rem;
       line-height: 60px;
       text-shadow: 1px 1px  #000;
-      opacity: 0;
+      //opacity: 0;
     }
   }
   .video-container{
@@ -631,6 +617,7 @@ body{
 // Small screens
 @media only screen {
 }
+
 // Large screens
 @media only screen and (max-width: 1072px) { 
   .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
@@ -674,7 +661,7 @@ body{
   .webdingspage{
     .videoWrapperIphone{
       video{
-        top: 155px;
+        //top: 155px;
       }
     } 
   }
@@ -790,8 +777,12 @@ body{
 
 /*iPhone 6 Portrait*/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
-  body{
-    // border:3px solid orange;
+  .videoWrapperIphone{
+    video{
+      border: 1px solid red;
+      top: 130px;
+      width: 216px;
+    }
   }
 }
 /*iPhone 6 landscape*/
@@ -804,15 +795,20 @@ body{
 
 /*iPhone 6+ Portrait*/
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
-  body{
-     //border:3px solid brown;
+  .videoWrapperIphone{
+    video{
+      top: 143px;
+      width: 247px;
+    }
   }
 }
 
 /*iPhone 6+ landscape*/
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) { 
-  body{
-     // border:3px solid yellow;
-     // .intro{display: none !important;}
+  .videoWrapperIphone{
+    video{
+      top: 143px;
+      width: 247px;
+    }
   }
 }
