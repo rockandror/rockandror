@@ -27,6 +27,7 @@ body{
   }
 }
 
+.btn-menu{ display: none;}
 .btn-primary{ background: $secondary-color; }
 .toggle-topbar{ display: none; }
 .slick-slide:focus { outline: none; }
@@ -51,7 +52,6 @@ body{
   }
 }
 .slick-prev,.slick-next{display: none !important;}
-
 #nav-modal{
   text-align: center;
   a{display: block;}
@@ -94,7 +94,6 @@ body{
     height:auto;
   }
 }
-
 .webdings,.eatbooking,.oasis{
   @include padding(8em, 0em, 8em, 0em);
     h3{
@@ -595,32 +594,16 @@ body{
   }
 }
  
-
-
-//Mediaquery foundation
-// Small screens
-@media only screen {
-}
+//Mediaquery
 
 // Large screens
 @media only screen and (max-width: 1072px) { 
   .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
     text-align: center;
-    .cont-introduction{
-      position: relative;
-    }
+    .cont-introduction{ position: relative;}
   }
-  .webdingspage{
-    .videoWrapperIpad{
-      video{
-        width: 70%;
-        top: 10%;
-        left: -1%;
-      }      
-    }
-  }
+  .workflow{display: none;}
 }
-
 @media only screen and (max-width: 1024px) {
   .btn-menu{
     width: 50px;
@@ -643,9 +626,7 @@ body{
     }
   } 
 } 
-
 /* Define mobile styles */
-
 @media only screen and (max-width: 40em) {
   .fixed{
     background: #fff;
@@ -686,117 +667,10 @@ body{
     padding-top: 1em;
     padding-bottom: 1em;
    .logo{width: 90%;}
-  }
+  } 
+}
 
-  // .webdingspage{
-  //   .videoWrapperIpad{
-  //     video{
-  //       width: 70%;
-  //       top: 70px;
-  //       left: 0;
-  //     }      
-  //   }
-  //   .videoWrapperIphone{
-  //     video{
-  //       top: 150px;
-  //       width: 70%;
-  //     }
-  //   } 
-  // }
-  
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-@media only screen and (min-width: 64.063em) {}// Medium screens
-@media only screen and (min-width: 40.063em) {} /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
   .webdings h3, .eatbooking h3, .oasis h3{font-size: 3rem;}
   .participation .header{text-align: center;}
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-
-//iPad in landscape
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  .videoWrapperIphone{
-    video{
-      top: 130px;
-      width: 28%;
-    }
-  }
-}
-//iPad in Portrait
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  .videoWrapperIphone{
-    video{
-      top: 130px;
-      width: 40%;
-    }
-  }
-}
-
-/*iPhone 6 Portrait*/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
-  .videoWrapperIphone{
-    video{
-      top: 130px;
-      width: 216px;
-    }
-  }
-}
-/*iPhone 6 landscape*/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
-   body{
-    // border:3px solid green;
-    // .intro{display: none !important;}
-  }
-}
-
-/*iPhone 6+ Portrait*/
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
-  .videoWrapperIphone{
-    video{
-      top: 143px;
-      width: 247px;
-    }
-  }
-}
-
-/*iPhone 6+ landscape*/
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) { 
-  .videoWrapperIphone{
-    video{
-      top: 143px;
-      width: 247px;
-    }
-  }
-}
-
-//iPhone 5 & 5S in portrait
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : portrait) {
-  .videoWrapperIphone{
-    video{
-      top: 143px;
-      width: 70%;
-    }
-  }
-}
-
-//iPhone 5 & 5S in landscape
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : landscape) {
-.videoWrapperIphone{
-    video{
-      top: 143px;
-      width: 50%;
-    }
-  }
-}
