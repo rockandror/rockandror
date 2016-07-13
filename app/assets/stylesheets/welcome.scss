@@ -416,7 +416,7 @@ body{
   .social{
     svg{
       fill:$primary-color;
-      //max-height: 15px;
+      width: 90%;
       &:hover{fill:$secondary-color;}
     }
   }
@@ -781,7 +781,7 @@ body{
 
 
 @media only screen and (max-width: 320px) { 
-  .intro .video-container-show h2{
+  .intro .video-container-show h1{
     font-size: 1.4rem;
     line-height: 30px;
   }
