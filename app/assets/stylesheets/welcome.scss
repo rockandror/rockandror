@@ -119,10 +119,27 @@ body{
       text-align: center;
       color:#fff;
       margin-top: 10rem;
-      font-size:3.4rem;
-      line-height: 60px;
+      font-size:2.4rem;
+      line-height: 40px;
       text-shadow: 1px 1px  #000;
-      //opacity: 0;
+      text-transform: uppercase;
+      font-weight: 100;
+      max-width: 60%;
+      margin: 0px auto;
+      margin-top:10%; 
+
+    }
+    a{
+      margin:0px auto;
+      display: block;
+      width: 300px;
+      padding: 1em;
+      border:1px solid white;
+      text-align: center;
+      margin-top: 10%;
+      text-transform: uppercase;
+      color:#fff;
+
     }
   }
   .video-container{
@@ -138,7 +155,7 @@ body{
     height:auto;
   }
 }
-.webdings,.eatbooking,.oasis{
+.webdings,.eatbooking,.oasis,.rockandror{
   @include padding(8em, 0em, 8em, 0em);
     h3{
       font-size: 4rem;
@@ -162,6 +179,39 @@ body{
     padding-top: 3em;
     padding-bottom: 3em;
   }  
+}
+.rockandror{
+  h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 0.7;
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+  h4{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top:1em; 
+  }
+  p{
+    text-align: justify;
+  }
+  .inline-list{
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+    li{
+      margin-left: 0;
+      padding:0 1em;
+    }
+    svg{
+      width: 1em;
+      fill:$secondary-color;
+      &:hover{
+        fill:darken($secondary-color, 10%);
+      }
+    }
+  }
 }
 //Section webdings
 .webdings{
