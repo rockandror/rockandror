@@ -3,7 +3,6 @@
 // });
 
 $(document).ready(function(){    
-  
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
     $( this ).parent().addClass('active');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -18,36 +17,35 @@ $(document).ready(function(){
     }
   });
 
-  // var btnMenuInterval;  
-  // function btnMenuRemoveInterval() {
-  //   clearInterval(btnMenuInterval);
-  //   $(".btn-menu").css({"-webkit-transform":"translate(0px,50px)"});
-  // }
+  var btnMenuInterval;  
+  function btnMenuRemoveInterval() {
+    clearInterval(btnMenuInterval);
+    $(".btn-menu").css({"-webkit-transform":"translate(0px,50px)"});
+  }
 
-  // function show_icon_menu(){
-  //   clearInterval(btnMenuInterval);
-  //   $(".btn-menu").css({"-webkit-transform":"translate(0px,-50px)"});
-  //   btnMenuInterval = setInterval(btnMenuRemoveInterval, 2000); 
-  // }
+  function show_icon_menu(){
+    clearInterval(btnMenuInterval);
+    $(".btn-menu").css({"-webkit-transform":"translate(0px,-50px)"});
+    btnMenuInterval = setInterval(btnMenuRemoveInterval, 2000); 
+  }
 
-  // $(window).scroll(function(){
-  //   show_icon_menu();
-  // });
+  $(window).scroll(function(){
+    show_icon_menu();
+  });
 
-  // $('.btn-menu').on('click', function(event) {
-  //   $('body').css('overflow-y','hidden');
-  //   event.preventDefault();
-  // });
+  $('.btn-menu').on('click', function(event) {
+    $('body').css('overflow-y','hidden');
+    event.preventDefault();
+  });
 
-  //remove scroll into modal
-  // $('#nav-modal .close-reveal-modal').on('click', function(event) {
-  //   $('body').css('overflow-y','auto');
-  //   event.preventDefault();
-  // });
+  $('#nav-modal .close-reveal-modal').on('click', function(event) {
+    $('body').css('overflow-y','auto');
+    event.preventDefault();
+  });
 
-  // $(document).on('click tap touchstart', '.reveal-modal-bg', function() {
-  //   $('body').css('overflow-y','auto');
-  // }); 
+  $(document).on('click tap touchstart', '.reveal-modal-bg', function() {
+    $('body').css('overflow-y','auto');
+  }); 
   
   heightTopBar = $(".top-bar").height();
   
