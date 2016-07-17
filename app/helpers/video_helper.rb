@@ -1,7 +1,6 @@
 module VideoHelper
 
   def video_player(id, video_src_name, poster_src)
-    rempte_url = 
     autoplay = true
     if browser.device.mobile?
       autoplay = false
