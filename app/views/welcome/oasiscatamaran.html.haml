@@ -5,7 +5,7 @@
     %span Excursiones y Eventos
     %hr
     %p
-      Aplicación web para la venta de excusiones en catamarán con todo tipo de servicios adicionales. Hemos desarrollado un backend con navegación optimizada para tablets a través del cual los administradores de la empresa pueden modificar todos los contenidos, crear excursiones personalizadas y una página de venta de pasajes con pasarela de pago en tres idiomas compatible con todo tipo de dispositivos móviles.
+      Aplicación web para la venta de excursiones en catamarán con todo tipo de servicios adicionales. Hemos desarrollado un backend con navegación optimizada para tablets a través del cual los administradores de la empresa pueden modificar todos los contenidos, crear excursiones personalizadas y una página de venta de pasajes con pasarela de pago, todo en tres idiomas y compatible con todo tipo de dispositivos móviles.
     %hr
     = link_to '> www.oasiscatamaran.com', 'http://www.oasiscatamaran.com/', target: :blank
   .back-end.row
@@ -18,23 +18,20 @@
         .row
           .large-4.columns
             %ul.text-center
-              %li Envia invitaciones por email
-              %li Define el menú
-              %li Organiza a los invitados por mesas
+              %li Gestor de contenidos multi-idoma
+              %li Integración RedSys
+              %li Gestor multibarco
           .large-4.columns
             %ul.text-center
-              %li Crea una galería de imágenes
-              %li Puntos de interés
-              %li Confirmación de servicios
+              %li Gestor multibarco
+              %li Gestor de reservas
+              %li Gestor de agentes comerciales
           .large-4.columns
             %ul.text-center
-              %li Administrador
               %li Configuración adaptable
-              %li Diseño customizable
-        %hr.hr-oasis
-        %p 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              %li Diseño adaptable a dispositivos móviles
+        %hr.hr-oasis 
+          
   .front-end.row
     .content.medium-12.small-12.large-10.columns.medium-centered
       %h2.text-center <strong>Front</strong> end
@@ -44,8 +41,8 @@
         %hr
         .medium-centered.columns
           %p 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            La página de venta es totalmente dinámica, configurable y posicionable desde el BackOffice. Se ha otimizado la navegación para dispositivos móviles y se ha diseñado acorde a la imagen coorporativa de la marca. Se ha realizado una integración con RedSys para la venta de tickets online.
+
   .tecnology.row
     .content.medium-centered.columns.small-12
       %h2.text-center <strong>Tecnologia</strong> utilizada
@@ -53,8 +50,8 @@
         = inline_svg "svg/icon-responsive.svg", class: 'text-center'
       .medium-centered.columns
         %p 
-          Ruby onRails / Postgres / Rspec (+ 300 specs ) <br>
+          RubyonRails / PostgreSQL / Rspec <br>
           Bootstrap / Sass / Responsive <br>
-          API  / Ionic <br>
           Photoshop / Illustrator
+
   = render 'shared/contact_now'
