@@ -1,72 +1,50 @@
- svg{
-  float: left;
-  circle{
-    stroke:$primary-color;
-  }
-  path{
-    fill: $primary-color;
+.fixed{
+  overflow: hidden;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 130px;
+  ul{
+    padding-top: 2.2em;
   }
 }
-
 .top-bar{
-  &.expanded{
-    z-index: 100069;
-    text-align: center;
-    .right{
-      background: rgba(0,0,0,.9);
-      height: 1000px;
-      z-index: 999;
-      padding-top: 20%;
-      li{
-        margin-bottom: 2em;
-      }
+  background: white;
+  .logo-center{
+    width: 70%;
+    fill:#9b9b9b;
+    margin: 0px auto;
+    margin-top: 9px;
+  }
+  .logo{
+    svg{
+      width: 330px;
+      fill:#9b9b9b;
+      margin-top: 9px;
     }
   }
-  .name{
-    padding-top: 14px;     
-    div{
-      float: left;
-      text-transform: uppercase;
-      margin-top:.3em; 
-      font-size: 1.3em;
-      margin-left:.6em; 
-      span{
-        line-height:0;
-        font-size: 10px;
-        letter-spacing: 11px;
-        color:#a8568e;
-        display: block;
-        margin-top:12px; 
-      }
-    }
-  } 
   .top-bar-section{
+    .right{ 
+      padding-top: 3em;
+      strong{display: block;}
+      li:not(.has-form) a:not(.button){
+        line-height: 1;
+        color:$secondary-color;
+      }
+      a{ float: left; }
+    }
     ul{
       li{
         background: none;
         &:not(.has-form) a:not(.button){
-          background: none;
-          padding: 0 1rem;
-        }
-        &.active:not(.has-form) a:not(.button){
-          background: none;
-          padding-bottom: 15px;
-          border-bottom:2px solid $primary-color;
           color:$primary-color;
-        }
-        &:not(.has-form) a:not(.button):hover{
-          background: none;
-          color:$primary-color;
-        }
-        &.active:not(.has-form) a:not(.button):hover{
           background: none;
         }
         a{
-          display: inline;
           text-transform: uppercase;
           font-weight: 300;
+          cursor: pointer;
         }
       }
     }
   } 
-} 
+}

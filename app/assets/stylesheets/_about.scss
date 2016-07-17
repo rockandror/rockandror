@@ -1,5 +1,0 @@
-.about{
-  @extend .gradient-clear;
-  h3{ @include text($secondary-color,uppercase, null); }
-  a{margin-top:3em;}
-}

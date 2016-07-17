@@ -1,10 +1,794 @@
-@import 'colors' ;
-@import 'intro';
-@import 'about';
-@import 'tecnology';
-@import 'howworks';
-@import 'team' ;
-@import 'portfolio' ;
-@import 'followus' ;
-@import 'contact' ;
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600);
+.gradient-clear{
+  background: rgb(255,255,255);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3MiUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjJmMmYyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(247,247,247,1) 50%, rgba(242,242,242,1) 72%, rgba(242,242,242,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(247,247,247,1)), color-stop(72%,rgba(242,242,242,1)), color-stop(100%,rgba(242,242,242,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 );
+}
+.gradient-oasis{
+  background: rgb(27,51,64); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(27,51,64,1) 0%, rgba(49,92,115,1) 100%, rgba(27,51,64,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3340', endColorstr='#1b3340',GradientType=0 ); /* IE6-9 */
+}
+.pattern-eatbooking{ background: url(pattern/eatbooking-pattern.png) repeat; }
+.participation-pattern{ background: url(pattern/participation-pattern.png) repeat;}
+@mixin text($color, $transform, $size) {
+  color: $color; 
+  text-transform: $transform;
+  font-size: $size;
+}
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top:$top;
+  padding-right:$right;
+  padding-bottom:$bottom;
+  padding-left:$left;
+}
+@-moz-document url-prefix() {
+  a {
+    &:active, &:focus{
+      outline: none;
+      border:  none;
+    }
+  }
+  .btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
+    outline: none;border:  none; box-shadow: none;
+  } 
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, html {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: $body-bg;
+  font-family: $font-family-sans-serif;
+  font-size: rem-calc(13);
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  color:$primary-color; 
+  .reveal-modal.open & { overflow: hidden; }
+  h1, h2, h3, h4, h5, h6{color: $primary-color;}
+  a,:after,.btn{
+    transition: all 0.5s ease;
+    border:none;
+    color: $primary-color;
+    &:hover,&:focus{
+      text-decoration: none;
+      outline: none;
+      color: $secondary-color;
+    }
+  }
+}
+
+.btn-primary{ background: $secondary-color; }
+.toggle-topbar{ display: none; }
+.slick-slide:focus { outline: none; }
+.hidden{ visibility: hidden; }
+.visible{ visibility: visible;}
+.hr-dark{border-color:#363636;}
+.hr-light{border-color:#d6d6d6;}
+.hr-oasis{border-color:#41687d;}
+
+.slick-dots{
+ bottom: -75px !important; 
+ hr{display: none;}
+  li button{
+    border:1px solid $primary-color !important;
+    border-radius: 50%;
+    opacity: 0.5;
+    &::before{
+      font-size: 10px !important;
+      color:$primary-color !important;
+      width: 18px !important;
+    }
+  }
+}
+.slick-prev,.slick-next{display: none !important;}
+#nav-modal{
+  text-align: center;
+  a{display: block;}
+}
+//Section intro
+.intro{
+  background: url(intro3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;   
+  position: relative;
+  overflow: hidden;
+  .video-container-show{
+    position:absolute;
+    left:0;
+    right: 0;
+    z-index:3;
+    width: 100%;
+    height: 100%;
+    h1{
+      text-align: center;
+      color:#fff;
+      margin-top: 10rem;
+      font-size:2.4rem;
+      line-height: 40px;
+      text-shadow: 1px 1px  #000;
+      text-transform: uppercase;
+      font-weight: 100;
+      max-width: 60%;
+      margin: 0px auto;
+      margin-top:10%; 
+
+    }
+    a{
+      margin:0px auto;
+      display: block;
+      width: 300px;
+      padding: 1em;
+      border:1px solid white;
+      text-align: center;
+      margin-top: 10%;
+      text-transform: uppercase;
+      color:#fff;
+
+    }
+  }
+  .video-container{
+    position:absolute;
+    left:0;
+    right: 0;
+    padding:0px 0px 0px 0px;
+    background-color:#000;
+    z-index:2;
+  }
+  video{
+    width: 100%;
+    height:auto;
+  }
+}
+.webdings,.eatbooking,.oasis,.rockandror{
+  @include padding(8em, 0em, 8em, 0em);
+    h3{
+      font-size: 4rem;
+      font-weight: 200;
+      line-height: 0.7;
+    }
+    span,small{
+      display: block;
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+    small{
+      font-size:.9em;
+      font-weight: 100;
+    } 
+  .image{
+    padding-top: 7em;
+  }
+  .text-left p{
+    font-weight: 100;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }  
+}
+.rockandror{
+  h3{
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 0.7;
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+  h4{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top:1em; 
+  }
+  p{
+    text-align: justify;
+  }
+  .inline-list{
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+    li{
+      margin-left: 0;
+      padding:0 1em;
+    }
+    svg{
+      width: 1em;
+      fill:$secondary-color;
+      &:hover{
+        fill:darken($secondary-color, 10%);
+      }
+    }
+  }
+  i{font-size: 1.3em;}
+}
+//Section webdings
+.webdings{
+  @extend .gradient-clear;   
+  h3{ @include text($primary-color,uppercase, null); }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+//Section eatbooking
+.eatbooking{
+  @extend .pattern-eatbooking;
+  h3{ @include text(#f3cc33,uppercase, null); }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+//Section oasis
+.oasis{
+  background-image: url(pattern/oasis-pattern.png),
+                    linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
+  h3{ @include text(#5fc3e6,uppercase, null); }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+//Section participation
+.participation{
+  @extend .participation-pattern; 
+  .header{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background: #0077b9;
+    svg{
+      fill: white;
+      width: 94%;
+      margin-top: 8px;
+      height: auto;
+    }
+    h3{
+      @include text(white,uppercase, null);
+      font-size: 3rem;
+      font-weight: 200;
+    }
+  }
+  .content{
+    @include padding(8em, 0em, 8em, 0em);
+  }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+//Section how we works
+.howweworks{
+  @include padding(8em, 0em, 0em, 0em);
+  background: #0d7d8e;
+  border-top: 3em solid darken(#0d7d8e, 10%);
+  h3{
+    color:white;
+    font-size: 2.1rem;
+    font-weight: 200;  
+    span{text-decoration: underline;}
+  }
+  i{
+    padding-top: 3em;
+    color: white;
+    display: block;
+    font-size: 1.4em;
+    width: 80%;
+    margin: 0px auto;
+    font-weight: 200;  
+  }
+  .workflow{
+    @include padding(3em, 0em, 4em, 0em);
+    .block{
+      width: 12%;
+      display: block;
+      float: left;
+      fill:white;
+      padding-top: 12px;
+      height: 70px;
+      svg{
+        height: auto;
+        width: 50%;
+        zoom: 2;
+      }
+      svg#acceptance{ width: 36%; }
+      svg#deployment{ width: 67%; }
+      span{
+        display: block;
+        margin-top: 10px;
+        color: white;
+        font-weight: 100;
+      }
+    }
+    .arrow{
+      width: 10%;
+      display: block;
+      float: left; 
+      padding-top: 34px;
+      svg{
+        height: auto;
+        width: 80%;
+        fill:white;
+        opacity: .8;
+        zoom: 3;
+      }
+    }
+  }
+  .block-path{
+    position: relative;
+    #sprint-path{
+      margin-top: 50px;
+      width: 90%;
+      height: auto;
+    }  
+    .newsprint{
+      border:2px solid white;
+      padding: 1em;
+      background: #0d7d8e;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0px auto;
+      width: 200px;
+      bottom: -17px;
+      text-transform: uppercase;
+      color:white;
+      zoom:1.3;
+    }
+  }
+  
+  .text{
+    @include padding(4em, 4em, 4em, 4em);
+    margin-top: 2em;
+    background: #0b6d7c;
+    text-align: left;
+    color:white;
+    ul{list-style: none;}
+    span{font-size: .9rem;}
+  }
+}
+//Section contact now
+.contactnow{
+  @include padding(8em, 0em, 8em, 0em);
+  border-bottom:10px solid #dbdbdb;
+  @extend .gradient-clear;
+  h3{
+    color:$primary-color;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  span{
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -17px;
+  }
+  strong{
+    text-decoration: underline;
+  }
+}
+//Page Footer
+.footer{
+  @include padding(8em, 0em, 8em, 0em);
+  text-transform: uppercase;
+  ul{
+    text-align: center;
+    display: inline-block;
+  }
+  .logo{
+    fill:$primary-color;
+    padding: 1em;
+  }
+  a{
+    display: block;
+    margin-top: 2em;
+    color:$secondary-color;
+  }
+  .social{
+    svg{
+      fill:$primary-color;
+      width: 90%;
+      &:hover{fill:$secondary-color;}
+    }
+  }
+  p{
+    font-size: .6rem;
+    a{display: inline-block;}
+  }
+}
+//Page .webdingspage
+.webdingspage{
+  .img-background{ background: url(webdings/background-page.jpg); }
+  .cont-introduction{ background: #fff; }
+  .brand-design{
+    padding: 6em 3em;
+    background: #3b3b3b;
+    position: relative;
+    .content{
+      h2{ color:#fff;}
+      svg{
+        width: 200px;
+        height: auto;
+        padding: 3rem 0rem;
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+        color:#fff;
+      }
+    }
+  }
+  .back-end{
+   padding: 6em 3em;
+    .content{
+      .videoWrapperIpad{
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 100%;        
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          right: 0px;
+          margin: 0px auto;
+        }
+      }
+
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+      ul{
+        list-style: none;
+        font-size: 1.3rem;
+      }
+    } 
+  }
+  .front-end{
+   padding: 6em 3em;
+   background:#f3f3f3;
+    .content{
+        img{
+          position: relative;
+          margin: 0px auto;
+          display: block;
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          width: 70%;
+          left: -5px;
+          right: 0px;
+          margin: 0px auto;
+        }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+    } 
+  }
+  .app-mobile{
+   padding: 6em 3em;
+    .content{
+      .videoWrapperIphone{
+        display: block;
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 310px;
+        }  
+        video{
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          right: 0;
+          margin: 0px auto;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+    } 
+  }
+  .webdingspage{
+    text-align: center;
+    .cont-introduction{
+      position: relative;
+    }
+  }
+}
+//Page .eatbooking
+.eatbookingpage{
+  h2{ color:#f3cc33; }
+  .img-background{ background: url(eatbooking/background-page.jpg); }
+  .cont-introduction{ @extend .pattern-eatbooking; }
+  .back-end{
+   padding: 6em 3em;
+   @extend .pattern-eatbooking;
+    .content{
+      .videoWrapperIpad{
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 100%;        
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          width: 70%;
+          left: -5px;
+          right: 0px;
+          margin: 0px auto;
+        }
+      }
+
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+      ul{
+        list-style: none;
+        font-size: 1.3rem;
+      }
+    } 
+  }
+}
+//Page .oasiscatamaran
+.oasiscatamaranspage{
+  h2{ color: #5fc3e6; }
+  .img-background{ background: url(oasis-catamaran/background-page.jpg); }
+  .cont-introduction{ background: white; }
+  .back-end{
+   padding: 6em 3em;
+   background-image: url(pattern/oasis-pattern.png),
+      linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
+    .content{
+      .videoWrapperIpad{
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 100%;        
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          width: 70%;
+          left: -5px;
+          right: 0px;
+          margin: 0px auto;
+        }
+      }
+
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+      ul{
+        list-style: none;
+        font-size: 1.3rem;
+      }
+    } 
+  }
+  .front-end{
+   padding: 6em 3em;
+   background:#f3f3f3;
+    .content{
+        img{
+          position: relative;
+          margin: 0px auto;
+          display: block;
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          width: 70%;
+          left: -5px;
+          right: 0px;
+          margin: 0px auto;
+        }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+    } 
+  }
+}
+//Page Contact
+.contactpage{
+  .row{max-width: 100%;}
+  h2{
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .img-background{
+    background: url(intro3.jpg);
+  }
+  .cont-introduction{ background: white; }
+  textarea{height: 150px;}
+}
+//Page greetingspage
+.greetingspage{
+  background: #f8f8f8;
+  .row{max-width: 100%;}
+}
+.webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage,.greetingspage{
+  .img-background{
+    position: relative;
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    overflow: hidden;
+    height: 900px;
+  }
+  .row{max-width: 100%;}
+  h2{
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .cont-introduction{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    margin: 0px auto;
+    padding: 3em;
+    span{text-transform: uppercase;}
+    p{
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+  }
+  .tecnology{
+    padding: 6em 3em;
+    background: #3b3b3b;   
+    .content{
+      h2{ color:#fff; }
+      svg{
+        width: 200px;
+        height: auto;
+        padding: 3rem 0rem;
+        fill:white;
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: center;
+        color:#fff;
+      }
+    }
+  }
+}
  
+//Mediaquery
+
+// Large screens
+@media only screen and (max-width: 1072px) { 
+  .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
+    text-align: center;
+    .cont-introduction{ position: relative;}
+  }
+  .workflow{display: none;}
+}
+@media only screen and (min-width: 1025px) {
+  .btn-menu{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .btn-menu{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    -moz-transform:translateY(50px);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background: black;
+    z-index: 9;
+    .icon-menu{
+      fill:white;
+      margin: 0 auto;
+      display: block;
+      margin-top: 12px;
+    }
+  } 
+} 
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {
+  .fixed{
+    background: #fff;
+    #Livello_1{
+      width: 100%;
+      fill:$primary-color;
+      margin-top: 10px;
+    }
+  }
+  .webdings,.eatbooking,.oasis{
+    a{line-height: 4em;}
+    @include padding(2em, 0em, 2em, 0em);
+    h3{font-size: 3em;}
+    h3,small,span,p,a{text-align: center;}
+  }
+  .webdings{
+    padding-top:6em;
+    .image{padding-top: 0em;}
+  }
+  .rockandror{
+    img{max-width: 200px;}
+  }
+  .participation {
+    text-align: center;
+    .header h3{
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+  .howweworks{
+    .workflow{
+      .arrow{display: none;}
+      .block{
+        width: 40%;float: none;margin: 0px auto;height: auto;
+        svg#acceptance{ width: 26%; }
+        svg#deployment{ width: 37%; }
+      }
+    }
+  }
+  .footer{ 
+    padding-top: 1em;
+    padding-bottom: 1em;
+   .logo{width: 90%;}
+  } 
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  .participation .header{text-align: center;}
+  .webdings h3, .eatbooking h3, .oasis h3{ font-size: 2.3rem;}
+  .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+
+@media only screen and (max-width: 320px) { 
+  .intro .video-container-show h1{
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+  .webdings h3, .eatbooking h3, .oasis h3{
+    font-size: 2.3rem;
+  }
+}

@@ -1,0 +1,45 @@
+.eatbookingpage
+  .img-background.row
+  .cont-introduction.medium-12.small-12.large-6
+    %h2 <strong>Eat</strong>booking
+    %span Libro de Reservas Electrónico para restaurantes
+    %hr.hr-dark
+    %p Libro de reservas electrónico para restaurantes sin comisiones. Ofrece un sistema de widgets que permite a los propietarios de restaurantes de eatbooking integrar el widget de reservas con disponibilidad en tiempo real en cualquier página web de manera sencilla. El diseño se ha optimizado para su cómodo uso en tablets y ordenadores.
+    %hr.hr-dark
+    = link_to '> www.eatbooking.com', 'http://www.eatbooking.com', target: :blank
+  .back-end.row
+    .content.medium-12.small-12.large-10.columns.medium-centered
+      %h2.text-center <strong>Back</strong> end
+      .videoWrapperIpad.medium-12
+        /= video_player("video-ipad", "videos-new/ipad", "wedding-page/poster-ipad.jpg")
+        = image_tag "eatbooking/eatbooking-ipad.png", class: "img-play-ipad"
+        %hr
+        .row
+          .large-4.columns
+            %ul.text-center
+              %li Motor de reservas online en tiempo real
+              %li Widget integrable
+          .large-4.columns
+            %ul.text-center
+              %li Configura tu calendario de apertura
+              %li Define los días de vacaciones
+              %li Organiza tu restaurante por zonas
+          .large-4.columns
+            %ul.text-center
+              %li Gestión multirestaurante
+              %li Diseño adaptado para su uso en tablets
+        %hr
+        %p 
+          Existe un backend donde los encargados podrán realizar la gestión integral de las reservas tanto de uno como de varios restaurantes, se podrán crear diferentes zonas y delimitar la capacidad de comensales para cada una de ellas, definir temporadas, gestión de días libres y customizar horarios de apertura y cierre. Se ofrece la posibilidad de pago y gestión de facturas desde la propia plataforma a los dueños de los restaurantes. Paralelamente disponen de un sistema de widgets donde cada restaurante lo puede integrar en su web y poder recibir las reservas directamente.        
+          
+  .tecnology.row
+    .content.medium-centered.columns.small-12
+      %h2.text-center <strong>Tecnologia</strong> utilizada
+      .row.text-center
+        = inline_svg "svg/icon-responsive.svg", class: 'text-center'
+      .medium-centered.columns
+        %p 
+          RubyonRails / PostgreSQL / Rspec <br>
+          Bootstrap / Sass / Responsive <br>
+
+  = render 'shared/contact_now'
