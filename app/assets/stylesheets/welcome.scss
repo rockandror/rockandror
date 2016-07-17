@@ -17,8 +17,8 @@
   background: linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3340', endColorstr='#1b3340',GradientType=0 ); /* IE6-9 */
 }
-.pattern-eatbooking{ background: url(pattern/eatbooking-pattern.png) repeat; }
-.participation-pattern{ background: url(pattern/participation-pattern.png) repeat;}
+.pattern-eatbooking{ background: asset_url('pattern/eatbooking-pattern.png') repeat; }
+.participation-pattern{ background: asset_url('pattern/participation-pattern.png') repeat;}
 @mixin text($color, $transform, $size) {
   color: $color; 
   text-transform: $transform;
@@ -102,7 +102,7 @@ body{
 }
 //Section intro
 .intro{
-  background: url(intro3.jpg);
+  background: asset_url('intro3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;   
@@ -242,7 +242,7 @@ body{
 }
 //Section oasis
 .oasis{
-  background-image: url(pattern/oasis-pattern.png),
+  background-image: asset_url('pattern/oasis-pattern.png'),
                     linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
   h3{ @include text(#5fc3e6,uppercase, null); }
   a{
@@ -427,7 +427,7 @@ body{
 }
 //Page .webdingspage
 .webdingspage{
-  .img-background{ background: url(webdings/background-page.jpg); }
+  .img-background{ background: asset_url('webdings/background-page.jpg'); }
   .cont-introduction{ background: #fff; }
   .brand-design{
     padding: 6em 3em;
@@ -533,7 +533,7 @@ body{
 //Page .eatbooking
 .eatbookingpage{
   h2{ color:#f3cc33; }
-  .img-background{ background: url(eatbooking/background-page.jpg); }
+  .img-background{ background:asset_ url('eatbooking/background-page.jpg'); }
   .cont-introduction{ @extend .pattern-eatbooking; }
   .back-end{
    padding: 6em 3em;
@@ -570,11 +570,11 @@ body{
 //Page .oasiscatamaran
 .oasiscatamaranspage{
   h2{ color: #5fc3e6; }
-  .img-background{ background: url(oasis-catamaran/background-page.jpg); }
+  .img-background{ background: asset_url('oasis-catamaran/background-page.jpg'); }
   .cont-introduction{ background: white; }
   .back-end{
    padding: 6em 3em;
-   background-image: url(pattern/oasis-pattern.png),
+   background-image: asset_url('pattern/oasis-pattern.png'),
       linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
     .content{
       .videoWrapperIpad{
@@ -636,7 +636,7 @@ body{
     font-weight: 300;
   }
   .img-background{
-    background: url(intro3.jpg);
+    background: asset_url('intro3.jpg');
   }
   .cont-introduction{ background: white; }
   textarea{height: 150px;}
