@@ -533,7 +533,7 @@ body{
 //Page .eatbooking
 .eatbookingpage{
   h2{ color:#f3cc33; }
-  .img-background{ background:asset_ url('eatbooking/background-page.jpg'); }
+  .img-background{ background:asset_url('eatbooking/background-page.jpg'); }
   .cont-introduction{ @extend .pattern-eatbooking; }
   .back-end{
    padding: 6em 3em;
