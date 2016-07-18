@@ -32,19 +32,22 @@ $(document).ready(function(){
   var x;
   function zoom_image_intro(){
     x = $(window).scrollTop();
-    $(".intro").css('background-size',100 + parseInt(x / 10, 0) + '% ');
-    console.log("dentro");
+    if ($(window).width() >= 1024) {
+     $(".intro").css('background-size',100 + parseInt(x / 2, 0) + '% ');
+    }else{
+      $(".intro").css('background-size', 'cover');
+    }
   }
-
   window.wasScrolled = false;
-  $(window).bind('scroll',function(){
+  function first_scroll(){
     if (!window.wasScrolled){ $('html, body').animate({scrollTop:document.getElementById('scroll_to_rockandror').getBoundingClientRect().top},1000)}
     window.wasScrolled = true;
-  })
-  
+  }
+
   $(window).scroll(function(){
     show_icon_menu();    
     zoom_image_intro();
+    first_scroll();
   });
 
   $('.btn-menu').on('click', function(event) {

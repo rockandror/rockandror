@@ -121,15 +121,24 @@ body{
       text-align: center;
       color:#fff;
       margin-top: 10rem;
-      font-size:2.4rem;
+      font-size:3.5rem;
       line-height: 40px;
       text-shadow: 1px 1px  #000;
       text-transform: uppercase;
-      font-weight: 100;
-      max-width: 60%;
+      //max-width: 50%;
       margin: 0px auto;
       margin-top:10%; 
-
+      font-weight: 700;
+      line-height: 1.1em;
+    }
+    lead{
+      text-align: center;
+      color:#fff;
+      display: block;
+      font-size: 1.6em;
+      font-weight: 100;
+      letter-spacing: .2rem;
+      margin-top: 1em;
     }
     a{
       margin:0px auto;
@@ -137,7 +146,7 @@ body{
       width: 300px;
       padding: 1em;
       text-align: center;
-      margin-top: 10%;
+      margin-top: 7%;
       text-transform: uppercase;
       color:#fff;
       font-size: 1.2em;
@@ -227,7 +236,7 @@ body{
 }
 .webdings,.eatbooking,.oasis,.rockandror,.cont-introduction{
   @include padding(8em, 0em, 8em, 0em);
-    h3{
+    h2{
       font-size: 4rem;
       font-weight: 200;
       line-height: 0.7;
@@ -266,7 +275,7 @@ body{
     font-size: 1.3rem;
     font-weight: 200;
     line-height: 0.7;
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 1em;
   }
   h4{
@@ -302,18 +311,18 @@ body{
 //Section webdings
 .webdings{
   @extend .gradient-clear;   
-  h3{ @include text($primary-color,uppercase, null); }
+  h2{ @include text($primary-color,uppercase, null); }
 }
 //Section eatbooking
 .eatbooking{
   @extend .pattern-eatbooking;
-  h3{ @include text(#f3cc33,uppercase, null); }
+  h2{ @include text(#f3cc33,uppercase, null); }
 }
 //Section oasis
 .oasis{
   background-image: asset_url('pattern/oasis-pattern.png'),
                     linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
-  h3{ @include text(#5fc3e6,uppercase, null); }
+  h2{ @include text(#5fc3e6,uppercase, null); }
 }
 //Section participation
 .participation{
@@ -801,6 +810,12 @@ body{
       margin-top: 10px;
     }
   }
+  .intro .video-container-show h1{
+    font-size: 2.4rem;
+    line-height: 40px;
+    padding: 1em;
+  }
+  .intro .video-container-show a{margin-top: 20%;}
   .webdings,.eatbooking,.oasis{
     a{line-height: 4em;}
     @include padding(2em, 0em, 2em, 0em);
@@ -821,6 +836,14 @@ body{
       font-size: 2rem;
     }
   }
+  .webdings a, .eatbooking a, .oasis a, .rockandror a, .cont-introduction a{
+    display: block;
+    margin-bottom: 1em;
+  }
+  .webdings h2, .eatbooking h2, .oasis h2, .rockandror h2, .cont-introduction h2{
+    text-align: center;
+    font-size: 3em;
+  }
   .howweworks{
     .workflow{
       .arrow{display: none;}
@@ -838,16 +861,21 @@ body{
   } 
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  .intro .video-container-show a{margin-top: 50%;}
   .participation .header{text-align: center;}
-  .webdings h3, .eatbooking h3, .oasis h3{ font-size: 2.3rem;}
+  .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
   .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
+
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (max-width: 320px) { 
   .intro .video-container-show h1{
-    font-size: 1.4rem;
-    line-height: 30px;
+    font-size: 2.4rem;
+    line-height: 40px;
+    padding: 1em;
   }
-  .webdings h3, .eatbooking h3, .oasis h3{
+  .intro .video-container-show a{margin-top: 20%;}
+  .webdings h2, .eatbooking h2, .oasis h2{
     font-size: 2.3rem;
+    text-align: center;
   }
 }
