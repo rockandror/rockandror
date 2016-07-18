@@ -28,7 +28,7 @@ $(document).ready(function(){
     $(".btn-menu").css({"-webkit-transform":"translate(0px,-50px)"});
     btnMenuInterval = setInterval(btnMenuRemoveInterval, 2000); 
   }
-
+  
   $(window).scroll(function(){
     show_icon_menu();
   });

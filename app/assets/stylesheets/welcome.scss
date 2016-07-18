@@ -246,7 +246,18 @@ body{
     font-weight: 100;
     padding-top: 3em;
     padding-bottom: 3em;
-  }  
+  }
+  a{
+    display: inline-block;
+    border:1px solid $secondary-color;
+    padding: 1em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    &:hover{
+     color:#fff;
+     background: $secondary-color;
+    }
+  } 
 }
 .rockandror{
   h3{
@@ -281,46 +292,26 @@ body{
     }
   }
   i{font-size: 1.3em;}
+  a{
+    border: none;
+    &:hover{ background: none; }
+  }
 }
 //Section webdings
 .webdings{
   @extend .gradient-clear;   
   h3{ @include text($primary-color,uppercase, null); }
-  a{
-    color:$secondary-color;
-    display: block;
-    text-transform: uppercase;
-    &:hover{
-         color:darken($secondary-color,10%);
-    }
-  }
 }
 //Section eatbooking
 .eatbooking{
   @extend .pattern-eatbooking;
   h3{ @include text(#f3cc33,uppercase, null); }
-  a{
-    color:$secondary-color;
-    display: block;
-    text-transform: uppercase;
-    &:hover{
-         color:darken($secondary-color,10%);
-    }
-  }
 }
 //Section oasis
 .oasis{
   background-image: asset_url('pattern/oasis-pattern.png'),
                     linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
   h3{ @include text(#5fc3e6,uppercase, null); }
-  a{
-    color:$secondary-color;
-    display: block;
-    text-transform: uppercase;
-    &:hover{
-         color:darken($secondary-color,10%);
-    }
-  }
 }
 //Section participation
 .participation{
