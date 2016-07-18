@@ -29,8 +29,22 @@ $(document).ready(function(){
     btnMenuInterval = setInterval(btnMenuRemoveInterval, 2000); 
   }
   
+  var x;
+  function zoom_image_intro(){
+    x = $(window).scrollTop();
+    $(".intro").css('background-size',100 + parseInt(x / 10, 0) + '% ');
+    console.log("dentro");
+  }
+
+  window.wasScrolled = false;
+  $(window).bind('scroll',function(){
+    if (!window.wasScrolled){ $('html, body').animate({scrollTop:document.getElementById('scroll_to_rockandror').getBoundingClientRect().top},1000)}
+    window.wasScrolled = true;
+  })
+  
   $(window).scroll(function(){
-    show_icon_menu();
+    show_icon_menu();    
+    zoom_image_intro();
   });
 
   $('.btn-menu').on('click', function(event) {

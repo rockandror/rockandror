@@ -102,19 +102,21 @@ body{
 }
 //Section intro
 .intro{
-  background: asset_url('intro3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;   
-  position: relative;
-  overflow: hidden;
+    background: asset_url('intro3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+    position: relative;
+    overflow: hidden;
+    transition:all 4s ease-in;
   .video-container-show{
-    position:absolute;
-    left:0;
-    right: 0;
-    z-index:3;
-    width: 100%;
-    height: 100%;
+    // position:absolute;
+    // left:0;
+    // right: 0;
+    // z-index:3;
+    // width: 100%;
+    // height: 100%;
+
     h1{
       text-align: center;
       color:#fff;
