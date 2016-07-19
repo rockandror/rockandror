@@ -38,14 +38,18 @@ $(document).ready(function(){
       //$(".intro").css('background-size', 'cover');
     }
   }
+
   window.wasScrolled = false;
   function first_scroll(){
     if (!window.wasScrolled){
-      var top = $('html').find($("#scroll_to_rockandror")).offset().top -150;
-      $('html, body').animate({scrollTop: top },1000)
+      if ( $( "#scroll_to_rockandror" ).length ) {  
+        var top = $('html').find($("#scroll_to_rockandror")).offset().top -150;
+        $('html, body').animate({scrollTop: top },1000)
+      }
     }
     window.wasScrolled = true;
   }
+  
   function navbar_show_hide(){ 
     var nav = $('.top-bar');
     var top = 250;

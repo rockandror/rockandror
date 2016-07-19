@@ -46,15 +46,6 @@
     }
   }
   
-  // .top-bar-section ul li{background-color: #fff;}
-  // .top-bar-section .dropdown{
-  //   background-color: #fff;
-  //   border: 1px solid $secondary-color;
-  // }
-  // .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button){
-  //   background-color: $secondary-color;
-  //   color: #FFFFFF;
-  // }
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
     background: transparent;
     color: $secondary-color;
