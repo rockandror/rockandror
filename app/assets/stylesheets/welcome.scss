@@ -713,12 +713,10 @@ body{
 }
 //Page Contact
 .contactpage{
-   @include padding(8em, 0em, 8em, 0em);
+  @include padding(8em, 0em, 8em, 0em);
   background: #fafafa;
-   
-  h2{
-    font-size: 1.8rem;
-    text-transform: uppercase;
+  p{
+    font-size: 1.3rem;
     font-weight: 300;
   }
   .new_contact label {display: none;}
