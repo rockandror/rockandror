@@ -358,8 +358,8 @@ body{
 //Section how we works
 .howweworks{
   @include padding(8em, 0em, 0em, 0em);
-  background: #0d7d8e;
-  border-top: 3em solid darken(#0d7d8e, 10%);
+  background: $secondary-color;
+  //border-top: 3em solid darken($secondary-color, 10%);
   h3{
     color:white;
     font-size: 2.1rem;
@@ -422,7 +422,7 @@ body{
     .newsprint{
       border:2px solid white;
       padding: 1em;
-      background: #0d7d8e;
+      background: $secondary-color;
       position: absolute;
       left: 0;
       right: 0;
@@ -438,7 +438,7 @@ body{
   .text{
     @include padding(4em, 4em, 4em, 4em);
     margin-top: 2em;
-    background: #0b6d7c;
+    background: darken($secondary-color, 10%);
     text-align: left;
     color:white;
     ul{list-style: none;}
@@ -449,7 +449,30 @@ body{
 .contactnow{
   @include padding(8em, 0em, 8em, 0em);
   border-bottom:10px solid #dbdbdb;
-  @extend .gradient-clear;
+  a{
+    overflow:hidden;
+    border-style: solid;
+    border-color:$secondary-color;
+    border-width: 2px 2px 6px 2px;
+    background: white;
+    color:$secondary-color;
+    text-transform: uppercase;
+
+    // &:before{
+    //   transition: all 400ms ease;
+    //   position: absolute;
+    //   background: $secondary-color;
+    //   top: 100px;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: -30px;
+    //   transform: rotate(3deg);
+    // }
+    &:hover{
+      background: $secondary-color;
+      color: white;
+    }
+  }
   h3{
     color:$primary-color;
     text-transform: uppercase;
@@ -461,9 +484,6 @@ body{
     text-transform: uppercase;
     display: block;
     margin-top: -17px;
-  }
-  strong{
-    text-decoration: underline;
   }
 }
 //Page Footer
@@ -707,7 +727,7 @@ body{
   }
   .img-background{
     background: asset_url('intro3.jpg');
-  }
+  } 
   .cont-introduction{ background: white; }
   textarea{height: 150px;}
 }
