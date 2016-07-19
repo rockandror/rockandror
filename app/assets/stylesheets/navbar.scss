@@ -1,14 +1,39 @@
 .fixed{
-  overflow: hidden;
-  padding-left: 2em;
-  padding-right: 2em;
-  height: 130px;
-  ul{
-    padding-top: 2.2em;
+  position: fixed;
+  top: -150px;
+  animation: show-navbar .7s forwards;
+}
+.remove-fixed{
+  
+}
+@keyframes show-navbar {
+  100% {
+    -webkit-transform: translate(0,100%);
+    -moz-transform: translate(0,100%);
+    -o-transform: translate(0,100%);
+    -ms-transform: translate(0,100%);
+    transform: translate(0,100%);
+  }
+}
+@keyframes hide-navbar {
+  100% {
+    -webkit-transform: translate(0,-100%);
+    -moz-transform: translate(0,-100%);
+    -o-transform: translate(0,-100%);
+    -ms-transform: translate(0,-100%);
+    transform: translate(0,-100%);
   }
 }
 .top-bar{
+  height: 130px;
+  border-bottom:2px solid #f2f2f2;
   background: white;
+  overflow: hidden;
+  padding-left: 2em;
+  padding-right: 2em;
+  ul{
+    padding-top: 2.2em;
+  }
   .logo-center{
     width: 70%;
     fill:#9b9b9b;

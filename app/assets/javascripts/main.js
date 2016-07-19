@@ -33,21 +33,37 @@ $(document).ready(function(){
   function zoom_image_intro(){
     x = $(window).scrollTop();
     if ($(window).width() >= 1024) {
-     $(".intro").css('background-size',100 + parseInt(x / 2, 0) + '% ');
+     //$(".intro").css('background-size',100 + parseInt(x / 2, 0) + '% ');
     }else{
-      $(".intro").css('background-size', 'cover');
+      //$(".intro").css('background-size', 'cover');
     }
   }
   window.wasScrolled = false;
   function first_scroll(){
-    if (!window.wasScrolled){ $('html, body').animate({scrollTop:document.getElementById('scroll_to_rockandror').getBoundingClientRect().top},1000)}
+    if (!window.wasScrolled){
+      var top = $('html').find($("#scroll_to_rockandror")).offset().top -150;
+      $('html, body').animate({scrollTop: top },1000)
+    }
     window.wasScrolled = true;
+  }
+  function navbar_show_hide(){ 
+    var nav = $('.top-bar');
+    var top = 250;
+
+    if ($(window).scrollTop() >= top) {
+      nav.removeClass('remove-fixed');
+      nav.addClass('fixed');
+    } else {
+       nav.removeClass('fixed');
+       nav.addClass('remove-fixed');
+    }
   }
 
   $(window).scroll(function(){
     show_icon_menu();    
     zoom_image_intro();
     first_scroll();
+    navbar_show_hide();
   });
 
   $('.btn-menu').on('click', function(event) {
