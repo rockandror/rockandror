@@ -41,7 +41,22 @@
     outline: none;border:  none; box-shadow: none;
   } 
 }
+input[type="text"]{height: 60px;outline: none;}
 
+a.button-action,input.button-action{
+  overflow:hidden;
+  border-style: solid;
+  border-color:$secondary-color;
+  border-width: 2px 2px 6px 2px;
+  background: white;
+  color:$secondary-color;
+  text-transform: uppercase;
+  &:hover{
+    background: $secondary-color;
+    color: white;
+  }
+
+}
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -445,34 +460,12 @@ body{
     span{font-size: .9rem;}
   }
 }
+
+
 //Section contact now
 .contactnow{
   @include padding(8em, 0em, 8em, 0em);
   border-bottom:10px solid #dbdbdb;
-  a{
-    overflow:hidden;
-    border-style: solid;
-    border-color:$secondary-color;
-    border-width: 2px 2px 6px 2px;
-    background: white;
-    color:$secondary-color;
-    text-transform: uppercase;
-
-    // &:before{
-    //   transition: all 400ms ease;
-    //   position: absolute;
-    //   background: $secondary-color;
-    //   top: 100px;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: -30px;
-    //   transform: rotate(3deg);
-    // }
-    &:hover{
-      background: $secondary-color;
-      color: white;
-    }
-  }
   h3{
     color:$primary-color;
     text-transform: uppercase;
@@ -720,15 +713,15 @@ body{
 }
 //Page Contact
 .contactpage{
-  .row{max-width: 100%;}
+   @include padding(8em, 0em, 8em, 0em);
+  background: #fafafa;
+   
   h2{
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 300;
   }
-  .img-background{
-    background: asset_url('intro3.jpg');
-  } 
-  .cont-introduction{ background: white; }
+  .new_contact label {display: none;}
   textarea{height: 150px;}
 }
 //Page greetingspage
