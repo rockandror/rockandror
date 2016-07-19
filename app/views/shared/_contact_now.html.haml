@@ -1,7 +1,8 @@
 %section.contactnow
   .row.text-center
     .small-12.columns.text-center
-      %h3 ¿Necesita una <strong>web o APP?</strong>
-      %span Empezemos con una sesión de consultoría gratuita!
+      %h3 ¿Necesita una web o APP?
       %br
-      = link_to "Solicita tu consultoría gratuita", new_contact_path, class: "large button btn-primary"
+      = link_to new_contact_path, class: "button-action large button" do
+        Solicita tu
+        %strong consultoría gratuita

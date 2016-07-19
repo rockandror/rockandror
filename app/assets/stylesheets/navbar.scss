@@ -27,10 +27,16 @@
       padding-top: 3em;
       strong{display: block;}
       li:not(.has-form) a:not(.button){
-        line-height: 1;
         color:$secondary-color;
+        padding: 0px;
+        margin: 0px;
+        line-height: 30px;
+        padding: .4em;
+        border: 1px solid transparent;
+        &:hover{
+          border: 1px solid $secondary-color;
+        }
       }
-      a{ float: left; }
     }
     ul{
       li{

@@ -41,7 +41,22 @@
     outline: none;border:  none; box-shadow: none;
   } 
 }
+input[type="text"]{height: 60px;outline: none;}
 
+a.button-action,input.button-action{
+  overflow:hidden;
+  border-style: solid;
+  border-color:$secondary-color;
+  border-width: 2px 2px 6px 2px;
+  background: white;
+  color:$secondary-color;
+  text-transform: uppercase;
+  &:hover{
+    background: $secondary-color;
+    color: white;
+  }
+
+}
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -102,46 +117,125 @@ body{
 }
 //Section intro
 .intro{
-  background: asset_url('intro3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;   
-  position: relative;
-  overflow: hidden;
+    background: asset_url('intro3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+    position: relative;
+    overflow: hidden;
+    transition:all 4s ease-in;
   .video-container-show{
-    position:absolute;
-    left:0;
-    right: 0;
-    z-index:3;
-    width: 100%;
-    height: 100%;
+    // position:absolute;
+    // left:0;
+    // right: 0;
+    // z-index:3;
+    // width: 100%;
+    // height: 100%;
+
     h1{
       text-align: center;
       color:#fff;
       margin-top: 10rem;
-      font-size:2.4rem;
+      font-size:3.5rem;
       line-height: 40px;
       text-shadow: 1px 1px  #000;
       text-transform: uppercase;
-      font-weight: 100;
-      max-width: 60%;
+      //max-width: 50%;
       margin: 0px auto;
       margin-top:10%; 
-
+      font-weight: 700;
+      line-height: 1.1em;
+    }
+    lead{
+      text-align: center;
+      color:#fff;
+      display: block;
+      font-size: 1.6em;
+      font-weight: 100;
+      letter-spacing: .2rem;
+      margin-top: 1em;
     }
     a{
       margin:0px auto;
       display: block;
       width: 300px;
       padding: 1em;
-      border:1px solid white;
       text-align: center;
-      margin-top: 10%;
+      margin-top: 7%;
       text-transform: uppercase;
       color:#fff;
-
+      font-size: 1.2em;
+      border: 1px solid #86e1ff;
+      background: $secondary-color;
+      overflow: hidden;
+      position: relative;
+      height: 50px;
+      animation: showButton .7s ;
+      &:before{
+        content: 'Más sobre RockandRor';
+        position: absolute;
+        top: 25%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+      }
+      &:after{
+        content: '⬇︎';
+        color:#fff;
+        position: absolute;
+        top: -100%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+        font-size: 1.2em;
+        color: $secondary-color;
+      }
+      &:hover{ 
+        animation: widthButton .7s forwards;
+        animation-delay: .5s;
+        &:before{
+          animation: showText .7s forwards;
+        }
+        &:after{
+          animation: showSymbol .7s forwards;
+          animation-delay: .5s;
+        } 
+      }
     }
   }
+
+  @keyframes showButton {
+    100% {
+     width: 300px;
+    }
+  }
+  @keyframes showText {
+    100% {
+    -webkit-transform: translate(0,100%);
+    -moz-transform: translate(0,100%);
+    -o-transform: translate(0,100%);
+    -ms-transform: translate(0,100%);
+    transform: translate(0,100%);
+    }
+  }
+  @keyframes showSymbol {
+    100% {
+    -webkit-transform: translate(0,60%);
+    -moz-transform: translate(0,60%);
+    -o-transform: translate(0,60%);
+    -ms-transform: translate(0,60%);
+    transform: translate(0,60%);
+    }
+  }
+  @keyframes widthButton {
+    100% {
+      border: 1px solid transparent;
+      background: rgba(255,255,255,.5);
+      color: $secondary-color;
+      width: 50px;
+    }
+  }
+
   .video-container{
     position:absolute;
     left:0;
@@ -155,9 +249,9 @@ body{
     height:auto;
   }
 }
-.webdings,.eatbooking,.oasis,.rockandror{
+.webdings,.eatbooking,.oasis,.rockandror,.cont-introduction{
   @include padding(8em, 0em, 8em, 0em);
-    h3{
+    h2{
       font-size: 4rem;
       font-weight: 200;
       line-height: 0.7;
@@ -178,14 +272,25 @@ body{
     font-weight: 100;
     padding-top: 3em;
     padding-bottom: 3em;
-  }  
+  }
+  a{
+    display: inline-block;
+    border:1px solid $secondary-color;
+    padding: 1em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    &:hover{
+     color:#fff;
+     background: $secondary-color;
+    }
+  } 
 }
 .rockandror{
   h3{
     font-size: 1.3rem;
     font-weight: 200;
     line-height: 0.7;
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 1em;
   }
   h4{
@@ -213,46 +318,26 @@ body{
     }
   }
   i{font-size: 1.3em;}
+  a{
+    border: none;
+    &:hover{ background: none; }
+  }
 }
 //Section webdings
 .webdings{
   @extend .gradient-clear;   
-  h3{ @include text($primary-color,uppercase, null); }
-  a{
-    color:$secondary-color;
-    display: block;
-    text-transform: uppercase;
-    &:hover{
-         color:darken($secondary-color,10%);
-    }
-  }
+  h2{ @include text($primary-color,uppercase, null); }
 }
 //Section eatbooking
 .eatbooking{
   @extend .pattern-eatbooking;
-  h3{ @include text(#f3cc33,uppercase, null); }
-  a{
-    color:$secondary-color;
-    display: block;
-    text-transform: uppercase;
-    &:hover{
-         color:darken($secondary-color,10%);
-    }
-  }
+  h2{ @include text(#f3cc33,uppercase, null); }
 }
 //Section oasis
 .oasis{
   background-image: asset_url('pattern/oasis-pattern.png'),
                     linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
-  h3{ @include text(#5fc3e6,uppercase, null); }
-  a{
-    color:$secondary-color;
-    display: block;
-    text-transform: uppercase;
-    &:hover{
-         color:darken($secondary-color,10%);
-    }
-  }
+  h2{ @include text(#5fc3e6,uppercase, null); }
 }
 //Section participation
 .participation{
@@ -288,8 +373,8 @@ body{
 //Section how we works
 .howweworks{
   @include padding(8em, 0em, 0em, 0em);
-  background: #0d7d8e;
-  border-top: 3em solid darken(#0d7d8e, 10%);
+  background: $secondary-color;
+  //border-top: 3em solid darken($secondary-color, 10%);
   h3{
     color:white;
     font-size: 2.1rem;
@@ -352,7 +437,7 @@ body{
     .newsprint{
       border:2px solid white;
       padding: 1em;
-      background: #0d7d8e;
+      background: $secondary-color;
       position: absolute;
       left: 0;
       right: 0;
@@ -368,18 +453,19 @@ body{
   .text{
     @include padding(4em, 4em, 4em, 4em);
     margin-top: 2em;
-    background: #0b6d7c;
+    background: darken($secondary-color, 10%);
     text-align: left;
     color:white;
     ul{list-style: none;}
     span{font-size: .9rem;}
   }
 }
+
+
 //Section contact now
 .contactnow{
   @include padding(8em, 0em, 8em, 0em);
   border-bottom:10px solid #dbdbdb;
-  @extend .gradient-clear;
   h3{
     color:$primary-color;
     text-transform: uppercase;
@@ -392,9 +478,6 @@ body{
     display: block;
     margin-top: -17px;
   }
-  strong{
-    text-decoration: underline;
-  }
 }
 //Page Footer
 .footer{
@@ -403,6 +486,7 @@ body{
   ul{
     text-align: center;
     display: inline-block;
+    list-style: none;
   }
   .logo{
     fill:$primary-color;
@@ -630,15 +714,13 @@ body{
 }
 //Page Contact
 .contactpage{
-  .row{max-width: 100%;}
-  h2{
-    text-transform: uppercase;
+  @include padding(8em, 0em, 8em, 0em);
+  background: #fafafa;
+  p{
+    font-size: 1.3rem;
     font-weight: 300;
   }
-  .img-background{
-    background: asset_url('intro3.jpg');
-  }
-  .cont-introduction{ background: white; }
+  .new_contact label {display: none;}
   textarea{height: 150px;}
 }
 //Page greetingspage
@@ -693,8 +775,8 @@ body{
   }
 }
  
-//Mediaquery
 
+//Mediaquery
 // Large screens
 @media only screen and (max-width: 1072px) { 
   .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
@@ -740,6 +822,12 @@ body{
       margin-top: 10px;
     }
   }
+  .intro .video-container-show h1{
+    font-size: 2.4rem;
+    line-height: 40px;
+    padding: 1em;
+  }
+  .intro .video-container-show a{margin-top: 20%;}
   .webdings,.eatbooking,.oasis{
     a{line-height: 4em;}
     @include padding(2em, 0em, 2em, 0em);
@@ -760,6 +848,14 @@ body{
       font-size: 2rem;
     }
   }
+  .webdings a, .eatbooking a, .oasis a, .rockandror a, .cont-introduction a{
+    display: block;
+    margin-bottom: 1em;
+  }
+  .webdings h2, .eatbooking h2, .oasis h2, .rockandror h2, .cont-introduction h2{
+    text-align: center;
+    font-size: 3em;
+  }
   .howweworks{
     .workflow{
       .arrow{display: none;}
@@ -777,18 +873,21 @@ body{
   } 
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  .intro .video-container-show a{margin-top: 50%;}
   .participation .header{text-align: center;}
-  .webdings h3, .eatbooking h3, .oasis h3{ font-size: 2.3rem;}
+  .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
   .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
+
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-
 @media only screen and (max-width: 320px) { 
   .intro .video-container-show h1{
-    font-size: 1.4rem;
-    line-height: 30px;
+    font-size: 2.4rem;
+    line-height: 40px;
+    padding: 1em;
   }
-  .webdings h3, .eatbooking h3, .oasis h3{
+  .intro .video-container-show a{margin-top: 20%;}
+  .webdings h2, .eatbooking h2, .oasis h2{
     font-size: 2.3rem;
+    text-align: center;
   }
 }
