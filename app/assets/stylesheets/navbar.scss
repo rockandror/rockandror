@@ -1,40 +1,70 @@
 .fixed{
-  overflow: hidden;
-  padding-left: 2em;
-  padding-right: 2em;
-  height: 130px;
-  ul{
-    padding-top: 2.2em;
+  position: fixed;
+  top: -120px;
+  animation: show-navbar .7s forwards;
+}
+
+@keyframes show-navbar {
+  100% {
+    -webkit-transform: translate(0,100%);
+    -moz-transform: translate(0,100%);
+    -o-transform: translate(0,100%);
+    -ms-transform: translate(0,100%);
+    transform: translate(0,100%);
+  }
+}
+@keyframes hide-navbar {
+  100% {
+    -webkit-transform: translate(0,-100%);
+    -moz-transform: translate(0,-100%);
+    -o-transform: translate(0,-100%);
+    -ms-transform: translate(0,-100%);
+    transform: translate(0,-100%);
   }
 }
 .top-bar{
+  height: 120px;
+  border-bottom:2px solid #f2f2f2;
   background: white;
-  .logo-center{
-    width: 70%;
-    fill:#9b9b9b;
-    margin: 0px auto;
-    margin-top: 9px;
+  //overflow: hidden;
+  padding-left: 2em;
+  padding-right: 2em;
+  ul{
+    padding-top: 1.2em;
   }
   .logo{
-    svg{
-      width: 330px;
-      fill:#9b9b9b;
-      margin-top: 9px;
-    }
+    text-align: center;
+  }
+  .logo-center{
+    fill:#9b9b9b;
+    margin: 0px auto;
+    max-height: 90px;
+    margin-top: -10px;
+  }
+  .logo-horiz{
+    width: 300px;
+    fill:#9b9b9b;
+    margin-top: 9px;
+  }
+  
+  .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background: transparent;
+    color: $secondary-color;
   }
   .top-bar-section{
+    li a:hover{background: transparent;}
+    li.active{ border-bottom: 1px solid $secondary-color;}
     .right{ 
-      padding-top: 3em;
+      padding-top: 2.3em;
       strong{display: block;}
       li:not(.has-form) a:not(.button){
         color:$secondary-color;
-        padding: 0px;
-        margin: 0px;
+        padding: .6em;
         line-height: 30px;
-        padding: .4em;
-        border: 1px solid transparent;
+        border: 1px solid $secondary-color;
         &:hover{
-          border: 1px solid $secondary-color;
+          background: $secondary-color;
+          color: #fff;
         }
       }
     }
