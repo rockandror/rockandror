@@ -54,7 +54,7 @@ $(document).ready(function(){
     var nav = $('.top-bar');
     var top = 250;
 
-    if ($(window).scrollTop() >= top) {
+    if ($(window).scrollTop() >= top &&  $(window).width() >= 1024)  {
       nav.removeClass('remove-fixed');
       nav.addClass('fixed');
     } else {
@@ -62,6 +62,8 @@ $(document).ready(function(){
        nav.addClass('remove-fixed');
     }
   }
+
+
 
   $(window).scroll(function(){
     show_icon_menu();    
