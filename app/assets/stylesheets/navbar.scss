@@ -1,10 +1,13 @@
+.top-bar-section li.active:not(.has-form) a:not(.button){background: transparent;}
+.top-bar-section li.active:not(.has-form) a:not(.button):hover{background: transparent;}
+.top-bar-section ul li:hover:not(.has-form) > a{background: transparent;}
+.top-bar-section li:not(.has-form) a:not(.button):hover{background: transparent;}
+
 .top-contact{
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-
-  background: #fff;
   text-align: center;
   position: fixed;
   z-index: 9;
@@ -26,16 +29,13 @@
       color: #fff;
       line-height: 3em;
     }
-  }
-   
+  }   
 }
-
 .fixed{
   position: fixed;
   top: -120px;
   animation: show-navbar .7s forwards;
 }
-
 @keyframes show-navbar {
   100% {
     -webkit-transform: translate(0,100%);
@@ -58,15 +58,10 @@
   height: 120px;
   border-bottom:2px solid #f2f2f2;
   background: white;
-  //overflow: hidden;
   padding-left: 2em;
   padding-right: 2em;
-  ul{
-    padding-top: 1.2em;
-  }
-  .logo{
-    text-align: center;
-  }
+  ul{ padding-top: 1.2em; }
+  .logo{ text-align: center; }
   .logo-center{
     fill:#9b9b9b;
     margin: 0px auto;
@@ -79,17 +74,24 @@
     fill:#9b9b9b;
     margin-top: 9px;
   }
-  
-  .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: transparent;
-    color: $secondary-color;
+
+  .top-bar-section{
+    ul{
+      li a{text-transform: uppercase;}
+      li.active{
+        border-bottom: 1px solid $secondary-color;
+      }
+    }
   }
   .top-bar-section{
-    li a:hover{background: transparent;}
-    li.active{ border-bottom: 1px solid $secondary-color;}
     .right{ 
       padding-top: 2.3em;
       strong{display: block;}
+      a{
+        
+        font-weight: 300;
+        cursor: pointer;
+      }
       li:not(.has-form) a:not(.button){
         color:$secondary-color;
         padding: .6em;
@@ -98,20 +100,6 @@
         &:hover{
           background: $secondary-color;
           color: #fff;
-        }
-      }
-    }
-    ul{
-      li{
-        background: none;
-        &:not(.has-form) a:not(.button){
-          color:$primary-color;
-          background: none;
-        }
-        a{
-          text-transform: uppercase;
-          font-weight: 300;
-          cursor: pointer;
         }
       }
     }
