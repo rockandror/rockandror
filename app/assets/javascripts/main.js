@@ -21,11 +21,16 @@ $(document).ready(function(){
   function btnMenuRemoveInterval() {
     clearInterval(btnMenuInterval);
     $(".btn-menu").css({"-webkit-transform":"translate(0px,50px)"});
+    $(".btn-menu").css({"-moz-transform":"translate(0px,50px)"});
+    $(".btn-menu").css({"-o-transform":"translate(0px,50px)"});
+    $(".btn-menu").css({"-ms-transform":"translate(0px,50px)"});
   }
-
   function show_icon_menu(){
     clearInterval(btnMenuInterval);
     $(".btn-menu").css({"-webkit-transform":"translate(0px,-50px)"});
+    $(".btn-menu").css({"-moz-transform":"translate(0px,-50px)"});
+    $(".btn-menu").css({"-o-transform":"translate(0px,-50px)"});
+    $(".btn-menu").css({"-ms-transform":"translate(0px,-50px)"});
     btnMenuInterval = setInterval(btnMenuRemoveInterval, 2000); 
   }
   
