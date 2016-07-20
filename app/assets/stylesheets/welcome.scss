@@ -514,7 +514,6 @@ body{
   text-transform: uppercase;
   ul{
     text-align: center;
-    display: inline-block;
     list-style: none;
   }
   .logo{
@@ -534,6 +533,9 @@ body{
   }
   p{
     font-size: .6rem;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
     a{display: inline-block;}
   }
 }
