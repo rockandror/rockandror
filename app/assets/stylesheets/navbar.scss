@@ -1,3 +1,35 @@
+.top-contact{
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  z-index: 9;
+  .tel{
+    padding: 0px;
+    text-align: center;
+    background: #2ECC71;
+    a{
+      color: #fff; 
+      text-transform: uppercase;
+      line-height: 3em;
+    }
+  }
+  .email{
+    padding: 0px;
+    background: $secondary-color;
+    a{
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 3em;
+    }
+  }
+   
+}
+
 .fixed{
   position: fixed;
   top: -120px;
