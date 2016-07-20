@@ -110,9 +110,28 @@ body{
   }
 }
 .slick-prev,.slick-next{display: none !important;}
+//Modal
 #nav-modal{
   text-align: center;
-  a{display: block;}
+  .stacked {
+    a{
+      display: block;
+      color:$secondary-color;
+      background: transparent;
+      padding: .6em;
+      line-height: 30px;
+      border: 1px solid $secondary-color;
+      &:hover{
+        background: $secondary-color;
+        color: #fff;
+      }
+    }
+    ul{
+      list-style: none;
+      margin-left: 0rem;
+      li{margin-bottom: 10px;}
+    }
+  }
 }
 //Section intro
 .intro{

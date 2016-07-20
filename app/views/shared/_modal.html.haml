@@ -3,7 +3,16 @@
   %a.close-reveal-modal{"aria-label" => "Close"} ×
   %hr
   .stacked.button-group
-    %a.button{:href => new_contact_path} Envianos una email
-    %hr
     %a.button{:href => new_contact_path} Home
-    %a.button{:href => new_contact_path} Trabajos
+    %hr
+    %p Últimos trabajos
+    %ul
+      %li
+        = link_to 'Webdings', '/webdings'
+      %li
+        = link_to 'Eatbooking', '/eatbooking' 
+      %li
+        = link_to 'Oasis Catamaran', '/oasiscatamaran'
+    %hr
+    %a.button{:href => new_contact_path} Envianos una email
+    
