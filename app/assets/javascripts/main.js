@@ -20,10 +20,10 @@ $(document).ready(function(){
   var btnMenuInterval;  
   function btnMenuRemoveInterval() {
     clearInterval(btnMenuInterval);
-    $(".btn-menu").css({"-webkit-transform":"translate(0px,50px)"});
-    $(".btn-menu").css({"-moz-transform":"translate(0px,50px)"});
-    $(".btn-menu").css({"-o-transform":"translate(0px,50px)"});
-    $(".btn-menu").css({"-ms-transform":"translate(0px,50px)"});
+    $(".btn-menu").css({"-webkit-transform":"translate(0px,-150px)"});
+    $(".btn-menu").css({"-moz-transform":"translate(0px,-150px)"});
+    $(".btn-menu").css({"-o-transform":"translate(0px,-150px)"});
+    $(".btn-menu").css({"-ms-transform":"translate(0px,-150px)"});
 
     $(".top-contact").css({"-webkit-transform":"translate(0px,-50px)"});
     $(".top-contact").css({"-moz-transform":"translate(0px,-50px)"});
@@ -32,10 +32,10 @@ $(document).ready(function(){
   }
   function show_menu_smartphone(){
     clearInterval(btnMenuInterval);
-    $(".btn-menu").css({"-webkit-transform":"translate(0px,-50px)"});
-    $(".btn-menu").css({"-moz-transform":"translate(0px,-50px)"});
-    $(".btn-menu").css({"-o-transform":"translate(0px,-50px)"});
-    $(".btn-menu").css({"-ms-transform":"translate(0px,-50px)"});
+    $(".btn-menu").css({"-webkit-transform":"translate(0px,50px)"});
+    $(".btn-menu").css({"-moz-transform":"translate(0px,50px)"});
+    $(".btn-menu").css({"-o-transform":"translate(0px,50px)"});
+    $(".btn-menu").css({"-ms-transform":"translate(0px,50px)"});
 
     $(".top-contact").css({"-webkit-transform":"translate(0px,0px)"});
     $(".top-contact").css({"-moz-transform":"translate(0px,0px)"});

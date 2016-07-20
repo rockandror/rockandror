@@ -809,10 +809,10 @@ body{
     -o-transform:translateY(-50px);
   }
   .btn-menu{
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     position: fixed;
-    bottom: 0;
+    top: -150;
     -webkit-transform: translateY(50px);
     transform: translateY(50px);
     -moz-transform:translateY(50px);
@@ -826,7 +826,8 @@ body{
       fill:white;
       margin: 0 auto;
       display: block;
-      margin-top: 12px;
+      margin-top: 4px;
+      width: 20px;
     }
   } 
 } 
