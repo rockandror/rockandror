@@ -55,7 +55,6 @@ a.button-action,input.button-action{
     background: $secondary-color;
     color: white;
   }
-
 }
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -111,9 +110,28 @@ body{
   }
 }
 .slick-prev,.slick-next{display: none !important;}
+//Modal
 #nav-modal{
   text-align: center;
-  a{display: block;}
+  .stacked {
+    a{
+      display: block;
+      color:$secondary-color;
+      background: transparent;
+      padding: .6em;
+      line-height: 30px;
+      border: 1px solid $secondary-color;
+      &:hover{
+        background: $secondary-color;
+        color: #fff;
+      }
+    }
+    ul{
+      list-style: none;
+      margin-left: 0rem;
+      li{margin-bottom: 10px;}
+    }
+  }
 }
 //Section intro
 .intro{
@@ -123,15 +141,7 @@ body{
     background-position: center center;   
     position: relative;
     overflow: hidden;
-    transition:all 4s ease-in;
   .video-container-show{
-    // position:absolute;
-    // left:0;
-    // right: 0;
-    // z-index:3;
-    // width: 100%;
-    // height: 100%;
-
     h1{
       text-align: center;
       color:#fff;
@@ -140,7 +150,6 @@ body{
       line-height: 40px;
       text-shadow: 1px 1px  #000;
       text-transform: uppercase;
-      //max-width: 50%;
       margin: 0px auto;
       margin-top:10%; 
       font-weight: 700;
@@ -156,52 +165,72 @@ body{
       margin-top: 1em;
     }
     a{
-      margin:0px auto;
-      display: block;
-      width: 300px;
-      padding: 1em;
-      text-align: center;
-      margin-top: 7%;
+      border: 1px solid $secondary-color;
+      color:white;
       text-transform: uppercase;
-      color:#fff;
-      font-size: 1.2em;
-      border: 1px solid #86e1ff;
       background: $secondary-color;
-      overflow: hidden;
-      position: relative;
-      height: 50px;
-      animation: showButton .7s ;
-      &:before{
-        content: 'Más sobre RockandRor';
-        position: absolute;
-        top: 25%;
-        right: 0%;
-        bottom: 0%;
-        left: 0%;
-      }
-      &:after{
-        content: '⬇︎';
-        color:#fff;
-        position: absolute;
-        top: -100%;
-        right: 0%;
-        bottom: 0%;
-        left: 0%;
-        font-size: 1.2em;
-        color: $secondary-color;
-      }
-      &:hover{ 
-        animation: widthButton .7s forwards;
-        animation-delay: .5s;
-        &:before{
-          animation: showText .7s forwards;
-        }
-        &:after{
-          animation: showSymbol .7s forwards;
-          animation-delay: .5s;
-        } 
+      padding: 1em;
+      font-size: 1.2em;
+      text-align: center;
+      width: 200px;
+      display: block;
+      margin: 0px auto;
+      margin-top: 50px;
+      &:hover{
+        background: darken($secondary-color,20%);
+        color: white;
+        -webkit-box-shadow: 1px 0px 23px 0px rgba($secondary-color, 0.75);
+        -moz-box-shadow:    1px 0px 23px 0px rgba($secondary-color, 0.75);
+        box-shadow:         1px 0px 23px 0px rgba($secondary-color, 0.75);
       }
     }
+    // a{
+    //   margin:0px auto;
+    //   display: block;
+    //   width: 300px;
+    //   padding: 1em;
+    //   text-align: center;
+    //   margin-top: 7%;
+    //   text-transform: uppercase;
+    //   color:#fff;
+    //   font-size: 1.2em;
+    //   border: 1px solid #86e1ff;
+    //   background: $secondary-color;
+    //   overflow: hidden;
+    //   position: relative;
+    //   height: 50px;
+    //   animation: showButton .7s ;
+    //   &:before{
+    //     content: 'Más sobre RockandRor';
+    //     position: absolute;
+    //     top: 25%;
+    //     right: 0%;
+    //     bottom: 0%;
+    //     left: 0%;
+    //   }
+    //   &:after{
+    //     content: '⬇︎';
+    //     color:#fff;
+    //     position: absolute;
+    //     top: -100%;
+    //     right: 0%;
+    //     bottom: 0%;
+    //     left: 0%;
+    //     font-size: 1.2em;
+    //     color: $secondary-color;
+    //   }
+    //   &:hover{ 
+    //     animation: widthButton .7s forwards;
+    //     animation-delay: .5s;
+    //     &:before{
+    //       animation: showText .7s forwards;
+    //     }
+    //     &:after{
+    //       animation: showSymbol .7s forwards;
+    //       animation-delay: .5s;
+    //     } 
+    //   }
+    // }
   }
 
   @keyframes showButton {
@@ -485,7 +514,6 @@ body{
   text-transform: uppercase;
   ul{
     text-align: center;
-    display: inline-block;
     list-style: none;
   }
   .logo{
@@ -500,12 +528,14 @@ body{
   .social{
     svg{
       fill:$primary-color;
-      width: 90%;
       &:hover{fill:$secondary-color;}
     }
   }
   p{
     font-size: .6rem;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
     a{display: inline-block;}
   }
 }
@@ -774,7 +804,6 @@ body{
     }
   }
 }
- 
 
 //Mediaquery
 // Large screens
@@ -785,20 +814,30 @@ body{
   }
   .workflow{display: none;}
 }
-@media only screen and (min-width: 1025px) {
-  .btn-menu{
+@media only screen and (min-width: 1024px) {
+  .btn-menu,.top-contact{
     display: none;
   }
+
 }
 @media only screen and (max-width: 1024px) {
-  .btn-menu{
-    width: 50px;
-    height: 50px;
+  .top-contact{
     position: fixed;
-    bottom: 0;
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    -moz-transform:translateY(50px);
+    top: 0px;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -moz-transform:translateY(-50px);
+    -o-transform:translateY(-50px);
+  }
+  .btn-menu{
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    //top: -150;
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+    -moz-transform:translateY(-150px);
+    -o-transform:translateY(-150px);
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -808,7 +847,8 @@ body{
       fill:white;
       margin: 0 auto;
       display: block;
-      margin-top: 12px;
+      margin-top: 4px;
+      width: 20px;
     }
   } 
 } 
@@ -873,7 +913,7 @@ body{
   } 
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-  .intro .video-container-show a{margin-top: 50%;}
+  .intro .video-container-show a{margin-top: 20%;}
   .participation .header{text-align: center;}
   .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
   .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
@@ -885,7 +925,7 @@ body{
     line-height: 40px;
     padding: 1em;
   }
-  .intro .video-container-show a{margin-top: 20%;}
+  .intro .video-container-show a{margin-top: 10%;}
   .webdings h2, .eatbooking h2, .oasis h2{
     font-size: 2.3rem;
     text-align: center;
