@@ -812,11 +812,11 @@ body{
     width: 36px;
     height: 36px;
     position: fixed;
-    top: -150;
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    -moz-transform:translateY(50px);
-    -o-transform:translateY(50px);
+    //top: -150;
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+    -moz-transform:translateY(-150px);
+    -o-transform:translateY(-150px);
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -904,7 +904,7 @@ body{
     line-height: 40px;
     padding: 1em;
   }
-  .intro .video-container-show a{margin-top: 20%;}
+  .intro .video-container-show a{margin-top: 10%;}
   .webdings h2, .eatbooking h2, .oasis h2{
     font-size: 2.3rem;
     text-align: center;
