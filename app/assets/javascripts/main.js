@@ -1,7 +1,3 @@
-// $(document).on('ready page:load', function () {
-//   //$(function(){ $(document).foundation(); });
-// });
-
 $(document).ready(function(){    
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
     $( this ).parent().addClass('active');
@@ -44,15 +40,52 @@ $(document).ready(function(){
     btnMenuInterval = setInterval(btnMenuRemoveInterval, 2000); 
   }
   
-  var x;
-  function zoom_image_intro(){
-    x = $(window).scrollTop();
-    if ($(window).width() >= 1024) {
-    // $(".intro").css('background-size',100 + parseInt(x / 2, 0) + '% ');
-    }else{
-    //  $(".intro").css('background-size', 'cover');
+  /***SCROLL IMAGE */
+
+  var introSection = $('.bg-background'),
+  introSectionHeight = introSection.height(),
+  //change scaleSpeed if you want to change the speed of the scale effect
+  scaleSpeed = 1.4,
+  //change opacitySpeed if you want to change the speed of opacity reduction effect
+  opacitySpeed = 1;  
+  //update this value if you change this breakpoint in the style.css file (or _layout.scss if you use SASS)
+  var MQ = 1170;
+
+  triggerAnimation();
+  $(window).on('resize', function(){
+    triggerAnimation();
+  });
+
+  //bind the scale event to window scroll if window width > $MQ (unbind it otherwise)
+  function triggerAnimation(){
+    if($(window).width()>= MQ) {
+      $(window).on('scroll', function(){
+        //The window.requestAnimationFrame() method tells the browser that you wish to perform an animation- the browser can optimize it so animations will be smoother
+        window.requestAnimationFrame(animateIntro);
+      });
+    } else {
+      $(window).off('scroll');
     }
   }
+  //assign a scale transformation to the introSection element and reduce its opacity
+  function animateIntro () {
+    var scrollPercentage = ($(window).scrollTop()/introSectionHeight).toFixed(5),
+      scaleValue = 1 + scrollPercentage*scaleSpeed;
+    //check if the introSection is still visible
+    if( $(window).scrollTop() < introSectionHeight) {
+      introSection.css({
+          '-moz-transform': 'scale(' + scaleValue + ') translateZ(0)',
+          '-webkit-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        '-ms-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        '-o-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        'transform': 'scale(' + scaleValue + ') translateZ(0)',
+        'opacity': 1 - scrollPercentage*opacitySpeed
+
+      });
+    }
+  }
+
+  /*FINSH SCROLL */
 
   window.wasScrolled = false;
   function first_scroll(){
@@ -78,11 +111,9 @@ $(document).ready(function(){
     }
   }
 
-
-
   $(window).scroll(function(){
     show_menu_smartphone();    
-    zoom_image_intro();
+    //zoom_image_intro();
     first_scroll();
     navbar_show_hide();
   });
@@ -101,8 +132,6 @@ $(document).ready(function(){
     $('body').css('overflow-y','auto');
   }); 
   
-  heightTopBar = $(".top-bar").height();
-  
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -112,6 +141,7 @@ $(document).ready(function(){
   }(document, 'script', 'facebook-jssdk'));
 });
 
+heightTopBar = $(".top-bar").height();
 window.onresize = function(event) { resizeDiv(); }
 function resizeDiv() {
   h = $(window).height() - heightTopBar;
