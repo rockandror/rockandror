@@ -24,9 +24,9 @@
         %a{:href => new_contact_path} Envíanos un email
     / Left Nav Section
     %ul.small-4.medium-4.columns.show-for-medium-up
-      %li.active
+      %li{:class => active?("home", params[:action])}
         %a{:href => root_path} Home
-      %li.has-dropdown
+      %li.has-dropdown{:class => active?("portfolio", params[:action])}
         %a{:href => "#"} Últimos trabajos
         %ul.dropdown
           %li
