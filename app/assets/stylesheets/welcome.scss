@@ -123,7 +123,7 @@ body{
     background-position: center center;   
     position: relative;
     overflow: hidden;
-    //transition:all 4s ease-in;
+    transition:all 4s ease-in;
   .video-container-show{
     // position:absolute;
     // left:0;
@@ -235,7 +235,6 @@ body{
       width: 50px;
     }
   }
-
 
   .video-container{
     position:absolute;
@@ -487,6 +486,7 @@ body{
   ul{
     text-align: center;
     display: inline-block;
+    list-style: none;
   }
   .logo{
     fill:$primary-color;
@@ -500,7 +500,6 @@ body{
   .social{
     svg{
       fill:$primary-color;
-      width: 90%;
       &:hover{fill:$secondary-color;}
     }
   }

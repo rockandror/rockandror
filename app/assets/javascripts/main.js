@@ -33,9 +33,9 @@ $(document).ready(function(){
   function zoom_image_intro(){
     x = $(window).scrollTop();
     if ($(window).width() >= 1024) {
-     //$(".intro").css('background-size',100 + parseInt(x / 2, 0) + '% ');
+    // $(".intro").css('background-size',100 + parseInt(x / 2, 0) + '% ');
     }else{
-      //$(".intro").css('background-size', 'cover');
+    //  $(".intro").css('background-size', 'cover');
     }
   }
 
