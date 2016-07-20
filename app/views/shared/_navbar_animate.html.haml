@@ -1,16 +1,51 @@
 %a.btn-menu{"data-reveal-id" => "nav-modal", :href => "#"}
   = inline_svg "svg/icon-menu.svg" , class: 'icon-menu'
-%nav.fixed.top-bar{"data-topbar" => "", :role => "navigation", "data-options" => "sticky_on: small"}
-  = inline_svg "svg/logo-center.svg" , class: 'logo-center show-for-small-only'
-  %ul.title-area.medium-5.columns.hide-for-small-only
-    %li.name.animated-left-right.delay-3
-      %a.logo{:href => root_path}
-        = inline_svg "svg/logo.svg" 
+%nav.top-bar{"data-topbar" => "", :role => "navigation"}
+  %ul.title-area.small-4.medium-4.columns
+    %li.logo
+      %h1
+        %a{:href => root_path}
+          = inline_svg "svg/logo.svg" 
+    / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
         %span Menu
   %section.top-bar-section
-    %ul.right.text-center
+    / Right Nav Section
+    %ul.right
       %li
-        %strong +34 607.320.876
+        / %strong +34 607.320.876
         %a{:href => new_contact_path} Envíanos un email
+    / Left Nav Section
+    %ul.small-4.medium-4.columns
+      %li.active
+        %a{:href => "#"} Home
+      %li.has-dropdown
+        %a{:href => "#"} Ultimos trabajos
+        %ul.dropdown
+          %li
+            = link_to 'Webdings', '/webdings'
+          %li
+            = link_to 'Eatbooking', '/eatbooking' 
+          %li
+            = link_to 'Oasis Catamaran', '/oasiscatamaran'
+
+         
+
+/ %a.btn-menu{"data-reveal-id" => "nav-modal", :href => "#"}
+/   = inline_svg "svg/icon-menu.svg" , class: 'icon-menu'
+/ %nav.remove-fixed.top-bar{"data-topbar" => "", :role => "navigation", "data-options" => "sticky_on: small"}
+/   = inline_svg "svg/logo-center.svg" , class: 'logo-center show-for-small-only'
+/   %ul.title-area.medium-5.columns.hide-for-small-only
+/     %li.name.animated-left-right.delay-3
+/       %a.logo{:href => root_path}
+/         = inline_svg "svg/logo.svg" 
+/     %li.toggle-topbar.menu-icon
+/       %a{:href => "#"}
+/         %span Menu
+/   %section.top-bar-section
+/     %ul.right.text-center
+/       %li
+/         %strong +34 607.320.876
+/         %a{:href => new_contact_path} Envíanos un email
+
