@@ -1,10 +1,10 @@
 .contactpage
   .row
     .small-12.large-6.small-centered.columns
-      %p.text-center Gracias por su interés en los servicios de RockAndRor.<br> Escríbanos contestamos en menos de 24H.
+      %p.text-center Gracias por su interés en los servicios de RockAndRor.<br> Escríbanos, le contestaremos en menos de 24H.
       %br
       = form_for @contact, url:contact_index_path do |f|
         = f.text_field :name, placeholder: 'Nombre o Empresa'
         = f.text_field :email, placeholder: 'Email'
         = f.text_area :message, placeholder: 'Mensaje'
-        = f.submit "Contacta ahora", class: "button-action  large button expand"
+        = f.submit "Contacta ahora", class: "button-action large button expand"
