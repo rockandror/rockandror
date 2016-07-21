@@ -49,8 +49,7 @@ $(document).ready(function(){
   //change opacitySpeed if you want to change the speed of opacity reduction effect
   opacitySpeed = 1;  
   //update this value if you change this breakpoint in the style.css file (or _layout.scss if you use SASS)
-  var MQ = 1170;
-
+  var MQ = 1024;
   triggerAnimation();
   $(window).on('resize', function(){
     triggerAnimation();
@@ -100,8 +99,7 @@ $(document).ready(function(){
   
   function navbar_show_hide(){ 
     var nav = $('.top-bar');
-    var top = 250;
-
+    var top = 450;
     if ($(window).scrollTop() >= top &&  $(window).width() >= 1024)  {
       nav.removeClass('remove-fixed');
       nav.addClass('fixed');

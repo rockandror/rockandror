@@ -3,7 +3,7 @@ module ApplicationHelper
     klass = ""
     if parameter.present?
       if action == parameter
-        klass = "active" 
+        klass = "active disable" 
       elsif action == "portfolio" && (parameter == "eatbooking" || parameter == "webdings" || parameter == "oasiscatamaran")
          klass = "active"
       else

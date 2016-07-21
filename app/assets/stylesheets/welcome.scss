@@ -42,6 +42,15 @@
   } 
 }
 input[type="text"]{height: 60px;outline: none;}
+.disable{
+  opacity: 0.65; 
+  a{
+    color:$secondary-color;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+}
 
 a.button-action,input.button-action{
   overflow:hidden;
@@ -147,6 +156,7 @@ body{
     background-size: cover;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     position: fixed;
+    z-index: 0;
   }
   .video-container-show{
     position: absolute;
@@ -290,6 +300,8 @@ body{
 }
 .webdings,.eatbooking,.oasis,.rockandror,.cont-introduction{
   @include padding(8em, 0em, 8em, 0em);
+  position: relative;
+  z-index: 2;
     h2{
       font-size: 4rem;
       font-weight: 200;
