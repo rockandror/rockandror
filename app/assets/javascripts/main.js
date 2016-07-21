@@ -55,8 +55,6 @@ $(document).ready(function(){
     triggerAnimation();
   });
   
- 
-
   //bind the scale event to window scroll if window width > $MQ (unbind it otherwise)
   function triggerAnimation(){
     if($(window).width()>= MQ) {
@@ -147,6 +145,9 @@ function resizeDiv() {
   $('.intro, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
   if ($(window).width() <= 1056) {
     $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
+  }
+  if(h <= 600){
+    $(".intro .video-container-show a").css('margin-top','20px');
   }
 }
 

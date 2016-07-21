@@ -80,7 +80,9 @@ body{
   font-size: rem-calc(13);
   font-weight: normal;
   text-rendering: optimizeLegibility;
-   -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  overflow-y: scroll;
   color:$primary-color; 
   .reveal-modal.open & { overflow: hidden; }
   h1, h2, h3, h4, h5, h6{color: $primary-color;}
@@ -180,10 +182,11 @@ body{
       text-align: center;
       color:#fff;
       display: block;
-      font-size: 1.6em;
+      font-size: 1.6rem;
       font-weight: 100;
       letter-spacing: .2rem;
       margin-top: 1em;
+      font-weight: 300;
     }
     a{
       border: 1px solid $secondary-color;
@@ -191,12 +194,13 @@ body{
       text-transform: uppercase;
       background: $secondary-color;
       padding: 1em;
-      font-size: 1.2em;
+      font-size: 1.1rem;
       text-align: center;
       width: 200px;
       display: block;
       margin: 0px auto;
       margin-top: 50px;
+      font-weight: 700;
       &:hover{
         background: darken($secondary-color,20%);
         color: white;
@@ -420,6 +424,9 @@ body{
 //Section participation
 .participation{
   @extend .participation-pattern; 
+  background: #fff;
+  position: relative;
+  z-index: 2;
   .header{
     padding-top: 3em;
     padding-bottom: 3em;
@@ -452,7 +459,9 @@ body{
 .howweworks{
   @include padding(8em, 0em, 0em, 0em);
   background: $secondary-color;
-  //border-top: 3em solid darken($secondary-color, 10%);
+  position: relative;
+  z-index: 2;
+  
   h3{
     color:white;
     font-size: 2.1rem;
@@ -466,7 +475,7 @@ body{
     font-size: 1.4em;
     width: 80%;
     margin: 0px auto;
-    font-weight: 200;  
+    
   }
   .workflow{
     @include padding(3em, 0em, 4em, 0em);
@@ -543,7 +552,10 @@ body{
 //Section contact now
 .contactnow{
   @include padding(8em, 0em, 8em, 0em);
+  position: relative;
+  z-index: 2;
   border-bottom:10px solid #dbdbdb;
+  background: #fff;
   h3{
     color:$primary-color;
     text-transform: uppercase;
@@ -561,6 +573,9 @@ body{
 .footer{
   @include padding(8em, 0em, 8em, 0em);
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  background: #fff;
   ul{
     text-align: center;
     list-style: none;
@@ -889,6 +904,13 @@ body{
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1072px) { 
+  .oasis h2{
+    font-size: 3rem;
+  }
+}
+
+
 @media only screen and (max-width: 1072px) { 
   .webdingspage .arrow{display: none;}
   .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
@@ -904,6 +926,8 @@ body{
 
 }
 @media only screen and (max-width: 1024px) {
+  .rockandror h3 {font-size: 1.2rem;}
+  .rockandror .inline-list li{padding: 0em;}
   .top-contact{
     position: fixed;
     top: 0px;
@@ -950,7 +974,7 @@ body{
     line-height: 40px;
     padding: 1em;
   }
-  .intro .video-container-show a{margin-top: 20%;}
+  
   .webdings,.eatbooking,.oasis{
     a{line-height: 4em;}
     @include padding(2em, 0em, 2em, 0em);
@@ -996,21 +1020,31 @@ body{
   } 
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-  .intro .video-container-show a{margin-top: 20%;}
   .participation .header{text-align: center;}
   .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
   .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 640px) and (max-width: 730px) { 
+  .webdings,.eatbooking,.oasis{
+    a{
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
+
 @media only screen and (max-width: 320px) { 
   .intro .video-container-show h1{
     font-size: 2.4rem;
     line-height: 40px;
     padding: 1em;
   }
-  .intro .video-container-show a{margin-top: 10%;}
   .webdings h2, .eatbooking h2, .oasis h2{
     font-size: 2.3rem;
     text-align: center;
   }
 }
+
