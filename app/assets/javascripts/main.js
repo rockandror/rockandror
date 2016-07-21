@@ -1,13 +1,13 @@
 $(document).ready(function(){    
+  
+  var navHeight = $("nav").height();
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
     $( this ).parent().addClass('active');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 700);
+        $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);
         return false;
       }
     }
@@ -41,7 +41,6 @@ $(document).ready(function(){
   }
   
   /***SCROLL IMAGE */
-
   var introSection = $('.bg-background'),
   introSectionHeight = introSection.height(),
   //change scaleSpeed if you want to change the speed of the scale effect
@@ -54,7 +53,6 @@ $(document).ready(function(){
   $(window).on('resize', function(){
     triggerAnimation();
   });
-
   //bind the scale event to window scroll if window width > $MQ (unbind it otherwise)
   function triggerAnimation(){
     if($(window).width()>= MQ) {
@@ -83,14 +81,13 @@ $(document).ready(function(){
       });
     }
   }
-
   /*FINSH SCROLL */
 
   window.wasScrolled = false;
   function first_scroll(){
     if (!window.wasScrolled){
       if ( $( "#scroll_to_rockandror" ).length ) {  
-        var top = $('html').find($("#scroll_to_rockandror")).offset().top -150;
+        var top = $('html').find($("#scroll_to_rockandror")).offset().top-200;
         $('html, body').animate({scrollTop: top },1000)
       }
     }
