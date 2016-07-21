@@ -80,6 +80,7 @@ body{
   font-size: rem-calc(13);
   font-weight: normal;
   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
   color:$primary-color; 
   .reveal-modal.open & { overflow: hidden; }
   h1, h2, h3, h4, h5, h6{color: $primary-color;}
@@ -337,6 +338,7 @@ body{
   } 
 }
 .rockandror{
+  background: #fff;
   h3{
     font-size: 1.3rem;
     font-weight: 200;

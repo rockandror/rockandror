@@ -53,22 +53,29 @@ $(document).ready(function(){
   $(window).on('resize', function(){
     triggerAnimation();
   });
+  
+ 
+
   //bind the scale event to window scroll if window width > $MQ (unbind it otherwise)
   function triggerAnimation(){
     if($(window).width()>= MQ) {
       $(window).on('scroll', function(){
+         if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+          }else{
+            window.requestAnimationFrame(animateIntro);
+          }
         //The window.requestAnimationFrame() method tells the browser that you wish to perform an animation- the browser can optimize it so animations will be smoother
-        window.requestAnimationFrame(animateIntro);
+        
       });
     } else {
       $(window).off('scroll');
     }
   }
+
   //assign a scale transformation to the introSection element and reduce its opacity
   function animateIntro () {
     var scrollPercentage = ($(window).scrollTop()/introSectionHeight).toFixed(5),
-      scaleValue = 1 + scrollPercentage*scaleSpeed;
-    //check if the introSection is still visible
+    scaleValue = 1 + scrollPercentage*scaleSpeed;
     if( $(window).scrollTop() < introSectionHeight) {
       introSection.css({
           '-moz-transform': 'scale(' + scaleValue + ') translateZ(0)',
@@ -77,12 +84,10 @@ $(document).ready(function(){
         '-o-transform': 'scale(' + scaleValue + ') translateZ(0)',
         'transform': 'scale(' + scaleValue + ') translateZ(0)',
         'opacity': 1 - scrollPercentage*opacitySpeed
-
       });
     }
   }
   /*FINSH SCROLL */
-
   window.wasScrolled = false;
   function first_scroll(){
     if (!window.wasScrolled){
@@ -96,7 +101,7 @@ $(document).ready(function(){
   
   function navbar_show_hide(){ 
     var nav = $('.top-bar');
-    var top = 450;
+    var top = 250;
     if ($(window).scrollTop() >= top &&  $(window).width() >= 1024)  {
       nav.removeClass('remove-fixed');
       nav.addClass('fixed');
@@ -107,8 +112,7 @@ $(document).ready(function(){
   }
 
   $(window).scroll(function(){
-    show_menu_smartphone();    
-    //zoom_image_intro();
+    show_menu_smartphone();
     first_scroll();
     navbar_show_hide();
   });
