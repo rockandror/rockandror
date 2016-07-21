@@ -253,6 +253,31 @@ body{
     //   }
     // }
   }
+  
+  @keyframes bounce {
+    0%, 100% {
+      -webkit-transform: translate(0,0%);
+      -moz-transform: translate(0,0%);
+      -o-transform: translate(0,0%);
+      -ms-transform: translate(0,0%);
+      transform: translate(0,0%);
+    }
+    40% {
+      -webkit-transform: translate(0,30%);
+      -moz-transform: translate(0,30%);
+      -o-transform: translate(0,30%);
+      -ms-transform: translate(0,30%);
+      transform: translate(0,30%); 
+    }
+
+    60% {
+      -webkit-transform: translate(0,-15%);
+      -moz-transform: translate(0,-15%);
+      -o-transform: translate(0,-15%);
+      -ms-transform: translate(0,-15%);
+      transform: translate(0,-15%);
+    }
+  }
 
   @keyframes showButton {
     100% {
@@ -564,6 +589,31 @@ body{
   }
 }
 //Page .webdingspage
+.webdingspage, .eatbookingpage, .oasiscatamaranspage{
+  .arrow{
+    animation: bounce 1s ease infinite;
+     &:before{
+      content: '⬇︎';
+      left: 0px;
+      right: 0px;
+      position: absolute;
+      top: 8px;
+      text-align: center;
+      color:$secondary-color;
+    }
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    right:0;
+    left:0;
+    margin: 0px auto;
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+  }
+}
+
 .webdingspage{
   .img-background{ background: asset_url('webdings/background-page.jpg'); }
   .cont-introduction{ background: #fff; }
@@ -831,7 +881,16 @@ body{
 
 //Mediaquery
 // Large screens
+@media only screen and (max-width: 1200px) { 
+  .webdingspage .arrow{
+    left: 5%;
+    margin-left:0;
+    bottom:10%;
+  }
+}
+
 @media only screen and (max-width: 1072px) { 
+  .webdingspage .arrow{display: none;}
   .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
     text-align: center;
     .cont-introduction{ position: relative;}
@@ -929,7 +988,7 @@ body{
         svg#deployment{ width: 37%; }
       }
     }
-  }
+  }   
   .footer{ 
     padding-top: 1em;
     padding-bottom: 1em;

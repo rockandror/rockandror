@@ -8,7 +8,8 @@ $(document).ready(function(){
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);
-        return false;
+        window.wasScrolled = true;
+        return false;         
       }
     }
   });
@@ -60,12 +61,11 @@ $(document).ready(function(){
   function triggerAnimation(){
     if($(window).width()>= MQ) {
       $(window).on('scroll', function(){
-         if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
-          }else{
-            window.requestAnimationFrame(animateIntro);
-          }
+        if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+        }else{
+          window.requestAnimationFrame(animateIntro);
+        }
         //The window.requestAnimationFrame() method tells the browser that you wish to perform an animation- the browser can optimize it so animations will be smoother
-        
       });
     } else {
       $(window).off('scroll');
@@ -78,8 +78,8 @@ $(document).ready(function(){
     scaleValue = 1 + scrollPercentage*scaleSpeed;
     if( $(window).scrollTop() < introSectionHeight) {
       introSection.css({
-          '-moz-transform': 'scale(' + scaleValue + ') translateZ(0)',
-          '-webkit-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        '-moz-transform': 'scale(' + scaleValue + ') translateZ(0)',
+        '-webkit-transform': 'scale(' + scaleValue + ') translateZ(0)',
         '-ms-transform': 'scale(' + scaleValue + ') translateZ(0)',
         '-o-transform': 'scale(' + scaleValue + ') translateZ(0)',
         'transform': 'scale(' + scaleValue + ') translateZ(0)',
@@ -87,8 +87,8 @@ $(document).ready(function(){
       });
     }
   }
-  /*FINSH SCROLL */
   window.wasScrolled = false;
+   
   function first_scroll(){
     if (!window.wasScrolled){
       if ( $( "#scroll_to_rockandror" ).length ) {  
