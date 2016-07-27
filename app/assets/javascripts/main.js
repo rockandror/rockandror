@@ -8,7 +8,6 @@ $(document).ready(function(){
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);
-        window.wasScrolled = true;
         return false;         
       }
     }
@@ -85,18 +84,7 @@ $(document).ready(function(){
       });
     }
   }
-  window.wasScrolled = false;
-   
-  function first_scroll(){
-    if (!window.wasScrolled){
-      if ( $( "#scroll_to_rockandror" ).length ) {  
-        var top = $('html').find($("#scroll_to_rockandror")).offset().top-200;
-        $('html, body').animate({scrollTop: top },1000)
-      }
-    }
-    window.wasScrolled = true;
-  }
-  
+     
   function navbar_show_hide(){ 
     var nav = $('.top-bar');
     var top = 250;
@@ -111,7 +99,6 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     show_menu_smartphone();
-    first_scroll();
     navbar_show_hide();
   });
 
