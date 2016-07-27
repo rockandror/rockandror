@@ -42,6 +42,15 @@
   } 
 }
 input[type="text"]{height: 60px;outline: none;}
+.disable{
+  opacity: 0.65; 
+  a{
+    color:$secondary-color;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+}
 
 a.button-action,input.button-action{
   overflow:hidden;
@@ -71,6 +80,9 @@ body{
   font-size: rem-calc(13);
   font-weight: normal;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  overflow-y: scroll;
   color:$primary-color; 
   .reveal-modal.open & { overflow: hidden; }
   h1, h2, h3, h4, h5, h6{color: $primary-color;}
@@ -135,13 +147,24 @@ body{
 }
 //Section intro
 .intro{
-    background: asset_url('intro3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;   
     position: relative;
+    width: 100%;
+    background: black;
     overflow: hidden;
+    z-index: 1;
+  .bg-background{
+    height: 100%;
+    width: 100%;
+    background: url("intro3.jpg") no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 0;
+  }
   .video-container-show{
+    position: absolute;
+    top: 20%;
+    width: 100%;
     h1{
       text-align: center;
       color:#fff;
@@ -151,7 +174,7 @@ body{
       text-shadow: 1px 1px  #000;
       text-transform: uppercase;
       margin: 0px auto;
-      margin-top:10%; 
+      margin-top:2%; 
       font-weight: 700;
       line-height: 1.1em;
     }
@@ -159,10 +182,11 @@ body{
       text-align: center;
       color:#fff;
       display: block;
-      font-size: 1.6em;
+      font-size: 1.6rem;
       font-weight: 100;
       letter-spacing: .2rem;
       margin-top: 1em;
+      font-weight: 300;
     }
     a{
       border: 1px solid $secondary-color;
@@ -170,12 +194,13 @@ body{
       text-transform: uppercase;
       background: $secondary-color;
       padding: 1em;
-      font-size: 1.2em;
+      font-size: 1.1rem;
       text-align: center;
       width: 200px;
       display: block;
       margin: 0px auto;
       margin-top: 50px;
+      font-weight: 700;
       &:hover{
         background: darken($secondary-color,20%);
         color: white;
@@ -232,6 +257,31 @@ body{
     //   }
     // }
   }
+  
+  @keyframes bounce {
+    0%, 100% {
+      -webkit-transform: translate(0,0%);
+      -moz-transform: translate(0,0%);
+      -o-transform: translate(0,0%);
+      -ms-transform: translate(0,0%);
+      transform: translate(0,0%);
+    }
+    40% {
+      -webkit-transform: translate(0,30%);
+      -moz-transform: translate(0,30%);
+      -o-transform: translate(0,30%);
+      -ms-transform: translate(0,30%);
+      transform: translate(0,30%); 
+    }
+
+    60% {
+      -webkit-transform: translate(0,-15%);
+      -moz-transform: translate(0,-15%);
+      -o-transform: translate(0,-15%);
+      -ms-transform: translate(0,-15%);
+      transform: translate(0,-15%);
+    }
+  }
 
   @keyframes showButton {
     100% {
@@ -280,6 +330,8 @@ body{
 }
 .webdings,.eatbooking,.oasis,.rockandror,.cont-introduction{
   @include padding(8em, 0em, 8em, 0em);
+  position: relative;
+  z-index: 2;
     h2{
       font-size: 4rem;
       font-weight: 200;
@@ -315,6 +367,7 @@ body{
   } 
 }
 .rockandror{
+  background: #fff;
   h3{
     font-size: 1.3rem;
     font-weight: 200;
@@ -371,6 +424,9 @@ body{
 //Section participation
 .participation{
   @extend .participation-pattern; 
+  background: #fff;
+  position: relative;
+  z-index: 2;
   .header{
     padding-top: 3em;
     padding-bottom: 3em;
@@ -403,7 +459,9 @@ body{
 .howweworks{
   @include padding(8em, 0em, 0em, 0em);
   background: $secondary-color;
-  //border-top: 3em solid darken($secondary-color, 10%);
+  position: relative;
+  z-index: 2;
+  
   h3{
     color:white;
     font-size: 2.1rem;
@@ -417,7 +475,7 @@ body{
     font-size: 1.4em;
     width: 80%;
     margin: 0px auto;
-    font-weight: 200;  
+    
   }
   .workflow{
     @include padding(3em, 0em, 4em, 0em);
@@ -494,7 +552,10 @@ body{
 //Section contact now
 .contactnow{
   @include padding(8em, 0em, 8em, 0em);
+  position: relative;
+  z-index: 2;
   border-bottom:10px solid #dbdbdb;
+  background: #fff;
   h3{
     color:$primary-color;
     text-transform: uppercase;
@@ -512,6 +573,9 @@ body{
 .footer{
   @include padding(8em, 0em, 8em, 0em);
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  background: #fff;
   ul{
     text-align: center;
     list-style: none;
@@ -540,6 +604,31 @@ body{
   }
 }
 //Page .webdingspage
+.webdingspage, .eatbookingpage, .oasiscatamaranspage{
+  .arrow{
+    animation: bounce 1s ease infinite;
+     &:before{
+      content: '⬇︎';
+      left: 0px;
+      right: 0px;
+      position: absolute;
+      top: 8px;
+      text-align: center;
+      color:$secondary-color;
+    }
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    right:0;
+    left:0;
+    margin: 0px auto;
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+  }
+}
+
 .webdingspage{
   .img-background{ background: asset_url('webdings/background-page.jpg'); }
   .cont-introduction{ background: #fff; }
@@ -807,7 +896,23 @@ body{
 
 //Mediaquery
 // Large screens
+@media only screen and (max-width: 1200px) { 
+  .webdingspage .arrow{
+    left: 5%;
+    margin-left:0;
+    bottom:10%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1072px) { 
+  .oasis h2{
+    font-size: 3rem;
+  }
+}
+
+
 @media only screen and (max-width: 1072px) { 
+  .webdingspage .arrow{display: none;}
   .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
     text-align: center;
     .cont-introduction{ position: relative;}
@@ -821,6 +926,8 @@ body{
 
 }
 @media only screen and (max-width: 1024px) {
+  .rockandror h3 {font-size: 1.2rem;}
+  .rockandror .inline-list li{padding: 0em;}
   .top-contact{
     position: fixed;
     top: 0px;
@@ -867,7 +974,7 @@ body{
     line-height: 40px;
     padding: 1em;
   }
-  .intro .video-container-show a{margin-top: 20%;}
+  
   .webdings,.eatbooking,.oasis{
     a{line-height: 4em;}
     @include padding(2em, 0em, 2em, 0em);
@@ -905,7 +1012,7 @@ body{
         svg#deployment{ width: 37%; }
       }
     }
-  }
+  }   
   .footer{ 
     padding-top: 1em;
     padding-bottom: 1em;
@@ -913,21 +1020,31 @@ body{
   } 
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-  .intro .video-container-show a{margin-top: 20%;}
   .participation .header{text-align: center;}
   .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
   .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 640px) and (max-width: 730px) { 
+  .webdings,.eatbooking,.oasis{
+    a{
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
+
 @media only screen and (max-width: 320px) { 
   .intro .video-container-show h1{
     font-size: 2.4rem;
     line-height: 40px;
     padding: 1em;
   }
-  .intro .video-container-show a{margin-top: 10%;}
   .webdings h2, .eatbooking h2, .oasis h2{
     font-size: 2.3rem;
     text-align: center;
   }
 }
+

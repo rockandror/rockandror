@@ -5,10 +5,7 @@
 //= require jquerymb.YTPlayer
 //= require foundation
 //= require main
-//= require navbar
 //= require portfolio
-//= require preload
-//= require team
 //= require viewportchecker
 //= require cookies_eu
 //= require slick
