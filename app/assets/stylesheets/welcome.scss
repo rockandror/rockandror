@@ -122,8 +122,10 @@ body{
   }
 }
 .slick-prev,.slick-next{display: none !important;}
-//Modal
+
 #nav-modal{
+  width: 100%;
+  height: 100%; 
   text-align: center;
   .stacked {
     a{

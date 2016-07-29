@@ -104,6 +104,7 @@ $(document).ready(function(){
 
   $('.btn-menu').on('click', function(event) {
     $('body').css('overflow-y','hidden');
+    $('.reveal-modal').css('overflow-y','scroll');
     event.preventDefault();
   });
 
