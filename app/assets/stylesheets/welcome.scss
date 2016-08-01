@@ -614,9 +614,10 @@ body{
     a{display: inline-block;}
   }
 }
-//Page .webdingspage
+/*Page .webdingspage*/
 .webdingspage, .eatbookingpage, .oasiscatamaranspage{
   .arrow{
+    /*display: none;*/
     animation: bounce 1s ease infinite;
      &:before{
       content: '⬇︎';
@@ -631,11 +632,9 @@ body{
     height: 36px;
     border-radius: 50%;
     background: #fff;
-    right:0;
-    left:0;
-    margin: 0px auto;
+    left:5%;
     position: absolute;
-    bottom: 30px;
+    bottom: 10%;
     z-index: 2;
   }
 }
@@ -939,7 +938,7 @@ body{
 @media only screen and (max-width: 1024px) {
   .rockandror h3 {font-size: 1.2rem;}
   .rockandror .inline-list li{padding: 0em;}
-  .top-bar{margin-top:50px;}
+  /*.top-bar{margin-top:50px;}*/
   .top-contact{
     position: fixed;
     top: 0px;
@@ -1039,6 +1038,10 @@ body{
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
+@media only screen and (max-width: 768px)  and (orientation: portrait)  {
+  .top-bar{margin-top:37px; }
+
+}
 @media only screen and (min-width: 640px) and (max-width: 730px) { 
   .webdings,.eatbooking,.oasis{
     a{
@@ -1069,5 +1072,6 @@ body{
     font-size: 2.3rem;
     text-align: center;
   }
+  .webdings h3{font-size: 2rem;}
 }
 

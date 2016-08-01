@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  
   var navHeight = $("nav").height();
   heightTopBar = $(".top-bar").height();
   h = $(window).height() - heightTopBar;
@@ -10,7 +9,7 @@ $(document).ready(function(){
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        if($(window).width() <= 600){
+        if($(window).width() <= 768){
           $('html,body').animate({ scrollTop:target.offset().top }, 700);  
         }else{
           $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);         
@@ -20,7 +19,7 @@ $(document).ready(function(){
     }
   });
 
-  var btnMenuInterval;  
+  // var btnMenuInterval;  
   // function btnMenuRemoveInterval() {
   //   clearInterval(btnMenuInterval);
   //   $(".btn-menu").css({"-webkit-transform":"translate(0px,-150px)"});
