@@ -1,12 +1,20 @@
 $(document).ready(function(){
+  
   var navHeight = $("nav").height();
+  heightTopBar = $(".top-bar").height();
+  h = $(window).height() - heightTopBar;
+
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
     $( this ).parent().addClass('active');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);
+        if($(window).width() <= 600){
+          $('html,body').animate({ scrollTop:target.offset().top }, 700);  
+        }else{
+          $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);         
+        }
         return false;         
       }
     }
@@ -126,10 +134,8 @@ $(document).ready(function(){
   }(document, 'script', 'facebook-jssdk'));
 });
 
-heightTopBar = $(".top-bar").height();
 window.onresize = function(event) { resizeDiv(); }
 function resizeDiv() {
-  h = $(window).height() - heightTopBar;
   $('.intro, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
   if ($(window).width() <= 1056) {
     $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});

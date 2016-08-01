@@ -84,7 +84,6 @@ body{
   overflow: hidden;
   overflow-y: scroll;
   color:$primary-color; 
-  background: url("intro3.jpg") no-repeat center center;
   .reveal-modal.open & { overflow: hidden; }
   h1, h2, h3, h4, h5, h6{color: $primary-color;}
   a,:after,.btn{
@@ -148,16 +147,17 @@ body{
     }
   }
 }
-/*Section intro*/
+//Section intro
 .intro{
     position: relative;
     width: 100%;
-    /*background: black;*/
+    background: black;
     overflow: hidden;
     z-index: 1;
   .bg-background{
     height: 100%;
     width: 100%;
+    background: url("intro3.jpg") no-repeat center center;
     background-size: cover;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -1050,7 +1050,8 @@ body{
 }
 /*senen*/
 @media only screen and (max-width: 360px) { 
- .intro .video-container-show h1{
+  .intro .bg-background{position: relative;}
+  .intro .video-container-show h1{
     font-size: 1.7rem;
     margin-top: -20%;
   }
