@@ -154,14 +154,14 @@ body{
     background: black;
     overflow: hidden;
     z-index: 1;
-  .bg-background{
-    height: 100%;
-    width: 100%;
-    background: url("intro3.jpg") no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    z-index: 0;
+    .bg-background{
+      height: 100%;
+      width: 100%;
+      background: url("intro3.jpg") no-repeat center center;
+      background-size: cover;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      position: fixed;
+      z-index: 0;
   }
   .video-container-show{
     position: absolute;
@@ -949,24 +949,21 @@ body{
     -o-transform:translateY(0px);*/
   }
   .btn-menu{
-    width: 36px;
-    height: 36px;
+    width: 56px;
+    height: 56px;
     position: fixed;
-    /*-webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    -moz-transform:translateY(0px);
-    -o-transform:translateY(0px);*/
-    top:0;
+    border-radius:50%;
+    border:2px solid $secondary-color;
+    bottom:20px;
     right: 0;
     left: 0;
     margin: 0 auto;
-    background: black;
     z-index: 9;
     .icon-menu{
-      fill:white;
+      fill:$secondary-color;
       margin: 0 auto;
       display: block;
-      margin-top: 4px;
+      margin-top: 22px;
       width: 20px;
     }
   } 

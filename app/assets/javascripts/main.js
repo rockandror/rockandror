@@ -104,7 +104,6 @@ $(document).ready(function(){
   }
 
   $(window).scroll(function(){
-    //show_menu_smartphone();
     navbar_show_hide();
   });
 
@@ -135,12 +134,14 @@ $(document).ready(function(){
 
 window.onresize = function(event) { resizeDiv(); }
 function resizeDiv() {
-  $('.intro, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
+
+  $('.webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
   if ($(window).width() <= 1056) {
     $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
   }
   if(h <= 600){
-    $(".intro .video-container-show a").css('margin-top','20px');
+    $(".intro .video-container-show a").css('margin-top','20px'); 
+    $(".intro").css({'height': $(window).height() + 'px'});
   }
 }
 
