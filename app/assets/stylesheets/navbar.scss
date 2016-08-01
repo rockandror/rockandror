@@ -4,6 +4,7 @@
 .top-bar-section li:not(.has-form) a:not(.button):hover{background: transparent;}
 
 .top-contact{
+  background: #333333;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -11,24 +12,25 @@
   text-align: center;
   position: fixed;
   z-index: 9;
-  .tel{
+  .icon-nav{
+    fill:white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 4px;
+    width: 20px;
+  }
+  .tel,.email{
     padding: 0px;
     text-align: center;
     background: #2ECC71;
+    height: 50px;
     a{
-      color: #fff; 
-      text-transform: uppercase;
-      line-height: 3em;
+      margin-top: 12px;
+      display: block;
     }
   }
   .email{
-    padding: 0px;
     background: $secondary-color;
-    a{
-      text-transform: uppercase;
-      color: #fff;
-      line-height: 3em;
-    }
   }   
 }
 .fixed{
