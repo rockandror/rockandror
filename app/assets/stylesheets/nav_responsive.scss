@@ -1,0 +1,296 @@
+.fixed-button-responisve{
+  width: 56px;
+  height: 56px;
+  position: fixed;
+  border-radius:50%;
+  border:3px solid $secondary-color;
+  bottom:20px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 9;
+  .icon-menu{
+    fill:$secondary-color;
+    margin: 0 auto;
+    display: block;
+    margin-top: 22px;
+    width: 20px;
+  }
+}
+.btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow,#btn-menu-responsive,.btn-close-menu{
+  @extend .fixed-button-responisve;
+  transition: all ease 1s;
+  .icon-menu{
+    margin-top:15px;
+    fill:white;
+  }
+  span{
+    margin: 0px;
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 700;
+  }
+}
+.btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow{opacity: 0;}
+.btn-close-menu .icon-menu{ fill:white;}
+.btn-close-menu{bottom:-100%;}
+
+.animate-btn-responsive-close{
+	-webkit-animation: hideBtnResponsive .7s forwards; 
+	-moz-animation:    hideBtnResponsive .7s forwards; 
+	-o-animation:      hideBtnResponsive .7s forwards; 
+	animation:         hideBtnResponsive .7s forwards;
+
+}
+
+.btn-close-menu-open{
+-webkit-animation: 	 showBtnCloseMenuResponsive .7s forwards; 
+	-moz-animation:    showBtnCloseMenuResponsive .7s forwards; 
+	-o-animation:      showBtnCloseMenuResponsive .7s forwards; 
+	animation:         showBtnCloseMenuResponsive .7s forwards;		
+}
+
+.btn-close-menu-close{
+-webkit-animation: 	 hideBtnCloseMenuResponsive .7s forwards; 
+	-moz-animation:    hideBtnCloseMenuResponsive .7s forwards; 
+	-o-animation:      hideBtnCloseMenuResponsive .7s forwards; 
+	animation:         hideBtnCloseMenuResponsive .7s forwards;		
+}
+
+.animate-btn-home{
+  -webkit-animation: showBtnHomeResponsive .7s forwards; 
+  -moz-animation:    showBtnHomeResponsive .7s forwards; 
+  -o-animation:      showBtnHomeResponsive .7s forwards; 
+  animation:         showBtnHomeResponsive .7s forwards;
+  opacity: 1;
+}
+.animate-btn-home-close{
+  -webkit-animation: showBtnHomeCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnHomeCloseResponsive .7s forwards; 
+  -o-animation:      showBtnHomeCloseResponsive .7s forwards; 
+  animation:         showBtnHomeCloseResponsive .7s forwards;
+  opacity: 0;
+}
+
+.animate-btn-works{
+  -webkit-animation: showBtnWorksResponsive .7s forwards; 
+  -moz-animation:    showBtnWorksResponsive .7s forwards; 
+  -o-animation:      showBtnWorksResponsive .7s forwards; 
+  animation:         showBtnWorksResponsive .7s forwards;
+  opacity: 1;
+}
+.animate-btn-works-close{
+  -webkit-animation: showBtnWorksCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnWorksCloseResponsive .7s forwards; 
+  -o-animation:      showBtnWorksCloseResponsive .7s forwards; 
+  animation:         showBtnWorksCloseResponsive .7s forwards;
+  opacity: 0;
+}
+
+.animate-btn-team{
+  -webkit-animation: showBtnTeamResponsive .7s forwards; 
+  -moz-animation:    showBtnTeamResponsive .7s forwards; 
+  -o-animation:      showBtnTeamResponsive .7s forwards; 
+  animation:         showBtnTeamResponsive .7s forwards;
+  opacity: 1;
+}
+.animate-btn-team-close{
+  -webkit-animation: showBtnTeamCloseCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnTeamCloseCloseResponsive .7s forwards; 
+  -o-animation:      showBtnTeamCloseCloseResponsive .7s forwards; 
+  animation:         showBtnTeamCloseCloseResponsive .7s forwards;
+  opacity: 0;
+}
+
+.animate-btn-contact{
+  -webkit-animation: showBtnContactResponsive .7s forwards; 
+  -moz-animation:    showBtnContactResponsive .7s forwards; 
+  -o-animation:      showBtnContactResponsive .7s forwards; 
+  animation:         showBtnContactResponsive .7s forwards;
+  opacity: 1;
+}
+.animate-btn-contact-close{
+  -webkit-animation: showBtnContactCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnContactCloseResponsive .7s forwards; 
+  -o-animation:      showBtnContactCloseResponsive .7s forwards; 
+  animation:         showBtnContactCloseResponsive .7s forwards;
+  opacity: 0;
+}
+.animate-btn-callnow{
+  -webkit-animation: showBtnCallnowResponsive .7s forwards; 
+  -moz-animation:    showBtnCallnowResponsive .7s forwards; 
+  -o-animation:      showBtnCallnowResponsive .7s forwards; 
+  animation:         showBtnCallnowResponsive .7s forwards;
+  opacity: 1;
+}
+.animate-btn-callnow-close{
+  -webkit-animation: showBtnCallnowCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnCallnowCloseResponsive .7s forwards; 
+  -o-animation:      showBtnCallnowCloseResponsive .7s forwards; 
+  animation:         showBtnCallnowCloseResponsive .7s forwards;
+  opacity: 0;
+}
+
+.glow{
+	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+@keyframes hideBtnResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top: 100%;
+  }
+}
+
+@keyframes BtnCloseMenuResponsive {
+  from{
+    top: 100%;
+  }
+  to {
+   top: 88%;
+  }
+}
+
+@keyframes showBtnCloseMenuResponsive {
+  from{
+    bottom: -100%;
+  }
+  to {
+   bottom: 5%;
+  }
+}
+@keyframes hideBtnCloseMenuResponsive {
+  from{
+    bottom: 5%;
+  }
+  to {
+   bottom: -100%;
+  }
+}
+
+
+
+@keyframes showBtnHomeResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top: 15%;
+  }
+}
+@keyframes showBtnHomeCloseResponsive {
+  from{
+    top: 15%;
+  }
+  to {
+   top: 88%;
+  }
+}
+
+
+@keyframes showBtnWorksResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top:30%;
+  }
+}
+@keyframes showBtnWorksCloseResponsive {
+  from{
+    top: 30%;
+  }
+  to {
+    top: 88%;
+  }
+}
+
+@keyframes showBtnTeamResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top:45%;
+  }
+}
+@keyframes showBtnTeamCloseResponsive {
+  from{
+    top: 45%;
+  }
+  to {
+   top: 88%;
+  }
+}
+
+@keyframes showBtnContactResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top:67%;
+   left:-50%;
+  }
+}
+@keyframes showBtnContactCloseResponsive {
+  from{
+   top:67%;
+   left:-50%;
+  }
+  to {
+   top:88%;
+   left:0%;
+  }
+}
+
+
+@keyframes showBtnCallnowResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top:67%;
+   left:50%;
+  }
+}
+@keyframes showBtnCallnowCloseResponsive {
+  from{
+   top:67%;
+   left:50%;
+  }
+  to {
+   top:88%;
+   left:0%;
+  }
+}
+
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
