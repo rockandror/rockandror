@@ -97,7 +97,30 @@ body{
     }
   }
 }
-
+.container-menu{
+  background: rgba(0,0,0,.7);
+  display: none;
+  position: absolute;
+  top: 0;
+  right:0;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  a{
+    border-radius:50%;
+    width: 40px;
+    height: 40px; 
+    border:2px solid yellow; 
+    position: absolute;
+    top: 100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+}
 .btn-primary{ background: $secondary-color; }
 .toggle-topbar{ display: none; }
 .slick-slide:focus { outline: none; }
@@ -943,17 +966,13 @@ body{
     position: fixed;
     top: 0px;
     background: black;
-    /*-webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    -moz-transform:translateY(0px);
-    -o-transform:translateY(0px);*/
   }
-  .btn-menu{
+  .btn-menu,.btn-scroll{
     width: 56px;
     height: 56px;
     position: fixed;
     border-radius:50%;
-    border:2px solid $secondary-color;
+    border:3px solid $secondary-color;
     bottom:20px;
     right: 0;
     left: 0;
@@ -967,7 +986,29 @@ body{
       width: 20px;
     }
   } 
+  .btn-menu{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transform:scale(0);
+    -o-transform:scale(0);
+     .icon-menu{
+        margin-top: 16px;
+     }
+  }
 } 
+
+.animateRotateIcon{
+  -webkit-animation:spin .3s ease-in;
+  -moz-animation:spin .3s ease-in;
+  -o-animation:spin .3s ease-in;
+  animation:spin .3s ease-in ;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
   .fixed{

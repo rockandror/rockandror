@@ -25,11 +25,14 @@
     background: #2ECC71;
     height: 50px;
     a{
-      margin-top: 12px;
       display: block;
     }
   }
-  .email{ background: $secondary-color; }   
+  .tel svg{margin-top:13px; }
+  .email{
+    background: $secondary-color;
+    svg{margin-top:16px; }
+  }   
 }
 .fixed{
   position: fixed;

@@ -46,6 +46,7 @@ $(document).ready(function(){
   //   btnMenuInterval = setInterval(btnMenuRemoveInterval, 2000); 
   // }
   
+  
   /***SCROLL IMAGE */
   var introSection = $('.bg-background'),
   introSectionHeight = introSection.height(),
@@ -90,6 +91,35 @@ $(document).ready(function(){
       });
     }
   }
+
+  var btnscroll = $('.btn-scroll');
+  var btnshow = $('#btn-menu-responsive');
+
+  function showbtnmenu(){
+    btnshow.css({
+      '-moz-transform': 'scale(1)',
+      '-webkit-transform': 'scale(1)',
+      '-ms-transform': 'scale(1)',
+      '-o-transform': 'scale(1)',
+      'transform': 'scale(1)'
+    });
+    btnshow.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+      console.log("yisis");
+      //$("svg#Livello_1.icon-menu").addClass("animateRotateIcon");
+    });
+  }
+
+  function animateBtnscroll(){
+    btnscroll.css({
+      '-moz-transform': 'translate(0,140%)',
+      '-webkit-transform': 'translate(0,140%)',
+      '-ms-transform': 'translate(0,140%)',
+      '-o-transform': 'translate(0,140%)',
+      'transform': 'translate(0,140%)'
+    });
+    showbtnmenu();
+  }
+  
      
   function navbar_show_hide(){ 
     var nav = $('.top-bar');
@@ -107,12 +137,24 @@ $(document).ready(function(){
     navbar_show_hide();
   });
 
-  $('.btn-menu').on('click', function(event) {
-    $('body').css('overflow-y','hidden');
-    $('.reveal-modal').css('top','-50px');
-    $('.reveal-modal').css('overflow-y','scroll');
-    event.preventDefault();
+  $(".btn-scroll").on('click', function(event) {
+    console.log("sss");
+    animateBtnscroll();  
+
   });
+  
+
+  $("#btn-menu-responsive").on('click', function(event) {
+    $(".container-menu").show();
+    $(".container-menu").css("position","fixed");
+  });
+
+  // $('.btn-menu').on('click', function(event) {
+  //   $('body').css('overflow-y','hidden');
+  //   $('.reveal-modal').css('top','-50px');
+  //   $('.reveal-modal').css('overflow-y','scroll');
+  //   event.preventDefault();
+  // });
 
   $('#nav-modal .close-reveal-modal').on('click', function(event) {
     $('body').css('overflow-y','auto');

@@ -1,3 +1,6 @@
+.container-menu
+  %a.home{:href => "#"} Home
+
 .row.top-contact
   .small-8.columns
     %a{:href => root_path} 
@@ -8,8 +11,12 @@
   .small-2.columns.email
     %a{:href => new_contact_path}
       = inline_svg "svg/email.svg", class:'icon-nav'
-  %a.btn-menu{"data-reveal-id" => "nav-modal", :href => "#"} 
+  %a.btn-scroll{:href => "#scroll_to_rockandror"} 
     = inline_svg "svg/arrow-btn.svg" , class: 'icon-menu'
+  %a.btn-menu{:href => "#", id:"btn-menu-responsive"} 
+    = inline_svg "svg/plus.svg" , class: 'icon-menu'
+
+  
 %nav.top-bar.show-for-medium-up{"data-topbar" => "", :role => "navigation"}
   %ul.title-area.small-12.medium-4.columns
     %li.logo
