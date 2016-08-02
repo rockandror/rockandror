@@ -120,6 +120,37 @@ $(document).ready(function(){
     showbtnmenu();
   }
   
+  $("#btn-menu-responsive").on('click', function(event) {
+    $(".container-menu").show();
+    $(".container-menu").css("position","fixed");
+    $(this).hide();
+    $(".btn-close.menu").show();
+    $(".btn-home").addClass("animate-btn-home");
+    $(".btn-works").addClass("animate-btn-works");
+    $(".btn-team").addClass("animate-btn-team");
+    $(".btn-contact").addClass("animate-btn-contact");
+    $(".btn-callnow").addClass("animate-btn-callnow");
+  });
+  $(".btn-close-menu").on('click', function(event) {
+    $(".btn-home").addClass("animate-btn-home-close");
+    $(".btn-works").addClass("animate-btn-works-close");
+    $(".btn-team").addClass("animate-btn-team-close");
+    $(".btn-contact").addClass("animate-btn-contact-close");
+    $(".btn-callnow").addClass("animate-btn-callnow-close");
+
+    $(".btn-close-menu").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+      $(".container-menu").hide();
+      $(".btn-home").removeClass("animate-btn-home-close");
+      $(".btn-works").removeClass("animate-btn-works-close");
+      $(".btn-team").removeClass("animate-btn-team-close");
+      $(".btn-contact").removeClass("animate-btn-contact-close");
+      $(".btn-callnow").removeClass("animate-btn-callnow-close");
+      $("#btn-menu-responsive").show();
+    });
+    
+
+  });
+  
      
   function navbar_show_hide(){ 
     var nav = $('.top-bar');
@@ -135,27 +166,13 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     navbar_show_hide();
+    animateBtnscroll();
   });
 
   $(".btn-scroll").on('click', function(event) {
-    console.log("sss");
     animateBtnscroll();  
-
   });
   
-
-  $("#btn-menu-responsive").on('click', function(event) {
-    $(".container-menu").show();
-    $(".container-menu").css("position","fixed");
-  });
-
-  // $('.btn-menu').on('click', function(event) {
-  //   $('body').css('overflow-y','hidden');
-  //   $('.reveal-modal').css('top','-50px');
-  //   $('.reveal-modal').css('overflow-y','scroll');
-  //   event.preventDefault();
-  // });
-
   $('#nav-modal .close-reveal-modal').on('click', function(event) {
     $('body').css('overflow-y','auto');
     event.preventDefault();

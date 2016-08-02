@@ -1,6 +1,21 @@
 .container-menu
-  %a.home{:href => "#"} Home
-
+  %a.btn-home{:href => "#"}
+    = inline_svg "svg/home.svg" , class: 'icon-menu'
+    %span Home
+  %a.btn-works{:href => "#"}
+    = inline_svg "svg/works.svg" , class: 'icon-menu'
+    %span Trabajos
+  %a.btn-team{:href => "#"}
+    = inline_svg "svg/team.svg" , class: 'icon-menu'
+    %span Equipo
+  %a.btn-contact{:href => "#"}
+    = inline_svg "svg/close.svg" , class: 'icon-menu'
+    %span Contacta
+  %a.btn-callnow{:href => "#"}
+    = inline_svg "svg/close.svg" , class: 'icon-menu'
+    %span Llamanos
+  %a.btn-close-menu.fixed-button-responisve{:href => "#"}
+    = inline_svg "svg/close.svg" , class: 'icon-menu'
 .row.top-contact
   .small-8.columns
     %a{:href => root_path} 
@@ -11,9 +26,9 @@
   .small-2.columns.email
     %a{:href => new_contact_path}
       = inline_svg "svg/email.svg", class:'icon-nav'
-  %a.btn-scroll{:href => "#scroll_to_rockandror"} 
+  %a.btn-scroll.fixed-button-responisve{:href => "#scroll_to_rockandror"} 
     = inline_svg "svg/arrow-btn.svg" , class: 'icon-menu'
-  %a.btn-menu{:href => "#", id:"btn-menu-responsive"} 
+  %a.btn-menu.fixed-button-responisve{:href => "#", id:"btn-menu-responsive"} 
     = inline_svg "svg/plus.svg" , class: 'icon-menu'
 
   

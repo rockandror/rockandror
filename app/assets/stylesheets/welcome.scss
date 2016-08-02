@@ -19,6 +19,203 @@
 }
 .pattern-eatbooking{ background: asset_url('pattern/eatbooking-pattern.png') repeat; }
 .participation-pattern{ background: asset_url('pattern/participation-pattern.png') repeat;}
+
+.fixed-button-responisve{
+  width: 56px;
+  height: 56px;
+  position: fixed;
+  border-radius:50%;
+  border:3px solid $secondary-color;
+  bottom:20px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 9;
+  .icon-menu{
+    fill:$secondary-color;
+    margin: 0 auto;
+    display: block;
+    margin-top: 22px;
+    width: 20px;
+  }
+}
+.btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow{
+  @extend .fixed-button-responisve;
+  transition: all ease 1s;
+  .icon-menu{
+    margin-top:15px;
+    fill:white;
+  }
+  span{
+    margin: 0px;
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 700;
+  }
+}
+
+.btn-close-menu .icon-menu{ fill:white;}
+
+.animate-btn-home{
+  -webkit-animation: showBtnHomeResponsive .7s forwards; 
+  -moz-animation:    showBtnHomeResponsive .7s forwards; 
+  -o-animation:      showBtnHomeResponsive .7s forwards; 
+  animation:         showBtnHomeResponsive .7s forwards;
+}
+.animate-btn-home-close{
+  -webkit-animation: showBtnHomeCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnHomeCloseResponsive .7s forwards; 
+  -o-animation:      showBtnHomeCloseResponsive .7s forwards; 
+  animation:         showBtnHomeCloseResponsive .7s forwards;
+}
+
+.animate-btn-works{
+  -webkit-animation: showBtnWorksResponsive .7s forwards; 
+  -moz-animation:    showBtnWorksResponsive .7s forwards; 
+  -o-animation:      showBtnWorksResponsive .7s forwards; 
+  animation:         showBtnWorksResponsive .7s forwards;
+}
+.animate-btn-works-close{
+  -webkit-animation: showBtnWorksCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnWorksCloseResponsive .7s forwards; 
+  -o-animation:      showBtnWorksCloseResponsive .7s forwards; 
+  animation:         showBtnWorksCloseResponsive .7s forwards;
+}
+
+.animate-btn-team{
+  -webkit-animation: showBtnTeamResponsive .7s forwards; 
+  -moz-animation:    showBtnTeamResponsive .7s forwards; 
+  -o-animation:      showBtnTeamResponsive .7s forwards; 
+  animation:         showBtnTeamResponsive .7s forwards;
+}
+.animate-btn-team-close{
+  -webkit-animation: showBtnTeamCloseCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnTeamCloseCloseResponsive .7s forwards; 
+  -o-animation:      showBtnTeamCloseCloseResponsive .7s forwards; 
+  animation:         showBtnTeamCloseCloseResponsive .7s forwards;
+}
+
+.animate-btn-contact{
+  -webkit-animation: showBtnContactResponsive .7s forwards; 
+  -moz-animation:    showBtnContactResponsive .7s forwards; 
+  -o-animation:      showBtnContactResponsive .7s forwards; 
+  animation:         showBtnContactResponsive .7s forwards;
+}
+.animate-btn-contact-close{
+  -webkit-animation: showBtnContactCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnContactCloseResponsive .7s forwards; 
+  -o-animation:      showBtnContactCloseResponsive .7s forwards; 
+  animation:         showBtnContactCloseResponsive .7s forwards;
+}
+.animate-btn-callnow{
+  -webkit-animation: showBtnCallnowResponsive .7s forwards; 
+  -moz-animation:    showBtnCallnowResponsive .7s forwards; 
+  -o-animation:      showBtnCallnowResponsive .7s forwards; 
+  animation:         showBtnCallnowResponsive .7s forwards;
+}
+.animate-btn-callnow-close{
+  -webkit-animation: showBtnCallnowCloseResponsive .7s forwards; 
+  -moz-animation:    showBtnCallnowCloseResponsive .7s forwards; 
+  -o-animation:      showBtnCallnowCloseResponsive .7s forwards; 
+  animation:         showBtnCallnowCloseResponsive .7s forwards;
+}
+@keyframes showBtnHomeResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top: 15%;
+  }
+}
+@keyframes showBtnHomeCloseResponsive {
+  from{
+    top: 15%;
+  }
+  to {
+   top: 88%;
+  }
+}
+
+
+@keyframes showBtnWorksResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top:30%;
+  }
+}
+@keyframes showBtnWorksCloseResponsive {
+  from{
+    top: 30%;
+  }
+  to {
+    top: 88%;
+  }
+}
+
+@keyframes showBtnTeamResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top:45%;
+  }
+}
+@keyframes showBtnTeamCloseResponsive {
+  from{
+    top: 45%;
+  }
+  to {
+   top: 88%;
+  }
+}
+
+@keyframes showBtnContactResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top:67%;
+   left:-50%;
+  }
+}
+@keyframes showBtnContactCloseResponsive {
+  from{
+   top:67%;
+   left:-50%;
+  }
+  to {
+   top:88%;
+   left:0%;
+  }
+}
+
+
+@keyframes showBtnCallnowResponsive {
+  from{
+    top: 88%;
+  }
+  to {
+   top:67%;
+   left:50%;
+  }
+}
+@keyframes showBtnCallnowCloseResponsive {
+  from{
+   top:67%;
+   left:50%;
+  }
+  to {
+   top:88%;
+   left:0%;
+  }
+}
+
+
 @mixin text($color, $transform, $size) {
   color: $color; 
   text-transform: $transform;
@@ -98,7 +295,7 @@ body{
   }
 }
 .container-menu{
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.8);
   display: none;
   position: absolute;
   top: 0;
@@ -107,19 +304,7 @@ body{
   bottom: 0;
   z-index: 4;
   width: 100%;
-  height: 100%;
-  a{
-    border-radius:50%;
-    width: 40px;
-    height: 40px; 
-    border:2px solid yellow; 
-    position: absolute;
-    top: 100px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    z-index: 5;
-  }
+  height: 100%;  
 }
 .btn-primary{ background: $secondary-color; }
 .toggle-topbar{ display: none; }
@@ -967,24 +1152,9 @@ body{
     top: 0px;
     background: black;
   }
-  .btn-menu,.btn-scroll{
-    width: 56px;
-    height: 56px;
-    position: fixed;
-    border-radius:50%;
-    border:3px solid $secondary-color;
-    bottom:20px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    z-index: 9;
-    .icon-menu{
-      fill:$secondary-color;
-      margin: 0 auto;
-      display: block;
-      margin-top: 22px;
-      width: 20px;
-    }
+  
+  .btn-menu,.btn-scroll,.btn-close-menu{
+    /*@extend .fixed-button-responisve;*/
   } 
   .btn-menu{
     -webkit-transform: scale(0);
@@ -992,6 +1162,17 @@ body{
     -moz-transform:scale(0);
     -o-transform:scale(0);
      .icon-menu{
+        margin-top: 16px;
+        fill:$secondary-color;
+     }
+  }
+  .btn-close-menu{
+    background: $secondary-color;
+  /*  -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transform:scale(0);
+    -o-transform:scale(0);
+  */   .icon-menu{
         margin-top: 16px;
      }
   }
