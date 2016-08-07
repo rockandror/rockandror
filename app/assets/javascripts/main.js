@@ -29,6 +29,11 @@ $(document).ready(function(){
   //update this value if you change this breakpoint in the style.css file (or _layout.scss if you use SASS)
   var MQ = 1024;
   triggerAnimation();
+  $(".intro .bg-background").removeClass("hide-opacity");
+  $(".intro .bg-background").addClass("show-opacity");
+  $(".intro lead").addClass("show-opacity");
+  $(".btn-scroll").addClass("show-opacity");
+
   $(window).on('resize', function(){
     triggerAnimation();
   });
@@ -75,9 +80,9 @@ $(document).ready(function(){
       '-o-transform': 'scale(1)',
       'transform': 'scale(1)'
     });
+    $(btnshow).addClass("rotate");
     btnshow.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-      console.log("yisis");
-      //$("svg#Livello_1.icon-menu").addClass("animateRotateIcon");
+       
     });
   }
 
@@ -90,41 +95,63 @@ $(document).ready(function(){
       'transform': 'translate(0,140%)'
     });
     showbtnmenu();
+    btnscroll.hide();
   }
   
   $("#btn-menu-responsive").on('click', function(event) {
-    $(".container-menu").show();
-    $(".container-menu").css("position","fixed");
-    $(this).addClass("animate-btn-responsive-close");
-    $(".btn-close-menu").addClass("btn-close-menu-open");
+    openMenu();
+  });
+  
+  $(".btn-close-menu").on('click', function(event) {
+    closeMenu();
+  });
+
+  $(".top-contact").addClass("animate-top-contact");
+
+  function openMenu(){
+    $(".btn-close-menu").removeClass('btn-close-menu-close');
+    $("#btn-menu-responsive").removeClass("animate-btn-responsive-show");
+    $("#btn-menu-responsive").addClass("animate-btn-responsive-close");
+    $(".top-contact").addClass("animate-top-contact-close");
     $("#btn-menu-responsive").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+      $(".container-menu").show();
+      $(".container-menu").css("position","fixed");
+      $(".btn-close-menu").addClass("btn-close-menu-open");
       $(".btn-home").addClass("animate-btn-home");
       $(".btn-works").addClass("animate-btn-works");
       $(".btn-team").addClass("animate-btn-team");
       $(".btn-contact").addClass("animate-btn-contact");
       $(".btn-callnow").addClass("animate-btn-callnow");
      });
-  });
-  
-  $(".btn-close-menu").on('click', function(event) {
+  }
+
+  function closeMenu(){
     $(".btn-home").addClass("animate-btn-home-close");
     $(".btn-works").addClass("animate-btn-works-close");
     $(".btn-team").addClass("animate-btn-team-close");
     $(".btn-contact").addClass("animate-btn-contact-close");
     $(".btn-callnow").addClass("animate-btn-callnow-close");
-   
-    $(".btn-close-menu").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-       $(this).addClass("btn-close-menu-close");
-      $(".container-menu").hide();
-      $(".btn-home").removeClass("animate-btn-home-close");
-      $(".btn-works").removeClass("animate-btn-works-close");
-      $(".btn-team").removeClass("animate-btn-team-close");
-      $(".btn-contact").removeClass("animate-btn-contact-close");
-      $(".btn-callnow").removeClass("animate-btn-callnow-close");
-      $("#btn-menu-responsive").show();
+    $(".btn-callnow").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+      $(".btn-close-menu").addClass("btn-close-menu-close");
+       resetMenu();
+        //$(this).off('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd');
     });
-  });
-  
+  }
+
+  function resetMenu(){
+    $(".btn-home").removeClass("animate-btn-home-close");
+    $(".btn-works").removeClass("animate-btn-works-close");
+    $(".btn-team").removeClass("animate-btn-team-close");
+    $(".btn-contact").removeClass("animate-btn-contact-close");
+    $(".btn-callnow").removeClass("animate-btn-callnow-close");
+    $(".top-contact").removeClass("animate-top-contact-close");
+    $(".container-menu").hide();
+    $(".container-menu").css("position","relative");
+    $("#btn-menu-responsive").removeClass("animate-btn-responsive-close");
+    $("#btn-menu-responsive").addClass("animate-btn-responsive-show");
+    $(".top-contact").addClass("animate-top-contact");
+  }
+   
      
   function navbar_show_hide(){ 
     var nav = $('.top-bar');

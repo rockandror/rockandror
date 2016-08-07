@@ -1,25 +1,63 @@
+.bounce {
+  @include animation(bounce 2s infinite);
+}
+@include keyframes(bounce) {
+  0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+  40% {
+    @include transform(translateY(-30px));
+  }
+  60% {
+    @include transform(translateY(-15px));
+  }
+}
+
+.show-opacity{
+  transition: all 3s ease;
+  opacity: 1 !important;
+}
+.hide-opacity{
+  transition: all .7s ease;
+  opacity: 0;
+}
+
 .fixed-button-responisve{
   width: 56px;
   height: 56px;
   position: fixed;
   border-radius:50%;
-  border:3px solid $secondary-color;
-  bottom:20px;
+  border:2px solid $secondary-color;
   right: 0;
   left: 0;
+  top: 80%;
   margin: 0 auto;
   z-index: 9;
   .icon-menu{
     fill:$secondary-color;
     margin: 0 auto;
     display: block;
-    margin-top: 22px;
     width: 20px;
+    height: 23px;
   }
 }
+
+.top-contact{
+  top: -40%;
+}
+
+.btn-scroll{
+  border:none; 
+}
+
+
+
 .btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow,#btn-menu-responsive,.btn-close-menu{
   @extend .fixed-button-responisve;
-  transition: all ease 1s;
+  // transition: all .7s ease;
+  @include transition(all 600ms ceaser($easeOutBack));
+
+
   .icon-menu{
     margin-top:15px;
     fill:white;
@@ -34,16 +72,67 @@
     font-weight: 700;
   }
 }
-.btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow{opacity: 0;}
+.btn-scroll,.btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow{opacity: 0;}
 .btn-close-menu .icon-menu{ fill:white;}
-.btn-close-menu{bottom:-100%;}
+.btn-menu svg{fill:$secondary-color !important; }
+// .btn-close-menu{bottom:-100%;}
+
+
+.rotate {
+  -webkit-animation: cog .4s infinite;     
+  -moz-animation: cog .4s infinite;
+  -ms-animation: cog .4s infinite;       
+  animation: cog .4s infinite;
+  -webkit-animation-timing-function: ease;  
+  -moz-animation-timing-function: ease;   
+  -ms-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+  animation-iteration-count: 1;
+}
+
+@keyframes cog {
+  0%{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{ 
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.animate-top-contact{
+  -webkit-animation: showTopContact .7s forwards; 
+  -moz-animation:    showTopContact .7s forwards; 
+  -o-animation:      showTopContact .7s forwards; 
+  animation:         showTopContact .7s forwards;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+  animation-delay: 2s;
+}
+
+.animate-top-contact-close{
+  -webkit-animation: hideTopContact .7s forwards; 
+  -moz-animation:    hideTopContact .7s forwards; 
+  -o-animation:      hideTopContact .7s forwards; 
+  animation:         hideTopContact .7s forwards;
+}
 
 .animate-btn-responsive-close{
 	-webkit-animation: hideBtnResponsive .7s forwards; 
 	-moz-animation:    hideBtnResponsive .7s forwards; 
 	-o-animation:      hideBtnResponsive .7s forwards; 
 	animation:         hideBtnResponsive .7s forwards;
-
+}
+.animate-btn-responsive-show{
+  -webkit-animation: showBtnResponsive .7s forwards; 
+  -moz-animation:    showBtnResponsive .7s forwards; 
+  -o-animation:      showBtnResponsive .7s forwards; 
+  animation:         showBtnResponsive .7s forwards;
 }
 
 .btn-close-menu-open{
@@ -139,38 +228,78 @@
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
-@keyframes hideBtnResponsive {
+
+
+
+@keyframes zoomIn {
   from{
-    top: 88%;
+    background-size: 450%;
   }
   to {
-   top: 100%;
+   background-size: 1450%;
+  }
+}
+
+@keyframes showTopContact {
+  from{
+    top: -40%;
+  }
+  to {
+   top: 0%;
+  }
+}
+
+@keyframes hideTopContact {
+  from{
+    top: 0%;
+  }
+  to {
+   top: -40%;
+  }
+}
+
+
+@keyframes showBtnResponsive {
+  from{
+    top: 110%;
+  }
+  to {
+   top: 80%;
+  }
+}
+
+@keyframes hideBtnResponsive {
+  from{
+    top: 80%;
+  }
+  to {
+   top: 120%;
   }
 }
 
 @keyframes BtnCloseMenuResponsive {
   from{
-    top: 100%;
+    top: 110%;
   }
   to {
-   top: 88%;
+   top: 80%;
   }
 }
 
 @keyframes showBtnCloseMenuResponsive {
   from{
-    bottom: -100%;
+    top: 110%;
   }
   to {
-   bottom: 5%;
+   top: 80%;
   }
 }
 @keyframes hideBtnCloseMenuResponsive {
   from{
-    bottom: 5%;
+    top: 80%;
   }
   to {
-   bottom: -100%;
+   top: 110%;
   }
 }
 
@@ -178,42 +307,42 @@
 
 @keyframes showBtnHomeResponsive {
   from{
-    top: 88%;
+    top: 80%;
   }
   to {
-   top: 15%;
+   top: 5%;
   }
 }
 @keyframes showBtnHomeCloseResponsive {
   from{
-    top: 15%;
+    top: 5%;
   }
   to {
-   top: 88%;
+   top: 80%;
   }
 }
 
 
 @keyframes showBtnWorksResponsive {
   from{
-    top: 88%;
+    top: 80%;
   }
   to {
-   top:30%;
+   top:25%;
   }
 }
 @keyframes showBtnWorksCloseResponsive {
   from{
-    top: 30%;
+    top: 25%;
   }
   to {
-    top: 88%;
+    top: 80%;
   }
 }
 
 @keyframes showBtnTeamResponsive {
   from{
-    top: 88%;
+    top: 80%;
   }
   to {
    top:45%;
@@ -224,13 +353,13 @@
     top: 45%;
   }
   to {
-   top: 88%;
+   top: 80%;
   }
 }
 
 @keyframes showBtnContactResponsive {
   from{
-    top: 88%;
+    top: 80%;
   }
   to {
    top:67%;
@@ -243,7 +372,7 @@
    left:-50%;
   }
   to {
-   top:88%;
+   top:80%;
    left:0%;
   }
 }
@@ -251,7 +380,7 @@
 
 @keyframes showBtnCallnowResponsive {
   from{
-    top: 88%;
+    top: 80%;
   }
   to {
    top:67%;
@@ -264,7 +393,7 @@
    left:50%;
   }
   to {
-   top:88%;
+   top:80%;
    left:0%;
   }
 }
