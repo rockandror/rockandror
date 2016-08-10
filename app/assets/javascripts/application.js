@@ -5,10 +5,8 @@
 //= require jquerymb.YTPlayer
 //= require foundation
 //= require main
-//= require portfolio
 //= require viewportchecker
 //= require cookies_eu
-//= require slick
 //= require nprogress
 //= require nprogress-turbolinks
 //= require nprogress-ajax

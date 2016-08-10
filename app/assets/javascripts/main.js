@@ -157,7 +157,6 @@ $(document).ready(function(){
     $(".btn-menu").removeClass("rotate");
     console.log("reset");
   }
-   
      
   function navbar_show_hide(){ 
     var nav = $('.top-bar');

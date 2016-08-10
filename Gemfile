@@ -19,7 +19,6 @@ gem 'normalize-rails'
 gem 'foundation-rails'
 gem 'foundation_rails_helper'
 gem "haml-rails", "~> 0.9"
-gem 'slick_rails'
 gem 'nprogress-rails'
 gem 'inline_svg'
 gem "non-stupid-digest-assets"

@@ -1,0 +1,24 @@
+#nav-modal{
+  width: 100%;
+  height: 100%; 
+  text-align: center;
+  .stacked {
+    a{
+      display: block;
+      color:$secondary-color;
+      background: transparent;
+      padding: .6em;
+      line-height: 30px;
+      border: 1px solid $secondary-color;
+      &:hover{
+        background: $secondary-color;
+        color: #fff;
+      }
+    }
+    ul{
+      list-style: none;
+      margin-left: 0rem;
+      li{margin-bottom: 10px;}
+    }
+  }
+}

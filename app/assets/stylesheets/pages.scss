@@ -1,0 +1,277 @@
+.webdingspage, .eatbookingpage, .oasiscatamaranspage{
+  .arrow{
+    animation: bounce 1s ease infinite;
+    &:before{
+      content: '⬇︎';
+      left: 0px;
+      right: 0px;
+      position: absolute;
+      top: 8px;
+      text-align: center;
+      color:$secondary-color;
+    }
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    left:5%;
+    position: absolute;
+    bottom: 10%;
+    z-index: 2;
+  }
+}
+.webdingspage{
+  text-align: center;
+  .img-background{ background: asset_url('webdings/background-page.jpg'); }
+  .cont-introduction{
+    background:#fff;
+    position: relative;
+  }
+  .brand-design{
+    padding: 6em 3em;
+    background: #3b3b3b;
+    position: relative;
+    .content{
+      h2{ color:#fff;}
+      svg{
+        width: 200px;
+        height: auto;
+        padding: 3rem 0rem;
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+        color:#fff;
+      }
+    }
+  }
+  .back-end{
+    padding: 6em 3em;
+    .content{
+      .videoWrapperIpad{
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 100%;        
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          right: 0px;
+          margin: 0px auto;
+        }
+        p{
+          font-size: 1.3rem;
+          text-align: justify;
+        }
+        ul{
+          list-style: none;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  } 
+  .front-end{
+    padding: 6em 3em;
+    background:#f3f3f3;
+    .content{
+      img{
+        position: relative;
+        margin: 0px auto;
+        display: block;
+      }
+      video{
+        position: absolute;
+        z-index: 1;
+        width: 70%;
+        left: -5px;
+        right: 0px;
+        margin: 0px auto;
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+    } 
+  }
+  .app-mobile{
+    padding: 6em 3em;
+    .content{
+      .videoWrapperIphone{
+        display: block;
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 310px;
+        }  
+        video{
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          right: 0;
+          margin: 0px auto;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+    } 
+  }
+}
+.eatbookingpage{
+  h2{ color:#f3cc33; }
+  .img-background{ background:asset_url('eatbooking/background-page.jpg'); }
+  .cont-introduction{ @extend .pattern-eatbooking; }
+  .back-end{
+    padding: 6em 3em;
+    @extend .pattern-eatbooking;
+    .content{
+      .videoWrapperIpad{
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 100%;        
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          width: 70%;
+          left: -5px;
+          right: 0px;
+          margin: 0px auto;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+      ul{
+        list-style: none;
+        font-size: 1.3rem;
+      }
+    } 
+  }
+}
+.oasiscatamaranspage{
+  h2{ color: #5fc3e6; }
+  .img-background{ background: asset_url('oasis-catamaran/background-page.jpg'); }
+  .cont-introduction{ background: white; }
+  .back-end{
+    padding: 6em 3em;
+    background-image: asset_url('pattern/oasis-pattern.png'),
+    linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
+    .content{
+      .videoWrapperIpad{
+        img{
+          position: relative;
+          z-index: 2;
+          margin: 0px auto;
+          width: 100%;        
+        }
+        video{
+          position: absolute;
+          z-index: 1;
+          width: 70%;
+          left: -5px;
+          right: 0px;
+          margin: 0px auto;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+      ul{
+        list-style: none;
+        font-size: 1.3rem;
+      }
+    } 
+  }
+  .front-end{
+   padding: 6em 3em;
+   background:#f3f3f3;
+    .content{
+      img{
+        position: relative;
+        margin: 0px auto;
+        display: block;
+      }
+      video{
+        position: absolute;
+        z-index: 1;
+        width: 70%;
+        left: -5px;
+        right: 0px;
+        margin: 0px auto;
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: justify;
+      }
+    } 
+  }
+}
+.contactpage{
+  @include padding(8em, 0em, 8em, 0em);
+  background: #fafafa;
+  p{
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .new_contact label {display: none;}
+  textarea{height: 150px;}
+}
+.greetingspage{
+  background: #f8f8f8;
+  .row{max-width: 100%;}
+}
+.webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage,.greetingspage{
+  .img-background{
+    position: relative;
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    overflow: hidden;
+    height: 900px;
+  }
+  .row{max-width: 100%;}
+  h2{
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .cont-introduction{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    margin: 0px auto;
+    padding: 3em;
+    span{text-transform: uppercase;}
+    p{
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+  }
+  .tecnology{
+    padding: 6em 3em;
+    background: #3b3b3b;   
+    .content{
+      h2{ color:#fff; }
+      svg{
+        width: 200px;
+        height: auto;
+        padding: 3rem 0rem;
+        fill:white;
+      }
+      p{
+        font-size: 1.3rem;
+        text-align: center;
+        color:#fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600);
+.gradient-clear{
+  background: rgb(255,255,255);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3MiUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjJmMmYyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(247,247,247,1) 50%, rgba(242,242,242,1) 72%, rgba(242,242,242,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(247,247,247,1)), color-stop(72%,rgba(242,242,242,1)), color-stop(100%,rgba(242,242,242,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 50%,rgba(242,242,242,1) 72%,rgba(242,242,242,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 );
+}
+.gradient-oasis{
+  background: rgb(27,51,64); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(27,51,64,1) 0%, rgba(49,92,115,1) 100%, rgba(27,51,64,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b3340', endColorstr='#1b3340',GradientType=0 ); /* IE6-9 */
+}
+.pattern-eatbooking{ background: asset_url('pattern/eatbooking-pattern.png') repeat; }
+.participation-pattern{ background: asset_url('pattern/participation-pattern.png') repeat;}
+.cookies-eu{margin-top:50px;}
+
+@mixin text($color, $transform, $size) {
+  color: $color; 
+  text-transform: $transform;
+  font-size: $size;
+}
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top:$top;
+  padding-right:$right;
+  padding-bottom:$bottom;
+  padding-left:$left;
+}
+@-moz-document url-prefix() {
+  a {
+    &:active, &:focus{
+      outline: none;
+      border:  none;
+    }
+  }
+  .btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
+    outline: none;border:  none; box-shadow: none;
+  } 
+}
+input[type="text"]{height: 60px;outline: none;}
+.disable{
+  opacity: 0.65; 
+  a{
+    color:$secondary-color;
+    cursor: default;
+    pointer-events: none;
+  } 
+}

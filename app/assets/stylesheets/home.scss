@@ -1,0 +1,318 @@
+.intro{
+  position: relative;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  z-index: 1;
+  .bg-background{
+    height: 100%;
+    width: 100%;
+    background: url("intro3.jpg") no-repeat center center;
+    background-size: cover;
+    transition: all 0s ease;
+    position: fixed;
+    z-index: 0;
+  }
+  .video-container-show{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    h1{
+      text-align: center;
+      color:#fff;
+      margin-top: 10rem;
+      font-size:4rem;
+      line-height: 40px;
+      text-shadow: 1px 1px  #000;
+      text-transform: uppercase;
+      margin: 0px auto;
+      margin-top:2%; 
+      font-weight: 700;
+      line-height: 1.1em;
+    }
+    lead{
+      text-align: center;
+      color:#fff;
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 100;
+      letter-spacing: .2rem;
+      margin-top: 1em;
+      font-weight: 300;
+      opacity: 0;
+    }
+    a{
+      border: 1px solid $secondary-color;
+      color:white;
+      text-transform: uppercase;
+      background: $secondary-color;
+      padding: 1em;
+      font-size: 1.1rem;
+      text-align: center;
+      width: 200px;
+      display: block;
+      margin: 0px auto;
+      margin-top: 50px;
+      font-weight: 700;
+      &:hover{
+        background: darken($secondary-color,20%);
+        color: white;
+        -webkit-box-shadow: 1px 0px 23px 0px rgba($secondary-color, 0.75);
+        -moz-box-shadow:    1px 0px 23px 0px rgba($secondary-color, 0.75);
+        box-shadow:         1px 0px 23px 0px rgba($secondary-color, 0.75);
+      }
+    }
+  }
+  .video-container{
+    position:absolute;
+    left:0;
+    right: 0;
+    padding:0px 0px 0px 0px;
+    background-color:#000;
+    z-index:2;
+  }
+  video{
+    width: 100%;
+    height:auto;
+  }
+}
+.webdings,.eatbooking,.oasis,.rockandror,.cont-introduction{
+  @include padding(8em, 0em, 8em, 0em);
+  position: relative;
+  z-index: 2;
+    h2{
+      font-size: 4rem;
+      font-weight: 200;
+      line-height: 0.7;
+    }
+    span,small{
+      display: block;
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+    small{
+      font-size:.9em;
+      font-weight: 100;
+    } 
+  .image{
+    padding-top: 7em;
+  }
+  .text-left p{
+    font-weight: 100;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  a{
+    display: inline-block;
+    border:1px solid $secondary-color;
+    padding: 1em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    &:hover{
+     color:#fff;
+     background: $secondary-color;
+    }
+  } 
+}
+.rockandror{
+  background: #fff;
+  h3{
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 0.7;
+    font-weight: 700;
+    margin-bottom: 1em;
+  }
+  h4{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top:1em; 
+  }
+  p{
+    text-align: justify;
+  }
+  .inline-list{
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+    li{
+      margin-left: 0;
+      padding:0 1em;
+    }
+    svg{
+      width: 1em;
+      fill:$secondary-color;
+      &:hover{
+        fill:darken($secondary-color, 10%);
+      }
+    }
+  }
+  i{font-size: 1.3em;}
+  a{
+    border: none;
+    &:hover{ background: none; }
+  }
+}
+.webdings{
+  h3{
+  background: #cccccc;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  }
+  @extend .gradient-clear;   
+  h2{ @include text($primary-color,uppercase, null); }
+}
+.eatbooking{
+  @extend .pattern-eatbooking;
+  h2{ @include text(#f3cc33,uppercase, null); }
+}
+.oasis{
+  background-image: asset_url('pattern/oasis-pattern.png'),
+                    linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
+  h2{ @include text(#5fc3e6,uppercase, null); }
+}
+.participation{
+  @extend .participation-pattern; 
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  .header{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background: #0077b9;
+    svg{
+      fill: white;
+      width: 94%;
+      margin-top: 8px;
+      height: auto;
+    }
+    h3{
+      @include text(white,uppercase, null);
+      font-size: 3rem;
+      font-weight: 200;
+    }
+  }
+  .content{
+    @include padding(8em, 0em, 8em, 0em);
+  }
+  a{
+    color:$secondary-color;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+         color:darken($secondary-color,10%);
+    }
+  }
+}
+.howweworks{
+  @include padding(8em, 0em, 0em, 0em);
+  background: $secondary-color;
+  position: relative;
+  z-index: 2;
+  
+  h3{
+    color:white;
+    font-size: 2.1rem;
+    font-weight: 200;  
+    span{text-decoration: underline;}
+  }
+  i{
+    padding-top: 3em;
+    color: white;
+    display: block;
+    font-size: 1.4em;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .workflow{
+    @include padding(3em, 0em, 4em, 0em);
+    .block{
+      width: 12%;
+      display: block;
+      float: left;
+      fill:white;
+      padding-top: 12px;
+      height: 70px;
+      svg{
+        height: auto;
+        width: 50%;
+        zoom: 2;
+      }
+      svg#acceptance{ width: 36%; }
+      svg#deployment{ width: 67%; }
+      span{
+        display: block;
+        margin-top: 10px;
+        color: white;
+        font-weight: 100;
+      }
+    }
+    .arrow{
+      width: 10%;
+      display: block;
+      float: left; 
+      padding-top: 34px;
+      svg{
+        height: auto;
+        width: 80%;
+        fill:white;
+        opacity: .8;
+        zoom: 3;
+      }
+    }
+  }
+  .block-path{
+    position: relative;
+    #sprint-path{
+      margin-top: 50px;
+      width: 90%;
+      height: auto;
+    }  
+    .newsprint{
+      border:2px solid white;
+      padding: 1em;
+      background: $secondary-color;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0px auto;
+      width: 200px;
+      bottom: -17px;
+      text-transform: uppercase;
+      color:white;
+      zoom:1.3;
+    }
+  }
+  .text{
+    @include padding(4em, 4em, 4em, 4em);
+    margin-top: 2em;
+    background: darken($secondary-color, 10%);
+    text-align: left;
+    color:white;
+    ul{list-style: none;}
+    span{font-size: .9rem;}
+  }
+}
+.contactnow{
+  @include padding(8em, 0em, 8em, 0em);
+  position: relative;
+  z-index: 2;
+  border-bottom:10px solid #dbdbdb;
+  background: #fff;
+  h3{
+    color:$primary-color;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  span{
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -17px;
+  }
+}
