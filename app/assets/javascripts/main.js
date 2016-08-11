@@ -199,12 +199,11 @@ $(document).ready(function(){
 
 window.onresize = function(event) { resizeDiv(); }
 function resizeDiv() {
-
   $('.webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': h + 'px'});
   if ($(window).width() <= 1056) {
     $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
   }
-  if(h <= 600){
+  if(h <= 1025){
     $(".intro .video-container-show a").css('margin-top','20px'); 
     $(".intro").css({'height': $(window).height() + 'px'});
   }

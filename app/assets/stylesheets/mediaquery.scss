@@ -1,3 +1,84 @@
+//FOUNDATION 
+.logo-smartphone{
+  float:left;
+  border:1px solid red;
+  height: 24px;
+  margin-top: 13px;
+}
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+  body{border:2px solid red;}
+  .top-contact{ border:1px solid yellow;}
+  .top-bar{display: none;}
+  
+  .btn-menu{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transform:scale(0);
+    -o-transform:scale(0);
+     .icon-menu{
+        margin-top: 16px;
+        fill:$secondary-color;
+     }
+  }
+  .btn-close-menu{
+    background: $secondary-color;
+   .icon-menu{
+      margin-top: 16px;
+   }
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+  body{border:2px solid green;}
+  .top-contact,.btn-menu{display:none;}
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body{border:2px solid blue;}
+  .rockandror h3 {font-size: 1.2rem;}
+  .rockandror .inline-list li{padding: 0em;}
+  .top-contact{
+    border:1px solid red;
+    position: fixed;
+    top: 0px;
+    background: black;
+  }
+  .btn-menu{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transform:scale(0);
+    -o-transform:scale(0);
+     .icon-menu{
+        margin-top: 16px;
+        fill:$secondary-color;
+     }
+  }
+  .btn-close-menu{
+    background: $secondary-color;
+   .icon-menu{
+        margin-top: 16px;
+     }
+  }
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
 
 //Mediaquery
 // Large screens
@@ -15,7 +96,6 @@
   }
 }
 
-
 @media only screen and (max-width: 1072px) { 
   .webdingspage .arrow{display: none;}
   .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
@@ -24,36 +104,40 @@
   }
   .workflow{display: none;}
 }
-@media only screen and (min-width: 1024px) {
-  .btn-menu,.top-contact{
-    display: none;
-  }
 
+@media only screen and (max-width: 1023px) {  
+  //.top-bar{display:none;}
 }
+
 @media only screen and (max-width: 1024px) {
-  .rockandror h3 {font-size: 1.2rem;}
-  .rockandror .inline-list li{padding: 0em;}
-  .top-contact{
-    position: fixed;
-    top: 0px;
-    background: black;
-  }
-  .btn-menu{
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -moz-transform:scale(0);
-    -o-transform:scale(0);
-     .icon-menu{
-        margin-top: 16px;
-        fill:$secondary-color;
-     }
-  }
-  .btn-close-menu{
-    background: $secondary-color;
-  	.icon-menu{
-        margin-top: 16px;
-     }
-  }
+  // .rockandror h3 {font-size: 1.2rem;}
+  // .rockandror .inline-list li{padding: 0em;}
+  // .top-contact{
+  //   border:1px solid red;
+  //   position: fixed;
+  //   top: 0px;
+  //   background: black;
+  //   .logo-smartphone{
+  //     float:left;
+  //     border:1px solid red;
+  //   }
+  // }
+  // .btn-menu{
+  //   -webkit-transform: scale(0);
+  //   transform: scale(0);
+  //   -moz-transform:scale(0);
+  //   -o-transform:scale(0);
+  //    .icon-menu{
+  //       margin-top: 16px;
+  //       fill:$secondary-color;
+  //    }
+  // }
+  // .btn-close-menu{
+  //   background: $secondary-color;
+  // 	.icon-menu{
+  //       margin-top: 16px;
+  //    }
+  // }
 } 
 
 .animateRotateIcon{
@@ -64,9 +148,18 @@
   -webkit-animation-iteration-count: 3;
   animation-iteration-count: 3;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  100% { -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
 
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
@@ -135,9 +228,27 @@
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
-@media only screen and (max-width: 768px)  and (orientation: portrait)  {
-  .top-bar{margin-top:37px; }
-
+@media only screen and (max-width: 768px)  and (orientation: portrait){
+  body{border:2px solid red;}
+  .top-contact{display:block;}
+  .top-bar{display: none;}
+  .btn-menu{
+    display: block;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transform:scale(0);
+    -o-transform:scale(0);
+     .icon-menu{
+        margin-top: 16px;
+        fill:$secondary-color;
+     }
+  }
+  .btn-close-menu{
+    background: $secondary-color;
+    .icon-menu{
+      margin-top: 16px;
+    }
+  }
 }
 @media only screen and (min-width: 640px) and (max-width: 730px) { 
   .webdings,.eatbooking,.oasis{
@@ -150,17 +261,17 @@
 }
 /*senen*/
 @media only screen and (max-width: 764px) { 
- .top-contact .logo-smartphone{
-    height: 24px;
-    margin-top: 13px;
-  }
+ // .top-contact .logo-smartphone{
+ //    height: 24px;
+ //    margin-top: 13px;
+ //  }
 }
 
 @media only screen and (max-width: 360px) { 
-  .top-contact .logo-smartphone{
-    height: 24px;
-    margin-top: 13px;
-  }
+  // .top-contact .logo-smartphone{
+  //   height: 24px;
+  //   margin-top: 13px;
+  // }
   .intro .bg-background{position: relative;}
   .intro .video-container-show h1{
     font-size: 1.7rem;
@@ -169,10 +280,10 @@
 }
 /*alle*/
 @media only screen and (max-width: 320px) { 
-  .top-contact .logo-smartphone{
-    height: 24px;
-    margin-top: 13px;
-  }
+  // .top-contact .logo-smartphone{
+  //   height: 24px;
+  //   margin-top: 13px;
+  // }
   .intro .video-container-show lead{
     text-transform: uppercase;
     font-size: 1.3rem;

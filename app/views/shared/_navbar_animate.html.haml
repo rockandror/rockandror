@@ -23,7 +23,7 @@
 .row.top-contact
   .small-8.columns
     %a{:href => root_path} 
-      = inline_svg "svg/logo-smartphone.svg" , class: 'logo-smartphone show-for-small-only'
+      = inline_svg "svg/logo-smartphone.svg" , class: 'logo-smartphone'
   .small-2.columns.tel
     %a{:href => "tel:+34607320876"} 
       = inline_svg "svg/phone.svg", class:'icon-nav'
@@ -32,7 +32,7 @@
       = inline_svg "svg/email.svg", class:'icon-nav'
 
   
-%nav.top-bar.show-for-medium-up{"data-topbar" => "", :role => "navigation"}
+%nav.top-bar{"data-topbar" => "", :role => "navigation"}
   %ul.title-area.small-12.medium-4.columns
     %li.logo
       %h1
