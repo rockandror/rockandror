@@ -1,25 +1,53 @@
-%a.btn-scroll.fixed-button-responisve.bounce{:href => "#scroll_to_rockandror"} 
-  = inline_svg "svg/arrow-btn.svg" , class: 'icon-menu'
-%a.btn-menu.fixed-button-responisve{ id:"btn-menu-responsive"}
+/ %a.btn-scroll.fixed-button-responisve.bounce{:href => "#scroll_to_rockandror"} 
+/   = inline_svg "svg/arrow-btn.svg" , class: 'icon-menu'
+/ %a.btn-menu.fixed-button-responisve{ id:"btn-menu-responsive"}
+/   = inline_svg "svg/plus.svg" , class: 'icon-menu'
+
+%form{:action => "/webdings"}
+  %input{:type => "submit"}/
+
+#btn_container
+%a#btn_plus
   = inline_svg "svg/plus.svg" , class: 'icon-menu'
+%a#btn_close
+  = inline_svg "svg/close.svg" , class: 'icon-menu'
+%a#btn_home{:href => root_path}
+  = inline_svg "svg/home.svg" , class: 'icon-menu'
+  %span home
+%a#btn_works
+  = inline_svg "svg/works.svg" , class: 'icon-menu'
+  %span trabajos
+%a#btn_team
+  = inline_svg "svg/team.svg" , class: 'icon-menu'
+  %span Equipo
+%a#btn_tel{:href => "tel:+34607320876"} 
+  = inline_svg "svg/phone.svg", class:'icon-menu'
+  %span Llama
+%a#btn_email{:href => new_contact_path}
+  = inline_svg "svg/email.svg", class:'icon-menu'
+  %span contactos
+
+#container_submenu
+  %a#btn_webdings{:href => new_contact_path}
+
 .container-menu
-  %a.btn-home{:href => "#"}
-    = inline_svg "svg/home.svg" , class: 'icon-menu'
-    %span Home
-  %a.btn-works{:href => "#"}
-    = inline_svg "svg/works.svg" , class: 'icon-menu'
-    %span Trabajos
-  %a.btn-team{:href => "#"}
-    = inline_svg "svg/team.svg" , class: 'icon-menu'
-    %span Equipo
-  %a.btn-contact{:href => "#"}
-    = inline_svg "svg/email.svg" , class: 'icon-menu'
-    %span Contacta
-  %a.btn-callnow{:href => "#"}
-    = inline_svg "svg/phone.svg" , class: 'icon-menu'
-    %span Llamanos
-  %a.btn-close-menu.fixed-button-responisve
-    = inline_svg "svg/close.svg" , class: 'icon-menu'
+  / %a.btn-home{:href => "#"}
+  /   = inline_svg "svg/home.svg" , class: 'icon-menu'
+  /   %span Home
+  / %a.btn-works{:href => "#"}
+  /   = inline_svg "svg/works.svg" , class: 'icon-menu'
+  /   %span Trabajos
+  / %a.btn-team{:href => "#"}
+  /   = inline_svg "svg/team.svg" , class: 'icon-menu'
+  /   %span Equipo
+  / %a.btn-contact{:href => "#"}
+  /   = inline_svg "svg/email.svg" , class: 'icon-menu'
+  /   %span Contacta
+  / %a.btn-callnow{:href => "#"}
+  /   = inline_svg "svg/phone.svg" , class: 'icon-menu'
+  /   %span Llamanos
+  / %a.btn-close-menu.fixed-button-responisve
+  /   = inline_svg "svg/close.svg" , class: 'icon-menu'
 .row.top-contact
   .small-8.columns
     %a{:href => root_path} 

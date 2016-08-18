@@ -1,7 +1,6 @@
 //FOUNDATION 
 .logo-smartphone{
   float:left;
-  border:1px solid red;
   height: 24px;
   margin-top: 13px;
 }
@@ -10,10 +9,9 @@
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
-  body{border:2px solid red;}
-  .top-contact{ border:1px solid yellow;}
-  .top-bar{display: none;}
   
+  .top-bar{display: none;}
+  #btn_plus{display:block;}
   .btn-menu{
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -34,13 +32,13 @@
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
-  body{border:2px solid green;}
+  
   .top-contact,.btn-menu{display:none;}
 
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  body{border:2px solid blue;}
+  body{border:4px solid green;}
   .rockandror h3 {font-size: 1.2rem;}
   .rockandror .inline-list li{padding: 0em;}
   .top-contact{
@@ -68,7 +66,9 @@
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) { 
+    #btn_plus{display:none;}
+  } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
@@ -229,7 +229,7 @@
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
-  body{border:2px solid red;}
+  
   .top-contact{display:block;}
   .top-bar{display: none;}
   .btn-menu{

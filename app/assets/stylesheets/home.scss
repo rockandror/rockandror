@@ -12,6 +12,8 @@
     transition: all 0s ease;
     position: fixed;
     z-index: 0;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
   .video-container-show{
     position: absolute;

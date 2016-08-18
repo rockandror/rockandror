@@ -3,21 +3,22 @@ $(document).ready(function(){
   heightTopBar = $(".top-bar").height();
   h = $(window).height() - heightTopBar;
 
-  $('a[href*=#scroll_to_]:not([href=#])').click(function() {
-    $( this ).parent().addClass('active');
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        if($(window).width() <= 768){
-          $('html,body').animate({ scrollTop:target.offset().top }, 700);  
-        }else{
-          $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);         
-        }
-        return false;         
-      }
-    }
-  });
+
+  // $('a[href*=#scroll_to_]:not([href=#])').click(function() {
+  //   $( this ).parent().addClass('active');
+  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //     if (target.length) {
+  //       if($(window).width() <= 768){
+  //         $('html,body').animate({ scrollTop:target.offset().top }, 700);  
+  //       }else{
+  //         $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);         
+  //       }
+  //       return false;         
+  //     }
+  //   }
+  // });
   
   /***SCROLL IMAGE */
   var introSection = $('.bg-background'),
@@ -53,7 +54,7 @@ $(document).ready(function(){
     }
   }
 
-  //assign a scale transformation to the introSection element and reduce its opacity
+  
   function animateIntro () {
     var scrollPercentage = ($(window).scrollTop()/introSectionHeight).toFixed(5),
     scaleValue = 1 + scrollPercentage*scaleSpeed;
@@ -69,120 +70,187 @@ $(document).ready(function(){
     }
   }
 
-  var btnscroll = $('.btn-scroll');
-  var btnshow = $('#btn-menu-responsive');
+  // var btnscroll = $('.btn-scroll');
+  // var btnshow = $('#btn-menu-responsive');
 
-  function showbtnmenu(){
-    btnshow.css({
-      '-moz-transform': 'scale(1)',
-      '-webkit-transform': 'scale(1)',
-      '-ms-transform': 'scale(1)',
-      '-o-transform': 'scale(1)',
-      'transform': 'scale(1)'
-    });
-    $(btnshow).addClass("rotate");
-    btnshow.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-    });
-  }
+  // function showbtnmenu(){
+  //   btnshow.css({
+  //     '-moz-transform': 'scale(1)',
+  //     '-webkit-transform': 'scale(1)',
+  //     '-ms-transform': 'scale(1)',
+  //     '-o-transform': 'scale(1)',
+  //     'transform': 'scale(1)'
+  //   });
+  //   $(btnshow).addClass("rotate");
+  //   btnshow.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+  //   });
+  // }
 
-  function animateBtnscroll(){
-    btnscroll.css({
-      '-moz-transform': 'translate(0,140%)',
-      '-webkit-transform': 'translate(0,140%)',
-      '-ms-transform': 'translate(0,140%)',
-      '-o-transform': 'translate(0,140%)',
-      'transform': 'translate(0,140%)'
-    });
-    showbtnmenu();
-    btnscroll.hide();
-  }
+  // function animateBtnscroll(){
+  //   btnscroll.css({
+  //     '-moz-transform': 'translate(0,140%)',
+  //     '-webkit-transform': 'translate(0,140%)',
+  //     '-ms-transform': 'translate(0,140%)',
+  //     '-o-transform': 'translate(0,140%)',
+  //     'transform': 'translate(0,140%)'
+  //   });
+  //   showbtnmenu();
+  //   btnscroll.hide();
+  // }
+
+var
+  topcontact = $(".top-contact");
   
-  $("#btn-menu-responsive").on('click', function(event) {
-    openMenu();
-  });
+  plus = $("#btn_plus"),
+  close = $("#btn_close"),
+  home = $("#btn_home"),
+  works = $("#btn_works"),
+  team = $("#btn_team");
+  phone = $("#btn_tel");
+  email = $("#btn_email");
+  container = $("#btn_container");
+  containerSubMenu = $("#container_submenu");
+
+  tl_submenu = new TimelineLite();
+
+  tl_introSection = new TimelineLite();
+  tl_topcontact = new TimelineLite();
+  tl_plus = new TimelineLite();
+  tl_plus_start = new TimelineLite();
+  tl_close = new TimelineLite();
+  tl_home = new TimelineLite();
+  tl_works = new TimelineLite();
+  tl_team = new TimelineLite({onReverseComplete:reset});
+  tl_phone = new TimelineLite();
+  tl_email = new TimelineLite();
+  tlContainer = new TimelineLite();
+  tlbutton = new TimelineLite();
+
+  tl_submenu.pause();
+  tl_introSection.pause();
+  tl_topcontact.play();
+  tl_plus_start.pause();
+  tl_plus.pause();
+  tl_close.pause();
+  tl_home.pause();
+  tl_works.pause();
+  tl_team.pause();
+  tl_phone.pause();
+  tl_email.pause();
+  tlContainer.pause();
+  tlbutton.pause();
+
+  tl_introSection
+    .to(introSection, 1, {scaleX:3, scaleY:3,opacity:0.8, ease: Power4.easeInOut})
+  tl_topcontact
+    .to(topcontact, 0.5, {top: "0%",opacity:1, ease: Power4.easeInOut})
+    .addPause();
+  tl_plus_start
+    .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
+    .to(plus, 0.2, {colorMatrixFilter:{brightness:2.2, contrast:1.5, colorize:0x90E600}, glowFilter:{blurX:12, blurY:12, color:0x90E600, strength:1.3, alpha:1}})
+    .addPause();
+  tl_plus
+    .to(plus, 0.5, {top: "100%",opacity:0, ease: Power4.easeInOut})
+    .addPause();
+  tl_close
+    .to(close, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut, onComplete: show_menu})
+    .addPause();
+  tl_home
+    .to(home, 0.5, {top: "5%", opacity:1, ease: Power4.easeInOut})
+    .addPause();
+  tl_works
+    .to(works, 0.5, {top: "25%", opacity:1, ease: Power4.easeInOut})
+    .addPause();
+  tl_team
+    .to(team, 0.5, {top: "45%", opacity:1, ease: Power4.easeInOut})
+    .addPause();
+  tl_phone
+    .to(phone, 0.5, {top: "65%", left: "55%", opacity:1, ease: Power4.easeInOut})
+    .addPause();
+  tl_email
+    .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Power4.easeInOut})
+    .addPause();
+  tlContainer
+    .to(container, 0.5, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
+    .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Power4.easeInOut})
+    .addPause();
+
+  tl_submenu
+    .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
+    .to(containerSubMenu, 0.5, {top: "25%", opacity:1, ease: Power4.easeInOut,onComplete: show_submenu_content})
+    .addPause();
   
-  $(".btn-close-menu").on('click', function(event) {
-    closeMenu();
+
+  $(plus).on('click',function(){
+    switchButton();
   });
 
-  $(".top-contact").addClass("animate-top-contact");
+  $(close).on('click',function(){
+    close_menu();  
+  });
 
-  function openMenu(){
-    $(".btn-close-menu").removeClass('btn-close-menu-close');
-    $("#btn-menu-responsive").removeClass("animate-btn-responsive-show");
-    $("#btn-menu-responsive").addClass("animate-btn-responsive-close");
-    $(".top-contact").addClass("animate-top-contact-close");
-    $("#btn-menu-responsive").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-      $(".container-menu").show();
-      $(".container-menu").css("position","fixed");
-      $(".btn-close-menu").addClass("btn-close-menu-open");
-      $(".btn-home").addClass("animate-btn-home");
-      $(".btn-works").addClass("animate-btn-works");
-      $(".btn-team").addClass("animate-btn-team");
-      $(".btn-contact").addClass("animate-btn-contact");
-      $(".btn-callnow").addClass("animate-btn-callnow");
-      $("#btn-menu-responsive").off('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd');      
-    });
+  $(works).on('click',function(){
+    open_submenu();
+  });
+
+  $(home).on('click',function(){
+    close_menu();
+
+  });
+
+  function switchButton(){
+    tl_plus.play();
+    tl_close.play();
   }
 
-  function closeMenu(){
-    $(".btn-home").addClass("animate-btn-home-close");
-    $(".btn-works").addClass("animate-btn-works-close");
-    $(".btn-team").addClass("animate-btn-team-close");
-    $(".btn-contact").addClass("animate-btn-contact-close");
-    $(".btn-callnow").addClass("animate-btn-callnow-close");
-    $(".btn-callnow").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-      $(".btn-close-menu").addClass("btn-close-menu-close");
-      $(".btn-callnow").off('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd');
-      resetMenu();
-      $(".btn-close-menu").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-        //$(".btn-close-menu-close").off('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd');
-        resetMenu();
-      });
-    });
+  function show_menu(){
+    tl_introSection.play();
+    tl_topcontact.reverse();
+    tlContainer.play();
+    tl_home.play();
+    tl_works.play();
+    tl_team.play();
+    tl_phone.play();
+    tl_email.play();
   }
 
-  function resetMenu(){
-    $(".btn-home").removeClass("animate-btn-home-close");
-    $(".btn-works").removeClass("animate-btn-works-close");
-    $(".btn-team").removeClass("animate-btn-team-close");
-    $(".btn-contact").removeClass("animate-btn-contact-close");
-    $(".btn-callnow").removeClass("animate-btn-callnow-close");
-    $(".top-contact").removeClass("animate-top-contact-close");
-    $(".container-menu").hide();
-    $(".container-menu").css("position","relative");
-    $("#btn-menu-responsive").removeClass("animate-btn-responsive-close");
-    $("#btn-menu-responsive").addClass("animate-btn-responsive-show");
-    $(".top-contact").addClass("animate-top-contact");
-    $(".btn-menu").removeClass("rotate");
-    console.log("reset");
-  }
-     
-  function navbar_show_hide(){ 
-    var nav = $('.top-bar');
-    var top = 250;
-    if ($(window).scrollTop() >= top &&  $(window).width() >= 1024)  {
-      nav.removeClass('remove-fixed');
-      nav.addClass('fixed');
-    } else {
-       nav.removeClass('fixed');
-       nav.addClass('remove-fixed');
-    }
+  function close_menu(){
+    tl_home.reverse();
+    tl_works.reverse();
+    tl_team.reverse();
+    tl_phone.reverse();
+    tl_email.reverse();
   }
 
+  function open_submenu(){
+    tl_submenu.play();
+  }
+  function reset(){
+    tl_plus.reverse();
+    tl_close.reverse();
+    tlContainer.reverse();
+    tl_introSection.reverse();
+    tl_topcontact.play();
+    //location.replace("/webdings");
+  }
+
+
+
+  tl_plus_start.play();
   $(window).scroll(function(){
-    navbar_show_hide();
-    animateBtnscroll();
+    // navbar_show_hide();
+    // animateBtnscroll();
+    //tl_plus_start.play();
   });
 
-  $(".btn-scroll").on('click', function(event) {
-    animateBtnscroll();  
-  });
+  // $(".btn-scroll").on('click', function(event) {
+  //   animateBtnscroll();  
+  // });
   
-  $('#nav-modal .close-reveal-modal').on('click', function(event) {
-    $('body').css('overflow-y','auto');
-    event.preventDefault();
-  });
+  // $('#nav-modal .close-reveal-modal').on('click', function(event) {
+  //   $('body').css('overflow-y','auto');
+  //   event.preventDefault();
+  // });
 
   $(document).on('click tap touchstart', '.reveal-modal-bg', function() {
     $('body').css('overflow-y','auto');

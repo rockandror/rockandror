@@ -10,7 +10,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'autoprefixer-rails'
 gem 'responders'
-
 gem 'turbolinks'
 gem 'jquery-turbolinks', '~> 0.2.1'
 gem 'jquery-rails'
@@ -27,6 +26,7 @@ gem 'email_validator'
 gem 'rb-fsevent'
 gem 'cookies_eu'
 gem 'browser'
+gem 'fastclick-rails'
 # Monitoring
 gem 'newrelic_rpm'
 # Error monitoring

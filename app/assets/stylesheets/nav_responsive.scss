@@ -1,17 +1,121 @@
-.bounce {
-  @include animation(bounce 2s infinite);
+#btn_plus,#btn_close,#btn_home,#btn_works,#btn_team,#btn_tel,#btn_email{
+  transition: all .7s ease;
+  //box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 12px $secondary-color, 0 0 15px $secondary-color, 0 0 18px $secondary-color, 0 0 21px $secondary-color, 0 0 24px $secondary-color ;
+  width: 56px;
+  height: 56px;
+  background: $secondary-color;
+  border-radius: 50%;
+  border:2px solid white;
+  position: fixed;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  z-index: 9;
+  display: block;
+  .icon-menu{
+    fill:white;
+    margin: 0 auto;
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin-top: 15px;
+  }
+  span{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:white;
+    position:fixed;
+    left:0;
+    right:0;
+  }
 }
-@include keyframes(bounce) {
-  0%, 20%, 50%, 80%, 100% {
-    @include transform(translateY(0));
-  }
-  40% {
-    @include transform(translateY(-30px));
-  }
-  60% {
-    @include transform(translateY(-15px));
+
+#btn_plus{
+  width: 36px;
+  height: 36px;
+ .icon-menu{
+    fill:white;
+    margin: 0 auto;
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin-top: 10px;
+  } 
+}
+
+#btn_close{
+  top: 100%;
+  z-index: 10;
+  opacity: 0;
+}
+#btn_home,#btn_works,#btn_team{top:100%;opacity: 0;}
+#btn_tel{
+  top:100%;
+  opacity: 0;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  span{
+    position:absolute;
   }
 }
+#btn_email{
+  top:100%;
+  opacity: 0;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  span{
+    position:absolute;
+    left:-25%;
+  }
+}
+
+#btn_container{
+  content:'';
+  background: black;
+  position: fixed;
+  top: 0;
+  left:0%;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#container_submenu{
+  background: white;
+  position: fixed;
+  top: 100%;
+  left:0%;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden; 
+}
+
+// .bounce {
+//   @include animation(bounce 2s infinite);
+// }
+// @include keyframes(bounce) {
+//   0%, 20%, 50%, 80%, 100% {
+//     @include transform(translateY(0));
+//   }
+//   40% {
+//     @include transform(translateY(-30px));
+//   }
+//   60% {
+//     @include transform(translateY(-15px));
+//   }
+// }
 
 .show-opacity{
   transition: all 3s ease;
@@ -21,27 +125,6 @@
   transition: all .7s ease;
   opacity: 0;
 }
-
-.fixed-button-responisve{
-  width: 56px;
-  height: 56px;
-  position: fixed;
-  border-radius:50%;
-  border:2px solid $secondary-color;
-  right: 0;
-  left: 0;
-  top: 80%;
-  margin: 0 auto;
-  z-index: 9;
-  .icon-menu{
-    fill:$secondary-color;
-    margin: 0 auto;
-    display: block;
-    width: 20px;
-    height: 23px;
-  }
-}
-
 .top-contact{
   top: -40%;
 }
@@ -52,182 +135,182 @@
 
 
 
-.btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow,#btn-menu-responsive,.btn-close-menu{
-  @extend .fixed-button-responisve;
-  // transition: all .7s ease;
-  @include transition(all 600ms ceaser($easeOutBack));
+// // .btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow,#btn-menu-responsive,.btn-close-menu{
+// //   @extend .fixed-button-responisve;
+// //   // transition: all .7s ease;
+// //   @include transition(all 600ms ceaser($easeOutBack));
 
 
-  .icon-menu{
-    margin-top:15px;
-    fill:white;
-  }
-  span{
-    margin: 0px;
-    display: block;
-    text-align: center;
-    margin-top: 22px;
-    text-transform: uppercase;
-    color: $secondary-color;
-    font-weight: 700;
-  }
-}
-.btn-scroll,.btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow{opacity: 0;}
-.btn-close-menu .icon-menu{ fill:white;}
-.btn-menu svg{fill:$secondary-color !important; }
+// //   .icon-menu{
+// //    // margin-top:15px;
+// //     fill:white;
+// //   }
+// //   span{
+// //     margin: 0px;
+// //     display: block;
+// //     text-align: center;
+// //     margin-top: 22px;
+// //     text-transform: uppercase;
+// //     color: $secondary-color;
+// //     font-weight: 700;
+// //   }
+// // }
+//.btn-scroll,.btn-home,.btn-works,.btn-team,.btn-contact,.btn-callnow{opacity: 0;}
+// .btn-close-menu .icon-menu{ fill:white;}
+// .btn-menu svg{fill:$secondary-color !important; }
 // .btn-close-menu{bottom:-100%;}
 
 
-.rotate {
-  -webkit-animation: cog .4s infinite;     
-  -moz-animation: cog .4s infinite;
-  -ms-animation: cog .4s infinite;       
-  animation: cog .4s infinite;
-  -webkit-animation-timing-function: ease;  
-  -moz-animation-timing-function: ease;   
-  -ms-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
-  animation-iteration-count: 1;
-}
+// .rotate {
+//   -webkit-animation: cog .4s infinite;     
+//   -moz-animation: cog .4s infinite;
+//   -ms-animation: cog .4s infinite;       
+//   animation: cog .4s infinite;
+//   -webkit-animation-timing-function: ease;  
+//   -moz-animation-timing-function: ease;   
+//   -ms-animation-timing-function: ease;
+//   animation-timing-function: ease;
+//   -webkit-animation-iteration-count: 1; Chrome, Safari, Opera
+//   animation-iteration-count: 1;
+// }
 
-@keyframes cog {
-  0%{
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100%{ 
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
+// @keyframes cog {
+//   0%{
+//     -webkit-transform: rotate(0deg);
+//     -moz-transform: rotate(0deg);
+//     -ms-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   100%{ 
+//     -webkit-transform: rotate(360deg);
+//     -moz-transform: rotate(360deg);
+//     -ms-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
 
-.animate-top-contact{
-  -webkit-animation: showTopContact .7s forwards; 
-  -moz-animation:    showTopContact .7s forwards; 
-  -o-animation:      showTopContact .7s forwards; 
-  animation:         showTopContact .7s forwards;
-  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
-  animation-delay: 2s;
-}
+// .animate-top-contact{
+//   -webkit-animation: showTopContact .7s forwards; 
+//   -moz-animation:    showTopContact .7s forwards; 
+//   -o-animation:      showTopContact .7s forwards; 
+//   animation:         showTopContact .7s forwards;
+//   -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+//   animation-delay: 2s;
+// }
 
-.animate-top-contact-close{
-  -webkit-animation: hideTopContact .7s forwards; 
-  -moz-animation:    hideTopContact .7s forwards; 
-  -o-animation:      hideTopContact .7s forwards; 
-  animation:         hideTopContact .7s forwards;
-}
+// .animate-top-contact-close{
+//   -webkit-animation: hideTopContact .7s forwards; 
+//   -moz-animation:    hideTopContact .7s forwards; 
+//   -o-animation:      hideTopContact .7s forwards; 
+//   animation:         hideTopContact .7s forwards;
+// }
 
-.animate-btn-responsive-close{
-	-webkit-animation: hideBtnResponsive .7s forwards; 
-	-moz-animation:    hideBtnResponsive .7s forwards; 
-	-o-animation:      hideBtnResponsive .7s forwards; 
-	animation:         hideBtnResponsive .7s forwards;
-}
-.animate-btn-responsive-show{
-  -webkit-animation: showBtnResponsive .7s forwards; 
-  -moz-animation:    showBtnResponsive .7s forwards; 
-  -o-animation:      showBtnResponsive .7s forwards; 
-  animation:         showBtnResponsive .7s forwards;
-}
+// .animate-btn-responsive-close{
+// 	-webkit-animation: hideBtnResponsive .7s forwards; 
+// 	-moz-animation:    hideBtnResponsive .7s forwards; 
+// 	-o-animation:      hideBtnResponsive .7s forwards; 
+// 	animation:         hideBtnResponsive .7s forwards;
+// }
+// .animate-btn-responsive-show{
+//   -webkit-animation: showBtnResponsive .7s forwards; 
+//   -moz-animation:    showBtnResponsive .7s forwards; 
+//   -o-animation:      showBtnResponsive .7s forwards; 
+//   animation:         showBtnResponsive .7s forwards;
+// }
 
-.btn-close-menu-open{
--webkit-animation: 	 showBtnCloseMenuResponsive .7s forwards; 
-	-moz-animation:    showBtnCloseMenuResponsive .7s forwards; 
-	-o-animation:      showBtnCloseMenuResponsive .7s forwards; 
-	animation:         showBtnCloseMenuResponsive .7s forwards;		
-}
+// .btn-close-menu-open{
+// -webkit-animation: 	 showBtnCloseMenuResponsive .7s forwards; 
+// 	-moz-animation:    showBtnCloseMenuResponsive .7s forwards; 
+// 	-o-animation:      showBtnCloseMenuResponsive .7s forwards; 
+// 	animation:         showBtnCloseMenuResponsive .7s forwards;		
+// }
 
-.btn-close-menu-close{
--webkit-animation: 	 hideBtnCloseMenuResponsive .7s forwards; 
-	-moz-animation:    hideBtnCloseMenuResponsive .7s forwards; 
-	-o-animation:      hideBtnCloseMenuResponsive .7s forwards; 
-	animation:         hideBtnCloseMenuResponsive .7s forwards;		
-}
+// .btn-close-menu-close{
+// -webkit-animation: 	 hideBtnCloseMenuResponsive .7s forwards; 
+// 	-moz-animation:    hideBtnCloseMenuResponsive .7s forwards; 
+// 	-o-animation:      hideBtnCloseMenuResponsive .7s forwards; 
+// 	animation:         hideBtnCloseMenuResponsive .7s forwards;		
+// }
 
-.animate-btn-home{
-  -webkit-animation: showBtnHomeResponsive .7s forwards; 
-  -moz-animation:    showBtnHomeResponsive .7s forwards; 
-  -o-animation:      showBtnHomeResponsive .7s forwards; 
-  animation:         showBtnHomeResponsive .7s forwards;
-  opacity: 1;
-}
-.animate-btn-home-close{
-  -webkit-animation: showBtnHomeCloseResponsive .7s forwards; 
-  -moz-animation:    showBtnHomeCloseResponsive .7s forwards; 
-  -o-animation:      showBtnHomeCloseResponsive .7s forwards; 
-  animation:         showBtnHomeCloseResponsive .7s forwards;
-  opacity: 0;
-}
+// .animate-btn-home{
+//   -webkit-animation: showBtnHomeResponsive .7s forwards; 
+//   -moz-animation:    showBtnHomeResponsive .7s forwards; 
+//   -o-animation:      showBtnHomeResponsive .7s forwards; 
+//   animation:         showBtnHomeResponsive .7s forwards;
+//   opacity: 1;
+// }
+// .animate-btn-home-close{
+//   -webkit-animation: showBtnHomeCloseResponsive .7s forwards; 
+//   -moz-animation:    showBtnHomeCloseResponsive .7s forwards; 
+//   -o-animation:      showBtnHomeCloseResponsive .7s forwards; 
+//   animation:         showBtnHomeCloseResponsive .7s forwards;
+//   opacity: 0;
+// }
 
-.animate-btn-works{
-  -webkit-animation: showBtnWorksResponsive .7s forwards; 
-  -moz-animation:    showBtnWorksResponsive .7s forwards; 
-  -o-animation:      showBtnWorksResponsive .7s forwards; 
-  animation:         showBtnWorksResponsive .7s forwards;
-  opacity: 1;
-}
-.animate-btn-works-close{
-  -webkit-animation: showBtnWorksCloseResponsive .7s forwards; 
-  -moz-animation:    showBtnWorksCloseResponsive .7s forwards; 
-  -o-animation:      showBtnWorksCloseResponsive .7s forwards; 
-  animation:         showBtnWorksCloseResponsive .7s forwards;
-  opacity: 0;
-}
+// .animate-btn-works{
+//   -webkit-animation: showBtnWorksResponsive .7s forwards; 
+//   -moz-animation:    showBtnWorksResponsive .7s forwards; 
+//   -o-animation:      showBtnWorksResponsive .7s forwards; 
+//   animation:         showBtnWorksResponsive .7s forwards;
+//   opacity: 1;
+// }
+// .animate-btn-works-close{
+//   -webkit-animation: showBtnWorksCloseResponsive .7s forwards; 
+//   -moz-animation:    showBtnWorksCloseResponsive .7s forwards; 
+//   -o-animation:      showBtnWorksCloseResponsive .7s forwards; 
+//   animation:         showBtnWorksCloseResponsive .7s forwards;
+//   opacity: 0;
+// }
 
-.animate-btn-team{
-  -webkit-animation: showBtnTeamResponsive .7s forwards; 
-  -moz-animation:    showBtnTeamResponsive .7s forwards; 
-  -o-animation:      showBtnTeamResponsive .7s forwards; 
-  animation:         showBtnTeamResponsive .7s forwards;
-  opacity: 1;
-}
-.animate-btn-team-close{
-  -webkit-animation: showBtnTeamCloseCloseResponsive .7s forwards; 
-  -moz-animation:    showBtnTeamCloseCloseResponsive .7s forwards; 
-  -o-animation:      showBtnTeamCloseCloseResponsive .7s forwards; 
-  animation:         showBtnTeamCloseCloseResponsive .7s forwards;
-  opacity: 0;
-}
+// .animate-btn-team{
+//   -webkit-animation: showBtnTeamResponsive .7s forwards; 
+//   -moz-animation:    showBtnTeamResponsive .7s forwards; 
+//   -o-animation:      showBtnTeamResponsive .7s forwards; 
+//   animation:         showBtnTeamResponsive .7s forwards;
+//   opacity: 1;
+// }
+// .animate-btn-team-close{
+//   -webkit-animation: showBtnTeamCloseCloseResponsive .7s forwards; 
+//   -moz-animation:    showBtnTeamCloseCloseResponsive .7s forwards; 
+//   -o-animation:      showBtnTeamCloseCloseResponsive .7s forwards; 
+//   animation:         showBtnTeamCloseCloseResponsive .7s forwards;
+//   opacity: 0;
+// }
 
-.animate-btn-contact{
-  -webkit-animation: showBtnContactResponsive .7s forwards; 
-  -moz-animation:    showBtnContactResponsive .7s forwards; 
-  -o-animation:      showBtnContactResponsive .7s forwards; 
-  animation:         showBtnContactResponsive .7s forwards;
-  opacity: 1;
-}
-.animate-btn-contact-close{
-  -webkit-animation: showBtnContactCloseResponsive .7s forwards; 
-  -moz-animation:    showBtnContactCloseResponsive .7s forwards; 
-  -o-animation:      showBtnContactCloseResponsive .7s forwards; 
-  animation:         showBtnContactCloseResponsive .7s forwards;
-  opacity: 0;
-}
-.animate-btn-callnow{
-  -webkit-animation: showBtnCallnowResponsive .7s forwards; 
-  -moz-animation:    showBtnCallnowResponsive .7s forwards; 
-  -o-animation:      showBtnCallnowResponsive .7s forwards; 
-  animation:         showBtnCallnowResponsive .7s forwards;
-  opacity: 1;
-}
-.animate-btn-callnow-close{
-  -webkit-animation: showBtnCallnowCloseResponsive .7s forwards; 
-  -moz-animation:    showBtnCallnowCloseResponsive .7s forwards; 
-  -o-animation:      showBtnCallnowCloseResponsive .7s forwards; 
-  animation:         showBtnCallnowCloseResponsive .7s forwards;
-  opacity: 0;
-}
+// .animate-btn-contact{
+//   -webkit-animation: showBtnContactResponsive .7s forwards; 
+//   -moz-animation:    showBtnContactResponsive .7s forwards; 
+//   -o-animation:      showBtnContactResponsive .7s forwards; 
+//   animation:         showBtnContactResponsive .7s forwards;
+//   opacity: 1;
+// }
+// .animate-btn-contact-close{
+//   -webkit-animation: showBtnContactCloseResponsive .7s forwards; 
+//   -moz-animation:    showBtnContactCloseResponsive .7s forwards; 
+//   -o-animation:      showBtnContactCloseResponsive .7s forwards; 
+//   animation:         showBtnContactCloseResponsive .7s forwards;
+//   opacity: 0;
+// }
+// .animate-btn-callnow{
+//   -webkit-animation: showBtnCallnowResponsive .7s forwards; 
+//   -moz-animation:    showBtnCallnowResponsive .7s forwards; 
+//   -o-animation:      showBtnCallnowResponsive .7s forwards; 
+//   animation:         showBtnCallnowResponsive .7s forwards;
+//   opacity: 1;
+// }
+// .animate-btn-callnow-close{
+//   -webkit-animation: showBtnCallnowCloseResponsive .7s forwards; 
+//   -moz-animation:    showBtnCallnowCloseResponsive .7s forwards; 
+//   -o-animation:      showBtnCallnowCloseResponsive .7s forwards; 
+//   animation:         showBtnCallnowCloseResponsive .7s forwards;
+//   opacity: 0;
+// }
 
-.glow{
-	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}
+// .glow{
+// 	-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+//   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+//   animation: neon1 1.5s ease-in-out infinite alternate;
+// }
 
 
 
@@ -398,28 +481,3 @@
   }
 }
 
-
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
-}
-@-moz-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
-}
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
-}

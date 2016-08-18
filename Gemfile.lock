@@ -107,6 +107,7 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    fastclick-rails (1.0.1)
     ffi (1.9.14)
     font-awesome-rails (4.4.0.0)
       railties (>= 3.2, < 5.0)
@@ -328,6 +329,7 @@ DEPENDENCIES
   email_spec
   email_validator
   factory_girl_rails
+  fastclick-rails
   font-awesome-rails
   foundation-rails
   foundation_rails_helper
