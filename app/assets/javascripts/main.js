@@ -103,6 +103,7 @@ var
   
   plus = $("#btn_plus"),
   close = $("#btn_close"),
+  back = $("#btn_back"),
   home = $("#btn_home"),
   works = $("#btn_works"),
   team = $("#btn_team");
@@ -118,6 +119,7 @@ var
   tl_plus = new TimelineLite();
   tl_plus_start = new TimelineLite();
   tl_close = new TimelineLite();
+  tl_back = new TimelineLite();
   tl_home = new TimelineLite();
   tl_works = new TimelineLite();
   tl_team = new TimelineLite({onReverseComplete:reset});
@@ -126,12 +128,15 @@ var
   tlContainer = new TimelineLite();
   tlbutton = new TimelineLite();
 
+  hWindow = $(window).height();
+
   tl_submenu.pause();
   tl_introSection.pause();
   tl_topcontact.play();
   tl_plus_start.pause();
   tl_plus.pause();
   tl_close.pause();
+  tl_back.pause();
   tl_home.pause();
   tl_works.pause();
   tl_team.pause();
@@ -147,13 +152,15 @@ var
     .addPause();
   tl_plus_start
     .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
-    .to(plus, 0.2, {colorMatrixFilter:{brightness:2.2, contrast:1.5, colorize:0x90E600}, glowFilter:{blurX:12, blurY:12, color:0x90E600, strength:1.3, alpha:1}})
     .addPause();
   tl_plus
     .to(plus, 0.5, {top: "100%",opacity:0, ease: Power4.easeInOut})
     .addPause();
   tl_close
     .to(close, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut, onComplete: show_menu})
+    .addPause();
+  tl_back
+    .to(back, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut})
     .addPause();
   tl_home
     .to(home, 0.5, {top: "5%", opacity:1, ease: Power4.easeInOut})
@@ -174,12 +181,11 @@ var
     .to(container, 0.5, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
     .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Power4.easeInOut})
     .addPause();
-
   tl_submenu
     .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
-    .to(containerSubMenu, 0.5, {top: "25%", opacity:1, ease: Power4.easeInOut,onComplete: show_submenu_content})
+    .to(containerSubMenu, 1, {bottom: "20%", opacity:1, ease: Power4.easeInOut, onComplete: load_owlCarousel})
     .addPause();
-  
+// {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
 
   $(plus).on('click',function(){
     switchButton();
@@ -187,6 +193,10 @@ var
 
   $(close).on('click',function(){
     close_menu();  
+  });
+
+  $(back).on('click',function(){
+    close_submenu();
   });
 
   $(works).on('click',function(){
@@ -224,7 +234,25 @@ var
 
   function open_submenu(){
     tl_submenu.play();
+    tl_close.reverse();
+    tl_back.play();
   }
+  
+  function load_owlCarousel(){
+    $(".owl-carousel").owlCarousel();
+    TweenLite.to($(".owl-carousel"), 0.5, {y:0, opacity:1, ease: Power4.easeInOut});
+    
+  }
+
+  function close_submenu(){
+    TweenLite.to($(".owl-carousel"), 0.5, {y: -200, opacity:0, ease: Power4.easeInOut});
+
+    //$(".owl-carousel").remove();
+    tl_submenu.reverse();
+    tl_back.reverse();
+    tl_close.play();
+  }
+
   function reset(){
     tl_plus.reverse();
     tl_close.reverse();
@@ -233,7 +261,6 @@ var
     tl_topcontact.play();
     //location.replace("/webdings");
   }
-
 
 
   tl_plus_start.play();

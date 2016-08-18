@@ -26,6 +26,7 @@ gem 'email_validator'
 gem 'rb-fsevent'
 gem 'cookies_eu'
 gem 'browser'
+gem 'owlcarousel-rails'
 gem 'fastclick-rails'
 # Monitoring
 gem 'newrelic_rpm'

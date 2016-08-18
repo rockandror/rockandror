@@ -184,6 +184,8 @@ GEM
     non-stupid-digest-assets (1.0.5)
     normalize-rails (3.0.3)
     nprogress-rails (0.1.6.7)
+    owlcarousel-rails (1.1.3.3)
+      jquery-rails
     pg (0.18.2)
     poltergeist (1.6.0)
       capybara (~> 2.1)
@@ -345,6 +347,7 @@ DEPENDENCIES
   non-stupid-digest-assets
   normalize-rails
   nprogress-rails
+  owlcarousel-rails
   pg
   poltergeist
   premailer-rails

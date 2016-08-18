@@ -4,13 +4,15 @@
 /   = inline_svg "svg/plus.svg" , class: 'icon-menu'
 
 %form{:action => "/webdings"}
-  %input{:type => "submit"}/
+  %input{:type => "submit"}
 
 #btn_container
 %a#btn_plus
   = inline_svg "svg/plus.svg" , class: 'icon-menu'
 %a#btn_close
   = inline_svg "svg/close.svg" , class: 'icon-menu'
+%a#btn_back
+  = inline_svg "svg/plus.svg" , class: 'icon-menu'
 %a#btn_home{:href => root_path}
   = inline_svg "svg/home.svg" , class: 'icon-menu'
   %span home
@@ -28,7 +30,17 @@
   %span contactos
 
 #container_submenu
-  %a#btn_webdings{:href => new_contact_path}
+  .owl-carousel
+    %a{:href => '#'}
+      %img{:src => "http://dummyimage.com/600x600/000/fff"}
+    %a{:href => '#'}
+      %img{:src => "http://dummyimage.com/600x600/000/fff"}
+    %a{:href => '#'}
+      %img{:src => "http://dummyimage.com/600x600/000/fff"}
+    %a{:href => '#'}
+      %img{:src => "http://dummyimage.com/600x600/000/fff"}
+    
+
 
 .container-menu
   / %a.btn-home{:href => "#"}
