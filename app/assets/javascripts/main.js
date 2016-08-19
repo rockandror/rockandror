@@ -1,24 +1,25 @@
 $(document).ready(function(){
+  
   var navHeight = $("nav").height();
   heightTopBar = $(".top-bar").height();
   h = $(window).height() - heightTopBar;
 
 
-  // $('a[href*=#scroll_to_]:not([href=#])').click(function() {
-  //   $( this ).parent().addClass('active');
-  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  //     var target = $(this.hash);
-  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //     if (target.length) {
-  //       if($(window).width() <= 768){
-  //         $('html,body').animate({ scrollTop:target.offset().top }, 700);  
-  //       }else{
-  //         $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);         
-  //       }
-  //       return false;         
-  //     }
-  //   }
-  // });
+  $('a[href*=#scroll_to_]:not([href=#])').click(function() {
+    $( this ).parent().addClass('active');
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        if($(window).width() <= 768){
+          $('html,body').animate({ scrollTop:target.offset().top }, 700);  
+        }else{
+          $('html,body').animate({ scrollTop:target.offset().top-200 }, 700);         
+        }
+        return false;         
+      }
+    }
+  });
   
   /***SCROLL IMAGE */
   var introSection = $('.bg-background'),
@@ -31,9 +32,9 @@ $(document).ready(function(){
   var MQ = 1024;
   triggerAnimation();
   $(".intro .bg-background").removeClass("hide-opacity");
-  $(".intro .bg-background").addClass("show-opacity");
-  $(".intro lead").addClass("show-opacity");
-  $(".btn-scroll").addClass("show-opacity");
+  //$(".intro .bg-background").addClass("show-opacity");
+  //$(".intro lead").addClass("show-opacity");
+  //$(".btn-scroll").addClass("show-opacity");
 
   $(window).on('resize', function(){
     triggerAnimation();
@@ -97,15 +98,19 @@ $(document).ready(function(){
   //   showbtnmenu();
   //   btnscroll.hide();
   // }
+var link_url_active;
 
 var
-  topcontact = $(".top-contact");
-  
+  lead = $(".intro lead"),
+  topcontact = $(".top-contact"),
   plus = $("#btn_plus"),
   close = $("#btn_close"),
   back = $("#btn_back"),
   home = $("#btn_home"),
   works = $("#btn_works"),
+  webdings = $("#btn_webdings"),
+  eatbooking = $("#btn_eatbooking"),
+  oasiscatamaran = $("#btn_oasiscatamaran"),
   team = $("#btn_team");
   phone = $("#btn_tel");
   email = $("#btn_email");
@@ -114,6 +119,7 @@ var
 
   tl_submenu = new TimelineLite();
 
+  tl_introLead = new TimelineLite();
   tl_introSection = new TimelineLite();
   tl_topcontact = new TimelineLite();
   tl_plus = new TimelineLite();
@@ -127,15 +133,16 @@ var
   tl_email = new TimelineLite();
   tlContainer = new TimelineLite();
 
-  tl_submenu.pause();
-  tl_introSection.pause();
+  
+  tl_introLead.play();
+  tl_introSection.play();
   
   tl_topcontact.play();
   tl_plus_start.pause();
   tl_plus.pause();
-  
   tl_close.pause();
   tl_back.pause();
+  tl_submenu.pause();
   tl_home.pause();
   tl_works.pause();
   tl_team.pause();
@@ -144,11 +151,18 @@ var
   
   tlContainer.pause();
 
-  tl_introSection
-    .to(introSection, 1, {scaleX:3, scaleY:3,opacity:0.8, ease: Power4.easeInOut})
+  //  tl_introLead.set(lead, {scale:5,transformOrigin:"0% 0%"}); 
+  // tl_introSection.set(introSection,{opacity:0})
+   //tl_introSection
+  //.from(introSection, 2, {scaleX:9, scaleY:9,opacity:0.8, ease: Power4.easeInOut, delay:1})
+
+  TweenMax.fromTo(introSection, 2, {css: {scale:20,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2})
+  tl_introLead.to(lead, 2, {scale:1, opacity:1, ease: Power4.easeInOut})
+  // TweenMax.fromTo(lead, 4, {css: {blur:9}}, {css:{blur:0}} )   
   tl_topcontact
-    .to(topcontact, 0.5, {top: "0%",opacity:1, ease: Power4.easeInOut})
+    .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Power4.easeInOut})
     .addPause();
+
   tl_plus_start
     .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
     .addPause();
@@ -203,10 +217,25 @@ var
     open_submenu();
   });
 
-  $(home).on('click',function(){
-    close_menu();
-
+  $(home).on('click',function(link_url_active){
+    link_url_active = "/";
+    close_submenu(link_url_active);
   });
+  
+  $(webdings).on('click',function(){
+    link_url_active = "/webdings";
+    close_submenu(link_url_active);
+  });
+  $(eatbooking).on('click',function(){
+    link_url_active = "/eatbooking";
+    close_submenu(link_url_active);
+  });
+  $(oasiscatamaran).on('click',function(){
+    link_url_active = "/oasiscatamaran";
+    close_submenu(link_url_active);
+  });
+
+  
 
   function switchButton(){
     tl_plus.play();
@@ -244,13 +273,20 @@ var
     
   }
 
-  function close_submenu(){
+  function close_submenu(link_url_active){
     TweenLite.to($(".owl-carousel"), 0.5, {y: -200, opacity:0, ease: Power4.easeInOut});
-
-    //$(".owl-carousel").remove();
-    tl_submenu.reverse();
-    tl_back.reverse();
-    tl_close.play();
+    if(link_url_active){
+      tl_submenu.reverse();
+      tl_back.reverse();  
+      close_menu();
+      console.log("si"+link_url_active);
+    }else{
+      tl_submenu.reverse();
+      tl_back.reverse();
+      tl_close.play(); 
+      link_url_active=""; 
+      console.log("no"+link_url_active);
+    }
   }
 
   function reset(){
@@ -259,7 +295,9 @@ var
     tlContainer.reverse();
     tl_introSection.reverse();
     tl_topcontact.play();
-    //location.replace("/webdings");
+    if(link_url_active){
+     location.replace(link_url_active);
+    }
   }
 
   tl_plus_start.play();

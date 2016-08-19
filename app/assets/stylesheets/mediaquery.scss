@@ -163,6 +163,17 @@
 
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
+  
+  .intro .video-container-show lead{
+    opacity: 0;
+    transform: scale(20);
+    // -webkit-filter: blur(5px);
+    // -moz-filter: blur(5px);
+    // -o-filter: blur(5px);
+    // -ms-filter: blur(5px);
+    // filter: blur(5px);
+
+  }
   .fixed{
     background: #fff;
     #Livello_1{

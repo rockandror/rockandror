@@ -1,3 +1,7 @@
+#ridirect_responsive{
+  position: absolute;
+  left: -600px;
+}
 #btn_plus,#btn_close,#btn_home,#btn_works,#btn_team,#btn_tel,#btn_email,#btn_back{
   transition: all .7s ease;
   //box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 12px $secondary-color, 0 0 15px $secondary-color, 0 0 18px $secondary-color, 0 0 21px $secondary-color, 0 0 24px $secondary-color ;
@@ -5,7 +9,7 @@
   height: 46px;
   background: $secondary-color;
   border-radius: 50%;
-  border:2px solid white;
+  border:2px solid lighten($secondary-color,30%);
   position: fixed;
   top: 100%;
   left: 0px;

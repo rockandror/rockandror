@@ -3,7 +3,7 @@
 / %a.btn-menu.fixed-button-responisve{ id:"btn-menu-responsive"}
 /   = inline_svg "svg/plus.svg" , class: 'icon-menu'
 
-%form{:action => "/webdings"}
+%form#ridirect_responsive{:action => "/webdings"}
   %input{:type => "submit"}
 
 #btn_container
@@ -31,17 +31,17 @@
 
 #container_submenu
   .owl-carousel
-    %a{:href => '/webdings'}
+    %a#btn_webdings{:href => '#'}
       %h2 Webdings
       %strong crea la app y la web de tu boda
       %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
       = image_tag "webdings/background-page.jpg"
-    %a{:href => '/eatbooking'}
+    %a#btn_eatbooking{:href => '#'}
       %h2 Eatbooking
       %strong crea la app y la web de tu boda
       %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
       = image_tag "eatbooking/background-page.jpg"
-    %a{:href => 'oasiscatamaran'}
+    %a#btn_oasiscatamaran{:href => '#'}
       %h2 Oasis Catamaran
       %strong crea la app y la web de tu boda
       %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
