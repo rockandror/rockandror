@@ -126,15 +126,14 @@ var
   tl_phone = new TimelineLite();
   tl_email = new TimelineLite();
   tlContainer = new TimelineLite();
-  tlbutton = new TimelineLite();
-
-  hWindow = $(window).height();
 
   tl_submenu.pause();
   tl_introSection.pause();
+  
   tl_topcontact.play();
   tl_plus_start.pause();
   tl_plus.pause();
+  
   tl_close.pause();
   tl_back.pause();
   tl_home.pause();
@@ -142,8 +141,8 @@ var
   tl_team.pause();
   tl_phone.pause();
   tl_email.pause();
+  
   tlContainer.pause();
-  tlbutton.pause();
 
   tl_introSection
     .to(introSection, 1, {scaleX:3, scaleY:3,opacity:0.8, ease: Power4.easeInOut})
@@ -172,7 +171,7 @@ var
     .to(team, 0.5, {top: "45%", opacity:1, ease: Power4.easeInOut})
     .addPause();
   tl_phone
-    .to(phone, 0.5, {top: "65%", left: "55%", opacity:1, ease: Power4.easeInOut})
+    .to(phone, 0.5, {top: "65%", right: "-55%", opacity:1, ease: Power4.easeInOut})
     .addPause();
   tl_email
     .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Power4.easeInOut})
@@ -183,10 +182,11 @@ var
     .addPause();
   tl_submenu
     .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
-    .to(containerSubMenu, 1, {bottom: "20%", opacity:1, ease: Power4.easeInOut, onComplete: load_owlCarousel})
+    .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Power4.easeInOut, onComplete: load_owlCarousel})
     .addPause();
-// {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
-
+    
+  // {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+  
   $(plus).on('click',function(){
     switchButton();
   });
@@ -262,13 +262,12 @@ var
     //location.replace("/webdings");
   }
 
-
   tl_plus_start.play();
   $(window).scroll(function(){
     // navbar_show_hide();
     // animateBtnscroll();
     //tl_plus_start.play();
-  });
+  });  
 
   // $(".btn-scroll").on('click', function(event) {
   //   animateBtnscroll();  

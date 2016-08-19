@@ -12,35 +12,40 @@
 %a#btn_close
   = inline_svg "svg/close.svg" , class: 'icon-menu'
 %a#btn_back
-  = inline_svg "svg/plus.svg" , class: 'icon-menu'
-%a#btn_home{:href => root_path}
+  = inline_svg "svg/back.svg" , class: 'icon-menu'
+%a#btn_home.btnm{:href => root_path}
   = inline_svg "svg/home.svg" , class: 'icon-menu'
   %span home
-%a#btn_works
+%a#btn_works.btnm
   = inline_svg "svg/works.svg" , class: 'icon-menu'
   %span trabajos
-%a#btn_team
+%a#btn_team.btnm
   = inline_svg "svg/team.svg" , class: 'icon-menu'
   %span Equipo
-%a#btn_tel{:href => "tel:+34607320876"} 
-  = inline_svg "svg/phone.svg", class:'icon-menu'
-  %span Llama
 %a#btn_email{:href => new_contact_path}
   = inline_svg "svg/email.svg", class:'icon-menu'
   %span contactos
+%a#btn_tel{:href => "tel:+34607320876"} 
+  = inline_svg "svg/phone.svg", class:'icon-menu'
+  %span Llama
 
 #container_submenu
   .owl-carousel
-    %a{:href => '#'}
-      %img{:src => "http://dummyimage.com/600x600/000/fff"}
-    %a{:href => '#'}
-      %img{:src => "http://dummyimage.com/600x600/000/fff"}
-    %a{:href => '#'}
-      %img{:src => "http://dummyimage.com/600x600/000/fff"}
-    %a{:href => '#'}
-      %img{:src => "http://dummyimage.com/600x600/000/fff"}
-    
-
+    %a{:href => '/webdings'}
+      %h2 Webdings
+      %strong crea la app y la web de tu boda
+      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      = image_tag "webdings/background-page.jpg"
+    %a{:href => '/eatbooking'}
+      %h2 Eatbooking
+      %strong crea la app y la web de tu boda
+      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      = image_tag "eatbooking/background-page.jpg"
+    %a{:href => 'oasiscatamaran'}
+      %h2 Oasis Catamaran
+      %strong crea la app y la web de tu boda
+      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      = image_tag "oasis-catamaran/background-page.jpg"
 
 .container-menu
   / %a.btn-home{:href => "#"}
