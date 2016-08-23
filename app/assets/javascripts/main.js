@@ -103,6 +103,7 @@ var link_url_active;
 var
   lead = $(".intro lead"),
   topcontact = $(".top-contact"),
+  scroll = $("#btn_scroll"),
   plus = $("#btn_plus"),
   close = $("#btn_close"),
   back = $("#btn_back"),
@@ -122,6 +123,7 @@ var
   tl_introLead = new TimelineLite();
   tl_introSection = new TimelineLite();
   tl_topcontact = new TimelineLite();
+  tl_scroll = new TimelineLite();
   tl_plus = new TimelineLite();
   tl_plus_start = new TimelineLite();
   tl_close = new TimelineLite();
@@ -136,8 +138,8 @@ var
   
   tl_introLead.play();
   tl_introSection.play();
-  
   tl_topcontact.play();
+  tl_scroll.pause();
   tl_plus_start.pause();
   tl_plus.pause();
   tl_close.pause();
@@ -148,7 +150,6 @@ var
   tl_team.pause();
   tl_phone.pause();
   tl_email.pause();
-  
   tlContainer.pause();
 
   //  tl_introLead.set(lead, {scale:5,transformOrigin:"0% 0%"}); 
@@ -157,14 +158,17 @@ var
   //.from(introSection, 2, {scaleX:9, scaleY:9,opacity:0.8, ease: Power4.easeInOut, delay:1})
 
   TweenMax.fromTo(introSection, 2, {css: {scale:20,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2})
-  tl_introLead.to(lead, 2, {scale:1, opacity:1, ease: Power4.easeInOut})
-  // TweenMax.fromTo(lead, 4, {css: {blur:9}}, {css:{blur:0}} )   
+  tl_introLead.to(lead, 2, {scale:1, opacity:1, ease: Power4.easeInOut,delay:1})
+  //TweenMax.fromTo(lead, 4, {css: {blur:9}}, {css:{blur:0}} )   
   tl_topcontact
-    .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Power4.easeInOut})
+    .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Power4.easeInOut,delay:2})
+    .addPause();
+  tl_scroll
+    .to(scroll, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:2, onComplete: bounce_effect})
     .addPause();
 
   tl_plus_start
-    .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
+    .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:2})
     .addPause();
   tl_plus
     .to(plus, 0.5, {top: "100%",opacity:0, ease: Power4.easeInOut})
@@ -235,6 +239,9 @@ var
     close_submenu(link_url_active);
   });
 
+  function bounce_effect(){
+    tl_scroll.to(scroll, 1, {y:"-60", rotation: -90,  ease:Bounce.easeInOut,repeat:-1, yoyo:true})
+  }
   
 
   function switchButton(){
@@ -300,7 +307,9 @@ var
     }
   }
 
-  tl_plus_start.play();
+  //tl_plus_start.play();
+  tl_scroll.play();
+
   $(window).scroll(function(){
     // navbar_show_hide();
     // animateBtnscroll();

@@ -2,7 +2,7 @@
   position: absolute;
   left: -600px;
 }
-#btn_plus,#btn_close,#btn_home,#btn_works,#btn_team,#btn_tel,#btn_email,#btn_back{
+#btn_scroll,#btn_plus,#btn_close,#btn_home,#btn_works,#btn_team,#btn_tel,#btn_email,#btn_back{
   transition: all .7s ease;
   //box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 12px $secondary-color, 0 0 15px $secondary-color, 0 0 18px $secondary-color, 0 0 21px $secondary-color, 0 0 24px $secondary-color ;
   width: 46px;
@@ -41,7 +41,7 @@
   }
 }
 
-#btn_plus{
+#btn_plus,#btn_scroll{
   width: 36px;
   height: 36px;
  .icon-menu{
@@ -53,7 +53,11 @@
     margin-top: 10px;
   } 
 }
-
+#btn_scroll{
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+}
 #btn_close,#btn_back{
   top: 100%;
   z-index: 10;
