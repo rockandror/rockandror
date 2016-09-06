@@ -1,8 +1,10 @@
-function checkPosition() {
-    var introSection = $('.bg-background');
-    var introSectionHeight = introSection.height();
 
-    var link_url_active,
+function setIntroAnimation() {
+  
+    var introSection = $('.bg-background');
+  
+    var
+    link_url_active,
     h1 = $(".video-container-show h1"),
     lead = $(".intro lead"),
     topcontact = $(".top-contact"),
@@ -21,8 +23,7 @@ function checkPosition() {
     container = $("#btn_container");
     containerSubMenu = $("#container_submenu");
 
-     
-
+  
     if (window.matchMedia('(max-width: 767px)').matches) {
       console.log("smartphone");
      
@@ -209,13 +210,9 @@ function checkPosition() {
         tl_scroll.play();
       }
 
-      $(scroll).on('click',function(){
-        TweenLite.to(scroll,  0.5, {top: "110%",  ease: Power4.easeInOut,onComplete:showPlusStart})
-      });
+      
 
-       function showPlusStart(){
-        tl_plus_start.play();
-      }
+       
 
     } else {
         console.log("Desktop");
@@ -228,16 +225,17 @@ function checkPosition() {
           TweenMax.to(scroll, 1, {y:"60", rotation: -90,  ease:Bounce.easeInOut,repeat:-1, yoyo:true})
         }
 
-        $(window).scroll(function(){
-          console.log("S");
-          TweenMax.fromTo(scroll, 0.7, {css: {top:"88%",opacity:1}}, {css:{top:"1000%"},onComplete:removeButton}); 
-        });  
+        // $(window).scroll(function(){
+        //   console.log("S");
+        //   TweenMax.fromTo(scroll, 0.7, {css: {top:"88%",opacity:1}}, {css:{top:"1000%"},onComplete:removeButton}); 
+        // });  
 
-        function removeButton(){
-          scroll.remove();
-        }
+        // function removeButton(){
+        //   scroll.remove();
+        // }
     }
   }
+
 
 
    
@@ -248,7 +246,22 @@ function checkPosition() {
  
 
   
-
+function showPlusStart(o){
+  tl_plus_start.play();
+}
    
 
- 
+function resizeDiv() {  
+  navHeight = $("nav").height();
+  heightTopBar = $(".top-bar").height();
+  hightWindow = $(window).height() - heightTopBar;
+
+  $('.webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': hightWindow + 'px'});
+  if ($(window).width() <= 1056) {
+    $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
+  }
+  if(hightWindow <= 1025){
+    $(".intro .video-container-show a").css('margin-top','20px'); 
+    $(".intro").css({'height': $(window).height() + 'px'});
+  }
+}
