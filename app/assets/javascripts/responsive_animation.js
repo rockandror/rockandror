@@ -14,6 +14,7 @@ function setIntroAnimation() {
     back = $("#btn_back"),
     home = $("#btn_home"),
     works = $("#btn_works"),
+    boatjump = $("#btn_boatjump"),
     webdings = $("#btn_webdings"),
     eatbooking = $("#btn_eatbooking"),
     oasiscatamaran = $("#btn_oasiscatamaran"),
@@ -24,9 +25,9 @@ function setIntroAnimation() {
     containerSubMenu = $("#container_submenu");
 
   
-    if (window.matchMedia('(max-width: 767px)').matches) {
+    if (window.matchMedia('(max-width: 768px)').matches) {
       console.log("smartphone");
-     
+      //$('.top-bar').hide();
       tl_submenu = new TimelineLite();
       tl_introLead = new TimelineLite();
       tl_introSection = new TimelineLite();
@@ -64,9 +65,9 @@ function setIntroAnimation() {
       tl_topcontact
         .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Power4.easeInOut,delay:1})
         .addPause();
-      tl_scroll
-        .to(scroll, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:2, onComplete: bounce_effect})
-        .addPause();
+      // tl_scroll
+      //   .to(scroll, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:2, onComplete: bounce_effect})
+      //   .addPause();
       tl_plus_start
         .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
         .addPause();
@@ -103,6 +104,10 @@ function setIntroAnimation() {
         .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Power4.easeInOut, onComplete: load_owlCarousel})
         .addPause();
 
+      // $(scroll).on('click',function(){
+      //   switchButton();
+      // });
+
       $(plus).on('click',function(){
         switchButton();
       });
@@ -124,6 +129,10 @@ function setIntroAnimation() {
         close_submenu(link_url_active);
       });
       
+      $(boatjump).on('click',function(){
+        link_url_active = "/boatjump";
+        close_submenu(link_url_active);
+      });
       $(webdings).on('click',function(){
         link_url_active = "/webdings";
         close_submenu(link_url_active);
@@ -139,10 +148,10 @@ function setIntroAnimation() {
       function bounce_effect(){
         //tl_scroll.to(scroll, 1, {y:"60", rotation: -90,  ease:Bounce.easeInOut,repeat:-1, yoyo:true})
       }
-      function firstSwitchButton(){
-        tl_scroll.reverse();
-        tl_plus_start.play();
-      }  
+      // function firstSwitchButton(){
+      //   tl_scroll.reverse();
+      //   tl_plus_start.play();
+      // }  
       function switchButton(){
         tl_plus.play();
         tl_close.play();
@@ -201,13 +210,17 @@ function setIntroAnimation() {
       loadAnimation();
 
       function loadAnimation(){
-        TweenMax.fromTo(introSection, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2})
-        TweenMax.fromTo(lead, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1})
+        TweenMax.to(introSection, 2, {autoAlpha:1,delay:0.2})
+        TweenMax.to(lead, 2, {autoAlpha:1,delay:0.2})
+        // TweenMax.fromTo(introSection, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2})
+        // TweenMax.fromTo(lead, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1})
         //tl_introLead.to(lead, 2, {scale:1, opacity:1, ease: Power4.easeInOut,delay:1})
         //tl_introLead.play();
         //tl_introSection.play();
         tl_topcontact.play();
-        tl_scroll.play();
+        //tl_scroll.play();
+        //showPlusStart.play();
+        tl_plus_start.play();
       }
 
       
@@ -216,14 +229,15 @@ function setIntroAnimation() {
 
     } else {
         console.log("Desktop");
-        TweenMax.fromTo(introSection, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2});
-        TweenMax.fromTo(h1, 0.7, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1});
-        TweenMax.fromTo(lead, 0.7, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1.5});
-        TweenMax.fromTo(scroll, 0.7, {css: {top:"100%",opacity:0}}, {css:{top:"88%",opacity:1},onComplete:bounce_effect});
+         //TweenMax.fromTo(introSection, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2});
+         TweenMax.to(introSection, 2, {autoAlpha:1});
+        // TweenMax.fromTo(h1, 0.7, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1});
+        // TweenMax.fromTo(lead, 0.7, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1.5});
+        // TweenMax.fromTo(scroll, 0.7, {css: {top:"100%",opacity:0}}, {css:{top:"88%",opacity:1},onComplete:bounce_effect});
         
-        function bounce_effect(){
-          TweenMax.to(scroll, 1, {y:"60", rotation: -90,  ease:Bounce.easeInOut,repeat:-1, yoyo:true})
-        }
+        // function bounce_effect(){
+        //   TweenMax.to(scroll, 1, {y:"60", rotation: -90,  ease:Bounce.easeInOut,repeat:-1, yoyo:true})
+        // }
 
         // $(window).scroll(function(){
         //   console.log("S");
@@ -238,16 +252,10 @@ function setIntroAnimation() {
 
 
 
-   
-   
-  //tl_scroll.play();
-    //tl_topcontact.play().delay(1);
-
- 
 
   
-function showPlusStart(o){
-  tl_plus_start.play();
+function showPlusStart(){
+  //tl_plus_start.play();
 }
    
 
@@ -256,9 +264,9 @@ function resizeDiv() {
   heightTopBar = $(".top-bar").height();
   hightWindow = $(window).height() - heightTopBar;
 
-  $('.webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': hightWindow + 'px'});
+  $('.boatjump .img-background, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': hightWindow + 'px'});
   if ($(window).width() <= 1056) {
-    $('.webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
+    $('.boatjump .img-background, .webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
   }
   if(hightWindow <= 1025){
     $(".intro .video-container-show a").css('margin-top','20px'); 

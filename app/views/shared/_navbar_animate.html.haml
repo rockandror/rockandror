@@ -7,8 +7,8 @@
   %input{:type => "submit"}
 
 #btn_container
-%a#btn_scroll
-  = inline_svg "svg/back.svg" , class: 'icon-menu'
+/ %a#btn_scroll
+/   = inline_svg "svg/back.svg" , class: 'icon-menu'
 %a#btn_plus
   = inline_svg "svg/plus.svg" , class: 'icon-menu'
 %a#btn_close
@@ -33,6 +33,11 @@
 
 #container_submenu
   .owl-carousel
+    %a#btn_boatjump{:href => '#'}
+      %h2 BoatJump
+      %strong Alquila barco
+      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      = image_tag "webdings/background-page.jpg"
     %a#btn_webdings{:href => '#'}
       %h2 Webdings
       %strong crea la app y la web de tu boda
@@ -80,7 +85,7 @@
 
   
 %nav.top-bar{"data-topbar" => "", :role => "navigation"}
-  %ul.title-area.small-12.medium-4.columns
+  %ul.title-area.small-12.medium-5.large-4.columns
     %li.logo
       %h1
         %a{:href => root_path}
@@ -102,6 +107,8 @@
       %li.has-dropdown{:class => active?("portfolio", params[:action])}
         %a{:href => "#"} Últimos trabajos
         %ul.dropdown
+          %li
+            = link_to 'Boatjump', '/boatjump'
           %li
             = link_to 'Webdings', '/webdings'
           %li

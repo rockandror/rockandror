@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   root 'welcome#home'
   get '/team', to: 'welcome#team', as: :team
+  get '/boatjump', to: 'welcome#boatjump', as: :boatjump
   get '/webdings', to: 'welcome#webdings', as: :webdings
   get '/eatbooking', to: 'welcome#eatbooking', as: :eatbooking
   get '/oasiscatamaran', to: 'welcome#oasiscatamaran', as: :oasiscatamaran

@@ -10,6 +10,9 @@ class WelcomeController < ApplicationController
   def services
   end
 
+  def boatjump
+  end
+
   def webdings
   end
 

@@ -105,9 +105,6 @@
   .workflow{display: none;}
 }
 
-@media only screen and (max-width: 1023px) {  
-  //.top-bar{display:none;}
-}
 
 @media only screen and (max-width: 1024px) {
   // .rockandror h3 {font-size: 1.2rem;}
@@ -163,16 +160,9 @@
 
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
-  
   .intro .video-container-show lead{
-    opacity: 0;
-    transform: scale(20);
-    // -webkit-filter: blur(5px);
-    // -moz-filter: blur(5px);
-    // -o-filter: blur(5px);
-    // -ms-filter: blur(5px);
-    // filter: blur(5px);
-
+    visibility: hidden;
+    //transform: scale(20);
   }
   .fixed{
     background: #fff;
@@ -236,6 +226,7 @@
   .participation .header{text-align: center;}
   .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
   .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
+  .top-bar .logo-horiz{width: 240px;}
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
