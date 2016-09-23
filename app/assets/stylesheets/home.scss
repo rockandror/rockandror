@@ -78,7 +78,7 @@
     height:auto;
   }
 }
-.webdings,.eatbooking,.oasis,.rockandror,.cont-introduction{
+.boatjump,.webdings,.eatbooking,.oasis,.rockandror,.cont-introduction{
   @include padding(8em, 0em, 8em, 0em);
   position: relative;
   z-index: 2;
@@ -100,7 +100,7 @@
     padding-top: 7em;
   }
   .text-left p{
-    font-weight: 100;
+    //font-weight: 100;
     padding-top: 3em;
     padding-bottom: 3em;
   }
@@ -155,9 +155,14 @@
     &:hover{ background: none; }
   }
 }
+.boatjump{
+  @extend .gradient-boatjump;
+  h2{ @include text(#fff,uppercase, null); }
+  span,p,small{color:#f1f1f1;}
+}
 .webdings{
   h3{
-  background: #cccccc;
+  //background: #cccccc;
   position: absolute;
   top: 0;
   width: 100%;

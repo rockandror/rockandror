@@ -98,7 +98,7 @@
 
 @media only screen and (max-width: 1072px) { 
   .webdingspage .arrow{display: none;}
-  .webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
+  .boatjumppage,.webdingspage,.eatbookingpage,.oasiscatamaranspage,.contactpage, .greetingspage{
     text-align: center;
     .cont-introduction{ position: relative;}
   }
@@ -178,7 +178,7 @@
     padding: 1em;
   }
   
-  .webdings,.eatbooking,.oasis{
+  .boatjump,.webdings,.eatbooking,.oasis{
     a{line-height: 4em;}
     @include padding(2em, 0em, 2em, 0em);
     h3{font-size: 3em;}
@@ -198,11 +198,11 @@
       font-size: 2rem;
     }
   }
-  .webdings a, .eatbooking a, .oasis a, .rockandror a, .cont-introduction a{
+  .boatjump a, .webdings a, .eatbooking a, .oasis a, .rockandror a, .cont-introduction a{
     display: block;
     margin-bottom: 1em;
   }
-  .webdings h2, .eatbooking h2, .oasis h2, .rockandror h2, .cont-introduction h2{
+  .boatjump h2, .webdings h2, .eatbooking h2, .oasis h2, .rockandror h2, .cont-introduction h2{
     text-align: center;
     font-size: 3em;
   }
@@ -224,8 +224,8 @@
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
   .participation .header{text-align: center;}
-  .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
-  .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
+  .boatjump h2, .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
+  .boatjump a, .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
   .top-bar .logo-horiz{width: 240px;}
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
@@ -253,7 +253,7 @@
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 730px) { 
-  .webdings,.eatbooking,.oasis{
+  .boatjump,.webdings,.eatbooking,.oasis{
     a{
       display: block;
       margin-bottom: 10px;
@@ -297,7 +297,7 @@
     padding: 1em;
     margin-top: -20%;
   }
-  .webdings h2, .eatbooking h2, .oasis h2{
+  .boatjump h2, .webdings h2, .eatbooking h2, .oasis h2{
     font-size: 2.3rem;
     text-align: center;
   }
