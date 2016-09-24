@@ -36,6 +36,7 @@
   //.top-bar{display:none;}
   .top-contact,.btn-menu{display:none;}
 
+
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -271,12 +272,13 @@
     }
   }
 }
-
-
+@media only screen and (min-width: 640px) and (max-width: 780px) { 
+  .top-bar .title-area{width: 230px;}
+  .top-bar .logo-horiz{width: 200px;}
+}
 @media only screen and (max-width: 360px) { 
   #container_submenu .owl-carousel p{padding-bottom: 0px;}
   .owl-theme .owl-controls{
-    
     margin-top: -20px;
     .owl-page span{background: white;}
   }
