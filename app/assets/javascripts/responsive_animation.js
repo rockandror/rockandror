@@ -1,10 +1,9 @@
 
 function setIntroAnimation() {
-  
-    var introSection = $('.bg-background');
-  
+    
     var
     link_url_active,
+    introSection = $('.bg-background'),
     h1 = $(".video-container-show h1"),
     lead = $(".intro lead"),
     topcontact = $(".top-contact"),
@@ -24,88 +23,101 @@ function setIntroAnimation() {
     container = $("#btn_container");
     containerSubMenu = $("#container_submenu");
 
+    tl_submenu = new TimelineLite();
+    tl_introLead = new TimelineLite();
+    tl_introSection = new TimelineLite();
+    tl_topcontact = new TimelineLite();
+    tl_scroll = new TimelineLite();
+    tl_plus = new TimelineLite();
+    tl_plus_start = new TimelineLite();
+    tl_close = new TimelineLite();
+    tl_back = new TimelineLite();
+    tl_home = new TimelineLite();
+    tl_works = new TimelineLite();
+    tl_team = new TimelineLite({onReverseComplete:reset});
+    tl_phone = new TimelineLite();
+    tl_email = new TimelineLite();
+    tlContainer = new TimelineLite();
+
+
+    tl_introLead.pause();
+    tl_introSection.pause();
+    tl_topcontact.pause();
   
+    tl_scroll.pause();
+    tl_plus_start.pause();
+    tl_plus.pause();
+    tl_close.pause();
+    tl_back.pause();
+    
+    tl_submenu.pause();
+    tl_home.pause();
+    tl_works.pause();
+    tl_team.pause();
+    tl_phone.pause();
+    tl_email.pause();
+    tlContainer.pause();
+      
+    tl_topcontact
+      .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Power4.easeInOut,delay:1})
+      .addPause();
+    // tl_scroll
+    //   .to(scroll, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:2, onComplete: bounce_effect})
+    //   .addPause();
+    tl_plus_start
+      .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
+      .addPause();
+    // tl_plus
+    //   .to(plus, 0.5, {top: "100%",opacity:0, ease: Power4.easeInOut})
+    //   .addPause();
+    tl_close
+      .to(close, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut, onComplete: show_menu})
+      .addPause();
+    tl_back
+      .to(back, 0.5, {top: "88%", opacity:1,ease: Circ.easeInOut})
+      .to(back, 1, {left: "-80%", opacity:1,ease: Circ.easeInOut})
+      .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Circ.easeInOut})
+      .addPause();
+    tl_home
+      .to(home, 0.5, {top: "5%", opacity:1, ease: Power4.easeInOut})
+      .addPause();
+    tl_works
+      .to(works, 0.5, {top: "25%", opacity:1, ease: Power4.easeInOut})
+      .addPause();
+    tl_team
+      .to(team, 0.5, {top: "45%", opacity:1, ease: Power4.easeInOut})
+      .addPause();
+    tl_phone
+      .to(phone, 0.5, {top: "65%", right: "-55%", opacity:1, ease: Power4.easeInOut})
+      .addPause();
+    tl_email
+      .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Power4.easeInOut})
+      .addPause();
+    tlContainer
+      .to(container, 0.5, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
+      .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Power4.easeInOut})
+      .addPause();
+    tl_submenu
+      .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
+      .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Power4.easeInOut, onComplete: load_owlCarousel})
+      .addPause();
+
+    $(window).bind("resize", function(){
+      screenOrientation = ($(window).width() > $(window).height())? 90 : 0;
+      if(screenOrientation==0){
+        console.log("port");
+        tl_topcontact.play();
+        tl_plus_start.play();
+      }else{
+        console.log("land");
+        tl_topcontact.reverse();
+        tl_plus_start.reverse();
+      }
+    });
+
     if (window.matchMedia('(max-width: 768px)').matches) {
       console.log("smartphone");
       //$('.top-bar').hide();
-      tl_submenu = new TimelineLite();
-      tl_introLead = new TimelineLite();
-      tl_introSection = new TimelineLite();
-      tl_topcontact = new TimelineLite();
-      tl_scroll = new TimelineLite();
-      tl_plus = new TimelineLite();
-      tl_plus_start = new TimelineLite();
-      tl_close = new TimelineLite();
-      tl_back = new TimelineLite();
-      tl_home = new TimelineLite();
-      tl_works = new TimelineLite();
-      tl_team = new TimelineLite({onReverseComplete:reset});
-      tl_phone = new TimelineLite();
-      tl_email = new TimelineLite();
-      tlContainer = new TimelineLite();
-
-      tl_introLead.pause();
-      tl_introSection.pause();
-      tl_topcontact.pause();
-    
-      tl_scroll.pause();
-      tl_plus_start.pause();
-      tl_plus.pause();
-      tl_close.pause();
-      tl_back.pause();
-      
-      tl_submenu.pause();
-      tl_home.pause();
-      tl_works.pause();
-      tl_team.pause();
-      tl_phone.pause();
-      tl_email.pause();
-      tlContainer.pause();
-    
-      tl_topcontact
-        .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Power4.easeInOut,delay:1})
-        .addPause();
-      // tl_scroll
-      //   .to(scroll, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:2, onComplete: bounce_effect})
-      //   .addPause();
-      tl_plus_start
-        .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
-        .addPause();
-      tl_plus
-        .to(plus, 0.5, {top: "100%",opacity:0, ease: Power4.easeInOut})
-        .addPause();
-      tl_close
-        .to(close, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut, onComplete: show_menu})
-        .addPause();
-      tl_back
-        .to(back, 0.5, {top: "88%", opacity:1,ease: Circ.easeInOut})
-        .to(back, 1, {left: "-80%", opacity:1,ease: Circ.easeInOut})
-        .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Circ.easeInOut})
-        .addPause();
-      tl_home
-        .to(home, 0.5, {top: "5%", opacity:1, ease: Power4.easeInOut})
-        .addPause();
-      tl_works
-        .to(works, 0.5, {top: "25%", opacity:1, ease: Power4.easeInOut})
-        .addPause();
-      tl_team
-        .to(team, 0.5, {top: "45%", opacity:1, ease: Power4.easeInOut})
-        .addPause();
-      tl_phone
-        .to(phone, 0.5, {top: "65%", right: "-55%", opacity:1, ease: Power4.easeInOut})
-        .addPause();
-      tl_email
-        .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Power4.easeInOut})
-        .addPause();
-      tlContainer
-        .to(container, 0.5, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
-        .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Power4.easeInOut})
-        .addPause();
-      tl_submenu
-        .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
-        .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Power4.easeInOut, onComplete: load_owlCarousel})
-        .addPause();
-
       // $(scroll).on('click',function(){
       //   switchButton();
       // });
@@ -284,6 +296,7 @@ function setIntroAnimation() {
 
       function loadAnimation(){
         TweenMax.to(introSection, 2, {autoAlpha:1,delay:0.2})
+        TweenMax.to(introSection, 240, {scale:3})
         TweenMax.to(lead, 2, {autoAlpha:1,delay:0.2})
         // TweenMax.fromTo(introSection, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2})
         // TweenMax.fromTo(lead, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1})
@@ -296,8 +309,11 @@ function setIntroAnimation() {
         tl_plus_start.play();
       }
 
-      
+  // if(window.innerHeight > window.innerWidth){
 
+  // }else{
+  //   tl_topcontact.reverse();
+  // }
        
 
     } else {
@@ -325,7 +341,6 @@ function setIntroAnimation() {
 
 
 
-
   
 function showPlusStart(){
   //tl_plus_start.play();
@@ -337,10 +352,10 @@ function resizeDiv() {
   heightTopBar = $(".top-bar").height();
   hightWindow = $(window).height() - heightTopBar;
 
-  $('.boatjump .img-background, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': hightWindow + 'px'});
-  if ($(window).width() <= 1056) {
-    $('.boatjump .img-background, .webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
-  }
+  // $('.boatjump .img-background, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': hightWindow + 'px'});
+  // if ($(window).width() <= 1056) {
+  //   $('.boatjump .img-background, .webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
+  // }
   if(hightWindow <= 1025){
     $(".intro .video-container-show a").css('margin-top','20px'); 
     $(".intro").css({'height': $(window).height() + 'px'});

@@ -1,6 +1,5 @@
  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-@media only screen and (max-width: 40em) {  
-  //body{border:4px solid green;}  
+@media only screen and (max-width: 40em) {
   #btn_plus{display:block;}
   
   .intro .video-container-show{
@@ -60,7 +59,6 @@
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  //body{border:3px solid orange;}
   section{
     a{
       display: block;
@@ -102,7 +100,6 @@
 }/* fix repsponsive menu */
 
 @media only screen and (min-width: 640px) and (max-width: 780px) { 
-  body{border:3px solid red;}
   .top-bar .title-area{width: 230px;}
   .top-bar .logo-horiz{width: 200px;}
 }/* fix logo width*/
@@ -128,12 +125,13 @@
         text-transform: uppercase;
         font-size: 1.3rem;
         line-height: 30px;
+        top:15%;
       }
       h1{
         font-size: 2.3rem;
         line-height: 40px;
-        padding: 1em;
-        margin-top: -20%;
+        padding: 0em;
+        margin: 0;
       }
     }
   }
