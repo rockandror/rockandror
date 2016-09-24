@@ -75,3 +75,14 @@ input[type="text"]{height: 60px;outline: none;}
     }
   } 
 }
+
+@mixin background-setup($border, $size, $repat, $position, $height) {
+  .img-background{
+    position: relative;
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    overflow: hidden;
+    height: 550px;
+  }
+}

@@ -22,26 +22,28 @@
 }
 .boatjumppage{
  text-align: center;
-  .img-background{ background: asset_url('webdings/background-page.jpg'); }
+  .img-background{ background: asset_url('boatjump/background-page.jpg'); }
   .cont-introduction{
-    background:#fff;
-    position: relative;
+    @extend .gradient-boatjump;
+    h2{ @include text(#fff,uppercase, null); }
+    color:white;
   }
   .brand-design{
     padding: 6em 3em;
-    background: #3b3b3b;
-    position: relative;
+    @extend .gradient-clear;
+    
     .content{
-      h2{ color:#fff;}
+      h2{ color:$steel;}
       svg{
-        width: 200px;
+        fill:rgb(0,122,163);
+        width: 100%;
         height: auto;
         padding: 3rem 0rem;
       }
       p{
         font-size: 1.3rem;
         text-align: justify;
-        color:#fff;
+        color:$steel;
       }
     }
   }
@@ -332,12 +334,12 @@
 }
 .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage,.greetingspage{
   .img-background{
-    position: relative;
+  //  position: relative;
     background-size: cover;
     background-repeat:   no-repeat;
     background-position: center center; 
-    overflow: hidden;
-    height: 900px;
+    //overflow: hidden;
+    height: 550px;
   }
   .row{max-width: 100%;}
   h2{
