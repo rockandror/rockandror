@@ -100,21 +100,10 @@
     padding-top: 7em;
   }
   .text-left p{
-    //font-weight: 100;
     padding-top: 3em;
     padding-bottom: 3em;
   }
-  a{
-    display: inline-block;
-    border:1px solid $secondary-color;
-    padding: 1em;
-    text-transform: uppercase;
-    color: $secondary-color;
-    &:hover{
-     color:#fff;
-     background: $secondary-color;
-    }
-  } 
+ @include btn-ror(transparent, $secondary-color, white);
 }
 .rockandror{
   background: #fff;
@@ -150,10 +139,7 @@
     }
   }
   i{font-size: 1.3em;}
-  a{
-    border: none;
-    &:hover{ background: none; }
-  }
+  @include btn-ror(transparent, transparent, $secondary-color);
 }
 .boatjump{
   @extend .gradient-boatjump;

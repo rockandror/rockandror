@@ -60,3 +60,18 @@ input[type="text"]{height: 60px;outline: none;}
     pointer-events: none;
   } 
 }
+
+@mixin btn-ror($border, $bg, $color) {
+  a{
+    border:1px solid $border;
+    display: inline-block;
+    padding: 1em;
+    text-transform: uppercase;
+    background: $bg; 
+    color:$color;
+    &:hover{
+     color:$color;
+     background: darken($bg,10%);
+    }
+  } 
+}
