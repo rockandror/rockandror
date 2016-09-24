@@ -78,7 +78,9 @@ function setIntroAnimation() {
         .to(close, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut, onComplete: show_menu})
         .addPause();
       tl_back
-        .to(back, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut})
+        .to(back, 0.5, {top: "88%", opacity:1,ease: Circ.easeInOut})
+        .to(back, 1, {left: "-80%", opacity:1,ease: Circ.easeInOut})
+        .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Circ.easeInOut})
         .addPause();
       tl_home
         .to(home, 0.5, {top: "5%", opacity:1, ease: Power4.easeInOut})
@@ -117,6 +119,8 @@ function setIntroAnimation() {
       });
 
       $(back).on('click',function(){
+       TweenMax.to(back, 0.6, { opacity:0, ease: Power4.easeInOut});
+       tl_back.pause();
         close_submenu();
       });
 
@@ -176,22 +180,91 @@ function setIntroAnimation() {
       function open_submenu(){
         tl_submenu.play();
         tl_close.reverse();
-        tl_back.play();
+        //tl_back.play();
       }
       function load_owlCarousel(){
-        $(".owl-carousel").owlCarousel();
+      
         TweenLite.to($(".owl-carousel"), 0.5, {y:0, opacity:1, ease: Power4.easeInOut}); 
+
+          $(".owl-carousel").owlCarousel({
+
+          // itemsCustom : false,
+          // itemsDesktop : [1199,4],
+          // itemsDesktopSmall : [980,3],
+          // itemsTablet: [768,2],
+          // itemsTabletSmall: false,
+          // itemsMobile : [479,1],
+          // singleItem : false,
+          // itemsScaleUp : false,
+       
+          // //Basic Speeds
+          // slideSpeed : 200,
+          // paginationSpeed : 800,
+          // rewindSpeed : 1000,
+      
+          // // Navigation
+          navigation : true,
+          navigationText : ["prev","next"],
+          rewindNav : true,
+          // scrollPerPage : false,
+       
+          // //Pagination
+          pagination : false
+//          paginationNumbers: true,
+       
+          // // Responsive 
+          // responsive: true,
+          // responsiveRefreshRate : 200,
+          // responsiveBaseWidth: window,
+       
+          // // CSS Styles
+          // baseClass : "owl-carousel",
+          // theme : "owl-theme",
+       
+          // //Lazy load
+          // lazyLoad : false,
+          // lazyFollow : true,
+          // lazyEffect : "fade",
+       
+          // //Auto height
+          // autoHeight : false,
+       
+          
+          // //Mouse Events
+          // dragBeforeAnimFinish : true,
+          // mouseDrag : true,
+          // touchDrag : true,
+       
+          // //Transitions
+          // transitionStyle : false,
+       
+          // // Other
+          // addClassActive : false,
+       
+          // //Callbacks
+          // beforeUpdate : false,
+          // afterUpdate : false,
+          // beforeInit: false, 
+          // afterInit: false, 
+          // beforeMove: false, 
+          // afterMove: false,
+          // afterAction: false,
+          // startDragging : false
+        });
+
+        tl_back.play();
       }
+    
+
       function close_submenu(link_url_active){
         TweenLite.to($(".owl-carousel"), 0.5, {y: -200, opacity:0, ease: Power4.easeInOut});
+        
         if(link_url_active){
           tl_submenu.reverse();
-          tl_back.reverse();  
           close_menu();
           console.log("si"+link_url_active);
         }else{
           tl_submenu.reverse();
-          tl_back.reverse();
           tl_close.play(); 
           link_url_active=""; 
           console.log("no"+link_url_active);

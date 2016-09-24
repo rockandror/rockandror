@@ -11,6 +11,8 @@ var ready;
 ready = function() {
   $(document).foundation();
   init();
+
+   
 };
 
 $(document).on('page:update', ready);

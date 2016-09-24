@@ -139,7 +139,7 @@
     }
   }
   i{font-size: 1.3em;}
-  @include btn-ror($secondary-color, transparent, white);
+  @include btn-ror(transparent, transparent, $secondary-color);
 }
 .boatjump{
   @extend .gradient-boatjump;
