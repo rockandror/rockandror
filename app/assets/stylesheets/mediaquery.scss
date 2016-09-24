@@ -10,8 +10,9 @@
 
 @media only screen and (max-width: 40em) {
   
-  .top-bar{display: none;}
+  //.top-bar{display: none;}
   #btn_plus{display:block;}
+  //.top-bar{display:none;}
   .btn-menu{
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -32,17 +33,18 @@
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
-  
+  //.top-bar{display:none;}
   .top-contact,.btn-menu{display:none;}
 
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  body{border:4px solid green;}
+  #btn_plus{display:none;}
+  // .top-bar .title-area{width: 160px;}
+  // .top-bar .logo-horiz{width: 160px;}
   .rockandror h3 {font-size: 1.2rem;}
   .rockandror .inline-list li{padding: 0em;}
   .top-contact{
-    border:1px solid red;
     position: fixed;
     top: 0px;
     background: black;
@@ -63,8 +65,15 @@
         margin-top: 16px;
      }
   }
+  .participation .header{text-align: center;}
+  .boatjump h2, .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
+  .boatjump a, .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
+  
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
+@media only screen and (max-width: 703px) { 
+  #btn_plus{display:block;}
+}
 // Large screens
 @media only screen and (min-width: 64.063em) { 
     #btn_plus{display:none;}
@@ -222,13 +231,14 @@
    .logo{width: 90%;}
   } 
 }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-  .participation .header{text-align: center;}
-  .boatjump h2, .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
-  .boatjump a, .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
-  .top-bar .logo-horiz{width: 240px;}
 
-} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+// @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+//   .participation .header{text-align: center;}
+//   .boatjump h2, .webdings h2, .eatbooking h2, .oasis h2{ font-size: 2.3rem;}
+//   .boatjump a, .webdings a, .eatbooking a, .oasis a{line-height: 3em;}
+//   .top-bar .logo-horiz{width: 240px;}
+
+// } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
   
@@ -261,19 +271,9 @@
     }
   }
 }
-/*senen*/
-@media only screen and (max-width: 764px) { 
- // .top-contact .logo-smartphone{
- //    height: 24px;
- //    margin-top: 13px;
- //  }
-}
+
 
 @media only screen and (max-width: 360px) { 
-  // .top-contact .logo-smartphone{
-  //   height: 24px;
-  //   margin-top: 13px;
-  // }
   .intro .bg-background{position: relative;}
   .intro .video-container-show h1{
     font-size: 1.7rem;

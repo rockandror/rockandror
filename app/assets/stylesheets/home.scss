@@ -139,7 +139,7 @@
     }
   }
   i{font-size: 1.3em;}
-  @include btn-ror(transparent, transparent, $secondary-color);
+  @include btn-ror($secondary-color, transparent, white);
 }
 .boatjump{
   @extend .gradient-boatjump;
@@ -148,6 +148,7 @@
 }
 .webdings{
   h3{
+  //background: #cccccc;
   position: absolute;
   top: 0;
   width: 100%;

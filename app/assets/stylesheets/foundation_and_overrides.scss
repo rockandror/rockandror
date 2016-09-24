@@ -1477,7 +1477,7 @@ $topbar-dropdown-toggle-color: $primary-color;
 
 //$topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
 
-$topbar-breakpoint: (768px) !default; // Change to 9999px for always mobile layout
+$topbar-breakpoint: (641px) !default; // Change to 9999px for always mobile layout
 $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 // Top-bar input styles
