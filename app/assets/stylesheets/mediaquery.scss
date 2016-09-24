@@ -14,7 +14,7 @@
 
   section{
     a{line-height: 4em;}
-    @include padding(2em, 0em, 2em, 0em);
+    padding:2em 0em 2em 0em;
     h3{font-size: 3em;}
     h3,small,span,p,a{text-align: center;}
     h2{

@@ -25,12 +25,14 @@
   .img-background{ background: asset_url('boatjump/background-page.jpg'); }
   .cont-introduction{
     @extend .gradient-boatjump;
-    h2{ @include text(#fff,uppercase, null); }
+    h2{
+      @include text(#fff,uppercase, null,null);
+    }
     color:white;
   }
   .brand-design{
     padding: 6em 3em;
-    @extend .gradient-clear;
+    @extend .gradient-white;
     
     .content{
       h2{ color:$steel;}
@@ -319,7 +321,7 @@
   }
 }
 .contactpage{
-  @include padding(8em, 0em, 8em, 0em);
+  padding:8em 0em 8em 0em;
   background: #fafafa;
   p{
     font-size: 1.3rem;
