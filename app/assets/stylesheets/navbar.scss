@@ -1,11 +1,21 @@
-.top-bar-section li.active:not(.has-form) a:not(.button){background: transparent;}
-.top-bar-section li.active:not(.has-form) a:not(.button):hover{background: transparent;}
-.top-bar-section ul li:hover:not(.has-form) > a{background: transparent;}
-.top-bar-section li:not(.has-form) a:not(.button):hover{background: transparent;}
-.top-bar{
-  visibility: hidden;
-  margin-top: -120px;
+.top-bar-section li.active:not(.has-form) a:not(.button),
+.top-bar-section li.active:not(.has-form) a:not(.button):hover,
+.top-bar-section ul li:hover:not(.has-form) > a,
+.top-bar-section li:not(.has-form) a:not(.button):hover
+{background: transparent;}
+
+
+.top-bar-section li.active:not(.has-form) a:not(.button){
+    line-height: 1.6875rem;
+    margin-top: 25px;
 }
+
+.top-bar .top-bar-section .right li:not(.has-form) a:not(.button){
+  line-height: 3rem;
+  border: 1px solid #00b0ea;
+  margin-top: 15px;
+}
+
 .top-contact{
   background: #333333;
   transition: all 0.5s ease;
@@ -60,15 +70,23 @@
     transform: translate(0,-100%);
   }
 }
+
 .top-bar{
+  visibility: hidden;
+  margin-top: -120px;
   z-index: 3;
-  height: 120px;
+  height: 100px;
   border-bottom:2px solid #f2f2f2;
   background: white;
   padding-left: 2em;
   padding-right: 2em;
-  ul{ padding-top: 1.2em; }
-  .logo{ text-align: left; }
+  ul{
+    padding-top: 1.2em;
+  }
+  .logo{
+    text-align: left; 
+    max-height: 75px;
+  }
   .logo-center{
     fill:#9b9b9b;
     margin: 0px auto;
@@ -81,9 +99,9 @@
     fill:#9b9b9b;
     margin-top: 9px;
   }
-
   .top-bar-section{
     ul{
+      //border:1px solid red;
       li a{text-transform: uppercase;}
       li.active{
         border-bottom: 1px solid $secondary-color;
@@ -92,7 +110,7 @@
   }
   .top-bar-section{
     .right{ 
-      padding-top: 2.3em;
+      //padding-top: 2.3em;
       strong{display: block;}
       a{
         font-weight: 300;
@@ -100,8 +118,7 @@
       }
       li:not(.has-form) a:not(.button){
         color:$secondary-color;
-        padding: .6em;
-        line-height: 30px;
+        padding: 0em .6em;
         border: 1px solid $secondary-color;
         &:hover{
           background: $secondary-color;

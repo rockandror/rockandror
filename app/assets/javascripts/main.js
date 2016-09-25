@@ -5,6 +5,7 @@ var hightWindow = $(window).height() - heightTopBar;
 function init(){
   resizeDiv();
   setIntroAnimation();
+  scrollSection();
 }
 
 $.fn.isOnScreen = function(){    
@@ -44,6 +45,24 @@ function resizeDiv() {
     $(".intro .video-container-show a").css('margin-top','20px'); 
     $(".intro").css({'height': $(window).height() + 'px'});
   }
+}
+
+function scrollSection(){
+  $('a[href*=#scroll_to_]:not([href=#])').click(function() {
+    $( this ).parent().addClass('active');
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        if($(window).width() <= 768){
+          $('html,body').animate({ scrollTop:target.offset().top }, 700);  
+        }else{
+          $('html,body').animate({ scrollTop:target.offset().top }, 700);         
+        }
+        return false;         
+      }
+    }
+  });
 }
 
 $(window).on('resize', function(){

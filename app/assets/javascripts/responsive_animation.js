@@ -1,13 +1,14 @@
 
 function setIntroAnimation() {
-    
-    var
+
+  var
     link_url_active,
     topBar = $('.top-bar'),
     introSection = $('.bg-background'),
     h1 = $(".video-container-show h1"),
     lead = $(".intro lead"),
     topcontact = $(".top-contact"),
+    btnDiscover = $("#btn-discover"),
     scroll = $("#btn_scroll"),
     plus = $("#btn_plus"),
     close = $("#btn_close"),
@@ -25,28 +26,37 @@ function setIntroAnimation() {
     containerSubMenu = $("#container_submenu");
 
   
-    $(window).bind("resize", function(){
-      if ($(window).width() >= 768) {
-        screenOrientation = ($(window).width() > $(window).height())? 90 : 0;
-        if(screenOrientation==0){
-          console.log("port");
-          TweenMax.to(topcontact, 0.5, {top: "0%",opacity:1, ease:Cubic.easeIn})
-          TweenMax.to(plus, 0.5, {top: "88%",opacity:1  , ease:Cubic.easeIn})
-        }else{
-          console.log("land");
-          TweenMax.to(topcontact, 0.5, {top: "-50%",opacity:1, ease:Cubic.easeIn})
-          TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Cubic.easeIn})
-        }
+  $(window).bind("resize", function(){
+    if ($(window).width() >= 768) {
+      screenOrientation = ($(window).width() > $(window).height())? 90 : 0;
+      if(screenOrientation==0){
+        console.log("port");
+        TweenMax.to(topcontact, 0.5, {top: "0%",opacity:1, ease:Back.easeInOut})
+        TweenMax.to(plus, 0.5, {top: "88%",opacity:1  , ease:Back.easeInOut})
+      }else{
+        console.log("land");
+        TweenMax.to(topcontact, 0.5, {top: "-50%",opacity:1, ease:Back.easeInOut})
+        TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Back.easeInOut})
       }
-    });
- 
-    if (window.matchMedia('(max-width: 768px)').matches) {
-      $('.top-bar').hide();
-      console.log("smartphone");
+    }
+  });
+
+  if($('.intro').length){
+    TweenMax.to(introSection, 1, {autoAlpha:1,ease:Back.easeInOut,delay:1})
+    TweenMax.to(h1, 1, {autoAlpha:1, ease:Back.easeInOut,delay:2})
+    TweenMax.to(lead, 1, {autoAlpha:1, ease:Back.easeInOut,delay:3})
+    TweenMax.to(btnDiscover, 1, {autoAlpha:1, ease:Linear.easeInOut,delay:4})
+    TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Back.easeInOut,delay:5})
+  }else{
+    TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Back.easeInOut})  
+  }
+  
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    //$('.top-bar').hide();
+    console.log("smartphone");
 
     tl_submenu = new TimelineMax();
     tl_introLead = new TimelineMax();
-    tl_introSection = new TimelineMax();
     tl_topcontact = new TimelineMax();
     tl_scroll = new TimelineMax();
     tl_plus = new TimelineMax();
@@ -60,8 +70,7 @@ function setIntroAnimation() {
     tl_email = new TimelineMax();
     tlContainer = new TimelineMax();
 
-    tl_introLead.pause();
-    tl_introSection.pause();
+    tl_introLead.pause();    
     tl_topcontact.pause();
     tl_scroll.pause();
     tl_plus_start.pause();
@@ -75,96 +84,88 @@ function setIntroAnimation() {
     tl_phone.pause();
     tl_email.pause();
     tlContainer.pause();
-      
+
     tl_topcontact
-      .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Power4.easeInOut,delay:1})
-      .addPause();
-    // tl_scroll
-    //   .to(scroll, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:2, onComplete: bounce_effect})
-    //   .addPause();
+    .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Back.easeInOut,delay:1})
+    .addPause();
     tl_plus_start
-      .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
-      .addPause();
+    .to(plus, 0.5, {top: "88%",opacity:1  , ease: Back.easeInOut,delay:1})
+    .addPause();
     tl_plus
-      .to(plus, 0.5, {top: "100%",opacity:0, ease: Power4.easeInOut})
-      .addPause();
+    .to(plus, 0.5, {top: "100%",opacity:0, ease: Back.easeInOut})
+    .addPause();
     tl_close
-      .to(close, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut, onComplete: show_menu})
-      .addPause();
+    .to(close, 0.5, {top: "88%", opacity:1,ease: Back.easeInOut, onComplete: show_menu})
+    .addPause();
     tl_back
-      .to(back, 0.5, {top: "88%", opacity:1,ease: Circ.easeInOut})
-      .to(back, 1, {left: "-80%", opacity:1,ease: Circ.easeInOut})
-      .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Circ.easeInOut})
-      .addPause();
+    .to(back, 0.5, {top: "88%", opacity:1,ease: Back.easeInOut})
+    .to(back, 1, {left: "-80%", opacity:1,ease: Back.easeInOut})
+    .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Back.easeInOut})
+    .addPause();
     tl_home
-      .to(home, 0.5, {top: "5%", opacity:1, ease: Power4.easeInOut})
-      .addPause();
+    .to(home, 0.5, {top: "5%", opacity:1, ease: Back.easeInOut})
+    .addPause();
     tl_works
-      .to(works, 0.5, {top: "25%", opacity:1, ease: Power4.easeInOut})
-      .addPause();
+    .to(works, 0.5, {top: "25%", opacity:1, ease: Back.easeInOut})
+    .addPause();
     tl_team
-      .to(team, 0.5, {top: "45%", opacity:1, ease: Power4.easeInOut})
-      .addPause();
+    .to(team, 0.5, {top: "45%", opacity:1, ease: Back.easeInOut})
+    .addPause();
     tl_phone
-      .to(phone, 0.5, {top: "65%", right: "-55%", opacity:1, ease: Power4.easeInOut})
-      .addPause();
+    .to(phone, 0.5, {top: "65%", right: "-55%", opacity:1, ease: Back.easeInOut})
+    .addPause();
     tl_email
-      .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Power4.easeInOut})
-      .addPause();
+    .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Back.easeInOut})
+    .addPause();
     tlContainer
-      .to(container, 0.5, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
-      .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Power4.easeInOut})
-      .addPause();
+    .to(container, 0.5, {visibility: "visible", opacity:1, ease: Back.easeInOut})
+    .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Back.easeInOut})
+    .addPause();
     tl_submenu
-      .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Power4.easeInOut})
-      .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Power4.easeInOut, onComplete: load_owlCarousel})
-      .addPause();
+    .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Back.easeInOut})
+    .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Back.easeInOut, onComplete: load_owlCarousel})
+    .addPause();
 
-      //$('.top-bar').hide();
-      // $(scroll).on('click',function(){
-      //   switchButton();
-      // });
+    $(plus).on('click',function(){
+      switchButton();
+    });
 
-      $(plus).on('click',function(){
-        switchButton();
-      });
+    $(close).on('click',function(){
+      close_menu();  
+    });
 
-      $(close).on('click',function(){
-        close_menu();  
-      });
+    $(back).on('click',function(){
+     TweenMax.to(back, 0.6, { opacity:0, ease: Back.easeInOut});
+     tl_back.pause();
+     close_submenu();
+   });
 
-      $(back).on('click',function(){
-       TweenMax.to(back, 0.6, { opacity:0, ease: Power4.easeInOut});
-       tl_back.pause();
-        close_submenu();
-      });
+    $(works).on('click',function(){
+      open_submenu();
+    });
 
-      $(works).on('click',function(){
-        open_submenu();
-      });
+    $(home).on('click',function(link_url_active){
+      link_url_active = "/";
+      close_submenu(link_url_active);
+    });
 
-      $(home).on('click',function(link_url_active){
-        link_url_active = "/";
-        close_submenu(link_url_active);
-      });
-      
-      $(boatjump).on('click',function(){
-        link_url_active = "/boatjump";
-        close_submenu(link_url_active);
-      });
-      $(webdings).on('click',function(){
-        link_url_active = "/webdings";
-        close_submenu(link_url_active);
-      });
-      $(eatbooking).on('click',function(){
-        link_url_active = "/eatbooking";
-        close_submenu(link_url_active);
-      });
-      $(oasiscatamaran).on('click',function(){
-        link_url_active = "/oasiscatamaran";
-        close_submenu(link_url_active);
-      });  
-      function bounce_effect(){
+    $(boatjump).on('click',function(){
+      link_url_active = "/boatjump";
+      close_submenu(link_url_active);
+    });
+    $(webdings).on('click',function(){
+      link_url_active = "/webdings";
+      close_submenu(link_url_active);
+    });
+    $(eatbooking).on('click',function(){
+      link_url_active = "/eatbooking";
+      close_submenu(link_url_active);
+    });
+    $(oasiscatamaran).on('click',function(){
+      link_url_active = "/oasiscatamaran";
+      close_submenu(link_url_active);
+    });  
+    function bounce_effect(){
         //tl_scroll.to(scroll, 1, {y:"60", rotation: -90,  ease:Bounce.easeInOut,repeat:-1, yoyo:true})
       }
       // function firstSwitchButton(){
@@ -176,7 +177,7 @@ function setIntroAnimation() {
         tl_close.play();
       }
       function show_menu(){
-        tl_introSection.play();
+        //tl_introHome.play();
         tl_topcontact.reverse();
         tlContainer.play();
         tl_home.play();
@@ -197,11 +198,12 @@ function setIntroAnimation() {
         tl_close.reverse();
         //tl_back.play();
       }
-      function load_owlCarousel(){
-      
-        TweenLite.to($(".owl-carousel"), 0.5, {y:0, opacity:1, ease: Power4.easeInOut}); 
 
-          $(".owl-carousel").owlCarousel({
+      function load_owlCarousel(){
+
+        TweenLite.to($(".owl-carousel"), 0.5, {y:0, opacity:1, ease: Back.easeInOut}); 
+
+        $(".owl-carousel").owlCarousel({
 
           itemsCustom : false,
           itemsDesktop : [1199,4],
@@ -211,51 +213,51 @@ function setIntroAnimation() {
           itemsMobile : [479,1],
           singleItem : false,
           itemsScaleUp : false,
-       
+
           // //Basic Speeds
           // slideSpeed : 200,
           // paginationSpeed : 800,
           // rewindSpeed : 1000,
-      
+
           // // Navigation
           navigation : true,
           navigationText : ["prev","next"],
           rewindNav : true,
           // scrollPerPage : false,
-       
+
           // //Pagination
           pagination : false
 //          paginationNumbers: true,
-       
+
           // // Responsive 
           // responsive: true,
           // responsiveRefreshRate : 200,
           // responsiveBaseWidth: window,
-       
+
           // // CSS Styles
           // baseClass : "owl-carousel",
           // theme : "owl-theme",
-       
+
           // //Lazy load
           // lazyLoad : false,
           // lazyFollow : true,
           // lazyEffect : "fade",
-       
+
           // //Auto height
           // autoHeight : false,
-       
+
           
           // //Mouse Events
           // dragBeforeAnimFinish : true,
           // mouseDrag : true,
           // touchDrag : true,
-       
+
           // //Transitions
           // transitionStyle : false,
-       
+
           // // Other
           // addClassActive : false,
-       
+
           // //Callbacks
           // beforeUpdate : false,
           // afterUpdate : false,
@@ -269,10 +271,9 @@ function setIntroAnimation() {
 
         tl_back.play();
       }
-    
 
       function close_submenu(link_url_active){
-        TweenLite.to($(".owl-carousel"), 0.5, {y: -200, opacity:0, ease: Power4.easeInOut});
+        TweenLite.to($(".owl-carousel"), 0.5, {y: -200, opacity:0, ease: Back.easeInOut});
         
         if(link_url_active){
           tl_submenu.reverse();
@@ -285,33 +286,21 @@ function setIntroAnimation() {
           console.log("no"+link_url_active);
         }
       }
+      
       function reset(){
         tl_plus.reverse();
         tl_close.reverse();
         tlContainer.reverse();
-        tl_introSection.reverse();
         tl_topcontact.play();
         if(link_url_active){
          location.replace(link_url_active);
-        }
-      }
-      
-      tl_topcontact.play();
-      tl_plus_start.play();
-      
-    } else {
-        console.log("Desktop");
-        TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Cubic.easeIn,delay:3})
-    }
+       }
+     }
 
-    TweenMax.to(introSection, 2, {autoAlpha:1,delay:0.2,ease:Cubic.easeIn});
-    //TweenMax.to(introSection, 60, {scale:3, ease:Cubic.easeIn});
-    TweenMax.to(h1, 1, {autoAlpha:1, ease:Cubic.easeIn});
-    TweenMax.to(lead, 1, {autoAlpha:1, ease:Cubic.easeIn,delay:1});
-    
+     tl_topcontact.play();
+     tl_plus_start.play();
+
+   } else {
+    console.log("Desktop");
   }
-
-  
-function showPlusStart(){
-  //tl_plus_start.play();
 }
