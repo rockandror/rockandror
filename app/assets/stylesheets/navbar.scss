@@ -2,7 +2,10 @@
 .top-bar-section li.active:not(.has-form) a:not(.button):hover{background: transparent;}
 .top-bar-section ul li:hover:not(.has-form) > a{background: transparent;}
 .top-bar-section li:not(.has-form) a:not(.button):hover{background: transparent;}
-
+.top-bar{
+  visibility: hidden;
+  margin-top: -120px;
+}
 .top-contact{
   background: #333333;
   transition: all 0.5s ease;

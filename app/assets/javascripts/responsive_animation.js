@@ -3,6 +3,7 @@ function setIntroAnimation() {
     
     var
     link_url_active,
+    topBar = $('.top-bar'),
     introSection = $('.bg-background'),
     h1 = $(".video-container-show h1"),
     lead = $(".intro lead"),
@@ -23,33 +24,50 @@ function setIntroAnimation() {
     container = $("#btn_container");
     containerSubMenu = $("#container_submenu");
 
-    tl_submenu = new TimelineLite();
-    tl_introLead = new TimelineLite();
-    tl_introSection = new TimelineLite();
-    tl_topcontact = new TimelineLite();
-    tl_scroll = new TimelineLite();
-    tl_plus = new TimelineLite();
-    tl_plus_start = new TimelineLite();
-    tl_close = new TimelineLite();
-    tl_back = new TimelineLite();
-    tl_home = new TimelineLite();
-    tl_works = new TimelineLite();
-    tl_team = new TimelineLite({onReverseComplete:reset});
-    tl_phone = new TimelineLite();
-    tl_email = new TimelineLite();
-    tlContainer = new TimelineLite();
+  
+    $(window).bind("resize", function(){
+      if ($(window).width() >= 768) {
+        screenOrientation = ($(window).width() > $(window).height())? 90 : 0;
+        if(screenOrientation==0){
+          console.log("port");
+          TweenMax.to(topcontact, 0.5, {top: "0%",opacity:1, ease:Cubic.easeIn})
+          TweenMax.to(plus, 0.5, {top: "88%",opacity:1  , ease:Cubic.easeIn})
+        }else{
+          console.log("land");
+          TweenMax.to(topcontact, 0.5, {top: "-50%",opacity:1, ease:Cubic.easeIn})
+          TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Cubic.easeIn})
+        }
+      }
+    });
+ 
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      $('.top-bar').hide();
+      console.log("smartphone");
 
+    tl_submenu = new TimelineMax();
+    tl_introLead = new TimelineMax();
+    tl_introSection = new TimelineMax();
+    tl_topcontact = new TimelineMax();
+    tl_scroll = new TimelineMax();
+    tl_plus = new TimelineMax();
+    tl_plus_start = new TimelineMax();
+    tl_close = new TimelineMax();
+    tl_back = new TimelineMax();
+    tl_home = new TimelineMax();
+    tl_works = new TimelineMax();
+    tl_team = new TimelineMax({onReverseComplete:reset});
+    tl_phone = new TimelineMax();
+    tl_email = new TimelineMax();
+    tlContainer = new TimelineMax();
 
     tl_introLead.pause();
     tl_introSection.pause();
     tl_topcontact.pause();
-  
     tl_scroll.pause();
     tl_plus_start.pause();
     tl_plus.pause();
     tl_close.pause();
     tl_back.pause();
-    
     tl_submenu.pause();
     tl_home.pause();
     tl_works.pause();
@@ -67,9 +85,9 @@ function setIntroAnimation() {
     tl_plus_start
       .to(plus, 0.5, {top: "88%",opacity:1  , ease: Power4.easeInOut,delay:1})
       .addPause();
-    // tl_plus
-    //   .to(plus, 0.5, {top: "100%",opacity:0, ease: Power4.easeInOut})
-    //   .addPause();
+    tl_plus
+      .to(plus, 0.5, {top: "100%",opacity:0, ease: Power4.easeInOut})
+      .addPause();
     tl_close
       .to(close, 0.5, {top: "88%", opacity:1,ease: Power4.easeInOut, onComplete: show_menu})
       .addPause();
@@ -102,21 +120,6 @@ function setIntroAnimation() {
       .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Power4.easeInOut, onComplete: load_owlCarousel})
       .addPause();
 
-    $(window).bind("resize", function(){
-      screenOrientation = ($(window).width() > $(window).height())? 90 : 0;
-      if(screenOrientation==0){
-        console.log("port");
-        tl_topcontact.play();
-        tl_plus_start.play();
-      }else{
-        console.log("land");
-        tl_topcontact.reverse();
-        tl_plus_start.reverse();
-      }
-    });
-
-    if (window.matchMedia('(max-width: 768px)').matches) {
-      console.log("smartphone");
       //$('.top-bar').hide();
       // $(scroll).on('click',function(){
       //   switchButton();
@@ -292,72 +295,23 @@ function setIntroAnimation() {
          location.replace(link_url_active);
         }
       }
-      loadAnimation();
-
-      function loadAnimation(){
-        TweenMax.to(introSection, 2, {autoAlpha:1,delay:0.2})
-        TweenMax.to(introSection, 240, {scale:3})
-        TweenMax.to(lead, 2, {autoAlpha:1,delay:0.2})
-        // TweenMax.fromTo(introSection, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2})
-        // TweenMax.fromTo(lead, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1})
-        //tl_introLead.to(lead, 2, {scale:1, opacity:1, ease: Power4.easeInOut,delay:1})
-        //tl_introLead.play();
-        //tl_introSection.play();
-        tl_topcontact.play();
-        //tl_scroll.play();
-        //showPlusStart.play();
-        tl_plus_start.play();
-      }
-
-  // if(window.innerHeight > window.innerWidth){
-
-  // }else{
-  //   tl_topcontact.reverse();
-  // }
-       
-
+      
+      tl_topcontact.play();
+      tl_plus_start.play();
+      
     } else {
         console.log("Desktop");
-         //TweenMax.fromTo(introSection, 2, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:0.2});
-         TweenMax.to(introSection, 2, {autoAlpha:1});
-        // TweenMax.fromTo(h1, 0.7, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1});
-        // TweenMax.fromTo(lead, 0.7, {css: {scale:3,opacity:0}}, {css:{scale:1,opacity:1},delay:1.5});
-        // TweenMax.fromTo(scroll, 0.7, {css: {top:"100%",opacity:0}}, {css:{top:"88%",opacity:1},onComplete:bounce_effect});
-        
-        // function bounce_effect(){
-        //   TweenMax.to(scroll, 1, {y:"60", rotation: -90,  ease:Bounce.easeInOut,repeat:-1, yoyo:true})
-        // }
-
-        // $(window).scroll(function(){
-        //   console.log("S");
-        //   TweenMax.fromTo(scroll, 0.7, {css: {top:"88%",opacity:1}}, {css:{top:"1000%"},onComplete:removeButton}); 
-        // });  
-
-        // function removeButton(){
-        //   scroll.remove();
-        // }
+        TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Cubic.easeIn,delay:3})
     }
+
+    TweenMax.to(introSection, 2, {autoAlpha:1,delay:0.2,ease:Cubic.easeIn});
+    //TweenMax.to(introSection, 60, {scale:3, ease:Cubic.easeIn});
+    TweenMax.to(h1, 1, {autoAlpha:1, ease:Cubic.easeIn});
+    TweenMax.to(lead, 1, {autoAlpha:1, ease:Cubic.easeIn,delay:1});
+    
   }
-
-
 
   
 function showPlusStart(){
   //tl_plus_start.play();
-}
-   
-
-function resizeDiv() {  
-  navHeight = $("nav").height();
-  heightTopBar = $(".top-bar").height();
-  hightWindow = $(window).height() - heightTopBar;
-
-  // $('.boatjump .img-background, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': hightWindow + 'px'});
-  // if ($(window).width() <= 1056) {
-  //   $('.boatjump .img-background, .webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
-  // }
-  if(hightWindow <= 1025){
-    $(".intro .video-container-show a").css('margin-top','20px'); 
-    $(".intro").css({'height': $(window).height() + 'px'});
-  }
 }

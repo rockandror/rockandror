@@ -20,6 +20,7 @@
       @include text(white, uppercase, 4rem,center);
       font-weight: 700;
       text-shadow: 1px 1px  #000;
+      visibility: hidden;
     }
     lead{
       @include text(white, uppercase, 1.6rem,center);
@@ -27,6 +28,7 @@
       letter-spacing: .2rem;
       margin-top: 1em;
       font-weight: 300;
+      visibility: hidden;
     }
   }
 }
