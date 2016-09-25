@@ -93,8 +93,16 @@
 }
 @media only screen and (max-width: 767px) { 
   .top-bar{display: none;}
-  .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage{
-  margin-top: 50px;
+  .contactpage{
+    margin-top: 0px;
+  }
+  .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage{
+    margin-top: 0px;
+    .cont-introduction{
+      h2{
+        margin-top: 50px;
+      }
+    }
   }
 }
 
@@ -135,6 +143,14 @@
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
     .top-bar{display: none;}
+    .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage{
+      margin-top: 0px;
+      .cont-introduction{
+        h2{
+          margin-top: 50px;
+        }
+      }
+    }
 }
 
 @media only screen and (max-width: 703px) { 
@@ -147,9 +163,19 @@
 // }/* fix logo width*/
 
 @media only screen and (max-width: 360px) { 
-  #container_submenu .owl-carousel p{padding-bottom: 0px;}
+  #container_submenu .owl-carousel p{
+    padding-bottom: 0px;
+    min-height: 108px;
+  }
+
   .owl-theme .owl-controls{
-    margin-top: -20px;
+    margin-top: -50px;
+    .owl-buttons div{
+      background: white;
+      color:$secondary-color;
+      zoom:1.2;
+      opacity: 0.9;
+    }
     .owl-page span{background: white;}
   }
   .intro{
@@ -161,6 +187,22 @@
   }
 }
 @media only screen and (max-width: 320px) { 
+  body{font-size: 120%;}
+  .boatjumppage,
+  .webdingspage,
+  .eatbookingpage,
+  .oasiscatamaranspage,
+  .contactpage,
+  .greetingspage{
+     h2{
+      font-size: 30px;
+    }
+    .cont-introduction{
+      span{text-align: center;}
+      a{font-size: 90%;}
+    }
+
+  }
   .intro{
     .video-container-show{
       lead{

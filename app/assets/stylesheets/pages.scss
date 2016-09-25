@@ -129,7 +129,7 @@
       }
       p{
         font-size: 1.3rem;
-        text-align: justify;
+        text-justify: distribute;
         color:#fff;
       }
     }
@@ -307,6 +307,9 @@
 .contactpage{
   padding:1em 0em 8em 0em;
   background: #fafafa;
+  h2{
+    @include text($steel,uppercase, 2.3em,center);
+  }
   p{
     font-size: 1.3rem;
     font-weight: 300;

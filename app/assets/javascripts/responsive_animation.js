@@ -320,12 +320,16 @@ function setIntroAnimation() {
       }
       
       function reset(){
+        TweenMax.to(back, 1, {x: -100, opacity:1,ease: Back.easeInOut})
         tl_plus.reverse();
         tl_close.reverse();
         tlContainer.reverse();
         tl_topcontact.play();
         if(link_url_active){
          location.replace(link_url_active);
+         tl_plus.pause();
+         tl_close.pause();
+
        }
      }
 

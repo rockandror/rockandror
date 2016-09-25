@@ -8,43 +8,13 @@ function init(){
   scrollTo();
 }
 
-// $.fn.isOnScreen = function(){    
-//     var win = $(window);
-//     var viewport = {
-//         top : win.scrollTop(),
-//         left : win.scrollLeft()
-//     };
-//     viewport.right = viewport.left + win.width();
-//     viewport.bottom = viewport.top + win.height();
-    
-//     var bounds = this.offset();
-//     bounds.right = bounds.left + this.outerWidth();
-//     bounds.bottom = bounds.top + this.outerHeight();
-
-//     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));    
-// };
-
-document.onscroll = function() {
- //isIntroOnScreen();
-};
-
-// function isIntroOnScreen() {
-//   if($('.intro').isOnScreen()){
-//    TweenMax.to($('.bg-background'), 240, {scale:3}) 
-//   }else{
-//     TweenMax.to($('.bg-background'),0, {scale:1});
-//   }  
-// }
-
 function resizeDiv() {
-  // $('.boatjump .img-background, .webdingspage .img-background,.eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': hightWindow + 'px'});
-  // if ($(window).width() <= 1056) {
-  //   $('.boatjump .img-background, .webdingspage .img-background, .eatbookingpage .img-background, .oasiscatamaranspage .img-background, .contactpage .img-background, .greetingspage .img-background').css({'height': '160px'});
-  // }
+
   if(hightWindow <= 1025){
     $(".intro .video-container-show a").css('margin-top','20px'); 
     $(".intro").css({'height': $(window).height() + 'px'});
   }
+  
 }
 
 function scrollTo(){
