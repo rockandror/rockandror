@@ -9,27 +9,35 @@
     width: 100%;
     background: url("intro3.jpg") no-repeat center center;
     background-size: cover;
-    //position: fixed;
     z-index: 0;
   }
   .video-container-show{
     position: absolute;
-    top: 20%;
+    top: 30%;
     width: 100%;
     h1{
+      visibility: hidden;
       @include text(white, uppercase, 4rem,center);
       font-weight: 700;
       text-shadow: 1px 1px  #000;
-      visibility: hidden;
     }
     lead{
+      visibility: hidden;
       @include text(white, uppercase, 1.6rem,center);
       display: block;
       letter-spacing: .2rem;
-      margin-top: 1em;
       font-weight: 300;
-      visibility: hidden;
+      text-shadow: 1px 1px  #000;
     }
+    a{
+      width: 250px;
+      margin:0 auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    @include btn-ror(transparent, $secondary-color, white);
   }
 }
 
