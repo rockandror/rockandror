@@ -1,25 +1,6 @@
-// .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage{
-//   .arrow{
-//     animation: bounce 1s ease infinite;
-//     &:before{
-//       content: '⬇︎';
-//       left: 0px;
-//       right: 0px;
-//       position: absolute;
-//       top: 8px;
-//       text-align: center;
-//       color:$secondary-color;
-//     }
-//     width: 36px;
-//     height: 36px;
-//     border-radius: 50%;
-//     background: #fff;
-//     left:5%;
-//     position: absolute;
-//     bottom: 10%;
-//     z-index: 2;
-//   }
-// }
+.boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage{
+  margin-top: 100px;
+}
 .boatjumppage{
  text-align: center;
   .img-background{ background: asset_url('boatjump/background-page.jpg'); }
@@ -321,7 +302,7 @@
   }
 }
 .contactpage{
-  padding:8em 0em 8em 0em;
+  padding:1em 0em 8em 0em;
   background: #fafafa;
   p{
     font-size: 1.3rem;

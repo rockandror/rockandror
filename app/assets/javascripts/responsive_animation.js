@@ -1,6 +1,5 @@
 
 function setIntroAnimation() {
-
   var
     link_url_active,
     topBar = $('.top-bar'),
@@ -48,7 +47,7 @@ function setIntroAnimation() {
     TweenMax.to(btnDiscover, 1, {autoAlpha:1, ease:Linear.easeInOut,delay:4})
     TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Back.easeInOut,delay:5})
   }else{
-    TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Back.easeInOut})  
+    TweenMax.set(topBar,{ y:100, autoAlpha:1})  
   }
   
   if (window.matchMedia('(max-width: 768px)').matches) {

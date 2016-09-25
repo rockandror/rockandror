@@ -1,7 +1,6 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require jQuery.scrollSpeed
 //= require owl.carousel
 //= require jquerymb.YTPlayer
 //= require foundation
