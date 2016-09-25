@@ -7,7 +7,7 @@
   .cont-introduction{
     @extend .gradient-boatjump;
     h2{
-      @include text(#fff,uppercase, null,null);
+      @include text(white,uppercase, null,null);
     }
     color:white;
   }
@@ -112,6 +112,9 @@
   .cont-introduction{
     background:#fff;
     position: relative;
+    h2{
+      @include text($steel,uppercase, null,null);
+    }
   }
   .brand-design{
     padding: 6em 3em;

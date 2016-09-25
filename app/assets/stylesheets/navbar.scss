@@ -3,11 +3,17 @@
 .top-bar-section ul li:hover:not(.has-form) > a,
 .top-bar-section li:not(.has-form) a:not(.button):hover
 {background: transparent;}
-
-
-.top-bar-section li.active:not(.has-form) a:not(.button){
-    line-height: 1.6875rem;
-    margin-top: 25px;
+.toggle-topbar{display: none;}
+svg{
+  &#logo{
+    circle{
+      stroke-width: 4px;
+      stroke:$primary-color;
+      fill:none;
+      visibility: hidden;
+    }
+    #robot{visibility: hidden;}
+  }
 }
 
 .top-bar .top-bar-section .right li:not(.has-form) a:not(.button){
@@ -52,24 +58,24 @@
   top: -120px;
   animation: show-navbar .7s forwards;
 }
-@keyframes show-navbar {
-  100% {
-    -webkit-transform: translate(0,100%);
-    -moz-transform: translate(0,100%);
-    -o-transform: translate(0,100%);
-    -ms-transform: translate(0,100%);
-    transform: translate(0,100%);
-  }
-}
-@keyframes hide-navbar {
-  100% {
-    -webkit-transform: translate(0,-100%);
-    -moz-transform: translate(0,-100%);
-    -o-transform: translate(0,-100%);
-    -ms-transform: translate(0,-100%);
-    transform: translate(0,-100%);
-  }
-}
+// @keyframes show-navbar {
+//   100% {
+//     -webkit-transform: translate(0,100%);
+//     -moz-transform: translate(0,100%);
+//     -o-transform: translate(0,100%);
+//     -ms-transform: translate(0,100%);
+//     transform: translate(0,100%);
+//   }
+// }
+// @keyframes hide-navbar {
+//   100% {
+//     -webkit-transform: translate(0,-100%);
+//     -moz-transform: translate(0,-100%);
+//     -o-transform: translate(0,-100%);
+//     -ms-transform: translate(0,-100%);
+//     transform: translate(0,-100%);
+//   }
+// }
 
 .top-bar{
   visibility: hidden;
@@ -99,16 +105,28 @@
     fill:#9b9b9b;
     margin-top: 9px;
   }
+  
+  // .top-bar-section{
+  //   ul{
+  //     //border:1px solid red;
+  //     li a{text-transform: uppercase;}
+  //     li.active:not(.has-form) a:not(.button){
+  //       //border-bottom: 1px solid $secondary-color;
+  //       a{color:$secondary-color;}
+  //     }
+  //   }
+  // }
+  
   .top-bar-section{
     ul{
       //border:1px solid red;
       li a{text-transform: uppercase;}
-      li.active{
-        border-bottom: 1px solid $secondary-color;
+      li.active:not(.has-form) a:not(.button){
+        //border-bottom: 1px solid $secondary-color;
+        color:$secondary-color;
       }
     }
-  }
-  .top-bar-section{
+
     .right{ 
       //padding-top: 2.3em;
       strong{display: block;}

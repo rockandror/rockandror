@@ -1,7 +1,10 @@
 
+
 function setIntroAnimation() {
   var
     link_url_active,
+    logoCircle = $('circle'),
+    logoRobot = $('#robot'),  
     topBar = $('.top-bar'),
     introSection = $('.bg-background'),
     h1 = $(".video-container-show h1"),
@@ -24,31 +27,41 @@ function setIntroAnimation() {
     container = $("#btn_container");
     containerSubMenu = $("#container_submenu");
 
-  
+  tl_logo = new TimelineMax();
+    tl_logo
+    .fromTo(logoCircle, 1, {drawSVG:"0%", autoAlpha:1, ease:Power4.easeOut}, {drawSVG:"100%"})
+    .fromTo(logoRobot, 1, {scale:1.3, transformOrigin: "50% 50%"}, {scale:1, autoAlpha:1, ease: Power4.easeOut})
+    .to('#fake-mask-name ',1, { x:360,ease:Power4.easeOut})
+    .to('#fake-mask-slogan ',1, { scaleX:0,ease:Power4.easeOut})
+    tl_logo.pause();
+
+  if($('.intro').length){
+    TweenMax.to(introSection, 1, {autoAlpha:1,ease:Power4.easeInOut,delay:1})
+    TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+    TweenMax.to(h1, 1, {autoAlpha:1, ease:Power4.easeInOut,delay:2})
+    TweenMax.to(lead, 1, {autoAlpha:1, ease:Power4.easeInOut,delay:3})
+    TweenMax.to(btnDiscover, 1, {autoAlpha:1, ease:Linear.easeInOut,delay:5})
+    tl_logo.play().delay(3);
+  }else{
+    TweenMax.set(topBar,{ y:100, autoAlpha:1})
+    tl_logo.play();
+    TweenMax.staggerFromTo(".top-bar-section .left .anim", 1.6, {css:{marginTop:-200},autoAlpha:0, ease:Power4.easeOut}, {css:{marginTop:0}, autoAlpha:1}, 0.5);
+  }
+
   $(window).bind("resize", function(){
     if ($(window).width() >= 768) {
       screenOrientation = ($(window).width() > $(window).height())? 90 : 0;
       if(screenOrientation==0){
         console.log("port");
-        TweenMax.to(topcontact, 0.5, {top: "0%",opacity:1, ease:Back.easeInOut})
-        TweenMax.to(plus, 0.5, {top: "88%",opacity:1  , ease:Back.easeInOut})
+        TweenMax.to(topcontact, 0.5, {top: "0%",opacity:1, ease:Power4.easeInOut})
+        TweenMax.to(plus, 0.5, {top: "88%",opacity:1  , ease:Power4.easeInOut})
       }else{
         console.log("land");
-        TweenMax.to(topcontact, 0.5, {top: "-50%",opacity:1, ease:Back.easeInOut})
-        TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Back.easeInOut})
+        TweenMax.to(topcontact, 0.5, {top: "-50%",opacity:1, ease:Power4.easeInOut})
+        TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Power4.easeInOut})
       }
     }
   });
-
-  if($('.intro').length){
-    TweenMax.to(introSection, 1, {autoAlpha:1,ease:Back.easeInOut,delay:1})
-    TweenMax.to(h1, 1, {autoAlpha:1, ease:Back.easeInOut,delay:2})
-    TweenMax.to(lead, 1, {autoAlpha:1, ease:Back.easeInOut,delay:3})
-    TweenMax.to(btnDiscover, 1, {autoAlpha:1, ease:Linear.easeInOut,delay:4})
-    TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Back.easeInOut,delay:5})
-  }else{
-    TweenMax.set(topBar,{ y:100, autoAlpha:1})  
-  }
   
   if (window.matchMedia('(max-width: 768px)').matches) {
     //$('.top-bar').hide();
@@ -87,39 +100,50 @@ function setIntroAnimation() {
     tl_topcontact
     .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Back.easeInOut,delay:1})
     .addPause();
+
     tl_plus_start
     .to(plus, 0.5, {top: "88%",opacity:1  , ease: Back.easeInOut,delay:1})
     .addPause();
+    
     tl_plus
     .to(plus, 0.5, {top: "100%",opacity:0, ease: Back.easeInOut})
     .addPause();
+    
     tl_close
     .to(close, 0.5, {top: "88%", opacity:1,ease: Back.easeInOut, onComplete: show_menu})
     .addPause();
+    
     tl_back
     .to(back, 0.5, {top: "88%", opacity:1,ease: Back.easeInOut})
     .to(back, 1, {left: "-80%", opacity:1,ease: Back.easeInOut})
     .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Back.easeInOut})
     .addPause();
+    
     tl_home
     .to(home, 0.5, {top: "5%", opacity:1, ease: Back.easeInOut})
     .addPause();
+    
     tl_works
     .to(works, 0.5, {top: "25%", opacity:1, ease: Back.easeInOut})
     .addPause();
+    
     tl_team
     .to(team, 0.5, {top: "45%", opacity:1, ease: Back.easeInOut})
     .addPause();
+    
     tl_phone
     .to(phone, 0.5, {top: "65%", right: "-55%", opacity:1, ease: Back.easeInOut})
     .addPause();
+    
     tl_email
     .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Back.easeInOut})
     .addPause();
+    
     tlContainer
     .to(container, 0.5, {visibility: "visible", opacity:1, ease: Back.easeInOut})
     .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Back.easeInOut})
     .addPause();
+    
     tl_submenu
     .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Back.easeInOut})
     .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Back.easeInOut, onComplete: load_owlCarousel})
