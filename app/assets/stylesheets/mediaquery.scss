@@ -187,7 +187,10 @@
   }
 }
 @media only screen and (max-width: 320px) { 
-  body{font-size: 120%;}
+
+  body{
+    font-size: 120%;
+  }
   .boatjumppage,
   .webdingspage,
   .eatbookingpage,
@@ -198,8 +201,9 @@
       font-size: 30px;
     }
     .cont-introduction{
+      padding:2em;
       span{text-align: center;}
-      a{font-size: 90%;}
+      p,a{font-size: 90%;}
     }
 
   }
