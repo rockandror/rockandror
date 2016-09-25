@@ -3,9 +3,9 @@ var heightTopBar = $(".top-bar").height();
 var hightWindow = $(window).height() - heightTopBar;
 
 function init(){
-  resizeDiv();
   setIntroAnimation();
-  scrollSection();
+  resizeDiv();
+  scrollTo();
 }
 
 // $.fn.isOnScreen = function(){    
@@ -47,7 +47,7 @@ function resizeDiv() {
   }
 }
 
-function scrollSection(){
+function scrollTo(){
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
     $( this ).parent().addClass('active');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

@@ -1,6 +1,5 @@
-
-
 function setIntroAnimation() {
+
   var
     link_url_active,
     logoCircle = $('circle'),
@@ -35,17 +34,34 @@ function setIntroAnimation() {
     .to('#fake-mask-slogan ',1, { scaleX:0,ease:Power4.easeOut})
     tl_logo.pause();
 
+  tl_topBar = new TimelineMax();
+  tl_topBar
+    .to(topBar, 1, { y:100, autoAlpha:1, ease:Power4.easeInOut})
+    .staggerFrom(".top-bar-section .left .anim", 0.6, {y:-100, opacity:0, delay:0, ease:Back.easeOut, force3D:true}, 0.2);
+    tl_topBar.pause();
+
   if($('.intro').length){
-    TweenMax.to(introSection, 1, {autoAlpha:1,ease:Power4.easeInOut,delay:1})
-    TweenMax.to(topBar, 1, { y:100, autoAlpha:1, ease:Power4.easeInOut,delay:2})
-    TweenMax.to(h1, 1, {autoAlpha:1, ease:Power4.easeInOut,delay:2})
-    TweenMax.to(lead, 1, {autoAlpha:1, ease:Power4.easeInOut,delay:3})
-    TweenMax.to(btnDiscover, 1, {autoAlpha:1, ease:Linear.easeInOut,delay:5})
-    tl_logo.play().delay(3);
+    TweenMax.to(introSection, 3, {autoAlpha:1,ease:Power4.easeInOut})
+    
+    TweenMax.fromTo(h1, 1, 
+      {y:30, delay:2},
+      {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+    
+    TweenMax.fromTo(lead, 1, 
+      {y:-30, delay:2},
+      {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+    
+    TweenMax.fromTo(btnDiscover, 1,
+      {y:-30, ease:Linear.easeIn,delay:2.3},
+      {y:0, autoAlpha:1, ease:Back.easeIn,delay:2.3})
+    
+    tl_topBar.play().delay(1);
+    tl_logo.play().delay(1.4);
+  
   }else{
     TweenMax.set(topBar,{ y:100, autoAlpha:1})
     tl_logo.play();
-    TweenMax.staggerFromTo(".top-bar-section .left .anim", 1.6, {css:{marginTop:-200},autoAlpha:0, ease:Power4.easeOut}, {css:{marginTop:0}, autoAlpha:1}, 0.5);
+    tl_topBar.play();
   }
 
   $(window).bind("resize", function(){
@@ -188,39 +204,32 @@ function setIntroAnimation() {
       link_url_active = "/oasiscatamaran";
       close_submenu(link_url_active);
     });  
-    function bounce_effect(){
-        //tl_scroll.to(scroll, 1, {y:"60", rotation: -90,  ease:Bounce.easeInOut,repeat:-1, yoyo:true})
-      }
-      // function firstSwitchButton(){
-      //   tl_scroll.reverse();
-      //   tl_plus_start.play();
-      // }  
-      function switchButton(){
-        tl_plus.play();
-        tl_close.play();
-      }
-      function show_menu(){
-        //tl_introHome.play();
-        tl_topcontact.reverse();
-        tlContainer.play();
-        tl_home.play();
-        tl_works.play();
-        tl_team.play();
-        tl_phone.play();
-        tl_email.play();
-      }
-      function close_menu(){
-        tl_home.reverse();
-        tl_works.reverse();
-        tl_team.reverse();
-        tl_phone.reverse();
-        tl_email.reverse();
-      }
-      function open_submenu(){
-        tl_submenu.play();
-        tl_close.reverse();
-        //tl_back.play();
-      }
+    
+    function switchButton(){
+      tl_plus.play();
+      tl_close.play();
+    }
+    function show_menu(){
+      //tl_introHome.play();
+      tl_topcontact.reverse();
+      tlContainer.play();
+      tl_home.play();
+      tl_works.play();
+      tl_team.play();
+      tl_phone.play();
+      tl_email.play();
+    }
+    function close_menu(){
+      tl_home.reverse();
+      tl_works.reverse();
+      tl_team.reverse();
+      tl_phone.reverse();
+      tl_email.reverse();
+    }
+    function open_submenu(){
+      tl_submenu.play();
+      tl_close.reverse();
+    }
 
       function load_owlCarousel(){
 
@@ -325,5 +334,6 @@ function setIntroAnimation() {
 
    } else {
     console.log("Desktop");
+
   }
 }
