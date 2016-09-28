@@ -5,7 +5,7 @@
 //= require jquerymb.YTPlayer
 //= require foundation
 //= require main
-//= require responsive_animation
+//= require animation
 //= require cookies_eu
 //= require nprogress
 //= require nprogress-turbolinks

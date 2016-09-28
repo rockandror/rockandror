@@ -1,20 +1,19 @@
-var navHeight = $("nav").height();
-var heightTopBar = $(".top-bar").height();
-var hightWindow = $(window).height() - heightTopBar;
+var
+  navHeight = $("nav").height(),
+  heightTopBar = $(".top-bar").height(),
+  hightWindow = $(window).height() - heightTopBar;
 
 function init(){
-  setIntroAnimation();
+  animation();
   resizeDiv();
   scrollTo();
 }
 
 function resizeDiv() {
-
   if(hightWindow <= 1025){
     $(".intro .video-container-show a").css('margin-top','20px'); 
     $(".intro").css({'height': $(window).height() + 'px'});
   }
-  
 }
 
 function scrollTo(){

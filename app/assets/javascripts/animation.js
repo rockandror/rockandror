@@ -1,16 +1,15 @@
-function setIntroAnimation() {
+function animation() {
 
   var
     link_url_active,
     logoCircle = $('circle'),
     logoRobot = $('#robot'),  
     topBar = $('.top-bar'),
-    introSection = $('.bg-background'),
+    backgroundIntro = $('.bg-background'),
     h1 = $(".video-container-show h1"),
     lead = $(".intro lead"),
     topcontact = $(".top-contact"),
-    btnDiscover = $("#btn-discover"),
-    scroll = $("#btn_scroll"),
+    btnDiscover = $("#btn-discover"),    
     plus = $("#btn_plus"),
     close = $("#btn_close"),
     back = $("#btn_back"),
@@ -25,7 +24,7 @@ function setIntroAnimation() {
     email = $("#btn_email");
     container = $("#btn_container");
     containerSubMenu = $("#container_submenu");
-
+  
   tl_logo = new TimelineMax();
     tl_logo
     .fromTo(logoCircle, 1, {scale:0.6, transformOrigin: "50% 50%"}, {scale:1, autoAlpha:1, ease: Power4.easeOut})
@@ -35,13 +34,13 @@ function setIntroAnimation() {
     tl_logo.pause();
 
   tl_topBar = new TimelineMax();
-  tl_topBar
-    .to(topBar, 1, { y:100, autoAlpha:1, ease:Power4.easeInOut})
-    .staggerFrom(".top-bar-section .left .anim", 0.6, {y:-100, opacity:0, delay:0, ease:Back.easeOut, force3D:true}, 0.2);
-    tl_topBar.pause();
+    tl_topBar
+      .to(topBar, 1, { y:100, autoAlpha:1, ease:Power4.easeInOut})
+      .staggerFrom(".top-bar-section .left .anim", 0.6, {y:-100, opacity:0, delay:0, ease:Back.easeOut, force3D:true}, 0.2);
+      tl_topBar.pause();
 
   if($('.intro').length){
-    TweenMax.to(introSection, 3, {autoAlpha:1,ease:Power4.easeInOut})
+    TweenMax.to(backgroundIntro, 3, {autoAlpha:1,ease:Power4.easeInOut})
     
     TweenMax.fromTo(h1, 1, 
       {y:30, delay:2},
@@ -58,7 +57,7 @@ function setIntroAnimation() {
     tl_topBar.play().delay(1);
     tl_logo.play().delay(1.4);
   
-  }else{
+  } else {
     TweenMax.set(topBar,{ y:100, autoAlpha:1})
     tl_logo.play();
     tl_topBar.play();
@@ -68,11 +67,9 @@ function setIntroAnimation() {
     if ($(window).width() >= 768) {
       screenOrientation = ($(window).width() > $(window).height())? 90 : 0;
       if(screenOrientation==0){
-        console.log("port");
         TweenMax.to(topcontact, 0.5, {top: "0%",opacity:1, ease:Power4.easeInOut})
         TweenMax.to(plus, 0.5, {top: "88%",opacity:1  , ease:Power4.easeInOut})
       }else{
-        console.log("land");
         TweenMax.to(topcontact, 0.5, {top: "-50%",opacity:1, ease:Power4.easeInOut})
         TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Power4.easeInOut})
       }
@@ -83,7 +80,7 @@ function setIntroAnimation() {
     
     tl_submenu = new TimelineMax();
     tl_topcontact = new TimelineMax();
-    tl_scroll = new TimelineMax();
+    
     tl_plus = new TimelineMax();
     tl_plus_start = new TimelineMax();
     tl_close = new TimelineMax();
@@ -96,7 +93,6 @@ function setIntroAnimation() {
     tlContainer = new TimelineMax();
 
     tl_topcontact.pause();
-    tl_scroll.pause();
     tl_plus_start.pause();
     tl_plus.pause();
     tl_close.pause();
@@ -206,7 +202,6 @@ function setIntroAnimation() {
       tl_close.play();
     }
     function show_menu(){
-      //tl_introHome.play();
       tl_topcontact.reverse();
       tlContainer.play();
       tl_home.play();
