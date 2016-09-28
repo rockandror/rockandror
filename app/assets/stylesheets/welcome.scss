@@ -10,7 +10,7 @@
 
 body{
   font-family: $font-family-sans-serif;
-  font-size: rem-calc(13);
+  font-size: 16px;
   font-weight: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,6 +20,17 @@ body{
 input[type="text"]{
   height: 60px;
   outline: none;
+}
+
+a{
+  color:$secondary-color;
+  &:hover{
+    color:darken($secondary-color,10%);
+  }
+}
+
+ul{
+  list-style: none;
 }
 
 .cookies-eu{
@@ -35,11 +46,19 @@ input[type="text"]{
   } 
 }
 
+.contact-now{
+  padding:8em 0em;
+  background: #fff;
+  border-bottom:10px solid #dbdbdb;
+  h3{
+    @include text($primary-color, uppercase , 2.4rem, null);
+  }
+  @include btn-ror(transparent, $secondary-color, white);  
+}
+
 .footer{
   padding:8em 0em;
   text-transform: uppercase;
-  position: relative;
-  z-index: 2;
   background: #fff;
   ul{
     text-align: center;

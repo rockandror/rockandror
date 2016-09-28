@@ -246,17 +246,11 @@
         span{font-size: .9rem;}
       }
     }
-
-    &.contactnow{
-      background: #fff;
-      border-bottom:10px solid #dbdbdb;
-      h3{
-        @include text($primary-color, uppercase , 2.4rem, null);
-      }
-    }
     
+    &.contact-now{
+      @extend .contact-now;
+    }
     @include btn-ror(transparent, $secondary-color, white);  
-
   }
 }
 
