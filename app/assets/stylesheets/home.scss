@@ -10,8 +10,9 @@
     background: url("intro3.jpg") no-repeat center center;
     background-size: cover;
     z-index: 0;
+    visibility: hidden;
   }
-  .video-container-show{
+  .container{
     position: absolute;
     top: 30%;
     width: 100%;
@@ -43,7 +44,7 @@
 }
 
 .boatjump,.webdings,.eatbooking,.oasis,.rockandror,.cont-introduction{
-  padding:8em 0em 8em 0em;
+  padding:8em 0em;
   position: relative;
   z-index: 2;
     h2{

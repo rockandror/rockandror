@@ -1,8 +1,8 @@
- /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
   #btn_plus{display:block;}
   .top-bar{display: none;}
-  .intro .video-container-show{
+  .intro .container{
     top:20%;
     lead{visibility: hidden;}
     h1{
@@ -175,7 +175,7 @@
   }
   .intro{
     .bg-background{position: relative;}
-    .video-container-show h1{
+    .container h1{
       font-size: 1.7rem;
       margin-top: -20%;
     }
@@ -207,7 +207,7 @@
 
   }
   .intro{
-    .video-container-show{
+    .container{
       lead{
         text-transform: uppercase;
         font-size: 1.3rem;

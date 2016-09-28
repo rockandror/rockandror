@@ -6,7 +6,7 @@ function animation() {
     logoRobot = $('#robot'),  
     topBar = $('.top-bar'),
     backgroundIntro = $('.bg-background'),
-    h1 = $(".video-container-show h1"),
+    h1 = $(".intro .container h1"),
     lead = $(".intro lead"),
     topcontact = $(".top-contact"),
     btnDiscover = $("#btn-discover"),    

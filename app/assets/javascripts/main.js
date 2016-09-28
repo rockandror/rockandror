@@ -11,7 +11,7 @@ function init(){
 
 function resizeDiv() {
   if(hightWindow <= 1025){
-    $(".intro .video-container-show a").css('margin-top','20px'); 
+    $(".intro .container a").css('margin-top','20px'); 
     $(".intro").css({'height': $(window).height() + 'px'});
   }
 }
