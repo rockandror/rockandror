@@ -2,7 +2,7 @@
   position: absolute;
   left: -600px;
 }
-#btn_scroll,#btn_plus,#btn_close,#btn_home,#btn_works,#btn_team,#btn_tel,#btn_email,#btn_back{
+#btn_plus,#btn_close,#btn_home,#btn_works,#btn_team,#btn_tel,#btn_email,#btn_back{
   opacity: 0;
   width: 46px;
   height: 46px;
@@ -40,7 +40,7 @@
   }
 }
 
-#btn_plus,#btn_scroll{
+#btn_plus{
   width: 36px;
   height: 36px;
  .icon-menu{
@@ -52,11 +52,7 @@
     margin-top: 10px;
   } 
 }
-#btn_scroll{
-  -ms-transform: rotate(-90deg); /* IE 9 */
-  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-  transform: rotate(-90deg);
-}
+
 #btn_close,#btn_back{
   top: 100%;
   z-index: 10;
@@ -124,4 +120,3 @@
 .top-contact{
   top: -40%;
 }
-
