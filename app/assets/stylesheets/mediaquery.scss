@@ -91,6 +91,7 @@
     font-size: 3rem;
   }
 }
+
 @media only screen and (max-width: 767px) { 
   .top-bar{display: none;}
   .contactpage{
@@ -133,7 +134,6 @@
           display: inline-block;
           a{
             width: auto;
-            //padding:1em 1em;
           }
         }
       }
@@ -157,13 +157,8 @@
   #btn_plus{display:block;}
 }/* fix repsponsive menu */
 
-// @media only screen and (min-width: 640px) and (max-width: 780px) { 
-//   .top-bar .title-area{width: 230px;}
-//   .top-bar .logo-horiz{width: 200px;}
-// }/* fix logo width*/
-
 @media only screen and (max-width: 360px) { 
-  #container_submenu .owl-carousel p{
+  #container_submenu_responsive .owl-carousel p{
     padding-bottom: 0px;
     min-height: 108px;
   }

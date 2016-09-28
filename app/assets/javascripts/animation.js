@@ -22,8 +22,8 @@ function animation() {
     team = $("#btn_team");
     phone = $("#btn_tel");
     email = $("#btn_email");
-    container = $("#btn_container");
-    containerSubMenu = $("#container_submenu");
+    container = $("#overlay_menu_responsive");
+    containerSubMenu = $("#container_submenu_responsive");
   
   tl_logo = new TimelineMax();
     tl_logo
@@ -149,7 +149,6 @@ function animation() {
     
     tlContainer
       .to(container, 0.5, {visibility: "visible", opacity:1, ease: Back.easeInOut})
-      .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Back.easeInOut})
       .addPause();
     
     tl_submenu

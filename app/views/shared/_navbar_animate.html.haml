@@ -1,14 +1,8 @@
-/ %a.btn-scroll.fixed-button-responisve.bounce{:href => "#scroll_to_rockandror"} 
-/   = inline_svg "svg/arrow-btn.svg" , class: 'icon-menu'
-/ %a.btn-menu.fixed-button-responisve{ id:"btn-menu-responsive"}
-/   = inline_svg "svg/plus.svg" , class: 'icon-menu'
-
 %form#ridirect_responsive{:action => "/webdings"}
   %input{:type => "submit"}
 
-#btn_container
-/ %a#btn_scroll
-/   = inline_svg "svg/back.svg" , class: 'icon-menu'
+#overlay_menu_responsive
+
 %a#btn_plus
   = inline_svg "svg/plus.svg" , class: 'icon-menu'
 %a#btn_close
@@ -31,7 +25,7 @@
   = inline_svg "svg/phone.svg", class:'icon-menu'
   %span Llama
 
-#container_submenu
+#container_submenu_responsive
   .owl-carousel
     %a#btn_boatjump{:href => '#'}
       %h2 BoatJump
