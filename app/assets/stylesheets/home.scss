@@ -123,6 +123,7 @@
       h2{
         @include text(#f3cc33,uppercase, null,null);
       }
+      color:#fff;
     }
 
     &.oasis{
@@ -130,6 +131,7 @@
       h2{
         @include text(#5fc3e6,uppercase, null,null);
       }
+      color:#fff;
     }
 
     &.participation{
