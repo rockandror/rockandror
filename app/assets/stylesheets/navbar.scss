@@ -3,7 +3,9 @@
 .top-bar-section ul li:hover:not(.has-form) > a,
 .top-bar-section li:not(.has-form) a:not(.button):hover
 {background: transparent;}
+
 .toggle-topbar{display: none;}
+
 svg{
   &#logo{
     circle{
@@ -16,6 +18,12 @@ svg{
   }
 }
 
+.logo-smartphone{
+  float:left;
+  height: 24px;
+  margin-top: 13px;
+}
+
 .top-bar .top-bar-section .right li:not(.has-form) a:not(.button){
   line-height: 3rem;
   border: 1px solid #00b0ea;
@@ -24,10 +32,6 @@ svg{
 
 .top-contact{
   background: #333333;
-  transition: all 0.5s ease;
-  // -webkit-transition: all 0.5s ease;
-  // -moz-transition: all 0.5s ease;
-  // -moz-transition: all 0.5s ease;
   text-align: center;
   position: fixed;
   z-index: 9;
@@ -53,29 +57,6 @@ svg{
     svg{margin-top:16px; }
   }   
 }
-.fixed{
-  position: fixed;
-  top: -120px;
-  animation: show-navbar .7s forwards;
-}
-// @keyframes show-navbar {
-//   100% {
-//     -webkit-transform: translate(0,100%);
-//     -moz-transform: translate(0,100%);
-//     -o-transform: translate(0,100%);
-//     -ms-transform: translate(0,100%);
-//     transform: translate(0,100%);
-//   }
-// }
-// @keyframes hide-navbar {
-//   100% {
-//     -webkit-transform: translate(0,-100%);
-//     -moz-transform: translate(0,-100%);
-//     -o-transform: translate(0,-100%);
-//     -ms-transform: translate(0,-100%);
-//     transform: translate(0,-100%);
-//   }
-// }
 
 .top-bar{
   visibility: hidden;
@@ -106,29 +87,14 @@ svg{
     margin-top: 9px;
   }
   
-  // .top-bar-section{
-  //   ul{
-  //     //border:1px solid red;
-  //     li a{text-transform: uppercase;}
-  //     li.active:not(.has-form) a:not(.button){
-  //       //border-bottom: 1px solid $secondary-color;
-  //       a{color:$secondary-color;}
-  //     }
-  //   }
-  // }
-  
   .top-bar-section{
     ul{
-      //border:1px solid red;
       li a{text-transform: uppercase;}
       li.active:not(.has-form) a:not(.button){
-        //border-bottom: 1px solid $secondary-color;
         color:$secondary-color;
       }
     }
-
     .right{ 
-      //padding-top: 2.3em;
       strong{display: block;}
       a{
         font-weight: 300;

@@ -276,6 +276,7 @@
     display: block;
     margin-top: -17px;
   }
+  @include btn-ror(transparent, $secondary-color, white);
 }
 
 .hr-dark{border-color:#363636;}
