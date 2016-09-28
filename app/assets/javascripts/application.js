@@ -5,7 +5,6 @@
 //= require jquerymb.YTPlayer
 //= require foundation
 //= require main
-//= require viewportchecker
 //= require responsive_animation
 //= require cookies_eu
 //= require nprogress
