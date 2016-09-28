@@ -80,11 +80,8 @@ function setIntroAnimation() {
   });
   
   if (window.matchMedia('(max-width: 768px)').matches) {
-    //$('.top-bar').hide();
-    console.log("smartphone");
-
+    
     tl_submenu = new TimelineMax();
-    tl_introLead = new TimelineMax();
     tl_topcontact = new TimelineMax();
     tl_scroll = new TimelineMax();
     tl_plus = new TimelineMax();
@@ -98,7 +95,6 @@ function setIntroAnimation() {
     tl_email = new TimelineMax();
     tlContainer = new TimelineMax();
 
-    tl_introLead.pause();    
     tl_topcontact.pause();
     tl_scroll.pause();
     tl_plus_start.pause();
@@ -114,56 +110,56 @@ function setIntroAnimation() {
     tlContainer.pause();
 
     tl_topcontact
-    .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Back.easeInOut,delay:1})
-    .addPause();
+      .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Back.easeInOut,delay:1})
+      .addPause();
 
     tl_plus_start
-    .to(plus, 0.5, {top: "88%",opacity:1  , ease: Back.easeInOut,delay:1})
-    .addPause();
-    
+      .to(plus, 0.5, {top: "88%",opacity:1  , ease: Back.easeInOut,delay:1})
+      .addPause();
+      
     tl_plus
-    .to(plus, 0.5, {top: "100%",opacity:0, ease: Back.easeInOut})
-    .addPause();
+      .to(plus, 0.5, {top: "100%",opacity:0, ease: Back.easeInOut})
+      .addPause();
     
     tl_close
-    .to(close, 0.5, {top: "88%", opacity:1,ease: Back.easeInOut, onComplete: show_menu})
-    .addPause();
+      .to(close, 0.5, {top: "88%", opacity:1,ease: Back.easeInOut, onComplete: show_menu})
+      .addPause();
     
     tl_back
-    .to(back, 0.5, {top: "88%", opacity:1,ease: Back.easeInOut})
-    .to(back, 1, {left: "-80%", opacity:1,ease: Back.easeInOut})
-    .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Back.easeInOut})
-    .addPause();
+      .to(back, 0.5, {top: "88%", opacity:1,ease: Back.easeInOut})
+      .to(back, 1, {left: "-80%", opacity:1,ease: Back.easeInOut})
+      .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Back.easeInOut})
+      .addPause();
     
     tl_home
-    .to(home, 0.5, {top: "5%", opacity:1, ease: Back.easeInOut})
-    .addPause();
+      .to(home, 0.5, {top: "5%", opacity:1, ease: Back.easeInOut})
+      .addPause();
     
     tl_works
-    .to(works, 0.5, {top: "25%", opacity:1, ease: Back.easeInOut})
-    .addPause();
+      .to(works, 0.5, {top: "25%", opacity:1, ease: Back.easeInOut})
+      .addPause();
     
     tl_team
-    .to(team, 0.5, {top: "45%", opacity:1, ease: Back.easeInOut})
-    .addPause();
+      .to(team, 0.5, {top: "45%", opacity:1, ease: Back.easeInOut})
+      .addPause();
     
     tl_phone
-    .to(phone, 0.5, {top: "65%", right: "-55%", opacity:1, ease: Back.easeInOut})
-    .addPause();
+      .to(phone, 0.5, {top: "65%", right: "-55%", opacity:1, ease: Back.easeInOut})
+      .addPause();
     
     tl_email
-    .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Back.easeInOut})
-    .addPause();
+      .to(email, 0.5, {top: "65%", left: "-55%", opacity:1, ease: Back.easeInOut})
+      .addPause();
     
     tlContainer
-    .to(container, 0.5, {visibility: "visible", opacity:1, ease: Back.easeInOut})
-    .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Back.easeInOut})
-    .addPause();
+      .to(container, 0.5, {visibility: "visible", opacity:1, ease: Back.easeInOut})
+      .to(container, 0.5, {backgroundColor: "#000", opacity:.8, ease: Back.easeInOut})
+      .addPause();
     
     tl_submenu
-    .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Back.easeInOut})
-    .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Back.easeInOut, onComplete: load_owlCarousel})
-    .addPause();
+      .to(containerSubMenu, 0, {visibility: "visible", opacity:1, ease: Back.easeInOut})
+      .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Back.easeInOut, onComplete: load_owlCarousel})
+      .addPause();
 
     $(plus).on('click',function(){
       switchButton();
@@ -231,113 +227,55 @@ function setIntroAnimation() {
       tl_close.reverse();
     }
 
-      function load_owlCarousel(){
+    function load_owlCarousel(){
 
-        TweenLite.to($(".owl-carousel"), 0.5, {y:0, opacity:1, ease: Back.easeInOut}); 
+      TweenLite.to($(".owl-carousel"), 0.5, {y:0, opacity:1, ease: Back.easeInOut});
+      $(".owl-carousel").owlCarousel({
+        itemsCustom : false,
+        itemsDesktop : [1199,4],
+        itemsDesktopSmall : [980,3],
+        itemsTablet: [768,2],
+        itemsTabletSmall: false,
+        itemsMobile : [479,1],
+        singleItem : false,
+        itemsScaleUp : false,
+        navigation : true,
+        navigationText : ["prev","next"],
+        rewindNav : true,
+        pagination : false
+      });
+      tl_back.play();
+    }
 
-        $(".owl-carousel").owlCarousel({
-
-          itemsCustom : false,
-          itemsDesktop : [1199,4],
-          itemsDesktopSmall : [980,3],
-          itemsTablet: [768,2],
-          itemsTabletSmall: false,
-          itemsMobile : [479,1],
-          singleItem : false,
-          itemsScaleUp : false,
-
-          // //Basic Speeds
-          // slideSpeed : 200,
-          // paginationSpeed : 800,
-          // rewindSpeed : 1000,
-
-          // // Navigation
-          navigation : true,
-          navigationText : ["prev","next"],
-          rewindNav : true,
-          // scrollPerPage : false,
-
-          // //Pagination
-          pagination : false
-//          paginationNumbers: true,
-
-          // // Responsive 
-          // responsive: true,
-          // responsiveRefreshRate : 200,
-          // responsiveBaseWidth: window,
-
-          // // CSS Styles
-          // baseClass : "owl-carousel",
-          // theme : "owl-theme",
-
-          // //Lazy load
-          // lazyLoad : false,
-          // lazyFollow : true,
-          // lazyEffect : "fade",
-
-          // //Auto height
-          // autoHeight : false,
-
-          
-          // //Mouse Events
-          // dragBeforeAnimFinish : true,
-          // mouseDrag : true,
-          // touchDrag : true,
-
-          // //Transitions
-          // transitionStyle : false,
-
-          // // Other
-          // addClassActive : false,
-
-          // //Callbacks
-          // beforeUpdate : false,
-          // afterUpdate : false,
-          // beforeInit: false, 
-          // afterInit: false, 
-          // beforeMove: false, 
-          // afterMove: false,
-          // afterAction: false,
-          // startDragging : false
-        });
-
-        tl_back.play();
-      }
-
-      function close_submenu(link_url_active){
-        TweenLite.to($(".owl-carousel"), 0.5, {y: -200, opacity:0, ease: Back.easeInOut});
-        
-        if(link_url_active){
-          tl_submenu.reverse();
-          close_menu();
-          console.log("si"+link_url_active);
-        }else{
-          tl_submenu.reverse();
-          tl_close.play(); 
-          link_url_active=""; 
-          console.log("no"+link_url_active);
-        }
-      }
+    function close_submenu(link_url_active){
+      TweenLite.to($(".owl-carousel"), 0.5, {y: -200, opacity:0, ease: Back.easeInOut});
       
-      function reset(){
-        TweenMax.to(back, 1, {x: -100, opacity:1,ease: Back.easeInOut})
-        tl_plus.reverse();
-        tl_close.reverse();
-        tlContainer.reverse();
-        tl_topcontact.play();
-        if(link_url_active){
-         location.replace(link_url_active);
-         tl_plus.pause();
-         tl_close.pause();
+      if(link_url_active){
+        tl_submenu.reverse();
+        close_menu();
+        console.log("si"+link_url_active);
+      }else{
+        tl_submenu.reverse();
+        tl_close.play(); 
+        link_url_active=""; 
+        console.log("no"+link_url_active);
+      }
+    }
+      
+    function reset(){
+      TweenMax.to(back, 1, {x: -100, opacity:1,ease: Back.easeInOut})
+      tl_plus.reverse();
+      tl_close.reverse();
+      tlContainer.reverse();
+      tl_topcontact.play();
+      if(link_url_active){
+       location.replace(link_url_active);
+       tl_plus.pause();
+       tl_close.pause();
 
-       }
      }
-
-     tl_topcontact.play();
-     tl_plus_start.play();
-
-   } else {
-    console.log("Desktop");
-
-  }
+   }
+   tl_topcontact.play();
+   tl_plus_start.play();
+   }
 }

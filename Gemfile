@@ -4,8 +4,6 @@ gem 'rails', '4.2.3'
 
 gem 'rails-i18n'
 gem 'sass-rails', '~> 5.0'
-gem 'compass-rails'
-gem 'ceaser-easing'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'autoprefixer-rails'
