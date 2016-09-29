@@ -254,7 +254,6 @@ function animation() {
     }
       
     function reset(){
-      TweenMax.to(back, 1, {x: -100, opacity:1,ease: Back.easeInOut})
       tl_plus.reverse();
       tl_close.reverse();
       tlContainer.reverse();
@@ -263,7 +262,7 @@ function animation() {
        location.replace(link_url_active);
        tl_plus.pause();
        tl_close.pause();
-
+       TweenMax.to(back, 1, {x: -100, opacity:1,ease: Back.easeInOut});
      }
    }
    tl_topcontact.play();
