@@ -80,7 +80,6 @@ function animation() {
     
     tl_submenu = new TimelineMax();
     tl_topcontact = new TimelineMax();
-    
     tl_plus = new TimelineMax();
     tl_plus_start = new TimelineMax();
     tl_close = new TimelineMax();
@@ -106,7 +105,7 @@ function animation() {
     tlContainer.pause();
 
     tl_topcontact
-      .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Back.easeInOut,delay:1})
+      .to(topcontact, 0.7, {top: "0%",opacity:1, ease: Linear.easeIn,delay:1})
       .addPause();
 
     tl_plus_start
@@ -126,7 +125,7 @@ function animation() {
       .to(back, 1, {left: "-80%", opacity:1,ease: Back.easeInOut})
       .to(back, 1, {backgroundColor: "transparent",border:"#00b0ea", ease: Back.easeInOut})
       .addPause();
-    
+      
     tl_home
       .to(home, 0.5, {top: "5%", opacity:1, ease: Back.easeInOut})
       .addPause();
@@ -247,12 +246,10 @@ function animation() {
       if(link_url_active){
         tl_submenu.reverse();
         close_menu();
-        console.log("si"+link_url_active);
       }else{
         tl_submenu.reverse();
         tl_close.play(); 
         link_url_active=""; 
-        console.log("no"+link_url_active);
       }
     }
       

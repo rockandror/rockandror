@@ -1,5 +1,21 @@
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
+  
+  #home{
+    .intro{
+      .container{
+        top:10%;
+        padding: 1em;
+         h1{font-size:3.3em; }
+         lead{
+          line-height: 1em;
+          margin-top:10px;
+          font-size: 1.6em;
+        }
+      }
+    }
+  } 
+
   #btn_plus{display:block;}
   .top-bar{display: none;}
   .intro .container{
@@ -13,7 +29,6 @@
   }
 
   section{
-    a{line-height: 4em;}
     padding:2em 0em 2em 0em;
     h3{font-size: 3em;}
     h3,small,span,p,a{text-align: center;}
@@ -61,32 +76,47 @@
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
-  #home section h2{
-    font-size: 2.3rem;
-  }
-  section{
-    a{
-      display: block;
-      margin-bottom: 10px;
-      text-align: center;
-      line-height: 3em;
-    }
-    h2{ font-size: 2.3rem;}
-    &.rockandror{
-      h3 {font-size: 1.2rem;}
-    .inline-list li{padding: 0em;} 
-    }
-    .participation{
-       .header{text-align: center;}
-    }
-  }  
-}
+  #home{
 
-@media only screen and (max-width: 1200px) { 
-  .webdingspage .arrow{
-    left: 5%;
-    margin-left:0;
-    bottom:10%;
+    .intro{
+      .container{
+        top:20%;
+        padding: 1em;
+         h1{font-size:2.3em; }
+         lead{
+          line-height: 1em;
+          margin-top:10px;
+          font-size: 1em;
+        }
+      }
+    }  
+
+    section{
+      h2{
+        font-size: 2.3rem;
+      }
+      a{
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 0.9em;
+      }
+      
+      &.rockandror{
+        h3 {font-size: 1.2rem;}
+        .inline-list li{
+          padding: 0px;
+        }
+      }
+      &.oasis{
+         h2{
+          font-size: 2.3em;
+         }
+      }
+      .participation{
+         .header{text-align: center;}
+      }
+    }  
   }
 }
 
@@ -112,6 +142,20 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) { 
+  #home{
+    .intro{
+      .container{
+        top:40%;
+        padding: 1em;
+         h1{font-size:3.3em; }
+         lead{
+          line-height: 1em;
+          margin-top:10px;
+          font-size: 1.6em;
+        }
+      }
+    }
+  } 
   .top-bar-section li.active:not(.has-form) a:not(.button){
     line-height: 0.6875rem;
     margin-top: 33px;
@@ -146,22 +190,106 @@
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
-    .top-bar{display: none;}
-    .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage{
-      margin-top: 0px;
-      .cont-introduction{
-        h2{
-          margin-top: 50px;
+
+  #home{
+    .intro{
+      .container{
+        top:10%;
+        padding: 1em;
+        h1{font-size:3.3em; }
+        lead{
+          line-height: 1em;
+          margin-top:10px;
+          font-size: 1.6em;
         }
       }
+    }  
+  }
+  .top-bar{display: none;}
+  .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage{
+    margin-top: 0px;
+    .cont-introduction{
+      h2{
+        margin-top: 50px;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 703px) { 
   #btn_plus{display:block;}
 }/* fix repsponsive menu */
 
+@media only screen and (max-width: 480px) { 
+
+  #home {
+    .intro{
+      .container{
+        top:20%;
+        padding: 1em;
+         h1{font-size:2.3em; }
+         lead{
+          line-height: 1em;
+          margin-top:10px;
+          font-size: 1em;
+        }
+      }
+    }  
+    section{
+      padding: 2em 0em;
+      &.boatjump,&.webdings,&.eatbooking,&.oasis{
+        span,small{font-size: 0.8em;}
+        a{
+          display: block;
+          margin-bottom:5px;
+          font-size: 0.9em;
+        }
+      }
+      &.oasis{
+        h2{
+          font-size: 2.3rem;
+        }
+      }
+      &.participation{
+         .header h3{font-size: 2.3em;}
+         .content{padding: 0px;}
+      }
+      &.howweworks{
+        .workflow{display: none;}  
+      }
+    }
+  }
+
+  .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage{
+    h1{
+      font-size: 2.3em;
+    }
+    .cont-introduction{
+      padding-top: 80px;
+    }
+    .brand-design,.back-end,.front-end,.app-mobile, .tecnology,.contact-now{
+      padding: 1em 0em;
+    }
+  }
+}
+
 @media only screen and (max-width: 360px) { 
+ 
+  #home {
+    .intro{
+      .container{
+         h1{
+          padding: 0px;
+        }
+         lead{
+          line-height: 1em;
+          margin-top:10px;
+          font-size: 1.3em;
+        }
+      }
+    }  
+  }
+
   #container_submenu_responsive .owl-carousel p{
     padding-bottom: 0px;
     min-height: 108px;
@@ -177,60 +305,50 @@
     }
     .owl-page span{background: white;}
   }
-  .intro{
-    .bg-background{position: relative;}
-    .container h1{
-      font-size: 1.7rem;
-      margin-top: -20%;
+}
+
+@media only screen and (max-width: 320px) { 
+  
+  #home {
+    .intro{
+      .container{
+         h1{
+          font-size: 2em;
+        }
+         lead{
+          line-height: 1em;
+          margin-top:10px;
+          font-size: 1em;
+        }
+      }
+    }  
+    section{
+      h2,h3{font-size: 2em;}
+      &.howweworks{
+        h3{font-size: 1.3em;}
+        .text{
+          padding: 1em; 
+          ul{
+            margin:0;
+          }
+        }
+      }
     }
   }
-}
-@media only screen and (max-width: 320px) { 
-
-  body{
-    font-size: 120%;
-  }
-  .boatjump h2, .webdings h2, .eatbooking h2, .oasis h2, .rockandror h2, .cont-introduction h2{font-size: 1.8em;}
-  section{
-    h2,h3{font-size: 2em;}
-  }
+  
   .boatjumppage,
   .webdingspage,
   .eatbookingpage,
   .oasiscatamaranspage,
   .contactpage,
   .greetingspage{
-     h2{
+     h1{
       font-size: 30px;
     }
     .cont-introduction{
-      padding:2em;
+      padding:4em 1em;
       span{text-align: center;}
       p,a{font-size: 90%;}
     }
-
-  }
-  .intro{
-    .container{
-      lead{
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        line-height: 30px;
-        top:15%;
-      }
-      h1{
-        font-size: 2.3rem;
-        line-height: 40px;
-        padding: 0em;
-        margin: 0;
-      }
-    }
-  }
-  section{
-    h2{
-      font-size: 2.3rem;
-      text-align: center;
-    }
-    &.webdings h3{font-size: 2rem;}
   }
 }

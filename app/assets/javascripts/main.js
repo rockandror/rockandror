@@ -3,6 +3,7 @@ var
   heightTopBar = $(".top-bar").height(),
   hightWindow = $(window).height() - heightTopBar;
 
+
 function init(){
   animation();
   resizeDiv();

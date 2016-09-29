@@ -54,6 +54,7 @@
     
     &.rockandror{
       background: #fff;
+      text-align: center;
       h3{
         font-size: 1.3rem;
         font-weight: 200;
@@ -86,7 +87,6 @@
           }
         }
       }
-      i{font-size: 1.3em;}
       @include btn-ror(transparent, transparent, $secondary-color);
     }
     
@@ -172,9 +172,6 @@
       i{
         padding-top: 3em;
         color: white;
-        display: block;
-        font-size: 1.4em;
-        width: 80%;
         margin: 0px auto;
       }
       .workflow{

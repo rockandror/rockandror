@@ -25,11 +25,17 @@
   .cont-introduction{
     margin: 0px auto;
     padding: 3em;
-    span{text-transform: uppercase;}
+    span{
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  .back-end,.front-end,.tecnology{
+    padding: 6em 3em;
   }
 
   .tecnology{
-    padding: 6em 3em;
     background: #3b3b3b;   
     color:white;
     .content{
@@ -75,10 +81,6 @@
       }
     }
   }
-
-  .back-end,.front-end{
-    padding: 6em 3em;
-  } 
   .front-end{
     background:#f3f3f3;
   }
@@ -115,9 +117,6 @@
       }
     }
   }
-  .back-end,.front-end{
-    padding: 6em 3em;
-  } 
   .front-end{
     background:#f3f3f3;
   }
@@ -147,9 +146,6 @@
   .cont-introduction{
     @extend .pattern-eatbooking;
   }
-  .back-end{
-    padding: 6em 3em;
-  }
 }
 
 .oasiscatamaranspage{
@@ -161,11 +157,6 @@
   }
   .cont-introduction{
     background: white;
-  }
-  .back-end,.front-end{
-    padding: 6em 3em;
-    // background-image: asset_url('pattern/oasis-pattern.png'),
-    // linear-gradient(to bottom,  rgba(27,51,64,1) 0%,rgba(49,92,115,1) 100%,rgba(27,51,64,1) 100%);
   }
   .front-end{
    background:#f3f3f3;
