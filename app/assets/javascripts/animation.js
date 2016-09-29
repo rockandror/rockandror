@@ -27,10 +27,10 @@ function animation() {
   
   tl_logo = new TimelineMax();
     tl_logo
-    .fromTo(logoCircle, 1, {scale:0.6, transformOrigin: "50% 50%"}, {scale:1, autoAlpha:1, ease: Power4.easeOut})
+    .fromTo(logoCircle, 1, {scale:0.6, transformOrigin: "50% 50%"}, {scale:1, autoAlpha:1, ease: Power4.easeOut,delay:0.5})
     .fromTo(logoRobot, 1, {scale:1.3, transformOrigin: "50% 50%"}, {scale:1, autoAlpha:1, ease: Power4.easeOut})
-    .to('#fake-mask-name ',1, { x:360,ease:Power4.easeOut})
-    .to('#fake-mask-slogan ',1, { scaleX:0,ease:Power4.easeOut})
+    .to('#fake-mask-name ',1, { x:360,ease:Power4.easeOut},'=-1')
+    .to('#fake-mask-slogan ',1, { scaleX:0,ease:Power4.easeOut},'=-1')
     tl_logo.pause();
 
   tl_topBar = new TimelineMax();
