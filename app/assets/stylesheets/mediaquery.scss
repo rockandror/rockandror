@@ -129,6 +129,11 @@
 
 @media only screen and (max-width: 767px) { 
   .top-bar{display: none;}
+
+  .owl-wrapper-outer a{
+    color:grey;
+  }
+  
   .contactpage{
     margin-top: 0px;
   }
