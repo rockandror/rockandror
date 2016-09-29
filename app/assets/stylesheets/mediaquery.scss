@@ -75,9 +75,10 @@
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  
+  
 
   #home{
-
     .intro{
       .container{
         top:20%;
@@ -142,6 +143,49 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) { 
+  
+  .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+    background-color: #555555;
+    color: #fff;
+    background: #00b0ea;
+  }
+
+
+  .top-bar{
+    overflow: visible !important;
+    .top-bar-section{
+
+      .show-for-medium-up li{padding-left:0px !important;}
+      .left{
+        .has-dropdown:hover{
+          .dropdown{
+            display:block;  
+          }  
+        }
+      }
+      .left li {
+        .dropdown{
+          display:none;
+          height: auto;
+          width: auto;
+          clip: auto !important;
+          left: 0;
+          background: white;
+          top:43px;
+          text-align: center;
+          width: 170px;
+          .back{display: none;}
+          li{
+            a{
+              line-height: 4.6875rem;
+              padding: 0 1.5625rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
   #home{
     .intro{
       .container{
