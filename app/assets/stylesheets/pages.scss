@@ -1,4 +1,4 @@
-.boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage{
+.page{
   margin-top: 100px;
   
   h1{
@@ -48,136 +48,144 @@
       }
     }
   }
-
+  
   &.contact-now{
     @extend .contact-now;
-  }
-}
-
-.boatjumppage{
-  text-align: center;
-  .img-background{
-    background: asset_url('boatjump/background-page.jpg');
-  }
-
-  h1{
-    color:white;
+    padding:3em 0em;
   }
   
-  .cont-introduction{
-    color:white;
-    @extend .gradient-boatjump;
-  }
-
-  .brand-design{
-    padding: 6em 3em;
-    @extend .gradient-white;
-    .content{
-      svg{
-        fill:rgb(0,122,163);
-        width: 100%;
-        height: auto;
-        padding: 3rem 0rem;
-      }
+  &.boatjump{
+    text-align: center;
+    .img-background{
+      background: asset_url('boatjump/background-page.jpg');
     }
-  }
-  .front-end{
-    background:#f3f3f3;
-  }
-}
-
-.webdingspage{
-  h1{
-    color:$steel;
-  }
+    h1{
+      color:white;
+    }
   
-  .img-background{
-    background: asset_url('webdings/background-page.jpg');
-  }
-  .cont-introduction{
-    background:#fff;
-    h2{
-      @include text($steel,uppercase, null,null);
+    .cont-introduction{
+      color:white;
+      @extend .gradient-boatjump;
     }
-  }
 
-  .brand-design{
-    padding: 6em 3em;
-    background: #3b3b3b;
-    position: relative;
-    .content{
-      h2{ color:#fff;}
-      svg{
-        width: 200px;
-        height: auto;
-        padding: 3rem 0rem;
-      }
-      p{
-        color:#fff;
-      }
-    }
-  }
-  .front-end{
-    background:#f3f3f3;
-  }
-  .app-mobile{
-    padding: 6em 3em;
-    .content{
-      .wrapperIphone{
-        display: block;
-        img{
-          position: relative;
-          z-index: 2;
-          margin: 0px auto;
-          width: 310px;
+    .brand-design{
+      padding: 6em 3em;
+      @extend .gradient-white;
+      .content{
+        svg{
+          fill:rgb(0,122,163);
+          width: 100%;
+          height: auto;
+          padding: 3rem 0rem;
         }
       }
-    } 
+    }
+    .front-end{
+      background:#f3f3f3;
+    }
+  }
+
+  &.webdings{
+    h1{
+      color:$steel;
+    }
+    
+    .img-background{
+      background: asset_url('webdings/background-page.jpg');
+    }
+    .cont-introduction{
+      background:#fff;
+      h2{
+        @include text($steel,uppercase, null,null);
+      }
+    }
+
+    .brand-design{
+      padding: 6em 3em;
+      background: #3b3b3b;
+      position: relative;
+      .content{
+        h2{ color:#fff;}
+        svg{
+          width: 200px;
+          height: auto;
+          padding: 3rem 0rem;
+        }
+        p{
+          color:#fff;
+        }
+      }
+    }
+    .front-end{
+      background:#f3f3f3;
+    }
+    .app-mobile{
+      padding: 6em 3em;
+      .content{
+        .wrapperIphone{
+          display: block;
+          img{
+            position: relative;
+            z-index: 2;
+            margin: 0px auto;
+            width: 310px;
+          }
+        }
+      } 
+    }
+  }
+
+  &.eatbooking{
+    h1{
+      color:#f3cc33;
+    }
+    .img-background{
+      background:asset_url('eatbooking/background-page.jpg');
+    }
+    .cont-introduction{
+      @extend .pattern-eatbooking;
+    }
+  }
+
+  &.oasiscatamarans{
+    h1{
+      color: #5fc3e6;
+    }
+    .img-background{
+      background: asset_url('oasis-catamaran/background-page.jpg');
+    }
+    .cont-introduction{
+      background: white;
+    }
+    .front-end{
+     background:#f3f3f3;
+    }
+  }  
+
+  &.contact{
+    background: #fafafa;
+    h1{
+      @include text($steel,uppercase, 2.3em,center);
+    }
+    .new_contact label {
+      display: none;
+    }
+    textarea{
+      height: 150px;
+    }
+  }
+
+  &.greetingspage{
+    background: #f8f8f8;
+    .row{max-width: 100%;}
+    #share-buttons img {
+      width: 35px;
+      padding: 5px;
+      border: 0;
+      box-shadow: 0;
+      display: inline;
+    }
   }
 }
 
-.eatbookingpage{
-  h1{
-    color:#f3cc33;
-  }
-  .img-background{
-    background:asset_url('eatbooking/background-page.jpg');
-  }
-  .cont-introduction{
-    @extend .pattern-eatbooking;
-  }
-}
 
-.oasiscatamaranspage{
-  h1{
-    color: #5fc3e6;
-  }
-  .img-background{
-    background: asset_url('oasis-catamaran/background-page.jpg');
-  }
-  .cont-introduction{
-    background: white;
-  }
-  .front-end{
-   background:#f3f3f3;
-  }
-}
-
-.contactpage{
-  padding:1em 0em 8em 0em;
-  background: #fafafa;
-  h2{
-    @include text($steel,uppercase, 2.3em,center);
-  }
-  .new_contact label {
-    display: none;
-  }
-  textarea{
-    height: 150px;
-  }
-}
-
-.greetingspage{
-  background: #f8f8f8;
-  .row{max-width: 100%;}
-}

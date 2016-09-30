@@ -9,15 +9,15 @@
   = inline_svg "svg/close.svg" , class: 'icon-menu'
 %a#btn_back
   = inline_svg "svg/back.svg" , class: 'icon-menu'
-%a#btn_home.btnm{:href => root_path}
+%a#btn_home{:href => root_path}
   = inline_svg "svg/home.svg" , class: 'icon-menu'
   %span home
-%a#btn_works.btnm
+%a#btn_works
   = inline_svg "svg/works.svg" , class: 'icon-menu'
   %span trabajos
-%a#btn_team.btnm
-  = inline_svg "svg/team.svg" , class: 'icon-menu'
-  %span Equipo
+-# %a#btn_team
+-#   = inline_svg "svg/team.svg" , class: 'icon-menu'
+-#   %span Equipo
 %a#btn_email{:href => new_contact_path}
   = inline_svg "svg/email.svg", class:'icon-menu'
   %span contactos

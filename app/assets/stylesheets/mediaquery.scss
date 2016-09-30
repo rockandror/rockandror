@@ -11,8 +11,12 @@
 }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
-
+  
+  #btn_plus{display:block;}
+  .top-bar{display: none;}
+  
   .home{
+
     .intro{
       .container{
         top:10%;
@@ -25,8 +29,19 @@
         }
       }
     }
+    
     section{
-      
+      padding:2em 0em 2em 0em;
+      h3{
+        font-size: 3em;
+      }
+      h3,small,span,p,a{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+        font-size: 3em;  
+      }
       &.boatjump,&.webdings,&.eatbooking,&.oasis{
         .columns{
           .description{
@@ -40,83 +55,44 @@
         }
       }
       
-      &.partecipation{  
-        .content{
-          h3{font-size: 2em;}
-          .text{text-align: center;}
-        }
+      &.webdings{
+        padding-top:6em;
+        .image{padding-top: 0em;}
       }
-
+      &.rockandror{
+        img{max-width: 200px;}
+      }
       &.howweworks{
-        .workflow{display: none;}
+        .workflow{
+          display: none;
+        }
         .columns{
           h3{
             font-size: 1.6em; 
           }
         }
       }
+      &.partecipation{  
+        .content{
+          h3{font-size: 2em;}
+          .text{
+            text-align: center;
+            h4{text-align: center;}
+            svg{width: 50%;}
+          }
+        }
+      }
     }
   } 
-
-  #btn_plus{display:block;}
-  .top-bar{display: none;}
-  .intro .container{
-    top:20%;
-    lead{visibility: hidden;}
-    h1{
-      font-size: 2.4rem;
-      line-height: 40px;
-      padding: 1em;
-    }
-  }
-
-  section{
-    padding:2em 0em 2em 0em;
-    h3{font-size: 3em;}
-    h3,small,span,p,a{text-align: center;}
-    h2{
-      text-align: center;
-      font-size: 3em;  
-    }
-    &.webdings{
-      padding-top:6em;
-      .image{padding-top: 0em;}
-    }
-    &.rockandror{
-      img{max-width: 200px;}
-    }
-    &.participation {
-      .content{
-        h3{
-          text-align: center;
-          font-size: 2rem;
-        }
-        .text{
-          text-align: center;
-          h4{
-            text-align: center;
-          }
-          svg{width: 50%;}
-        }
+  
+  .page{
+    &.contact{
+      h1{
+        padding-top:80px;
+        font-size:1.4em;
       }
     }
-    &.howweworks{
-      .workflow{
-        .arrow{
-          display: none;
-        }
-        .block{
-          width: 40%;
-          float: none;
-          margin: 0px auto;
-          height: auto;
-          svg#acceptance{ width: 26%; }
-          svg#deployment{ width: 37%; }
-        }
-      }
-    }   
   }
-
   .footer{ 
     padding-top: 1em;
     padding-bottom: 1em;
@@ -212,10 +188,7 @@
     color:grey;
   }
   
-  .contactpage{
-    margin-top: 0px;
-  }
-  .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage{
+  .page{
     margin-top: 0px;
     .cont-introduction{
       h2{
@@ -283,6 +256,7 @@
       }
     }
   } 
+  
   .top-bar-section li.active:not(.has-form) a:not(.button){
     line-height: 0.6875rem;
     margin-top: 33px;
@@ -291,6 +265,7 @@
   .top-bar-section .has-dropdown > a:after{
     display: none;
   }
+  
   .top-bar{
     .top-bar-section{
       .has-dropdown.moved{
@@ -333,7 +308,7 @@
     }  
   }
   .top-bar{display: none;}
-  .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage{
+  .page{
     margin-top: 0px;
     .cont-introduction{
       h2{
@@ -387,7 +362,7 @@
 
   }
 
-  .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage{
+  .page,.contact-page{
     h1{
       font-size: 2.3em;
     }
@@ -463,19 +438,4 @@
     }
   }
   
-  .boatjumppage,
-  .webdingspage,
-  .eatbookingpage,
-  .oasiscatamaranspage,
-  .contactpage,
-  .greetingspage{
-     h1{
-      font-size: 30px;
-    }
-    .cont-introduction{
-      padding:4em 1em;
-      span{text-align: center;}
-      p,a{font-size: 90%;}
-    }
-  }
 }
