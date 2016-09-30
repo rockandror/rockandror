@@ -1,7 +1,7 @@
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
   
-  #home{
+  .home{
     .intro{
       .container{
         top:10%;
@@ -11,6 +11,20 @@
           line-height: 1em;
           margin-top:10px;
           font-size: 1.6em;
+        }
+      }
+    }
+    section{
+      &.boatjump,&.webdings,&.eatbooking,&.oasis{
+        .columns{
+          .description{
+            margin-top:-60px;
+          }
+          .image{
+            top: -80px; 
+            position: relative;
+            height: 260px;
+          }
         }
       }
     }
@@ -77,11 +91,11 @@
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   
     
-  body{
-    border:2px solid red;
-  }
+  // body{
+  //   border:2px solid red;
+  // }
 
-  #home{
+  .home{
     .intro{
       .container{
         top:20%;
@@ -219,7 +233,7 @@
     }
   }
   
-  #home{
+  .home{
     .intro{
       .container{
         top:40%;
@@ -268,7 +282,7 @@
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
 
-  #home{
+  .home{
     .intro{
       .container{
         top:10%;
@@ -299,7 +313,7 @@
 
 @media only screen and (max-width: 480px) { 
 
-  #home {
+  .home {
     .intro{
       .container{
         top:20%;
@@ -352,7 +366,7 @@
 
 @media only screen and (max-width: 360px) { 
  
-  #home {
+  .home {
     .intro{
       .container{
          h1{
@@ -386,7 +400,7 @@
 
 @media only screen and (max-width: 320px) { 
   
-  #home {
+  .home {
     .intro{
       .container{
          h1{
