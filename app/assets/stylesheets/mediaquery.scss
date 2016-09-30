@@ -76,7 +76,10 @@
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   
-  
+    
+  body{
+    border:2px solid red;
+  }
 
   #home{
     .intro{
@@ -109,11 +112,36 @@
           padding: 0px;
         }
       }
+      
+      &.boatjump,&.webdings,&.eatbooking,&.oasis{
+        .columns{
+          .description{
+            padding:3em;
+          }
+        }
+      }
+
+      &.boatjump,&.eatbooking{
+        .columns{
+          .image{
+            right: 10px;
+          }
+        }
+      }
+      &.webdings,&.oasis{
+        .columns{
+          .image{
+            left: 20px;
+          }
+        }
+      }
+      
       &.oasis{
          h2{
           font-size: 2.3em;
          }
       }
+
       .participation{
          .header{text-align: center;}
       }

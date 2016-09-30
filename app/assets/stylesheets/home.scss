@@ -44,8 +44,7 @@
     }
   }
   section{
-    padding:8em 0em;
-    
+
     h2{
       font-size: 3.3rem;
       font-weight: 200;
@@ -53,6 +52,7 @@
     }
     
     &.rockandror{
+      padding:3em 0em;
       background: #fff;
       text-align: center;
       h3{
@@ -90,6 +90,72 @@
       @include btn-ror(transparent, transparent, $secondary-color);
     }
     
+    &.boatjump{
+      @extend .gradient-boatjump;
+      h2{
+        @include text(#fff,uppercase, null,null);
+      }
+      color:#fff;
+
+      .columns{
+        .description{
+          text-align: left;
+        }
+        .image{
+          background: url('boatjump/home.png');
+        }
+      }
+    }
+
+    &.webdings{
+      @extend .gradient-white;   
+      h2{
+        @include text($primary-color,uppercase, null,null);
+      }
+      .columns{
+        .description{
+          text-align: right;
+        }
+        .image{
+          left:0;
+          background: url('webdings/home.png');
+        }
+      }
+    }
+
+    &.eatbooking{
+      @extend .pattern-eatbooking;
+      h2{
+        @include text(#f3cc33,uppercase, null,null);
+      }
+      color:#fff;
+      .columns{
+        .description{
+          text-align: left;
+        }
+        .image{
+          background: url('eatbooking/home.png');
+        }
+      }
+    }
+
+    &.oasis{
+      @extend .gradient-oasis;
+      h2{
+        @include text(#5fc3e6,uppercase, null,null);
+      }
+      color:#fff;
+      .columns{
+        .description{
+          text-align: right;
+        }
+        .image{
+          left:0px;
+          background: url('oasis-catamaran/home.png');
+        }
+      }
+    }
+
     &.boatjump,&.webdings,&.eatbooking,&.oasis{
       span,small{
         font-size: 1em;
@@ -101,37 +167,21 @@
         text-align: justify;
         text-justify: inter-word;
       }
-    }
-
-    &.boatjump{
-      @extend .gradient-boatjump;
-      h2{
-        @include text(#fff,uppercase, null,null);
+      .columns{
+        padding:3em 0em;
+        .description{padding: 1em;}
+        .image{
+          position: absolute;
+          right: 0;
+          top: 100px;
+          bottom: 0;
+          background-position: center top;
+          background-size: cover;
+          background-repeat: no-repeat;
+          -webkit-filter: drop-shadow(-1px -3px 8px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(-1px -3px 8px rgba(0, 0, 0, 0.4));
+        }
       }
-      color:#fff;
-    }
-
-    &.webdings{
-      @extend .gradient-white;   
-      h2{
-        @include text($primary-color,uppercase, null,null);
-      }
-    }
-
-    &.eatbooking{
-      @extend .pattern-eatbooking;
-      h2{
-        @include text(#f3cc33,uppercase, null,null);
-      }
-      color:#fff;
-    }
-
-    &.oasis{
-      @extend .gradient-oasis;
-      h2{
-        @include text(#5fc3e6,uppercase, null,null);
-      }
-      color:#fff;
     }
 
     &.participation{
