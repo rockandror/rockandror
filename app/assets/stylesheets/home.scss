@@ -197,15 +197,9 @@
           margin:0px auto;
           height: auto;
         }
-        .column{
-          
-          h3{
-            @include text(white,uppercase, null, null);
-            font-weight: 200;
-          }
-          .text{
-            text-align: left;
-          }
+        h3{
+          @include text($steel,uppercase, null, null);
+          font-weight: 200;
         }
       }
     }

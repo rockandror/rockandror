@@ -1,18 +1,14 @@
-@media only screen and (min-width: 40.063em){
-  // body{
-  //   border:2px solid red;
-  // }
-  // section{
-  //   &.partecipation{
-  //     .header{
-  //       h3{
-  //         font-size: 1.5em;
-  //       }
-  //     } 
-  //   }  
-  // }
-}
 
+@media screen and (min-width: 64em) {
+  section{
+    &.participation{  
+      .content{
+        h3{font-size: 3em;}
+        .text{text-align: left;}
+      }
+    }
+  }
+}
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
 
@@ -44,12 +40,11 @@
         }
       }
       
-      &.partecipation{
-        .header{
-          h3{
-            font-size: 1.5em;
-          }
-        } 
+      &.partecipation{  
+        .content{
+          h3{font-size: 2em;}
+          .text{text-align: center;}
+        }
       }
 
       &.howweworks{
@@ -91,12 +86,17 @@
       img{max-width: 200px;}
     }
     &.participation {
-      text-align: center;
-      .header{
-        svg{width: 50%;}
+      .content{
         h3{
           text-align: center;
           font-size: 2rem;
+        }
+        .text{
+          text-align: center;
+          h4{
+            text-align: center;
+          }
+          svg{width: 50%;}
         }
       }
     }
@@ -142,14 +142,16 @@
     }  
 
     section{
+      
       h2{
         font-size: 2.3rem;
       }
+      
       a{
         display: block;
         margin-bottom: 10px;
         text-align: center;
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
       
       &.rockandror{
@@ -184,20 +186,14 @@
       
       &.oasis{
          h2{
-          font-size: 2.3em;
+          font-size: 1.7em;
          }
       }
-
-      .participation{
-        //  &.partecipation{
-        //   text-align: center;
-        //   h3{
-        //     font-size: 1.5em;
-        //   }
-        //   .text{
-        //     text-align: left;
-        //   }
-        // }  
+      
+      &.participation{  
+        .content{
+          h3{font-size: 3em;}
+        }
       }
     }  
   }
@@ -388,6 +384,7 @@
         .workflow{display: none;}  
       }
     }
+
   }
 
   .boatjumppage, .webdingspage, .eatbookingpage, .oasiscatamaranspage,.contactpage{
