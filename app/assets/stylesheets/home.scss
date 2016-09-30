@@ -186,51 +186,47 @@
 
     &.participation{
       padding:0em;
-      @extend .participation-pattern; 
       background: #fff;
       position: relative;
       z-index: 2;
-      .header{
-        padding-top: 3em;
-        padding-bottom: 3em;
-        background: #0077b9;
+      .content{
+        text-align: center;
+        padding:3em 0em;
         svg{
-          fill: white;
-          width: 94%;
-          margin-top: 8px;
+          fill: $secondary-color;
+          margin:0px auto;
           height: auto;
         }
-        h3{
-          @include text(white,uppercase, null, null);
-          font-size: 3rem;
-          font-weight: 200;
+        .column{
+          
+          h3{
+            @include text(white,uppercase, null, null);
+            font-weight: 200;
+          }
+          .text{
+            text-align: left;
+          }
         }
-      }
-      .content{
-        padding:8em 0em;
       }
     }
     
     &.howweworks{
-      background: $secondary-color;
-      h3{
-        color:white;
-        font-size: 2.1rem;
-        font-weight: 200;  
-        span{text-decoration: underline;}
+      background: #f0f0f0;
+      
+      .columns{
+        padding:3em 0em;
+        h3{
+          font-size: 2.1rem;
+        }
       }
-      i{
-        padding-top: 3em;
-        color: white;
-        margin: 0px auto;
-      }
+      
       .workflow{
         padding:3em 0em;
+        fill:$steel;
         .block{
           width: 12%;
           display: block;
           float: left;
-          fill:white;
           padding-top: 12px;
           height: 70px;
           svg{
@@ -241,10 +237,8 @@
           svg#acceptance{ width: 36%; }
           svg#deployment{ width: 67%; }
           span{
+            text-transform: uppercase;
             display: block;
-            margin-top: 10px;
-            color: white;
-            font-weight: 100;
           }
         }
         .arrow{
@@ -255,46 +249,52 @@
           svg{
             height: auto;
             width: 80%;
-            fill:white;
             opacity: .8;
             zoom: 3;
           }
         }
-      }
-      .block-path{
-        position: relative;
-        #sprint-path{
-          margin-top: 50px;
-          width: 90%;
-          height: auto;
-        }  
-        .newsprint{
-          border:2px solid white;
-          padding: 1em;
-          background: $secondary-color;
-          position: absolute;
-          left: 0;
-          right: 0;
-          margin: 0px auto;
-          width: 200px;
-          bottom: -17px;
-          text-transform: uppercase;
-          color:white;
-          zoom:1.3;
+        .block-path{
+          position: relative;
+          fill:$steel;
+          .st0_path{fill:none;stroke:$steel;stroke-miterlimit:10;}
+          .st1_path{fill:none;stroke:$steel;stroke-miterlimit:10;stroke-dasharray:12.9849,12.9849;}
+          .st2_path{fill:none;stroke:$steel;stroke-miterlimit:10;stroke-dasharray:11.8895,11.8895;}
+          .st3_path{fill:none;stroke:$steel;stroke-miterlimit:10;stroke-dasharray:12.0498,12.0498;}
+          .st4_path{fill:$steel;}
+          
+          #sprint-path{
+            margin-top: 50px;
+            width: 90%;
+            height: auto;
+          }  
+          .newsprint{
+            background:$steel;
+            padding: 0.5em;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0px auto;
+            width: 200px;
+            bottom: -13px;
+            text-transform: uppercase;
+            color:white;
+            zoom:1.3;
+          }
         }
-      }
-      .text{
-        padding:4em;
-        margin-top: 2em;
-        background: darken($secondary-color, 10%);
-        text-align: left;
-        color:white;
-        ul{list-style: none;}
-        span{font-size: .9rem;}
+        .text{
+          padding:4em;
+          margin-top: 2em;
+          background: darken($steel, 10%);
+          text-align: left;
+          color:white;
+          ul{list-style: none;}
+          span{font-size: .9rem;}
+        }
       }
     }
     
     &.contact-now{
+      padding:3em 0em;
       @extend .contact-now;
     }
     @include btn-ror(transparent, $secondary-color, white);  

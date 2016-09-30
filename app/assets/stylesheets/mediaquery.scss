@@ -1,6 +1,21 @@
+@media only screen and (min-width: 40.063em){
+  // body{
+  //   border:2px solid red;
+  // }
+  // section{
+  //   &.partecipation{
+  //     .header{
+  //       h3{
+  //         font-size: 1.5em;
+  //       }
+  //     } 
+  //   }  
+  // }
+}
+
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
-  
+
   .home{
     .intro{
       .container{
@@ -15,6 +30,7 @@
       }
     }
     section{
+      
       &.boatjump,&.webdings,&.eatbooking,&.oasis{
         .columns{
           .description{
@@ -24,6 +40,23 @@
             top: -80px; 
             position: relative;
             height: 260px;
+          }
+        }
+      }
+      
+      &.partecipation{
+        .header{
+          h3{
+            font-size: 1.5em;
+          }
+        } 
+      }
+
+      &.howweworks{
+        .workflow{display: none;}
+        .columns{
+          h3{
+            font-size: 1.6em; 
           }
         }
       }
@@ -59,9 +92,12 @@
     }
     &.participation {
       text-align: center;
-      .header h3{
-        text-align: center;
-        font-size: 2rem;
+      .header{
+        svg{width: 50%;}
+        h3{
+          text-align: center;
+          font-size: 2rem;
+        }
       }
     }
     &.howweworks{
@@ -80,6 +116,7 @@
       }
     }   
   }
+
   .footer{ 
     padding-top: 1em;
     padding-bottom: 1em;
@@ -90,11 +127,6 @@
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   
-    
-  // body{
-  //   border:2px solid red;
-  // }
-
   .home{
     .intro{
       .container{
@@ -157,7 +189,15 @@
       }
 
       .participation{
-         .header{text-align: center;}
+        //  &.partecipation{
+        //   text-align: center;
+        //   h3{
+        //     font-size: 1.5em;
+        //   }
+        //   .text{
+        //     text-align: left;
+        //   }
+        // }  
       }
     }  
   }
@@ -342,7 +382,6 @@
         }
       }
       &.participation{
-         .header h3{font-size: 2.3em;}
          .content{padding: 0px;}
       }
       &.howweworks{
