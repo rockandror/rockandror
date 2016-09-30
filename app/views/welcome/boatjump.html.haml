@@ -5,16 +5,17 @@
       %span Alquila un barco, mejor precio garantizado
       %hr
       %p
-        Webdings se ha desarrollado como un proyecto de formación interna, es un SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda. Esta formado por un backend a través del cual los novios pueden definir los contenidos y módulos que desean publicar, una API para interactuar con aplicaciones móviles, una web y una app autogeneradas a través de la información y configuración introducidas en el backend.
+        Boatjump es un B2C para el alquiler de barcos online al mejor precio. En esta primera versión hemos construido una sólida aplicación web sobre la que Boatjump podrá crecer a medida que lo requiera.
+
       %hr
-      = link_to '> www.boatjump.es', 'http://www.boatjump.es', target: :blank
+      = link_to '> www.boatjump.co.uk', 'http://www.boatjump.co.uk', target: :blank
   .brand-design.row#scroll_to_brand_webdings
     .content.medium-12.small-12.large-6.columns.medium-centered
-      %h2.text-center <strong>Restyling </strong> Design
+      %h2.text-center <strong>Branding</strong>
       %div.text-center
         = inline_svg "svg/boatjump-logo.svg"
       %p 
-        El diseño de la marca y de la plataforma ha sido realizado integramente por RockAndRoR buscando la mayor simplicidad en diseño y usabilidad web.
+        En Rock&Ror hemos replanteado el diseño original de la marca y de la aplicación a partir del bonito diseño original de Armando Ramos.
   .back-end.row
     .content.medium-12.small-12.large-10.columns.medium-centered
       %h2.text-center <strong>Back</strong> end
@@ -24,22 +25,20 @@
         .row
           .large-6.columns
             %ul.text-center
-              %li Envia invitaciones por email
-              %li Define el menú de la boda
-              %li Organiza a los invitados por mesas
-              %li Crea una galería de imágenes colaborativa
-              %li Define los puntos de interés del evento
+              %li Gestión de barcos
+              %li Gestión del árbol de localizaciones
+              %li Gestión de los precios de los barcos por temporadas
+              %li Geolocalización por dirección
+              %li Subida de imágenes con marca de agua
 
           .large-6.columns
             %ul.text-center
-              %li Configuración adaptable
-              %li Diseño personalizable
-              %li Solicita confirmación de asistencia a tus invitados
-              %li Ofrece servicio de transporte a tus invitados
-              %li Diseño optimizado para su uso en tablets
+              %li Gestión de los contenidos dinámicos multi-idioma
+              %li Gestión de los extras de los barcos
+              %li Gestión de los características de los barcos
+              %li Diseño optimizado para su uso en dispositivos moviles.
         %hr
         %p 
-          El Backend es la parte donde los novios pueden gestionar los invitados de la boda, seleccionar los módulos que se desean publicar así como definir los contenidos de la web y la aplicación móvil.
 
   .front-end.row
     .content.medium-12.small-12.large-10.columns.medium-centered
@@ -49,7 +48,7 @@
         %hr
         .medium-centered.columns
           %p 
-            La página de la boda se genera automáticamente a partir de los contenidos definidos en el backend y dispone de diseño adaptado para la navegación con todos tipo de dispositivos móviles, tanto tablets como móviles. La página web de la boda puede ser de acceso privado o de acceso público, según deseen los novios.
+            El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Se ha particularizado el disño en tablets con orientación vertical, horizontal y con todo tipo de teléfono mócil y navegadores web.
 
   .tecnology.row
     .content.medium-centered.columns.small-12
@@ -58,9 +57,9 @@
         = inline_svg "svg/icon-responsive.svg", class: 'text-center'
       .medium-centered.columns
         %p 
-          RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br>
+          RubyOnRails / PostgreSQL <br>
+          Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br>
           Bootstrap / Sass / Diseño responsive <br>
-          API / Ionic <br>
           Photoshop / Illustrator
 
   = render 'shared/contact_now'
