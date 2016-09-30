@@ -6,7 +6,7 @@ var
 function init(){
   animation();
   resizeDiv();
-  scrollTo();
+  scrollToSection();
 }
 
 function resizeDiv() {
@@ -16,7 +16,7 @@ function resizeDiv() {
   }
 }
 
-function scrollTo(){
+function scrollToSection(){
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
     $( this ).parent().addClass('active');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
