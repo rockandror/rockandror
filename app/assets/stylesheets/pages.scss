@@ -27,11 +27,6 @@
   
   .row{
     max-width: 100%;
-    &.img-background{
-      background-size: cover;
-      background-repeat:   no-repeat;
-      background-position: center center; 
-    }
   }
 
   .cont-introduction{
@@ -45,7 +40,6 @@
       text-align: justify;
       text-justify: inter-word;
     }
-    @include btn-ror($secondary-color, transparent, $secondary-color);
   }
 
   .back-end,.front-end,.tecnology{
@@ -71,7 +65,8 @@
   &.boatjump{
     text-align: center;
     .img-background{
-      background: asset_url('boatjump/background-page.jpg');
+      background: asset_url('boatjump/background-page-cut.jpg');
+      background-position: center center;
     }
     h1{
       color:white;
@@ -105,7 +100,8 @@
     }
     
     .img-background{
-      background: asset_url('webdings/background-page.jpg');
+      background: asset_url('webdings/background-page-cut.jpg');
+      background-position: center center;
     }
     .cont-introduction{
       background:#fff;
@@ -154,7 +150,8 @@
       color:#f3cc33;
     }
     .img-background{
-      background:asset_url('eatbooking/background-page.jpg');
+      background:asset_url('eatbooking/background-page-cut.jpg');
+      background-position: center center; 
     }
     .cont-introduction{
       @extend .pattern-eatbooking;
@@ -166,7 +163,8 @@
       color: #5fc3e6;
     }
     .img-background{
-      background: asset_url('oasis-catamaran/background-page.jpg');
+      background: asset_url('oasis-catamaran/background-page-cut.jpg');
+      background-position: center center;
     }
     .cont-introduction{
       background: white;

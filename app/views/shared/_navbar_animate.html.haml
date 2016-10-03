@@ -15,9 +15,6 @@
 %a#btn_works
   = inline_svg "svg/works.svg" , class: 'icon-menu'
   %span trabajos
--# %a#btn_team
--#   = inline_svg "svg/team.svg" , class: 'icon-menu'
--#   %span Equipo
 %a#btn_email{:href => new_contact_path}
   = inline_svg "svg/email.svg", class:'icon-menu'
   %span contactos
@@ -63,19 +60,15 @@
 %nav.top-bar{"data-topbar" => "", :role => "navigation"}
   %ul.title-area.small-12.medium-5.large-4.columns
     %li.logo
-      %h1
-        %a{:href => root_path}
-          = inline_svg "svg/logo.svg", class: 'logo-horiz show-for-medium-up'
-    / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+      %a{:href => root_path}
+        = inline_svg "svg/logo.svg", class: 'logo-horiz show-for-medium-up'
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
         %span Menu
   %section.top-bar-section
-    / Right Nav Section
     %ul.right
       %li
         %a{:href => new_contact_path} Envíanos un email
-    / Left Nav Section
     %ul.left.small-4.medium-4.columns.show-for-medium-up
       %li.anim{:class => active?("home", params[:action])}
         %a{:href => root_path} Home
