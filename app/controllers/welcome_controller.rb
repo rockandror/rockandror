@@ -7,9 +7,6 @@ class WelcomeController < ApplicationController
   def team
   end
 
-  def services
-  end
-
   def boatjump
   end
 

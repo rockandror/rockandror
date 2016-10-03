@@ -179,6 +179,7 @@
   .oasis h2{
     font-size: 3rem;
   }
+  .page.boatjump .brand-design .content svg{width: 70%;}
 }
 
 @media only screen and (max-width: 767px) { 
@@ -372,6 +373,12 @@
     .brand-design,.back-end,.front-end,.app-mobile, .tecnology,.contact-now{
       padding: 1em 0em;
     }
+    ul{
+      li{
+        // text-align: left;  
+        // list-style-type:circle;
+      }
+    }
   }
 }
 
@@ -437,5 +444,5 @@
       }
     }
   }
-  
+ 
 }

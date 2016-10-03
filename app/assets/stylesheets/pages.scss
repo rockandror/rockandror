@@ -1,6 +1,6 @@
 .page{
   margin-top: 100px;
-  
+
   h1{
     text-align: center;
     text-transform: uppercase;
@@ -11,8 +11,20 @@
     color:$steel;
     text-transform: uppercase;
   }
+  
   text-align: center;
+  .content{
+    text-align: justify;
+    text-justify: inter-word;  
+  }
 
+  ul{
+    li{
+      text-align: left;  
+      list-style-type:circle;
+    }
+  }
+  
   .row{
     max-width: 100%;
     &.img-background{
@@ -29,16 +41,23 @@
       text-transform: uppercase;
       font-weight: 600;
     }
+    p{
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    @include btn-ror($secondary-color, transparent, $secondary-color);
   }
 
   .back-end,.front-end,.tecnology{
     padding: 6em 3em;
   }
-
+    
   .tecnology{
     background: #3b3b3b;   
     color:white;
+   
     .content{
+      text-align: center;
       h2{ color:#fff; }
       svg{
         width: 200px;
@@ -47,11 +66,6 @@
         fill:white;
       }
     }
-  }
-  
-  &.contact-now{
-    @extend .contact-now;
-    padding:3em 0em;
   }
   
   &.boatjump{
@@ -173,19 +187,22 @@
     textarea{
       height: 150px;
     }
-  }
-
-  &.greetingspage{
-    background: #f8f8f8;
-    .row{max-width: 100%;}
-    #share-buttons img {
-      width: 35px;
-      padding: 5px;
-      border: 0;
-      box-shadow: 0;
-      display: inline;
+    .button.expand{
+      background: $secondary-color;
+      &:hover{
+        background: darken($secondary-color,10%);
+      }
     }
   }
+
+  &.greetings{
+    h1{
+      font-size:2.3em; 
+    }
+  }
+
+  .contact-now{
+    padding:3em 0em;
+  }
+  
 }
-
-
