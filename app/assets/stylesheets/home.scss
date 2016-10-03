@@ -90,6 +90,9 @@
     }
     
     &.boatjump{
+      h3{
+        color:white;
+      }
       @extend .gradient-boatjump;
       h2{
         @include text(#fff,uppercase, null,null);
