@@ -26,6 +26,8 @@ gem 'cookies_eu'
 gem 'browser'
 gem 'owlcarousel-rails'
 gem 'fastclick-rails'
+gem 'greensock-rails'
+
 # Monitoring
 gem 'newrelic_rpm'
 # Error monitoring

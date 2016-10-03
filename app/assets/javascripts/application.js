@@ -2,7 +2,6 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require owl.carousel
-//= require jquerymb.YTPlayer
 //= require foundation
 //= require main
 //= require animation
@@ -10,9 +9,8 @@
 //= require nprogress
 //= require nprogress-turbolinks
 //= require nprogress-ajax
-//= require_tree ../../../vendor/assets/javascripts/.
+//= require 'greensock/TweenLite'
+//= require 'greensock/TweenMax'
+//= require 'greensock/TimelineMax'
+//= require 'greensock/jquery.gsap.js'
 //= require turbolinks
-
-$(function(){
-  $(".player").YTPlayer();
-});
