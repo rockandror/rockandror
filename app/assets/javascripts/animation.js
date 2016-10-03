@@ -1,4 +1,7 @@
 function animation() {
+  var touchScroll = function( event ) {
+    event.preventDefault();
+  };
 
   var
     link_url_active,
@@ -221,7 +224,7 @@ function animation() {
     }
 
     function load_owlCarousel(){
-
+     
       TweenLite.to($(".owl-carousel"), 0.5, {y:0, opacity:1, ease: Back.easeInOut});
       $(".owl-carousel").owlCarousel({
         itemsCustom : false,
@@ -229,11 +232,12 @@ function animation() {
         itemsDesktopSmall : [980,3],
         itemsTablet: [768,1],
         navigation : true,
-        navigationText : ["prev","next"],
+        navigationText : ["Prev Project","Next project"],
         rewindNav : true,
         pagination : false
       });
       tl_back.play();
+      $('body').bind( 'touchmove', touchScroll );
     }
 
     function close_submenu(link_url_active){
@@ -250,6 +254,7 @@ function animation() {
     }
       
     function reset(){
+      $( 'body' ).unbind( 'touchmove', touchScroll );
       tl_plus.reverse();
       tl_close.reverse();
       tlContainer.reverse();
