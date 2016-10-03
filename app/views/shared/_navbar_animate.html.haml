@@ -11,10 +11,10 @@
   = inline_svg "svg/back.svg" , class: 'icon-menu'
 %a#btn_home{:href => root_path}
   = inline_svg "svg/home.svg" , class: 'icon-menu'
-  %span home
+  %span Inicio
 %a#btn_works
   = inline_svg "svg/works.svg" , class: 'icon-menu'
-  %span trabajos
+  %span Trabajos
 %a#btn_email{ href: new_contact_path }
   = inline_svg "svg/email.svg", class: 'icon-menu'
   %span Escríbenos
@@ -26,37 +26,36 @@
   .owl-carousel
     %a#btn_boatjump{:href => '#'}
       %h2 BoatJump
-      %strong Alquila barco
-      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      %strong Alquiler de barcos
+      %p Aplicación web y backoffice para el alquiler de barcos online.
       = image_tag "boatjump/background-page.jpg"
     %a#btn_webdings{:href => '#'}
       %h2 Webdings
-      %strong crea la app y la web de tu boda
+      %strong Crea la app y la web de tu boda
       %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
       = image_tag "webdings/background-page.jpg"
     %a#btn_eatbooking{:href => '#'}
       %h2 Eatbooking
-      %strong crea la app y la web de tu boda
-      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      %strong Libro de reservas electrónico para restaurantes
+      %p Sistema de reservas y fidelización de clientes online para restaurantes.
       = image_tag "eatbooking/background-page.jpg"
     %a#btn_oasiscatamaran{:href => '#'}
-      %h2 Oasis Catamaran
-      %strong crea la app y la web de tu boda
-      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      %h2 Oasis Catamarán
+      %strong Plataforma de venta online de excursiones en catamarán.
+      %p Aplicación web responsive para la venta de excursiones en catamarán con pasarela de pago para la venta directa de tickets y BackOffice de gestión integral.
       = image_tag "oasis-catamaran/background-page.jpg"
        
 .row.top-contact
   .small-8.columns
     %a{:href => root_path} 
-      = inline_svg "svg/logo-smartphone.svg" , class: 'logo-smartphone'
+      = inline_svg "svg/logo-smartphone.svg", class: 'logo-smartphone'
   .small-2.columns.tel
     %a{:href => "tel:+34607320876"} 
-      = inline_svg "svg/phone.svg", class:'icon-nav'
+      = inline_svg "svg/phone.svg", class: 'icon-nav'
   .small-2.columns.email
     %a{:href => new_contact_path}
-      = inline_svg "svg/email.svg", class:'icon-nav'
+      = inline_svg "svg/email.svg", class: 'icon-nav'
 
-  
 %nav.top-bar{"data-topbar" => "", :role => "navigation"}
   %ul.title-area.small-12.medium-5.large-4.columns
     %li.logo
@@ -64,14 +63,14 @@
         = inline_svg "svg/logo.svg", class: 'logo-horiz show-for-medium-up'
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
-        %span Menu
+        %span Menú
   %section.top-bar-section
     %ul.right
       %li
         %a{:href => new_contact_path} Envíanos un email
     %ul.left.small-4.medium-4.columns.show-for-medium-up
       %li.anim{:class => active?("home", params[:action])}
-        %a{:href => root_path} Home
+        %a{:href => root_path} Inicio
       %li.anim.has-dropdown{:class => active?("portfolio", params[:action])}
         %a{:href => "#"} Últimos trabajos
         %ul.dropdown
