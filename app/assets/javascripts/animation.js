@@ -44,7 +44,6 @@ function animation() {
 
   if($('.intro').length){
     TweenMax.to(backgroundIntro, 3, {autoAlpha:1,ease:Power4.easeInOut})
-    
     TweenMax.fromTo(h1, 1, 
       {y:30, delay:2},
       {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
@@ -79,6 +78,7 @@ function animation() {
     }
 
     if ($(window).width() >= 800) {
+      //Nexus 10
       TweenMax.to(topcontact, 0.5, {top: "-50%",opacity:1, ease:Power4.easeInOut})
       TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Power4.easeInOut})
     }

@@ -175,6 +175,8 @@
   }
 }
 
+
+
 @media only screen and (min-width: 1024px) and (max-width: 1072px) { 
   .oasis h2{
     font-size: 3rem;
@@ -211,7 +213,6 @@
   .top-bar{
     overflow: visible !important;
     .top-bar-section{
-
       .show-for-medium-up li{padding-left:0px !important;}
       .left{
         .has-dropdown:hover{
@@ -280,6 +281,7 @@
         width: 150px;
       }
       .show-for-medium-up{
+        margin-top: 15px;
         width: 400px;
         li{padding-left:1em;
           display: inline-block;
@@ -289,6 +291,13 @@
         }
       }
     }
+  }
+}
+@media only screen and (min-width: 800px) and (orientation: portrait){
+  //Nexus 10
+  .top-bar .top-bar-section .show-for-medium-up{
+    width: 270px;
+    margin-top: 20px;
   }
 }
 
@@ -368,7 +377,7 @@
       font-size: 2.3em;
     }
     .cont-introduction{
-      padding-top: 80px;
+      padding:0em 1em;
     }
     .brand-design,.back-end,.front-end,.app-mobile, .tecnology,.contact-now{
       padding: 1em 0em;

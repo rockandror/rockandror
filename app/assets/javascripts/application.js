@@ -9,7 +9,6 @@
 //= require nprogress
 //= require nprogress-turbolinks
 //= require nprogress-ajax
-//= require 'greensock/TweenLite'
 //= require 'greensock/TweenMax'
 //= require 'greensock/TimelineMax'
 //= require 'greensock/jquery.gsap.js'
