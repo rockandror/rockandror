@@ -8,7 +8,7 @@
     .bg-background{
       height: 100%;
       width: 100%;
-      background: image-url('background-intro.jpg') no-repeat center center;
+      background: image_url('background-intro.jpg') no-repeat center center;
       background-size: cover;
       z-index: 0;
       visibility: hidden;
@@ -104,7 +104,7 @@
           text-align: left;
         }
         .image{
-          background: image-url('boatjump/home.png');
+          background: image_url('boatjump/home.png');
         }
       }
     }
@@ -120,7 +120,7 @@
         }
         .image{
           left:0;
-          background: image-url('webdings/home.png');
+          background: image_url('webdings/home.png');
         }
       }
     }
@@ -136,7 +136,7 @@
           text-align: left;
         }
         .image{
-          background: image-url('eatbooking/home.png');
+          background: image_url('eatbooking/home.png');
         }
       }
     }
@@ -153,7 +153,7 @@
         }
         .image{
           left:0px;
-          background: image-url('oasis-catamaran/home.png');
+          background: image_url('oasis-catamaran/home.png');
         }
       }
     }
