@@ -373,12 +373,6 @@
     .brand-design,.back-end,.front-end,.app-mobile, .tecnology,.contact-now{
       padding: 1em 0em;
     }
-    ul{
-      li{
-        // text-align: left;  
-        // list-style-type:circle;
-      }
-    }
   }
 }
 
@@ -397,6 +391,14 @@
         }
       }
     }  
+  }
+
+  .page{
+    &.oasiscatamarans{
+      h1{
+        font-size: 1.8em;
+      }
+    }
   }
 
   #container_submenu_responsive .owl-carousel p{
