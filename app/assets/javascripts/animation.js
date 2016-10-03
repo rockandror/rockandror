@@ -232,7 +232,7 @@ function animation() {
         itemsDesktopSmall : [980,3],
         itemsTablet: [768,1],
         navigation : true,
-        navigationText : ["Prev Project","Next project"],
+        navigationText : ["Proyecto anterior", "Proyecto siguiente"],
         rewindNav : true,
         pagination : false
       });

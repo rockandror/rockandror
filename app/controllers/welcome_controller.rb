@@ -3,9 +3,6 @@ class WelcomeController < ApplicationController
   def home
     @contact = Contact.new
   end
-  
-  def team
-  end
 
   def boatjump
   end
