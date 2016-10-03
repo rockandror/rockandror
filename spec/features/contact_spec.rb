@@ -9,7 +9,7 @@ feature 'contact request' do
     fill_in 'contact_message', with: "Solicitud de contacto"  
     click_on 'Contacta ahora'
     expect(page).to have_content "Gracias por contactar con nosotros."
-    expect(page).to have_content "Obtendrá una respuesta en 24 horas."
+    expect(page).to have_content "Obtendrá una respuesta en menos de 24 horas."
   end
 
   scenario 'should be not send' do

@@ -20,7 +20,7 @@ feature 'Main page' do
     end
     
     within('.top-bar-section ul.show-for-medium-up') do  
-      expect(page).to have_link('Home')
+      expect(page).to have_link('Inicio')
       expect(page).to have_link('Últimos trabajos')
       expect(page).to have_link('Webdings')
       expect(page).to have_link('Eatbooking')
