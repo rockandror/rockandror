@@ -15,12 +15,12 @@
 %a#btn_works
   = inline_svg "svg/works.svg" , class: 'icon-menu'
   %span trabajos
-%a#btn_email{:href => new_contact_path}
-  = inline_svg "svg/email.svg", class:'icon-menu'
-  %span contactos
-%a#btn_tel{:href => "tel:+34607320876"} 
-  = inline_svg "svg/phone.svg", class:'icon-menu'
-  %span Llama
+%a#btn_email{ href: new_contact_path }
+  = inline_svg "svg/email.svg", class: 'icon-menu'
+  %span Escríbenos
+%a#btn_tel{ href: "tel:+34607320876" }
+  = inline_svg "svg/phone.svg", class: 'icon-menu'
+  %span Llámanos
 
 #container_submenu_responsive
   .owl-carousel
