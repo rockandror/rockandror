@@ -77,6 +77,12 @@ function animation() {
         TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Power4.easeInOut})
       }
     }
+
+    if ($(window).width() >= 800) {
+      TweenMax.to(topcontact, 0.5, {top: "-50%",opacity:1, ease:Power4.easeInOut})
+      TweenMax.to(plus, 0.5, {top: "100%",opacity:1  , ease:Power4.easeInOut})
+    }
+    
   });
   
   if (window.matchMedia('(max-width: 768px)').matches) {
