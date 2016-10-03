@@ -75,6 +75,7 @@
     .cont-introduction{
       color:rgb(0,122,163);
       @extend .gradient-white;
+      background: white;
     }
 
     .brand-design{
@@ -169,7 +170,7 @@
       background-position: center center;
     }
     .cont-introduction{
-      background: white;
+      background: #f3f3f3;
     }
     .front-end{
      background:#f3f3f3;

@@ -211,76 +211,18 @@
       background: #f0f0f0;
       padding:0em 2em;
       .columns{
-        padding:3em 0em;
         h3{
           font-size: 2.1rem;
         }
       }
-      
+      div{
+        margin-top:2em;
+      }
       .workflow{
-        padding:3em 0em;
         fill:$steel;
-        .block{
-          width: 12%;
-          display: block;
-          float: left;
-          padding-top: 12px;
-          height: 70px;
-          svg{
-            height: auto;
-            width: 50%;
-            zoom: 2;
-          }
-          svg#acceptance{ width: 36%; }
-          svg#deployment{ width: 67%; }
-          span{
-            text-transform: uppercase;
-            display: block;
-          }
-        }
-        .arrow{
-          width: 10%;
-          display: block;
-          float: left; 
-          padding-top: 34px;
-          svg{
-            height: auto;
-            width: 80%;
-            opacity: .8;
-            zoom: 3;
-          }
-        }
-        .block-path{
-          position: relative;
-          fill:$steel;
-          .st0_path{fill:none;stroke:$steel;stroke-miterlimit:10;}
-          .st1_path{fill:none;stroke:$steel;stroke-miterlimit:10;stroke-dasharray:12.9849,12.9849;}
-          .st2_path{fill:none;stroke:$steel;stroke-miterlimit:10;stroke-dasharray:11.8895,11.8895;}
-          .st3_path{fill:none;stroke:$steel;stroke-miterlimit:10;stroke-dasharray:12.0498,12.0498;}
-          .st4_path{fill:$steel;}
-          
-          #sprint-path{
-            margin-top: 50px;
-            width: 90%;
-            height: auto;
-          }  
-          .newsprint{
-            background:$steel;
-            padding: 0.5em;
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: 0px auto;
-            width: 200px;
-            bottom: -13px;
-            text-transform: uppercase;
-            color:white;
-            zoom:1.3;
-          }
-        }
         .text{
           padding:4em;
-          margin-top: 2em;
+          padding-top:0;
           background: darken($steel, 10%);
           text-align: left;
           color:white;
