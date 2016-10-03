@@ -1,20 +1,19 @@
-.oasiscatamaranspage
-  = link_to '', '#scroll_to_back_end', class:"arrow bounce"
+.page.oasiscatamarans
   .img-background.row
-  .cont-introduction.medium-12.small-12.large-6
-    %h2 <strong>Oasis</strong>catamaran
-    %span Excursiones y Eventos
-    %hr
-    %p
-      Aplicación web para la venta de excursiones en catamarán con todo tipo de servicios adicionales. Hemos desarrollado un backend con navegación optimizada para tablets a través del cual los administradores de la empresa pueden modificar todos los contenidos, crear excursiones personalizadas y una página de venta de pasajes con pasarela de pago, todo en tres idiomas y compatible con todo tipo de dispositivos móviles.
-    %hr
-    = link_to '> www.oasiscatamaran.com', 'http://www.oasiscatamaran.com/', target: :blank
+    .cont-introduction.medium-12.small-12.large-6
+      %h1 <strong>Oasis</strong>catamaran
+      %span.text-center Excursiones y Eventos
+      %hr
+      %p
+        Aplicación web para la venta de excursiones en catamarán con todo tipo de servicios adicionales. Hemos desarrollado un backend con navegación optimizada para tablets a través del cual los administradores de la empresa pueden modificar todos los contenidos, crear excursiones personalizadas y una página de venta de pasajes con pasarela de pago, todo en tres idiomas y compatible con todo tipo de dispositivos móviles.
+      %hr
+      = link_to '> www.oasiscatamaran.com', 'http://www.oasiscatamaran.com/', target: :blank
   .back-end.row#scroll_to_back_end
     .content.medium-12.small-12.large-10.columns.medium-centered
       %h2.text-center <strong>Back</strong> end
-      .videoWrapperIpad.medium-12
+      .wrapperIpad.medium-12
         = image_tag "oasis-catamaran/ipad.png", class: "img-play-ipad"
-        %hr.hr-oasis
+        %hr
         .row
           .large-4.columns
             %ul.text-center
@@ -30,10 +29,11 @@
             %ul.text-center
               %li Configuración adaptable
               %li Diseño adaptable a dispositivos móviles
-        %hr.hr-oasis 
+        %hr
         %p 
           El backend ofrece una gestión total para los dueños del catamaran, donde se pueden gestionar y crear las excursiones que se pondrán a la venta en la web, se ofrece una gestión contable con listado de facturas y control de pagos. Todo bajo un depurado trabajo de diseño de personalización y adaptabilidad a tablets.
 
+  .front-end.row
     .content.medium-12.small-12.large-10.columns.medium-centered
       %h2.text-center <strong>Front</strong> end
       .medium-12

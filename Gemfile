@@ -1,4 +1,4 @@
- source 'https://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 
@@ -8,7 +8,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'autoprefixer-rails'
 gem 'responders'
-
 gem 'turbolinks'
 gem 'jquery-turbolinks', '~> 0.2.1'
 gem 'jquery-rails'
@@ -17,7 +16,6 @@ gem 'normalize-rails'
 gem 'foundation-rails'
 gem 'foundation_rails_helper'
 gem "haml-rails", "~> 0.9"
-gem 'slick_rails'
 gem 'nprogress-rails'
 gem 'inline_svg'
 gem "non-stupid-digest-assets"
@@ -26,6 +24,10 @@ gem 'email_validator'
 gem 'rb-fsevent'
 gem 'cookies_eu'
 gem 'browser'
+gem 'owlcarousel-rails'
+gem 'fastclick-rails'
+gem 'greensock-rails'
+
 # Monitoring
 gem 'newrelic_rpm'
 # Error monitoring

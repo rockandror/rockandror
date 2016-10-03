@@ -3,11 +3,8 @@ class WelcomeController < ApplicationController
   def home
     @contact = Contact.new
   end
-  
-  def team
-  end
 
-  def services
+  def boatjump
   end
 
   def webdings

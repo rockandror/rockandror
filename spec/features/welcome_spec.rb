@@ -9,7 +9,7 @@ feature 'Main page' do
     expect(page).to have_css('section.oasis', count: 1)
     expect(page).to have_css('section.participation', count: 1)
     expect(page).to have_css('section.howweworks', count: 1)
-    expect(page).to have_css('section.contactnow', count: 1)
+    expect(page).to have_css('section.contact-now', count: 1)
   end
 
   scenario 'should have navbar with section links' do
@@ -20,7 +20,7 @@ feature 'Main page' do
     end
     
     within('.top-bar-section ul.show-for-medium-up') do  
-      expect(page).to have_link('Home')
+      expect(page).to have_link('Inicio')
       expect(page).to have_link('Últimos trabajos')
       expect(page).to have_link('Webdings')
       expect(page).to have_link('Eatbooking')

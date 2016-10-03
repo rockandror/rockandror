@@ -1,34 +1,81 @@
+%form#ridirect_responsive{:action => "/webdings"}
+  %input{:type => "submit"}
+
+#overlay_menu_responsive
+
+%a#btn_plus
+  = inline_svg "svg/plus.svg" , class: 'icon-menu'
+%a#btn_close
+  = inline_svg "svg/close.svg" , class: 'icon-menu'
+%a#btn_back
+  = inline_svg "svg/back.svg" , class: 'icon-menu'
+%a#btn_home{:href => root_path}
+  = inline_svg "svg/home.svg" , class: 'icon-menu'
+  %span Inicio
+%a#btn_works
+  = inline_svg "svg/works.svg" , class: 'icon-menu'
+  %span Trabajos
+%a#btn_email{ href: new_contact_path }
+  = inline_svg "svg/email.svg", class: 'icon-menu'
+  %span Escríbenos
+%a#btn_tel{ href: "tel:+34607320876" }
+  = inline_svg "svg/phone.svg", class: 'icon-menu'
+  %span Llámanos
+
+#container_submenu_responsive
+  .owl-carousel
+    %a#btn_boatjump{:href => '#'}
+      %h2 BoatJump
+      %strong Alquiler de barcos
+      %p Aplicación web y backoffice para el alquiler de barcos online.
+      = image_tag "boatjump/background-page.jpg"
+    %a#btn_webdings{:href => '#'}
+      %h2 Webdings
+      %strong Crea la app y la web de tu boda
+      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      = image_tag "webdings/background-page.jpg"
+    %a#btn_eatbooking{:href => '#'}
+      %h2 Eatbooking
+      %strong Libro de reservas electrónico para restaurantes
+      %p Sistema de reservas y fidelización de clientes online para restaurantes.
+      = image_tag "eatbooking/background-page.jpg"
+    %a#btn_oasiscatamaran{:href => '#'}
+      %h2 Oasis Catamarán
+      %strong Plataforma de venta online de excursiones en catamarán.
+      %p Aplicación web responsive para la venta de excursiones en catamarán con pasarela de pago para la venta directa de tickets y BackOffice de gestión integral.
+      = image_tag "oasis-catamaran/background-page.jpg"
+       
 .row.top-contact
-  .small-6.columns.tel
-    %a{:href => "tel:+34607320876"} Llama Ahora
-  .small-6.columns.email
-    %a{:href => new_contact_path} Envíanos un email
-%a.btn-menu{"data-reveal-id" => "nav-modal", :href => "#"} 
-  = inline_svg "svg/icon-menu.svg" , class: 'icon-menu'
+  .small-8.columns
+    %a{:href => root_path} 
+      = inline_svg "svg/logo-smartphone.svg", class: 'logo-smartphone'
+  .small-2.columns.tel
+    %a{:href => "tel:+34607320876"} 
+      = inline_svg "svg/phone.svg", class: 'icon-nav'
+  .small-2.columns.email
+    %a{:href => new_contact_path}
+      = inline_svg "svg/email.svg", class: 'icon-nav'
+
 %nav.top-bar{"data-topbar" => "", :role => "navigation"}
-  %ul.title-area.small-12.medium-4.columns
+  %ul.title-area.small-12.medium-5.large-4.columns
     %li.logo
-      %h1
-        %a{:href => root_path}
-          = inline_svg "svg/logo.svg", class: 'logo-horiz show-for-medium-up'
-          = inline_svg "svg/logo-center.svg" , class: 'logo-center show-for-small-only'
-    / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+      %a{:href => root_path}
+        = inline_svg "svg/logo.svg", class: 'logo-horiz show-for-medium-up'
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
-        %span Menu
+        %span Menú
   %section.top-bar-section
-    / Right Nav Section
     %ul.right
       %li
-        / %strong +34 607.320.876
         %a{:href => new_contact_path} Envíanos un email
-    / Left Nav Section
-    %ul.small-4.medium-4.columns.show-for-medium-up
-      %li{:class => active?("home", params[:action])}
-        %a{:href => root_path} Home
-      %li.has-dropdown{:class => active?("portfolio", params[:action])}
+    %ul.left.small-4.medium-4.columns.show-for-medium-up
+      %li.anim{:class => active?("home", params[:action])}
+        %a{:href => root_path} Inicio
+      %li.anim.has-dropdown{:class => active?("portfolio", params[:action])}
         %a{:href => "#"} Últimos trabajos
         %ul.dropdown
+          %li
+            = link_to 'Boatjump', '/boatjump'
           %li
             = link_to 'Webdings', '/webdings'
           %li
