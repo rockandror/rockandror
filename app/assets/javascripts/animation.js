@@ -274,5 +274,5 @@ function animation() {
    }
    tl_topcontact.play();
    tl_plus_start.play();
-   }
+  }
 }

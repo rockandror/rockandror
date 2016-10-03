@@ -1,8 +1,8 @@
 var
   navHeight = $("nav").height(),
   heightTopBar = $(".top-bar").height(),
-  hightWindow = $(window).height() - heightTopBar;
-  widthWindow = $(window).width();
+  windowHeight = $(window).height() - heightTopBar;
+  windowWidth = $(window).width();
 
 function init(){
   animation();
@@ -11,11 +11,11 @@ function init(){
 }
 
 function resizeDiv() {
-  if(hightWindow <= 1025){
+  if(windowHeight <= 1025){
     $(".intro .container a").css('margin-top','20px'); 
     $(".intro").css({'height': $(window).height() + 'px'});
   }
-  if(hightWindow == 1280 && widthWindow == 800){
+  if(windowHeight == 1280 && windowWidth == 800){
     //Nexus 10
     $(".intro .container a").css('margin-top','20px'); 
     $(".intro").css({'height': $(window).height() + 'px'});
