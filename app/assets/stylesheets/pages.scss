@@ -69,12 +69,12 @@
       background-position: center center;
     }
     h1{
-      color:white;
+      color:rgb(0,122,163);
     }
   
     .cont-introduction{
-      color:white;
-      @extend .gradient-boatjump;
+      color:rgb(0,122,163);
+      @extend .gradient-white;
     }
 
     .brand-design{
@@ -149,11 +149,13 @@
     h1{
       color:#f3cc33;
     }
+
     .img-background{
       background:asset_url('eatbooking/background-page-cut.jpg');
       background-position: center center; 
     }
     .cont-introduction{
+      color:white;
       @extend .pattern-eatbooking;
     }
   }
