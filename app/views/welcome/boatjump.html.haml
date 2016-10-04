@@ -7,45 +7,46 @@
       %p Boatjump es un B2C para el alquiler de barcos online al mejor precio. En esta primera versión hemos construido una sólida aplicación web sobre la que Boatjump podrá crecer a medida que lo requiera.
       %hr
       = link_to '> www.boatjump.co.uk', 'http://www.boatjump.co.uk',  target: :blank
-  .brand-design.row#scroll_to_brand_webdings
-    .content.medium-12.small-12.large-6.columns.medium-centered
+  .brand-design.row
+    .content.small-12.medium-10.medium-centered.large-centered.columns
       %div.text-center
         = inline_svg "svg/boatjump-logo.svg"
-      %p 
+      %p.text-center
         En Rock&Ror hemos replanteado el diseño original de la marca y de la aplicación a partir del bonito diseño original de Armando Ramos.
   .back-end.row
-    .content.medium-12.small-12.large-10.columns.medium-centered
+    .content.small-12.medium-10.medium-centered.large-centered.columns
       %h2.text-center <strong>Back</strong> end
-      .wrapperIpad.medium-10.medium-centered.large-10.large-centered.columns
+      .wrapperIpad.medium-10.medium-centered.large-10.columns
         = image_tag "boatjump/laptop.png"
-        %hr
-        .row
-          .medium-6.large-6.columns
-            %ul.text-center
-              %li Gestión de barcos
-              %li Gestión del árbol de localizaciones
-              %li Gestión de los precios de los barcos por temporadas
-              %li Geolocalización por dirección
-              %li Subida de imágenes con marca de agua
+      %hr
+      .row
+        .medium-6.large-6.columns
+          %ul.text-center
+            %li Gestión de barcos
+            %li Gestión del árbol de localizaciones
+            %li Gestión de los precios de los barcos por temporadas
+            %li Geolocalización por dirección
+            %li Subida de imágenes con marca de agua
 
-          .medium-6.large-6.columns
-            %ul.text-center
-              %li Gestión de los contenidos dinámicos multi-idioma
-              %li Gestión de los extras de los barcos
-              %li Gestión de los características de los barcos
-              %li Diseño optimizado para su uso en dispositivos moviles.
+        .medium-6.large-6.columns
+          %ul.text-center
+            %li Gestión de los contenidos dinámicos multi-idioma
+            %li Gestión de los extras de los barcos
+            %li Gestión de los características de los barcos
+            %li Diseño optimizado para su uso en dispositivos moviles.
 
   .front-end.row
-    .content.medium-12.small-12.large-10.columns.medium-centered
+    .content.small-12.medium-10.medium-centered.large-centered.columns
       %h2.text-center Front <strong>end</strong>
       .medium-12
         = image_tag "boatjump/boatjump-device.png", class: "img-play-ipad"
         %hr
-        .medium-centered.columns
-          %p 
-            El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web.
+        .row
+          .small-center.medium-centered.columns
+            %p 
+              El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web.
   .tecnology.row
-    .content.medium-centered.columns.small-12
+    .content.small-12.medium-10.medium-centered.large-centered.columns
       %h2.text-center <strong>Tecnología</strong> utilizada
       .row.text-center
         = inline_svg "svg/icon-responsive.svg", class: 'text-center'
