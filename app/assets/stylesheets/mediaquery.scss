@@ -372,7 +372,7 @@
 }/* fix repsponsive menu */
 
 @media only screen and (max-width: 480px) { 
-
+  
   .home {
     .intro{
       .container{
@@ -421,6 +421,9 @@
     .brand-design,.back-end,.front-end,.app-mobile, .tecnology,.contact-now{
       padding: 1em 0em;
     }
+  }
+  .tecnology{
+    p{ font-size: 0.7em;}
   }
 }
 

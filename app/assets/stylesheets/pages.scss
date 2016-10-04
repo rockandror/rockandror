@@ -48,13 +48,13 @@
   .tecnology{
     background: #3b3b3b;   
     color:white;
-   
     .content{
       text-align: center;
+      .row{margin:0px auto;}
       h2{ color:#fff; }
       svg{
-        width: 200px;
-        height: auto;
+        width:30%;
+        height: 100%;
         padding: 3rem 0rem;
         fill:white;
       }
