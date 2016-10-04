@@ -187,6 +187,27 @@
 
 }
 @media only screen and (max-width: 767px) { 
+  .cookies-eu{
+    visibility: hidden;
+    position: fixed !important;
+    top: 0;
+    height: 50px;
+    padding: 0;
+    background: #333333 !important;
+    .cookies-eu-content-holder{
+      line-height: 12px !important;
+      padding: 5px 15px 0px 15px !important;
+      display: block !important;
+      max-width: 90% !important;
+      text-align: left;
+      color:white;
+    }
+    .cookies-eu-ok{
+      position: fixed;
+      top: 61px;
+      right: 9px;
+    }
+  }
   .top-bar{display: none;}
 
   .owl-wrapper-outer a{

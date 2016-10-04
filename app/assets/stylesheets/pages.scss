@@ -40,9 +40,14 @@
       text-justify: inter-word;
     }
   }
-
+  
   .back-end,.front-end,.tecnology{
     padding: 6em 3em;
+  }
+  .back-end{
+    ul{
+      font-size: 0.8em;
+    }
   }
     
   .tecnology{
