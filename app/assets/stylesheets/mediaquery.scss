@@ -1,5 +1,7 @@
-
 @media screen and (min-width: 64em) {
+  .page{
+    margin-top: 100px;
+  }
   section{
     &.participation{  
       .content{
@@ -88,7 +90,6 @@
   .page{
     &.contact{
       h1{
-        padding-top:80px;
         font-size:1.4em;
       }
     }
@@ -174,16 +175,17 @@
     }  
   }
 }
-
-
-
+  
 @media only screen and (min-width: 1024px) and (max-width: 1072px) { 
   .oasis h2{
     font-size: 3rem;
   }
   .page.boatjump .brand-design .content svg{width: 70%;}
 }
+@media only screen and (min-width: 768px) {
+  .page{margin-top:100px;}
 
+}
 @media only screen and (max-width: 767px) { 
   .top-bar{display: none;}
 
@@ -191,12 +193,48 @@
     color:grey;
   }
   
+  .contact-now h3,
+  .home section.contact-now h3{
+    font-size: 1.4em;
+  }
+
+  .page.webdings .cont-introduction,
+  .page.boatjump .cont-introduction,
+  .page.oasiscatamarans .cont-introduction{
+    padding-bottom:2em;
+
+  }
+  .page.webdings .img-background,
+  .page.boatjump .img-background,
+  .page.oasiscatamarans .img-background{
+    background: none;
+  }
+  
+  .page.webdings .brand-design,
+  .page.webdings .app-mobile,
+  .page.boatjump .brand-design,
+  .page.oasiscatamarans .brand-design{
+    padding: 3em 0em;
+  }
+  
+  .page.boatjump .brand-design .content svg{
+    padding:1em 0em;
+  }
+  .page.boatjump .brand-design{
+    padding:3em 0em;
+  }
+  
   .page{
-    margin-top: 0px;
     .cont-introduction{
+      padding:1em;
+      padding-top: 5em;
+      padding-bottom: 5em;
       h2{
         margin-top: 50px;
       }
+    }
+    .wrapperIpad .medium-centered{
+      padding:0px; 
     }
   }
 }
@@ -297,7 +335,7 @@
   //Nexus 10
   .top-bar .top-bar-section .show-for-medium-up{
     width: 270px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 }
 
@@ -319,8 +357,9 @@
   }
   .top-bar{display: none;}
   .page{
-    margin-top: 0px;
+    //margin-top: 50px;
     .cont-introduction{
+      padding-top:50px;
       h2{
         margin-top: 80px;
       }
@@ -338,7 +377,6 @@
     .intro{
       .container{
         top:20%;
-        padding: 1em;
          h1{font-size:2.3em; }
          lead{
           line-height: 1em;
@@ -371,13 +409,14 @@
     }
 
   }
-
+  
   .page,.contact-page{
     h1{
       font-size: 2.3em;
     }
     .cont-introduction{
-      padding:0em 1em;
+      padding-top: 5em;
+      padding-bottom: 2em;
     }
     .brand-design,.back-end,.front-end,.app-mobile, .tecnology,.contact-now{
       padding: 1em 0em;
@@ -403,6 +442,9 @@
   }
 
   .page{
+    .cont-introduction span{
+      font-size: 0.8em;
+    }
     &.oasiscatamarans{
       h1{
         font-size: 1.8em;
@@ -416,6 +458,7 @@
   }
 
   .owl-theme .owl-controls{
+    border:1px solid red;
     margin-top: -50px;
     .owl-buttons div{
       background: white;
@@ -441,9 +484,13 @@
           font-size: 1em;
         }
       }
+
     }  
     section{
       h2,h3{font-size: 2em;}
+      &.webdings{
+        padding-top: 2em;
+      }
       &.howweworks{
         h3{font-size: 1.3em;}
         .text{
@@ -455,5 +502,16 @@
       }
     }
   }
- 
+  .owl-carousel .owl-wrapper-outer{
+    max-height: 408px;
+  }
+  .page.contact h1{
+    font-size: 1.2em;
+  }
+  .page.contact p{
+   font-size: 0.8em; 
+  }
+  .page.contact textarea{
+    height: 100px;
+  }
 }
