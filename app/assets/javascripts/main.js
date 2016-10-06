@@ -8,6 +8,7 @@ function init(){
   animation();
   resizeDiv();
   scrollToSection();
+  $('.has-dropdown a').unbind('click');
 }
 
 function resizeDiv() {
@@ -21,6 +22,8 @@ function resizeDiv() {
     $(".intro").css({'height': $(window).height() + 'px'});
   }
 }
+
+
 
 function scrollToSection(){
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {

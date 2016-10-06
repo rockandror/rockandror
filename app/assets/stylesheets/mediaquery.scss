@@ -340,10 +340,14 @@
         width: 150px;
       }
       .show-for-medium-up{
-        margin-top: 15px;
-        width: 400px;
-        li{padding-left:1em;
+        margin-top: 20px;
+        width: 250px;
+        li{
+          padding-left:1em;
           display: inline-block;
+          &.portfolio{
+            margin-left:10px;
+          }
           a{
             width: auto;
           }
@@ -352,16 +356,17 @@
     }
   }
 }
-@media only screen and (min-width: 800px) and (orientation: portrait){
+
+@media only screen and (min-device-width: 800px) and (orientation: portrait){
   //Nexus 10
   .top-bar .top-bar-section .show-for-medium-up{
     width: 270px;
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
-
+  
   .home{
     .intro{
       .container{
@@ -378,7 +383,7 @@
   }
   .top-bar{display: none;}
   .page{
-    //margin-top: 50px;
+    margin-top: 0px;
     .cont-introduction{
       padding-top:50px;
       h2{
