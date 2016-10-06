@@ -280,6 +280,9 @@
           }  
         }
       }
+      .left{
+        margin-top:20px;
+      }
       .left li {
         .dropdown{
           display:none;
@@ -320,7 +323,7 @@
   
   .top-bar-section li.active:not(.has-form) a:not(.button){
     line-height: 0.6875rem;
-    margin-top: 33px;
+    //margin-top: 33px;
     padding: 0;
   }
   .top-bar-section .has-dropdown > a:after{
@@ -478,7 +481,6 @@
   }
 
   .owl-theme .owl-controls{
-    border:1px solid red;
     margin-top: -50px;
     .owl-buttons div{
       background: white;

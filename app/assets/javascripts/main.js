@@ -8,7 +8,6 @@ function init(){
   animation();
   resizeDiv();
   scrollToSection();
-  $('.has-dropdown a').unbind('click');
 }
 
 function resizeDiv() {
