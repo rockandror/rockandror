@@ -8,6 +8,10 @@ function init(){
   animation();
   resizeDiv();
   scrollToSection();
+  $('li.anim.has-dropdown.portfolio.not-click').click(function(){
+    return false;
+  });
+
 }
 
 function resizeDiv() {
