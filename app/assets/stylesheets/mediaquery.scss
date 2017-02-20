@@ -1,7 +1,7 @@
 
 @media screen and (min-width: 64em) {
   section{
-    &.participation{  
+    &.participation{
       .content{
         h3{font-size: 3em;}
         .text{text-align: left;}
@@ -11,25 +11,24 @@
 }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
-  
+
   #btn_plus{display:block;}
   .top-bar{display: none;}
-  
-  .home{
 
+  .home{
     .intro{
       .container{
         top:10%;
         padding: 1em;
-         h1{font-size:3.3em; }
+         h1{font-size:2.3em; }
          lead{
           line-height: 1em;
-          margin-top:10px;
-          font-size: 1.6em;
+          margin-top:30px;
+          font-size: 1.4em;
         }
       }
     }
-    
+
     section{
       padding:2em 0em 2em 0em;
       h3{
@@ -40,7 +39,7 @@
       }
       h2{
         text-align: center;
-        font-size: 3em;  
+        font-size: 3em;
       }
       &.boatjump,&.webdings,&.eatbooking,&.oasis{
         .columns{
@@ -48,13 +47,13 @@
             margin-top:-60px;
           }
           .image{
-            top: 0px; 
+            top: 0px;
             position: relative;
             height: 260px;
           }
         }
       }
-      
+
       &.webdings{
         padding-top:6em;
         .image{padding-top: 0em;}
@@ -68,11 +67,11 @@
         }
         .columns{
           h3{
-            font-size: 1.6em; 
+            font-size: 1.6em;
           }
         }
       }
-      &.partecipation{  
+      &.partecipation{
         .content{
           h3{font-size: 2em;}
           .text{
@@ -83,8 +82,8 @@
         }
       }
     }
-  } 
-  
+  }
+
   .page{
     &.contact{
       h1{
@@ -93,50 +92,50 @@
       }
     }
   }
-  .footer{ 
+  .footer{
     padding-top: 1em;
     padding-bottom: 1em;
    .logo{width: 90%;}
-  } 
+  }
 }
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  
+
   .home{
     .intro{
       .container{
-        top:20%;
+        //top:20%;
         padding: 1em;
          h1{font-size:2.3em; }
          lead{
-          line-height: 1em;
-          margin-top:10px;
-          font-size: 1em;
+          // line-height: 1em;
+          margin-top:20px;
+          // font-size: 1em;
         }
       }
-    }  
+    }
 
     section{
-      
+
       h2{
         font-size: 2.3rem;
       }
-      
+
       a{
         display: block;
         margin-bottom: 10px;
         text-align: center;
         font-size: 0.8em;
       }
-      
+
       &.rockandror{
         h3 {font-size: 1.2rem;}
         .inline-list li{
           padding: 0px;
         }
       }
-      
+
       &.boatjump,&.webdings,&.eatbooking,&.oasis{
         .columns{
           .description{
@@ -159,38 +158,37 @@
           }
         }
       }
-      
+
       &.oasis{
          h2{
           font-size: 1.7em;
          }
       }
-      
-      &.participation{  
+
+      &.participation{
         .content{
           h3{font-size: 3em;}
         }
       }
-    }  
+    }
   }
 }
 
 
 
-@media only screen and (min-width: 1024px) and (max-width: 1072px) { 
+@media only screen and (min-width: 1024px) and (max-width: 1072px) {
   .oasis h2{
     font-size: 3rem;
   }
   .page.boatjump .brand-design .content svg{width: 70%;}
 }
 
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
   .top-bar{display: none;}
-
   .owl-wrapper-outer a{
     color:grey;
   }
-  
+
   .page{
     margin-top: 0px;
     .cont-introduction{
@@ -201,8 +199,8 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) { 
-  
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
     background-color: #555555;
     color: #fff;
@@ -217,8 +215,8 @@
       .left{
         .has-dropdown:hover{
           .dropdown{
-            display:block;  
-          }  
+            display:block;
+          }
         }
       }
       .left li {
@@ -243,22 +241,22 @@
       }
     }
   }
-  
+
   .home{
     .intro{
       .container{
-        top:40%;
+        top:15%;
         padding: 1em;
          h1{font-size:3.3em; }
          lead{
           line-height: 1em;
-          margin-top:10px;
+          margin-top:30px;
           font-size: 1.6em;
         }
       }
     }
-  } 
-  
+  }
+
   .top-bar-section li.active:not(.has-form) a:not(.button){
     line-height: 0.6875rem;
     margin-top: 33px;
@@ -267,7 +265,7 @@
   .top-bar-section .has-dropdown > a:after{
     display: none;
   }
-  
+
   .top-bar{
     .top-bar-section{
       .has-dropdown.moved{
@@ -311,11 +309,14 @@
         h1{font-size:3.3em; }
         lead{
           line-height: 1em;
-          margin-top:10px;
+          margin-top:20px;
           font-size: 1.6em;
         }
+        #btn-discover{
+          display: none;
+        }
       }
-    }  
+    }
   }
   .top-bar{display: none;}
   .page{
@@ -328,25 +329,28 @@
   }
 }
 
-@media only screen and (max-width: 703px) { 
+@media only screen and (max-width: 703px) {
   #btn_plus{display:block;}
 }/* fix repsponsive menu */
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 
   .home {
     .intro{
       .container{
-        top:20%;
+        top:10%;
         padding: 1em;
-         h1{font-size:2.3em; }
+         h1{
+           font-size:2em;
+           line-height: 30px;
+         }
          lead{
           line-height: 1em;
-          margin-top:10px;
+          margin-top:40px;
           font-size: 1em;
         }
       }
-    }  
+    }
     section{
       padding: 2em 0em;
       &.boatjump,&.webdings,&.eatbooking,&.oasis{
@@ -366,7 +370,7 @@
          .content{padding: 0px;}
       }
       &.howweworks{
-        .workflow{display: none;}  
+        .workflow{display: none;}
       }
     }
 
@@ -385,8 +389,8 @@
   }
 }
 
-@media only screen and (max-width: 360px) { 
- 
+@media only screen and (max-width: 360px) {
+
   .home {
     .intro{
       .container{
@@ -399,7 +403,7 @@
           font-size: 1.3em;
         }
       }
-    }  
+    }
   }
 
   .page{
@@ -427,27 +431,27 @@
   }
 }
 
-@media only screen and (max-width: 320px) { 
-  
+@media only screen and (max-width: 320px) {
+
   .home {
     .intro{
       .container{
          h1{
-          font-size: 2em;
+          font-size: 1.5em;
         }
          lead{
           line-height: 1em;
-          margin-top:10px;
+          margin-top:30px;
           font-size: 1em;
         }
       }
-    }  
+    }
     section{
       h2,h3{font-size: 2em;}
       &.howweworks{
         h3{font-size: 1.3em;}
         .text{
-          padding: 1em; 
+          padding: 1em;
           ul{
             margin:0;
           }
@@ -455,5 +459,5 @@
       }
     }
   }
- 
+
 }
