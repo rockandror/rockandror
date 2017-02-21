@@ -20,7 +20,7 @@
       .container{
         top:10%;
         padding: 1em;
-         h1{font-size:2.3em; }
+         .title{font-size:2.3em; }
          lead{
           line-height: 1em;
           margin-top:30px;
@@ -105,13 +105,12 @@
   .home{
     .intro{
       .container{
-        //top:20%;
         padding: 1em;
-         h1{font-size:2.3em; }
+         h1{
+           font-size:1.3em;
+         }
          lead{
-          // line-height: 1em;
           margin-top:20px;
-          // font-size: 1em;
         }
       }
     }
@@ -247,7 +246,14 @@
       .container{
         top:15%;
         padding: 1em;
-         h1{font-size:3.3em; }
+        h1{
+          font-size: 1.3em;
+          letter-spacing: 0px;
+          margin-top:15px;
+        }
+        h2.title{
+          font-size:3.3em;
+        }
          lead{
           line-height: 1em;
           margin-top:30px;
@@ -279,7 +285,7 @@
         width: 150px;
       }
       .show-for-medium-up{
-        margin-top: 15px;
+        //margin-top: 15px;
         width: 400px;
         li{padding-left:1em;
           display: inline-block;
@@ -295,7 +301,7 @@
   //Nexus 10
   .top-bar .top-bar-section .show-for-medium-up{
     width: 270px;
-    margin-top: 20px;
+    //margin-top: 20px;
   }
 }
 
@@ -306,7 +312,14 @@
       .container{
         top:10%;
         padding: 1em;
-        h1{font-size:3.3em; }
+        h1{
+          font-size: 1.3em;
+          letter-spacing: 2px;
+          margin-top: 10px;
+        }
+        h2.title{
+          font-size:3.3em;
+        }
         lead{
           line-height: 1em;
           margin-top:20px;
@@ -340,8 +353,11 @@
       .container{
         top:10%;
         padding: 1em;
-         h1{
-           font-size:2em;
+        h1{
+          display: none;
+        }
+         h2.title{
+           font-size:1.3em;
            line-height: 30px;
          }
          lead{
@@ -394,7 +410,7 @@
   .home {
     .intro{
       .container{
-         h1{
+         h2.title{
           padding: 0px;
         }
          lead{
@@ -436,7 +452,7 @@
   .home {
     .intro{
       .container{
-         h1{
+         h2.title{
           font-size: 1.5em;
         }
          lead{

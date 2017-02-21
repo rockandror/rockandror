@@ -9,6 +9,7 @@ function animation() {
     logoRobot = $('#robot'),
     topBar = $('.top-bar'),
     backgroundIntro = $('.bg-background'),
+    h2 = $(".intro .container h2"),
     h1 = $(".intro .container h1"),
     lead = $(".intro lead"),
     quote = $(".intro span"),
@@ -50,7 +51,7 @@ function animation() {
       {y:30, delay:2},
       {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
-    TweenMax.fromTo(h1, 1,
+    TweenMax.fromTo(h2, 1,
       {y:30, delay:2},
       {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
@@ -58,14 +59,14 @@ function animation() {
       {y:20, delay:2},
       {y:-30, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
-    // TweenMax.fromTo(quote, 1,
-    //   {y:-30, ease:Linear.easeIn,delay:2.3},
-    //   {y:20, autoAlpha:1, ease:Back.easeIn,delay:2.3})
+    TweenMax.fromTo(h1, 1,
+      {y:0, delay:2},
+      {y:-40, autoAlpha:1, ease:Power4.easeInOut,delay:3})
 
     backgroundIntroHeight = $(this).height();
     TweenMax.fromTo(btnDiscover, 4,
       {y:backgroundIntroHeight, ease:Power4.easeInOut,delay:1.3},
-      {y:backgroundIntroHeight - 400  , autoAlpha:1, ease:Power4.easeInOut,delay:1.3})
+      {y:backgroundIntroHeight - 500  , autoAlpha:1, ease:Power4.easeInOut,delay:1.3})
 
     tl_topBar.play().delay(1);
     tl_logo.play().delay(1.4);
