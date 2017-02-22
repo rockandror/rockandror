@@ -25,32 +25,32 @@
 #container_submenu_responsive
   .owl-carousel
     %a#btn_boatjump{:href => '#'}
-      %h2 BoatJump
-      %strong Alquiler de barcos
-      %p Aplicación web y backoffice para el alquiler de barcos online.
+      %h2
+        %strong BoatJump
+      %span Alquiler de barcos
       = image_tag "boatjump/background-page.jpg"
     %a#btn_webdings{:href => '#'}
-      %h2 Webdings
-      %strong Crea la app y la web de tu boda
-      %p SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda.
+      %h2
+        %strong Webdings
+      %span Crea la app y la web de tu boda
       = image_tag "webdings/background-page.jpg"
     %a#btn_eatbooking{:href => '#'}
-      %h2 Eatbooking
-      %strong Libro de reservas electrónico para restaurantes
-      %p Sistema de reservas y fidelización de clientes online para restaurantes.
+      %h2
+        %strong Eatbooking
+      %span Reservas electrónico para restaurantes
       = image_tag "eatbooking/background-page.jpg"
     %a#btn_oasiscatamaran{:href => '#'}
-      %h2 Oasis Catamarán
-      %strong Plataforma de venta online de excursiones en catamarán.
-      %p Aplicación web responsive para la venta de excursiones en catamarán con pasarela de pago para la venta directa de tickets y BackOffice de gestión integral.
+      %h2
+        %strong  Oasis Catamarán
+      %span Venta online de excursiones en catamarán.
       = image_tag "oasis-catamaran/background-page.jpg"
-       
+
 .row.top-contact
   .small-8.columns
-    %a{:href => root_path} 
+    %a{:href => root_path}
       = inline_svg "svg/logo-smartphone.svg", class: 'logo-smartphone'
   .small-2.columns.tel
-    %a{:href => "tel:+34607320876"} 
+    %a{:href => "tel:+34607320876"}
       = inline_svg "svg/phone.svg", class: 'icon-nav'
   .small-2.columns.email
     %a{:href => new_contact_path}
@@ -79,6 +79,6 @@
           %li
             = link_to 'Webdings', '/webdings'
           %li
-            = link_to 'Eatbooking', '/eatbooking' 
+            = link_to 'Eatbooking', '/eatbooking'
           %li
             = link_to 'Oasis Catamaran', '/oasiscatamaran'

@@ -3,7 +3,7 @@
     margin-top: 100px;
   }
   section{
-    &.participation{  
+    &.participation{
       .content{
         h3{font-size: 3em;}
         .text{text-align: left;}
@@ -13,10 +13,10 @@
 }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
-  
+
   #btn_plus{display:block;}
   .top-bar{display: none;}
-  
+
   .home{
 
     .intro{
@@ -31,7 +31,7 @@
         }
       }
     }
-    
+
     section{
       padding:2em 0em 2em 0em;
       h3{
@@ -42,7 +42,7 @@
       }
       h2{
         text-align: center;
-        font-size: 3em;  
+        font-size: 3em;
       }
       &.boatjump,&.webdings,&.eatbooking,&.oasis{
         .columns{
@@ -50,13 +50,13 @@
             margin-top:-60px;
           }
           .image{
-            top: 0px; 
+            top: 0px;
             position: relative;
             height: 260px;
           }
         }
       }
-      
+
       &.webdings{
         padding-top:6em;
         .image{padding-top: 0em;}
@@ -70,11 +70,11 @@
         }
         .columns{
           h3{
-            font-size: 1.6em; 
+            font-size: 1.6em;
           }
         }
       }
-      &.partecipation{  
+      &.partecipation{
         .content{
           h3{font-size: 2em;}
           .text{
@@ -85,8 +85,8 @@
         }
       }
     }
-  } 
-  
+  }
+
   .page{
     &.contact{
       h1{
@@ -94,16 +94,16 @@
       }
     }
   }
-  .footer{ 
+  .footer{
     padding-top: 1em;
     padding-bottom: 1em;
    .logo{width: 90%;}
-  } 
+  }
 }
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  
+
   .home{
     .intro{
       .container{
@@ -116,28 +116,28 @@
           font-size: 1em;
         }
       }
-    }  
+    }
 
     section{
-      
+
       h2{
         font-size: 2.3rem;
       }
-      
+
       a{
         display: block;
         margin-bottom: 10px;
         text-align: center;
         font-size: 0.8em;
       }
-      
+
       &.rockandror{
         h3 {font-size: 1.2rem;}
         .inline-list li{
           padding: 0px;
         }
       }
-      
+
       &.boatjump,&.webdings,&.eatbooking,&.oasis{
         .columns{
           .description{
@@ -160,23 +160,23 @@
           }
         }
       }
-      
+
       &.oasis{
          h2{
           font-size: 1.7em;
          }
       }
-      
-      &.participation{  
+
+      &.participation{
         .content{
           h3{font-size: 3em;}
         }
       }
-    }  
+    }
   }
 }
-  
-@media only screen and (min-width: 1024px) and (max-width: 1072px) { 
+
+@media only screen and (min-width: 1024px) and (max-width: 1072px) {
   .oasis h2{
     font-size: 3rem;
   }
@@ -186,7 +186,7 @@
   .page{margin-top:100px;}
 
 }
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
   .cookies-eu{
     visibility: hidden;
     position: fixed !important;
@@ -213,7 +213,7 @@
   .owl-wrapper-outer a{
     color:grey;
   }
-  
+
   .contact-now h3,
   .home section.contact-now h3{
     font-size: 1.4em;
@@ -230,21 +230,21 @@
   .page.oasiscatamarans .img-background{
     background: none;
   }
-  
+
   .page.webdings .brand-design,
   .page.webdings .app-mobile,
   .page.boatjump .brand-design,
   .page.oasiscatamarans .brand-design{
     padding: 3em 0em;
   }
-  
+
   .page.boatjump .brand-design .content svg{
     padding:1em 0em;
   }
   .page.boatjump .brand-design{
     padding:3em 0em;
   }
-  
+
   .page{
     .cont-introduction{
       padding:1em;
@@ -255,13 +255,13 @@
       }
     }
     .wrapperIpad .medium-centered{
-      padding:0px; 
+      padding:0px;
     }
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) { 
-  
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
     background-color: #555555;
     color: #fff;
@@ -276,8 +276,8 @@
       .left{
         .has-dropdown:hover{
           .dropdown{
-            display:block;  
-          }  
+            display:block;
+          }
         }
       }
       .left{
@@ -305,7 +305,7 @@
       }
     }
   }
-  
+
   .home{
     .intro{
       .container{
@@ -319,8 +319,8 @@
         }
       }
     }
-  } 
-  
+  }
+
   .top-bar-section li.active:not(.has-form) a:not(.button){
     line-height: 0.6875rem;
     //margin-top: 33px;
@@ -329,7 +329,7 @@
   .top-bar-section .has-dropdown > a:after{
     display: none;
   }
-  
+
   .top-bar{
     .top-bar-section{
       .has-dropdown.moved{
@@ -360,7 +360,7 @@
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
-  
+
   .home{
     .intro{
       .container{
@@ -373,7 +373,7 @@
           font-size: 1.6em;
         }
       }
-    }  
+    }
   }
   .top-bar{display: none;}
   .page{
@@ -387,12 +387,12 @@
   }
 }
 
-@media only screen and (max-width: 703px) { 
+@media only screen and (max-width: 703px) {
   #btn_plus{display:block;}
 }/* fix repsponsive menu */
 
-@media only screen and (max-width: 480px) { 
-  
+@media only screen and (max-width: 480px) {
+
   .home {
     .intro{
       .container{
@@ -404,7 +404,7 @@
           font-size: 1em;
         }
       }
-    }  
+    }
     section{
       padding: 2em 0em;
       &.boatjump,&.webdings,&.eatbooking,&.oasis{
@@ -424,12 +424,12 @@
          .content{padding: 0px;}
       }
       &.howweworks{
-        .workflow{display: none;}  
+        .workflow{display: none;}
       }
     }
 
   }
-  
+
   .page,.contact-page{
     h1{
       font-size: 2.3em;
@@ -447,8 +447,8 @@
   }
 }
 
-@media only screen and (max-width: 360px) { 
- 
+@media only screen and (max-width: 360px) {
+
   .home {
     .intro{
       .container{
@@ -461,7 +461,7 @@
           font-size: 1.3em;
         }
       }
-    }  
+    }
   }
 
   .page{
@@ -481,19 +481,19 @@
   }
 
   .owl-theme .owl-controls{
-    margin-top: -50px;
+    //margin-top: -50px;
     .owl-buttons div{
-      background: white;
-      color:$secondary-color;
-      zoom:1.2;
-      opacity: 0.9;
+      // background: white;
+      // color:$secondary-color;
+      // zoom:1.2;
+      // opacity: 0.9;
     }
-    .owl-page span{background: white;}
+    //.owl-page span{background: white;}
   }
 }
 
-@media only screen and (max-width: 320px) { 
-  
+@media only screen and (max-width: 320px) {
+
   .home {
     .intro{
       .container{
@@ -507,7 +507,7 @@
         }
       }
 
-    }  
+    }
     section{
       h2,h3{font-size: 2em;}
       &.webdings{
@@ -516,7 +516,7 @@
       &.howweworks{
         h3{font-size: 1.3em;}
         .text{
-          padding: 1em; 
+          padding: 1em;
           ul{
             margin:0;
           }
@@ -531,7 +531,7 @@
     font-size: 1.2em;
   }
   .page.contact p{
-   font-size: 0.8em; 
+   font-size: 0.8em;
   }
   .page.contact textarea{
     height: 100px;
