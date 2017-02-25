@@ -21,7 +21,7 @@ function resizeDiv() {
   }
   if(windowHeight == 1280 && windowWidth == 800){
     //Nexus 10
-    $(".intro .container a").css('margin-top','20px'); 
+    $(".intro .container a").css('margin-top','20px');
     $(".intro").css({'height': $(window).height() + 'px'});
   }
 }
@@ -36,11 +36,11 @@ function scrollToSection(){
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         if($(window).width() <= 768){
-          $('html,body').animate({ scrollTop:target.offset().top }, 700);  
+          $('html,body').animate({ scrollTop:target.offset().top }, 700);
         }else{
-          $('html,body').animate({ scrollTop:target.offset().top }, 700);         
+          $('html,body').animate({ scrollTop:target.offset().top }, 700);
         }
-        return false;         
+        return false;
       }
     }
   });
