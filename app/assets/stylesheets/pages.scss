@@ -1,5 +1,4 @@
 .page{
-  margin-top: 100px;
 
   h1{
     text-align: center;
@@ -41,21 +40,26 @@
       text-justify: inter-word;
     }
   }
-
+  
   .back-end,.front-end,.tecnology{
     padding: 6em 3em;
+  }
+  .back-end{
+    ul{
+      font-size: 0.8em;
+    }
   }
     
   .tecnology{
     background: #3b3b3b;   
     color:white;
-   
     .content{
       text-align: center;
+      .row{margin:0px auto;}
       h2{ color:#fff; }
       svg{
-        width: 200px;
-        height: auto;
+        width:30%;
+        height: 100%;
         padding: 3rem 0rem;
         fill:white;
       }

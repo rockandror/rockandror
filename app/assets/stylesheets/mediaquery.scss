@@ -1,5 +1,7 @@
-
 @media screen and (min-width: 64em) {
+  .page{
+    margin-top: 100px;
+  }
   section{
     &.participation{
       .content{
@@ -14,7 +16,6 @@
 
   #btn_plus{display:block;}
   .top-bar{display: none;}
-
   .home{
     .intro{
       .container{
@@ -87,7 +88,6 @@
   .page{
     &.contact{
       h1{
-        padding-top:80px;
         font-size:1.4em;
       }
     }
@@ -173,8 +173,6 @@
   }
 }
 
-
-
 @media only screen and (min-width: 1024px) and (max-width: 1072px) {
   .oasis h2{
     font-size: 3rem;
@@ -182,18 +180,78 @@
   .page.boatjump .brand-design .content svg{width: 70%;}
 }
 
+@media only screen and (min-width: 768px) {
+  .page{margin-top:100px;}
+}
 @media only screen and (max-width: 767px) {
+  .cookies-eu{
+    visibility: hidden;
+    position: fixed !important;
+    top: 0;
+    height: 50px;
+    padding: 0;
+    background: #333333 !important;
+    .cookies-eu-content-holder{
+      line-height: 12px !important;
+      padding: 5px 15px 0px 15px !important;
+      display: block !important;
+      max-width: 90% !important;
+      text-align: left;
+      color:white;
+    }
+    .cookies-eu-ok{
+      position: fixed;
+      top: 61px;
+      right: 9px;
+    }
+  }
   .top-bar{display: none;}
   .owl-wrapper-outer a{
     color:grey;
   }
 
+  .contact-now h3,
+  .home section.contact-now h3{
+    font-size: 1.4em;
+  }
+
+  .page.webdings .cont-introduction,
+  .page.boatjump .cont-introduction,
+  .page.oasiscatamarans .cont-introduction{
+    padding-bottom:2em;
+
+  }
+  .page.webdings .img-background,
+  .page.boatjump .img-background,
+  .page.oasiscatamarans .img-background{
+    background: none;
+  }
+
+  .page.webdings .brand-design,
+  .page.webdings .app-mobile,
+  .page.boatjump .brand-design,
+  .page.oasiscatamarans .brand-design{
+    padding: 3em 0em;
+  }
+
+  .page.boatjump .brand-design .content svg{
+    padding:1em 0em;
+  }
+  .page.boatjump .brand-design{
+    padding:3em 0em;
+  }
+
   .page{
-    margin-top: 0px;
     .cont-introduction{
+      padding:1em;
+      padding-top: 5em;
+      padding-bottom: 5em;
       h2{
         margin-top: 50px;
       }
+    }
+    .wrapperIpad .medium-centered{
+      padding:0px;
     }
   }
 }
@@ -217,6 +275,9 @@
             display:block;
           }
         }
+      }
+      .left{
+        margin-top:20px;
       }
       .left li {
         .dropdown{
@@ -265,7 +326,7 @@
 
   .top-bar-section li.active:not(.has-form) a:not(.button){
     line-height: 0.6875rem;
-    margin-top: 33px;
+    //margin-top: 33px;
     padding: 0;
   }
   .top-bar-section .has-dropdown > a:after{
@@ -285,10 +346,13 @@
         width: 150px;
       }
       .show-for-medium-up{
-        //margin-top: 15px;
-        width: 400px;
-        li{padding-left:1em;
+        width: 250px;
+        li{
+          padding-left:1em;
           display: inline-block;
+          &.portfolio{
+            margin-left:10px;
+          }
           a{
             width: auto;
           }
@@ -297,6 +361,7 @@
     }
   }
 }
+
 @media only screen and (min-width: 800px) and (orientation: portrait){
   //Nexus 10
   .top-bar .top-bar-section .show-for-medium-up{
@@ -335,6 +400,7 @@
   .page{
     margin-top: 0px;
     .cont-introduction{
+      padding-top:50px;
       h2{
         margin-top: 80px;
       }
@@ -356,11 +422,11 @@
         h1{
           display: none;
         }
-         h2.title{
-           font-size:1.3em;
-           line-height: 30px;
-         }
-         lead{
+        h2.title{
+          font-size:1.3em;
+          line-height: 30px;
+        }
+        lead{
           line-height: 1em;
           margin-top:40px;
           font-size: 1em;
@@ -397,11 +463,15 @@
       font-size: 2.3em;
     }
     .cont-introduction{
-      padding:0em 1em;
+      padding-top: 5em;
+      padding-bottom: 2em;
     }
     .brand-design,.back-end,.front-end,.app-mobile, .tecnology,.contact-now{
       padding: 1em 0em;
     }
+  }
+  .tecnology{
+    p{ font-size: 0.7em;}
   }
 }
 
@@ -423,6 +493,9 @@
   }
 
   .page{
+    .cont-introduction span{
+      font-size: 0.8em;
+    }
     &.oasiscatamarans{
       h1{
         font-size: 1.8em;
@@ -436,14 +509,14 @@
   }
 
   .owl-theme .owl-controls{
-    margin-top: -50px;
+    //margin-top: -50px;
     .owl-buttons div{
-      background: white;
-      color:$secondary-color;
-      zoom:1.2;
-      opacity: 0.9;
+      // background: white;
+      // color:$secondary-color;
+      // zoom:1.2;
+      // opacity: 0.9;
     }
-    .owl-page span{background: white;}
+    //.owl-page span{background: white;}
   }
 }
 
@@ -464,6 +537,9 @@
     }
     section{
       h2,h3{font-size: 2em;}
+      &.webdings{
+        padding-top: 2em;
+      }
       &.howweworks{
         h3{font-size: 1.3em;}
         .text{
@@ -474,6 +550,19 @@
         }
       }
     }
+  }
+
+  .owl-carousel .owl-wrapper-outer{
+    max-height: 408px;
+  }
+  .page.contact h1{
+    font-size: 1.2em;
+  }
+  .page.contact p{
+   font-size: 0.8em;
+  }
+  .page.contact textarea{
+    height: 100px;
   }
 
 }

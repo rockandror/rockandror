@@ -104,6 +104,7 @@ svg{
         color:$secondary-color;
         padding: 0em .6em;
         border: 1px solid $secondary-color;
+        text-align:center;
         &:hover{
           background: $secondary-color;
           color: #fff;

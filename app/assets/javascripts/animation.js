@@ -5,6 +5,7 @@ function animation() {
 
   var
     link_url_active,
+    cookies = $('.cookies-eu'),
     logoCircle = $('circle'),
     logoRobot = $('#robot'),
     topBar = $('.top-bar'),
@@ -43,6 +44,13 @@ function animation() {
       .to(topBar, 1, { y:100, autoAlpha:1, ease:Power4.easeInOut})
       .staggerFrom(".top-bar-section .left .anim", 0.6, {y:-100, opacity:0, delay:0, ease:Back.easeOut, force3D:true}, 0.2);
       tl_topBar.pause();
+
+  tl_cookies = new TimelineMax();
+    tl_cookies
+      .to(cookies, 1, { autoAlpha:1, ease:Power4.easeInOut})
+      tl_cookies.pause();
+
+  tl_cookies.play().delay(3);
 
   if($('.intro').length){
     //TweenMax.to(backgroundIntro, 3, {autoAlpha:1,ease:Power4.easeInOut})
@@ -221,6 +229,7 @@ function animation() {
       tl_close.play();
     }
     function show_menu(){
+      tl_cookies.reverse();
       tl_topcontact.reverse();
       tlContainer.play();
       tl_home.play();
@@ -273,6 +282,7 @@ function animation() {
 
     function reset(){
       $( 'body' ).unbind( 'touchmove', touchScroll );
+      tl_cookies.play();
       tl_plus.reverse();
       tl_close.reverse();
       tlContainer.reverse();

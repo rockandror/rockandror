@@ -35,7 +35,7 @@
     margin:0 auto;
     width: 100px;
     left:-70%;
-    bottom:-60%; 
+    bottom:-60%;
     right:0;
   }
 }
@@ -50,7 +50,7 @@
     width: 13px;
     height: 13px;
     margin-top: 10px;
-  } 
+  }
 }
 
 #btn_close,#btn_back{
@@ -101,11 +101,20 @@
   width: 100%;
   z-index: 10;
   opacity: 0;
-  visibility: hidden; 
+  visibility: hidden;
+  .owl-controls{
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
   .owl-carousel{
+    height: 100%;
     text-align: center;
-    strong{text-transform:uppercase}
-    p{padding:15px;}
+    span{
+      display: block;
+      margin-bottom:30px;
+    }
   }
 }
 
