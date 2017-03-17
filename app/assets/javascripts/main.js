@@ -9,14 +9,14 @@ function init(){
   resizeDiv();
   scrollToSection();
   $('li.anim.has-dropdown.portfolio.not-click').click(function(){
-    return false;
+    //return false;
   });
 
 }
 
 function resizeDiv() {
   if(windowHeight <= 1025){
-    $(".intro .container a").css('margin-top','20px'); 
+    $(".intro .container a").css('margin-top','20px');
     $(".intro").css({'height': $(window).height() + 'px'});
   }
   if(windowHeight == 1280 && windowWidth == 800){
@@ -25,8 +25,6 @@ function resizeDiv() {
     $(".intro").css({'height': $(window).height() + 'px'});
   }
 }
-
-
 
 function scrollToSection(){
   $('a[href*=#scroll_to_]:not([href=#])').click(function() {
