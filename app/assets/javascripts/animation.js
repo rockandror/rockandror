@@ -10,6 +10,8 @@ function animation() {
     logoRobot = $('#robot'),
     topBar = $('.top-bar'),
     backgroundIntro = $('.bg-background'),
+    backgroundIntroStars = $('.bg-stars'),
+    backgroundIntroMan = $('.bg-man'),
     h2 = $(".intro .container h2"),
     h1 = $(".intro .container h1"),
     lead = $(".intro lead"),
@@ -53,11 +55,18 @@ function animation() {
   tl_cookies.play().delay(3);
 
   if($('.intro').length){
-    //TweenMax.to(backgroundIntro, 3, {autoAlpha:1,ease:Power4.easeInOut})
 
     TweenMax.fromTo(backgroundIntro, 3,
-      {y:30, delay:2},
+      {y:30, delay:1},
+      {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:1})
+
+    TweenMax.fromTo(backgroundIntroMan, 3,
+      {y:30, delay:1},
       {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+
+    TweenMax.fromTo(backgroundIntroStars, 3,
+      {y:30, delay:3},
+      {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:3})
 
     TweenMax.fromTo(h2, 1,
       {y:30, delay:2},
@@ -72,6 +81,7 @@ function animation() {
       {y:-40, autoAlpha:1, ease:Power4.easeInOut,delay:3})
 
     backgroundIntroHeight = $(this).height();
+
     TweenMax.fromTo(btnDiscover, 4,
       {y:backgroundIntroHeight, ease:Power4.easeInOut,delay:1.3},
       {y:backgroundIntroHeight - 500  , autoAlpha:1, ease:Power4.easeInOut,delay:1.3})
