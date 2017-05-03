@@ -8,10 +8,35 @@
     .bg-background{
       height: 100%;
       width: 100%;
-      background: image_url('svg/home-startup.svg') no-repeat center center;
+      background: image_url('svg/home-startup-background.svg') no-repeat center center;
       background-size: cover;
       z-index: 0;
+      position: absolute;
+      top: 0;
+      left:0;
       visibility: hidden;
+    }
+    .bg-stars{
+      height: 100%;
+      width: 100%;
+      background: image_url('svg/home-startup-stars.svg') no-repeat center center;
+      background-size: cover;
+      z-index: 1;
+      position: absolute;
+      visibility: hidden;
+      top: 0;
+      left:0;
+    }
+    .bg-man{
+      height: 100%;
+      width: 100%;
+      background: image_url('svg/home-startup-man.svg') no-repeat center center;
+      background-size: cover;
+      z-index: 2;
+      position: absolute;
+      visibility: hidden;
+      top: 0;
+      left:0;
     }
     .container{
       position: absolute;
@@ -22,6 +47,7 @@
         font-size: 20px;
         text-align: center;
         letter-spacing: 6px;
+        color:#ccc;
       }
       h2.title{
         visibility: hidden;
@@ -30,6 +56,7 @@
         text-shadow: 1px 1px  #000;
       }
       lead{
+        z-index: 5;
         visibility: hidden;
         @include text(white, uppercase, 2rem,center);
         display: block;
@@ -41,6 +68,7 @@
         font-family: $font-family-serif;
       }
       a{
+        z-index: 4;
         visibility: hidden;
         width: 250px;
         margin:0 auto;
@@ -302,4 +330,71 @@
     }
     @include btn-ror(transparent, $secondary-color, white);
   }
+}
+
+
+
+
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-webkit-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-ms-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-moz-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+
+
+@keyframes animatedBackground2 {
+			0%   { background-position: 0px; }
+  100% { background-position: 0px 1222px; } /* set this to the height of the image */
+		}
+		@-webkit-keyframes animatedBackground2 {
+			0%   { background-position: 0px; }
+  100% { background-position: 0px 1222px; } /* set this to the height of the image */
+		}
+		@-ms-keyframes animatedBackground2 {
+			0%   { background-position: 0px; }
+  100% { background-position: 0px 1222px; } /* set this to the height of the image */
+		}
+		@-moz-keyframes animatedBackground2 {
+			0%   { background-position: 0px; }
+  100% { background-position: 0px 1222px; } /* set this to the height of the image */
+		}
+html{width:100%;}
+
+#animate-area2	{
+  z-index: 2;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+
+	background-image: url(svg/home-startup-stars-small.svg);
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+	background-position: 0 0;
+	//background-repeat: repeat-y;
+  animation: animatedBackground2 30s infinite linear;
+  -ms-animation: animatedBackground2 30s infinite linear;
+  -moz-animation: animatedBackground2 30s infinite linear;
+  -webkit-animation: animatedBackground2 30s infinite linear;
 }

@@ -180,6 +180,16 @@
   .page.boatjump .brand-design .content svg{width: 70%;}
 }
 
+@media only screen and (min-width: 685px) and (max-width: 760px) {
+  .home .intro .container h2.title {
+    font-size: 3rem;
+  }
+  #btn-discover{
+    display: none;
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   .page{margin-top:100px;}
 }
@@ -475,6 +485,25 @@
   }
 }
 
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+  .home {
+    .intro{
+      .container{
+         h2.title{
+          padding: 0px;
+          font-size: 1.7em;
+          line-height: 30px;
+        }
+         lead{
+           line-height: 1em;
+           margin-top: 37px;
+           font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 360px) {
 
   .home {
@@ -482,11 +511,13 @@
       .container{
          h2.title{
           padding: 0px;
+          font-size: 1.7em;
+          line-height: 30px;
         }
          lead{
-          line-height: 1em;
-          margin-top:10px;
-          font-size: 1.3em;
+           line-height: 1em;
+           margin-top: 37px;
+           font-size: 1.5em;
         }
       }
     }
@@ -506,17 +537,6 @@
   #container_submenu_responsive .owl-carousel p{
     padding-bottom: 0px;
     min-height: 108px;
-  }
-
-  .owl-theme .owl-controls{
-    //margin-top: -50px;
-    .owl-buttons div{
-      // background: white;
-      // color:$secondary-color;
-      // zoom:1.2;
-      // opacity: 0.9;
-    }
-    //.owl-page span{background: white;}
   }
 }
 
