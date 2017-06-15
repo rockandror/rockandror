@@ -1,4 +1,5 @@
 function animation() {
+  console.log("init animation");
   var touchScroll = function( event ) {
     event.preventDefault();
   };
@@ -55,7 +56,6 @@ function animation() {
   tl_cookies.play().delay(3);
 
   if($('.intro').length){
-
     TweenMax.fromTo(backgroundIntro, 3,
       {y:30, delay:1},
       {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:1})
@@ -72,13 +72,14 @@ function animation() {
       {y:30, delay:2},
       {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
-    TweenMax.fromTo(lead, 1,
-      {y:20, delay:2},
-      {y:-30, autoAlpha:1, ease:Power4.easeInOut,delay:2})
-
     TweenMax.fromTo(h1, 1,
       {y:0, delay:2},
-      {y:-40, autoAlpha:1, ease:Power4.easeInOut,delay:3})
+      {y:-25, autoAlpha:1, ease:Power4.easeInOut,delay:3})
+
+    TweenMax.fromTo(lead, 1,
+      {y:20, delay:2},
+      {y:-35, autoAlpha:1, ease:Power4.easeInOut,delay:4})
+
 
     backgroundIntroHeight = $(this).height();
 
