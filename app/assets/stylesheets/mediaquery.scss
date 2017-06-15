@@ -22,10 +22,15 @@
         top:10%;
         padding: 1em;
          .title{font-size:2.3em; }
-         lead{
-          line-height: 1em;
-          margin-top:30px;
-          font-size: 1.4em;
+         h2.title{
+           font-size: 1.7em;
+         }
+         h1{
+           font-size: 1.1em;
+           margin-top:25px;
+         }
+        lead{
+          font-size: 1em;
         }
       }
     }
@@ -106,21 +111,23 @@
     .intro{
       .container{
         padding: 1em;
-         h1{
-           font-size:1.3em;
-         }
-         lead{
-          margin-top:20px;
+        h2.title{
+          font-size: 2.7em;
         }
+        h1{
+          font-size: 1.3em;
+          margin-top:25px;
+        }
+       lead{
+         font-size: 1em;
+       }
       }
     }
 
     section{
-
       h2{
         font-size: 2.3rem;
       }
-
       a{
         display: block;
         margin-bottom: 10px;
@@ -181,8 +188,15 @@
 }
 
 @media only screen and (min-width: 685px) and (max-width: 760px) {
-  .home .intro .container h2.title {
-    font-size: 3rem;
+  .home .intro .container{
+    h2.title {
+      font-size: 3em;
+    }
+    h1{
+      margin-top:24px;
+    }
+    lead{
+    }
   }
   #btn-discover{
     display: none;
@@ -192,6 +206,22 @@
 
 @media only screen and (min-width: 768px) {
   .page{margin-top:100px;}
+  .home{
+    .intro{
+      .container{
+        padding: 1em;
+        h2.title{
+          font-size: 3em;
+        }
+        h1{
+          margin-top:20px;
+        }
+        lead{
+          margin-top: 0;
+        }
+       }
+     }
+   }
 }
 @media only screen and (max-width: 767px) {
   .cookies-eu{
@@ -317,26 +347,12 @@
       .container{
         top:15%;
         padding: 1em;
-        h1{
-          font-size: 1.3em;
-          letter-spacing: 0px;
-          margin-top:15px;
-        }
-        h2.title{
-          font-size:3.3em;
-        }
-         lead{
-          line-height: 1em;
-          margin-top:30px;
-          font-size: 1.6em;
-        }
       }
     }
   }
 
   .top-bar-section li.active:not(.has-form) a:not(.button){
     line-height: 0.6875rem;
-    //margin-top: 33px;
     padding: 0;
   }
   .top-bar-section .has-dropdown > a:after{
@@ -376,7 +392,6 @@
   //Nexus 10
   .top-bar .top-bar-section .show-for-medium-up{
     width: 270px;
-    //margin-top: 20px;
   }
 }
 
@@ -387,19 +402,6 @@
       .container{
         top:10%;
         padding: 1em;
-        h1{
-          font-size: 1.3em;
-          letter-spacing: 2px;
-          margin-top: 10px;
-        }
-        h2.title{
-          font-size:3.3em;
-        }
-        lead{
-          line-height: 1em;
-          margin-top:20px;
-          font-size: 1.6em;
-        }
         #btn-discover{
           display: none;
         }
@@ -429,18 +431,6 @@
       .container{
         top:10%;
         padding: 1em;
-        h1{
-          display: none;
-        }
-        h2.title{
-          font-size:1.3em;
-          line-height: 30px;
-        }
-        lead{
-          line-height: 1em;
-          margin-top:40px;
-          font-size: 1em;
-        }
       }
     }
     section{
@@ -485,44 +475,9 @@
   }
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-  .home {
-    .intro{
-      .container{
-         h2.title{
-          padding: 0px;
-          font-size: 1.7em;
-          line-height: 30px;
-        }
-         lead{
-           line-height: 1em;
-           margin-top: 37px;
-           font-size: 1.5em;
-        }
-      }
-    }
-  }
-}
+
 
 @media only screen and (max-width: 360px) {
-
-  .home {
-    .intro{
-      .container{
-         h2.title{
-          padding: 0px;
-          font-size: 1.7em;
-          line-height: 30px;
-        }
-         lead{
-           line-height: 1em;
-           margin-top: 37px;
-           font-size: 1.5em;
-        }
-      }
-    }
-  }
-
   .page{
     .cont-introduction span{
       font-size: 0.8em;
@@ -543,18 +498,6 @@
 @media only screen and (max-width: 320px) {
 
   .home {
-    .intro{
-      .container{
-         h2.title{
-          font-size: 1.5em;
-        }
-         lead{
-          line-height: 1em;
-          margin-top:30px;
-          font-size: 1em;
-        }
-      }
-    }
     section{
       h2,h3{font-size: 2em;}
       &.webdings{
@@ -584,5 +527,4 @@
   .page.contact textarea{
     height: 100px;
   }
-
 }
