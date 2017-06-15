@@ -15,14 +15,13 @@ function init(){
 }
 
 function resizeDiv() {
+  $(".intro").css({'height': $(window).height() + 'px'});
   if(windowHeight <= 1025){
     $(".intro .container a").css('margin-top','20px');
-    $(".intro").css({'height': $(window).height() + 'px'});
   }
   if(windowHeight == 1280 && windowWidth == 800){
     //Nexus 10
     $(".intro .container a").css('margin-top','20px');
-    $(".intro").css({'height': $(window).height() + 'px'});
   }
 }
 
