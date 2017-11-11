@@ -56,8 +56,12 @@
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import 'foundation/functions';
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900);
+
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -92,7 +96,7 @@ $include-html-global-classes: $include-html-classes;
 // $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
-$font-family-sans-serif:'Titillium Web', sans-serif;
+$font-family-sans-serif:'Montserrat', sans-serif;
 $font-family-serif:'Slabo 27px', serif;
 // We use these to define default font weights
 // $font-weight-normal: normal;
@@ -935,10 +939,10 @@ $header-font-color: $steel;
 // $orbit-caption-height: auto;
 
 // We use these to control the left/right nav styles
-// $orbit-nav-bg: transparent;
-// $orbit-nav-bg-hover: rgba(0,0,0,0.3);
+$orbit-nav-bg: transparent;
+$orbit-nav-bg-hover: transparent;
 // $orbit-nav-arrow-color: $white;
-// $orbit-nav-arrow-color-hover: $white;
+$orbit-nav-arrow-color-hover: $yellow;
 
 // We use these to control the timer styles
 // $orbit-timer-bg: rgba(255,255,255,0.3);

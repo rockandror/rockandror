@@ -1,24 +1,44 @@
 @mixin text($color, $transform, $size, $align) {
-  color: $color; 
+  color: $color;
   text-transform: $transform;
   font-size: $size;
   text-align: $align;
 }
 
-@mixin btn-ror($border, $bg, $color) {
+@mixin btn-ror($border, $bg, $color, $isBorder, $bgHover) {
   a{
-    border:1px solid $border;
+    margin-top: 1rem;
+    border:2px solid $border;
     display: inline-block;
     padding: 0.9em;
     text-transform: uppercase;
-    background: $bg; 
+    background: $bg;
     color:$color;
+
     &:hover{
-     color:$color;
-     background: darken($bg,10%);
+      cursor: pointer;
+      @if $isBorder == true {
+        color: $bgHover;
+        background: white;
+      } else{
+        color:$color;
+        background: darken($border,10%);
+      }
+
     }
-  } 
+  }
 }
+
+@mixin radial-gradient($from, $to) {
+    background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+    background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background-color: $from;
+}
+
 
 .gradient-white{
   background: rgb(255,255,255);

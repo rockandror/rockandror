@@ -1,0 +1,36 @@
+%section.testimonials
+  .row
+    .medium-6.columns
+      %h2 Que dicen los clientes sobre nosotros?
+
+    .medium-6.columns
+
+      %ul.testimonials-orbit{ "data-orbit" => "",
+                              "data-options" => "slide_number:false; pause_on_hover:false; resume_on_mouseout:false",
+                               }
+        %li.active
+          = image_tag('testimonials/boatjump.jpg')
+          .orbit-caption
+            %strong
+              Boatjump
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+            = link_to 'Más sobre este proyecto', eatbooking_path
+
+        %li
+          = image_tag("testimonials/boatjump.jpg")
+          .orbit-caption
+            %strong
+              Catamaran Oasis
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.dolor </p>
+            = link_to 'Más sobre este proyecto', eatbooking_path
+
+        %li
+          = image_tag('testimonials/boatjump.jpg')
+          .orbit-caption
+            %strong
+              Taskscheduler
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+            = link_to 'Más sobre este proyecto', eatbooking_path

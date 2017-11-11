@@ -5,6 +5,7 @@ var
   windowWidth = $(window).width();
 
 function init(){
+  setHeight();
   animation();
   resizeDiv();
   scrollToSection();
@@ -44,8 +45,14 @@ function scrollToSection(){
   });
 }
 
+function setHeight() {
+  windowHeight = $(window).innerHeight();
+  $('section').css('min-height', windowHeight);
+};
+
 $(window).on('resize', function(){
   resizeDiv();
+  setHeight();
 });
 
 var ready;

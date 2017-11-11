@@ -3,13 +3,15 @@ function animation() {
     event.preventDefault();
   };
 
+
   var
     link_url_active,
     cookies = $('.cookies-eu'),
     logoCircle = $('circle'),
     logoRobot = $('#robot'),
     topBar = $('.top-bar'),
-    backgroundIntro = $('.bg-background'),
+    backgroundIntro = $('.intro'),
+    sectionTecnology = $('section.tecnology'),
     backgroundIntroStars = $('.bg-stars'),
     backgroundIntroMan = $('.bg-man'),
     h2 = $(".intro .container h2"),
@@ -32,6 +34,7 @@ function animation() {
     email = $("#btn_email");
     container = $("#overlay_menu_responsive");
     containerSubMenu = $("#container_submenu_responsive");
+
 
   tl_logo = new TimelineMax();
     tl_logo
@@ -64,27 +67,28 @@ function animation() {
       {y:30, delay:1},
       {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
-    TweenMax.fromTo(backgroundIntroStars, 3,
-      {y:30, delay:3},
-      {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:3})
+    // TweenMax.fromTo(backgroundIntroStars, 3,
+    //   {y:30, delay:3},
+    //   {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:3})
 
     TweenMax.fromTo(h2, 1,
-      {y:30, delay:2},
-      {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+      {y:30, x:50, delay:2},
+      {y:0, x:50, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
     TweenMax.fromTo(lead, 1,
-      {y:20, delay:2},
-      {y:-30, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+      {y:20, x:50, delay:2},
+      {y:10, x:50, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
-    TweenMax.fromTo(h1, 1,
-      {y:0, delay:2},
-      {y:-40, autoAlpha:1, ease:Power4.easeInOut,delay:3})
+    // TweenMax.fromTo(h1, 1,
+    //   {y:0, delay:2},
+    //   {y:-40, autoAlpha:1, ease:Power4.easeInOut,delay:3})
 
     backgroundIntroHeight = $(this).height();
+    console.log(backgroundIntroHeight);
 
     TweenMax.fromTo(btnDiscover, 4,
-      {y:backgroundIntroHeight, ease:Power4.easeInOut,delay:1.3},
-      {y:backgroundIntroHeight - 500  , autoAlpha:1, ease:Power4.easeInOut,delay:1.3})
+      {y: backgroundIntroHeight , ease:Power4.easeInOut,delay:1.3},
+      {y: backgroundIntroHeight - 100 , autoAlpha:1, ease:Power4.easeInOut,delay:1.3})
 
     tl_topBar.play().delay(1);
     tl_logo.play().delay(1.4);
