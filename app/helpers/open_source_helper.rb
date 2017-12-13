@@ -1,0 +1,2 @@
+module OpenSourceHelper
+end
