@@ -5,7 +5,15 @@ var
   windowWidth = $(window).width();
 
 function init(){
-  setHeight();
+  if (window.matchMedia('(min-width: 769px)').matches) {
+    setHeight();
+  }else{
+    console.log("wtf");
+    // windowHeight = $(window).innerHeight();
+    // $('section.contact').css('height', windowHeight);
+    // console.log("set height contact");
+  }
+
   animation();
   resizeDiv();
   scrollToSection();
@@ -47,7 +55,7 @@ function scrollToSection(){
 
 function setHeight() {
   windowHeight = $(window).innerHeight();
-  $('section').css('min-height', windowHeight);
+  $('section').css('height', windowHeight);
 };
 
 $(window).on('resize', function(){

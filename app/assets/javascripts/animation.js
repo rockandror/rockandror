@@ -57,47 +57,62 @@ function animation() {
 
   tl_cookies.play().delay(3);
 
-  if($('.intro').length){
 
-    TweenMax.fromTo(backgroundIntro, 3,
-      {y:30, delay:1},
-      {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:1})
+    if($('.intro').length){
+      console.log("Page intro");
+      backgroundIntroHeight = $(this).height();
 
-    TweenMax.fromTo(backgroundIntroMan, 3,
-      {y:30, delay:1},
-      {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+      TweenMax.fromTo(backgroundIntro, 3,
+        {y:30, delay:1},
+        {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:1})
 
-    // TweenMax.fromTo(backgroundIntroStars, 3,
-    //   {y:30, delay:3},
-    //   {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:3})
+      TweenMax.fromTo(backgroundIntroMan, 3,
+        {y:30, delay:1},
+        {y:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
-    TweenMax.fromTo(h2, 1,
-      {y:30, x:50, delay:2},
-      {y:0, x:50, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+      if (window.matchMedia('(max-width: 320px)').matches){
+        console.log("MAX 320");
 
-    TweenMax.fromTo(lead, 1,
-      {y:20, x:50, delay:2},
-      {y:10, x:50, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+        TweenMax.fromTo(h2, 1,
+          {y:0, delay:2},
+          {y:40, autoAlpha:1, ease:Power4.easeInOut,delay:2});
 
-    // TweenMax.fromTo(h1, 1,
-    //   {y:0, delay:2},
-    //   {y:-40, autoAlpha:1, ease:Power4.easeInOut,delay:3})
+      }else if (window.matchMedia('(max-width: 360px)').matches) {
+        console.log("MAX 360");
+        TweenMax.fromTo(h2, 1,
+          {y:0, delay:2},
+          {y:40, autoAlpha:1, ease:Power4.easeInOut,delay:2});
 
-    backgroundIntroHeight = $(this).height();
-    console.log(backgroundIntroHeight);
+      }else if (window.matchMedia('(max-width: 768px)').matches) {
+        console.log("MAX 768");
 
-    TweenMax.fromTo(btnDiscover, 4,
-      {y: backgroundIntroHeight , ease:Power4.easeInOut,delay:1.3},
-      {y: backgroundIntroHeight - 100 , autoAlpha:1, ease:Power4.easeInOut,delay:1.3})
+        TweenMax.fromTo(h2, 1,
+          {y:0, x:0,  delay:2},
+          {y:80, x:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
+      }else{
+        
+        TweenMax.fromTo(h2, 1,
+          {y:30, x:50, delay:2},
+          {y:0, x:50, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
-    tl_topBar.play().delay(1);
-    tl_logo.play().delay(1.4);
+        TweenMax.fromTo(lead, 1,
+          {y:20, x:50, delay:2},
+          {y:10, x:50, autoAlpha:1, ease:Power4.easeInOut,delay:2})
 
-  } else {
-    TweenMax.set(topBar,{ y:100, autoAlpha:1})
-    tl_logo.play();
-    tl_topBar.play();
-  }
+        TweenMax.fromTo(btnDiscover, 4,
+          {y: backgroundIntroHeight , ease:Power4.easeInOut,delay:1.3},
+          {y: backgroundIntroHeight - 100 , autoAlpha:1, ease:Power4.easeInOut,delay:1.3})
+      }
+
+      tl_topBar.play().delay(1);
+      tl_logo.play().delay(1.4);
+
+    } else {
+      TweenMax.set(topBar,{ y:100, autoAlpha:1})
+      tl_logo.play();
+      tl_topBar.play();
+    }
+
 
   $(window).bind("resize", function(){
     if ($(window).width() >= 768) {

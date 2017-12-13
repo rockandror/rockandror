@@ -381,6 +381,12 @@
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
+  section.tecnology{
+    .medium-6{
+      width:100%;
+    }
+  }
+
 
   .home{
     .intro{
@@ -426,45 +432,122 @@
 
   .home {
     .intro{
+
+      .bg-man{
+        background-position: -46px 81px;
+      }
+
       .container{
-        top:10%;
+        left: 0;
+        top: 0;
+        transform: translate(0%,0%);
         padding: 1em;
-        h1{
-          display: none;
-        }
-        h2.title{
+
+        h2{
+          text-align: left;
           font-size:1.3em;
-          line-height: 30px;
+          line-height: 25px;
         }
+
         lead{
+          visibility: hidden !important;
           line-height: 1em;
           margin-top:40px;
           font-size: 1em;
         }
       }
     }
+
     section{
       padding: 2em 0em;
-      &.boatjump,&.webdings,&.eatbooking,&.oasis{
-        span,small{font-size: 0.8em;}
-        a{
-          display: block;
-          margin-bottom:5px;
-          font-size: 0.9em;
+
+      &.tecnology,
+      &.agile_developer,
+      &.open_source,
+      &.team,
+      &.works,
+      &.testimonials {
+        flex-direction: initial;
+
+        .hide-image-small{
+          display: none;
         }
-      }
-      &.oasis{
+
         h2{
-          font-size: 2.3rem;
+          text-align: left;
+          font-size:1.3em;
+          line-height: 25px;
+        }
+
+        lead,
+        h3{
+          text-align: left;
+        }
+
+        .medium-6{
+          min-height: auto;
         }
       }
-      &.participation{
-         .content{padding: 0px;}
+
+      &.testimonials{
+        .orbit-container{
+          .testimonials-orbit{
+            img{
+              margin: initial !important;
+            }
+            .orbit-caption{
+              top: 160px;
+              p{
+                text-align: left;
+              }
+            }
+          }
+        }
       }
-      &.howweworks{
-        .workflow{display: none;}
+
+      &.contact{
+        flex-direction: initial;
+
+        h2,
+        lead{
+          text-align: left;
+        }
+
+        .bg-contact{
+          display: none !important;
+        }
       }
-    }
+
+      &.testimonials
+        .medium-6{
+          min-height: auto;
+        }
+      }
+
+
+
+      // &.boatjump,&.webdings,&.eatbooking,&.oasis{
+      //   span,small{font-size: 0.8em;}
+      //   a{
+      //     display: block;
+      //     margin-bottom:5px;
+      //     font-size: 0.9em;
+      //   }
+      // }
+      //
+      // &.oasis{
+      //   h2{
+      //     font-size: 2.3rem;
+      //   }
+      // }
+      //
+      // &.participation{
+      //    .content{padding: 0px;}
+      // }
+      //
+      // &.howweworks{
+      //   .workflow{display: none;}
+      // }
 
   }
 
@@ -506,6 +589,7 @@
 
 @media only screen and (max-width: 360px) {
 
+
   .home {
     .intro{
       .container{
@@ -544,6 +628,11 @@
 
   .home {
     .intro{
+      h2{
+        font-size: 1.2em;
+        line-height: 20px;
+      }
+
       .container{
          h2.title{
           font-size: 1.5em;
