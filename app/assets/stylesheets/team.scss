@@ -1,3 +1,53 @@
-// Place all the styles related to the team controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+section{
+  &.team,
+  &.open-source,
+  &.best-tools,
+  &.agile-development,
+  &.works{
+    padding-top: 80px;
+    text-transform: uppercase;
+
+    .row-fluid{
+      padding: 1.6rem;
+
+      h1{
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+      }
+    }
+
+    h2{
+      text-transform: none;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.logo-rails{
+  width: 75px;
+  height: auto;
+  margin-top: 2rem;
+  small{
+    color:#fff;
+    float: left;
+  }
+}
+
+section{
+  &.team .row-fluid{
+    @include radial-gradient(#0174c5, #0361a3);
+  }
+  &.open-source .row-fluid{
+    @include radial-gradient(#5fd7db, #4babaf);
+  }
+  &.best-tools .row-fluid{
+    @include radial-gradient(#71c785, #439c58);
+  }
+  &.agile-development .row-fluid{
+    @include radial-gradient(#ba6889, #a83a80);
+  }
+  &.works .row-fluid{
+    @include radial-gradient(#a13644, #712630);
+  }
+}
