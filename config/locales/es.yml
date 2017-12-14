@@ -63,8 +63,8 @@ es:
       lead_html: "Contacta con nosotros para un desarrollo B2B y B2Cinnovadores en web y móvil."
       btn_info: "Solicita tu consultoria gratuita"
   pages:
-    agile_development_title: "Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del desarrollo agile."
-    best_tools_title: "Siempre utilizamos las mejores herramientas para ofrecer un producto final sólido y robusto."
-    open_sources_title: "Toda la tecnología que utilizamos para desarrollar es código abierto open source"
-    team_title: "Ofrecemos un enfoque personal y efectivo en cada proyecto que participamos"
-    works_title: "Nuestro objetivo es ayudarle a encontrar la mejor solución tecnologica para su idea"
+  #   best_tools_title_html: "Siempre utilizamos las mejores herramientas para ofrecer un <u>producto final sólido</u>"
+  #   agile_development_title_html: "Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del <u>desarrollo agile</u>."
+  #   open_sources_title_html: "Toda la tecnología que utilizamos para desarrollar es código abierto open source"
+  #   team_title_html: "Ofrecemos un enfoque personal y efectivo en cada proyecto que participamos"
+  #   works_title_html: "Nuestro objetivo es ayudarle a encontrar la mejor solución tecnologica para su idea"
