@@ -20,6 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 es:
+  common:
+    btn_back: 'Vovler'
   home_page:
     intro:
       title_html: "equipo de profesionales dedicados al desarrollo ágil de aplicaciones web y App <u> para Startup.</u>"

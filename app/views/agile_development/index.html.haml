@@ -1,6 +1,7 @@
 %section.agile-development
   .row-fluid.columns
     .medium-10.medium-offset-1
+      = link_to t('common.btn_back'), url_for(:back), class: 'btn-back'
       %h1
         = t('pages.agile_development_title')
       = render 'shared/logo_rails'

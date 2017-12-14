@@ -23,31 +23,3 @@ section{
     }
   }
 }
-
-.logo-rails{
-  width: 75px;
-  height: auto;
-  margin-top: 2rem;
-  small{
-    color:#fff;
-    float: left;
-  }
-}
-
-section{
-  &.team .row-fluid{
-    @include radial-gradient(#0174c5, #0361a3);
-  }
-  &.open-source .row-fluid{
-    @include radial-gradient(#5fd7db, #4babaf);
-  }
-  &.best-tools .row-fluid{
-    @include radial-gradient(#71c785, #439c58);
-  }
-  &.agile-development .row-fluid{
-    @include radial-gradient(#ba6889, #a83a80);
-  }
-  &.works .row-fluid{
-    @include radial-gradient(#a13644, #712630);
-  }
-}

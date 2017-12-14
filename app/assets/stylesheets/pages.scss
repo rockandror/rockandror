@@ -1,3 +1,41 @@
+//Assign header colors for each page
+section{
+
+  .btn-back{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    &:hover{
+      border-bottom: 0;
+    }
+  }
+
+  &.team .row-fluid{
+    @include radial-gradient(#0174c5, #0361a3);
+  }
+  &.open-source .row-fluid{
+    @include radial-gradient(#5fd7db, #4babaf);
+  }
+  &.best-tools .row-fluid{
+    @include radial-gradient(#71c785, #439c58);
+  }
+  &.agile-development .row-fluid{
+    @include radial-gradient(#ba6889, #a83a80);
+  }
+  &.works .row-fluid{
+    @include radial-gradient(#a13644, #712630);
+  }
+
+  .logo-rails{
+    width: 75px;
+    height: auto;
+    margin-top: 2rem;
+    small{
+      color:#fff;
+      float: left;
+    }
+  }
+}
+
 .page{
 
   h1{
@@ -10,20 +48,20 @@
     color:$steel;
     text-transform: uppercase;
   }
-  
+
   text-align: center;
   .content{
     text-align: justify;
-    text-justify: inter-word;  
+    text-justify: inter-word;
   }
 
   ul{
     li{
-      text-align: left;  
+      text-align: left;
       list-style-type:circle;
     }
   }
-  
+
   .row{
     max-width: 100%;
   }
@@ -40,7 +78,7 @@
       text-justify: inter-word;
     }
   }
-  
+
   .back-end,.front-end,.tecnology{
     padding: 6em 3em;
   }
@@ -49,9 +87,9 @@
       font-size: 0.8em;
     }
   }
-    
+
   .tecnology{
-    background: #3b3b3b;   
+    background: #3b3b3b;
     color:white;
     .content{
       text-align: center;
@@ -65,7 +103,7 @@
       }
     }
   }
-  
+
   &.boatjump{
     text-align: center;
     .img-background{
@@ -75,7 +113,7 @@
     h1{
       color:rgb(0,122,163);
     }
-  
+
     .cont-introduction{
       color:rgb(0,122,163);
       @extend .gradient-white;
@@ -103,7 +141,7 @@
     h1{
       color:$steel;
     }
-    
+
     .img-background{
       background: image_url('webdings/background-page-cut.jpg');
       background-position: center center;
@@ -146,7 +184,7 @@
             width: 310px;
           }
         }
-      } 
+      }
     }
   }
 
@@ -157,7 +195,7 @@
 
     .img-background{
       background:image_url('eatbooking/background-page-cut.jpg');
-      background-position: center center; 
+      background-position: center center;
     }
     .cont-introduction{
       color:white;
@@ -179,7 +217,7 @@
     .front-end{
      background:#f3f3f3;
     }
-  }  
+  }
 
   &.contact{
     background: #fafafa;
@@ -202,12 +240,12 @@
 
   &.greetings{
     h1{
-      font-size:2.3em; 
+      font-size:2.3em;
     }
   }
 
   .contact-now{
     padding:3em 0em;
   }
-  
+
 }

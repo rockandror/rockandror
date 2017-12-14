@@ -98,15 +98,21 @@
       z-index: 9;
       font-weight: 400;
       visibility: hidden;
-      width: 250px;
+      width: 200px;
       margin:0 auto;
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       text-align: center;
-      color: $yellow;
+      background: $yellow;
+      color: #fff;
       text-transform: uppercase;
+      padding: 1rem;
+
+      &:hover{
+        background: darken($yellow, 10%);
+      }
     }
   }
 
@@ -140,8 +146,6 @@
           align-items: flex-end;
         }
       }
-
-
 
       &.tecnology{
         @include radial-gradient(#71c785, #439c58);
