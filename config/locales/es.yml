@@ -20,6 +20,46 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 es:
+  home_page:
+    intro:
+      title_html: "equipo de profesionales dedicados al desarrollo ágil de aplicaciones web y App <u> para Startup.</u>"
+      lead_html: "Tenemos un plan estratégico. Se llama hacer las cosas bien.<br> ”Herb Kelleher"
+      btn_discover: "Descubre más"
+    tecnology:
+      title_html: "Siempre utilizamos las mejores herramientas para ofrecer un <u>producto final sólido</u>"
+      lead_html: "Ruby On Rails, Coffe script, Html, Haml, Javascript, Github, Sass, Foundation, PostgreSQL, Bootstrap, Heroku, Jquery, Angular, Ionic."
+      btn_info: "Más informacíon"
+    agile_developer:
+      title_html: "Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del <u>desarrollo agile</u>."
+      lead_html: "analisis - diseño - implementacion - pruebas - aceptacion - lanzamiento"
+      more_text_html: "Gracias a la búsqueda constante del MVP (Minimum Viable Product), que no es más que identificar la funcionalidad que más valor le da a su propuesta y centrar los esfuerzos y recursos en ponerla en práctica en el menor tiempo posible."
+      btn_info: "Explícame más"
+    open_source:
+      title_html: "Toda la tecnología que utilizamos para desarrollar es código abierto <u>open source</u>"
+      lead_html: "Partecipaciones"
+      more_text_html: "pudimos participar en la Hackaton OpenMAD 2015 para ayudar al equipo de expertos de la comunidad de Madrid en proyectos de participación y transparencia ciudadana."
+      btn_info: "leer más sobre nuestras partecipacion"
+    team:
+      title_html: "Ofrecemos un <u>enfoque personal y efectivo</u> en cada proyecto que participamos."
+      lead_html: "Ponemos especial atención en la calidad del código realizado. Ofrecemos a nuestros clientes acceso a Informes detallados del trabajo del equipo."
+      btn_info: "Descrubre más sobre nuestro equipo"
+    works:
+      title_html: "Nuestro objetivo es ayudarle a encontrar la mejor solución <u>tecnologica para su idea</u>"
+      lead_html: "Echa un vistazo a algunos de los últimos trabajos hechos para nuestros clientes."
+      btn_info: "Ver trabajos"
+    testimonials:
+      title_html: "Que dicen los clientes sobre nosotros?"
+      title_boatjump_html: "Boatjump"
+      description_boatjump_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+      title_oasiscatamaran_html: "Catamaran Oasis"
+      description_oasiscatamaran_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+      title_taskscheduler_html: "Taskscheduler"
+      description_taskscheduler_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+      btn_goto_project: "Más sobre este proyecto"
+    contact:
+      title_html: "¿necesita una web o una App?"
+      lead_html: "Contacta con nosotros para un desarrollo B2B y B2Cinnovadores en web y móvil."
+      btn_info: "Solicita tu consultoria gratuita"
   pages:
     agile_development_title: "Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del desarrollo agile."
     best_tools_title: "Siempre utilizamos las mejores herramientas para ofrecer un producto final sólido y robusto."

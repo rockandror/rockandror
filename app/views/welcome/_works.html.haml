@@ -2,11 +2,10 @@
   .row
     .medium-6.columns
       %h2
-        Nuestro objetivo es ayudarle a encontrar la mejor solución <u>tecnologica para su idea</u>
-
+        = t'home_page.works.title_html'
       %lead
-        Echa un vistazo a algunos de los últimos trabajos hechos para nuestros clientes.
+        = t'home_page.works.lead_html'
         <br>
-        = link_to 'Ver trabajos', works_path
+        = link_to t('home_page.works.btn_info'), works_path
     .small-12.medium-6.columns.hide-image-small
       .image

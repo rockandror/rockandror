@@ -4,11 +4,11 @@
       .image
     .small-12.medium-6.columns
       %h2
-        Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del <u>desarrollo agile</u>.
+        = t'home_page.agile_developer.title_html'
       %lead
-        analisis - diseño - implementacion - pruebas - aceptacion - lanzamiento
+        = t'home_page.agile_developer.lead_html'
         <br>
         <br>
-        Gracias a la búsqueda constante del MVP (Minimum Viable Product), que no es más que identificar la funcionalidad que más valor le da a su propuesta y centrar los esfuerzos y recursos en ponerla en práctica en el menor tiempo posible.
+        = t'home_page.agile_developer.more_text_html'
         <br>
-        = link_to 'Explícame más', agile_development_path
+        = link_to t('home_page.agile_developer.btn_info'), agile_development_path

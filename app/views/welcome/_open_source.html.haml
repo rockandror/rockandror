@@ -2,12 +2,12 @@
   .row
     .medium-6.columns.text-right
       %h2
-        Toda la tecnología que utilizamos para desarrollar es código abierto <u>open source</u>
+        = t'home_page.open_source.title_html'
       %h3
-        Partecipaciones
+        = t'home_page.open_source.title_html'
       %lead
-        pudimos participar en la Hackaton OpenMAD 2015 para ayudar al equipo de expertos de la comunidad de Madrid en proyectos de participación y transparencia ciudadana.
+        = t'home_page.open_source.more_text_html'
         <br>
-        = link_to 'leer más sobre nuestras partecipacion', open_source_path
+        = link_to t('home_page.open_source.btn_info'), open_source_path
     .small-12.medium-6.columns.hide-image-small
       .image

@@ -2,8 +2,9 @@
   .bg-man
   .container
     %h2
-      equipo de profesionales dedicados al desarrollo ágil de aplicaciones web y App <u> para Startup.</u>
+      = t'home_page.intro.title_html'
     %lead
-      Tenemos un plan estratégico. Se llama hacer las cosas bien.<br> ”Herb Kelleher"
+      = t'home_page.intro.lead_html'
+
     -# %h1 Desarrollo de aplicaciones web y móviles
-  = link_to 'Descubre más', '#scroll_to_tecnology', id: "btn-discover"
+  = link_to t('home_page.intro.btn_discover'), '#scroll_to_tecnology', id: "btn-discover"

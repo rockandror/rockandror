@@ -3,9 +3,9 @@
   .row
     .medium-6.columns
       %h2
-        ¿NECESITA UNA WEB O APP?
+      = t'home_page.contact.title_html'
       %lead
-        Contacta con nosotros para un desarrollo B2B y B2Cinnovadores en web y móvil.
+        = t'home_page.contact.lead_html'
         <br>
-        = link_to 'Solicita tu consultoria gratuita', new_contact_path
+        = link_to t('home_page.contact.btn_info'), new_contact_path
     .medium-6.columns.hide-image-small

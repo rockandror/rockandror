@@ -4,8 +4,8 @@
       .image
     .small-12.medium-6.columns
       %h2
-        Ofrecemos un <u>enfoque personal y efectivo</u> en cada proyecto que participamos.
+        = t'home_page.team.title_html'
       %lead
-        Ponemos especial atención en la calidad del código realizado. Ofrecemos a nuestros clientes acceso a Informes detallados del trabajo del equipo.
+        = t'home_page.team.lead_html'
         <br>
-        = link_to 'Descrubre más sobre nuestro equipo', team_path
+      = link_to t('home_page.team.btn_info'), team_path

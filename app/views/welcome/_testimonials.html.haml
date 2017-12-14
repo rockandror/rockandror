@@ -1,7 +1,8 @@
 %section.testimonials
   .row
     .medium-6.columns
-      %h2 Que dicen los clientes sobre nosotros?
+      %h2
+        = t'home_page.testimonials.title_html'
 
     .medium-6.columns
 
@@ -12,25 +13,25 @@
           = image_tag('testimonials/boatjump.jpg')
           .orbit-caption
             %strong
-              Boatjump
+              = t'home_page.testimonials.title_boatjump_html'
             %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
-            = link_to 'Más sobre este proyecto', eatbooking_path
+              = t'home_page.testimonials.description_boatjump_html'
+            = link_to t('home_page.testimonials.btn_goto_project'), eatbooking_path
 
         %li
           = image_tag("testimonials/boatjump.jpg")
           .orbit-caption
             %strong
-              Catamaran Oasis
+              = t'home_page.testimonials.title_oasiscatamaran_html'
             %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.dolor </p>
-            = link_to 'Más sobre este proyecto', eatbooking_path
+              = t'home_page.testimonials.description_oasiscatamaran_html'
+            = link_to t('home_page.testimonials.btn_goto_project'), eatbooking_path
 
         %li
           = image_tag('testimonials/boatjump.jpg')
           .orbit-caption
             %strong
-              Taskscheduler
+              = t'home_page.testimonials.title_taskscheduler_html'
             %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            = link_to 'Más sobre este proyecto', eatbooking_path
+              = t'home_page.testimonials.description_taskscheduler_html'
+            = link_to t('home_page.testimonials.btn_goto_project'), eatbooking_path
