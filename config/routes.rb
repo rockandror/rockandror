@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'pages/boatjump'
+
   root 'welcome#home'
   get '/boatjump', to: 'welcome#boatjump', as: :boatjump
   get '/webdings', to: 'welcome#webdings', as: :webdings
