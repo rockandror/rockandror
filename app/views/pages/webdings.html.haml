@@ -1,0 +1,86 @@
+.page.webdings
+  .img-background.row
+    .cont-introduction.medium-12.small-12.large-6
+      %h1
+        = t'pages.works.webdings.h1_title_html'
+      %span
+        = t'pages.works.webdings.lead'
+      %hr
+      %p
+        = t'pages.works.webdings.general_description'
+      %hr
+      = link_to '> www.webdings.es', 'http://www.webdings.es', target: :blank
+  .brand-design.row
+    .content.small-12.medium-10.medium-centered.large-centered.columns
+      %h2.text-center
+        = t'pages.works.webdings.h2_brand_html'
+      %div.text-center
+        = inline_svg "svg/webdings-logo.svg"
+      %p.text-center
+        = t'pages.works.webdings.brand_description_html'
+  .back-end.row
+    .content.small-12.medium-10.medium-centered.large-centered.columns
+      %h2.text-center
+        = t'pages.works.webdings.h2_backend_html'
+      .wrapperIpad.medium-10.medium-centered.large-10.columns
+        = image_tag "webdings/ipad-2.png", class: "img-play-ipad"
+      %hr
+      .row
+        .small-12.medium-6.large-6.columns
+          %ul.text-center
+            %li
+              = t'pages.works.webdings.bullet_backend.1_li'
+            %li
+              = t'pages.works.webdings.bullet_backend.2_li'
+            %li
+              = t'pages.works.webdings.bullet_backend.3_li'
+            %li
+              = t'pages.works.webdings.bullet_backend.4_li'
+            %li
+              = t'pages.works.webdings.bullet_backend.5_li'
+        .small-12.medium-6.large-6.columns
+          %ul.text-center
+            %li
+              = t'pages.works.webdings.bullet_backend.6_li'
+            %li
+              = t'pages.works.webdings.bullet_backend.7_li'
+            %li
+              = t'pages.works.webdings.bullet_backend.8_li'
+            %li
+              = t'pages.works.webdings.bullet_backend.9_li'
+            %li
+              = t'pages.works.webdings.bullet_backend.10_li'
+      %hr
+      %p
+        = t'pages.works.webdings.last_description'
+  .front-end.row
+    .content.small-12.medium-10.medium-centered.large-centered.columns
+      %h2.text-center
+        = t'pages.works.webdings.h2_frontend_html'
+      .wrapperIpad.medium-10.medium-centered.large-10.columns
+        = image_tag "webdings/device-commercial.jpg", class: "img-play-ipad"
+      %hr
+      .small-12.small-center.medium-centered.columns
+        %p
+          = t'pages.works.webdings.frontend_description'
+  .app-mobile.row
+    .content.small-12.medium-10.medium-centered.large-centered.columns
+      %h2.text-center
+        = t'pages.works.webdings.h2_application_html'
+      .wrapperIphone.medium-12.text-center
+        = image_tag "webdings/iphone_appmenu-open.png", class: "img-play-ipad"
+        %hr
+      .small-12.small-center.medium-centered.columns
+        %p
+          = t'pages.works.webdings.application_description'
+  .tecnology.row
+    .content.small-12.medium-10.medium-centered.large-centered.columns
+      %h2.text-center
+        = t'pages.works.webdings.h2_tecnology_html'
+      .row.text-center
+        = inline_svg "svg/icon-responsive.svg", class: 'text-center'
+      .medium-centered.columns
+        %p
+          = t'pages.works.webdings.tecnology'
+
+  = render 'shared/contact_now'

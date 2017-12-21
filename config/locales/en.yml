@@ -20,49 +20,81 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  home_page:
-    intro:
-      title_html: "Team de profesionales dedicados al desarrollo ágil de aplicaciones web y App <u> para Startup.</u>"
-      lead_html: "Tenemos un plan estratégico. Se llama hacer las cosas bien.<br> ”Herb Kelleher"
-      btn_discover: "Descubre más"
-    tecnology:
-      title_html: "Siempre utilizamos las mejores herramientas para ofrecer un <u>producto final sólido</u>"
-      lead_html: "Ruby On Rails, Coffe script, Html, Haml, Javascript, Github, Sass, Foundation, PostgreSQL, Bootstrap, Heroku, Jquery, Angular, Ionic."
-      btn_info: "Más informacíon"
-    agile_developer:
-      title_html: "Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del <u>desarrollo agile</u>."
-      lead_html: "analisis - diseño - implementacion - pruebas - aceptacion - lanzamiento"
-      more_text_html: "Gracias a la búsqueda constante del MVP (Minimum Viable Product), que no es más que identificar la funcionalidad que más valor le da a su propuesta y centrar los esfuerzos y recursos en ponerla en práctica en el menor tiempo posible."
-      btn_info: "Explícame más"
-    open_source:
-      title_html: "Toda la tecnología que utilizamos para desarrollar es código abierto <u>open source</u>"
-      lead_html: "Partecipaciones"
-      more_text_html: "pudimos participar en la Hackaton OpenMAD 2015 para ayudar al equipo de expertos de la comunidad de Madrid en proyectos de participación y transparencia ciudadana."
-      btn_info: "leer más sobre nuestras partecipacion"
-    team:
-      title_html: "Ofrecemos un <u>enfoque personal y efectivo</u> en cada proyecto que participamos."
-      lead_html: "Ponemos especial atención en la calidad del código realizado. Ofrecemos a nuestros clientes acceso a Informes detallados del trabajo del equipo."
-      btn_info: "Descrubre más sobre nuestro equipo"
-    works:
-      title_html: "Nuestro objetivo es ayudarle a encontrar la mejor solución <u>tecnologica para su idea</u>"
-      lead_html: "Echa un vistazo a algunos de los últimos trabajos hechos para nuestros clientes."
-      btn_info: "Ver trabajos"
-    testimonials:
-      title_html: "Que dicen los clientes sobre nosotros?"
-      title_boatjump_html: "Boatjump"
-      description_boatjump_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
-      title_oasiscatamaran_html: "Catamaran Oasis"
-      description_oasiscatamaran_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
-      title_taskscheduler_html: "Taskscheduler"
-      description_taskscheduler_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
-      btn_goto_project: "Más sobre este proyecto"
-    contact:
-      title_html: "¿necesita una web o una App?"
-      lead_html: "Contacta con nosotros para un desarrollo B2B y B2Cinnovadores en web y móvil."
-      btn_info: "Solicita tu consultoria gratuita"
-  pages:
-    agile_development_title: "Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del desarrollo agile."
-    best_tools_title: "Siempre utilizamos las mejores herramientas para ofrecer un producto final sólido y robusto."
-    open_sources_title: "Toda la tecnología que utilizamos para desarrollar es código abierto open source"
-    team_title: "Ofrecemos un enfoque personal y efectivo en cada proyecto que participamos"
-    works_title: "Nuestro objetivo es ayudarle a encontrar la mejor solución tecnologica para su idea"
+    navbar:
+      send_email: "Contratarnos"
+    common:
+      btn_back: 'Vovler'
+    home_page:
+      intro:
+        title_html: "equipo de profesionales dedicados al desarrollo ágil de aplicaciones web y App <u> para Startup.</u>"
+        lead_html: "Tenemos un plan estratégico. Se llama hacer las cosas bien.<br> ”Herb Kelleher"
+        btn_discover: "Descubre más"
+      tecnology:
+        title_html: "Siempre utilizamos las mejores herramientas para ofrecer un <u>producto final sólido</u>"
+        lead_html: "Ruby On Rails, Coffe script, Html, Haml, Javascript, Github, Sass, Foundation, PostgreSQL, Bootstrap, Heroku, Jquery, Angular, Ionic."
+        btn_info: "Más informacíon"
+      agile_developer:
+        title_html: "Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del <u>desarrollo agile</u>."
+        lead_html: "analisis - diseño - implementacion - pruebas - aceptacion - lanzamiento"
+        more_text_html: "Gracias a la búsqueda constante del MVP (Minimum Viable Product), que no es más que identificar la funcionalidad que más valor le da a su propuesta y centrar los esfuerzos y recursos en ponerla en práctica en el menor tiempo posible."
+        btn_info: "Explícame más"
+      open_source:
+        title_html: "Toda la tecnología que utilizamos para desarrollar es código abierto <u>open source</u>"
+        lead_html: "Partecipaciones"
+        more_text_html: "pudimos participar en la Hackaton OpenMAD 2015 para ayudar al equipo de expertos de la comunidad de Madrid en proyectos de participación y transparencia ciudadana."
+        btn_info: "leer más sobre nuestras partecipacion"
+      team:
+        title_html: "Ofrecemos un <u>enfoque personal y efectivo</u> en cada proyecto que participamos."
+        lead_html: "Ponemos especial atención en la calidad del código realizado. Ofrecemos a nuestros clientes acceso a Informes detallados del trabajo del equipo."
+        btn_info: "Descrubre más sobre nuestro equipo"
+      works:
+        title_html: "Nuestro objetivo es ayudarle a encontrar la mejor solución <u>tecnologica para su idea</u>"
+        lead_html: "Echa un vistazo a algunos de los últimos trabajos hechos para nuestros clientes."
+        btn_info: "Ver trabajos"
+      testimonials:
+        title_html: "Que dicen los clientes sobre nosotros?"
+        title_boatjump_html: "Boatjump"
+        description_boatjump_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+        title_oasiscatamaran_html: "Catamaran Oasis"
+        description_oasiscatamaran_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+        title_taskscheduler_html: "Taskscheduler"
+        description_taskscheduler_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+        btn_goto_project: "Más sobre este proyecto"
+      contact:
+        title_html: "¿necesita una web o una App?"
+        lead_html: "Contacta con nosotros para un desarrollo B2B y B2Cinnovadores en web y móvil."
+        btn_info: "Solicita tu consultoria gratuita"
+    pages:
+      agile_developer:
+        h2_title: "Title Agile developer"
+      open_source:
+        h2_title: "El Open source es la clave para Start up tecnologicas."
+        description: "Hay varias razones por lo cual en RockAndRor trabajamos con codigo abierto, la más importante es que nuestros clientes pueden lanzar en el mercaddo una solución comercial en un tiempo corto con un gasto economico ventajoso y una escabilidad a medida para el cliente segun el budget del proyecto."
+      team:
+        h2_title: "Title Team"
+      works:
+        h2_title: "Title Gallery works"
+        webdings:
+          h1_title_html: "Webdings"
+          lead: "Crea la app y la web de tu boda"
+          general_description: "Webdings se ha desarrollado como un proyecto de formación interna, es un SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda. Esta formado por un backend a través del cual los novios pueden definir los contenidos y módulos que desean publicar, una API para interactuar con aplicaciones móviles, una web y una app autogeneradas a través de la información y configuración introducidas en el backend."
+          h2_brand_html: "<strong>Imagen</strong>corporativa"
+          brand_description_html: "El diseño de la marca y de la plataforma ha sido realizado integramente por RockAndRoR buscando la mayor simplicidad en diseño y usabilidad web."
+          h2_backend_html: "<strong>Back</strong>end"
+          bullet_backend:
+            1_li: "Envia invitaciones por email"
+            2_li:  "Define el menú de la boda"
+            3_li:  "Organiza a los invitados por mesas"
+            4_li:  "Crea una galería de imágenes colaborativa"
+            5_li:  "Define los puntos de interés del evento"
+            6_li:  "Configuración adaptable"
+            7_li:  "Diseño personalizable"
+            8_li:  "Solicita confirmación de asistencia a tus invitados"
+            9_li:  "Ofrece servicio de transporte a tus invitados"
+            10_li: "Diseño optimizado para su uso en tablets"
+          last_description: "El Backend es la parte donde los novios pueden gestionar los invitados de la boda, seleccionar los módulos que se desean publicar así como definir los contenidos de la web y la aplicación móvil."
+          h2_frontend_html: "Página web <strong>autogenerada</strong>"
+          frontend_description: "La página de la boda se genera automáticamente a partir de los contenidos definidos en el backend y dispone de diseño adaptado para la navegación con todos tipo de dispositivos móviles, tanto tablets como móviles. La página web de la boda puede ser de acceso privado o de acceso público, según deseen los novios."
+          h2_application_html: "<strong>Aplicación</strong> móvil"
+          application_description: "Con el objetivo de conseguir una mayor interacción con los invitados hemos creado una aplicación móvil disponible tanto para dispositivos móviles Android como iOS. La aplicación permite a los invitados tener toda la información de la boda comodamente accesible a través de la app y dispone de algunas funcionalidades que no se pueden realizar a través de la web."
+          tecnology_html: "RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br> Bootstrap / Sass / Diseño responsive <br> API / Ionic <br> Photoshop / Illustrator"
