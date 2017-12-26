@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"/>
+    <meta content="<%= t('meta.description') %>" name="description"/>
+    <meta content="<%= t('meta.keywords') %>" name="keywords"/>
+    <meta content="mXNBRXCqbOYP9B5OIPiHpEDeM8tHM4jEWIjsqsqqlh0" name="google-site-verification"/>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <title>
+      <%= content_for?(:title) ? yield(:title) : t('meta.title') %>
+    </title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render "shared/navbar_animate" %>
+    <%= render "shared/notice" %>
+    <%= render 'cookies_eu/consent_banner' %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
+  </body>
+</html>

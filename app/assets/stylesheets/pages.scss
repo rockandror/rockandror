@@ -3,9 +3,14 @@ section{
 
   .btn-back{
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border: 1px solid #fff;
+    padding: 0.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
     &:hover{
-      border-bottom: 0;
+      border:1px solid transparent;
+      border-bottom: 1px solid #fff;
+
     }
   }
 
@@ -13,7 +18,11 @@ section{
     @include radial-gradient(#0174c5, #0361a3);
   }
   &.open-source .row-fluid{
+    //@include radial-gradient(#5fd7db, #4babaf);
+  }
+  &.open-source{
     @include radial-gradient(#5fd7db, #4babaf);
+    color: #fff;
   }
   &.best-tools .row-fluid{
     @include radial-gradient(#71c785, #439c58);
@@ -49,7 +58,6 @@ section{
   &.contact,
   &.greetings{
     padding-top: 80px;
-    text-transform: uppercase;
 
     .row-fluid{
       padding: 1.6rem;
@@ -58,6 +66,7 @@ section{
         font-weight: 700;
         line-height: 1;
         color: #fff;
+        text-transform: uppercase;
       }
     }
 
@@ -77,216 +86,216 @@ section{
   }
 }
 
-.page{
-
-  h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3em;
-  }
-
-  h2{
-    color:$steel;
-    text-transform: uppercase;
-  }
-
-  text-align: center;
-  .content{
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-  ul{
-    li{
-      text-align: left;
-      list-style-type:circle;
-    }
-  }
-
-  .row{
-    max-width: 100%;
-  }
-
-  .cont-introduction{
-    margin: 0px auto;
-    padding: 3em;
-    span{
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    p{
-      text-align: justify;
-      text-justify: inter-word;
-    }
-  }
-
-  .back-end,.front-end,.tecnology{
-    padding: 6em 3em;
-  }
-  .back-end{
-    ul{
-      font-size: 0.8em;
-    }
-  }
-
-  .tecnology{
-    background: #3b3b3b;
-    color:white;
-    .content{
-      text-align: center;
-      .row{margin:0px auto;}
-      h2{ color:#fff; }
-      svg{
-        width:30%;
-        height: 100%;
-        padding: 3rem 0rem;
-        fill:white;
-      }
-    }
-  }
-
-  &.boatjump{
-    text-align: center;
-    .img-background{
-      background: image_url('boatjump/background-page-cut.jpg');
-      background-position: center center;
-    }
-    h1{
-      color:rgb(0,122,163);
-    }
-
-    .cont-introduction{
-      color:rgb(0,122,163);
-      @extend .gradient-white;
-      background: white;
-    }
-
-    .brand-design{
-      padding: 6em 3em;
-      @extend .gradient-white;
-      .content{
-        svg{
-          fill:rgb(0,122,163);
-          width: 80%;
-          height: auto;
-          padding: 3rem 0rem;
-        }
-      }
-    }
-    .front-end{
-      background:#f3f3f3;
-    }
-  }
-
-  &.webdings{
-    h1{
-      color:$steel;
-    }
-
-    .img-background{
-      background: image_url('webdings/background-page-cut.jpg');
-      background-position: center center;
-    }
-    .cont-introduction{
-      background:#fff;
-      h2{
-        @include text($steel,uppercase, null,null);
-      }
-    }
-
-    .brand-design{
-      padding: 6em 3em;
-      background: #3b3b3b;
-      position: relative;
-      .content{
-        h2{ color:#fff;}
-        svg{
-          width: 200px;
-          height: auto;
-          padding: 3rem 0rem;
-        }
-        p{
-          color:#fff;
-        }
-      }
-    }
-    .front-end{
-      background:#f3f3f3;
-    }
-    .app-mobile{
-      padding: 6em 3em;
-      .content{
-        .wrapperIphone{
-          display: block;
-          img{
-            position: relative;
-            z-index: 2;
-            margin: 0px auto;
-            width: 310px;
-          }
-        }
-      }
-    }
-  }
-
-  &.eatbooking{
-    h1{
-      color:#f3cc33;
-    }
-
-    .img-background{
-      background:image_url('eatbooking/background-page-cut.jpg');
-      background-position: center center;
-    }
-    .cont-introduction{
-      color:white;
-      @extend .pattern-eatbooking;
-    }
-  }
-
-  &.oasiscatamarans{
-    h1{
-      color: #5fc3e6;
-    }
-    .img-background{
-      background: image_url('oasis-catamaran/background-page-cut.jpg');
-      background-position: center center;
-    }
-    .cont-introduction{
-      background: #f3f3f3;
-    }
-    .front-end{
-     background:#f3f3f3;
-    }
-  }
-
-  &.contact{
-    background: #fafafa;
-    h1{
-      @include text($steel,uppercase, 2.3em,center);
-    }
-    .new_contact label {
-      display: none;
-    }
-    textarea{
-      height: 150px;
-    }
-    .button.expand{
-      background: $secondary-color;
-      &:hover{
-        background: darken($secondary-color,10%);
-      }
-    }
-  }
-
-  &.greetings{
-    h1{
-      font-size:2.3em;
-    }
-  }
-
-  .contact-now{
-    padding:3em 0em;
-  }
-
-}
+// .page{
+//
+//   h1{
+//     text-align: center;
+//     text-transform: uppercase;
+//     font-size: 3em;
+//   }
+//
+//   h2{
+//     color:$steel;
+//     text-transform: uppercase;
+//   }
+//
+//   text-align: center;
+//   .content{
+//     text-align: justify;
+//     text-justify: inter-word;
+//   }
+//
+//   ul{
+//     li{
+//       text-align: left;
+//       list-style-type:circle;
+//     }
+//   }
+//
+//   .row{
+//     max-width: 100%;
+//   }
+//
+//   .cont-introduction{
+//     margin: 0px auto;
+//     padding: 3em;
+//     span{
+//       text-transform: uppercase;
+//       font-weight: 600;
+//     }
+//     p{
+//       text-align: justify;
+//       text-justify: inter-word;
+//     }
+//   }
+//
+//   .back-end,.front-end,.tecnology{
+//     padding: 6em 3em;
+//   }
+//   .back-end{
+//     ul{
+//       font-size: 0.8em;
+//     }
+//   }
+//
+//   .tecnology{
+//     background: #3b3b3b;
+//     color:white;
+//     .content{
+//       text-align: center;
+//       .row{margin:0px auto;}
+//       h2{ color:#fff; }
+//       svg{
+//         width:30%;
+//         height: 100%;
+//         padding: 3rem 0rem;
+//         fill:white;
+//       }
+//     }
+//   }
+//
+//   &.boatjump{
+//     text-align: center;
+//     .img-background{
+//       background: image_url('boatjump/background-page-cut.jpg');
+//       background-position: center center;
+//     }
+//     h1{
+//       color:rgb(0,122,163);
+//     }
+//
+//     .cont-introduction{
+//       color:rgb(0,122,163);
+//       @extend .gradient-white;
+//       background: white;
+//     }
+//
+//     .brand-design{
+//       padding: 6em 3em;
+//       @extend .gradient-white;
+//       .content{
+//         svg{
+//           fill:rgb(0,122,163);
+//           width: 80%;
+//           height: auto;
+//           padding: 3rem 0rem;
+//         }
+//       }
+//     }
+//     .front-end{
+//       background:#f3f3f3;
+//     }
+//   }
+//
+//   &.webdings{
+//     h1{
+//       color:$steel;
+//     }
+//
+//     .img-background{
+//       background: image_url('webdings/background-page-cut.jpg');
+//       background-position: center center;
+//     }
+//     .cont-introduction{
+//       background:#fff;
+//       h2{
+//         @include text($steel,uppercase, null,null);
+//       }
+//     }
+//
+//     .brand-design{
+//       padding: 6em 3em;
+//       background: #3b3b3b;
+//       position: relative;
+//       .content{
+//         h2{ color:#fff;}
+//         svg{
+//           width: 200px;
+//           height: auto;
+//           padding: 3rem 0rem;
+//         }
+//         p{
+//           color:#fff;
+//         }
+//       }
+//     }
+//     .front-end{
+//       background:#f3f3f3;
+//     }
+//     .app-mobile{
+//       padding: 6em 3em;
+//       .content{
+//         .wrapperIphone{
+//           display: block;
+//           img{
+//             position: relative;
+//             z-index: 2;
+//             margin: 0px auto;
+//             width: 310px;
+//           }
+//         }
+//       }
+//     }
+//   }
+//
+//   &.eatbooking{
+//     h1{
+//       color:#f3cc33;
+//     }
+//
+//     .img-background{
+//       background:image_url('eatbooking/background-page-cut.jpg');
+//       background-position: center center;
+//     }
+//     .cont-introduction{
+//       color:white;
+//       @extend .pattern-eatbooking;
+//     }
+//   }
+//
+//   &.oasiscatamarans{
+//     h1{
+//       color: #5fc3e6;
+//     }
+//     .img-background{
+//       background: image_url('oasis-catamaran/background-page-cut.jpg');
+//       background-position: center center;
+//     }
+//     .cont-introduction{
+//       background: #f3f3f3;
+//     }
+//     .front-end{
+//      background:#f3f3f3;
+//     }
+//   }
+//
+//   &.contact{
+//     background: #fafafa;
+//     h1{
+//       @include text($steel,uppercase, 2.3em,center);
+//     }
+//     .new_contact label {
+//       display: none;
+//     }
+//     textarea{
+//       height: 150px;
+//     }
+//     .button.expand{
+//       background: $secondary-color;
+//       &:hover{
+//         background: darken($secondary-color,10%);
+//       }
+//     }
+//   }
+//
+//   &.greetings{
+//     h1{
+//       font-size:2.3em;
+//     }
+//   }
+//
+//   .contact-now{
+//     padding:3em 0em;
+//   }
+//
+// }

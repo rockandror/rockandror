@@ -70,10 +70,20 @@
         %a{:href => new_contact_path}
           = t'navbar.send_email'
     %ul.left.small-4.medium-4.columns.show-for-medium-up
-      %li.anim{:class => active?("home", params[:action])}
-        %a{:href => root_path} Inicio
       %li.anim.has-dropdown.portfolio{:class => active?("portfolio", params[:action])}
-        %a{:href => "#"} Últimos trabajos
+        %a{:href => "#"}
+          = t'navbar.how_we_works.title'
+        %ul.dropdown
+          %li
+            = link_to t('navbar.how_we_works.tools'), best_tools_path
+          %li
+            = link_to t('navbar.how_we_works.agile_development'), agile_development_path
+          %li
+            = link_to t('navbar.how_we_works.open_source'), open_source_path
+
+      %li.anim.has-dropdown.portfolio{:class => active?("portfolio", params[:action])}
+        %a{:href => "#"}
+          = t'navbar.last_works'
         %ul.dropdown
           %li
             = link_to 'Boatjump', '/boatjump'
@@ -85,3 +95,7 @@
             = link_to 'Oasis Catamaran', '/oasiscatamaran'
           %li
             = link_to 'Taskscheduler', '/oasiscatamaran'
+
+      %li.anim{:class => active?("team", params[:action])}
+        %a{:href => team_path}
+          = t'navbar.team '

@@ -20,7 +20,18 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 es:
+  meta:
+    title: "Desarrollo web en Palma de Mallorca - RockAndRoR"
+    description: "Desarrollo web ágil a medida en RubyOnRails para Baleares y el resto de España. Desarrollo web en Palma de Mallorca. Expertos desarrolladores y diseñadores web."
+    keywords: "RockAndRoR, desarrollo web ágil a medida, desarrollo RubyOnRails, desarrollo Ruby on Rails, desarrollo RoR, desarrollo web, desarrollo web desde Mallorca, desarrollo web para Baleares y el resto de España"
   navbar:
+    how_we_works:
+      title: "Como trabajamos"
+      tools: "Herramientas"
+      agile_development: "Desarrollo agile"
+      open_source: "Open source"
+    last_works: "Últimos trabajos"
+    team: "Equipo"
     send_email: "Contratarnos"
 
   common:

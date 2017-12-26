@@ -1,0 +1,21 @@
+<section class="greetings">
+  <div class="row-fluid columns">
+    <div class="medium-10 medium-offset-1">
+      <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
+      <h1>
+        <%= t'pages.contact.greetings.title_html' %>
+      </h1>
+      <%= render 'shared/logo_rails' %>
+    </div>
+  </div>
+  <div class="medium-12 columns">
+    <div class="medium-10 medium-offset-1">
+      <br/>
+      <p class="text-center">
+        <%= t'pages.contact.greetings.share.text_html' %>
+        <br/>
+        <%= link_to t('common.addbutton'), nil %>
+      </p>
+    </div>
+  </div>
+</section>
