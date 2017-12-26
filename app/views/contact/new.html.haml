@@ -1,10 +1,14 @@
-.page.contact
-  .row
-    .small-12.large-6.small-centered.columns.cont-introduction
-      %h1 Gracias por su interés en los servicios de RockAndRor
-      %p.text-center Escríbanos, le contestaremos en menos de 24 horas.
+%section.contact
+  .row-fluid.columns
+    .medium-10.medium-offset-1
+      = link_to t('common.btn_back'), url_for(:back), class: 'btn-back'
+      %h1
+        = t'pages.contact.title_html'
+      = render 'shared/logo_rails'
+  .medium-12.columns
+    .medium-6.medium-offset-3
       = form_for @contact, url:contact_index_path do |f|
-        = f.text_field :name, placeholder: 'Nombre o Empresa'
-        = f.text_field :email, placeholder: 'Email'
-        = f.text_area :message, placeholder: 'Mensaje'
-        = f.submit "Contacta ahora", class: "large button expand"
+        = f.text_field :name, placeholder: t('pages.contact.form.name')
+        = f.text_field :email, placeholder: t('pages.contact.form.email')
+        = f.text_area :message, placeholder: t('pages.contact.form.message')
+        = f.submit t('pages.contact.form.btn_send'), class: "large button expand"

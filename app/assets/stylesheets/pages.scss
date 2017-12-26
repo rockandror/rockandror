@@ -24,6 +24,12 @@ section{
   &.works .row-fluid{
     @include radial-gradient(#a13644, #712630);
   }
+  &.contact .row-fluid{
+    @include radial-gradient(#f1b820, #cf891c);
+  }
+  &.greetings .row-fluid{
+    @include radial-gradient(#f1b820, #cf891c);
+  }
 
   .logo-rails{
     width: 75px;
@@ -32,6 +38,41 @@ section{
     small{
       color:#fff;
       float: left;
+    }
+  }
+
+  &.team,
+  &.open-source,
+  &.best-tools,
+  &.agile-development,
+  &.works,
+  &.contact,
+  &.greetings{
+    padding-top: 80px;
+    text-transform: uppercase;
+
+    .row-fluid{
+      padding: 1.6rem;
+
+      h1{
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+      }
+    }
+
+    h2{
+      text-transform: none;
+      font-size: 1.6rem;
+    }
+  }
+
+  &.contact{
+    .new_contact{
+      margin-top: 2rem;
+      textarea{
+        height: 150px;
+      }
     }
   }
 }

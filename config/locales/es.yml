@@ -120,3 +120,14 @@ es:
         frontend_description: "El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web."
         h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
         tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive <br> Photoshop / Illustrator"
+    contact:
+      title_html: "Escríbanos, le contestaremos en menos de 24 horas."
+      form:
+        name: "Nombre o Empresa"
+        email: "Email"
+        message: "Explicanos que tipologia de servicio necesitas"
+        btn_send: "Enviar mensaje a Rock And Ror"
+      greetings:
+        title_html: "Gracias por contactar con nosotros. Obtendrá una respuesta en <u>menos de 24 horas</u>"
+        share:
+          text_html: "Si te gusta Rock And Ror y quieres ayudarnos a crecer <br> dale al botòn me gusta de Facebook!"

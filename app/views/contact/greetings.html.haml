@@ -1,4 +1,15 @@
-.page.greetings
-  .cont-introduction.medium-12.small-12.large-8.text-center.row
-    %h1 <strong>Gracias </strong> por contactar con nosotros.
-    %p.text-center Obtendrá una respuesta en menos de 24 horas.
+%section.greetings
+  .row-fluid.columns
+    .medium-10.medium-offset-1
+      = link_to t('common.btn_back'), url_for(:back), class: 'btn-back'
+      %h1
+        = t'pages.contact.greetings.title_html'
+      = render 'shared/logo_rails'
+
+  .medium-12.columns
+    .medium-10.medium-offset-1
+      %br
+      %p.text-center
+        = t'pages.contact.greetings.share.text_html'
+        %br
+        = link_to t('common.addbutton'), nil
