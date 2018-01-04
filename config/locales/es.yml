@@ -125,15 +125,149 @@ es:
       lead_html: "Contacta con nosotros para un desarrollo B2B y B2Cinnovadores en web y móvil."
       btn_info: "Solicita tu consultoria gratuita"
   pages:
+    tecnology:
+      h2_1_title: "Desarrollo en Ruby on Rails"
+      description_html: >
+                  Rockandror desarrolla paginas web y aplicaciones flexibles y
+                  dinnamicos con Ruby on Rails un framework de codigo abierto
+                  basado en MVC. Desarrollar con Ruby on Rails significa usar un
+                  codigo estandarizado rápido e intuitivo, pero es imposible crear
+                  grandes servicios Web sin el conocimiento de muchas otras
+                  herramientas y tecnologías como:
+                  <br>
+                  <br>
+                  jQuery, AngularJs, Bootstrap, SCSS, HTML, JavaScript, SQL,
+                  Github, PostgreSQL, MySQL, RSpec, Capybara, Cucumber,
+                  Capistrano, Redis, Unicorn, Puma, AWS, Heroku etc..
+                  <br>
+                  <br>
+                  Gracias a <a href='agile_development'>los principios del desarrollo agíl </a>
+                  y la architetura MVC en Ruby on Rails permite desarrollar
+                  proyectos complejos muy rápidamente, reduciendo el porcentaje
+                  de código que necesita, es decir programación más rápida e
+                  intuitiva flexible.
+                  <br>
+                  <br>
+                  <strong>Más potente ... Más barato</strong>
+                  <br>
+                  La velocidad de desarrollo de un sitio en Ruby on Rails llevará
+                  inevitablemente a una ventaja económica para aquellos que
+                  deciden confiar en Ruby on Rails y en Rock and Ror.
+                  <br>
+                  <br>
+                  <strong>Algunas pagina web que eligieron Ruby on Rails</strong>
+                  <br>
+                  <a href='https://500px.com/' target='blank'>500px</a>,
+                  <a href='https://www.airbnb.com/' target='blank'>Airbnb</a>,
+                  <a href='https://ask.fm/' target='blank'>Ask.fm</a>,
+                  <a href='https://basecamp.com/' target='blank'>Basecamp</a>,
+                  <a href='https://www.bloomberg.com/' target='blank'>Bloomberg</a>,
+                  <a href='https://www.couchsurfing.com' target='blank'>Couchsurfing</a>,
+                  <a href='https://dribbble.com/' target='blank'>Dribbble</a>,
+                  <a href='https://www.fiverr.com/' target='blank'>Fiverr</a>,
+                  <a href='https://genius.com/' target='blank'>Genius</a>,
+                  <a href='https://github.com/' target='blank'>GitHub</a>,
+                  <a href='https://www.goodreads.com/' target='blank'>Goodreads</a>,
+                  <a href='https://www.groupon.com' target='blank'>Groupon</a>,
+                  <a href='https://www.hulu.com/' target='blank'>Hulu</a>,
+                  <a href='https://www.kickstarter.com/' target='blank'>Kickstarter</a>,
+                  <a href='https://pixlr.com/' target='blank'>Pixlr</a>,
+                  <a href='https://es.scribd.com' target='blank'>Scribddesco</a>,
+                  etc...
+                  <br>
+                  En los ultimos 10 años miles de programadores han contibuido a
+                  que sea más seguro y potente.
+      h2_2_title:   "Desarrollo Movil de Android y iOS con Ionic"
+      description_2_html: >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.
+      h2_3_title:   "Desarrollo scalable"
+      description_3_html: >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.
     agile_developer:
-      h2_title: "Title Agile developer"
+      h2_1_title: "Dividimos el objetivo final en hitos a corto plazo que recorren el siguiente flujo de trabajo."
+      h2_2_title: "¿Qué es la metodología Agile?"
+      description_html: >
+                        Una startup es una joven empresa que se desarrolla en un
+                        ecosistema de incertidumbre, por lo que necesita poder
+                        realizar cambios en sus proyectos de manera rápida.
+                        Gracias a los principios del desarrollo agíl y la architetura
+                        MVC en Ruby on Rails permite desarrollar proyectos
+                        complejos muy rápidamente, reduciendo el porcentaje de
+                        código que necesita, es decir programación más rápida e
+                        intuitiva flexible.
+      analysis_title: "01. Analisis"
+      analysis_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      design_title: "02. Diseño"
+      design_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      implementation_title: "03. Implementacion"
+      implementation_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      test_title: "04. Pruebas"
+      test_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      acceptance_title: "05. Aceptacion"
+      acceptance_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      launching_title: "06. Lanzamiento"
+      launching_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
     open_source:
       h2_1_title: "El Open source es la clave para Start up tecnologicas."
       description_html: >
                         Hay varias razones por lo cual en RockAndRor trabajamos con codigo abierto,
-                        la más importante es que nuestros clientes pueden lanzar en el mercaddo una
+                        <strong>la más importante es que nuestros clientes pueden lanzar en el mercado una
                         solución comercial en un tiempo corto con un gasto economico ventajoso y una
-                        escabilidad a medida para el cliente segun el budget del proyecto.
+                        escabilidad a medida para el cliente segun el budget del proyecto</strong>.
                         <br>
                         <br>
                         Resumir los motivos por lo cual deberias elegir el Open source es bastante importante
@@ -150,8 +284,8 @@ es:
                         Es muy importante para RockAndRor la trasparencia, la mejora costante, y no tener que
                         reinventar la rueda cuando ya hay miles de progremadores que aportan cada dia soluciones
                         y mejoras al codigo libre completamente gratis, esto tendrá un impacto no solo para los
-                        programadores y el mismo código sino tambien para el cliente que tiene a su lado miles de
-                        programadores expertos que arreglan bugs y errores en un par de dias, va en detrimento de
+                        programadores y el mismo código sino tambien para <strong>el cliente que tiene a su lado miles de
+                        programadores expertos que arreglan bugs y errores en un par de dias</strong>, va en detrimento de
                         software propietario que puede tomar semanas antes de detectar un error y corregirlo.
       h2_2_title: "Resumimos los puntos principales del codigo abierto"
       ul_li_html: >
@@ -197,6 +331,43 @@ es:
                       <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
                     </li>
                     </ul>
+      h2_3_title: "Cuando nos resulta posible nos gusta participar en proyectos interesantes"
+      description_hackaton_madrid_html: >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+      description_redsys_html: >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+      description_manyredsys_html: >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+      description_consul_html: >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
     team:
       h1_title: "Rock And Ror, equipo de desarrollo en Ruby On Rails"
       lead: "Ofrecemos un enfoque personal y efectivo en cada proyecto que participamos."

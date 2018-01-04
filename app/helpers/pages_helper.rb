@@ -4,7 +4,7 @@ module PagesHelper
     if params[:action] == "team"
       'Te ha gustado nuestro equipo y nuestra filosofia?'
     elsif params[:action] == "agile_development"
-      'Nuestro metodo se alinea a tu pensamiento? '
+      'Nuestro metodo se alinea a tu negocio? '
     elsif params[:action] == "best_tools"
       'Crees que estamos a la altura tecnologica para tu proyecto?'
     elsif params[:action] == "open_source"

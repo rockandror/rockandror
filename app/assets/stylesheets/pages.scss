@@ -107,6 +107,38 @@ section{
     }
   }
 
+  &.page.agile-development{
+    ul li{
+      padding-left: 1em;
+      border-left:8px solid;
+      margin-bottom: 1.5em;
+
+      &.analysis{
+        border-color: #2cc6d2;
+      }
+
+      &.design{
+        border-color: #0b98d0;
+      }
+
+      &.implementation{
+        border-color: #0a4366;
+      }
+      &.acceptance{
+        border-color: #0a4366;
+      }
+
+      &.test{
+        border-color: #c8202f;
+      }
+
+      &.launching{
+        border-color: #fa7903;
+      }
+
+    }
+
+  }
   &.page.team{
     .photos{
       background: #f9f9f9;
