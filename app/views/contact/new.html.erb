@@ -1,6 +1,6 @@
-<section class="contact">
-  <div class="row-fluid columns">
-    <div class="medium-10 medium-offset-1">
+<section class="page contact">
+  <div class="row header-bg">
+    <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
       <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
       <h1>
         <%= t'pages.contact.title_html' %>
@@ -8,17 +8,27 @@
       <%= render 'shared/logo_rails' %>
     </div>
   </div>
-  <div class="medium-12 columns">
-    <div class="medium-6 medium-offset-3">
-      <%= form_for @contact, url:contact_index_path do |f| %>
-        <%= f.label :name, t('pages.contact.form.name') %>
-        <%= f.text_field :name, placeholder: t('pages.contact.form.name') %>
-        <%= f.text_field :email, placeholder: t('pages.contact.form.email') %>
-        <%= f.label :name, t('pages.contact.form.minimum') %>
-        <!--/= select_tag(:city_id, options_for_select([['5000', 1], ['7000', 2], ['10000', 3], ['15000', 4], ['20000', 5]]))
-        -->
-        <%= f.text_area :message, placeholder: t('pages.contact.form.message') %>
-        <%= f.submit t('pages.contact.form.btn_send'), class: "large button expand" %>
+
+  <div class="col-md-12">
+    <div class="col-md-6 col-md-offset-3">
+      <%= bootstrap_form_for @contact, url: contact_index_path do |f| %>
+        <%= f.text_field :name,
+                          placeholder: t("pages.contact.form.name"),
+                          hide_label: true %>
+        <%= f.text_field :email,
+                          placeholder: t("pages.contact.form.email"),
+                          hide_label: true %>
+
+        <%= f.select :name, [["5.000"], ["10.000"], ["15.000"], ["25.000"], ["35.000"], ["50.000"], ["75.000"]],
+                    { hide_label: 'true', include_blank: "Que budget tienes?" },
+                    { class: "selectpicker" } %>
+
+        <%= f.text_area :message,
+                        placeholder: t("pages.contact.form.message"),
+                        hide_label: true %>
+
+        <%= f.submit t("pages.contact.form.btn_send"),
+                      class: "btn btn-block btn-primary btn-lg" %>
       <% end %>
     </div>
   </div>

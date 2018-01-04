@@ -6,9 +6,10 @@ var
 
 function init(){
   if (window.matchMedia('(min-width: 769px)').matches) {
-    setHeight();
+    if($('.home').length > 0) {
+      setHeight();
+    }
   }else{
-    console.log("wtf");
     // windowHeight = $(window).innerHeight();
     // $('section.contact').css('height', windowHeight);
     // console.log("set height contact");
@@ -55,7 +56,7 @@ function scrollToSection(){
 
 function setHeight() {
   windowHeight = $(window).innerHeight();
-  $('section').css('height', windowHeight);
+  //$('section').css('height', windowHeight);
 };
 
 $(window).on('resize', function(){
@@ -65,7 +66,7 @@ $(window).on('resize', function(){
 
 var ready;
 ready = function() {
-  $(document).foundation();
+  //$(document).foundation();
   init();
 };
 

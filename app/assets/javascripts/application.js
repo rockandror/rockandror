@@ -1,8 +1,11 @@
 //= require jquery
-//= require jquery.turbolinks
+
 //= require jquery_ujs
-//= require owl.carousel
-//= require foundation
+
+//= require bootstrap-sprockets
+//= require turbolinks
+//= require app
+//= require home
 //= require main
 //= require animation
 //= require cookies_eu
@@ -12,4 +15,14 @@
 //= require 'greensock/TweenMax'
 //= require 'greensock/TimelineMax'
 //= require 'greensock/jquery.gsap.js'
-//= require turbolinks
+
+
+var initialize_modules = function() {
+  App.Home.initialize();
+}
+
+$(function(){
+  $(document).ready(initialize_modules);
+  $(document).on('page:load', initialize_modules);
+  $(document).on('ajax:complete', initialize_modules);
+});

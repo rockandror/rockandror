@@ -47,7 +47,7 @@ function animation() {
   tl_topBar = new TimelineMax();
     tl_topBar
       .to(topBar, 1, { y:100, autoAlpha:1, ease:Power4.easeInOut})
-      .staggerFrom(".top-bar-section .left .anim", 0.6, {y:-100, opacity:0, delay:0, ease:Back.easeOut, force3D:true}, 0.2);
+      .staggerFrom(".navbar-nav.left .anim", 0.6, {y:-100, opacity:0, delay:0, ease:Back.easeOut, force3D:true}, 0.2);
       tl_topBar.pause();
 
   tl_cookies = new TimelineMax();
@@ -90,7 +90,7 @@ function animation() {
           {y:0, x:0,  delay:2},
           {y:80, x:0, autoAlpha:1, ease:Power4.easeInOut,delay:2})
       }else{
-        
+
         TweenMax.fromTo(h2, 1,
           {y:30, x:50, delay:2},
           {y:0, x:50, autoAlpha:1, ease:Power4.easeInOut,delay:2})

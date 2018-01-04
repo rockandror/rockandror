@@ -1,4 +1,8 @@
-//Assign header colors for each page
+//Ovveride border radius selector
+.form-control{
+  border-radius: 0;
+  height: 60px;
+}
 section{
 
   .btn-back{
@@ -14,29 +18,41 @@ section{
     }
   }
 
-  &.team .row-fluid{
+  &.page.team .header-bg{
     @include radial-gradient(#0174c5, #0361a3);
   }
-  &.open-source .row-fluid{
+  &.open-source .header-bg{
     //@include radial-gradient(#5fd7db, #4babaf);
   }
   &.open-source{
     @include radial-gradient(#5fd7db, #4babaf);
     color: #fff;
   }
-  &.best-tools .row-fluid{
+  &.best-tools .header-bg{
     @include radial-gradient(#71c785, #439c58);
   }
-  &.agile-development .row-fluid{
+  &.agile-development .header-bg{
     @include radial-gradient(#ba6889, #a83a80);
   }
-  &.works .row-fluid{
+  &.page.works .header-bg{
     @include radial-gradient(#a13644, #712630);
   }
-  &.contact .row-fluid{
+  &.boatjump .header-bg{
+    @include radial-gradient(#007aa3, #025773);
+  }
+  &.webdings .header-bg{
+    @include radial-gradient($gray-light, $gray);
+  }
+  &.eatbooking .header-bg{
+    @include radial-gradient(#424141, #1e1e1e);
+  }
+  &.oasiscatamaran .header-bg{
+    @include radial-gradient(#5fc3e6, #4593af);
+  }
+  &.contact .row{
     @include radial-gradient(#f1b820, #cf891c);
   }
-  &.greetings .row-fluid{
+  &.greetings .row{
     @include radial-gradient(#f1b820, #cf891c);
   }
 
@@ -47,20 +63,25 @@ section{
     small{
       color:#fff;
       float: left;
+      font-size: 0.7em;
     }
   }
 
-  &.team,
-  &.open-source,
-  &.best-tools,
-  &.agile-development,
-  &.works,
-  &.contact,
-  &.greetings{
-    padding-top: 80px;
-
-    .row-fluid{
-      padding: 1.6rem;
+  &.page.team,
+  &.page.open-source,
+  &.page.best-tools,
+  &.page.agile-development,
+  &.page.works,
+  &.page.boatjump,
+  &.page.webdings,
+  &.page.eatbooking,
+  &.page.oasiscatamaran,
+  &.page.contact,
+  &.page.greetings{
+    padding-top: 5em;
+    color: gray;
+    .row{
+      padding: 3em 0;
 
       h1{
         font-weight: 700;
@@ -68,11 +89,93 @@ section{
         color: #fff;
         text-transform: uppercase;
       }
+
+      lead{
+        color: #fff;
+      }
     }
 
     h2{
       text-transform: none;
-      font-size: 1.6rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &.page.team{
+    .photos{
+      background: #f9f9f9;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      display: inline-block;
+      width: 100%;
+      .alessandro,
+      .senen,
+      .sebas{
+        text-align: center;
+        span{
+          font-size: 0.8em;
+        }
+        .text{
+          max-width: 250px;
+          display: inline-block;
+          line-height: 1.6em;
+        }
+      }
+      .circle{
+        margin: 0 auto;
+        border-radius: 50%;
+        border:3px solid $gray-lighter;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+      }
+      img{
+        margin: 0 auto;
+        margin-top: -30px;
+      }
+      hr{
+        border-color: $gray-lighter;
+      }
+
+    }
+  }
+
+  &.page.boatjump{
+    .logo{
+      max-width: 200px;
+      fill: #007aa3;
+      margin-bottom: 1em;
+    }
+    img{
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  &.page.webdings{
+    .logo{
+      max-height: 100px;
+      width: 100px;
+      margin-bottom: 1em;
+    }
+    img{
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  &.page.eatbooking{
+    img{
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  &.page.oasiscatamaran{
+    img{
+      margin: 0 auto;
+      width: 100%;
     }
   }
 
@@ -84,8 +187,33 @@ section{
       }
     }
   }
+  &.greetings{
+    .fb-like{
+      display: block;
+      text-align: center;
+    }
+  }
+
 }
 
+
+.page-contact-now{
+  background: $yellow;
+  padding: 5em 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  color: #fff;
+  h2{
+    font-size: 1.8em;
+  }
+  .btn{
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid #fff;
+    font-weight: 700;
+    padding: 1.3em;
+  }
+}
 // .page{
 //
 //   h1{

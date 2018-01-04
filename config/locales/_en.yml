@@ -1,0 +1,153 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  meta:
+    title: "Desarrollo web en Palma de Mallorca - RockAndRoR"
+    description: "Desarrollo web ágil a medida en RubyOnRails para Baleares y el resto de España. Desarrollo web en Palma de Mallorca. Expertos desarrolladores y diseñadores web."
+    keywords: "RockAndRoR, desarrollo web ágil a medida, desarrollo RubyOnRails, desarrollo Ruby on Rails, desarrollo RoR, desarrollo web, desarrollo web desde Mallorca, desarrollo web para Baleares y el resto de España"
+  navbar:
+    how_we_works:
+      title: "How we works"
+      tools: "Tools"
+      agile_development: "Agile development"
+      open_source: "Open source"
+    last_works: "Works"
+    team: "Team"
+    send_email: "Contact Us"
+
+  common:
+    btn_back: 'Vovler'
+  home_page:
+    intro:
+      title_html: "Team of professionals dedicated to the agile development of web applications and App <u> for Startup. </u>"
+      lead_html: "We have a strategic plan. it is called to do the things well.<br> ”Herb Kelleher"
+      btn_discover: "Descubre más"
+    tecnology:
+      title_html: "Siempre utilizamos las mejores herramientas para ofrecer un <u>producto final sólido</u>"
+      lead_html: "Ruby On Rails, Coffe script, Html, Haml, Javascript, Github, Sass, Foundation, PostgreSQL, Bootstrap, Heroku, Jquery, Angular, Ionic."
+      btn_info: "Más informacíon"
+    agile_developer:
+      title_html: "Con tal de obtener el mayor valor posible con el mínimo esfuerzo seguimos los principios del <u>desarrollo agile</u>."
+      lead_html: "analisis - diseño - implementacion - pruebas - aceptacion - lanzamiento"
+      more_text_html: "Gracias a la búsqueda constante del MVP (Minimum Viable Product), que no es más que identificar la funcionalidad que más valor le da a su propuesta y centrar los esfuerzos y recursos en ponerla en práctica en el menor tiempo posible."
+      btn_info: "Explícame más"
+    open_source:
+      title_html: "Toda la tecnología que utilizamos para desarrollar es código abierto <u>open source</u>"
+      lead_html: "Partecipaciones"
+      more_text_html: "pudimos participar en la Hackaton OpenMAD 2015 para ayudar al equipo de expertos de la comunidad de Madrid en proyectos de participación y transparencia ciudadana."
+      btn_info: "leer más sobre nuestras partecipacion"
+    team:
+      title_html: "Ofrecemos un <u>enfoque personal y efectivo</u> en cada proyecto que participamos."
+      lead_html: "Ponemos especial atención en la calidad del código realizado. Ofrecemos a nuestros clientes acceso a Informes detallados del trabajo del equipo."
+      btn_info: "Descrubre más sobre nuestro equipo"
+    works:
+      title_html: "Nuestro objetivo es ayudarle a encontrar la mejor solución <u>tecnologica para su idea</u>"
+      lead_html: "Echa un vistazo a algunos de los últimos trabajos hechos para nuestros clientes."
+      btn_info: "Ver trabajos"
+    testimonials:
+      title_html: "Que dicen los clientes sobre nosotros?"
+      title_boatjump_html: "Boatjump"
+      description_boatjump_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+      title_oasiscatamaran_html: "Catamaran Oasis"
+      description_oasiscatamaran_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+      title_taskscheduler_html: "Taskscheduler"
+      description_taskscheduler_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+      btn_goto_project: "Más sobre este proyecto"
+    contact:
+      title_html: "¿necesita una web o una App?"
+      lead_html: "Contacta con nosotros para un desarrollo B2B y B2Cinnovadores en web y móvil."
+      btn_info: "Solicita tu consultoria gratuita"
+  pages:
+    agile_developer:
+      h2_title: "Title Agile developer"
+    open_source:
+      h2_title: "El Open source es la clave para Start up tecnologicas."
+      description: "Hay varias razones por lo cual en RockAndRor trabajamos con codigo abierto, la más importante es que nuestros clientes pueden lanzar en el mercaddo una solución comercial en un tiempo corto con un gasto economico ventajoso y una escabilidad a medida para el cliente segun el budget del proyecto."
+    team:
+      h1_title: "RockAndRor equipo de desarrollo en Ruby On Rails"
+      lead: "Ofrecemos un enfoque personal y efectivo en cada proyecto que participamos."
+    works:
+      h2_title: "Title Gallery works"
+      webdings:
+        h1_title_html: "Webdings, Sass que permite a los usuarios crear una web y una aplicación móvil para su boda."
+        lead: "Crea la app y la web de tu boda de forma sencilla"
+        general_description: "Webdings se ha desarrollado como un proyecto de formación interna, es un SaaS que tiene como objetivo permitir a los usuarios crear de forma muy sencilla una web y una aplicación móvil para su boda. Esta formado por un backend a través del cual los novios pueden definir los contenidos y módulos que desean publicar, una API para interactuar con aplicaciones móviles, una web y una app autogeneradas a través de la información y configuración introducidas en el backend."
+        h2_brand_html: "<strong>Imagen</strong>corporativa"
+        brand_description_html: "El diseño de la marca y de la plataforma ha sido realizado integramente por RockAndRoR buscando la mayor simplicidad en diseño y usabilidad web."
+        h2_backend_html: "<strong>Back</strong>end"
+        bullet_backend:
+          1_li: "Envia invitaciones por email"
+          2_li:  "Define el menú de la boda"
+          3_li:  "Organiza a los invitados por mesas"
+          4_li:  "Crea una galería de imágenes colaborativa"
+          5_li:  "Define los puntos de interés del evento"
+          6_li:  "Configuración adaptable"
+          7_li:  "Diseño personalizable"
+          8_li:  "Solicita confirmación de asistencia a tus invitados"
+          9_li:  "Ofrece servicio de transporte a tus invitados"
+          10_li: "Diseño optimizado para su uso en tablets"
+        last_description: "El Backend es la parte donde los novios pueden gestionar los invitados de la boda, seleccionar los módulos que se desean publicar así como definir los contenidos de la web y la aplicación móvil."
+        h2_frontend_html: "Página web <strong>autogenerada</strong>"
+        frontend_description: "La página de la boda se genera automáticamente a partir de los contenidos definidos en el backend y dispone de diseño adaptado para la navegación con todos tipo de dispositivos móviles, tanto tablets como móviles. La página web de la boda puede ser de acceso privado o de acceso público, según deseen los novios."
+        h2_application_html: "<strong>Aplicación</strong> móvil"
+        application_description: "Con el objetivo de conseguir una mayor interacción con los invitados hemos creado una aplicación móvil disponible tanto para dispositivos móviles Android como iOS. La aplicación permite a los invitados tener toda la información de la boda comodamente accesible a través de la app y dispone de algunas funcionalidades que no se pueden realizar a través de la web."
+        h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
+        tecnology_html: "RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br> Bootstrap / Sass / Diseño responsive <br> API / Ionic <br> Photoshop / Illustrator"
+      boatjump:
+        h1_title_html: "Boatjump, Alquiler de barcos online de alcance internacional "
+        lead: "Alquila un barco, mejor precio garantizado"
+        general_description_html: "Primera versión de la plataforma tecnológica de alquiler de barcos online de alcance internacional. Este proyecto ha sido seleccionado por el <a href='https://lanzadera.es' target='blank'>programa de Lanzadera</a> (una de las más importantes aceleradoras de startups de España) como uno de los proyectos con proyección para la convocatoria del año 2016. A lo largo de este 2017 ya casi han triplicado el número de clientes. Fuente: <a href='http://www.lavanguardia.com/local/sevilla/20170913/431263868124/boatjump-fundada-por-el-cordobes-alfonso-pastrana-cierra-su-primera-ronda-de-financiacion-de-500000-euros.html' target= 'blank'>lavanguardia.com</a>"
+        brand_text: ""
+        h2_brand_html: "<strong>Back</strong> end"
+        bullet_backend:
+          1_li: "Gestión de barcos"
+          2_li: "Gestión del árbol de localizaciones"
+          3_li: "Gestión de los precios de los barcos por temporadas"
+          4_li: "Geolocalización por dirección"
+          5_li: "Subida de imágenes con marca de agua"
+          6_li: "Gestión de los contenidos dinámicos multi-idioma"
+          7_li: "Gestión de los extras de los barcos"
+          8_li: "Gestión de los características de los barcos"
+          9_li: "Diseño optimizado para su uso en dispositivos moviles."
+        h2_frontend_html: "Front <strong>end</strong>"
+        frontend_description: "El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web."
+        h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
+        tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive <br> Photoshop / Illustrator"
+      eatbooking:
+        h1_title_html: "Eatbooking, libro de reservas electrónico para restaurantes."
+        lead: "Permite integrar el widget de reservas con disponibilidad en tiempo real en cualquier página web."
+        general_description_html: "Libro de reservas electrónico para restaurantes sin comisiones. Ofrece un sistema de widgets que permite a los propietarios de restaurantes de eatbooking integrar el widget de reservas con disponibilidad en tiempo real en cualquier página web de manera sencilla. El diseño se ha optimizado para su cómodo uso en tablets y ordenadores."
+      oasiscatamaran:
+        h1_title_html: "OasisCatamaran, aplicación web para la venta de excursiones en catamarán."
+        lead: "Excursiones en catamarán con todo tipo de servicios adicionales."
+        general_description_html: " Hemos desarrollado un backend con navegación optimizada para tablets a través del cual los administradores de la empresa pueden modificar todos los contenidos, crear excursiones personalizadas y una página de venta de pasajes con pasarela de pago, todo en tres idiomas y compatible con todo tipo de dispositivos móviles."
+    contact:
+      title_html: "Escríbanos, le contestaremos en menos de 24 horas."
+      form:
+        name: "Nombre o Empresa"
+        email: "Email"
+        message: "Explicanos que tipologia de servicio necesitas"
+        btn_send: "Enviar mensaje a Rock And Ror"
+      greetings:
+        title_html: "Gracias por contactar con nosotros. Obtendrá una respuesta en <u>menos de 24 horas</u>"
+        share:
+          text_html: "Si te gusta Rock And Ror y quieres ayudarnos a crecer <br> dale al botòn me gusta de Facebook!"

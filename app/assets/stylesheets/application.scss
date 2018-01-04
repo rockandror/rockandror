@@ -1,12 +1,18 @@
-@import 'foundation_and_overrides';
+
+//@import 'foundation_and_overrides';
+@import "bootstrap_variables";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "rails_bootstrap_forms";
+
 @import 'mixins';
-@import 'owl.carousel';
-@import 'owl.theme';
 @import 'welcome';
 @import 'navbar';
 @import 'home';
 @import 'team';
 @import 'pages';
+@import 'works';
 @import 'nav_responsive';
 @import 'mediaquery';
 @import 'cookies_eu';

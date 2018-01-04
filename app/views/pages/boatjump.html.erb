@@ -1,108 +1,46 @@
-<div class="page boatjump">
-  <div class="img-background row">
-    <div class="cont-introduction medium-12 small-12 large-6">
+<section class="page boatjump">
+  <div class="row header-bg">
+    <div class="col-xs-10 col-xs-offset-1">
+      <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
       <h1>
         <%= t'pages.works.boatjump.h1_title_html' %>
       </h1>
-      <span>
-        <%= t'pages.works.boatjump.lead' %>
-      </span>
-      <hr/>
+      <lead><%= t'pages.works.boatjump.lead' %></lead>
+      <%= render 'shared/logo_rails' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <%= inline_svg "svg/boatjump-logo.svg", class: 'logo' %>
       <p>
-        <%= t'pages.works.boatjump.general_description' %>
+        <%= t'pages.works.boatjump.general_description_html' %>
       </p>
-      <hr/>
-      <%= link_to '> www.boatjump.co.uk', 'http://www.boatjump.co.uk',  target: :blank %>
+      <%= image_tag "boatjump/lanzadera.jpg", class: 'img-responsive' %>
     </div>
-  </div>
-  <div class="brand-design row">
-    <div class="content small-12 medium-10 medium-centered large-centered columns">
-      <div class="text-center">
-        <%= inline_svg "svg/boatjump-logo.svg" %>
-      </div>
-      <p class="text-center">
-        <%= t'pages.works.boatjump.brand_text' %>
+    <div class="col-xs-10 col-xs-offset-1">
+      <h2>Cual ha sido nuestra misión?</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <br />
+      <h2>Front-End</h2>
+      <p>
+        El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web.
+      </p>
+      <%= image_tag "boatjump/lanzadera.jpg", class: 'img-responsive' %>
+      <br />
+      <h2>Back-End</h2>
+      <p>
+        El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web.
+      </p>
+      <%= image_tag "boatjump/lanzadera.jpg", class: 'img-responsive' %>
+      <br />
+      <h2><%= t'pages.works.boatjump.h2_tecnology_html' %></h2>
+      <p>
+        <%= t'pages.works.boatjump.tecnology_html' %>
       </p>
     </div>
   </div>
-  <div class="back-end row">
-    <div class="content small-12 medium-10 medium-centered large-centered columns">
-      <h2 class="text-center">
-        <%= t'pages.works.boatjump.h2_brand_html' %>
-      </h2>
-      <div class="wrapperIpad medium-10 medium-centered large-10 columns">
-        <%= image_tag "boatjump/laptop.png" %>
-      </div>
-      <hr/>
-      <div class="row">
-        <div class="small-12 medium-6 large-6 columns">
-          <ul class="text-center">
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.1_li' %>
-            </li>
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.2_li' %>
-            </li>
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.3_li' %>
-            </li>
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.4_li' %>
-            </li>
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.5_li' %>
-            </li>
-          </ul>
-        </div>
-        <div class="small-12 medium-6 large-6 columns">
-          <ul class="text-center">
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.61_li' %>
-            </li>
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.7_li' %>
-            </li>
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.8_li' %>
-            </li>
-            <li>
-              <%= t'pages.works.boatjump.bullet_backend.9_li' %>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="front-end row">
-    <div class="content small-12 medium-10 medium-centered large-centered columns">
-      <h2 class="text-center">
-        <%= t'pages.works.boatjump.h2_frontend_html' %>
-      </h2>
-      <div class="medium-12">
-        <%= image_tag "boatjump/boatjump-device.png", class: "img-play-ipad" %>
-        <hr/>
-        <div class="small-center medium-centered columns">
-          <p>
-            <%= t'pages.works.boatjump.frontend_description' %>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="tecnology row">
-    <div class="content small-12 medium-10 medium-centered large-centered columns">
-      <h2 class="text-center">
-        <%= t'pages.works.boatjump.h2_tecnology_html' %>
-      </h2>
-      <div class="row text-center">
-        <%= inline_svg "svg/icon-responsive.svg", class: 'text-center' %>
-      </div>
-      <div class="medium-centered columns">
-        <p>
-          <%= t'pages.works.boatjump.tecnology_html' %>
-        </p>
-      </div>
-    </div>
-  </div>
-  <%= render 'shared/contact_now' %>
-</div>
+</section>
+
+<%= render 'shared/contact_now' %>

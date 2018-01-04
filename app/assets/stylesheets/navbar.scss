@@ -1,22 +1,57 @@
-.top-bar-section li.active:not(.has-form) a:not(.button),
-.top-bar-section li.active:not(.has-form) a:not(.button):hover,
-.top-bar-section ul li:hover:not(.has-form) > a,
-.top-bar-section li:not(.has-form) a:not(.button):hover
-{background: transparent;}
+.navbar{
+  margin-bottom:0;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
 
-.toggle-topbar{display: none;}
+  .navbar-header{
+    margin-top: 15px;
+    .navbar-brand{
+      padding: 0;
 
-svg{
-  &#logo{
-    circle{
-      stroke-width: 4px;
-      stroke:$primary-color;
-      fill:none;
-      visibility: hidden;
+      svg{
+        max-height: 45px;
+        &#logo{
+          circle{
+            stroke-width: 4px;
+            stroke:$primary-color;
+            fill:none;
+            visibility: hidden;
+          }
+          #robot{
+            visibility: hidden;
+          }
+        }
+      }
     }
-    #robot{visibility: hidden;}
+  }
+  
+  .left,
+  .navbar-right{
+    padding-top: 20px;
+  }
+  .left{
+    padding-left: 30px;
+  }
+
+  .nav > li > a:hover,
+  .nav > li > a:focus{
+    background: transparent;
+    text-decoration: underline;
+  }
+
+  .navbar-nav{
+    .dropdown{
+      .dropdown-menu{
+        margin-top: 1em;
+        li a{
+          padding: 1em;
+        }
+      }
+    }
   }
 }
+
 
 .logo-smartphone{
   float:left;
@@ -24,11 +59,11 @@ svg{
   margin-top: 13px;
 }
 
-.top-bar .top-bar-section .right li:not(.has-form) a:not(.button){
-  line-height: 3rem;
-  border: 1px solid #00b0ea;
-  margin-top: 15px;
-}
+// .top-bar .top-bar-section .right li:not(.has-form) a:not(.button){
+//   line-height: 3rem;
+//   border: 1px solid #00b0ea;
+//   margin-top: 15px;
+// }
 
 .top-contact{
   background: #333333;

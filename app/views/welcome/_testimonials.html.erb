@@ -1,0 +1,45 @@
+<section class='testimonials'>
+  <div class='container'>
+    <div class='col-sm-6 col-md-6'>
+      <h2><%= t'home_page.testimonials.title_html' %></h2>
+    </div>
+    <div class='col-sm-6 col-md-6'>
+      <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+            <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active text-center">
+            <h3><%= t'home_page.testimonials.title_boatjump_html' %></h3>
+            <%= image_tag('testimonials/boatjump.jpg') %>
+            <p>
+              "<%= t'home_page.testimonials.description_boatjump_html' %>"
+              <br>
+              <%= link_to t('home_page.testimonials.btn_goto_project'), boatjump_path %>
+            </p>
+          </div>
+          <div class="item text-center">
+            <h3><%= t'home_page.testimonials.title_oasiscatamaran_html' %></h3>
+            <%= image_tag('testimonials/boatjump.jpg') %>
+            <p>
+              <%= t'home_page.testimonials.description_oasiscatamaran_html' %>
+              <br>
+              <%= link_to t('home_page.testimonials.btn_goto_project'), boatjump_path %>
+            </p>
+          </div>
+          <div class="item text-center">
+            <h3><%= t'home_page.testimonials.title_taskscheduler_html' %></h3>
+            <%= image_tag('testimonials/boatjump.jpg') %>
+            <p>
+              <%= t'home_page.testimonials.description_taskscheduler_html' %>
+              <br>
+              <%= link_to t('home_page.testimonials.btn_goto_project'), boatjump_path %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

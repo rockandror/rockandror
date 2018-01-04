@@ -1,6 +1,6 @@
-<section class="best-tools">
-  <div class="row-fluid columns">
-    <div class="medium-10 medium-offset-1">
+<section class="page best-tools">
+  <div class="row header-bg">
+    <div class="col-xs-10 col-xs-offset-1">
       <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
       <h1>
         <%= t'home_page.tecnology.title_html' %>
@@ -9,3 +9,5 @@
     </div>
   </div>
 </section>
+
+<%= render 'shared/contact_now' %>
