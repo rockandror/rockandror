@@ -11,19 +11,21 @@
   </div>
 
   <div class="col-xs-10 col-xs-offset-1">
-    <h2>Quien es RockAndRor</h2>
+    <h2><%= t'pages.team.h2_1_title' %></h2>
     <p>
-      Somos un equipo formado por dos ingenieros Españoles y un diseñador Italiano cada uno con más de 15 años de experenica dedicado exclusivamente al sector del desarrollo web y moviles en Palma de Mallorca entusiastas de las nuevas tecnologías.
-      Nuestros desarrollos web a medida están diseñados tanto para start-ups como para grandes empresas.
-      co-foundador de una idea que poco a poco se hizo realidad y se materializó gracias a los clientes que confiaron en nosotros desde el prinicipio y al continuo esfuerzo en aprender toda la tecnologia mejores que hay hoy en dia en el mercado.
+      <%= t'pages.team.description_1_html' %>
     </p>
-    <h2>El comienzo</h2>
+    <hr />
+    <h2><%= t'pages.team.h2_2_title' %></h2>
     <p>
-      La necesidad de crear applicaciones web y moviles con calidad del codigo, interfaces funcionales y apetible a la vista  siempre ha sido un reto por cada informatico autonomo. Decimos la verdad, fabricar un producto solido y que funcione no es cosa simple, y una persona sola puede llevar a conseguirlo pero en que tiempo y con que calidad y a con cuanto estrés? En RockAndRor dudamos mucho que un solo indviduo pueda conseguir proyectos complejos como el lanzamiento de una startup tecnologica, no obstante sea un FullStack, el mundo informatico es rapído y dificil, y saber todos es imposible.
+      <%= t'pages.team.description_2_html' %>
     </p>
-    <h2>Juntar el conocimiento, adotar la buena metodología, juntar las fuerzas en una unica dirección hizo poder crear RockAndRor.</h2>
+    <hr />
+    <h2>
+      <%= t'pages.team.h2_3_title' %>
+    </h2>
     <p>
-      Senén Rodero Ingeniero Informático, etc etc etc..
+      <%= t'pages.team.description_3_html' %>
     </p>
   </div>
 
@@ -34,76 +36,54 @@
           <div class="circle">
             <%= image_tag "team/alessandro.jpg", class: 'img-responsive' %>
           </div>
-          <h5>Alessandro Cuoghi</h5>
-          <span>Diseñador UI/UX <br /> Desarrollador <br /> Co-fundador</span>
+          <h5><%= t'pages.team.title_cuoghi' %></h5>
+          <%= t'pages.team.skill_cuoghi_html' %>
           <hr />
-          <span class="text">Alessandro es la mente que da color y vida a las creaciones de RockAndRoR. Experimentado diseñador que le gusta ofrecer interficies de usuario bonitas, sencillas y usables.</span>
+          <span class="text"><%= t'pages.team.description_cuoghi' %></span>
         </div>
         <div class="col-xs-12 col-sm-4 senen">
           <div class="circle">
             <%= image_tag "team/senen.jpg", class: 'img-responsive' %>
           </div>
-          <h5>Senén Rodero</h5>
-          <span>Ingeniero Informático <br /> Consultor / Desarrollador <br /> Co-fundador</span>
+          <h5><%= t'pages.team.title_rodero' %></h5>
+          <%= t'pages.team.skill_rodero_html' %>
           <hr />
-          <span class="text">A Senén le gusta probar nuevas tecnológías y herramientas que nos puedan aportar mejoras competitivas. En constante aprendizaje. Desarrollador experto en RoR/Java/Php.</span>
+          <span class="text"><%= t'pages.team.description_rodero' %></span>
         </div>
         <div class="col-xs-12 col-sm-4 sebas">
           <div class="circle">
             <%= image_tag "team/sebastia.jpg", class: 'img-responsive' %>
           </div>
-          <h5>Sebastià Roig</h5>
-          <span>Ingeniero de Software <br /> Desarrollador <br /> Co-fundador</span>
+          <h5><%= t'pages.team.title_roig' %></h5>
+          <%= t'pages.team.skill_roig_html' %>
           <hr />
-          <span class="text">Sebastià Valora su tiempo como ninguno, le apasionan las metodologías ágiles y las buenas prácticas en el desarrollo del software. Desarrollador experto en RoR/Java.</span>
+          <span class="text"><%= t'pages.team.description_roig' %></span>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-    <h2>Nuestra filosofia: honestad, transparencia y etica.</h2>
+  <div class="col-xs-10 col-xs-offset-1">
+    <h2><%= t'pages.team.h2_4_title' %></h2>
     <p>
-      <strong>Honestad</strong>
       <br />
-      Se supone que en una relación de trabajo todo irá bien, pero no siempre eso pasa,
-      hay varias razones por lo cual un cliente puede querer cambiar:
-      <br />falta eocnomica, insatisfacción, falta de tiempo, o un obstáculo inesperado,
-      cualquier sea a nosotros nos gusta tener un contrato que ayude el cliente liberarse
-      de nosotros en cualquier momento y sin ninguna limitación, tambien para nosotros reservamos
-      el mismo trato, liberanos da un cliente que de repente es incapacidado a seguir
-      o intender la correcta forma llevar un proyecto.
+      <strong><%= t'pages.team.strong_4_1_title' %></strong>
+      <br />
+      <%= t'pages.team.description_4_1_html' %>
       <br />
       <br />
-      <strong>Transparencia</strong>
+
+      <strong><%= t'pages.team.strong_4_2_title' %></strong>
       <br />
-      Creemos en la transparencia; todo lo que hacemos se analyza para proveer
-      un presupuesto lo más cercano al proyecto. Realizamos de forma atenta y completa
-      cada tarea, asegurandonos.
-      Producimos reportes de las horas invertida diariamente que sea de gestion, diseño, analysis,
-      desarrollo, etc.. consultable en tiempo real direcatmente en tu ordenador.
-      <br />
-      Durante el desarrollo estamos comprometidos a evaluar retrospectivamente, junto con el cliente,
-      si se cumplió nuestra promesa de costo y tiempo, así como la calidad del producto.
-      Todos los códigos y productos materiales son propiedad del cliente, así como todos los demás
-      servicios están a nombre del cliente.
-      El código es probado y documentado para que el equipo después de nosotros pueda llevar adelante
-      el trabajo desde el primer día.
+      <%= t'pages.team.description_4_2_html' %>
       <br />
       <br />
-      <strong>Etica</strong>
+
+      <strong><%= t'pages.team.strong_4_3_title' %></strong>
       <br />
-       Nuestra Etica se resume en los dos puntos de arriba, simplemente preferimos un enfoque
-       cientifico donde los datos son verificables. Cuando creemo que tenemos una idea
-       genial y que el proyecto va a tener exito, el cliente casi siempre lo quiere todo en el imediato,
-       quiere que su proyecto sea online con todos lo que sirve, pero la mayoria de la veces esta actitud
-       es la que causa el principal fallo de una StartUp.
-       Entedemos como el entusiasmo puede tomar el control de la razón, pero el comienzo de un proyecto
-       es la pate con la mayor incertidumbre por esto preferimos tener los pies encima de la tierra y
-       trabajar con datos verificables.
-       <br />
-       Somos empresarios, y no quieremos clientes solo para ver nuestro portfolio llenarse de clientes,
-       preferimos tener proyectos que llegan al exito en el tiempo, y no vaciar el borsillos de los inversores.
+      <%= t'pages.team.description_4_3_html' %>
+      <br />
+      <br />
     </p>
   </div>
 </section>

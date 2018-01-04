@@ -79,7 +79,7 @@ section{
   &.page.contact,
   &.page.greetings{
     padding-top: 5em;
-    color: gray;
+    color: $gray;
     .row{
       padding: 3em 0;
 
@@ -97,8 +97,13 @@ section{
 
     h2{
       text-transform: none;
-      font-size: 2rem;
+      font-size: 1.6em;
       text-transform: uppercase;
+    }
+
+    p{
+      font-size: 1.2em;
+      line-height: 1.6;
     }
   }
 
