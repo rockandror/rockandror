@@ -12,6 +12,15 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+
+        @include col-xs(){
+          min-height: auto;
+        }
+    }
+
+    @include col-xs(){
+      padding-top: 2em;
+      padding-bottom: 2em;
     }
 
     h2{
@@ -23,23 +32,13 @@
       .underline{
         border-bottom:2px solid white;
       }
-
-      @include col-xs() {
-        border:1px solid red;
-      }
-
-      @include col-sm() {
-        border:1px solid blue;
-      }
     }
-
     lead{
       padding: 1rem 0;
       display: block;
       font-weight: 300;
       width: 100%;
     }
-
     .image{
       min-height: 500px;
       width: 100%;
@@ -73,6 +72,11 @@
       transform: translate(-40%,-50%);
       max-width: 500px;
 
+      @include col-xs() {
+        top: 10%;
+        transform: translate(-50%, 0%);
+      }
+
       h1{
         visibility: hidden;
         color:#ccc;
@@ -93,6 +97,11 @@
         visibility: hidden;
         @include text(white, uppercase, 0.8em,left);
         display: block;
+
+        // @include col-xs(){
+        //   visibility: visible;
+        //   margin-top: 60px;
+        // }
       }
 
       span{
@@ -121,6 +130,12 @@
 
       &:hover{
         background: darken($yellow, 10%);
+      }
+
+      @include col-xs() {
+        visibility: visible;
+        top: 90%;
+        width: 270px;
       }
     }
   }
@@ -165,6 +180,11 @@
         .image{
           background: image_url('svg/home-tecnology.svg') no-repeat center center;
         }
+        @include col-xs() {
+          h2, h3, lead{
+            text-align: left;
+          }
+        }
       }
 
       &.agile_developer{
@@ -191,6 +211,11 @@
         .image{
           background: image_url('svg/home-open-source.svg') no-repeat center center;
         }
+        @include col-xs() {
+          h2, h3, lead{
+            text-align: left;
+          }
+        }
       }
 
     &.team{
@@ -210,6 +235,11 @@
       lead{ @include text(white, uppercase, 0.8em, right); }
       .image{
         background: image_url('svg/home-works.svg') no-repeat center center;
+      }
+      @include col-xs() {
+        h2, h3, lead{
+          text-align: left;
+        }
       }
     }
 
@@ -245,6 +275,16 @@
         }
         .carousel-indicators{
           bottom: -50px;
+
+          @include col-xs() {
+            bottom: -30px;
+          }
+        }
+      }
+
+      @include col-xs() {
+        h2, lead{
+          text-align: left;
         }
       }
     }
@@ -266,6 +306,12 @@
         // visibility: hidden;
         top: 0;
         left:0;
+      }
+
+      @include col-xs() {
+        h2, h3, lead{
+          text-align: left;
+        }
       }
     }
 

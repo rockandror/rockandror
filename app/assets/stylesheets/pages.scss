@@ -81,6 +81,8 @@ section{
     padding-top: 5em;
     color: $gray;
     .row{
+      margin-left: 0;
+      margin-right: 0;
       padding: 3em 0;
 
       h1{
@@ -88,6 +90,14 @@ section{
         line-height: 1;
         color: #fff;
         text-transform: uppercase;
+
+        @include col-max-320() {
+          font-size: 1.7em;
+        }
+
+        @include col-xs() {
+          word-wrap: break-word;
+        }
       }
 
       lead{
@@ -249,6 +259,11 @@ section{
     border: 3px solid #fff;
     font-weight: 700;
     padding: 1.3em;
+
+    @include col-xs() {
+      max-width: 260px;
+    }
+
   }
 }
 // .page{

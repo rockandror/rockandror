@@ -1,35 +1,3 @@
-<form action='/webdings' id='ridirect_responsive'>
-  <input type='submit'>
-</form>
-
-<div id='overlay_menu_responsive'></div>
-
-<a id='btn_plus'>
-  <%= inline_svg "svg/plus.svg" , class: 'icon-menu' %>
-</a>
-<a id='btn_close'>
-  <%= inline_svg "svg/close.svg" , class: 'icon-menu' %>
-</a>
-<a id='btn_back'>
-  <%= inline_svg "svg/back.svg" , class: 'icon-menu' %>
-</a>
-<a id='btn_home' href="<%= root_path %>">
-  <%= inline_svg "svg/home.svg" , class: 'icon-menu' %>
-  <span>Inicio</span>
-</a>
-<a id='btn_works'>
-  <%= inline_svg "svg/works.svg" , class: 'icon-menu' %>
-  <span>Trabajos</span>
-</a>
-<a id='btn_works' href="<%= new_contact_path %>">
-  <%= inline_svg "svg/email.svg" , class: 'icon-menu' %>
-  <span>Escríbenos</span>
-</a>
-<a id='btn_tel' href="#">
-  <%= inline_svg "svg/phone.svg" , class: 'icon-menu' %>
-  <span>Llámanos</span>
-</a>
-
 <nav class="navbar navbar-static-top top-bar">
   <div class="row-fluid">
     <div class="navbar-header">
@@ -71,7 +39,7 @@
             <li>
               <%= link_to 'Todos', works_path %>
             </li>
-            <hr />
+            <hr class="hidden-xs">
             <li>
               <%= link_to 'Boatjump', boatjump_path %>
             </li>
@@ -88,9 +56,13 @@
           <li class="anim">
             <%= link_to t('navbar.team'), team_path %>
           </li>
+
+          <li class="anim visible-xs">
+            <%= link_to t('navbar.send_email'), new_contact_path %>
+          </li>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right hidden-xs">
         <li class="anim">
           <%= link_to t('navbar.send_email'), new_contact_path %>
         </li>

@@ -4,8 +4,40 @@
   text-transform: uppercase;
   font-size: 0.8em;
 
+  #navbar{
+    @include col-xs() {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 92px;
+      background: $gray-darker;
+
+      .left{
+        padding-left: 0;
+        padding-top: 0;
+      }
+
+      .dropdown-menu{
+        margin-top: -10px;
+        margin-left: 30px;
+
+        li a{
+          color: $brand-primary;
+        }
+      }
+    }
+  }
   .navbar-header{
     margin-top: 15px;
+
+    @include col-xs() {
+      .navbar-toggle{
+        padding: 0;
+        right: 0;
+        top: 15px;
+      }
+    }
+
     .navbar-brand{
       padding: 0;
 
@@ -14,7 +46,7 @@
         &#logo{
           circle{
             stroke-width: 4px;
-            stroke:$primary-color;
+            stroke: $primary-color;
             fill:none;
             visibility: hidden;
           }
@@ -23,9 +55,21 @@
           }
         }
       }
+
+      @include col-xs() {
+        .logo-horiz{
+          width: 180px;
+        }
+      }
+    }
+
+    @include col-xs() {
+      .icon-bar{
+        background: $brand-primary;
+      }
     }
   }
-  
+
   .left,
   .navbar-right{
     padding-top: 20px;
@@ -53,46 +97,46 @@
 }
 
 
-.logo-smartphone{
-  float:left;
-  height: 24px;
-  margin-top: 13px;
-}
+// .logo-smartphone{
+//   float:left;
+//   height: 24px;
+//   margin-top: 13px;
+// }
 
 // .top-bar .top-bar-section .right li:not(.has-form) a:not(.button){
 //   line-height: 3rem;
 //   border: 1px solid #00b0ea;
 //   margin-top: 15px;
 // }
-
-.top-contact{
-  background: #333333;
-  text-align: center;
-  position: fixed;
-  z-index: 9;
-  .icon-nav{
-    fill:white;
-    margin: 0 auto;
-    display: block;
-    margin-top: 4px;
-    width: 20px;
-  }
-  .tel,.email{
-    padding: 0px;
-    text-align: center;
-    background: #2ECC71;
-    height: 50px;
-    a{
-      display: block;
-    }
-  }
-  .tel svg{margin-top:13px; }
-  .email{
-    background:#333;
-    svg{margin-top:16px; }
-  }
-}
-
+//
+// .top-contact{
+//   background: #333333;
+//   text-align: center;
+//   position: fixed;
+//   z-index: 9;
+//   .icon-nav{
+//     fill:white;
+//     margin: 0 auto;
+//     display: block;
+//     margin-top: 4px;
+//     width: 20px;
+//   }
+//   .tel,.email{
+//     padding: 0px;
+//     text-align: center;
+//     background: #2ECC71;
+//     height: 50px;
+//     a{
+//       display: block;
+//     }
+//   }
+//   .tel svg{margin-top:13px; }
+//   .email{
+//     background:#333;
+//     svg{margin-top:16px; }
+//   }
+// }
+//
 .top-bar{
   // position: fixed;
   width: 100%;

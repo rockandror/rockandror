@@ -571,7 +571,7 @@ es:
         name: "Nombre o Empresa"
         email: "Email"
         message: "Explicanos que tipologia de servicio necesitas"
-        btn_send: "Enviar mensaje a Rock And Ror"
+        btn_send: "Enviar mensaje"
       greetings:
         title_html: "Gracias por contactar con nosotros. Obtendrá una respuesta en <u>menos de 24 horas</u>"
         share:

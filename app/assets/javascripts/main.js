@@ -10,6 +10,7 @@ function init(){
       setHeight();
     }
   }else{
+
     // windowHeight = $(window).innerHeight();
     // $('section.contact').css('height', windowHeight);
     // console.log("set height contact");
@@ -18,10 +19,6 @@ function init(){
   animation();
   resizeDiv();
   scrollToSection();
-  $('li.anim.has-dropdown.portfolio.not-click').click(function(){
-    //return false;
-  });
-
 }
 
 function resizeDiv() {
@@ -56,17 +53,19 @@ function scrollToSection(){
 
 function setHeight() {
   windowHeight = $(window).innerHeight();
-  //$('section').css('height', windowHeight);
+  $('.home section').css('height', windowHeight);
 };
 
 $(window).on('resize', function(){
   resizeDiv();
-  setHeight();
+
+  if (window.matchMedia('(min-width: 769px)').matches) {
+    setHeight();
+  }
 });
 
 var ready;
 ready = function() {
-  //$(document).foundation();
   init();
 };
 

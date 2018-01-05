@@ -2,24 +2,29 @@ $primary-color: #666;
 $secondary-color: #00b0ea;
 $yellow      : #E7B01F;
 
+@mixin col-max-320() {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
 @mixin col-xs() {
   @media (max-width: 767px) {
-      @content;
+    @content;
   }
 }
 @mixin col-sm() {
   @media (min-width: 768px) and (max-width: 991px) {
-      @content;
+    @content;
   }
 }
 @mixin col-md() {
   @media (min-width: 992px) and (max-width: 1199px) {
-      @content;
+    @content;
   }
 }
 @mixin col-lg() {
   @media (min-width: 1200px) {
-      @content;
+    @content;
   }
 }
 
