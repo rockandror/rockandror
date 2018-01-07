@@ -9,27 +9,42 @@
     </div>
   </div>
 
-  <div class="col-md-12">
-    <div class="col-md-6 col-md-offset-3">
+  <div class="container">
+    <div class="col-xs-12 col-md-6">
+      <br />
+      <br />
+      <p>
+        Completa el formulario, cuéntanos tu idea y nos pondremos en contacto contigo lo antes posible para concertar una reunión.
+        <hr />
+        <strong>Si lo prefiere, puede llamarnos directamente al 34 607 320 876 o escribirnos un <a href="mailto:info@rockandror.es">correo electrónico.</a></strong>
+      </p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <br />
       <%= bootstrap_form_for @contact, url: contact_index_path do |f| %>
         <%= f.text_field :name,
-                          placeholder: t("pages.contact.form.name"),
-                          hide_label: true %>
+                          label: "Nombre, Apellido o nombre empresa",
+                          placeholder: t("pages.contact.form.name")
+                          %>
         <%= f.text_field :email,
-                          placeholder: t("pages.contact.form.email"),
-                          hide_label: true %>
+                          label: "A que email te contestamos?",
+                          placeholder: t("pages.contact.form.email")
+                          %>
 
-        <%= f.select :budget, [["5.000"], ["10.000"], ["15.000"], ["25.000"], ["35.000"], ["50.000"], ["75.000"], [" + 75.000"]],
-                    { hide_label: 'true', include_blank: "Budget" },
-                    { class: "selectpicker" } %>
+        <%= f.select :budget, [["No lo se"], ["5.000"], ["10.000"], ["15.000"], ["25.000"], ["35.000"], ["50.000"], ["75.000"], [" + 75.000"]],
+                    { label: "¿ Cuánto planeas invertir ? ", include_blank: "Budget" },
+                    { class: "selectpicker" }
+                     %>
 
         <%= f.text_area :message,
                         placeholder: t("pages.contact.form.message"),
-                        hide_label: true %>
+                        label: "Hablanos de tu proyecto"
+                        %>
 
         <%= f.submit t("pages.contact.form.btn_send"),
                       class: "btn btn-block btn-primary btn-lg" %>
       <% end %>
     </div>
+
   </div>
 </section>

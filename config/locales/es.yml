@@ -662,9 +662,9 @@ es:
     contact:
       title_html: "Escríbanos, le contestaremos en menos de 24 horas."
       form:
-        name: "Nombre o Empresa"
-        email: "Email"
-        message: "Explicanos que tipologia de servicio necesitas"
+        name: "Con quien hablamos"
+        email: "Tu email"
+        message: "Eres una Startup, un Ayuntamiento, una grande empresa"
         btn_send: "Enviar mensaje"
       greetings:
         title_html: "Gracias por contactar con nosotros. Obtendrá una respuesta en <u>menos de 24 horas</u>"
