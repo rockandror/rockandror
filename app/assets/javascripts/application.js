@@ -5,9 +5,10 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require app
+//= require navbar
 //= require home
-//= require main
-//= require animation
+//= require animate
+//= require scrollto
 //= require cookies_eu
 //= require nprogress
 //= require nprogress-turbolinks
@@ -18,6 +19,7 @@
 
 
 var initialize_modules = function() {
+  App.Navbar.initialize()
   App.Home.initialize();
 }
 

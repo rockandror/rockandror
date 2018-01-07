@@ -65,7 +65,7 @@
       top: 0;
       left:0;
 
-    
+
 
       @include col-xs(){
         background-position: left;
@@ -81,18 +81,13 @@
 
 
       @include col-xs() {
-        top: 80px;
-        left: 140px;
-        // transform: translate(-50%, 0%);
+        left: 30%;
+        top: 30%;
       }
       @include col-max-360(){
-        left: 120px;
+        top: 35%;
       }
-      @include col-max-320(){
-        top: 80px;
-        left: 110px;
-      }
-
+      
       h1{
         visibility: hidden;
         color:#ccc;
