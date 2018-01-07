@@ -22,8 +22,9 @@
             <%= t'pages.works.boatjump.general_description_html' %>
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
           </p>
+          <%= link_to 'Visita Boatjump', 'https://www.boatjump.com', class:'btn btn-lg btn-primary', target: 'blank' %>
         </div>
       </div>
       <hr />
@@ -39,58 +40,221 @@
       <br />
       <h2>El desafío</h2>
       <p>
+        Nuestar mision desde el principio ha sido replantear un diseño UX/UI, Internacionalizar en 5 idiomas,
+        Acelerar la web a pesar de la gran cantidad de datos y trafico,
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+      <h2>El comienzo</h2>
+      <p>
+        En la primera reunión con el CEO Jaima Vara el CFO Alfonso Pastrana el CMO Pablo Ruibal y el CTO Rafael Bernal,
+        hemos escuchado cual eran las problematicas a nivel tecnologico de la empresa y definido un primer plan de acción
+        seguiendo como siempre la metodologia MVP y el <%= link_to 'desarrollo Agile', agile_development_path %> para mantener
+        la web activa y no ariesgar de perder en ningun momento el trafico que ya existia.
+        Hemos dividido en hitos por meses el gran trabajo que habia que hacer, empezando con un plan de 6 meses y definiendo
+        mes por mes dependiendo de las funcionalidad más importante para la empresa llegando asi a casi 3 años de desarrollo
+        para nuestro cliente estrella Boatjump.
+      </p>
 
-      <h2>Servicios</h2>
+      <h2>Servicios ofrecido</h2>
       <ul>
         <li>
-          Diseño de usabilidad
+          <p>
+            Diseño de usabilidad
+          </p>
         </li>
         <li>
-          Arquitectura de aplicaciones
+          <p>
+            Mock-up de cada pantalla
+          </p>
         </li>
         <li>
-          Responsive
+          <p>
+            Arquitectura de aplicaciones
+          </p>
         </li>
         <li>
-          Lorem ipsum
+          <p>
+            Desarrollo Front-end
+          </p>
+        </li>
+        <li>
+          <p>
+            Desarrollo Back-end
+          </p>
+        </li>
+        <li>
+          <p>
+            Desarrollo Responsive
+          </p>
+        </li>
+        <li>
+          <p>
+            Gestión de los contenidos dinámicos multi-idioma
+          </p>
+        </li>
+        <li>
+          <p>
+            Gestión de los precios de los barcos por temporadas
+          </p>
+        </li>
+        <li>
+          <p>
+            Geolocalización por dirección
+          </p>
         </li>
       </ul>
+      <hr />
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <span class="glyphicon glyphicon-grain gi-2x"></span>
+          <br />
+          <br />
+          <span class="text-uppercase">Tiempo de entrega:</span>
+          <br />
+          <br />
+          <strong>Cada mes</strong>
+        </div>
+        <div class="col-md-4 text-center">
+          <span class="glyphicon glyphicon glyphicon-time gi-2x"></span>
+          <br />
+          <br />
+          <span class="text-uppercase">Horas trabajadas</span>
+          <br />
+          <br />
+          <strong>9833</strong>
+        </div>
+        <div class="col-md-4 text-center">
+          <span class="glyphicon glyphicon glyphicon-euro gi-2x"></span>
+          <br />
+          <br />
+          <span class="text-uppercase">Budget</span>
+          <br />
+          <br />
+          <strong>Medio/Alto</strong>
+        </div>
 
-      <h2>Contabilidad</h2>
-      <ul>
-        <li>
-          Tiempo de entrega: Cada mes.
-        </li>
-        <li>
-          Horas trabajadas: 9833
-        </li>
-        <li>
-          Budget: Medio/Alto
-        </li>
-      </ul>
+      </div>
+      <hr />
       <h2>Front-End</h2>
       <p>
         El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web.
       </p>
-      <%= image_tag "boatjump/lanzadera.jpg", class: 'img-responsive' %>
+
+      <div id="galleryFrontEnd" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#galleryFrontEnd" data-slide-to="0" class="active"></li>
+          <li data-target="#galleryFrontEnd" data-slide-to="1"></li>
+          <li data-target="#galleryFrontEnd" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+
+          <div class="item">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+
+          <div class="item">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#galleryFrontEnd" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#galleryFrontEnd" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <br />
+      <h2>Responsive </h2>
+      <p>
+        Hemos desarrollado una interfaz que se adpata a todos los dispositivos moviles manteniendo todos los datos
+        añadiendo una mejora en la navigacion para el usuario.
+      </p>
+      <div id="galleryFrontEndResponsive" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#galleryFrontEndResponsive" data-slide-to="0" class="active"></li>
+          <li data-target="#galleryFrontEndResponsive" data-slide-to="1"></li>
+          <li data-target="#galleryFrontEndResponsive" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+
+          <div class="item">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+
+          <div class="item">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#galleryFrontEndResponsive" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#galleryFrontEndResponsive" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
       <br />
       <h2>Back-End</h2>
       <p>
         El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web.
       </p>
-      <%= image_tag "boatjump/lanzadera.jpg", class: 'img-responsive' %>
+      <div id="galleryBackend" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#galleryBackend" data-slide-to="0" class="active"></li>
+          <li data-target="#galleryBackend" data-slide-to="1"></li>
+          <li data-target="#galleryBackend" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+
+          <div class="item">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+
+          <div class="item">
+            <%= image_tag "boatjump/lanzadera.jpg" %>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#galleryBackend" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#galleryBackend" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <br />
       <h2><%= t'pages.works.boatjump.h2_tecnology_html' %></h2>
       <p>
         <%= t'pages.works.boatjump.tecnology_html' %>
       </p>
 
-      <h2>Flujo de trabajo</h2>
-      <p>
-        Lorem ipusm
-      </p>
       <hr />
       <h2>Que dice el cliente</h2>
       <p>

@@ -1,6 +1,12 @@
-$primary-color: #666;
-$secondary-color: #00b0ea;
-$yellow      : #E7B01F;
+$primary-color:    #666;
+$secondary-color:  #00b0ea;
+$yellow:           #E7B01F;
+
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
 
 @mixin col-max-320() {
   @media (max-width: 320px) {
