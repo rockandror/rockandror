@@ -5,24 +5,71 @@
       <h1>
         <%= t'pages.works.boatjump.h1_title_html' %>
       </h1>
-      <lead><%= t'pages.works.boatjump.lead' %></lead>
+      <lead>Startup<%#= t'pages.works.boatjump.lead' %></lead>
+
       <%= render 'shared/logo_rails' %>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1">
-      <%= inline_svg "svg/boatjump-logo.svg", class: 'logo' %>
+
+      <div class="row">
+        <div class="col-md-3">
+          <%= inline_svg "svg/boatjump-logo.svg", class: 'logo' %>
+        </div>
+        <div class="col-md-9">
+          <p>
+            <%= t'pages.works.boatjump.general_description_html' %>
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          </p>
+        </div>
+      </div>
+      <hr />
+      <br />
+      <h2>Seleccionado por el programa de Lanzadera </h2>
       <p>
-        <%= t'pages.works.boatjump.general_description_html' %>
+        Este proyecto ha sido seleccionado por el <%= link_to 'programa de Lanzadera', 'https://lanzadera.es' %> (una de las más importantes aceleradoras de startups de España) como uno de los proyectos con proyección para la convocatoria del año 2016.
+        <br />
+         A lo largo de este 2017 ya casi han triplicado el número de clientes. <%= link_to 'Fuente: lavanguardia.com', 'http://www.lavanguardia.com/local/sevilla/20170913/431263868124/boatjump-fundada-por-el-cordobes-alfonso-pastrana-cierra-su-primera-ronda-de-financiacion-de-500000-euros.html' %>
       </p>
-      <%= image_tag "boatjump/lanzadera.jpg", class: 'img-responsive' %>
-    </div>
-    <div class="col-xs-10 col-xs-offset-1">
-      <h2>Cual ha sido nuestra misión?</h2>
+      <br />
+        <%= image_tag "boatjump/lanzadera.jpg", class: 'img-responsive' %>
+      <br />
+      <h2>El desafío</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <br />
+
+      <h2>Servicios</h2>
+      <ul>
+        <li>
+          Diseño de usabilidad
+        </li>
+        <li>
+          Arquitectura de aplicaciones
+        </li>
+        <li>
+          Responsive
+        </li>
+        <li>
+          Lorem ipsum
+        </li>
+      </ul>
+
+      <h2>Contabilidad</h2>
+      <ul>
+        <li>
+          Tiempo de entrega: Cada mes.
+        </li>
+        <li>
+          Horas trabajadas: 9833
+        </li>
+        <li>
+          Budget: Medio/Alto
+        </li>
+      </ul>
       <h2>Front-End</h2>
       <p>
         El nuevo FrontEnd de Boatjump se ha diseñado para la cómoda navegación de los usuarios en todo tipo de dispositivos, con lo nuevos colores de la marca. Hemos adaptado el diseño para tablets tanto con orientación vertical como con orientación horizontal y a todo tipo de teléfonos móviles y navegadores web.
@@ -38,6 +85,16 @@
       <h2><%= t'pages.works.boatjump.h2_tecnology_html' %></h2>
       <p>
         <%= t'pages.works.boatjump.tecnology_html' %>
+      </p>
+
+      <h2>Flujo de trabajo</h2>
+      <p>
+        Lorem ipusm
+      </p>
+      <hr />
+      <h2>Que dice el cliente</h2>
+      <p>
+        Lorem ipsum
       </p>
     </div>
   </div>

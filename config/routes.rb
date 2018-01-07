@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get '/boatjump', to: 'pages#boatjump', as: :boatjump
   get '/webdings', to: 'pages#webdings', as: :webdings
+    get '/taskscheduler', to: 'pages#taskscheduler', as: :taskscheduler
   get '/eatbooking', to: 'pages#eatbooking', as: :eatbooking
   get '/oasiscatamaran', to: 'pages#oasiscatamaran', as: :oasiscatamaran
   get '/best_tools', to: 'pages#best_tools', as: :best_tools

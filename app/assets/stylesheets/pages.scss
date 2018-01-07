@@ -43,6 +43,9 @@ section{
   &.webdings .header-bg{
     @include radial-gradient($gray-light, $gray);
   }
+  &.taskscheduler .header-bg{
+    @include radial-gradient(#ce6989, #b55b77);
+  }
   &.eatbooking .header-bg{
     @include radial-gradient(#424141, #1e1e1e);
   }
@@ -73,6 +76,7 @@ section{
   &.page.agile-development,
   &.page.works,
   &.page.boatjump,
+  &.page.taskscheduler,
   &.page.webdings,
   &.page.eatbooking,
   &.page.oasiscatamaran,
@@ -204,6 +208,18 @@ section{
     .logo{
       max-height: 100px;
       width: 100px;
+      margin-bottom: 1em;
+    }
+    img{
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  &.page.taskscheduler{
+    .logo{
+      max-width: 200px;
+      fill: #007aa3;
       margin-bottom: 1em;
     }
     img{

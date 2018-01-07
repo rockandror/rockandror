@@ -26,6 +26,15 @@
         }
       }
     }
+    .btn-contact{
+      border:2px solid $secondary-color;
+      &:hover{
+        background: $secondary-color;
+        a{
+          color: #fff;
+        }
+      }
+    }
   }
   .navbar-header{
     margin-top: 15px;
@@ -53,6 +62,9 @@
           #robot{
             visibility: hidden;
           }
+        }
+        @include col-sm() {
+          width: 175px;
         }
       }
 

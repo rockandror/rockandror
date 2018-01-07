@@ -3,9 +3,9 @@ class Contact
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :name, :email, :message
+  attr_accessor :name, :email, :message, :budget
 
-  validates_presence_of :name, :email, :message
+  validates_presence_of :name, :email, :message, :budget
   validates :email, :email => true
 
   def initialize(attributes = {})

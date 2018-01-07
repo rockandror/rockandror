@@ -7,6 +7,11 @@ $yellow      : #E7B01F;
     @content;
   }
 }
+@mixin col-max-360() {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
 @mixin col-xs() {
   @media (max-width: 767px) {
     @content;

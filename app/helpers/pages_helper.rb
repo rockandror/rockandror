@@ -9,6 +9,8 @@ module PagesHelper
       'Crees que estamos a la altura tecnologica para tu proyecto?'
     elsif params[:action] == "open_source"
       'Estas listo para lanzar tu proyecto con el Open Source?'
+    elsif params[:action] == "boatjump" || params[:action] == "webdings" || params[:action] == "eatbooking" || params[:action] == "oasiscatamaran"
+      'Tienes un proyecto similar?'
     end
 
   end

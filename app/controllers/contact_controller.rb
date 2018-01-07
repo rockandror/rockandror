@@ -10,7 +10,7 @@ class ContactController < ApplicationController
       redirect_to greetings_path
     else
       render "contact/new"
-    end    
+    end
   end
 
   def greetings
@@ -19,7 +19,7 @@ class ContactController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit([:name, :email, :message])
+    params.require(:contact).permit([:name, :email, :message, :budget])
   end
 
 end

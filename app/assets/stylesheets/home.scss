@@ -56,13 +56,20 @@
     .bg-man{
       height: 100%;
       width: 100%;
-      background: image_url('svg/home-startup-man.svg') no-repeat center center;
+      background: image_url('svg/home-startup-man.svg') no-repeat;
+      background-position: center center;
       background-size: cover;
       z-index: 0;
       position: absolute;
       visibility: hidden;
       top: 0;
       left:0;
+
+    
+
+      @include col-xs(){
+        background-position: left;
+      }
     }
 
     .container{
@@ -72,9 +79,18 @@
       transform: translate(-40%,-50%);
       max-width: 500px;
 
+
       @include col-xs() {
-        top: 10%;
-        transform: translate(-50%, 0%);
+        top: 80px;
+        left: 140px;
+        // transform: translate(-50%, 0%);
+      }
+      @include col-max-360(){
+        left: 120px;
+      }
+      @include col-max-320(){
+        top: 80px;
+        left: 110px;
       }
 
       h1{
@@ -89,6 +105,17 @@
         line-height: 1;
         .underline{
           border-bottom:2px solid white;
+        }
+        @include col-xs(){
+          font-size: 1.6em;
+        }
+
+        @include col-max-360(){
+          font-size: 1.3em;
+        }
+
+        @include col-max-320(){
+          font-size: 1.2em;
         }
       }
 

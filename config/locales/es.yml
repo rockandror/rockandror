@@ -478,10 +478,41 @@ es:
 
     works:
       h2_title: "Title Gallery works"
+
+      boatjump:
+        h1_title_html: "Boatjump, Alquiler de barcos online de alcance internacional"
+        lead: "Alquila un barco, mejor precio garantizado"
+        general_description_html: >
+                              Boatjump es un B2C para el alquiler de barcos online
+                              al mejor precio. En esta primera versión hemos
+                              construido una sólida aplicación web sobre la que
+                              Boatjump podrá crecer a medida que lo requiera.
+        brand_text: "En Rock&Ror hemos replanteado el diseño original de la marca y de la aplicación a partir del bonito diseño original de Armando Ramos."
+        h2_brand_html: "<strong>Back</strong> end"
+        bullet_backend:
+          1_li: "Gestión de barcos"
+          2_li: "Gestión del árbol de localizaciones"
+          3_li: "Gestión de los precios de los barcos por temporadas"
+          4_li: "Geolocalización por dirección"
+          5_li: "Subida de imágenes con marca de agua"
+          6_li: "Gestión de los contenidos dinámicos multi-idioma"
+          7_li: "Gestión de los extras de los barcos"
+          8_li: "Gestión de los características de los barcos"
+          9_li: "Diseño optimizado para su uso en dispositivos moviles."
+        h2_frontend_html: "Front <strong>end</strong>"
+        frontend_description: >
+                                El nuevo FrontEnd de Boatjump se ha diseñado para
+                                la cómoda navegación de los usuarios en todo tipo
+                                de dispositivos, con lo nuevos colores de la marca.
+                                Hemos adaptado el diseño para tablets tanto con
+                                orientación vertical como con orientación horizontal
+                                y a todo tipo de teléfonos móviles y navegadores web.
+        h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
+        tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive"
       webdings:
         h1_title_html: "Webdings"
         lead: "Crea la app y la web de tu boda"
-        general_description: >
+        general_description_html: >
                               Webdings se ha desarrollado como un proyecto de
                               formación interna, es un SaaS que tiene como objetivo
                               permitir a los usuarios crear de forma muy sencilla
@@ -534,15 +565,16 @@ es:
                                   de algunas funcionalidades que no se pueden
                                   realizar a través de la web.
         h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
-        tecnology_html: "RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br> Bootstrap / Sass / Diseño responsive <br> API / Ionic <br> Photoshop / Illustrator"
-      boatjump:
-        h1_title_html: "Boatjump, Alquiler de barcos online de alcance internacional"
-        lead: "Alquila un barco, mejor precio garantizado"
-        general_description: >
-                              Boatjump es un B2C para el alquiler de barcos online
-                              al mejor precio. En esta primera versión hemos
-                              construido una sólida aplicación web sobre la que
-                              Boatjump podrá crecer a medida que lo requiera.
+        tecnology_html: "RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br> Bootstrap / Sass / Diseño responsive <br> API / Ionic"
+      taskscheduler:
+        h1_title_html: "Taskscheduler, Planifica las actividades de la vida diaria"
+        lead: "Organiza y controla tu planificación"
+        general_description_html: >
+                              Taskscheduler es un proyecto para definir tu
+                              planificación de tareas puntuales o repetitivas
+                              diariamente, semanalmente, mensualmente y anualmente
+                              con un sistema de etiquetas y obtener unas
+                              estadísticas más fáciles de entender.
         brand_text: "En Rock&Ror hemos replanteado el diseño original de la marca y de la aplicación a partir del bonito diseño original de Armando Ramos."
         h2_brand_html: "<strong>Back</strong> end"
         bullet_backend:
@@ -564,7 +596,69 @@ es:
                                 orientación vertical como con orientación horizontal
                                 y a todo tipo de teléfonos móviles y navegadores web.
         h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
-        tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive <br> Photoshop / Illustrator"
+        tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive"
+      eatbooking:
+        h1_title_html: "Eatbooking, Libro de Reservas Electrónico para restaurantes"
+        lead: "Sistema de reservas y fidelización de clientes online"
+        general_description_html: >
+                              Taskscheduler es un proyecto para definir tu
+                              planificación de tareas puntuales o repetitivas
+                              diariamente, semanalmente, mensualmente y anualmente
+                              con un sistema de etiquetas y obtener unas
+                              estadísticas más fáciles de entender.
+        brand_text: "En Rock&Ror hemos replanteado el diseño original de la marca y de la aplicación a partir del bonito diseño original de Armando Ramos."
+        h2_brand_html: "<strong>Back</strong> end"
+        bullet_backend:
+          1_li: "Gestión de barcos"
+          2_li: "Gestión del árbol de localizaciones"
+          3_li: "Gestión de los precios de los barcos por temporadas"
+          4_li: "Geolocalización por dirección"
+          5_li: "Subida de imágenes con marca de agua"
+          6_li: "Gestión de los contenidos dinámicos multi-idioma"
+          7_li: "Gestión de los extras de los barcos"
+          8_li: "Gestión de los características de los barcos"
+          9_li: "Diseño optimizado para su uso en dispositivos moviles."
+        h2_frontend_html: "Front <strong>end</strong>"
+        frontend_description: >
+                                El nuevo FrontEnd de Boatjump se ha diseñado para
+                                la cómoda navegación de los usuarios en todo tipo
+                                de dispositivos, con lo nuevos colores de la marca.
+                                Hemos adaptado el diseño para tablets tanto con
+                                orientación vertical como con orientación horizontal
+                                y a todo tipo de teléfonos móviles y navegadores web.
+        h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
+        tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive"
+      oasiscatamaran:
+        h1_title_html: "Oasis Catamaran, venta de excursiones en catamarán con todo tipo de servicios adicionales."
+        lead: "Excurciones y eventos"
+        general_description_html: >
+                              Taskscheduler es un proyecto para definir tu
+                              planificación de tareas puntuales o repetitivas
+                              diariamente, semanalmente, mensualmente y anualmente
+                              con un sistema de etiquetas y obtener unas
+                              estadísticas más fáciles de entender.
+        brand_text: "En Rock&Ror hemos replanteado el diseño original de la marca y de la aplicación a partir del bonito diseño original de Armando Ramos."
+        h2_brand_html: "<strong>Back</strong> end"
+        bullet_backend:
+          1_li: "Gestión de barcos"
+          2_li: "Gestión del árbol de localizaciones"
+          3_li: "Gestión de los precios de los barcos por temporadas"
+          4_li: "Geolocalización por dirección"
+          5_li: "Subida de imágenes con marca de agua"
+          6_li: "Gestión de los contenidos dinámicos multi-idioma"
+          7_li: "Gestión de los extras de los barcos"
+          8_li: "Gestión de los características de los barcos"
+          9_li: "Diseño optimizado para su uso en dispositivos moviles."
+        h2_frontend_html: "Front <strong>end</strong>"
+        frontend_description: >
+                                El nuevo FrontEnd de Boatjump se ha diseñado para
+                                la cómoda navegación de los usuarios en todo tipo
+                                de dispositivos, con lo nuevos colores de la marca.
+                                Hemos adaptado el diseño para tablets tanto con
+                                orientación vertical como con orientación horizontal
+                                y a todo tipo de teléfonos móviles y navegadores web.
+        h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
+        tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive"
     contact:
       title_html: "Escríbanos, le contestaremos en menos de 24 horas."
       form:

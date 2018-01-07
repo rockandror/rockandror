@@ -37,7 +37,15 @@ ul{
 
 .cookies-eu{
   margin-top:50px;
+  background: #fff;
 }
+
+@media (max-width: 767px){
+.cookies-eu {
+  position: fixed !important;
+  }
+}
+
 
 .disable{
   opacity: 0.65;

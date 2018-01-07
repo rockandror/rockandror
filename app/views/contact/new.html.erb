@@ -19,8 +19,8 @@
                           placeholder: t("pages.contact.form.email"),
                           hide_label: true %>
 
-        <%= f.select :name, [["5.000"], ["10.000"], ["15.000"], ["25.000"], ["35.000"], ["50.000"], ["75.000"]],
-                    { hide_label: 'true', include_blank: "Que budget tienes?" },
+        <%= f.select :budget, [["5.000"], ["10.000"], ["15.000"], ["25.000"], ["35.000"], ["50.000"], ["75.000"], [" + 75.000"]],
+                    { hide_label: 'true', include_blank: "Budget" },
                     { class: "selectpicker" } %>
 
         <%= f.text_area :message,
