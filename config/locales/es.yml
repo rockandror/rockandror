@@ -126,6 +126,11 @@ es:
       btn_info: "Solicita tu consultoria gratuita"
   pages:
     tecnology:
+      meta:
+        title: "Desarrollo en Ruby on Rails"
+        description: "Rockandror desarrolla paginas web y aplicaciones flexibles
+        y dinnamicos con Ruby on Rails un framework de codigo abierto basado en MVC"
+        keywords: "Ruby on Rails, MVC, Metodlogia Agile"
       h2_1_title: "Desarrollo en Ruby on Rails"
       description_html: >
                   Rockandror desarrolla paginas web y aplicaciones flexibles y
@@ -196,6 +201,11 @@ es:
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
                     id est laborum.
     agile_developer:
+      meta:
+        title: "Desarrollo agile en Ruby on Rails"
+        description: "Rockandror desarrolla paginas web y aplicaciones flexibles
+        y dinnamicos con Ruby on Rails siguiendo la metodología Agile "
+        keywords: "Ruby on Rails, MVC, Metodlogia Agile"
       h2_1_title: "Dividimos el objetivo final en hitos a corto plazo que recorren el siguiente flujo de trabajo."
       h2_2_title: "¿Qué es la metodología Agile?"
       description_html: >
@@ -262,6 +272,12 @@ es:
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
                         id est laborum.
     open_source:
+      meta:
+        title: "Desarrollo Open Source en Ruby on Rails"
+        description: "Desarrollo de paginas web y aplicaciones flexibles y
+                      dinnamicos con codigo abierto Open source en Ruby on Rails
+                      siguiendo la metodología Agile."
+        keywords: "Open source, Ruby on Rails, MVC, Metodlogia Agile"
       h2_1_title: "El Open source es la clave para Start up tecnologicas."
       description_html: >
                         Hay varias razones por lo cual en RockAndRor trabajamos con codigo abierto,
@@ -369,6 +385,13 @@ es:
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
     team:
+      meta:
+        title: "Equipo de desarrollo agile en Ruby on Rails en Palma de Mallorca"
+        description: "Desarrollo de paginas web y aplicaciones flexibles y
+                      dinnamicos con codigo abierto Open source en Ruby on Rails
+                      siguiendo la metodología Agile."
+        keywords: "RockandRor, Alessandro Cuoghi, Senén Rodero, Sebastià Roig,
+                  Open source, Ruby on Rails, MVC, Metodlogia Agile"
       h1_title: "Rock And Ror, equipo de desarrollo en Ruby On Rails"
       lead: "Ofrecemos un enfoque personal y efectivo en cada proyecto que participamos."
       h2_1_title: "Quien es RockAndRor"
@@ -475,16 +498,28 @@ es:
                             ver nuestro portfolio llenarse de clientes, preferimos
                             tener proyectos que llegan al exito en el tiempo,
                             y no vaciar el borsillos de los inversores.
-
     works:
+      meta:
+        title: "Añadir title para pagina trabajos"
+        description: "Añadir descripcion pagina trabajos"
+        keywords: "Añadir keywords"
       h2_title: "Title Gallery works"
-
       boatjump:
+        meta:
+          title: "Boatjump, Alquiler de barcos online de alcance internacional"
+          description: "Boatjump es una plataforma online donde se pone en
+          contacto a propietarios de barcos que quieren alquilar su embarcación
+          con usuarios interesados en navegar"
+          keywords: "Boatjump, Alquiler de barcos online, Ruby on rails"
         h1_title_html: "Boatjump, Alquiler de barcos online de alcance internacional"
         lead: "Alquila un barco, mejor precio garantizado"
         general_description_html: >
-                              Boatjump es un B2C para el alquiler de barcos online
-                              al mejor precio. En esta primera versión hemos
+                              Boatjump es una plataforma online donde se pone en
+                              contacto a propietarios de barcos que quieren
+                              alquilar su embarcación con usuarios interesados
+                              en navegar, funciona como una herramienta donde
+                              buscar, comparar y reservar tu barco.
+                              Boatjump es un B2C, en esta primera versión hemos
                               construido una sólida aplicación web sobre la que
                               Boatjump podrá crecer a medida que lo requiera.
         brand_text: "En Rock&Ror hemos replanteado el diseño original de la marca y de la aplicación a partir del bonito diseño original de Armando Ramos."
@@ -510,6 +545,10 @@ es:
         h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
         tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive"
       webdings:
+        meta:
+          title: "Webdings"
+          description: "Añadir descripcion Webdings"
+          keywords: "Añadir keywords"
         h1_title_html: "Webdings"
         lead: "Crea la app y la web de tu boda"
         general_description_html: >
@@ -567,6 +606,10 @@ es:
         h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
         tecnology_html: "RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br> Bootstrap / Sass / Diseño responsive <br> API / Ionic"
       taskscheduler:
+        meta:
+          title: "Taskscheduler"
+          description: "Añadir descripcion Taskscheduler"
+          keywords: "Añadir keywords"
         h1_title_html: "Taskscheduler, Planifica las actividades de la vida diaria"
         lead: "Organiza y controla tu planificación"
         general_description_html: >
@@ -598,6 +641,10 @@ es:
         h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
         tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive"
       eatbooking:
+        meta:
+          title: "Eatbooking, Libro de Reservas Electrónico para restaurantes"
+          description: "Añadir descripcion Eatbooking"
+          keywords: "Añadir keywords"
         h1_title_html: "Eatbooking, Libro de Reservas Electrónico para restaurantes"
         lead: "Sistema de reservas y fidelización de clientes online"
         general_description_html: >
@@ -629,6 +676,10 @@ es:
         h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
         tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive"
       oasiscatamaran:
+        meta:
+          title: "Oasis Catamaran"
+          description: "Añadir descripcion Oasis Catamaran"
+          keywords: "Añadir keywords"
         h1_title_html: "Oasis Catamaran, venta de excursiones en catamarán con todo tipo de servicios adicionales."
         lead: "Excurciones y eventos"
         general_description_html: >
@@ -660,10 +711,14 @@ es:
         h2_tecnology_html: "<strong>Tecnología</strong> utilizada"
         tecnology_html: "RubyOnRails / PostgreSQL <br> Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) <br> Bootstrap / Sass / Diseño responsive"
     contact:
+      meta:
+        title: "Añadir titulo para pagina contactos"
+        description: "Añadir descripcion pagina contactos"
+        keywords: "Añadir keywords"
       title_html: "Escríbanos, le contestaremos en menos de 24 horas."
       form:
-        name: "Con quien hablamos"
-        email: "Tu email"
+        name: "Con quien tenemos el placer de hablar"
+        email: "Introduzca la email que utilizas siempre"
         message: "Eres una Startup, un Ayuntamiento, una grande empresa"
         btn_send: "Enviar mensaje"
       greetings:
