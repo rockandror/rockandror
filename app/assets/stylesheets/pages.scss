@@ -23,6 +23,7 @@ section{
     display: inline-block;
     margin-bottom: 1rem;
     &:hover{
+      text-decoration: none;
       border:1px solid transparent;
       border-bottom: 1px solid #fff;
 
@@ -188,8 +189,8 @@ section{
         margin: 0 auto;
         border-radius: 50%;
         border:3px solid $gray-lighter;
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 300px;
         overflow: hidden;
       }
       img{

@@ -1,11 +1,5 @@
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, html {
-  margin: 0;
-  padding: 0;
+html, body {
+  height: 100%;
 }
 
 body{
@@ -15,16 +9,7 @@ body{
   color:$primary-color;
 }
 
-html, body {
-  height: 100%;
-}
-
-input[type="text"]{
-  height: 60px;
-  outline: none;
-}
-
-a{
+a {
   color:$secondary-color;
   &:hover{
     color:darken($secondary-color,10%);
@@ -35,72 +20,59 @@ ul{
   list-style: none;
 }
 
-.cookies-eu{
+.cookies-eu {
   margin-top:50px;
   background: #fff;
 }
 
-@media (max-width: 767px){
-.cookies-eu {
-  position: fixed !important;
+@media (max-width: 767px) {
+  .cookies-eu {
+    position: fixed !important;
   }
 }
 
-
-.disable{
-  opacity: 0.65;
-  a{
-    color:$secondary-color;
-    cursor: default;
-    pointer-events: none;
-  }
-}
-
-.contact-now{
-  background: #fff;
-  border-bottom:10px solid #dbdbdb;
-  h3{
-    @include text($primary-color, uppercase , 2.4rem, null);
-  }
-  @include btn-ror(transparent, $secondary-color, white, false, null);
-}
-
-.footer{
+.footer {
   padding:3em 0 0;
   text-transform: uppercase;
   background: #fff;
   font-size: 0.8em;
 
-  ul{
+  ul {
     text-align: center;
     list-style: none;
   }
-  .logo{
+
+  .logo {
     fill:$primary-color;
     padding: 1em;
   }
-  a{
+
+  a {
     display: block;
     margin-top: 2em;
     color:$secondary-color;
   }
-  .social{
-    svg{
+
+  .social {
+    svg {
       font-size: 1em;
       fill:$primary-color;
       &:hover{fill:$secondary-color;}
     }
   }
 
-  .more-info{
+  .more-info {
     margin-top: 2em;
     background: #333;
-    p{
+
+    p {
       font-size: 0.9rem;
       text-align: center;
       display: inline-block;
       width: 100%;
-      a{display: inline-block;}
+      a {
+        display: inline-block;
+      }
     }
   }
 }
