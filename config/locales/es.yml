@@ -38,12 +38,23 @@ es:
       tools: "Herramientas"
       agile_development: "Desarrollo agile"
       open_source: "Open source"
+      startup: "Quieres lanzar tu Startup"
     last_works: "Trabajos"
     team: "Equipo"
     send_email: "Contratarnos"
 
   common:
-    btn_back: 'Vovler'
+    btn_back: Volver
+
+  helper:
+    contact_now:
+      team: Te ha gustado nuestro equipo y nuestra filosofia?
+      agile_development: Nuestro metodo se alinea a tu negocio?
+      best_tools: Crees que estamos a la altura tecnologica para tu proyecto?
+      open_source: Estas listo para lanzar tu proyecto con el Open Source?
+      startup: Lanza tu Startup con metodología Agile y MVP
+      desarrollo_web_palma_de_mallorca: Estas listo para lanzar tu proyecto con el Open Source?
+      works_customer: Tienes un proyecto similar?
   home_page:
     intro:
       title_html: >

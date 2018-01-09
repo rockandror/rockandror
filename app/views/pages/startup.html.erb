@@ -134,12 +134,12 @@
       <p>Alejándose de estos motivos es importante tener en cuenta que  lo mejor
         que puede tener una <strong>Startup</strong> es encontrar un equipo que
         tenga gana y ilusión de participar y aportar valor al producto o servicio.
+        <br />
+        <br />
+        <strong>Una Startup necesitas gente que le gusta el proyecto y que le
+          guste aprender cada día más para aportar mas a la idea de producto.
+        </strong>
       </p>
-      <span class='underline'>Una Startup necesitas gente que le gusta el proyecto
-        y que le guste aprender cada día más para aportar mas a la idea de
-        producto.
-      </span>
-      <br>
       <h2>
         <strong>Equipo para el desarrollo</strong>
       </h2>
@@ -206,7 +206,7 @@
           termine de cada tarea.
         </p>
         <br />
-          <%= image_tag "startup/cupcake_model_mvp.png", class: 'image-responsive center-block' %>
+          <%= image_tag "startup/cupcake_model_mvp.png", class: 'image-responsive' %>
           <br />
           <div class='text-center'>
             <small>http://www.perfomatix.com/appdevelopmentblogs/minimum-viable-product-mvp-startup/</small>
@@ -235,7 +235,7 @@
           RockAndRor es un equipo de <%= link_to 'Desarrollo web en Palma de Mallorca', desarrollo_web_palma_de_mallorca_path, title: 'Desarrollo web en Palma de Mallorca' %> ,
           no es simplemente un equipo de desarrolladores que se sienta
           en  frente de la pantalla esperando tarea que hacer,
-          <strong class="underline">somos un equipo que le  interesa ser unos
+          <strong>somos un equipo que le  interesa ser unos
             excelentes programadores en continua evolución dando a cada tarea su
             máxima importancia para poder dormir sueños tranquilos</strong>, no
             somos solo programadores, somos empresarios como tu y entendemos el
@@ -248,24 +248,16 @@
           Se llama hacer las cosas bien”  Herb Kelleher
         </blockquote>
         <hr />
-
       </div>
-
-
 
       <div class='col-xs-10 col-xs-offset-1 text-center'>
         <p>Si tienes una gran idea y quieres lanzar tu Startup con metodología
           Agile y MVP, RockAndRor es lo que buscas, un equipo que se centra solo
           en el desarrollo de software a medida.
+          <strong>Haz click aqui abajo para una solecitar tu consultoria gratuita.</strong>
         </p>
-        <%= link_to new_contact_path, class: "btn btn-primary btn-lg" do %>
-          Solicita tu
-          <br class="visible-xs">
-          consultoría
-          <br class="visible-xs">
-          gratuita
-        <% end %>
       </div>
     </div>
   </div>
 </section>
+<%= render 'shared/contact_now' %>

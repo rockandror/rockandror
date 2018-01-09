@@ -12,20 +12,22 @@ module PagesHelper
     content_for?(:"meta_#{tag}") ? content_for(:"meta_#{tag}") : default_text
   end
 
-
   def contact_now
     if params[:action] == "team"
-      'Te ha gustado nuestro equipo y nuestra filosofia?'
-    elsif params[:action] == "agile_development"
-      'Nuestro metodo se alinea a tu negocio? '
-    elsif params[:action] == "best_tools"
-      'Crees que estamos a la altura tecnologica para tu proyecto?'
-    elsif params[:action] == "open_source"
-      'Estas listo para lanzar tu proyecto con el Open Source?'
+      t 'helper.contact_now.team'
+    elsif params[:action] == "agile-development"
+      t 'helper.contact_now.agile_development'
+    elsif params[:action] == "best-tools"
+      t 'helper.contact_now.best_tools'
+    elsif params[:action] == "open-source"
+      t 'helper.contact_now.open_source'
+    elsif params[:action] == "startup"
+      t 'helper.contact_now.startup'
+    elsif params[:action] == "desarrollo-web-palma-de-mallorca"
+      t 'helper.contact_now.desarrollo_web_palma_de_mallorca'
     elsif params[:action] == "boatjump" || params[:action] == "webdings" || params[:action] == "eatbooking" || params[:action] == "oasiscatamaran"
-      'Tienes un proyecto similar?'
+      t 'helper.contact_now.works_customer'
     end
-
   end
 
 end
