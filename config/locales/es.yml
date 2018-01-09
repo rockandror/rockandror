@@ -55,6 +55,7 @@ es:
       startup: Lanza tu Startup con metodología Agile y MVP
       desarrollo_web_palma_de_mallorca: Estas listo para lanzar tu proyecto con el Open Source?
       works_customer: Tienes un proyecto similar?
+
   home_page:
     intro:
       title_html: >
@@ -779,11 +780,25 @@ es:
         description: "Añadir descripcion pagina contactos"
         keywords: "Añadir keywords"
       title_html: "Escríbanos, le contestaremos en menos de 24 horas."
+      introduction_html: >
+                      Completa el formulario, cuéntanos tu idea y nos pondremos
+                      en contacto contigo lo antes posible para concertar una reunión.
+                      <hr />
+                      <strong>Si lo prefiere, puede llamarnos directamente al
+                      34 607 320 876 o escribirnos un
+                      <a href="mailto:info@rockandror.es">correo electrónico.</a>
+                      </strong>
       form:
-        name: "Con quien tenemos el placer de hablar"
-        email: "Introduzca la email que utilizas siempre"
-        message: "Eres una Startup, un Ayuntamiento, una grande empresa"
-        btn_send: "Enviar mensaje"
+        label_name: Nombre, Apellido o nombre empresa
+        name: Con quien tenemos el placer de hablar
+        label_email: A que email te contestamos?
+        email: Introduzca la email que utilizas siempre
+        label_budget: ¿ Cuánto planeas invertir ?
+        budget_i_do_not: No lo se
+        include_blank_budget: Budget
+        label_message: Hablanos de tu proyecto
+        message: Eres una Startup, un Ayuntamiento, una grande empresa
+        btn_send: Enviar mensaje
       greetings:
         title_html: "Gracias por contactar con nosotros. Obtendrá una respuesta en <u>menos de 24 horas</u>"
         share:

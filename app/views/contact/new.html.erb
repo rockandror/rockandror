@@ -18,31 +18,29 @@
       <br />
       <br />
       <p>
-        Completa el formulario, cuéntanos tu idea y nos pondremos en contacto contigo lo antes posible para concertar una reunión.
-        <hr />
-        <strong>Si lo prefiere, puede llamarnos directamente al 34 607 320 876 o escribirnos un <a href="mailto:info@rockandror.es">correo electrónico.</a></strong>
+        <%= t'pages.contact.introduction_html' %>
       </p>
     </div>
     <div class="col-xs-12 col-md-6">
       <br />
       <%= bootstrap_form_for @contact, url: contact_index_path do |f| %>
         <%= f.text_field :name,
-                          label: "Nombre, Apellido o nombre empresa",
+                          label: t("pages.contact.form.label_name"),
                           placeholder: t("pages.contact.form.name")
                           %>
         <%= f.text_field :email,
-                          label: "A que email te contestamos?",
+                          label: t("pages.contact.form.label_email"),
                           placeholder: t("pages.contact.form.email")
                           %>
 
-        <%= f.select :budget, [["No lo se"], ["5.000"], ["10.000"], ["15.000"], ["25.000"], ["35.000"], ["50.000"], ["75.000"], [" + 75.000"]],
-                    { label: "¿ Cuánto planeas invertir ? ", include_blank: "Budget" },
+        <%= f.select :budget, [[t("pages.contact.form.budget_i_do_not")], ["5.000"], ["10.000"], ["15.000"], ["25.000"], ["35.000"], ["50.000"], ["75.000"], [" + 75.000"]],
+                    { label: t("pages.contact.form.label_budget"), include_blank: t("pages.contact.form.include_blank_budget") },
                     { class: "selectpicker" }
                      %>
 
         <%= f.text_area :message,
                         placeholder: t("pages.contact.form.message"),
-                        label: "Hablanos de tu proyecto"
+                        label: t("pages.contact.form.label_message")
                         %>
 
         <%= f.submit t("pages.contact.form.btn_send"),
