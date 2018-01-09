@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get '/open_source', to: 'pages#open_source', as: :open_source
   get '/team', to: 'pages#team', as: :team
   get '/works', to: 'pages#works', as: :works
+  get '/startup', to: 'pages#startup', as: :startup
+  get '/desarrollo_web_palma_de_mallorca', to: 'pages#desarrollo_web_palma_de_mallorca', as: :desarrollo_web_palma_de_mallorca
   resources :contact, only: [:new,:create]
   get '/greetings', to: 'contact#greetings', as: :greetings
 

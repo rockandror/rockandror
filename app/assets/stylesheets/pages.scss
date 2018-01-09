@@ -33,9 +33,7 @@ section{
   &.page.team .header-bg{
     @include radial-gradient(#0174c5, #0361a3);
   }
-  &.open-source .header-bg{
-    //@include radial-gradient(#5fd7db, #4babaf);
-  }
+
   &.open-source{
     @include radial-gradient(#5fd7db, #4babaf);
     color: #fff;
@@ -49,21 +47,35 @@ section{
   &.page.works .header-bg{
     @include radial-gradient(#a13644, #712630);
   }
+
   &.boatjump .header-bg{
     @include radial-gradient(#007aa3, #025773);
   }
+
   &.webdings .header-bg{
     @include radial-gradient($gray-light, $gray);
   }
+
   &.taskscheduler .header-bg{
     @include radial-gradient(#ce6989, #b55b77);
   }
+
   &.eatbooking .header-bg{
     @include radial-gradient(#424141, #1e1e1e);
   }
+
   &.oasiscatamaran .header-bg{
     @include radial-gradient(#5fc3e6, #4593af);
   }
+
+  &.startup .header-bg{
+    @include radial-gradient(#f75e47, #da503b);
+  }
+
+  &.seopage .header-bg{
+    @include radial-gradient(#f75e47, #da503b);
+  }
+
   &.contact .row{
     @include radial-gradient(#f1b820, #cf891c);
   }
@@ -93,7 +105,9 @@ section{
   &.page.eatbooking,
   &.page.oasiscatamaran,
   &.page.contact,
-  &.page.greetings{
+  &.page.greetings,
+  &.page.startup,
+  &.page.seopage {
     padding-top: 5em;
     color: $gray;
     .row{
@@ -262,6 +276,82 @@ section{
     img{
       margin: 0 auto;
       width: 100%;
+    }
+  }
+
+  &.startup,
+  &.seopage {
+    .cont-introduction{
+      padding:0;
+      padding-top:1em;
+      .curly-quotes strong{
+        text-decoration: underline;
+      }
+    }
+    h1{
+     line-height: 1em;
+    }
+    h2{
+     font-size:1.4375rem;
+     text-transform: capitalize;
+    }
+    .button{
+       margin-top:20px;
+       background: $optin;
+       font-weight: 600;
+       text-transform: uppercase;
+       &:hover{
+         background: darken($optin,10%);
+       }
+     }
+     blockquote, q {
+       quotes: none;
+       border:none;
+       font-family: Georgia, serif;
+       font-size: 19px;
+       &:before, &:after{
+         content: '';
+         content: none;
+       }
+     }
+     .curly-quotes{
+       &:after,&:before{
+         display: inline-block;
+         vertical-align: top;
+         height: 30px;
+         line-height: 48px;
+         font-size: 50px;
+         opacity: .6;
+       }
+       &:before{
+         content: '\201C';
+         margin-right: 4px;
+         margin-left: -8px;
+       }
+       &:after {
+         content: '\201D';
+         margin-left: 4px;
+         margin-right: -8px;
+       }
+     }
+     .rails-project{
+       img{
+         width: 170px;
+         display: block;
+         margin: 0 auto;
+         margin-bottom: 20px;
+         margin-top: 20px;
+       }
+       li{
+         list-style: none;
+         text-align: center;
+       }
+     }
+   }
+
+   &.seopage{
+    .cycles{
+      list-style-type: none;
     }
   }
 

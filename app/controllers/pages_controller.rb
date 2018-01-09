@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def home
     @contact = Contact.new
   end
-  
+
   def agile_development
   end
 
@@ -37,6 +37,12 @@ class PagesController < ApplicationController
   end
 
   def oasiscatamaran
+  end
+
+  def startup
+  end
+
+  def desarrollo_web_palma_de_mallorca
   end
 
 end
