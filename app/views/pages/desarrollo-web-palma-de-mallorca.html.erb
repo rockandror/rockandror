@@ -1,5 +1,8 @@
-<section class="page seopage">
+<%# title t'pages.seo.development_mallorca.meta.title' %>
+<%# meta_tag :description, t('pages.seo.development_mallorca.meta.description') %>
+<%# meta_tag :keywords, t('pages.seo.development_mallorca.meta.keywords') %>
 
+<section class="page seopage">
   <div class="row header-bg">
     <div class="col-xs-10 col-xs-offset-1">
       <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
@@ -25,12 +28,12 @@
   <div>
     <div class='col-xs-10 col-xs-offset-1 content'>
       <p class='text-center'>
-        Si quieres lanzar tu Startup o Negocio con metodología Agile y MVP,
-        RockAndRor puede ser lo que estas buscando, un equipo de
-        <strong>desarrollo web en palma de Mallorca</strong> centrado solo en el
-        desarrollo de software a medida.  Nos gusta trabajar con las últimas
-        herramientas de desarrollo <strong>para obtener el mejor producto
-          adaptado a las necesidades del cliente
+        Si quieres <%= link_to 'lanzar tu Startup', startup_path, title: 'lanzar tu Startup' %>
+        o Negocio con metodología Agile y MVP, RockAndRor puede ser lo que estas
+        buscando, un equipo de <strong>desarrollo web en palma de Mallorca</strong>
+        centrado solo en el desarrollo de software a medida.  Nos gusta trabajar
+        con las últimas herramientas de desarrollo <strong>para obtener el mejor
+          producto adaptado a las necesidades del cliente.
         </strong>.
       </p>
     </div>

@@ -1,3 +1,7 @@
+<%# title t'pages.seo.startup.meta.title' %>
+<%# meta_tag :description, t('pages.seo.startup.meta.description') %>
+<%# meta_tag :keywords, t('pages.seo.startup.meta.keywords') %>
+
 <section class="page startup">
   <div class="row header-bg">
     <div class="col-xs-10 col-xs-offset-1">
@@ -227,7 +231,9 @@
         <h2>
           <strong>Porque elegir nosotros como equipo tecnologico para lanzar tu Startup</strong>
         </h2>
-        <p>RockAndRor no es simplemente un equipo de desarrolladores que se sienta
+        <p>
+          RockAndRor es un equipo de <%= link_to 'Desarrollo web en Palma de Mallorca', desarrollo_web_palma_de_mallorca_path, title: 'Desarrollo web en Palma de Mallorca' %> ,
+          no es simplemente un equipo de desarrolladores que se sienta
           en  frente de la pantalla esperando tarea que hacer,
           <strong class="underline">somos un equipo que le  interesa ser unos
             excelentes programadores en continua evolución dando a cada tarea su
@@ -236,14 +242,16 @@
             valor de un proyecto, cuanto cuesta llevarlo a cabo y nos preocupamos
             para que tu inversión se recupere cuanto antes.
         </p>
-      </div>
-      <div class='col-xs-10 col-xs-offset-1 text-center'>
+
         <hr />
-        <blockquote class='curly-quotes'>“Tenemos un plan estratégico.
+        <blockquote class='curly-quotes text-center'>“Tenemos un plan estratégico.
           Se llama hacer las cosas bien”  Herb Kelleher
         </blockquote>
         <hr />
+
       </div>
+
+
 
       <div class='col-xs-10 col-xs-offset-1 text-center'>
         <p>Si tienes una gran idea y quieres lanzar tu Startup con metodología
