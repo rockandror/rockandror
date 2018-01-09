@@ -134,7 +134,7 @@ es:
       h2_1_title: "Desarrollo en Ruby on Rails"
       description_html: >
                   Rockandror desarrolla paginas web y aplicaciones flexibles y
-                  dinnamicos con Ruby on Rails un framework de codigo abierto
+                  dinnamicos con <a href='http://rubyonrails.org', target='blank'>Ruby on Rails</a> un framework de codigo abierto
                   basado en MVC. Desarrollar con Ruby on Rails significa usar un
                   codigo estandarizado rápido e intuitivo, pero es imposible crear
                   grandes servicios Web sin el conocimiento de muchas otras
@@ -184,13 +184,65 @@ es:
                   que sea más seguro y potente.
       h2_2_title:   "Desarrollo Movil de Android y iOS con Ionic"
       description_2_html: >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                    id est laborum.
+                    Hoy en dia cualquier empresa entiende como una App móviles
+                    sea de gran importancia para que sus clientes puedan utilizar
+                    en total comodidad sus servicios o productos para mantener
+                    un hilo constante con la empresa.
+                    <br>
+                    <br>
+                    La decisión más grande para estas empresa es
+                    elegir la plataforma correcta para desarrollar sus APP.
+                    Desde el comienzo el desarrollo de APP se hacia con codigo
+                    nativo, porque tenían una ventaja mayor respecto a una APP
+                    ibrida, por ejemplo el desarrollo ibrido hacia que las
+                    prestaciones fuera mas lenta y que la interfaz de usuario no
+                    fuera tan user experience.
+                    La plataforma IONIC ha cambiado radicalmente el desarrollo de
+                    aplicaciones multiplataforma  se ha evolucionado a tal punto
+                    que cualquier empresa puede crear una APP ibrida a un coste
+                    minimizado y multi-plataforma.
+                    <br>
+                    <br>
+                    <strong>Porque debería elegir IONIC?</strong>
+                    <br>
+                    IONIC es una plataforma Open Source, bastante estable,
+                    rapida y de confianza que emula una sensación nativa de
+                    manera eficiente. Hay que tenere en cuenta que el desarrollo
+                    de una APP Nativa tiene un coste bastante elevado y si
+                    queremos que esta APP funcione en IOS ANDROID y WINDOWS
+                    deberíamos desarrollar en tres codigo nativo moltiplicando
+                    por tres el coste para tener el mismo resultado.
+                    Ionic no costa nada y se puede desarrollar exactamente como
+                    una pagina web, sin deber escribir el codigo en 3 lenguaje.
+                    <br>
+                    <br>
+                    Quien como nosotros ha desarrollado APP con IONIC no puede
+                    que ser feliz del resultado final, y también durante el
+                    desarrollo flexible, rapido con elementos de la interfaz
+                    predefiniti, filtros, modulo, menu de navegación,
+                    visualizados de listados, y mucho mas, todo esto hace que el
+                    desarrollo sea mas rapido con codigo limpio y reutilizable
+                    porque es simple HTML CSS y JS, codigo que se utiliza en las
+                    pagina web, dándonos la posibilidad de dar un toque mas
+                    guapo a la APP gracias al CSS.
+                    <br>
+                    <br>
+                    Otro punto a favor de IONIC es que también personas experta
+                    en el mundo del desarrollo se encuentran en dificultad en el
+                    aprender una nueva estructura con codigo que nunca se había
+                    utilizado y que necesita una curva de aprendimiento.
+                    Ionic esta construido con la mejor tecnologia popular como
+                    Cordova y Angular y ademas tiene una comunidad de desarrollo
+                    activa y grande, entonces por cualquier problema tenemos una
+                    respuesta sin tenue que invertir también un dia entero a
+                    buscar soluciones que mucha vez no tienen respuesta.
+                    <br>
+                    <br>
+                    También probar la App es mucho mas simple, solo necesitamos
+                    de un browser web y hacer test con emuladores para IOS y
+                    Android utilizando Cordova o sestear directamente como App
+                    nativa directamente en uno smartphone real.
+
       h2_3_title:   "Desarrollo scalable"
       description_3_html: >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

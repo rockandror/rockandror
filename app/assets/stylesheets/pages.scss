@@ -175,7 +175,7 @@ section{
       .alessandro,
       .senen,
       .sebas{
-        text-align: center;
+        text-align: left;
         span{
           font-size: 0.8em;
         }
@@ -185,20 +185,31 @@ section{
           line-height: 1.6em;
         }
       }
-      .circle{
+
+      img {
         margin: 0 auto;
-        border-radius: 50%;
-        border:3px solid $gray-lighter;
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
       }
-      img{
-        margin: 0 auto;
-        margin-top: -30px;
-      }
+
       hr{
         border-color: $gray-lighter;
+      }
+
+      ul{
+        margin: 0 auto;
+        margin-top: 20px;
+        li{
+          padding-left: 0;
+          cursor: pointer;
+          a{
+            display: inline-block;
+            padding: 0.5em;
+
+            svg{
+              max-width: 1em;
+              fill: $secondary-color;
+            }
+          }
+        }
       }
 
     }
