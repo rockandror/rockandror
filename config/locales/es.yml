@@ -448,6 +448,16 @@ es:
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
+    startup:
+      meta:
+        title: ¿Buscas un equipo tecnológico innovador y productivo para tu Startup?
+        description: "Añadir descripcion."
+        keywords: "Añadir keywords"
+    development_mallorca:
+      meta:
+        title: Desarrollo web en Palma de Mallorca
+        description: "Añadir descripcion."
+        keywords: "Añadir keywords"
     team:
       meta:
         title: "Equipo de desarrollo agile en Ruby on Rails en Palma de Mallorca"
