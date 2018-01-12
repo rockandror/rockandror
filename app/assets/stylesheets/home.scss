@@ -85,7 +85,7 @@
         top: 30%;
       }
       @include col-max-360() {
-        top: 35%;
+        top: 40%;
       }
 
       h1 {
@@ -108,11 +108,14 @@
         }
 
         @include col-max-360() {
-          font-size: 1.3em;
+          font-size: 1.2em;
+          width: 180px;
+          line-height: 22px;
         }
 
         @include col-max-320() {
           font-size: 1.2em;
+          width: 160px;
         }
       }
 

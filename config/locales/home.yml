@@ -38,7 +38,7 @@ es:
                       Pudimos participar en la Hackaton OpenMAD 2015 para ayudar
                       al equipo de expertos de la comunidad de Madrid en proyectos
                       de participación y transparencia ciudadana.
-      btn_info: leer más sobre nuestras partecipacion
+      btn_info: Nuestras partecipaciones
 
     team:
       title_html: >
@@ -48,7 +48,7 @@ es:
                     Ponemos especial atención en la calidad del código realizado.
                     Ofrecemos a nuestros clientes acceso a Informes detallados del
                     trabajo del equipo.
-      btn_info: Descrubre más sobre nuestro equipo
+      btn_info: Nuestro equipo
 
     works:
       title_html: Nuestro objetivo es ayudarle a encontrar la mejor solución <u>tecnologica para su idea</u>
@@ -84,5 +84,5 @@ es:
 
     contact:
       title_html: ¿necesita una web o una App?
-      lead_html: Contacta con nosotros para un desarrollo B2B y B2Cinnovadores en web y móvil.
+      lead_html: Contacta con nosotros para un desarrollo B2B y B2C innovadores en web y móvil.
       btn_info: Solicita tu consultoria gratuita
