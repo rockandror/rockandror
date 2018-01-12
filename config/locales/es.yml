@@ -45,6 +45,7 @@ es:
 
   common:
     btn_back: Volver
+    btn_option_contact_html: Solicita tu consultoría <br class="visible-xs"> gratuita
 
   helper:
     contact_now:

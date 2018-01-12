@@ -5,3 +5,196 @@ es:
         title: Desarrollo web en Palma de Mallorca
         description: "Añadir descripcion."
         keywords: "Añadir keywords"
+
+      h1_title_html: Desarrollo web en <strong>palma de Mallorca</strong>
+      quote_1_html:  >
+                    Es fácil tener ideas de negocio.
+                    <br>
+                    Lo más complicado es aplicarlas en el mundo real.
+                    <br> Guy Kawasaki
+      description_1_html: >
+                    Si quieres <a href="startup"> lanzar tu Startup </a>
+                    o Negocio con metodología Agile y MVP, RockAndRor puede ser
+                    lo que estas buscando, un equipo de <strong>desarrollo web
+                    en palma de Mallorca</strong> centrado solo en el desarrollo
+                    de software a medida.  Nos gusta trabajar con las últimas
+                    herramientas de desarrollo <strong>para obtener el mejor
+                    producto adaptado a las necesidades del cliente. </strong>.
+      h3_1_html:    >
+                    Con tal de obtener el mayor valor posible con el mínimo
+                    esfuerzo seguimos fielmente los principios del desarrollo
+                    agile.
+      h2_1_html:    <strong>Como trabajamos</strong>
+      description_2_html: >
+                    Realizamos un desarrollo por versiones incremental, ciclos
+                    de 2 a 8 semanas, entregando al final de cada uno de estos
+                    ciclos código totalmente funcional. Los pasos que seguimos
+                    para cada iteración son:
+      list_1_html:   >
+                    <li>
+                      <p>
+                        <strong>Análisis:</strong>
+                        <br />
+                        Planteamiento de nuevas funcionalidades, proposición de soluciones y
+                        planificación de objetivos.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>Diseño:</strong>
+                        <br />
+                        Realización de maquetas (mockups), identificar riesgos, anticipar
+                        problemas y preparar alternativas.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>Implementación:</strong>
+                        <br />
+                        Desarrollo de las funcionalidades, pruebas unitarias y de integración.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>Pruebas:</strong>
+                        <br />
+                        Lorem ipsum
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>Aceptación:</strong>
+                        <br />
+                        Previsión de las nuevas funcionalidades, ajustes y correcciones necesarias.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>Lanzamiento:</strong>
+                        <br />
+                        Instalación en producción y feedback de los usuarios.
+                      </p>
+                    </li>
+      h3_2_html:    >
+                    Si estas montando por tu primera vez un negocio online, en
+                    este artículo intentamos explicar sobre que base partir a la
+                    hora de empezar a desarrollar tu proyecto web de la forma mejor.
+      h2_2_html:    <strong>CMS VS Desarrollo a medida</strong>
+      description_3_html: >
+                    Wordpress, Joomla, Drupal en el mundo de la informática
+                    vengon llamados CMS que es el acrónimo de Content Management
+                    System o en español sistema de administración de contenidos,
+                    son muy simple en el utilizo, con un par de clics tendremos
+                    una estructura de pagina web ya echa, incluido da base de
+                    datos para almánzar los datos, los archivo que cualquier
+                    programador puede modificar, y actualizaciones continua de
+                    parte del Cms mismo.
+                    Esta es la forma más rápida para crear una web dependiendo
+                    de la complejidad de los contenidos.
+                    Estos se utilizan principalmente cuando queremos crear un
+                    Blog, o algo que no requiere funcionalidad a medida.
+                    <br>
+                    <strong>Ventajas</strong>
+                    <br />
+                    La ventajas de tener un CMS es que cualquier persona sin
+                    demasiado conocimientos de diseño, programación, maquetacion,
+                    seo, pueda administrar los contenidos de su pagina web sin
+                    nigun tipo de desarrollo a medida.
+                    La segunda ventaja es que estos CMS tienen una grandes
+                    comunidades a nivel de soporte y de desarrolladores,
+                    con pocas consultas en un foro o simplemente con búsqueda
+                    en google podrás encontrar cualquier tipo de funcionalidad
+                    / modulo, componentes, plantillas etc..
+                    <strong>Desventajas</strong>
+                    <br />
+                    En primer lugar no obstante la continua acutualizaciones del
+                    Cms los problemas de seguridad siempre están atrás de la esquina.
+                    Aunque este Cms tenga bastante flexibilidad no podemos hacer
+                    todos como estamos pendientes de la estructura del cms,
+                    <strong>todo lo contrario si hacemos un desarrollo a medida</strong>.
+                    Otro punto de desventaja es que al instalar el cms vienen
+                    incorporados unos cuantos componentes que hacen que todo vaya
+                    mas despacio, esto comporta la optimizacion de la web para
+                    que el código sea menos pesado.
+                    El código es los mas importante en una web, tener código
+                    sucio afecta al posicionamiento y a la carga de la web.
+      quote_2_html:  >
+                    La mayoría de software de hoy en día es muy parecido a una
+                    pirámide egipcia, con millones de ladrillos puestos unos
+                    encima de otros, sin una estructura integral, hecha por la
+                    fuerza bruta y miles de esclavos. <br> - Alan Kay
+      h2_2_html:    <strong>Desarrollo a medida</strong>
+      description_4_html: >
+                    El <strong>desarrollo web a medida</strong> en primer lugar
+                    no lo puede hacer cualquiera proprio como si fuera un Wordpress
+                    que con el comprar un hosting y al instalar el Cms ya lo
+                    tienes funcionando. El desarrollo web a medida puede solo
+                    estar hecho de un equipo de profesionales con años de experencia
+                    y obsesionados de codigo limpio y optimizado hasta la funcionalidad
+                    mas pequeña, <span class="underline"> solo de esta forma
+                    se puede tener un negocio digital escalable y optimizado.</span>
+                    <br>
+                    Los Framework pueden estár hechos con diferente lenguaje y
+                    permiten de incluir librerías, modelos, funciones algo como
+                    los Plugins de un Cms solo más complicado de montar en sus
+                    estructura. Algunos de estos lenguaje son Php, Javascript,
+                    Python, ROR, este ultimo es el acrónimo de Ruby on Rails que
+                    es la tecnología que utiliza RockandRor para el <strong>desarrollo web</strong>.
+                    <br />
+                    <br />
+                    <strong>Ventajas</strong>
+                    <br />
+                    Al desarrollar un proyecto web con un framework te encontraras
+                    con ventaja como adaptabilidad, flexibilidad y por fin escalabilidad.
+                    Este tipo de desarrollo web a medida conjunto con la
+                    metodología MVP hace que tu proyecto salga en un fin de
+                    semana a un precio “relativamente” bajo con la funcionalidad
+                    que realmente necesitas tu negocio pudiendo a lo largo del
+                    tiempo ampliar el proyecto según las nueva necesidades.
+                    <br />
+                    <br />
+                    <strong>Algunos caso de exito hecho en Ruby on Rails.</strong>
+                    <br />
+                    Airbnb, Couchsurfing, Shopify, BaseCamp, ThemeForest, Fiverr, Github,
+                    Hulu, Indiegogo, KickStarter, Square, Shopify, Pixlr, Zendesk, 500px.
+                    <br>
+                    <br>
+                    <strong>Desventajas</strong>
+                    <br />
+                    El desarrollo web a medida solitamente es mas caro.
+      quote_3_html:  >
+                    Si los anunciantes se gastaran la misma cantidad de dinero
+                    en mejorar sus productos de lo que se gastan en anunciarlos,
+                    ni siquiera necesitarían.
+                    <br />
+                    anunciarlos. - Will Rogers
+      h2_3_html:    <strong>Conclusión</strong>
+      description_5_html: >
+                    Para decidir cual es la opción mejor para tu negocio solo
+                    hay que tener en cuenta los  factores clave:
+                      <strong>Tiempo, Dinero, Escabilidad</strong>.
+                    Si estas buscando un proyecto que se basa su unas cuantas
+                    funcionalidad clásica, como la pagina di quien somos o de
+                    contacto o añadir productos que no necesitan de complejidad
+                    particular y tener una parte de backend para que un
+                    administrador pueda manejar la web, entonces el CMS puede ser tu
+                    mejor opción de momento que hoy en día ya existen funcionalidad
+                    ya echa y si no la tienen buscar alguien que sepa del Cms en
+                    cuestion puede implementar la funcionalidad que falta gracias
+                    a una gran comunidad de soporte.
+                    <br>
+                    <br>
+                    De mientras si tu proyecto no es muy claro o es muy complejo
+                    "como la mayoría de los proyectos", lo mejor es empezar por
+                    etapas también cuando tienes un idea muy clara porque en fase
+                    de desarrollo el foco por cada funcionalidad va cogiendo
+                    detalles, es como ver lo que ya tuvimos muy claro con una lupa,
+                    y de repente nos daremos cuenta que la funcionalidad que nos
+                    pareciba muy clara necesitas mas analisis y gracias a un
+                    desarrollo web a medida es la elección perfecta.
+                    <br>
+                    <br>
+                    Si estas listo para lanzar tu proyecto pequeño o grande que
+                    sea y estas buscando un equipo de <strong>desarrollo web en
+                    Palma de Mallorca</strong> haz click en el botón aquí abajo
+                    y la primera consulta es gratis.
