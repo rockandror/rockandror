@@ -1,3 +1,5 @@
+#Get code from  https://gist.github.com/mupkoo/0741aa782e9678be1d40
+
 class @Facebook
 
     rootElement = null
@@ -43,6 +45,7 @@ class @Facebook
         '1348648721827038'
 
 Facebook.load()
+
 
 # App.Facebook =
 #
