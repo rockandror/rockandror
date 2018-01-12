@@ -1,4 +1,4 @@
-<section class="team">
+<section class="team" id="scroll_to_team">
   <div class="container">
     <div class="col-md-6 col-sm-6 hidden-xs">
       <div class="image"></div>
@@ -10,8 +10,9 @@
       <lead>
         <%= t'home_page.team.lead_html' %>
         <br>
+        <%= link_to t('home_page.team.btn_info'), team_path %>
+        <%= link_to '▼', '#scroll_to_works', class: 'pull-right visible-xs' %>
       </lead>
-      <%= link_to t('home_page.team.btn_info'), team_path %>
     </div>
   </div>
 </section>

@@ -1,4 +1,4 @@
-<section class='works'>
+<section class='works' id="scroll_to_works">
   <div class='container'>
     <div class='col-sm-6 col-md-6'>
       <h2><%= t'home_page.works.title_html' %></h2>
@@ -6,6 +6,7 @@
         <%= t'home_page.works.lead_html' %>
         <br />
         <%= link_to t('home_page.works.btn_info'), works_path %>
+        <%= link_to '▼', '#scroll_to_testimonials', class: 'pull-right visible-xs' %>
       </lead>
     </div>
     <div class='col-xs-12 col-sm-6 col-md-6 hidden-xs'>

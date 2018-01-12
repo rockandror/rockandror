@@ -61,25 +61,20 @@ es:
       description_boatjump_html: >
                                   Lorem ipsum dolor sit amet, consectetur adipiscing
                                   elit, sed do eiusmod tempor incididunt ut labore
-                                  et dolore magna aliqua. Ut enim ad minim veniam,
-                                  quis nostrud exercitation ullamco laboris nisi
-                                  ut aliquip ex ea commodo consequat. Duis aute irure dolor"
+                                  et dolore magna aliqua.
+
       title_oasiscatamaran_html: "Catamaran Oasis"
       description_oasiscatamaran_html: >
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip
-                                        ex ea commodo consequat. Duis aute irure dolor
+
       title_taskscheduler_html: Taskscheduler
       description_taskscheduler_html: >
                                         Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip
-                                        ex ea commodo consequat. Duis aute irure dolor
+
       btn_goto_project: Más sobre este proyecto
 
     contact:
