@@ -17,4 +17,7 @@ App.Home =
       else
         $('.home section.intro').css 'height', $(window).innerHeight()
 
+    $('.next-section').click (e) ->
+      $(e.target).fadeOut()
+
     App.Animate.initialize();
