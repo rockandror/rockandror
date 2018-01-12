@@ -1,0 +1,26 @@
+section{
+  &.page.contact,
+  &.page.greetings {
+    .header-bg{
+      @include radial-gradient(#f1b820, #cf891c);
+      padding: 3em 0;
+      margin-bottom: 2em;
+    }
+  }
+
+  &.contact{
+    .new_contact{
+      margin-top: 2rem;
+      textarea{
+        height: 150px;
+      }
+    }
+  }
+
+  &.greetings{
+    .fb-like{
+      display: block;
+      text-align: center;
+    }
+  }
+}

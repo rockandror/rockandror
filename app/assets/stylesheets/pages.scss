@@ -1,69 +1,9 @@
-//Ovveride border radius selector
-
 section{
-
-  .btn-back{
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 0.5rem;
-    display: inline-block;
-    margin-bottom: 1rem;
-    &:hover{
-      text-decoration: none;
-      border:1px solid transparent;
-      border-bottom: 1px solid #fff;
-    }
-  }
-
-  &.page.team .header-bg{
-    @include radial-gradient(#0174c5, #0361a3);
-  }
-  &.open-source{
-    @include radial-gradient(#5fd7db, #4babaf);
-    color: #fff;
-  }
-  &.best-tools .header-bg{
-    @include radial-gradient(#71c785, #439c58);
-  }
-  &.agile-development .header-bg{
-    @include radial-gradient(#ba6889, #a83a80);
-  }
-  &.page.works .header-bg{
-    @include radial-gradient(#a13644, #712630);
-  }
-
-  &.webdings .header-bg{
-    @include radial-gradient($gray-light, $gray);
-  }
-
-  &.startup .header-bg{
-    @include radial-gradient(#f75e47, #da503b);
-  }
-  &.seopage .header-bg{
-    @include radial-gradient(#f75e47, #da503b);
-  }
-  &.contact .row{
-    @include radial-gradient(#f1b820, #cf891c);
-  }
-  &.greetings .row{
-    @include radial-gradient(#f1b820, #cf891c);
-  }
-
-  .logo-rails{
-    width: 75px;
-    height: 30px;
-    margin-top: 2rem;
-    small{
-      color:#fff;
-      float: left;
-      font-size: 0.7em;
-    }
-  }
-
   &.page.team,
   &.page.open-source,
   &.page.best-tools,
   &.page.agile-development,
+  &.page.startup,
   &.page.works,
   &.page.boatjump,
   &.page.taskscheduler,
@@ -72,14 +12,16 @@ section{
   &.page.oasiscatamaran,
   &.page.contact,
   &.page.greetings,
-  &.page.startup,
-  &.page.seopage {
+  &.page.development-mallorca {
+
     padding-top: 5em;
     color: $gray;
+
     .header-bg{
       padding: 3em 0;
       margin-bottom: 2em;
     }
+
     .row{
       margin-left: 0;
       margin-right: 0;
@@ -116,120 +58,10 @@ section{
     }
   }
 
-  &.page.agile-development{
-    ul li{
-      padding-left: 1em;
-      border-left:8px solid;
-      margin-bottom: 1.5em;
-
-      &.analysis{
-        border-color: #2cc6d2;
-      }
-      &.design{
-        border-color: #0b98d0;
-      }
-      &.implementation{
-        border-color: #0a4366;
-      }
-      &.acceptance{
-        border-color: #0a4366;
-      }
-      &.test{
-        border-color: #c8202f;
-      }
-      &.launching{
-        border-color: #fa7903;
-      }
-    }
-  }
-
-  &.page.team{
-    .photos{
-      background: #f9f9f9;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      display: inline-block;
-      padding: 2em 0;
-      width: 100%;
-      .alessandro,
-      .senen,
-      .sebas{
-        text-align: left;
-        span{
-          font-size: 0.8em;
-        }
-        .text{
-          // max-width: 250px;
-          display: inline-block;
-          line-height: 1.6em;
-        }
-      }
-
-      img {
-        margin: 0 auto;
-      }
-
-      hr{
-        border-color: $gray-lighter;
-      }
-
-      ul{
-        margin: 0 auto;
-        margin-top: 20px;
-        li{
-          padding-left: 0;
-          cursor: pointer;
-          a{
-            display: inline-block;
-            padding: 0.5em;
-
-            svg{
-              max-width: 1em;
-              fill: $secondary-color;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &.page.webdings{
-    .logo{
-      max-height: 100px;
-      width: 100px;
-      margin-bottom: 1em;
-    }
-    img{
-      margin: 0 auto;
-      width: 100%;
-    }
-  }
-
-  &.page.taskscheduler{
-    .logo{
-      max-width: 200px;
-      fill: #007aa3;
-      margin-bottom: 1em;
-    }
-    img{
-      margin: 0 auto;
-      width: 100%;
-    }
-  }
-
-
-  &.startup{
-    .failure-image{
-      max-width: 300px;
-    }
-    .rails-logo{
-      max-width: 200px;
-    }
-
-  }
 
   &.startup,
-  &.seopage {
+  &.development-mallorca {
+
     .cont-introduction{
       padding:0;
       padding-top:1em;
@@ -237,13 +69,16 @@ section{
         text-decoration: underline;
       }
     }
+
     h1{
      line-height: 1em;
     }
+
     h2{
      font-size:1.4375rem;
      text-transform: capitalize;
     }
+
     .button{
        margin-top:20px;
        background: $optin;
@@ -253,318 +88,54 @@ section{
          background: darken($optin,10%);
        }
      }
-     blockquote, q {
-       quotes: none;
-       border:none;
-       font-family: Georgia, serif;
-       font-size: 19px;
-       &:before, &:after{
-         content: '';
-         content: none;
-       }
-     }
-     .curly-quotes{
-       &:after,&:before{
-         display: inline-block;
-         vertical-align: top;
-         height: 30px;
-         line-height: 48px;
-         font-size: 50px;
-         opacity: .6;
-       }
-       &:before{
-         content: '\201C';
-         margin-right: 4px;
-         margin-left: -8px;
-       }
-       &:after {
-         content: '\201D';
-         margin-left: 4px;
-         margin-right: -8px;
-       }
-     }
-     .rails-project{
-       img{
-         width: 170px;
-         display: block;
-         margin: 0 auto;
-         margin-bottom: 20px;
-         margin-top: 20px;
-       }
-       li{
-         list-style: none;
-         text-align: center;
-       }
-     }
-   }
 
-   &.seopage{
-    .cycles{
-      list-style-type: none;
+    blockquote, q {
+      quotes: none;
+      border:none;
+      font-family: Georgia, serif;
+      font-size: 19px;
+      &:before, &:after{
+        content: '';
+        content: none;
+      }
     }
-  }
 
-  &.contact{
-    .new_contact{
-      margin-top: 2rem;
-      textarea{
-        height: 150px;
+    .curly-quotes{
+      &:after,
+      &:before{
+        display: inline-block;
+        vertical-align: top;
+        height: 30px;
+        line-height: 48px;
+        font-size: 50px;
+        opacity: .6;
+      }
+
+      &:before{
+        content: '\201C';
+        margin-right: 4px;
+        margin-left: -8px;
+      }
+
+      &:after {
+        content: '\201D';
+        margin-left: 4px;
+        margin-right: -8px;
+      }
+    }
+
+    .rails-project {
+      img {
+        width: 170px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      li{
+        list-style: none;
+        text-align: center;
       }
     }
   }
-  &.greetings{
-    .fb-like{
-      display: block;
-      text-align: center;
-    }
-  }
-
 }
-
-.page-contact-now{
-  background: $yellow;
-  padding: 5em 0;
-  // margin-top: 3em;
-  margin-bottom: 3em;
-  color: #fff;
-  transition: all 0.5s ease;
-
-  &:hover{
-    background: darken($yellow, 5%);
-  }
-  h2{
-    font-size: 1.8em;
-  }
-
-  .btn{
-    text-transform: uppercase;
-    color: #fff;
-    border: 3px solid #fff;
-    font-weight: 700;
-    padding: 1.3em;
-    transition: all 0.5s ease;
-
-    &:hover{
-      background: #fff;
-      color: $yellow;
-    }
-
-    @include col-xs() {
-      max-width: 260px;
-    }
-  }
-
-}
-// .page{
-//
-//   h1{
-//     text-align: center;
-//     text-transform: uppercase;
-//     font-size: 3em;
-//   }
-//
-//   h2{
-//     color:$steel;
-//     text-transform: uppercase;
-//   }
-//
-//   text-align: center;
-//   .content{
-//     text-align: justify;
-//     text-justify: inter-word;
-//   }
-//
-//   ul{
-//     li{
-//       text-align: left;
-//       list-style-type:circle;
-//     }
-//   }
-//
-//   .row{
-//     max-width: 100%;
-//   }
-//
-//   .cont-introduction{
-//     margin: 0px auto;
-//     padding: 3em;
-//     span{
-//       text-transform: uppercase;
-//       font-weight: 600;
-//     }
-//     p{
-//       text-align: justify;
-//       text-justify: inter-word;
-//     }
-//   }
-//
-//   .back-end,.front-end,.tecnology{
-//     padding: 6em 3em;
-//   }
-//   .back-end{
-//     ul{
-//       font-size: 0.8em;
-//     }
-//   }
-//
-//   .tecnology{
-//     background: #3b3b3b;
-//     color:white;
-//     .content{
-//       text-align: center;
-//       .row{margin:0px auto;}
-//       h2{ color:#fff; }
-//       svg{
-//         width:30%;
-//         height: 100%;
-//         padding: 3rem 0rem;
-//         fill:white;
-//       }
-//     }
-//   }
-//
-//   &.boatjump{
-//     text-align: center;
-//     .img-background{
-//       background: image_url('boatjump/background-page-cut.jpg');
-//       background-position: center center;
-//     }
-//     h1{
-//       color:rgb(0,122,163);
-//     }
-//
-//     .cont-introduction{
-//       color:rgb(0,122,163);
-//       @extend .gradient-white;
-//       background: white;
-//     }
-//
-//     .brand-design{
-//       padding: 6em 3em;
-//       @extend .gradient-white;
-//       .content{
-//         svg{
-//           fill:rgb(0,122,163);
-//           width: 80%;
-//           height: auto;
-//           padding: 3rem 0rem;
-//         }
-//       }
-//     }
-//     .front-end{
-//       background:#f3f3f3;
-//     }
-//   }
-//
-//   &.webdings{
-//     h1{
-//       color:$steel;
-//     }
-//
-//     .img-background{
-//       background: image_url('webdings/background-page-cut.jpg');
-//       background-position: center center;
-//     }
-//     .cont-introduction{
-//       background:#fff;
-//       h2{
-//         @include text($steel,uppercase, null,null);
-//       }
-//     }
-//
-//     .brand-design{
-//       padding: 6em 3em;
-//       background: #3b3b3b;
-//       position: relative;
-//       .content{
-//         h2{ color:#fff;}
-//         svg{
-//           width: 200px;
-//           height: auto;
-//           padding: 3rem 0rem;
-//         }
-//         p{
-//           color:#fff;
-//         }
-//       }
-//     }
-//     .front-end{
-//       background:#f3f3f3;
-//     }
-//     .app-mobile{
-//       padding: 6em 3em;
-//       .content{
-//         .wrapperIphone{
-//           display: block;
-//           img{
-//             position: relative;
-//             z-index: 2;
-//             margin: 0px auto;
-//             width: 310px;
-//           }
-//         }
-//       }
-//     }
-//   }
-//
-//   &.eatbooking{
-//     h1{
-//       color:#f3cc33;
-//     }
-//
-//     .img-background{
-//       background:image_url('eatbooking/background-page-cut.jpg');
-//       background-position: center center;
-//     }
-//     .cont-introduction{
-//       color:white;
-//       @extend .pattern-eatbooking;
-//     }
-//   }
-//
-//   &.oasiscatamarans{
-//     h1{
-//       color: #5fc3e6;
-//     }
-//     .img-background{
-//       background: image_url('oasis-catamaran/background-page-cut.jpg');
-//       background-position: center center;
-//     }
-//     .cont-introduction{
-//       background: #f3f3f3;
-//     }
-//     .front-end{
-//      background:#f3f3f3;
-//     }
-//   }
-//
-//   &.contact{
-//     background: #fafafa;
-//     h1{
-//       @include text($steel,uppercase, 2.3em,center);
-//     }
-//     .new_contact label {
-//       display: none;
-//     }
-//     textarea{
-//       height: 150px;
-//     }
-//     .button.expand{
-//       background: $secondary-color;
-//       &:hover{
-//         background: darken($secondary-color,10%);
-//       }
-//     }
-//   }
-//
-//   &.greetings{
-//     h1{
-//       font-size:2.3em;
-//     }
-//   }
-//
-//   .contact-now{
-//     padding:3em 0em;
-//   }
-//
-// }

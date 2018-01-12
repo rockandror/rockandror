@@ -31,6 +31,15 @@
           color: $brand-primary;
         }
       }
+
+      .nav > li{
+        padding: 1em 0;
+        text-align: center;
+        ul{
+          text-align: center;
+          margin-left: 0;
+        }
+      }
     }
     .btn-contact{
       border:2px solid $secondary-color;
@@ -49,7 +58,7 @@
       .navbar-toggle{
         padding: 0;
         right: 0;
-        top: 15px;
+        top: 8px;
       }
     }
 
@@ -116,6 +125,9 @@
 
 
 .top-bar{
+  @include col-xs() {
+    position: fixed;
+  }
   width: 100%;
   position: absolute;
   margin-top: -120px;
@@ -125,48 +137,10 @@
   background: white;
   padding-left: 2em;
   padding-right: 2em;
-  // ul{
-  //   padding-top: 1.2em;
-  // }
-  // .logo{
-  //   text-align: left;
-  //   max-height: 75px;
-  // }
-  // .logo-center{
-  //   fill:$primary-color;
-  //   margin: 0px auto;
-  //   max-height: 90px;
-  //   max-width:230px;
-  //   margin-top: -10px;
-  // }
+
   .logo-horiz{
     width: 260px;
     fill:$primary-color;
     margin-top: 9px;
   }
-  // .top-bar-section{
-  //   ul{
-  //     li a{text-transform: uppercase;}
-  //     li.active:not(.has-form) a:not(.button){
-  //       color:$secondary-color;
-  //     }
-  //   }
-  //   .right{
-  //     strong{display: block;}
-  //     a{
-  //       font-weight: 300;
-  //       cursor: pointer;
-  //     }
-  //     li:not(.has-form) a:not(.button){
-  //       color:$secondary-color;
-  //       padding: 0em .6em;
-  //       border: 1px solid $secondary-color;
-  //       text-align:center;
-  //       &:hover{
-  //         background: $secondary-color;
-  //         color: #fff;
-  //       }
-  //     }
-  //   }
-  // }
 }

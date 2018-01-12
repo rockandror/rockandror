@@ -1,0 +1,10 @@
+section{
+  &.page.best-tools {
+
+    .header-bg{
+      @include radial-gradient(#71c785, #439c58);
+      padding: 3em 0;
+      margin-bottom: 2em;
+    }
+  }
+}

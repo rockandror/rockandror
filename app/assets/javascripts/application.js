@@ -18,9 +18,8 @@
 //= require 'greensock/TimelineMax'
 //= require 'greensock/jquery.gsap.js'
 
-
 var initialize_modules = function() {
-  App.Navbar.initialize()
+  App.Navbar.initialize();
   App.Home.initialize();
   App.Facebook.initialize();
 }

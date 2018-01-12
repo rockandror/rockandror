@@ -1,25 +1,3 @@
-.gi-2x{font-size: 2em;}
-.gi-3x{font-size: 3em;}
-.gi-4x{font-size: 4em;}
-.gi-5x{font-size: 5em;}
-
-.bg-grey-light{
-  background: $gray-super-lighter;
-}
-
-.btn-option{
-  background: $optin;
-  color: #fff;
-  border: 2px solid $optin;
-  transition: all 0.5s ease;
-
-  &:hover{
-    background: #fff;
-    color: $optin;
-    border: 2px solid $optin;
-  }
-}
-
 @mixin col-max-320() {
   @media (max-width: 320px) {
     @content;
@@ -50,7 +28,6 @@
     @content;
   }
 }
-
 
 @mixin text($color, $transform, $size, $align) {
   color: $color;
@@ -91,4 +68,26 @@
     background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
     background: radial-gradient(center, circle cover, $from 0%, $to 100%);
     background-color: $from;
+}
+
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+.bg-grey-light{
+  background: $gray-super-lighter;
+}
+
+.btn-option{
+  background: $optin;
+  color: #fff;
+  border: 2px solid $optin;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background: #fff;
+    color: $optin;
+    border: 2px solid $optin;
+  }
 }

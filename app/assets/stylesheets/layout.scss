@@ -10,19 +10,11 @@ body{
 }
 
 a {
-  color:$secondary-color;
-  &:hover{
-    color:darken($secondary-color,10%);
-  }
+  transition: all 0.5s ease;
 }
 
 ul{
   list-style: none;
-}
-
-.form-control{
-  border-radius: 0;
-  height: 60px;
 }
 
 .carousel-control.right,
@@ -38,6 +30,31 @@ ul{
   padding-left: 0;
 }
 
+section{
+  .logo-rails{
+    width: 75px;
+    height: 30px;
+    margin-top: 2rem;
+    small{
+      color:#fff;
+      float: left;
+      font-size: 0.7em;
+    }
+  }
+  .btn-back{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    &:hover{
+      text-decoration: none;
+      border:1px solid transparent;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
 .cookies-eu {
   margin-top:50px;
   background: #fff;
@@ -46,6 +63,39 @@ ul{
 @media (max-width: 767px) {
   .cookies-eu {
     position: fixed !important;
+  }
+}
+
+.shared-contact-now{
+  background: $yellow;
+  padding: 5em 0;
+  margin-bottom: 3em;
+  color: #fff;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background: darken($yellow, 5%);
+  }
+  h2{
+    font-size: 1.8em;
+  }
+
+  .btn{
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid #fff;
+    font-weight: 700;
+    padding: 1.3em;
+    transition: all 0.5s ease;
+
+    &:hover{
+      background: #fff;
+      color: $yellow;
+    }
+
+    @include col-xs() {
+      max-width: 260px;
+    }
   }
 }
 
@@ -94,6 +144,7 @@ ul{
     }
   }
 }
+
 //
 // @-moz-document url-prefix() {
 //   a {

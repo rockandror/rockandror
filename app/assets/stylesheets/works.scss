@@ -1,61 +1,72 @@
-.gal-container{
-	padding: 12px;
+section{
+  &.page.works{
 
-	a{
-		cursor: pointer;
-	}
-	.gal-item{
-		overflow: hidden;
-		padding: 3px;
+		.header-bg{
+      @include radial-gradient(#a13644, #712630);
+      padding: 3em 0;
+      margin-bottom: 2em;
+    }
 
-		.box{
-			height: 350px;
-			overflow: hidden;
+		.gal-container{
+			padding: 12px;
 
-			img{
-				height: 100%;
-				width: 100%;
-				object-fit:cover;
-				-o-object-fit:cover;
+			a{
+				cursor: pointer;
 			}
-		}
+			.gal-item{
+				overflow: hidden;
+				padding: 3px;
 
-		&:after{
-			transition: all 0.5s ease;
-			content: "";
-			font-family: 'Glyphicons Halflings';
-			background-color: rgba(0, 0, 0, 0);
-			position: absolute;
-			right: 3px;
-			left: 3px;
-			top: 3px;
-			bottom: 3px;
-			text-align: center;
-			line-height: 350px;
-			font-size: 30px;
-			color: #fff;
-		}
+				.box{
+					height: 350px;
+					overflow: hidden;
 
-		&:hover{
-			&:after{
-				content: "\e080";
-				background-color: rgba(0, 0, 0, 0.75);
+					img{
+						height: 100%;
+						width: 100%;
+						object-fit:cover;
+						-o-object-fit:cover;
+					}
+				}
+
+				&:after{
+					transition: all 0.5s ease;
+					content: "";
+					font-family: 'Glyphicons Halflings';
+					background-color: rgba(0, 0, 0, 0);
+					position: absolute;
+					right: 3px;
+					left: 3px;
+					top: 3px;
+					bottom: 3px;
+					text-align: center;
+					line-height: 350px;
+					font-size: 30px;
+					color: #fff;
+				}
+
+				&:hover{
+					&:after{
+						content: "\e080";
+						background-color: rgba(0, 0, 0, 0.75);
+					}
+
+					.name-customer {
+						opacity: 1;
+					}
+				}
+
+				.name-customer {
+					position: absolute;
+					z-index: 9;
+					top: 15px;
+					left: 15px;
+					color: white;
+					padding: 1em 2em;
+					opacity: 0;
+					font-size: 0.9em;
+				}
 			}
-
-			.name-customer {
-				opacity: 1;
-			}
-		}
-
-		.name-customer {
-			position: absolute;
-			z-index: 9;
-			top: 15px;
-			left: 15px;
-			color: white;
-			padding: 1em 2em;
-			opacity: 0;
-			font-size: 0.9em;
 		}
 	}
 }

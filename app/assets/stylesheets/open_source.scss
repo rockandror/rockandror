@@ -1,0 +1,10 @@
+section{
+  &.page.open-source {
+
+    .header-bg{
+      @include radial-gradient(#5fd7db, #4babaf);
+      padding: 3em 0;
+      margin-bottom: 2em;
+    }
+  }
+}

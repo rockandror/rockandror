@@ -1,0 +1,60 @@
+section{
+  &.page.team{
+
+    .header-bg{
+      @include radial-gradient(#0174c5, #0361a3);
+      padding: 3em 0;
+      margin-bottom: 2em;
+    }
+
+    .photos{
+      background: #f9f9f9;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      display: inline-block;
+      padding: 2em 0;
+      width: 100%;
+
+      .alessandro,
+      .senen,
+      .sebas{
+        text-align: left;
+        span{
+          font-size: 0.8em;
+        }
+
+        .text{
+          display: inline-block;
+          line-height: 1.6em;
+        }
+      }
+
+      img {
+        margin: 0 auto;
+      }
+
+      hr{
+        border-color: $gray-lighter;
+      }
+
+      ul{
+        margin: 0 auto;
+        margin-top: 20px;
+
+        li{
+          padding-left: 0;
+          cursor: pointer;
+          a{
+            display: inline-block;
+            padding: 0.5em;
+
+            svg{
+              max-width: 1em;
+              fill: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
