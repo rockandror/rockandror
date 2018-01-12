@@ -21,7 +21,6 @@
 var initialize_modules = function() {
   App.Navbar.initialize();
   App.Home.initialize();
-  App.Facebook.initialize();
 }
 
 $(function(){
