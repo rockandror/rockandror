@@ -4,6 +4,12 @@
   text-transform: uppercase;
   font-size: 0.8em;
 
+  @include col-sm() {
+    .nav > li > a {
+      padding: 10px 14px;
+    }
+  }
+
   #navbar{
     @include col-xs() {
       position: absolute;

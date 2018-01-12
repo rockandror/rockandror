@@ -46,7 +46,14 @@ es:
   common:
     btn_back: Volver
     btn_option_contact_html: Solicita tu consultoría <br class="visible-xs"> gratuita
-
+    accounting:
+      delivery_time: Tiempo de entrega
+      weekly: Cada Semana
+      hours_worked: Horas trabajadas
+      budget: Presupuesto
+      low: Bajo
+      medium: Medio
+      medium_heigh: Medio/Alto
   helper:
     contact_now:
       team: Te ha gustado nuestro equipo y nuestra filosofia?

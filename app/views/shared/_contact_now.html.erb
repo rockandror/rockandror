@@ -1,13 +1,9 @@
 <div class="page-contact-now col-xs-12">
-
-    <div class="col-xs-10 col-xs-offset-1 text-center">
-      <h2><%= contact_now %></h2>
-      <br />
-      <%= link_to new_contact_path, class: "btn" do %>
-        Solicita tu
-        <br class="visible-xs">
-        consultoría gratuita
-      <% end %>
-    </div>
-
+  <div class="col-xs-10 col-xs-offset-1 text-center">
+    <h2><%= contact_now %></h2>
+    <br />
+    <%= link_to new_contact_path, class: "btn" do %>
+      <%= t'common.btn_option_contact_html' %>
+    <% end %>
+  </div>
 </div>
