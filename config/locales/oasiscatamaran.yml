@@ -1,0 +1,110 @@
+es:
+  pages:
+    works:
+      oasiscatamaran:
+        meta:
+          title: Oasis Catamaran, Alquiler de barcos online de alcance internacional
+          description: >
+                        Boatjump es una plataforma online donde se pone en
+                        contacto a propietarios de barcos que quieren alquilar
+                        su embarcación con usuarios interesados en navegar
+          keywords:     Boatjump, Alquiler de barcos online, Ruby on rails
+
+        h1_title_html:  Oasis Catamaran,venta de excursiones en catamarán con
+                        todo tipo de servicios adicionales
+        lead: Aplicación web
+        general_description_html: >
+                              OasisCatamaran es una aplicación web para la venta
+                              de excursiones en catamarán con todo tipo de
+                              servicios adicionales con puerto base en Palma
+                              de Mallorca.
+                              La embarcación ha sido completamente remodelada
+                              en 2015, ofreciendo un diseño y estructura concebidos
+                              especialmente para la organización de Eventos y
+                              Excursiones a bordo.
+        h2_1_html: El desafío
+        description_1_html: >
+                          Nuestra mision desde el principio ha sido diseñar una
+                          interfaz para Desktop y solo en un segundo momento
+                          convertir la Applicacion para Tablet y Smarthone, y
+                          implementar 3 idiomas, ofreciendo una gestión total para
+                          los dueños del catamaran, donde se pueden gestionar y
+                          crear las excursiones que se pondrán a la venta en la web.
+
+        h2_2_html: El comienzo
+        description_2_html: >
+                          En la primera reunión con el CEO Vanesa Moreno
+                          ha sido intender cual era el objectivo de la web,
+                          de momento que era la primera web que venia creada
+                          por esto cliente. Una vez definido los hitos de los
+                          primeros 3 meses y hemos empezado seguiendo
+                          como siempre la metodologia MVP y el
+                          <a href="agile-development">desarrollo Agile</a>.
+        h2_3_html: Servicios ofrecido
+        list_3_html: >
+                    <li><p>Mock-up de entendimiento para el cliente</p></li>
+                    <li><p>Creación de un layout sobre sugerencia de otras web de parte del cliente</p></li>
+                    <li><p>Creación arquitectura de la aplicacion</p></li>
+                    <li><p>Desarrollo Front-end</p></li>
+                    <li><p>Desarrollo Back-end</p></li>
+                    <li><p>Desarrollo Responsive</p></li>
+                    <li><p>Gestión de los contenidos dinámicos multi-idioma</p></li>
+                    <li><p>Gestor de agentes comerciales</p></li>
+                    <li><p>Gestor de reservas</p></li>
+                    <li><p>Gestor multibarco</p></li>
+                    <li><p>Integración RedSys</p></li>
+
+        h2_4_html: Front-End
+        description_4_html: >
+                          El FrontEnd de Catamaran Oasis se ha diseñado en
+                          acorde a la imagen coorporativa de la marca.
+                          Con un poco de esmero uniendo las expectativas del
+                          cliente y los conceptos principales de usabilidad se
+                          ha conseguido una web comercial al gusto del cliente,
+                          donde se puede ver claramente todas las excursiones
+                          con los servicios extras que se ofrecen.
+
+        h2_5_html: Responsive
+        description_5_html: >
+                          Después una primera version Desktop, hemos diseñado y
+                          desarrollado una interfaz que se adpata a todos los
+                          dispositivos móviles  añadiendo una mejora en la
+                          navigacion para el usuario.
+                          El diseño para tablets tanto con orientación vertical
+                          como con orientación horizontal y a todo tipo de
+                          teléfonos móviles y navegadores web.
+
+        h2_6_html: Back-End
+        description_6_html: >
+                          El backend ofrece una gestión total para los dueños del
+                          catamaran, donde se pueden gestionar y crear las
+                          excursiones que se pondrán a la venta en la web,
+                          se ofrece una gestión contable con listado de facturas
+                          y control de pagos.
+                          Todo bajo un depurado trabajo de diseño de personalización
+                          y adaptabilidad a tablets.
+                          La página de venta es totalmente dinámica, configurable
+                          y posicionable desde el BackOffice.
+                          Se ha realizado una integración con RedSys para la
+                          venta de tickets online. Con un poco de esmero uniendo
+                          las expectativas del cliente y los conceptos principales
+                          de usabilidad se ha conseguido una web comercial al
+                          gusto de todos donde poder ver claramente todas las
+                          excursiones con los servicios extras que se ofrecen.
+
+
+
+        h2_tecnology_html: <strong>Tecnología</strong> utilizada
+        tecnology_html: >
+                        RubyOnRails / PostgreSQL / Rspec / Bootstrap / Sass /
+                        Diseño responsive
+        h2_customer_html: Que dice el cliente
+        customer_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.

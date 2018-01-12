@@ -1,0 +1,89 @@
+es:
+  pages:
+    works:
+      eatbooking:
+        meta:
+          title: Eatbooking Alquiler de barcos online de alcance internacional
+          description: >
+                        Boatjump es una plataforma online donde se pone en
+                        contacto a propietarios de barcos que quieren alquilar
+                        su embarcación con usuarios interesados en navegar
+          keywords:     Boatjump, Alquiler de barcos online, Ruby on rails
+
+        h1_title_html:  Libro de reservas electrónico para restaurantes sin
+                        comisiones.
+        lead: Aplicación web
+        general_description_html: >
+                              Eatbooking es una aplicación web para la reserva
+                              de restaurantes sin comisiones.
+                              Ofrece un sistema de widgets que permite
+                              a los propietarios de restaurantes de eatbooking
+                              integrar el widget de reservas con disponibilidad
+                              en tiempo real en cualquier página web de manera
+                              sencilla.
+
+        h2_1_html: El desafío
+        description_1_html: >
+                          El primer contacto con Eatbooking, viene gracias a
+                          Raimond Garcia, del team <a href="http://www.prorubyteam.com/" target="blank">
+                           prorubyteam</a> nuestro segundo cliente desde que el
+                           equpo se formò. Desde el principio la aplicacion ya
+                           existia, pero tenia mucho fallos y hemos tenido que
+                           replantare todo, hemos vuelto a diseñar toda la App a nivel
+                           de codigo y desarrollado una interfaz para Tablet.
+
+        h2_2_html: El comienzo
+        description_2_html: >
+                          En la primera reunión con el CEO Francisco de la Mata
+                          ha sido intender cual era el objectivo de la web,
+                          de momento que era la primera web que venia creada
+                          por esto cliente. Una vez definido los hitos de los
+                          primeros 3 meses y hemos empezado seguiendo
+                          como siempre la metodologia MVP y el
+                          <a href="agile-development">desarrollo Agile</a>.
+        h2_3_html: Servicios ofrecido
+        list_3_html: >
+                    <li><p>Replanteamiento Mock-up de entendimiento para el cliente</p></li>
+                    <li><p>Creación arquitectura de la aplicacion</p></li>
+                    <li><p>Desarrollo Back-end para Ipad</p></li>
+                    <li><p>Motor de reservas online en tiempo real</p></li>
+                    <li><p>Widget de reservas integrable</p></li>
+                    <li><p>Configura tu calendario de apertura</p></li>
+                    <li><p>Define los días de vacaciones</p></li>
+                    <li><p>Organiza tu restaurante por zonas</p></li>
+                    <li><p>Gestión multirestaurante</p></li>
+
+        h2_4_html: Back-End
+        description_4_html: >
+                          El backend ofrece una gestión total para los dueños del
+                          catamaran, donde se pueden gestionar y crear las
+                          excursiones que se pondrán a la venta en la web,
+                          se ofrece una gestión contable con listado de facturas
+                          y control de pagos.
+                          Todo bajo un depurado trabajo de diseño de personalización
+                          y adaptabilidad a tablets.
+                          La página de venta es totalmente dinámica, configurable
+                          y posicionable desde el BackOffice.
+                          Se ha realizado una integración con RedSys para la
+                          venta de tickets online. Con un poco de esmero uniendo
+                          las expectativas del cliente y los conceptos principales
+                          de usabilidad se ha conseguido una web comercial al
+                          gusto de todos donde poder ver claramente todas las
+                          excursiones con los servicios extras que se ofrecen.
+
+
+
+        h2_tecnology_html: <strong>Tecnología</strong> utilizada
+        tecnology_html: >
+                        RubyOnRails / PostgreSQL / Rspec / Bootstrap / Sass /
+                        Diseño Ipad
+        h2_customer_html: Que dice el cliente
+        customer_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.

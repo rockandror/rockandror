@@ -4,7 +4,7 @@
 
 <section class="page seopage">
   <div class="row header-bg">
-    <div class="col-xs-10 col-xs-offset-1">
+    <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
       <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
       <h1>
         Desarrollo web en <strong>palma de Mallorca</strong>
@@ -14,19 +14,17 @@
     </div>
   </div>
 
-  <div class='col-xs-10 col-xs-offset-1 cont-introduction text-center'>
+  <div class='col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 cont-introduction text-center'>
     <blockquote class='curly-quotes'>
       Es fácil tener ideas de negocio. Lo más complicado es aplicarlas en el
       mundo real – Guy Kawasaki
     </blockquote>
-    <figure>
-      <%= image_tag "desarrollo-web-palma/desarrolloweb.jpg", :alt => "Desarrollo web Palma de Mallorca", :title => "Desarrollo web Palma de Mallorca", class: 'img-responsive' %>
-    </figure>
+    <%= image_tag "desarrollo-web-palma/desarrolloweb.jpg", :alt => "Desarrollo web Palma de Mallorca", :title => "Desarrollo web Palma de Mallorca", class: 'img-responsive center-block' %>
   </div>
   <br>
 
   <div>
-    <div class='col-xs-10 col-xs-offset-1 content'>
+    <div class='col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 content'>
       <p class='text-center'>
         Si quieres <%= link_to 'lanzar tu Startup', startup_path, title: 'lanzar tu Startup' %>
         o Negocio con metodología Agile y MVP, RockAndRor puede ser lo que estas
@@ -38,60 +36,82 @@
       </p>
     </div>
 
-    <div class='col-xs-10 col-xs-offset-1 text-center'>
+    <div class='col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 text-center'>
       <hr />
       <h3>Con tal de obtener el mayor valor posible con
         el mínimo esfuerzo seguimos fielmente los principios del desarrollo
         agile.
       </h3>
       <br />
-      <%= link_to new_contact_path, class: "btn btn-primary btn-lg" do %>
-        Solicita tu
-        <br class="visible-xs">
-        consultoría
+      <%= link_to new_contact_path, class: "btn btn-option btn-lg" do %>
+        Solicita tu consultoría
         <br class="visible-xs">
         gratuita
       <% end %>
       <hr />
     </div>
 
-
-
-    <div class='col-xs-10 col-xs-offset-1'>
+    <div class='col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2'>
       <h2>
         <strong>Como trabajamos</strong>
       </h2>
-      <p>Realizamos un desarrollo por versiones incremental, ciclos de 2 a 8
+      <p>
+        Realizamos un desarrollo por versiones incremental, ciclos de 2 a 8
         semanas, entregando al final de cada uno de estos ciclos código totalmente
         funcional. Los pasos que seguimos para cada iteración son:
       </p>
-      <ul class='cycles'>
+      <ul class="no-padding-left">
         <li>
-          <strong>Análisis:</strong>
-          <p>Planteamiento de nuevas funcionalidades, proposición de soluciones y planificación de objetivos.</p>
+          <p>
+            <strong>Análisis:</strong>
+            <br />
+            Planteamiento de nuevas funcionalidades, proposición de soluciones y
+            planificación de objetivos.
+          </p>
         </li>
         <li>
-          <strong>Diseño:</strong>
-          <p>Realización de maquetas (mockups), identificar riesgos, anticipar problemas y preparar alternativas.</p>
+          <p>
+            <strong>Diseño:</strong>
+            <br />
+            Realización de maquetas (mockups), identificar riesgos, anticipar
+            problemas y preparar alternativas.
+          </p>
         </li>
         <li>
-          <strong>Implementación:</strong>
-          <p>Desarrollo de las funcionalidades, pruebas unitarias y de integración.</p>
+          <p>
+            <strong>Implementación:</strong>
+            <br />
+            Desarrollo de las funcionalidades, pruebas unitarias y de integración.
+          </p>
         </li>
         <li>
-          <strong>Pruebas:</strong>
-          <p>Lorem ipsum</p>
+          <p>
+            <strong>Pruebas:</strong>
+            <br />
+            Lorem ipsum
+          </p>
         </li>
         <li>
-          <strong>Aceptación:</strong>
-          <p>Previsión de las nuevas funcionalidades, ajustes y correcciones necesarias.</p>
+          <p>
+            <strong>Aceptación:</strong>
+            <br />
+            Previsión de las nuevas funcionalidades, ajustes y correcciones necesarias.
+          </p>
         </li>
         <li>
-          <strong>Lanzamiento:</strong>
+          <p>
+            <strong>Lanzamiento:</strong>
+            <br />
+            Instalación en producción y feedback de los usuarios.
+          </p>
         </li>
-        <p>Instalación en producción y feedback de los usuarios.</p>
-        <p>Si estas montando por tu primera vez un negocio online, en este artículo  intentamos explicar sobre que base partir a la hora de empezar a desarrollar tu proyecto web de la forma mejor.</p>
       </ul>
+      <hr />
+      <h3>Si estas montando por tu primera vez un negocio online, en este artículo
+        intentamos explicar sobre que base partir a la hora de empezar a desarrollar
+        tu proyecto web de la forma mejor.
+      </h3>
+      <hr />
       <h2>
         <strong>CMS VS Desarrollo a medida</strong>
       </h2>
@@ -100,13 +120,15 @@
         Esta es la forma más rápida para crear una web dependiendo de la complejidad de los contenidos.
         Estos se utilizan principalmente cuando queremos crear un Blog, o algo que no requiere funcionalidad a medida.
       </p>
-      <strong>Ventajas</strong>
       <p>
+        <strong>Ventajas</strong>
+        <br />
         La ventajas de tener un CMS es que cualquier persona sin demasiado conocimientos de diseño, programación, maquetacion, seo, pueda administrar los contenidos de su pagina web sin nigun tipo de desarrollo a medida.
         La segunda ventaja es que estos CMS tienen una grandes comunidades a nivel de soporte y de desarrolladores, con pocas consultas en un foro o simplemente con búsqueda en google podrás encontrar cualquier tipo de funcionalidad / modulo, componentes, plantillas etc..
       </p>
-      <strong>Desventajas</strong>
       <p>
+        <strong>Desventajas</strong>
+        <br />
         En primer lugar no obstante la continua acutualizaciones del Cms los problemas de seguridad siempre están atrás de la esquina.
         Aunque este Cms tenga bastante flexibilidad no podemos hacer todos como estamos pendientes de la estructura del cms, <strong>todo lo contrario si hacemos un desarrollo a medida</strong>.
         Otro punto de desventaja es que al instalar el cms vienen incorporados unos cuantos componentes que hacen que todo vaya mas despacio, esto comporta la optimizacion de la web para que el código sea menos pesado.
@@ -123,37 +145,26 @@
         <br>
         Los Framework pueden estár hechos con diferente lenguaje y permiten de incluir librerías, modelos, funciones algo como los Plugins de un Cms solo más complicado de montar en sus estructura. Algunos de estos lenguaje son Php, Javascript, Python, ROR, este ultimo es el acrónimo de Ruby on Rails que es la tecnología que utiliza RockandRor para el <strong>desarrollo web</strong>.
       </p>
-      <strong>Ventajas</strong>
+
       <p>
+        <strong>Ventajas</strong>
+        <br />
         Al desarrollar un proyecto web con un framework te encontraras con ventaja como adaptabilidad, flexibilidad y por fin escalabilidad.
         Este tipo de desarrollo web a medida conjunto con la metodología MVP hace que tu proyecto salga en un fin de semana a un precio “relativamente” bajo con la funcionalidad que realmente necesitas tu negocio pudiendo a lo largo del tiempo ampliar el proyecto según las nueva necesidades.
       </p>
       <p>
         <strong>Algunos caso de exito hecho en Ruby on Rails.</strong>
-        <ul>
-          <li>Airbnb</li>
-          <li>Couchsurfing</li>
-          <li>Shopify</li>
-          <li>BaseCamp</li>
-          <li>ThemeForest</li>
-          <li>Fiverr</li>
-          <li>Github</li>
-          <li>Hulu</li>
-          <li>Indiegogo</li>
-          <li>KickStarter</li>
-          <li>Square</li>
-          <li>Shopify</li>
-          <li>Pixlr</li>
-          <li>Zendesk</li>
-          <li>500px</li>
-        </ul>
+        <br />
+        Airbnb, Couchsurfing, Shopify, BaseCamp, ThemeForest, Fiverr, Github,
+        Hulu, Indiegogo, KickStarter, Square, Shopify, Pixlr, Zendesk, 500px.
       </p>
-      <strong>Desventajas</strong>
       <p>
+        <strong>Desventajas</strong>
+        <br />
         El desarrollo web a medida solitamente es mas caro.
       </p>
       <hr>
-      <blockquote class='curly-quotes'>
+      <blockquote class='curly-quotes text-center'>
         Si los anunciantes se gastaran la misma cantidad de dinero en mejorar
         sus productos de lo que se gastan en anunciarlos, ni siquiera necesitarían
         anunciarlos. - Will Rogers</blockquote>
@@ -172,6 +183,7 @@
         si no la tienen buscar alguien que sepa del Cms en cuestion puede implementar
         la funcionalidad que falta gracias a una gran comunidad de soporte.
         <br>
+        <br>
         De mientras si tu proyecto no es muy claro o es muy complejo "como la mayoría
         de los proyectos", lo mejor es empezar por etapas también cuando tienes una
         idea muy clara porque en fase de desarrollo el foco por cada funcionalidad
@@ -179,6 +191,7 @@
         y de repente nos daremos cuenta que la funcionalidad que nos pareciba muy
         clara necesitas mas analisis y gracias a un desarrollo web a medida es la
         elección perfecta.
+        <br>
         <br>
         Si estas listo para lanzar tu proyecto pequeño o grande que sea y estas buscando
         un equipo de <strong>desarrollo web en Palma de Mallorca</strong> haz click

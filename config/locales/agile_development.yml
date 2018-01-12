@@ -1,0 +1,75 @@
+es:
+  pages:
+    agile_developer:
+      meta:
+        title: Desarrollo agile en Ruby on Rails
+        description: >
+                      Rockandror desarrolla paginas web y aplicaciones flexibles
+                      y dinnamicos con Ruby on Rails siguiendo la metodología Agile
+        keywords: Ruby on Rails, MVC, Metodlogia Agile
+
+      h2_1_title: Dividimos el objetivo final en hitos a corto plazo que recorren el siguiente flujo de trabajo.
+      h2_2_title: ¿Qué es la metodología Agile?
+      description_html: >
+                        Una startup es una joven empresa que se desarrolla en un
+                        ecosistema de incertidumbre, por lo que necesita poder
+                        realizar cambios en sus proyectos de manera rápida.
+                        Gracias a los principios del desarrollo agíl y la architetura
+                        MVC en Ruby on Rails permite desarrollar proyectos
+                        complejos muy rápidamente, reduciendo el porcentaje de
+                        código que necesita, es decir programación más rápida e
+                        intuitiva flexible.
+      analysis_title: 01. Analisis
+      analysis_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      design_title: 02. Diseño
+      design_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      implementation_title: "03. Implementacion"
+      implementation_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      test_title: 04. Pruebas
+      test_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      acceptance_title: 05. Aceptacion
+      acceptance_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+      launching_title: 06. Lanzamiento
+      launching_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.

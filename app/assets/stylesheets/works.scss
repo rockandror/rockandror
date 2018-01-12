@@ -20,21 +20,26 @@
 			}
 		}
 
+		&:after{
+			transition: all 0.5s ease;
+			content: "";
+			font-family: 'Glyphicons Halflings';
+			background-color: rgba(0, 0, 0, 0);
+			position: absolute;
+			right: 3px;
+			left: 3px;
+			top: 3px;
+			bottom: 3px;
+			text-align: center;
+			line-height: 350px;
+			font-size: 30px;
+			color: #fff;
+		}
+
 		&:hover{
-			
 			&:after{
 				content: "\e080";
-				font-family: 'Glyphicons Halflings';
 				background-color: rgba(0, 0, 0, 0.75);
-				position: absolute;
-				right: 3px;
-				left: 3px;
-				top: 3px;
-				bottom: 3px;
-				text-align: center;
-			  line-height: 350px;
-			  font-size: 30px;
-			  color: #fff;
 			}
 
 			.name-customer {

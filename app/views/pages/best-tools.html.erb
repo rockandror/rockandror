@@ -1,44 +1,51 @@
-<% title t'pages.tecnology.meta.title' %>
-<% meta_tag :description, t('pages.tecnology.meta.description') %>
-<% meta_tag :keywords, t('pages.tecnology.meta.keywords') %>
+<% title t'pages.best_tools.meta.title' %>
+<% meta_tag :description, t('pages.best_tools.meta.description') %>
+<% meta_tag :keywords, t('pages.best_tools.meta.keywords') %>
 
 <section class="page best-tools">
   <div class="row header-bg">
-    <div class="col-xs-10 col-xs-offset-1">
+    <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
       <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
       <h1>
-        <%= t'home_page.tecnology.title_html' %>
+        <%= t'home_page.best_tools.title_html' %>
       </h1>
       <%= render 'shared/logo_rails' %>
       <br />
     </div>
   </div>
 
-  <div class="col-xs-10 col-xs-offset-1">
-    <br />
-    <h2>
-      <%= t'pages.tecnology.h2_1_title' %>
-    </h2>
-    <%= image_tag "tools/rails.jpg", class: 'img-responsive' %>
-    <br />
-    <p>
-      <%= t'pages.tecnology.description_html' %>
-    </p>
+  <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+    <h2><%= t'pages.best_tools.h2_1_title' %></h2>
+    <div class="row">
+      <p>
+        <%= t'pages.best_tools.description_top_html' %>
+      </p>
+      <br />
+      <div class="col-md-12 no-padding">
+        <%= image_tag "tools/ror-benefits.png", class: 'img-responsive center-block' %>
+      </div>
+    </div>
+
+    <hr />
+      <p>
+        <%= t'pages.best_tools.description_html' %>
+      </p>
     <hr />
     <h2>
-      <%= t'pages.tecnology.h2_2_title' %>
+      <%= t'pages.best_tools.h2_2_title' %>
     </h2>
+    <br />
     <%= image_tag "tools/ionic.jpg", class: 'img-responsive' %>
     <br />
     <p>
-      <%= t'pages.tecnology.description_2_html' %>
+      <%= t'pages.best_tools.description_2_html' %>
     </p>
     <hr />
     <h2>
-      <%= t'pages.tecnology.h2_3_title' %>
+      <%= t'pages.best_tools.h2_3_title' %>
     </h2>
     <p>
-      <%= t'pages.tecnology.description_3_html' %>
+      <%= t'pages.best_tools.description_3_html' %>
     </p>
   </div>
 </section>

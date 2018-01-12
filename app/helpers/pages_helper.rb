@@ -25,7 +25,7 @@ module PagesHelper
       t 'helper.contact_now.startup'
     elsif params[:action] == "desarrollo-web-palma-de-mallorca"
       t 'helper.contact_now.desarrollo_web_palma_de_mallorca'
-    elsif params[:action] == "boatjump" || params[:action] == "webdings" || params[:action] == "eatbooking" || params[:action] == "oasiscatamaran"
+    elsif params[:action] == "boatjump" || params[:action] == "webdings" || params[:action] == "eatbooking" || params[:action] == "oasiscatamaran" || params[:action] == "taskscheduler"
       t 'helper.contact_now.works_customer'
     end
   end

@@ -7,6 +7,18 @@
   background: $gray-super-lighter;
 }
 
+.btn-option{
+  background: $optin;
+  color: #fff;
+  border: 2px solid $optin;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background: #fff;
+    color: $optin;
+    border: 2px solid $optin;
+  }
+}
 
 @mixin col-max-320() {
   @media (max-width: 320px) {

@@ -1,0 +1,133 @@
+es:
+  pages:
+    team:
+      meta:
+        title: Equipo de desarrollo agile en Ruby on Rails en Palma de Mallorca
+        description: >
+                      Desarrollo de paginas web y aplicaciones flexibles y
+                      dinnamicos con codigo abierto Open source en Ruby on Rails
+                      siguiendo la metodología Agile.
+        keywords:     RockandRor, Alessandro Cuoghi, Senén Rodero, Sebastià Roig,
+                      Open source, Ruby on Rails, MVC, Metodlogia Agile
+
+      h1_title:       Rock And Ror, equipo de desarrollo en Ruby On Rails
+      lead:           Ofrecemos un enfoque personal y efectivo en cada proyecto que participamos.
+
+      h2_1_title:     Quien es RockAndRor
+      description_1_html: >
+                        Somos un equipo formado por dos ingenieros Españoles y
+                        un diseñador Italiano cada uno con <strong>más de 15 años de
+                        experenica dedicado exclusivamente al sector del desarrollo
+                        web y moviles</strong> entusiastas de las
+                        nuevas tecnologías.
+                        Nuestros desarrollos web a medida están diseñados tanto
+                        para <a href="startup">lanzar start-ups</a> como para grandes empresas.
+                        <br>Co-foundador de una idea que poco a poco se hizo realidad
+                        y se materializó gracias a los clientes que confiaron en
+                        nosotros desde el prinicipio y al continuo esfuerzo en
+                        aprender toda la <a href="best-tools">tecnologia mejores</a> que hay hoy en dia
+                        en el mercado.
+
+      h2_2_title: El comienzo
+      description_2_html: >
+                          La necesidad de crear applicaciones web y moviles con
+                          calidad del codigo, interfaces funcionales y apetible
+                          a la vista  siempre ha sido un reto por cada informatico
+                          autonomo.
+                          Decimos la verdad, <strong>fabricar un producto solido y que
+                          funcione no es cosa simple</strong>, y una persona sola puede
+                          llevar a conseguirlo pero en que tiempo y con que calidad
+                          y a con cuanto estrés?
+                          <br> En RockAndRor dudamos mucho que
+                          un solo indviduo pueda conseguir proyectos complejos como
+                          el lanzamiento de una startup tecnologica, no obstante
+                          sea un FullStack, el mundo informatico es rapído y
+                          dificil, y saber todos es imposible.
+
+
+      h2_3_title: >
+                  Juntar el conocimiento, adotar la buena metodología, juntar
+                  las fuerzas en una unica dirección hizo poder crear RockAndRor.
+
+      title_cuoghi:   Alessandro Cuoghi
+      skill_cuoghi_html: >
+                      <span>Diseñador UI/UX <br /> Desarrollador <br /> Co-fundador</span>
+      description_cuoghi: >
+                      Alessandro es la mente que da color y vida a las
+                      creaciones de RockAndRoR. Experimentado diseñador
+                      que le gusta ofrecer interficies de usuario
+                      bonitas, sencillas y usables.
+
+      title_rodero: Senén Rodero
+      skill_rodero_html: >
+                    <span>Ingeniero Informático <br /> Consultor / Desarrollador
+                    <br /> Co-fundador</span>
+      description_rodero: >
+                          A Senén le gusta probar nuevas tecnológías y herramientas
+                          que nos puedan aportar mejoras competitivas.
+                          En constante aprendizaje. Desarrollador experto en
+                          RoR/Java/Php.
+
+      title_roig: Sebastià Roig
+      skill_roig_html: >
+                  <span>Ingeniero de Software <br /> Desarrollador <br />
+                  Co-fundador</span>
+      description_roig: >
+                          Sebastià Valora su tiempo como ninguno, le apasionan
+                          las metodologías ágiles y las buenas prácticas en el
+                          desarrollo del software. Desarrollador experto en
+                          RoR/Java.
+
+      h2_4_title: Nuestra filosofia es honestad, transparencia y etica.
+      strong_4_1_title: Honestad
+      description_4_1_html: >
+                            Se supone que en una relación de trabajo todo irá bien,
+                            pero no siempre eso pasa, hay varias razones por lo
+                            cual un cliente puede querer cambiar:
+                            <br />falta economica, insatisfacción, falta de tiempo,
+                            o un obstáculo inesperado, cualquier sea a nosotros
+                            nos gusta tener un contrato que ayude el cliente liberarse
+                            de nosotros en cualquier momento y sin ninguna limitación,
+                            tambien para nosotros reservamos el mismo trato,
+                            liberanos da un cliente que de repente es incapacidado
+                            a seguir o intender la correcta forma llevar un proyecto.
+
+      strong_4_2_title: Transparencia
+      description_4_2_html: >
+                            Creemos en la transparencia; todo lo que hacemos se
+                            analyza para proveer un presupuesto lo más cercano al
+                            proyecto. Realizamos de forma atenta y completa cada
+                            tarea, producimos reportes de las horas invertida diariamente
+                            que sea de gestion, diseño, analysis, desarrollo, etc..
+                            consultable en tiempo real direcatmente en tu
+                            ordenador.
+                            Durante el desarrollos estamos comprometidos a evaluar
+                            retrospecivamente, junto con el cliente si se cumplió
+                            nuestra promesa de costo y tiempo, así como la calidad
+                            del producto. <strong>Todos los códigos y productos materiales
+                            son propiedad del cliente, así como todos los demás
+                            servicios están a nombre del cliente.</strong>
+                            El código es probado y documentado para que el equipo
+                            después de nosotros pueda llevar adelante el trabajo
+                            desde el primer día.
+
+      strong_4_3_title:     Etica
+      description_4_3_html: >
+                            Nuestra Etica se resume en los dos puntos de arriba,
+                            simplemente <strong>preferimos un enfoque cientifico donde
+                            los datos son verificables</strong>.<br> Cuando creemos
+                            que tenemos una idea genial y que el proyecto va a
+                            tener exito casi siempre lo quieremos todos
+                            en el imediato, quieremos que el proyecto sea online con
+                            todos lo que sirve, pero la mayoria de la veces esta actitud
+                            es la que causa el <a href="startup">principal fallo de una StartUp</a>.
+                            Entedemos como el entusiasmo puede tomar el control
+                            de la razón, pero el comienzo de un proyecto es la
+                            pate con la mayor incertidumbre por esto preferimos
+                            tener los pies encima de la tierra y trabajar con
+                            datos verificables.
+                            <br />
+                            Somos empresarios, y no quieremos clientes solo para
+                            ver nuestro portfolio llenarse de clientes, preferimos
+                            tener proyectos que llegan al exito en el tiempo,
+                            y no vaciar el borsillos de los inversores.

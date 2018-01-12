@@ -1,19 +1,5 @@
 //Ovveride border radius selector
-.form-control{
-  border-radius: 0;
-  height: 60px;
-}
 
-.carousel-control.right,
-.carousel-control.left {
-  background: transparent;
-}
-
-.accounting{
-  padding: 3em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
 section{
 
   .btn-back{
@@ -26,14 +12,12 @@ section{
       text-decoration: none;
       border:1px solid transparent;
       border-bottom: 1px solid #fff;
-
     }
   }
 
   &.page.team .header-bg{
     @include radial-gradient(#0174c5, #0361a3);
   }
-
   &.open-source{
     @include radial-gradient(#5fd7db, #4babaf);
     color: #fff;
@@ -48,34 +32,16 @@ section{
     @include radial-gradient(#a13644, #712630);
   }
 
-  &.boatjump .header-bg{
-    @include radial-gradient(#007aa3, #025773);
-  }
-
   &.webdings .header-bg{
     @include radial-gradient($gray-light, $gray);
-  }
-
-  &.taskscheduler .header-bg{
-    @include radial-gradient(#ce6989, #b55b77);
-  }
-
-  &.eatbooking .header-bg{
-    @include radial-gradient(#424141, #1e1e1e);
-  }
-
-  &.oasiscatamaran .header-bg{
-    @include radial-gradient(#5fc3e6, #4593af);
   }
 
   &.startup .header-bg{
     @include radial-gradient(#f75e47, #da503b);
   }
-
   &.seopage .header-bg{
     @include radial-gradient(#f75e47, #da503b);
   }
-
   &.contact .row{
     @include radial-gradient(#f1b820, #cf891c);
   }
@@ -85,7 +51,7 @@ section{
 
   .logo-rails{
     width: 75px;
-    height: auto;
+    height: 30px;
     margin-top: 2rem;
     small{
       color:#fff;
@@ -110,10 +76,13 @@ section{
   &.page.seopage {
     padding-top: 5em;
     color: $gray;
+    .header-bg{
+      padding: 3em 0;
+      margin-bottom: 2em;
+    }
     .row{
       margin-left: 0;
       margin-right: 0;
-      padding: 3em 0;
 
       h1{
         font-weight: 700;
@@ -156,35 +125,31 @@ section{
       &.analysis{
         border-color: #2cc6d2;
       }
-
       &.design{
         border-color: #0b98d0;
       }
-
       &.implementation{
         border-color: #0a4366;
       }
       &.acceptance{
         border-color: #0a4366;
       }
-
       &.test{
         border-color: #c8202f;
       }
-
       &.launching{
         border-color: #fa7903;
       }
-
     }
-
   }
+
   &.page.team{
     .photos{
       background: #f9f9f9;
       margin-top: 2em;
       margin-bottom: 2em;
       display: inline-block;
+      padding: 2em 0;
       width: 100%;
       .alessandro,
       .senen,
@@ -225,19 +190,6 @@ section{
           }
         }
       }
-
-    }
-  }
-
-  &.page.boatjump{
-    .logo{
-      max-width: 200px;
-      fill: #007aa3;
-      margin-bottom: 1em;
-    }
-    img{
-      margin: 0 auto;
-      width: 100%;
     }
   }
 
@@ -265,18 +217,15 @@ section{
     }
   }
 
-  &.page.eatbooking{
-    img{
-      margin: 0 auto;
-      width: 100%;
-    }
-  }
 
-  &.page.oasiscatamaran{
-    img{
-      margin: 0 auto;
-      width: 100%;
+  &.startup{
+    .failure-image{
+      max-width: 300px;
     }
+    .rails-logo{
+      max-width: 200px;
+    }
+
   }
 
   &.startup,
@@ -372,28 +321,39 @@ section{
 
 }
 
-
 .page-contact-now{
   background: $yellow;
   padding: 5em 0;
-  margin-top: 3em;
+  // margin-top: 3em;
   margin-bottom: 3em;
   color: #fff;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background: darken($yellow, 5%);
+  }
   h2{
     font-size: 1.8em;
   }
+
   .btn{
     text-transform: uppercase;
     color: #fff;
     border: 3px solid #fff;
     font-weight: 700;
     padding: 1.3em;
+    transition: all 0.5s ease;
+
+    &:hover{
+      background: #fff;
+      color: $yellow;
+    }
 
     @include col-xs() {
       max-width: 260px;
     }
-
   }
+
 }
 // .page{
 //

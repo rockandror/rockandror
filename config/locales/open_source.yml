@@ -1,0 +1,140 @@
+es:
+  pages:
+    open_source:
+      meta:
+        title: Desarrollo Open Source en Ruby on Rails
+        description: >
+                      Desarrollo de paginas web y aplicaciones flexibles y
+                      dinnamicos con codigo abierto Open source en Ruby on Rails
+                      siguiendo la metodología Agile.
+        keywords: Open source, Ruby on Rails, MVC, Metodlogia Agile
+
+      h2_1_title: El Open source es la clave para Start up tecnologicas.
+      description_html: >
+                        Hay varias razones por lo cual en RockAndRor trabajamos
+                        con codigo abierto, <strong>la más importante es que
+                        nuestros clientes pueden lanzar en el mercado una
+                        solución comercial en un tiempo corto con un gasto
+                        economico ventajoso y una escabilidad a medida para el
+                        cliente segun el budget del proyecto</strong>.
+                        <br>
+                        <br>
+                        Resumir los motivos por lo cual deberias elegir el Open
+                        Source es bastante importante visto desde un punto de
+                        vista economico, filosofico y morales.
+                        <br>
+                        <br>
+                        En wikipedia podemos leer:
+                        <br>
+                        El software propietario, al no poder compartirse, es
+                        «antiético» dado que prohibir compartir entre seres
+                        humanos va en contra del sentido común.
+                        <a href='https://es.wikipedia.org/wiki/Código_abierto.', target='blank'><i>https://es.wikipedia.org/wiki/Código_abierto</i></a>
+                        <br>
+                        <br>
+                        Es muy importante para RockAndRor la trasparencia, la
+                        mejora costante, y no tener que reinventar la rueda cuando
+                        ya hay miles de progremadores que aportan cada dia soluciones
+                        y mejoras al codigo libre completamente gratis, esto
+                        tendrá un impacto no solo para los programadores y el
+                        mismo código sino tambien para <strong>el cliente que
+                        tiene a su lado miles de programadores expertos que
+                        arreglan bugs y errores en un par de dias</strong>, va
+                        en detrimento de software propietario que puede tomar
+                        semanas antes de detectar un error y corregirlo.
+
+      h2_2_title: Resumimos los puntos principales del codigo abierto
+      ul_li_html: >
+                    <ul class="no-padding-left">
+                    <li>
+                      <strong>Estandard:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Costos relativamente bajos:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Calidad más alta:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Menos bugs y actualizaciones más rápidas:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Seguridad y trasparencia:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Más oportunidades de personalización:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Más funcionalidad:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Adaptable y compatible:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Alto nivel de escabilidad y flexibilidad:</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    <li>
+                      <strong>Más innovaciones</strong>
+                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    </li>
+                    </ul>
+
+      h2_3_title: Cuando nos resulta posible nos gusta participar en proyectos interesantes
+      description_hackaton_madrid_html: >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+
+      description_redsys_html: >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+
+      description_manyredsys_html: >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+
+      description_consul_html: >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
