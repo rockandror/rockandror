@@ -1,6 +1,12 @@
 .home {
 
   section {
+
+    @include col-xs() {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
     .row {
       max-width: 80%;
     }
@@ -16,11 +22,6 @@
         @include col-xs() {
           min-height: auto;
         }
-    }
-
-    @include col-xs() {
-      padding-top: 2em;
-      padding-bottom: 2em;
     }
 
     h2 {
@@ -162,114 +163,113 @@
     }
   }
 
-    section {
-      &.tecnology,
-      &.agile_developer,
-      &.open_source,
-      &.team,
-      &.works,
-      &.testimonials,
-      &.contact {
-        h2 {
-          max-width: 600px;
-        }
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  section {
+    position: relative;
+
+    &.best_tools,
+    &.agile_developer,
+    &.open_source,
+    &.team,
+    &.works,
+    &.testimonials,
+    &.contact {
+      h2 {
+        max-width: 600px;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.agile_developer,
+    &.team {
+      align-items: flex-start;
+    }
+
+    &.best_tools,
+    &.open_source,
+    &.works,
+    &.testimonials,
+    &.contact {
+      .medium-6 {
+        align-items: flex-end;
+      }
+    }
+
+    &.best_tools {
+      @include radial-gradient(#71c785, #439c58);
+      @include btn-ror(white, transparent, white, true, #71c785);
+
+      h2 {
+        @include text(#fff, uppercase, 2em, right);
       }
 
-      &.agile_developer,
-      &.team {
-        align-items: flex-start;
+      h3 {
+        color:#fff;
       }
 
-      &.tecnology,
-      &.open_source,
-      &.works,
-      &.testimonials,
-      &.contact {
-        .medium-6 {
-          align-items: flex-end;
-        }
+      lead {
+        @include text(white, uppercase, 0.8em,right);
       }
 
-      &.tecnology {
-        @include radial-gradient(#71c785, #439c58);
-        @include btn-ror(white, transparent, white, true, #71c785);
+      .image {
+        background: image_url('svg/home-tecnology.svg') no-repeat center center;
+      }
 
-        h2 {
-          @include text(#fff, uppercase, 2em, right);
-        }
-
-        h3 {
-          color:#fff;
-        }
-
+      @include col-xs() {
+        h2,
+        h3,
         lead {
-          @include text(white, uppercase, 0.8em,right);
-        }
-
-        .image {
-          background: image_url('svg/home-tecnology.svg') no-repeat center center;
-        }
-
-        @include col-xs() {
-          h2,
-          h3,
-          lead {
-            text-align: left;
-          }
+          text-align: left;
         }
       }
+    }
+    &.agile_developer {
+      @include radial-gradient(#ba6889, #a83a80);
+      @include btn-ror(white, transparent, white, true, #ba6889);
 
-      &.agile_developer {
-        @include radial-gradient(#ba6889, #a83a80);
-        @include btn-ror(white, transparent, white, true, #ba6889);
+      h2 {
+        @include text(#fff, uppercase, 2em, left);
+      }
 
-        h2 {
-          @include text(#fff, uppercase, 2em, left);
-        }
+      lead {
+        @include text(white, uppercase, 0.8em,left);
+      }
 
+      .image {
+        background: image_url('svg/home-agile-develompent.svg') no-repeat center center;
+       }
+    }
+    &.open_source {
+      @include radial-gradient(#5fd7db, #4babaf);
+      @include btn-ror(white, transparent, white, true, #5fd7db);
+
+      h2{
+        @include text(#fff, uppercase, 2em, right);
+      }
+
+      lead{
+        @include text(white, uppercase, 0.8em, right);
+      }
+
+      h3 {
+        margin-top: 1rem;
+        display: block;
+        width:100%;
+        @include text(#fff, uppercase, 0.8em, right);
+      }
+
+      .image {
+        background: image_url('svg/home-open-source.svg') no-repeat center center;
+      }
+      @include col-xs() {
+        h2,
+        h3,
         lead {
-          @include text(white, uppercase, 0.8em,left);
-        }
-
-        .image {
-          background: image_url('svg/home-agile-develompent.svg') no-repeat center center;
-         }
-      }
-
-      &.open_source {
-        @include radial-gradient(#5fd7db, #4babaf);
-        @include btn-ror(white, transparent, white, true, #5fd7db);
-
-        h2{
-          @include text(#fff, uppercase, 2em, right);
-        }
-
-        lead{
-          @include text(white, uppercase, 0.8em, right);
-        }
-
-        h3 {
-          margin-top: 1rem;
-          display: block;
-          width:100%;
-          @include text(#fff, uppercase, 0.8em, right);
-        }
-
-        .image {
-          background: image_url('svg/home-open-source.svg') no-repeat center center;
-        }
-        @include col-xs() {
-          h2,
-          h3,
-          lead {
-            text-align: left;
-          }
+          text-align: left;
         }
       }
-
+    }
     &.team {
       @include radial-gradient(#0174c5, #0361a3);
       @include btn-ror(white, transparent, white, true, #0174c5);
@@ -286,126 +286,133 @@
         background: image_url('svg/home-team.svg') no-repeat center center;
       }
     }
-
     &.works {
-      @include radial-gradient(#a13644, #712630);
-      @include btn-ror(white, transparent, white, true, #a13644);
+    @include radial-gradient(#a13644, #712630);
+    @include btn-ror(white, transparent, white, true, #a13644);
 
-      h2 {
-        @include text(#fff, uppercase, 2em, right);
-      }
+    h2 {
+      @include text(#fff, uppercase, 2em, right);
+    }
 
+    lead {
+      @include text(white, uppercase, 0.8em, right);
+    }
+
+    .image {
+      background: image_url('svg/home-works.svg') no-repeat center center;
+    }
+
+    @include col-xs() {
+      h2,
+      h3,
       lead {
-        @include text(white, uppercase, 0.8em, right);
-      }
-
-      .image {
-        background: image_url('svg/home-works.svg') no-repeat center center;
-      }
-
-      @include col-xs() {
-        h2,
-        h3,
-        lead {
-          text-align: left;
-        }
+        text-align: left;
       }
     }
+  }
 
     &.testimonials {
       @include radial-gradient(#383838, #242424);
 
-      h2 {
-        @include text(#fff, uppercase, 2em, right);
+    h2 {
+      @include text(#fff, uppercase, 2em, right);
+    }
+
+    lead {
+      @include text(white, uppercase, 0.8em, right);
+    }
+
+    #testimonials-carousel {
+      margin: 0 auto;
+
+      h3 {
+        color: #fff;
+        font-weight: 300;
+        font-family: $font-family-serif;
       }
 
-      lead {
-        @include text(white, uppercase, 0.8em, right);
-      }
-
-      #testimonials-carousel {
+      img {
+        border-radius: 50%;
+        max-width: 120px;
+        text-align: center;
+        display: block;
         margin: 0 auto;
-
-        h3 {
-          color: #fff;
-          font-weight: 300;
-          font-family: $font-family-serif;
-        }
-
-        img {
-          border-radius: 50%;
-          max-width: 120px;
-          text-align: center;
-          display: block;
-          margin: 0 auto;
-          margin-top:15px;
-          margin-bottom:15px;
-        }
-
-        p {
-          max-width: 400px;
-          font-size: 1em;
-          font-family: $font-family-serif;
-        }
-
-        a {
-          display: block;
-          margin-top:15px;
-        }
-
-        .carousel-indicators {
-          bottom: -50px;
-
-          @include col-xs() {
-            bottom: -30px;
-          }
-        }
+        margin-top:15px;
+        margin-bottom:15px;
       }
 
-      @include col-xs() {
-        h2,
-        lead {
-          text-align: left;
+      p {
+        max-width: 400px;
+        font-size: 1em;
+        font-family: $font-family-serif;
+      }
+
+      a {
+        display: block;
+        margin-top:15px;
+      }
+
+      .carousel-indicators {
+        bottom: -50px;
+
+        @include col-xs() {
+          bottom: -30px;
         }
       }
     }
 
-    &.contact{
-      position: relative;
-      background: white;
-      @include btn-ror(#676767, transparent, #676767, true, #676767);
-
-      h2 {
-        @include text(#676767, uppercase, 2em, right);
-      }
-
+    @include col-xs() {
+      h2,
       lead {
-        @include text(#676767, uppercase, 0.8em, right);
-      }
-
-      .bg-contact {
-        height: 100%;
-        width: 100%;
-        background: image_url('svg/home-contact.svg') no-repeat center center;
-        background-size: cover;
-        z-index: 0;
-        position: absolute;
-        top: 0;
-        left:0;
-      }
-
-      @include col-xs() {
-        h2,
-        h3,
-        lead {
-          text-align: left;
-        }
-        a{
-          margin-top: 1em;
-          display: block;
-          text-align: center;
-        }
+        text-align: left;
       }
     }
+  }
+    &.contact{
+    position: relative;
+    background: white;
+    @include btn-ror(#676767, transparent, #676767, true, #676767);
+
+    h2 {
+      @include text(#676767, uppercase, 2em, right);
+    }
+
+    lead {
+      @include text(#676767, uppercase, 0.8em, right);
+    }
+
+    .bg-contact {
+      height: 100%;
+      width: 100%;
+      background: image_url('svg/home-contact.svg') no-repeat center center;
+      background-size: cover;
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left:0;
+    }
+
+    @include col-xs() {
+      h2,
+      h3,
+      lead {
+        text-align: left;
+      }
+      a{
+        margin-top: 1em;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  }
+
+  a.next-section{
+    border: 0 !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 10px;
   }
 }
