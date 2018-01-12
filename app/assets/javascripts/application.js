@@ -6,6 +6,7 @@
 //= require turbolinks
 //= require app
 //= require navbar
+//= require facebook
 //= require home
 //= require animate
 //= require scrollto
@@ -21,6 +22,7 @@
 var initialize_modules = function() {
   App.Navbar.initialize()
   App.Home.initialize();
+  App.Facebook.initialize();
 }
 
 $(function(){
