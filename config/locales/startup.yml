@@ -5,3 +5,171 @@ es:
         title: ¿Buscas un equipo tecnológico innovador y productivo para tu Startup?
         description: "Añadir descripcion."
         keywords: "Añadir keywords"
+
+      h1_title_html: ¿Buscas un equipo tecnológico innovador y <strong>productivo para tu Startup?</strong>
+      quote_1_html: >
+                    El especialista Bernd Schoner, co-fundador de la Startup
+                    ThingMagic asegura que no hay una bola mágica para el éxito
+                    de una startup, <strong>tu equipo</strong> puede lograrlo o no.
+
+      description_1_html: >
+                    <strong>Hoy en día no es suficiente tener una buena idea par
+                    lograr una empresa o un producto de éxito.</strong>
+                    <br>
+                    En el siglo XXI las empresas necesitan perfiles técnicos y
+                    tecnológico en sus equipos, construir una <strong>Startup</strong>
+                    solo es prácticamente imposible.
+                    No todos pueden montar una Startup, convertirlo en negocio y
+                    sacarlo adelante, la mayoría de la Startup fracasan antes de
+                    lo que se piensan por muchos factores: estrategia equivocada,
+                    producto no rentable, falta de dinero, equipo tecnológico no
+                    adecuado, poca gana de luchar.
+                    <br>
+
+      h3_1_html: En el año 2016 solo España ha tenido 2.663 Startups.
+      description_2_html: >
+                    RockAndRor es un equipo de profesionales dedicados en
+                    exclusiva al <strong>desarrollo ágil de aplicaciones web en
+                    RubyonRails</strong> para <strong>Startup</strong>.
+                    En ésta pagina nos centraremos en la parte tecnológica que
+                    es uno de los aspecto mas importante para tu negocio y
+                    es nuestro servicio puntero.
+                    Antes de empezar a montar una <strong>Startup</strong>, o
+                    si ya la tienes y no va muy bien, seria bueno analizar cual
+                    son los pasos fundamentales para no equivocarse en el campo
+                    tecnológico.
+                    Si por la cabeza tienes una cuantas preguntas sobre como
+                    montar una startup seguro una de estas es si puede montar
+                    una empresa tecnológica sin saber nada de código.
+                    La respuesta e si.
+      h2_1_html:    <strong>Caso de exito de una singola personas</strong>
+      description_3_html: >
+                    Personas como <strong>Steve Jobs</strong> que no sabia nada
+                    de código y programación admitio que había mucha cosas que
+                    no tenia ni idea de como iban pero supo acompañase con Steve
+                    Wozniak y un potente equipo de desarrolladores trayendo a
+                    Apple en el sitio que todos sabemos.
+                    También <strong>Jack Ma</strong> fundador del gigante Alibaba
+                    antes de lanzarse en internet no sabia di que iba el código
+                    y aun ahora no entiende muy bien como funciona.
+                    No obstante estos empresarios no saben nada de programación
+                    sigon siendo uno de los pioneros del mercado, poque saben
+                    mucho de marketing, mercado, productos y por cierto tienen
+                    un equipo brutal de desarrollo.
+                    Tener nociones de código puede ayudar al fundador a no
+                    perderse ningún detalle de lo que esta ocurriendo a su
+                    alrededor, es cierto que no tener un equipo de desarrollo
+                    con años de experiencia pude llevar al fracaso en menos que
+                    no se diga.
+      h2_2_html:    <strong>10 motivos por lo cual una Startup pueda fracasar.</strong>
+      description_4_html: >
+                    Hay caso de éxito como Apple y Alibaba, pero también hay
+                    <strong>caso de fracaso</strong> y según
+                    <a href='https://www.cbinsights.com'>CB Insight</a> los 10
+                    principales motivos son:
+      list_failure_list_html: >
+                    <li>No responden a ninguna necesidad del mercado</li>
+                    <li>Se quedan sin efectivo</li>
+                    <li>No cuentan con el equipo adecuado</li>
+                    <li>Les supera la competencia</li>
+                    <li>Tienen problemas de precios y costes</li>
+                    <li>El producto es de baja calidad</li>
+                    <li>No tienen un modelo de negocio</li>
+                    <li>No hacen buen marketing</li>
+                    <li>Ignoran a sus clientes</li>
+                    <li>El momento es inoportuno para su producto</li>
+      quote_2_html: >
+                    Un extracto del juramento de los Superhéroes de la Draper
+                    University: <br /> “Fallaré y fallaré hasta alcanzar el éxito.”
+      description_5_html: >
+                    Alejándose de estos motivos es importante tener en cuenta que
+                    lo mejor que puede tener una <strong>Startup</strong> es
+                    encontrar un equipo que tenga gana y ilusión de participar y
+                    aportar valor al producto o servicio.
+                    <br />
+                    <br />
+                    <strong>Una Startup necesitas gente que le gusta el proyecto
+                    y que le guste aprender cada día más para aportar mas a la
+                    idea de producto.
+                    </strong>
+      h2_3_html:    <strong>Equipo para el desarrollo</strong>
+      description_6_html: >
+                    Una startup necesitas si o si de una parte tecnológica, un
+                    equipo con años de experiencia y obsesión para código limpio
+                    y optimizado que sea un equipo interno a la startup o externo.
+                    Sin dudas un equipo interno a la empresa es una buena opción
+                    para que sea siempre comprometido.
+                    Otra opción es subcontratar un equipo externo pudiendo tener
+                    mayor control en los costes, pero teniendo en cuenta que no
+                    siempre se encuentran personas dispuestos a comprometerse.
+                    Otra opción que quizás sea la mejor es tener un CTO dentro
+                    proprio empresa y dejar que el se encargue de subcontratar un
+                    equipo de desarrollo externo y dirigido para el, también
+                    aquí con pro y contra.
+      h2_4_html:    <strong>Tecnología adecuada</strong>
+      description_7_html: >
+                    Es importante elegir la herramienta correcta para desarrollar
+                    un producto a medida y si es de Startup que hablamos la
+                    herramientas de ultima generación son la mejor elección,
+                    si quieres hacer una simple Landing page o un Blog no hace
+                    falta montar un muestro, existe Wordpress que también si a
+                    nacido como plataforma de blog hoy se utiliza también para
+                    crear web dinámica.
+                    Si la intención es <strong>crear de verdad un producto a
+                    medida</strong> la herramientas mas utilizada hoy en día
+                    '2017' que se utilizan son: Ruby on Rails, AngularJS, Git,
+                    Html5 ,Sass, Responsive, Heroku, Node.js, Ionic, Postgress etc..
+      quote_3_html: >
+                    Sea lo que sea, una idea un producto que tengas en mente
+                    <br />
+                    y sea una aplicación web lo puedes hacer on Rails.
+      h2_5_html:    <strong>Algunos grandes que construyeron sus sitios con Rails</strong>
+      description_8_html: >
+                    Airbnb, Couchsurfing, Shopify, BaseCamp, ThemeForest, Fiverr,
+                    Github, Hulu, Indiegogo, KickStarter, Square, Shopify, Pixlr,
+                    Zendesk, 500px.
+      h2_6_html:    <strong>Metodología  - MVP</strong>
+      description_9_html: >
+                    Otro factor muy importante es la metodología, una
+                    <strong>Startup</strong> no se hace en un par de días, no
+                    tienes plantilla Wordpress que montar, es muy importante
+                    entender que el desarrollo de software a medida requiere
+                    una planificación y metodología adecuada, definir una tarea
+                    de funcionalidad que necesitas para que el equipo de
+                    desarrollo pueda entender y analizar cada punto para calcular
+                    aproximadamente cuanto tiempo llevara llegar el termine de
+                    cada tarea.
+      description_10_html: >
+                    Palabras como MVP, Agile, Scrum, son solo algunos de lo
+                    términos que se utilizan en el mundo de las
+                    <strong>Startup</strong> para ahorrar tiempo, dinero y
+                    también para hacer cambio rápidamente sin destrozar todo el
+                    proyecto.
+      h2_7_html:    <strong>Entender el modelo de negocio de tu Startup</strong>
+      description_11_html: >
+                    Comunicar el focos de la Startup no quiere decir solo
+                    intercambio de información, una Startup exige flexibilidad,
+                    necesitas que el equipo de desarrollo se abdata a los
+                    cambios diario que puede tener la empresa y que cada miembro
+                    del equipo sea capaz de coger responsabilidad y priorizar
+                    la tareas mas importante/urgente según el momento, y que tenga
+                    la mente siempre abierta por cualquier cambio repentino.
+      h2_8_html:    <strong>Porque elegir nosotros como equipo tecnologico para lanzar tu Startup</strong>
+      description_12_html: >
+                    RockAndRor es un equipo de <a href="desarrollo-web-palma-de-mallorca">
+                    Desarrollo web en Palma de Mallorca </a> no es simplemente
+                    un equipo de desarrolladores que se sienta en frente de la
+                    pantalla esperando tarea que hacer, <strong>somos un equipo
+                    que le  interesa ser unos excelentes programadores en continua
+                    evolución dando a cada tarea su máxima importancia para poder
+                    dormir sueños tranquilos</strong>, no somos solo programadores,
+                    somos empresarios como tu y entendemos el valor de un proyecto,
+                    cuanto cuesta llevarlo a cabo y nos preocupamos para que tu
+                    inversión se recupere cuanto antes.
+      quote_4_html: Tenemos un plan estratégico. Se llama hacer las cosas bien <br>  Herb Kelleher
+      description_13_html: >
+                    Si tienes una gran idea y quieres lanzar tu Startup con
+                    metodología Agile y MVP, RockAndRor es lo que buscas, un
+                    equipo que se centra solo en el desarrollo de software a medida.
+                    <strong>Haz click aqui abajo para una solecitar tu
+                    consultoria gratuita.</strong>
