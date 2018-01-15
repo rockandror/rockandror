@@ -23,35 +23,37 @@ es:
                         estadísticas más fáciles de entender.
         h2_1_html: El desafío
         description_1_html: >
-                          El primer contacto con Eatbooking, viene gracias a
-                          Raimond Garcia, del team <a href="http://www.prorubyteam.com/" target="blank">
-                           prorubyteam</a> nuestro segundo cliente desde que el
-                           equpo se formò. Desde el principio la aplicacion ya
-                           existia, pero tenia mucho fallos y hemos tenido que
-                           replantare todo, hemos vuelto a diseñar toda la App a nivel
-                           de codigo y desarrollado una interfaz para Tablet.
+                          En este proyecto hemos creado una aplicación
+                          web que podría ser utilizada solo ed exclusivamente
+                          en moviles como primera versión, no obstante nuestro
+                          flujo de trabajo hice que podria funcionar tanto
+                          en Tablet como Desktop gracias al desarrollo FirstMobile.
+                          Después de una análisis con el cliente y definido los
+                          hitos de los primeros meses hemos empezado seguiendo
+                          como siempre la metodologia MVP y el
+                          <a href="agile-development">desarrollo Agile</a>.
+                          Inicialmente hemos desarrollado esta primera versión
+                          de la plataforma para el territorio Español,
+                          no obstante siempre se podrá ampliar a tantos idiomas.
+
 
         h2_2_html: El comienzo
         description_2_html: >
-                          En la primera reunión con el CEO Francisco de la Mata
-                          ha sido intender cual era el objectivo de la web,
-                          de momento que era la primera web que venia creada
-                          por esto cliente. Una vez definido los hitos de los
-                          primeros 3 meses y hemos empezado seguiendo
-                          como siempre la metodologia MVP y el
-                          <a href="agile-development">desarrollo Agile</a>.
+                          En este proyecto el CEO de Taskscheduler Carlos Jesús
+                          Martín González os encargo la creación de
 
         h2_3_html: Servicios ofrecido
         list_3_html: >
-                    <li><p>Replanteamiento Mock-up de entendimiento para el cliente</p></li>
-                    <li><p>Creación arquitectura de la aplicacion</p></li>
-                    <li><p>Desarrollo Back-end para Ipad</p></li>
-                    <li><p>Motor de reservas online en tiempo real</p></li>
-                    <li><p>Widget de reservas integrable</p></li>
-                    <li><p>Configura tu calendario de apertura</p></li>
-                    <li><p>Define los días de vacaciones</p></li>
-                    <li><p>Organiza tu restaurante por zonas</p></li>
-                    <li><p>Gestión multirestaurante</p></li>
+                    <li><p>Mock-up de entendimiento para el cliente</p></li>
+                    <li><p>Layout de la aplicación</p></li>
+                    <li><p>Creación arquitectura de la aplicación</p></li>
+                    <li><p>Desarrollo Frontend First Mobile</p></li>
+                    <li><p>Desarrollo Backend</p></li>
+                    <li><p></p></li>
+                    <li><p></p></li>
+                    <li><p></p></li>
+                    <li><p></p></li>
+
 
         h2_4_html: Front-End / Responsive
         description_4_html: >

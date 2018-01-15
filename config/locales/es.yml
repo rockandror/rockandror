@@ -54,6 +54,13 @@ es:
       low: Bajo
       medium: Medio
       medium_heigh: Medio/Alto
+      guarantee_html:  >
+                  Nuestros desarrollos están respaldados por tests unitarios y
+                  de integración que <strong>garantizan el correcto funcionamiento</strong>
+                  de la funcionalidad entregada.
+                  <br>
+                  <u>Si se detecta algún fallo en al aplicación, RockAndRor asumirá
+                  el coste de reparación/corrección</u>
   helper:
     contact_now:
       team: Te ha gustado nuestro equipo y nuestra filosofia?
