@@ -18,6 +18,6 @@
 <%= favicon_link_tag 'favicon.ico' %>
 
 <title>
-  <%= if content_for?(:title) then yield(:title) + ' | ' end %>
-  <%= t('meta.title') %>
+  <%= if content_for?(:title) then yield(:title) end %>
+  <%#= t('meta.title') %>
 </title>

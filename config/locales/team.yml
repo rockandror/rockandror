@@ -2,13 +2,14 @@ es:
   pages:
     team:
       meta:
-        title: Equipo de desarrollo agile en Ruby on Rails en Palma de Mallorca
+        title: Equipo de desarrollo en Ruby on Rails en Palma de Mallorca
         description: >
-                      Desarrollo de paginas web y aplicaciones flexibles y
-                      dinnamicos con codigo abierto Open source en Ruby on Rails
-                      siguiendo la metodología Agile.
-        keywords:     RockandRor, Alessandro Cuoghi, Senén Rodero, Sebastià Roig,
-                      Open source, Ruby on Rails, MVC, Metodlogia Agile
+                      Rock and Ror es un eqipo de desarrollo de paginas web y
+                      aplicaciones flexibles y dinnamicos con metodología Agile
+                      y codigo abierto Open source en Ruby on Rails   .
+        keywords:     RockandRor, Rock&Ror, Open source, Ruby on Rails, MVC,
+                      Metodologia agile, Desarrollo web, Desarrollo Palma de
+                      Mallorca, Aplicaciones web
 
       h1_title:       Rock And Ror, equipo de desarrollo en Ruby On Rails
       lead:           Ofrecemos un enfoque personal y efectivo en cada proyecto que participamos.
