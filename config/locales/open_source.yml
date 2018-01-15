@@ -2,12 +2,13 @@ es:
   pages:
     open_source:
       meta:
-        title: Desarrollo Open Source en Ruby on Rails
+        title: Desarrollomas proyectos web con código abierto / Open Source
         description: >
-                      Desarrollo de paginas web y aplicaciones flexibles y
-                      dinnamicos con codigo abierto Open source en Ruby on Rails
-                      siguiendo la metodología Agile.
-        keywords: Open source, Ruby on Rails, MVC, Metodlogia Agile
+                      Desarrollamos proyectos a la medida de sus necesidades
+                      utilizando código abierto / Open Source en Ruby on Rails.
+        keywords:     >
+                      Open source, Ruby on Rails, MVC, Metodlogia Agile, RockandRor,
+                      Rock&Ror, Desarrollo Palma de Mallorca, Aplicaciones web
 
       h2_1_title: El Open source es la clave para Start up tecnologicas.
       description_html: >
