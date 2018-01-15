@@ -2,9 +2,13 @@ es:
   pages:
     contact:
       meta:
-        title: Añadir titulo para pagina contactos
-        description: Añadir descripcion pagina contactos
-        keywords: Añadir keywords
+        title: Contratar un equipo de desarrollo web agil en Ruby On Rails en España
+        description: Si estás buscando un equipo de desarrollo para realizar un
+                    proyecto web o una aplicación híbrida aquí encontraras tu
+                    equipo de desarrollo
+        keywords: Equipo de desarrollo, Contratar desarrolladores, RockandRor,
+                  Rock&Ror, Open source, Ruby on Rails, MVC, Metodologia agile,
+                  Desarrollo web, Desarrollo Palma de Mallorca, Aplicaciones web
 
       title_html: Escríbanos, le contestaremos en menos de 24 horas.
       introduction_html: >
