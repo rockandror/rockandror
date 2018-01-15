@@ -2,11 +2,17 @@ es:
   pages:
     development_mallorca:
       meta:
-        title: Desarrollo web en Palma de Mallorca
-        description: "Añadir descripcion."
-        keywords: "Añadir keywords"
+        title: Desarrollo web a medida en Palma de Mallorca
+        description:  >
+                      Diseñamos y desarrollamos aplicación web para grandes empresas
+                      y Startup en Palma de Mallorca utilizando el framworks
+                      Ruby on Rails.
+        keywords:     >
+                      Diseño pagina web, RockandRor, Rock&Ror, Open source,
+                      Ruby on Rails, MVC, Metodologia agile, Desarrollo web,
+                      Desarrollo Palma de Mallorca, Aplicaciones web
 
-      h1_title_html: Desarrollo web en <strong>palma de Mallorca</strong>
+      h1_title_html: Desarrollo web a medida en <strong>palma de Mallorca</strong>
       quote_1_html:  >
                     Es fácil tener ideas de negocio.
                     <br>

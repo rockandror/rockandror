@@ -3,12 +3,18 @@ es:
     works:
       boatjump:
         meta:
-          title: Boatjump, Alquiler de barcos online de alcance internacional
+          title:  >
+                  RockAndRor desarrolla la startup Boatjump de alcance internacional.
+
           description: >
-                        Boatjump es una plataforma online donde se pone en
-                        contacto a propietarios de barcos que quieren alquilar
-                        su embarcación con usuarios interesados en navegar
-          keywords: Boatjump, Alquiler de barcos online, Ruby on rails
+                        RockAndRor equipo de desarrollo a medida en RubyOnRails
+                        ha sido encargada da la Startup Boatjump para el desarrollo
+                        de la plataforma de alquilar de barcos online de alcance
+                        internacional.
+          keywords:     >
+                        Boatjump, Alquiler de barcos online, Ruby on rails, Startup,
+                        RockAndRoR, desarrollo Ruby on Rails, desarrollo RoR,
+                        desarrollo web, desarrollo web Mallorca, gran empresas"
 
         h1_title_html: Boatjump, Alquiler de barcos online de alcance internacional
         lead: Startup
