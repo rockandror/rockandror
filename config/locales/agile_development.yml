@@ -2,11 +2,15 @@ es:
   pages:
     agile_developer:
       meta:
-        title: Desarrollo agile en Ruby on Rails
+        title: Principios de la metodología Agile aplicada al desarrollo en Ruby on Rails
         description: >
-                      Rockandror desarrolla paginas web y aplicaciones flexibles
-                      y dinnamicos con Ruby on Rails siguiendo la metodología Agile
-        keywords: Ruby on Rails, MVC, Metodlogia Agile
+                      RockAndRor sigue los principios de la metodología Agile
+                      durante el desarrollo de paginas web y aplicaciones flexibles
+                      y dinnamicos con Ruby on Rails.
+        keywords:     >
+                      Herramienta de desarrollo, RockandRor, Rock&Ror, Open source,
+                      Ruby on Rails, MVC, Metodologia agile, Desarrollo web,
+                      Desarrollo Palma de Mallorca, Aplicaciones web
 
       h2_1_title: Dividimos el objetivo final en hitos a corto plazo que recorren el siguiente flujo de trabajo.
       h2_2_title: ¿Qué es la metodología Agile?
