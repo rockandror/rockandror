@@ -3,9 +3,15 @@ es:
     works:
       taskscheduler:
         meta:
-          title: Taskscheduler
-          description: Añadir descripcion Taskscheduler
-          keywords: Añadir keywords
+          title: RockAndRor desarrolla el proyecto Taskscheduler en Ruby on Rails
+          description:  >
+                        Taskscheduler es un proyecto para definir la planificación
+                        de tareas desarrollado a medida en Ruby On Rails por parte
+                        del equipo RockAndRor.
+
+          keywords:     >
+                        Taskscheduler, Ruby on rails, RockAndRoR, desarrollo Ruby on Rails,
+                        desarrollo RoR, desarrollo web, desarrollo web Mallorca
 
         h1_title_html: Taskscheduler, Planifica las actividades de la vida diaria
         lead: Organiza y controla tu planificación
