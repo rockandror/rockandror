@@ -2,12 +2,16 @@ es:
   pages:
     best_tools:
       meta:
-        title: Desarrollo en Ruby on Rails
+        title: Herramientas para desarrollar aplicaciones web flexibles y
+                dinnamicos.
         description: >
                       Rockandror desarrolla paginas web y aplicaciones flexibles
                       y dinnamicos con Ruby on Rails un framework de codigo
                       abierto basado en MVC
-        keywords: Ruby on Rails, MVC, Metodlogia Agile
+        keywords:     >
+                    Herramienta de desarrollo, RockandRor, Rock&Ror, Open source,
+                    Ruby on Rails, MVC, Metodologia agile, Desarrollo web,
+                    Desarrollo Palma de Mallorca, Aplicaciones web
 
       h2_1_title: Desarrollo en Ruby on Rails
       description_top_html: >

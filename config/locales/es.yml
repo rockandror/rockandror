@@ -67,7 +67,14 @@ es:
   pages:
     works:
       meta:
-        title: Añadir title para pagina trabajos
-        description: Añadir descripcion pagina trabajos
-        keywords: Añadir keywords
-      h2_title: Nuestro ultimos proyectos creado en Ruby on Rails
+        title: Algunos de nuestros últimos trabajos en Ruby on Rails
+        description: >
+                    Echa un vistazo algunos de nuestros últimos trabajos realizados
+                    en Ruby on Rails para nuestros clientes, Startup, grandes empresas,
+                    proyecto para smartphone.
+
+        keywords: Trabajos en Ruby on Rails, Desarrollo Rails, RockandRor,
+                  Rock&Ror, Desarrollo web, Open source, Metodologia agile,
+                  Desarrollo Palma de Mallorca, Aplicaciones web.
+
+      h2_title: Nuestro últimos proyectos creado en Ruby on Rails
