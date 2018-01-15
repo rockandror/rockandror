@@ -3,8 +3,14 @@ es:
     startup:
       meta:
         title: ¿Buscas un equipo tecnológico innovador y productivo para tu Startup?
-        description: "Añadir descripcion."
-        keywords: "Añadir keywords"
+        description:  >
+                      Estas buscando equipo de desarrollo para lanzar tu Startup?
+                      RockAndRor es un equipo de especialistas De Ruby On Rails,
+                      que crea aplicaciones web para Startup.
+        keywords:     >
+                      Startup, Gran Empresas, Metodologia agile, Desarrollo web,
+                      Desarrollo Palma de Mallorca, Aplicaciones web, RockandRor,
+                      Rock&Ror
 
       h1_title_html: ¿Buscas un equipo tecnológico innovador y <strong>productivo para tu Startup?</strong>
       quote_1_html: >
