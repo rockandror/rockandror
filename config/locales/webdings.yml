@@ -1,70 +1,71 @@
 es:
   pages:
-    meta:
-      title: Webdings
-      description: Añadir descripcion Webdings
-      keywords: Añadir keywords
+    webdings:
+      meta:
+        title: Webdings
+        description: Añadir descripcion Webdings
+        keywords: Añadir keywords
 
-    h1_title_html: Webdings
-    lead: Crea la app y la web de tu boda
-    general_description_html: >
-                          Webdings se ha desarrollado como un proyecto de
-                          formación interna, es un SaaS que tiene como objetivo
-                          permitir a los usuarios crear de forma muy sencilla
-                          una web y una aplicación móvil para su boda.
-                          Esta formado por un backend a través del cual los
-                          novios pueden definir los contenidos y módulos que
-                          desean publicar, una API para interactuar con aplicaciones
-                          móviles, una web y una app autogeneradas a través
-                          de la información y configuración introducidas en
-                          el backend."
+      h1_title_html: Webdings
+      lead: Crea la app y la web de tu boda
+      general_description_html: >
+                            Webdings se ha desarrollado como un proyecto de
+                            formación interna, es un SaaS que tiene como objetivo
+                            permitir a los usuarios crear de forma muy sencilla
+                            una web y una aplicación móvil para su boda.
+                            Esta formado por un backend a través del cual los
+                            novios pueden definir los contenidos y módulos que
+                            desean publicar, una API para interactuar con aplicaciones
+                            móviles, una web y una app autogeneradas a través
+                            de la información y configuración introducidas en
+                            el backend."
 
-    h2_brand_html: <strong>Imagen</strong>corporativa
-    brand_description_html: >
-                              El diseño de la marca y de la plataforma ha sido
-                              realizado integramente por RockAndRoR buscando
-                              la mayor simplicidad en diseño y usabilidad web.
+      h2_brand_html: <strong>Imagen</strong>corporativa
+      brand_description_html: >
+                                El diseño de la marca y de la plataforma ha sido
+                                realizado integramente por RockAndRoR buscando
+                                la mayor simplicidad en diseño y usabilidad web.
 
-    h2_backend_html: <strong>Back</strong>end
-    bullet_backend:
-      1_li: "Envia invitaciones por email"
-      2_li:  "Define el menú de la boda"
-      3_li:  "Organiza a los invitados por mesas"
-      4_li:  "Crea una galería de imágenes colaborativa"
-      5_li:  "Define los puntos de interés del evento"
-      6_li:  "Configuración adaptable"
-      7_li:  "Diseño personalizable"
-      8_li:  "Solicita confirmación de asistencia a tus invitados"
-      9_li:  "Ofrece servicio de transporte a tus invitados"
-      10_li: "Diseño optimizado para su uso en tablets"
-    last_description: >
-                        El Backend es la parte donde los novios pueden gestionar
-                        los invitados de la boda, seleccionar los módulos que
-                        se desean publicar así como definir los contenidos de
-                        la web y la aplicación móvil.
+      h2_backend_html: <strong>Back</strong>end
+      bullet_backend:
+        1_li: "Envia invitaciones por email"
+        2_li:  "Define el menú de la boda"
+        3_li:  "Organiza a los invitados por mesas"
+        4_li:  "Crea una galería de imágenes colaborativa"
+        5_li:  "Define los puntos de interés del evento"
+        6_li:  "Configuración adaptable"
+        7_li:  "Diseño personalizable"
+        8_li:  "Solicita confirmación de asistencia a tus invitados"
+        9_li:  "Ofrece servicio de transporte a tus invitados"
+        10_li: "Diseño optimizado para su uso en tablets"
+      last_description: >
+                          El Backend es la parte donde los novios pueden gestionar
+                          los invitados de la boda, seleccionar los módulos que
+                          se desean publicar así como definir los contenidos de
+                          la web y la aplicación móvil.
 
-    h2_frontend_html: Página web <strong>autogenerada</strong>
-    frontend_description: >
-                            La página de la boda se genera automáticamente a
-                            partir de los contenidos definidos en el backend
-                            y dispone de diseño adaptado para la navegación
-                            con todos tipo de dispositivos móviles, tanto
-                            tablets como móviles. La página web de la boda
-                            puede ser de acceso privado o de acceso público,
-                            según deseen los novios."
+      h2_frontend_html: Página web <strong>autogenerada</strong>
+      frontend_description: >
+                              La página de la boda se genera automáticamente a
+                              partir de los contenidos definidos en el backend
+                              y dispone de diseño adaptado para la navegación
+                              con todos tipo de dispositivos móviles, tanto
+                              tablets como móviles. La página web de la boda
+                              puede ser de acceso privado o de acceso público,
+                              según deseen los novios."
 
-    h2_application_html: <strong>Aplicación</strong> móvil
-    application_description: >
-                              Con el objetivo de conseguir una mayor interacción
-                              con los invitados hemos creado una aplicación
-                              móvil disponible tanto para dispositivos móviles
-                              Android como iOS. La aplicación permite a los
-                              invitados tener toda la información de la boda
-                              comodamente accesible a través de la app y dispone
-                              de algunas funcionalidades que no se pueden
-                              realizar a través de la web.
+      h2_application_html: <strong>Aplicación</strong> móvil
+      application_description: >
+                                Con el objetivo de conseguir una mayor interacción
+                                con los invitados hemos creado una aplicación
+                                móvil disponible tanto para dispositivos móviles
+                                Android como iOS. La aplicación permite a los
+                                invitados tener toda la información de la boda
+                                comodamente accesible a través de la app y dispone
+                                de algunas funcionalidades que no se pueden
+                                realizar a través de la web.
 
-    h2_tecnology_html: <strong>Tecnología</strong> utilizada
-    tecnology_html: >
-                      RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br>
-                      Bootstrap / Sass / Diseño responsive <br> API / Ionic
+      h2_tecnology_html: <strong>Tecnología</strong> utilizada
+      tecnology_html: >
+                        RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br>
+                        Bootstrap / Sass / Diseño responsive <br> API / Ionic
