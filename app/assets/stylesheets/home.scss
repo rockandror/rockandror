@@ -2,6 +2,12 @@
 
   section {
 
+    h1 {
+      position: absolute;
+      font-size: 1em;
+      top: -100px;
+    }
+
     @include col-xs() {
       padding-top: 2em;
       padding-bottom: 2em;
@@ -87,11 +93,6 @@
       }
       @include col-max-360() {
         top: 40%;
-      }
-
-      h1 {
-        visibility: hidden;
-        color:#ccc;
       }
 
       h2 {
