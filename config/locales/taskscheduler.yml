@@ -40,44 +40,47 @@ es:
         h2_2_html: El comienzo
         description_2_html: >
                           En este proyecto el CEO de Taskscheduler Carlos Jesús
-                          Martín González os encargo la creación de
+                          Martín González os encargo la creación de una aplicación
+                          que el objetivo era gestionar el “tiempo” con una
+                          estructura principal de Proyectos y Tareas asociadas
+                          a cada proyecto.
 
         h2_3_html: Servicios ofrecido
         list_3_html: >
-                    <li><p>Mock-up de entendimiento para el cliente</p></li>
+                    <li><p>Mock-up flujo aplicación</p></li>
                     <li><p>Layout de la aplicación</p></li>
-                    <li><p>Creación arquitectura de la aplicación</p></li>
+                    <li><p>Arquitectura de la aplicación</p></li>
                     <li><p>Desarrollo Frontend First Mobile</p></li>
                     <li><p>Desarrollo Backend</p></li>
-                    <li><p></p></li>
-                    <li><p></p></li>
-                    <li><p></p></li>
-                    <li><p></p></li>
-
 
         h2_4_html: Front-End / Responsive
         description_4_html: >
-                          El nuevo FrontEnd de Boatjump se ha diseñado siguiendo
-                          un template preexistente sobre la recomendación del
-                          cliente con lo nuevos colores de la marca imagenes,
-                          typografia y creando nuevas pantallas que no existian,
-                          manteniendo el mismo estilo recomendato por Boatjump.
-                          Por fin hemos adaptado el template Html y Css en Rails
-                          y convertido todo en Sass, Coffescript y Bootstrap.
+                          El FrontEnd de Taskscheduler se ha diseñado en First Mobile
+                          sobre la recomendación del cliente, hemos hecho unos Mokups
+                          de todas las pantallas para que si pudiera entender el flujo
+                          de la applicacion y en un segundo momento hemos añadido
+                          colores y typografia.
 
         h2_5_html: Back-End
         description_5_html: >
-                          Gestión de barcos, Gestión del árbol de localizaciones,
-                          Gestión de los precios de los barcos por temporadas,
-                          Geolocalización por dirección, Subida de imágenes con
-                          marca de agua, Gestión de los contenidos dinámicos multi-idioma,
-                          Gestión de los extras de los barcos, gestión de los
-                          características de los barcos, Diseño optimizado para
-                          su uso en dispositivos moviles.
+                          Desde el backend los usuarios con permisos de acceso
+                          pueden modificar toda la información de la base de
+                          datos, cualquier persona que necesite organizar su
+                          tiempo tendrá acceso a un calendario personal donde
+                          organizar sus Proyectos y Tareas.
 
 
         h2_tecnology_html: <strong>Tecnología</strong> utilizada
         tecnology_html: >
                         RubyOnRails / PostgreSQL / Rspec / Bootstrap / Sass /
-                        Diseño Ipad
+                        Diseño Ipad - Smartphone
         h2_customer_html: Que dice el cliente
+        customer_description_html: >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.

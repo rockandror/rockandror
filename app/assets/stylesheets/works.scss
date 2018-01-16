@@ -65,6 +65,12 @@ section{
 					padding: 1em 2em;
 					opacity: 0;
 					font-size: 0.9em;
+
+          @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+            opacity: 1;
+            background: #000;
+          }
+
 				}
 			}
 		}
