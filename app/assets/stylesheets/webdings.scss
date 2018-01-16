@@ -13,5 +13,53 @@ section{
       fill: #007aa3;
       margin-bottom: 1em;
     }
+
+    img{
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .brand{
+      background: #3b3b3b;
+      padding: 6em 3em;
+      color: #fff;
+
+      @include col-xs() {
+        svg{
+          max-width: 180px;
+          height: 150px;
+        }
+      }
+
+
+      svg{
+        max-height: 250px;
+      }
+    }
+
+    .app-smartphone{
+      margin-top: 4em;
+      #galleryApp{
+        img{
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .back-end{
+      background: #3b3b3b;
+      padding: 2em 0;
+      color: #d4d4d4;
+      hr{
+        border-color:#6b6969;
+      }
+    }
+
+    .tecnology{
+      background: #b50202;
+      padding: 2em 0;
+      color: #fff;
+    }
   }
 }

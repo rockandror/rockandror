@@ -6,29 +6,145 @@ es:
         description: Añadir descripcion Webdings
         keywords: Añadir keywords
 
-      h1_title_html: Webdings
-      lead: Crea la app y la web de tu boda
+      h1_title_html: Webdings - Crea la app y la web de tu boda
+      lead: Proyecto propio
       general_description_html: >
                             Webdings se ha desarrollado como un proyecto de
                             formación interna, es un SaaS que tiene como objetivo
                             permitir a los usuarios crear de forma muy sencilla
                             una web y una aplicación móvil para su boda.
-                            Esta formado por un backend a través del cual los
-                            novios pueden definir los contenidos y módulos que
-                            desean publicar, una API para interactuar con aplicaciones
-                            móviles, una web y una app autogeneradas a través
-                            de la información y configuración introducidas en
-                            el backend."
 
-      h2_brand_html: <strong>Imagen</strong>corporativa
-      brand_description_html: >
-                                El diseño de la marca y de la plataforma ha sido
-                                realizado integramente por RockAndRoR buscando
-                                la mayor simplicidad en diseño y usabilidad web.
 
-      h2_backend_html: <strong>Back</strong>end
+      h2_1_html: El desafío
+      description_1_html: >
+                          Nuestra proceso de mejora continua nos lleva a tener
+                          que hacer experimentos para llegar a elegir
+                          <a href="best-tools">las herramientas tecnológicas</a>
+                          mejor del momento para el desarrollo web de aplicaciones.
+                          <br>
+                          En este proyecto hemos querido crear una aplicación para
+                          que cualquier persona pueda gestionar su boda con un
+                          panel de configuración y al mismo tiempo dar la
+                          posibilidad a los invitados de interactuar con los
+                          novios antes durante y Después el día de la boda con
+                          la App y también auto generar una One page "la pagina
+                          de sus boda" con todos los contenidos y la interacción
+                          de los invitados, con fotos, comentarios, planificación
+                          y mucho más.
+
+      h2_2_html: Imagen corporativa
+      description_2_html: >
+                          El diseño de la marca y de la plataforma ha sido
+                          realizado integramente por RockAndRoR buscando
+                          la mayor simplicidad en diseño y usabilidad web.
+
+      h2_3_html: Front End
+      description_3_html: >
+                        El Front End se compone de dos partes, una la parte comercial
+                        donde hemos creado una One page para la presentación
+                        del producto visualizable en dekstop, tablet, smartphone,
+                        y la parte para los utilizadores de webdings, donde
+                        podrán ver sus pagina web auto generarse durante el
+                        utilizo de la Aplicación.
+
+      h2_4_html: Pagina Auto generada en todos los dispositivos
+      description_4_html: >
+                        La pagina auto genera los contenidos que los novios
+                        eligen desde el backend como el mapa, menú, mesas, cuenta atrás,
+                        galeria de fotos, regalos, agradecimientos y las nueva
+                        funcionalidades que se van creando en el tiempo. Al final
+                        de la pagina la sugerencia para bajar la App para que los
+                        invitados puedan interactuar con los novios, antes,
+                        durante y despues la boda.
+                        <br>
+                        Tambien en este caso la web es accesible desde cualquier
+                        dispositvo, desktop, tablet o smartphone, pero para la
+                        interacción entre los novios y los invitados ncesitan bajar
+                        la App.
+
+      h2_5_html: Aplicación móvil
+      description_5_html: >
+                  Con el objetivo de conseguir una mayor interacción con los
+                  invitados hemos creado una aplicación móvil disponible tanto
+                  para dispositivos móviles Android como iOS.
+                  La aplicación permite a los invitados tener toda la información
+                  de la boda comodamente accesible a través de la app y dispone
+                  de algunas funcionalidades que no se pueden realizar a través
+                  de la web.
+
+      h2_6_html: Back end
+      description_6_html: >
+                  El Backend es el corazón de la aplicación, de hecho es la parte
+                  donde los novios pueden gestionar los invitados, planificar el
+                  dia dia las cosas que hacer con un calendario que avisa por
+                  email para que no olviden nada, unos módulos que son las clave
+                  para determinar que van a ver en la web los invitados al momento
+                  que se auto genera, definir los contenidos.
+
+      h2_7_html: Panel de control
+      description_7_html: >
+                Un comodo Panel de control para mantener bajo control todo lo que
+                va a pasar con la boda.
+
+      h2_8_html: Gestion de los invitados
+      description_8_html: >
+                Desde esta sección los novios pueden mantener el control de los
+                invitados enviando email y saber en cualquier momento quien
+                participa a la boda, tambien pueden ser informatos sobre el estado
+                del envio.
+
+      h2_9_html: Definir el menu
+      description_9_html: >
+                Definir el menú de la boda y dar la posibilidad a los
+                invitados de decidir que platos quieren a través de la
+                aplicación móvil.
+
+      h2_10_html: Organizar los invitados por mesas
+      description_10_html: >
+                Distribuir los invitados por mesas. Ellos podrán consultar
+                la información a través de la web o de la aplicación móvil.
+
+      h2_11_html: Punto de interés
+      description_11_html: >
+                Pueden definir el calendario de actividades del día y
+                posicionarlas en el mapa, de esta forma los invitados
+                podrán encontrar las ubicaciones fácilmente con el modo
+                de navegación.
+
+      h2_12_html: Control de gastos
+      description_12_html: >
+                Control de las partidas de presupuesto de la boda.
+                Una visión general del coste de todos los servicios
+                que necesitan.
+
+      h2_12_html: Calendario de actividades
+      description_12_html: >
+                Posibilidad de definr las tareas que tienes que realizar para
+                organizar la boda: visitas, reuniones, etc y definir recordatorios
+                automáticos.
+
+      h2_13_html: Crear una galería de imágenes
+      description_13_html: >
+                Posibilidad de crear una galería de fotos entre todos los
+                asistentes de la boda. Desde la aplicación móvil o la web
+                podrán ver y descargar las fotos de la boda.
+
+      h2_14_html: Predicción metereológica
+      description_14_html: >
+                Previsión meteorológica en cada uno de las
+                localizaciones del día B.
+
+      h2_15_html: Contenido textual, historia, regalos, agradecimientos
+      description_15_html: >
+                Posibilidad de escribir la historia, regalos y agradecimientos
+                para que los invitados podrán leer tanto en la WEB como en
+                la APP.
+
+
+
+
       bullet_backend:
-        1_li: "Envia invitaciones por email"
+        1_li:   "Envia invitaciones por email"
         2_li:  "Define el menú de la boda"
         3_li:  "Organiza a los invitados por mesas"
         4_li:  "Crea una galería de imágenes colaborativa"
@@ -67,5 +183,5 @@ es:
 
       h2_tecnology_html: <strong>Tecnología</strong> utilizada
       tecnology_html: >
-                        RubyOnRails / PostgreSQL / Rspec (+ 300 specs ) <br>
-                        Bootstrap / Sass / Diseño responsive <br> API / Ionic
+                        RubyOnRails / PostgreSQL / Rspec (+ 300 specs )
+                        Bootstrap / Sass / Diseño responsive / API / Ionic
