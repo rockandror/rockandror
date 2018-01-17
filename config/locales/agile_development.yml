@@ -25,55 +25,42 @@ es:
                         intuitiva flexible.
       analysis_title: 01. Analisis
       analysis_description_html: >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
+                        Planteamiento de nuevas funcionalidades, proposición de
+                        soluciones y planificación de objetivos.
       design_title: 02. Diseño
       design_description_html: >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
+                        Realización de maquetas (mockups), identificar riesgos,
+                        anticipar problemas y preparar alternativas.
       implementation_title: "03. Implementacion"
       implementation_description_html: >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
+                        Desarrollo de las funcionalidades, pruebas unitarias y de
+                        integración.
       test_title: 04. Pruebas
       test_description_html: >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
+                        Testeamos la aplicación en un ambiente de trabajo que se llama
+                        staging, donde el cliente, nosostros y los usuarios de test,
+                        pueden testear como si fuera la Web online de verdad.
+
       acceptance_title: 05. Aceptacion
       acceptance_description_html: >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
+                        Revisión de las nuevas funcionalidades, ajustes y correcciones,
+                        necesarias.
       launching_title: 06. Lanzamiento
       launching_description_html: >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
+                        Instalación en producción y feedback de los usuarios.
+
+      reasons_title: Algunas razones por las cuales deberías aplicar la metodologías ágiles
+      reasons_description_html: >
+                        1. Manejo de errores de análisis y diseño màs facìl de controlar
+                        <br />
+                        2. Mayor motivación y organización del equipo más sencilla
+                        <br />
+                        3. Mejor gestión de cambios durante el trabajo
+                        <br />
+                        4. Mayor velocidad y eficiencia durante el desarrollo
+                        <br />
+                        5. Mayor calidad del codìgo
+                        <br />
+                        6. Tiempos de entrega bastante más ajustados
+                        <br />
+                        7. Más felicidad para el cliente y los desarrolladores.
