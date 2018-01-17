@@ -120,25 +120,11 @@
       <p><%= t'pages.works.oasiscatamaran.tecnology_html' %></p>
     </div>
   </div>
-
-  <div class="row customer">
-    <div class="container">
-      <br />
-      <h2 class="text-center">
-        <%= t'pages.works.oasiscatamaran.h2_customer_html' %>
-      </h2>
-      <%= image_tag('testimonials/vanessa-moreno.jpg', class: 'img-responsive img-circle') %>
-      <p class="text-center">
-        <small>CEO: Vanessa Moreno</small>
-      </p>
-      <div class="col-md-8 col-md-offset-2">
-        <p>
-          <%= t'pages.works.oasiscatamaran.customer_description_html' %>
-        </p>
-        <br />
-      </div>
-    </div>
-  </div>
+  <%= testimonials(
+                  'testimonials/vanessa-moreno.jpg',
+                  'CEO: Vanessa Moreno',
+                  (t'pages.works.oasiscatamaran.customer_description_html'))
+                  %>
 </section>
 
 <%= render 'shared/contact_now' %>

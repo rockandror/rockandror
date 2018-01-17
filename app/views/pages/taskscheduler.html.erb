@@ -143,24 +143,12 @@
       <p><%= t'pages.works.taskscheduler.tecnology_html' %></p>
     </div>
   </div>
-  <div class="row customer">
-    <div class="container">
-      <br />
-      <h2 class="text-center">
-        <%= t'pages.works.taskscheduler.h2_customer_html' %>
-      </h2>
-      <%= image_tag('testimonials/vanessa-moreno.jpg', class: 'img-responsive img-circle') %>
-      <p class="text-center">
-        <small>CEO: Carlos Jesús Martín González</small>
-      </p>
-      <div class="col-md-8 col-md-offset-2">
-        <p>
-          <%= t'pages.works.taskscheduler.customer_description_html' %>
-        </p>
-        <br />
-      </div>
-    </div>
-  </div>
+
+  <%= testimonials(
+                  'testimonials/boatjump.jpg',
+                  'CEO: Carlos Jesús Martín González',
+                  (t'pages.works.taskscheduler.customer_description_html'))
+                  %>
 </section>
 
 <%= render 'shared/contact_now' %>

@@ -12,6 +12,17 @@ module PagesHelper
     content_for?(:"meta_#{tag}") ? content_for(:"meta_#{tag}") : default_text
   end
 
+  def testimonials(avatar, name, description)
+    content_tag :div, class:'row customer' do
+      content_tag(:div, nil, class:'container') do
+        concat content_tag(:h2, (t'pages.works.boatjump.h2_customer_html'), class:'text-center')
+        concat image_tag(avatar, class: 'img-responsive img-circle')
+        concat content_tag(:p, name, class:'text-center')
+        concat content_tag(:p, description, class:'col-md-8 col-md-offset-2 text-center')
+      end
+    end
+  end
+
   def contact_now
     if params[:action] == "team"
       t 'helper.contact_now.team'
