@@ -1,15 +1,15 @@
-<% title t'pages.works.boatjump.meta.title' %>
-<% meta_tag :description, t('pages.works.boatjump.meta.description') %>
-<% meta_tag :keywords, t('pages.works.boatjump.meta.keywords') %>
+<% title t'pages.boatjump.meta.title' %>
+<% meta_tag :description, t('pages.boatjump.meta.description') %>
+<% meta_tag :keywords, t('pages.boatjump.meta.keywords') %>
 
 <section class="page boatjump">
   <div class="row header-bg">
     <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
       <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
       <h1>
-        <%= t'pages.works.boatjump.h1_title_html' %>
+        <%= t'pages.boatjump.h1_title_html' %>
       </h1>
-      <lead><%= t'pages.works.boatjump.lead' %></lead>
+      <lead><%= t'pages.boatjump.lead' %></lead>
       <%= render 'shared/logo_rails' %>
     </div>
   </div>
@@ -22,26 +22,26 @@
         </div>
         <div class="col-md-9">
           <p>
-            <%= t'pages.works.boatjump.general_description_html' %>
+            <%= t'pages.boatjump.general_description_html' %>
           </p>
           <%= link_to 'Visita Boatjump', 'https://www.boatjump.com', class:'btn btn-lg btn-primary', target: 'blank' %>
         </div>
       </div>
       <hr />
       <br />
-      <h2><%= t'pages.works.boatjump.h2_1_html' %></h2>
-      <p><%= t'pages.works.boatjump.description_1_html' %></p>
+      <h2><%= t'pages.boatjump.h2_1_html' %></h2>
+      <p><%= t'pages.boatjump.description_1_html' %></p>
       <br />
       <%= image_tag "boatjump/lanzadera.jpg", class: 'img-responsive' %>
       <br />
-      <h2><%= t'pages.works.boatjump.h2_2_html' %></h2>
-      <p><%= t'pages.works.boatjump.description_2_html' %></p>
-      <h2><%= t'pages.works.boatjump.h2_3_html' %></h2>
-      <p><%= t'pages.works.boatjump.description_3_html' %></p>
+      <h2><%= t'pages.boatjump.h2_2_html' %></h2>
+      <p><%= t'pages.boatjump.description_2_html' %></p>
+      <h2><%= t'pages.boatjump.h2_3_html' %></h2>
+      <p><%= t'pages.boatjump.description_3_html' %></p>
       <hr />
-      <h2><%= t'pages.works.boatjump.h2_4_html' %></h2>
+      <h2><%= t'pages.boatjump.h2_4_html' %></h2>
       <ul class="no-padding-left">
-        <%= t'pages.works.boatjump.list_4_html' %>
+        <%= t'pages.boatjump.list_4_html' %>
       </ul>
     </div>
   </div>
@@ -100,8 +100,8 @@
 
   <div class="row video-section">
     <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-      <h2><%= t'pages.works.boatjump.h2_5_html' %></h2>
-      <p><%= t'pages.works.boatjump.description_5_html' %></p>
+      <h2><%= t'pages.boatjump.h2_5_html' %></h2>
+      <p><%= t'pages.boatjump.description_5_html' %></p>
       <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 hidden-xs">
         <%#= video_tag "boatjump-frontend.mp4", :controls => true, :autoplay => true, :loop => true %>
         ----- AQUI HAY UN VIDEO ----- <br />
@@ -114,8 +114,8 @@
   <div class="row responsive">
     <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
       <br />
-      <h2><%= t'pages.works.boatjump.h2_6_html' %></h2>
-      <p><%= t'pages.works.boatjump.description_6_html' %></p>
+      <h2><%= t'pages.boatjump.h2_6_html' %></h2>
+      <p><%= t'pages.boatjump.description_6_html' %></p>
       <div id="galleryFrontEndResponsive" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#galleryFrontEndResponsive" data-slide-to="0" class="active"></li>
@@ -160,8 +160,8 @@
 
   <div class="row back-end">
     <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-      <h2><%= t'pages.works.boatjump.h2_7_html' %></h2>
-      <p><%= t'pages.works.boatjump.description_7_html' %></p>
+      <h2><%= t'pages.boatjump.h2_7_html' %></h2>
+      <p><%= t'pages.boatjump.description_7_html' %></p>
       <%= image_tag "boatjump/laptop.png", class: 'img-responisve' %>
       <br />
     </div>
@@ -169,12 +169,16 @@
 
   <div class="row tecnology">
     <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-      <h2><%= t'pages.works.boatjump.h2_tecnology_html' %></h2>
-      <p><%= t'pages.works.boatjump.tecnology_html' %></p>
+      <h2><%= t'pages.boatjump.h2_tecnology_html' %></h2>
+      <p><%= t'pages.boatjump.tecnology_html' %></p>
     </div>
   </div>
 
-  <%= testimonials('testimonials/boatjump.jpg', 'Nombre cliente', (t'pages.works.boatjump.customer_description_html')) %>
+  <%= testimonials(
+                  'testimonials/boatjump.jpg',
+                  'Nombre cliente',
+                  (t'pages.boatjump.customer_description_html'))
+                  %>
 
 </section>
 

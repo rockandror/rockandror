@@ -2,9 +2,16 @@ es:
   pages:
     webdings:
       meta:
-        title: Webdings
-        description: Añadir descripcion Webdings
-        keywords: Añadir keywords
+        title: >
+                Webdings aplicación para la gestion de tu boda
+        description:  >
+                      Webdings es una web y una aplicación móvil para su boda
+                      que se ha desarrollado como un proyecto de
+                      formación interna.
+        keywords:     >
+                      Webdings, aplicación para móvil, Ruby on rails, Proyecto propio,
+                      RockAndRoR, desarrollo Ruby on Rails, desarrollo RoR,
+                      desarrollo web, desarrollo web Mallorca
 
       h1_title_html: Webdings - Crea la app y la web de tu boda
       lead: Proyecto propio

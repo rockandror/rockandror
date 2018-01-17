@@ -70,7 +70,8 @@ es:
       startup: Lanza tu Startup con metodología Agile y MVP
       desarrollo_web_palma_de_mallorca: Estas listo para lanzar tu proyecto con Rock And Ror
       works_customer: Tienes un proyecto similar?
-
+    testimonials:
+      h2_customer_html: Que dice el cliente
   pages:
     works:
       meta:

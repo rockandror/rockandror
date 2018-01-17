@@ -1,127 +1,125 @@
 es:
   pages:
-    works:
-      boatjump:
-        meta:
-          title:  >
-                  RockAndRor desarrolla la startup Boatjump de alcance internacional.
+    boatjump:
+      meta:
+        title:  >
+                RockAndRor desarrolla la startup Boatjump de alcance internacional.
 
-          description: >
-                        RockAndRor equipo de desarrollo a medida en RubyOnRails
-                        ha sido encargada da la Startup Boatjump para el desarrollo
-                        de la plataforma de alquilar de barcos online de alcance
-                        internacional.
-          keywords:     >
-                        Boatjump, Alquiler de barcos online, Ruby on rails, Startup,
-                        RockAndRoR, desarrollo Ruby on Rails, desarrollo RoR,
-                        desarrollo web, desarrollo web Mallorca, gran empresas
+        description: >
+                      RockAndRor equipo de desarrollo a medida en RubyOnRails
+                      ha sido encargada da la Startup Boatjump para el desarrollo
+                      de la plataforma de alquilar de barcos online de alcance
+                      internacional.
+        keywords:     >
+                      Boatjump, Alquiler de barcos online, Ruby on rails, Startup,
+                      RockAndRoR, desarrollo Ruby on Rails, desarrollo RoR,
+                      desarrollo web, desarrollo web Mallorca, gran empresas
 
-        h1_title_html: Boatjump, Alquiler de barcos online de alcance internacional
-        lead: Startup
-        general_description_html: >
-                              Boatjump es una plataforma online donde se pone en
-                              contacto a propietarios de barcos que quieren
-                              alquilar su embarcación con usuarios interesados
-                              en navegar, funciona como una herramienta donde
-                              buscar, comparar y reservar tu barco.
-                              Boatjump es un B2C, en esta primera versión hemos
-                              construido una sólida aplicación web sobre la que
-                              Boatjump podrá crecer a medida que lo requiera.
+      h1_title_html: Boatjump, Alquiler de barcos online de alcance internacional
+      lead: Startup
+      general_description_html: >
+                            Boatjump es una plataforma online donde se pone en
+                            contacto a propietarios de barcos que quieren
+                            alquilar su embarcación con usuarios interesados
+                            en navegar, funciona como una herramienta donde
+                            buscar, comparar y reservar tu barco.
+                            Boatjump es un B2C, en esta primera versión hemos
+                            construido una sólida aplicación web sobre la que
+                            Boatjump podrá crecer a medida que lo requiera.
 
-        h2_1_html: Seleccionado por el programa de Lanzadera
-        description_1_html: >
-                          Este proyecto ha sido seleccionado por el
-                          <a href="https://lanzadera.es" target="blank">programa de Lanzadera</a>
-                          (una de las más importantes aceleradoras de startups de España)
-                          como uno de los proyectos con proyección para la
-                          convocatoria del año 2016.
-                          <br /> A lo largo de este 2017 ya casi han triplicado
-                          el número de clientes.
-                          <a href="http://www.lavanguardia.com/local/sevilla/20170913/431263868124/boatjump-fundada-por-el-cordobes-alfonso-pastrana-cierra-su-primera-ronda-de-financiacion-de-500000-euros.html", target="blank"> Fuente: lavanguardia.com </a>
+      h2_1_html: Seleccionado por el programa de Lanzadera
+      description_1_html: >
+                        Este proyecto ha sido seleccionado por el
+                        <a href="https://lanzadera.es" target="blank">programa de Lanzadera</a>
+                        (una de las más importantes aceleradoras de startups de España)
+                        como uno de los proyectos con proyección para la
+                        convocatoria del año 2016.
+                        <br /> A lo largo de este 2017 ya casi han triplicado
+                        el número de clientes.
+                        <a href="http://www.lavanguardia.com/local/sevilla/20170913/431263868124/boatjump-fundada-por-el-cordobes-alfonso-pastrana-cierra-su-primera-ronda-de-financiacion-de-500000-euros.html", target="blank"> Fuente: lavanguardia.com </a>
 
-        h2_2_html: El desafío
-        description_2_html: >
-                          Nuestar mision desde el principio ha sido replantear
-                          un diseño UX/UI, Internacionalizar en 5 idiomas,
-                          acelerar la web a pesar de la gran cantidad de datos y
-                          trafico, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+      h2_2_html: El desafío
+      description_2_html: >
+                        Nuestar mision desde el principio ha sido replantear
+                        un diseño UX/UI, Internacionalizar en 5 idiomas,
+                        acelerar la web a pesar de la gran cantidad de datos y
+                        trafico, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
 
-        h2_3_html: El comienzo
-        description_3_html: >
-                          En la primera reunión con el CEO Jaima Vara el CFO
-                          Alfonso Pastrana el CMO Pablo Ruibal, hemos escuchado
-                          cual eran las problematicas a nivel tecnológico de la
-                          empresa y definido un primer plan de acción seguiendo
-                          como siempre la metodologia MVP y el
-                          <a href="agile-development">desarrollo Agile</a>
-                          para mantener la web activa y no ariesgar de perder en
-                          ningun momento el trafico que ya existia.
-                          Hemos dividido en hitos por meses el gran trabajo que
-                          habia que hacer, empezando con un plan de 6 meses y
-                          definiendo mes por mes las tareas dependiendo de las
-                          funcionalidad más importante para la empresa llegando
-                          asi a casi 3 años de desarrollo para nuestro cliente
-                          estrella Boatjump.
+      h2_3_html: El comienzo
+      description_3_html: >
+                        En la primera reunión con el CEO Jaima Vara el CFO
+                        Alfonso Pastrana el CMO Pablo Ruibal, hemos escuchado
+                        cual eran las problematicas a nivel tecnológico de la
+                        empresa y definido un primer plan de acción seguiendo
+                        como siempre la metodologia MVP y el
+                        <a href="agile-development">desarrollo Agile</a>
+                        para mantener la web activa y no ariesgar de perder en
+                        ningun momento el trafico que ya existia.
+                        Hemos dividido en hitos por meses el gran trabajo que
+                        habia que hacer, empezando con un plan de 6 meses y
+                        definiendo mes por mes las tareas dependiendo de las
+                        funcionalidad más importante para la empresa llegando
+                        asi a casi 3 años de desarrollo para nuestro cliente
+                        estrella Boatjump.
 
-        h2_4_html: Servicios ofrecido
-        list_4_html: >
-                    <li><p>Diseño de usabilidad empezando de un template ya preexistente</p></li>
-                    <li><p>Mock-up de las nueva pantallas no existente</p></li>
-                    <li><p>Nueva arquitectura de la aplicacion</p></li>
-                    <li><p>Desarrollo Front-end</p></li>
-                    <li><p>Desarrollo Back-end</p></li>
-                    <li><p>Desarrollo Responsive</p></li>
-                    <li><p>Gestión de los contenidos dinámicos multi-idioma</p></li>
-                    <li><p>Gestión de los precios de los barcos por temporadas</p></li>
-                    <li><p>Geolocalización por dirección</p></li>
-                    <li><p>Integracion Amazon</p></li>
+      h2_4_html: Servicios ofrecido
+      list_4_html: >
+                  <li><p>Diseño de usabilidad empezando de un template ya preexistente</p></li>
+                  <li><p>Mock-up de las nueva pantallas no existente</p></li>
+                  <li><p>Nueva arquitectura de la aplicacion</p></li>
+                  <li><p>Desarrollo Front-end</p></li>
+                  <li><p>Desarrollo Back-end</p></li>
+                  <li><p>Desarrollo Responsive</p></li>
+                  <li><p>Gestión de los contenidos dinámicos multi-idioma</p></li>
+                  <li><p>Gestión de los precios de los barcos por temporadas</p></li>
+                  <li><p>Geolocalización por dirección</p></li>
+                  <li><p>Integracion Amazon</p></li>
 
-        h2_5_html: Front-End
-        description_5_html: >
-                          El nuevo FrontEnd de Boatjump se ha diseñado siguiendo
-                          un template preexistente sobre la recomendación del
-                          cliente con lo nuevos colores de la marca imagenes,
-                          typografia y creando nuevas pantallas que no existian,
-                          manteniendo el mismo estilo recomendato por Boatjump.
-                          Por fin hemos adaptado el template Html y Css en Rails
-                          y convertido todo en Sass, Coffescript y Bootstrap.
+      h2_5_html: Front-End
+      description_5_html: >
+                        El nuevo FrontEnd de Boatjump se ha diseñado siguiendo
+                        un template preexistente sobre la recomendación del
+                        cliente con lo nuevos colores de la marca imagenes,
+                        typografia y creando nuevas pantallas que no existian,
+                        manteniendo el mismo estilo recomendato por Boatjump.
+                        Por fin hemos adaptado el template Html y Css en Rails
+                        y convertido todo en Sass, Coffescript y Bootstrap.
 
-        h2_6_html: Responsive
-        description_6_html: >
-                          Después una primera version Desktop, hemos diseñado y
-                          desarrollado una interfaz que se adpata a todos los
-                          dispositivos móviles  añadiendo una mejora en la
-                          navigacion para el usuario.
-                          El diseño para tablets tanto con orientación vertical
-                          como con orientación horizontal y a todo tipo de
-                          teléfonos móviles y navegadores web.
-        h2_7_html: Back-End
-        description_7_html: >
-                          Gestión de barcos, Gestión del árbol de localizaciones,
-                          Gestión de los precios de los barcos por temporadas,
-                          Geolocalización por dirección, Subida de imágenes con
-                          marca de agua, Gestión de los contenidos dinámicos multi-idioma,
-                          Gestión de los extras de los barcos, gestión de los
-                          características de los barcos, Diseño optimizado para
-                          su uso en dispositivos moviles.
+      h2_6_html: Responsive
+      description_6_html: >
+                        Después una primera version Desktop, hemos diseñado y
+                        desarrollado una interfaz que se adpata a todos los
+                        dispositivos móviles  añadiendo una mejora en la
+                        navigacion para el usuario.
+                        El diseño para tablets tanto con orientación vertical
+                        como con orientación horizontal y a todo tipo de
+                        teléfonos móviles y navegadores web.
+      h2_7_html: Back-End
+      description_7_html: >
+                        Gestión de barcos, Gestión del árbol de localizaciones,
+                        Gestión de los precios de los barcos por temporadas,
+                        Geolocalización por dirección, Subida de imágenes con
+                        marca de agua, Gestión de los contenidos dinámicos multi-idioma,
+                        Gestión de los extras de los barcos, gestión de los
+                        características de los barcos, Diseño optimizado para
+                        su uso en dispositivos moviles.
 
-        h2_tecnology_html: <strong>Tecnología</strong> utilizada
-        tecnology_html: >
-                        RubyOnRails / PostgreSQL / Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) /
-                        Amazon Web Services / Bootstrap / Sass / Diseño responsive
-        h2_customer_html: Que dice el cliente
-        customer_description_html: >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+      h2_tecnology_html: <strong>Tecnología</strong> utilizada
+      tecnology_html: >
+                      RubyOnRails / PostgreSQL / Rspec (+ 500 specs, Code To Test Ratio: 2.5 ) /
+                      Amazon Web Services / Bootstrap / Sass / Diseño responsive
+      customer_description_html: >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      Excepteur sint occaecat cupidatat non proident, sunt in
+                      culpa qui officia deserunt mollit anim id est laborum.
