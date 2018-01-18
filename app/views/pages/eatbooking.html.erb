@@ -1,15 +1,15 @@
-<% title t'pages.works.eatbooking.meta.title' %>
-<% meta_tag :description, t('pages.works.eatbooking.meta.description') %>
-<% meta_tag :keywords, t('pages.works.eatbooking.meta.keywords') %>
+<% title t'pages.eatbooking.meta.title' %>
+<% meta_tag :description, t('pages.eatbooking.meta.description') %>
+<% meta_tag :keywords, t('pages.eatbooking.meta.keywords') %>
 
 <section class="page eatbooking">
   <div class="row header-bg">
     <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
       <%= link_to t('common.btn_back'), url_for(:back), class: 'btn-back' %>
       <h1>
-        <%= t'pages.works.eatbooking.h1_title_html' %>
+        <%= t'pages.eatbooking.h1_title_html' %>
       </h1>
-      <lead><%= t'pages.works.eatbooking.lead' %></lead>
+      <lead><%= t'pages.eatbooking.lead' %></lead>
       <%= render 'shared/logo_rails' %>
     </div>
   </div>
@@ -22,24 +22,24 @@
         </div>
         <div class="col-md-9">
           <p>
-            <%= t'pages.works.eatbooking.general_description_html' %>
+            <%= t'pages.eatbooking.general_description_html' %>
           </p>
           <%= link_to 'Visita Eatbooking', 'http://eatbooking.com', class:'btn btn-lg btn-primary', target: 'blank' %>
         </div>
       </div>
       <hr />
       <br />
-      <h2><%= t'pages.works.eatbooking.h2_1_html' %></h2>
-      <p><%= t'pages.works.eatbooking.description_1_html' %></p>
+      <h2><%= t'pages.eatbooking.h2_1_html' %></h2>
+      <p><%= t'pages.eatbooking.description_1_html' %></p>
       <br />
       <%= image_tag "eatbooking/cover-page.jpg", class: 'img-responsive' %>
       <br />
-      <h2><%= t'pages.works.eatbooking.h2_2_html' %></h2>
-      <p><%= t'pages.works.eatbooking.description_2_html' %></p>
+      <h2><%= t'pages.eatbooking.h2_2_html' %></h2>
+      <p><%= t'pages.eatbooking.description_2_html' %></p>
       <hr />
-      <h2><%= t'pages.works.eatbooking.h2_3_html' %></h2>
+      <h2><%= t'pages.eatbooking.h2_3_html' %></h2>
       <ul class="no-padding-left">
-        <%= t'pages.works.eatbooking.list_3_html' %>
+        <%= t'pages.eatbooking.list_3_html' %>
       </ul>
     </div>
     <div class="col-xs-12 accounting bg-grey-light">
@@ -95,8 +95,8 @@
 
   <div class="row back-end">
     <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-      <h2><%= t'pages.works.eatbooking.h2_6_html' %></h2>
-      <p><%= t'pages.works.eatbooking.description_6_html' %></p>
+      <h2><%= t'pages.eatbooking.h2_4_html' %></h2>
+      <p><%= t'pages.eatbooking.description_4_html' %></p>
       <%= image_tag "eatbooking/eatbooking-ipad.png", class: 'img-responisve' %>
       <br />
     </div>
@@ -104,14 +104,14 @@
 
   <div class="row tecnology">
     <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-      <h2><%= t'pages.works.eatbooking.h2_tecnology_html' %></h2>
-      <p><%= t'pages.works.eatbooking.tecnology_html' %></p>
+      <h2><%= t'pages.eatbooking.h2_tecnology_html' %></h2>
+      <p><%= t'pages.eatbooking.tecnology_html' %></p>
     </div>
   </div>
   <%= testimonials(
                   'testimonials/boatjump.jpg',
                   'CEO: Francisco de la Mata',
-                  (t'pages.works.eatbooking.customer_description_html'))
+                  (t'pages.eatbooking.customer_description_html'))
                   %>
 </section>
 
