@@ -30,7 +30,9 @@ es:
                         El software propietario, al no poder compartirse, es
                         «antiético» dado que prohibir compartir entre seres
                         humanos va en contra del sentido común.
-                        <a href='https://es.wikipedia.org/wiki/Código_abierto.', target='blank'><i>https://es.wikipedia.org/wiki/Código_abierto</i></a>
+                        <br>
+                        <a href='https://es.wikipedia.org/wiki/Código_abierto.', target='blank'>
+                        <i>Wikipedia - Código_abierto</i></a>
                         <br>
                         <br>
                         Es muy importante para RockAndRor la trasparencia, la
@@ -46,58 +48,69 @@ es:
 
       h2_2_title: Resumimos los puntos principales del codigo abierto
       ul_li_html: >
-                    <ul class="no-padding-left">
+                  <ul class="no-padding-left">
+                    <br>
                     <li>
-                      <strong>Estandard:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                      <h3>Estandard:</h3>
+                      <p>No tiene restricciones para vender o distribuir el
+                      software, sea público y su utilización sea disponible
+                      de manera gratuita o a un coste que no suponga una
+                      dificultad de acceso, su uso y aplicación no esté condicionado
+                      al pago de un derecho de propiedad intelectual o industrial
+                      el coste de los productos open source es significativamente
+                      inferior a los productos con licencias propietarias e
+                      incluso puede ser nulo.</p>
                     </li>
+
                     <li>
-                      <strong>Costos relativamente bajos:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                      <h3>Costos relativamente bajos y calidad más alta:</h3>
+                      <p>
+                      El open source esta desarrollado por miles de desarrolladores,
+                      esto hace que el código abierto sea mejor cada dìa y cualquier
+                      fallo de seguridad se pueda arreglar en muy poco tiempo
+                      gracias a la grande comunidad de desarrolladores.
+                      Todo esto gran trabajo de parte te todos hace que la calidad
+                      del codìgo sea mucho mejor y solo hay que pagar los
+                      desarrolladores para que escriban el codìgo para crear
+                      la funcionalidades que neceistas para tu applicacìon.
+                      Ninguna licencia, esto hace que la applicacìon sea màs barata.
+                      </p>
                     </li>
+
                     <li>
-                      <strong>Calidad más alta:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                      <h3>Seguridad y trasparencia, menos bugs y actualizaciones más rápidas</h3>
+                      <p>
+                        Cuantas más personas puedan ver y probar un conjunto de
+                        códigos, más probabilidades habrá de que los defectos
+                        se detecten y solucionen rápidamente.
+                        Los errores en el código abierto también tienden a
+                        repararse de inmediato a diferencia del mundo "propietario"
+                        que lleva semanas o meses para parchear vulnerabilidades.
+                      </p>
                     </li>
+
                     <li>
-                      <strong>Menos bugs y actualizaciones más rápidas:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                      <h3>Más oportunidades de personalización:</h3>
+                      <p>
+                      Los usuarios de negocios pueden tomar el código abierto y
+                      modificarlo para adaptarlo a sus necesidades.
+                      Como el código está abierto, es simplemente una cuestión
+                      de modificarlo para agregar la funcionalidad que desean.
+                      Con el software propietario esto no es posible.
+                      </p>
                     </li>
+
                     <li>
-                      <strong>Seguridad y trasparencia:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                      <h3>Adaptable y compatible:</h3>
+                      <p>
+                      El software de código abierto generalmente
+                      requiere menos recursos, lo que significa que puede
+                      ejecutarlo bien incluso en hardware más antiguo.
+                      Depende del ti, no de un proveedor, es decidir que tu
+                      eliges cuándo es el momento de actualizar.
+                      </p>
                     </li>
-                    <li>
-                      <strong>Más oportunidades de personalización:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-                    </li>
-                    <li>
-                      <strong>Más funcionalidad:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-                    </li>
-                    <li>
-                      <strong>Adaptable y compatible:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-                    </li>
-                    <li>
-                      <strong>Alto nivel de escabilidad y flexibilidad:</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-                    </li>
-                    <li>
-                      <strong>Más innovaciones</strong>
-                      <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                      ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-                    </li>
-                    </ul>
+                  </ul>
 
       h2_3_title: Cuando nos resulta posible nos gusta participar en proyectos interesantes
       description_hackaton_madrid_html: >
