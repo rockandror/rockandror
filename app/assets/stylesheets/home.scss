@@ -368,7 +368,13 @@
         bottom: -50px;
 
         @include col-xs() {
-          bottom: -30px;
+          bottom: -50px;
+
+          li{
+            margin:0 5px;
+            width: 15px;
+            height: 15px;
+          }
         }
       }
     }

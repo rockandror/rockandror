@@ -1,5 +1,12 @@
 html, body {
   height: 100%;
+
+  @include col-xs() {
+    h1{
+      font-size: 1.6em;
+    }
+  }
+
 }
 
 body{

@@ -50,6 +50,10 @@ section{
       text-transform: none;
       font-size: 1.6em;
       text-transform: uppercase;
+
+      @include col-xs() {
+        font-size: 1.4em;
+      }
     }
 
     p{
