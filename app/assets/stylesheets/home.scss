@@ -107,6 +107,7 @@
       }
 
       h2 {
+
         visibility: hidden;
         @include text(#fff, uppercase, 2em, left);
         font-weight: 900;
@@ -114,10 +115,6 @@
 
         .underline {
           border-bottom:2px solid white;
-        }
-
-        @include col-xs() {
-          font-size: 1.6em;
         }
 
         @include col-max-360() {
@@ -131,6 +128,7 @@
           width: 160px;
         }
       }
+
 
       lead {
         z-index: 5;
@@ -214,6 +212,10 @@
 
       h2 {
         @include text(#fff, uppercase, 2em, right);
+
+        @include col-xs() {
+          font-size: 1.6em;
+        }
       }
 
       h3 {
@@ -242,6 +244,10 @@
 
       h2 {
         @include text(#fff, uppercase, 2em, left);
+
+        @include col-xs() {
+          font-size: 1.6em;
+        }
       }
 
       lead {
@@ -258,6 +264,10 @@
 
       h2{
         @include text(#fff, uppercase, 2em, right);
+
+        @include col-xs() {
+          font-size: 1.6em;
+        }
       }
 
       lead{
@@ -288,6 +298,10 @@
 
       h2 {
         @include text(#fff, uppercase, 2em, left);
+
+        @include col-xs() {
+          font-size: 1.6em;
+        }
       }
 
       lead {
@@ -304,6 +318,10 @@
 
     h2 {
       @include text(#fff, uppercase, 2em, right);
+
+      @include col-xs() {
+        font-size: 1.6em;
+      }
     }
 
     lead {
@@ -328,6 +346,11 @@
 
     h2 {
       @include text(#fff, uppercase, 2em, right);
+
+      @include col-xs() {
+        font-size: 1.6em;
+        text-align: center;
+      }
     }
 
     lead {
@@ -379,12 +402,6 @@
       }
     }
 
-    @include col-xs() {
-      h2,
-      lead {
-        text-align: left;
-      }
-    }
   }
     &.contact{
     position: relative;
@@ -393,6 +410,10 @@
 
     h2 {
       @include text(#676767, uppercase, 2em, right);
+
+      @include col-xs() {
+        font-size: 1.6em;
+      }
     }
 
     lead {
@@ -414,7 +435,7 @@
       h2,
       h3,
       lead {
-        text-align: left;
+        text-align: center;
       }
       a{
         margin-top: 1em;
