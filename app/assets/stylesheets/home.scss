@@ -87,7 +87,16 @@
       left:0;
 
       @include col-xs() {
-        background-position: left;
+        background-position: 0;
+      }
+
+      @include col-min-361-max-766(){
+        background-position-y: 110px;
+        background-position-x: 15%;
+      }
+
+      @include sm-portrait(){
+        background-position: 40%;
       }
     }
 
@@ -102,12 +111,20 @@
         left: 30%;
         top: 30%;
       }
+
+      @include col-min-361-max-766(){
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+      }
+
       @include col-max-360() {
         top: 40%;
       }
 
-      h2 {
 
+      h2 {
         visibility: hidden;
         @include text(#fff, uppercase, 2em, left);
         font-weight: 900;
@@ -115,6 +132,10 @@
 
         .underline {
           border-bottom:2px solid white;
+        }
+
+        @include col-min-361-max-766(){
+          font-size: 1.2em;
         }
 
         @include col-max-360() {
@@ -431,6 +452,10 @@
         position: absolute;
         top: 0;
         left:0;
+
+        @include sm-portrait(){
+          background-position: 90%;
+        }
       }
 
       @include col-xs() {

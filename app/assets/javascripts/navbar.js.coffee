@@ -4,4 +4,4 @@ App.Navbar =
     console.log 'navbar'
 
     $('#menu-hamburger').click (e) ->
-  	   $(this).toggleClass('open')
+      $('.animation-hamburguer').toggleClass('open')

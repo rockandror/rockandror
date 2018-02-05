@@ -65,7 +65,7 @@
         padding: 0;
         right: 0;
         margin-right:0;
-        // top: 8px;
+        height: 40px;
       }
     }
 
@@ -154,9 +154,9 @@
 
 
 
-#menu-hamburger {
+.animation-hamburguer {
   width: 30px;
-  margin-top: 7px;
+  top: -15px;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
