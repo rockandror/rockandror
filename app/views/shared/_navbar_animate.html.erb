@@ -2,14 +2,21 @@
   <div class="row-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="glyphicon glyphicon-menu-hamburger gi-2x"></span>
-        <span class="glyphicon glyphicon-remove gi-2x hidden"></span>
+
+        <div id="menu-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
       </button>
       <a class="navbar-brand" href="<%= root_path %>">
         <%= inline_svg "svg/logo.svg", class: 'logo-horiz' %>
       </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
+
       <ul class="nav navbar-nav left">
         <li class="dropdown anim">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
