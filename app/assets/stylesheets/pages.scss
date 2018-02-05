@@ -52,7 +52,7 @@ section{
       text-transform: uppercase;
 
       @include col-xs() {
-        font-size: 1.4em;
+        font-size: 1.3em;
       }
     }
 
@@ -98,6 +98,11 @@ section{
       border:none;
       font-family: Georgia, serif;
       font-size: 19px;
+
+      @include col-xs() {
+        font-size: 1.1em;
+      }
+
       &:before, &:after{
         content: '';
         content: none;

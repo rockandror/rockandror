@@ -15,7 +15,7 @@ es:
       h1_title_html: Desarrollo web a medida en <strong>palma de Mallorca</strong>
       quote_1_html:  >
                     Es fácil tener ideas de negocio.
-                    <br>
+                    <br class="hidden-xs">
                     Lo más complicado es aplicarlas en el mundo real.
                     <br> Guy Kawasaki
       description_1_html: >

@@ -404,46 +404,56 @@
 
   }
     &.contact{
-    position: relative;
-    background: white;
-    @include btn-ror(#676767, transparent, #676767, true, #676767);
+      position: relative;
+      background: white;
+      border-bottom: 1px solid $gray-lighter;
 
-    h2 {
-      @include text(#676767, uppercase, 2em, right);
+      @include btn-ror(#676767, transparent, #676767, true, #676767);
+
+      h2 {
+        @include text(#676767, uppercase, 2em, right);
+
+        @include col-xs() {
+          font-size: 1.6em;
+        }
+      }
+
+      lead {
+        @include text(#676767, uppercase, 0.8em, right);
+      }
+
+      .bg-contact {
+        height: 100%;
+        width: 100%;
+        background: image_url('svg/home-contact.svg') no-repeat center center;
+        background-size: cover;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left:0;
+      }
 
       @include col-xs() {
-        font-size: 1.6em;
+        h2,
+        h3,
+        lead {
+          text-align: center;
+        }
+        a{
+          margin-top: 1em;
+          display: block;
+          text-align: center;
+          border: 2px solid darken($brand-success, 10%);
+          background: $brand-success;
+          color: #fff;
+          font-weight: 700;
+          &:hover,
+          &:focus{
+            color: $brand-success;
+          }
+        }
       }
     }
-
-    lead {
-      @include text(#676767, uppercase, 0.8em, right);
-    }
-
-    .bg-contact {
-      height: 100%;
-      width: 100%;
-      background: image_url('svg/home-contact.svg') no-repeat center center;
-      background-size: cover;
-      z-index: 0;
-      position: absolute;
-      top: 0;
-      left:0;
-    }
-
-    @include col-xs() {
-      h2,
-      h3,
-      lead {
-        text-align: center;
-      }
-      a{
-        margin-top: 1em;
-        display: block;
-        text-align: center;
-      }
-    }
-  }
   }
 
   a.next-section{

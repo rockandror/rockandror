@@ -127,7 +127,7 @@ es:
                     Html5 ,Sass, Responsive, Heroku, Node.js, Ionic, Postgress etc..
       quote_3_html: >
                     Sea lo que sea, una idea un producto que tengas en mente
-                    <br />
+                    <br class="hidden-xs" />
                     y sea una aplicación web lo puedes hacer on Rails.
       h2_5_html:    <strong>Algunos grandes que construyeron sus sitios con Rails</strong>
       description_8_html: >
