@@ -117,6 +117,7 @@
         transform: none;
         top: 0;
         left: 0;
+        max-width: 700px;
       }
 
       @include col-max-360() {
@@ -135,7 +136,7 @@
         }
 
         @include col-min-361-max-766(){
-          font-size: 1.2em;
+          font-size: 2em;
         }
 
         @include col-max-360() {
