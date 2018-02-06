@@ -17,6 +17,14 @@ section{
       .alessandro,
       .senen,
       .sebas{
+
+        @include col-xs() {
+          border: 1px solid #eeeeee;
+          margin-bottom: 2em;
+          padding: 1em;
+          margin-bottom: 2em;
+        }
+
         text-align: left;
         span{
           font-size: 0.8em;
