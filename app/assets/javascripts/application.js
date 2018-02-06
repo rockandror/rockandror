@@ -1,7 +1,6 @@
 //= require jquery
-
 //= require jquery_ujs
-
+//= require analytics
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require app
