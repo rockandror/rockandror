@@ -1,17 +1,5 @@
 .home {
-
   section {
-
-    h1 {
-      position: absolute;
-      font-size: 1em;
-      top: -100px;
-    }
-
-    @include col-xs() {
-      padding-top: 2em;
-      padding-bottom: 2em;
-    }
 
     &.best_tools,
     &.agile_developer,
@@ -23,9 +11,31 @@
       padding-top: 4em;
     }
 
+    @include col-xs() {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+    h1 {
+      position: absolute;
+      font-size: 1em;
+      top: -100px;
+    }
+
+    h2 {
+      font-weight: 200;
+      line-height: 0.7;
+      font-weight: 900;
+      line-height: 1;
+      width: 100%;
+
+      .underline {
+        border-bottom: 2px solid white;
+      }
+    }
 
     .row {
-      max-width: 80%;
+      // max-width: 80%;
     }
 
     .col-sm-6,
@@ -39,18 +49,6 @@
         @include col-xs() {
           min-height: auto;
         }
-    }
-
-    h2 {
-      font-weight: 200;
-      line-height: 0.7;
-      font-weight: 900;
-      line-height: 1;
-      width: 100%;
-
-      .underline {
-        border-bottom: 2px solid white;
-      }
     }
 
     lead {
@@ -124,7 +122,6 @@
         top: 40%;
       }
 
-
       h2 {
         visibility: hidden;
         @include text(#fff, uppercase, 2em, left);
@@ -150,7 +147,6 @@
           width: 160px;
         }
       }
-
 
       lead {
         z-index: 5;
@@ -335,96 +331,95 @@
       }
     }
     &.works {
-    @include radial-gradient(#a13644, #712630);
-    @include btn-ror(white, transparent, white, true, #a13644);
+      @include radial-gradient(#a13644, #712630);
+      @include btn-ror(white, transparent, white, true, #a13644);
 
-    h2 {
-      @include text(#fff, uppercase, 2em, right);
-
-      @include col-xs() {
-        font-size: 1.6em;
-      }
-    }
-
-    lead {
-      @include text(white, uppercase, 0.8em, right);
-    }
-
-    .image {
-      background: image_url('svg/home-works.svg') no-repeat center center;
-    }
-
-    @include col-xs() {
-      h2,
-      h3,
-      lead {
-        text-align: left;
-      }
-    }
-  }
-
-    &.testimonials {
-      @include radial-gradient(#383838, #242424);
-
-    h2 {
-      @include text(#fff, uppercase, 2em, right);
-
-      @include col-xs() {
-        font-size: 1.6em;
-        text-align: center;
-      }
-    }
-
-    lead {
-      @include text(white, uppercase, 0.8em, right);
-    }
-
-    #testimonials-carousel {
-      margin: 0 auto;
-
-      h3 {
-        color: #fff;
-        font-weight: 300;
-        font-family: $font-family-serif;
-      }
-
-      img {
-        border-radius: 50%;
-        max-width: 120px;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-        margin-top:15px;
-        margin-bottom:15px;
-      }
-
-      p {
-        max-width: 400px;
-        font-size: 1em;
-        font-family: $font-family-serif;
-      }
-
-      a {
-        display: block;
-        margin-top:15px;
-      }
-
-      .carousel-indicators {
-        bottom: -50px;
+      h2 {
+        @include text(#fff, uppercase, 2em, right);
 
         @include col-xs() {
-          bottom: -50px;
+          font-size: 1.6em;
+        }
+      }
 
-          li{
-            margin:0 5px;
-            width: 15px;
-            height: 15px;
-          }
+      lead {
+        @include text(white, uppercase, 0.8em, right);
+      }
+
+      .image {
+        background: image_url('svg/home-works.svg') no-repeat center center;
+      }
+
+      @include col-xs() {
+        h2,
+        h3,
+        lead {
+          text-align: left;
         }
       }
     }
+    &.testimonials {
+      @include radial-gradient(#383838, #242424);
 
-  }
+      h2 {
+        @include text(#fff, uppercase, 2em, right);
+
+        @include col-xs() {
+          font-size: 1.6em;
+          text-align: center;
+        }
+      }
+
+      lead {
+        @include text(white, uppercase, 0.8em, right);
+      }
+
+      #testimonials-carousel {
+        margin: 0 auto;
+
+        h3 {
+          color: #fff;
+          font-weight: 300;
+          font-family: $font-family-serif;
+        }
+
+        img {
+          border-radius: 50%;
+          max-width: 120px;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          margin-top:15px;
+          margin-bottom:15px;
+        }
+
+        p {
+          max-width: 400px;
+          font-size: 1em;
+          font-family: $font-family-serif;
+        }
+
+        a {
+          display: block;
+          margin-top:15px;
+        }
+
+        .carousel-indicators {
+          bottom: -50px;
+
+          @include col-xs() {
+            bottom: -50px;
+
+            li{
+              margin:0 5px;
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+      }
+
+    }
     &.contact{
       position: relative;
       background: white;

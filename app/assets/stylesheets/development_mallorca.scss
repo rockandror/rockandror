@@ -2,9 +2,8 @@ section{
   &.page.development-mallorca {
 
     .header-bg{
+      @include header-bg-content;
       @include radial-gradient(#f75e47, #da503b);
-      padding: 3em 0;
-      margin-bottom: 2em;
     }
   }
 }

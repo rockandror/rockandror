@@ -74,13 +74,61 @@
 }
 
 @mixin radial-gradient($from, $to) {
-    background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
-    background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
-    background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
-    background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
-    background: radial-gradient(center, circle cover, $from 0%, $to 100%);
-    background-color: $from;
+  background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+  background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background-color: $from;
+}
+
+@mixin header-bg-content() {
+  padding: 3em 0;
+  margin-bottom: 2em;
+
+  .logo-rails{
+    width: 75px;
+    height: 30px;
+    margin-top: 2rem;
+    small{
+      color:#fff;
+      float: left;
+      font-size: 0.7em;
+    }
+  }
+  
+  h1{
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+
+    @include col-max-320() {
+      font-size: 1.7em;
+    }
+
+    @include col-xs() {
+      word-wrap: break-word;
+    }
+  }
+
+  lead{
+    color: #fff;
+  }
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.no-padding-left{
+  padding-left: 0;
+}
+
+.no-padding-lr-xs{
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .gi-2x{font-size: 2em;}
@@ -103,10 +151,4 @@
     color: $optin;
     border: 2px solid $optin;
   }
-}
-
-
-.no-padding-lr-xs{
-  padding-left: 0;
-  padding-right: 0;
 }

@@ -2,9 +2,8 @@ section{
   &.page.eatbooking{
 
     .header-bg{
+      @include header-bg-content;
       @include radial-gradient(#424141, #1e1e1e);
-      padding: 3em 0;
-      margin-bottom: 2em;
     }
 
     .logo{

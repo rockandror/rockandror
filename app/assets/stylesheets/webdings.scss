@@ -2,9 +2,8 @@ section{
   &.page.webdings {
 
     .header-bg{
+      @include header-bg-content;
       @include radial-gradient($gray-light, $gray);
-      padding: 3em 0;
-      margin-bottom: 2em;
     }
 
     .logo{
@@ -68,7 +67,7 @@ section{
         margin-top: 1em;
       }
     }
-    
+
     .tecnology{
       background: #b50202;
       padding: 2em 0;

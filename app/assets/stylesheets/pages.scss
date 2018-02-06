@@ -15,35 +15,10 @@ section{
   &.page.development-mallorca {
 
     padding-top: 5em;
-    color: $gray;
-
-    .header-bg{
-      padding: 3em 0;
-      margin-bottom: 2em;
-    }
 
     .row{
       margin-left: 0;
       margin-right: 0;
-
-      h1{
-        font-weight: 700;
-        line-height: 1;
-        color: #fff;
-        text-transform: uppercase;
-
-        @include col-max-320() {
-          font-size: 1.7em;
-        }
-
-        @include col-xs() {
-          word-wrap: break-word;
-        }
-      }
-
-      lead{
-        color: #fff;
-      }
     }
 
     h2{

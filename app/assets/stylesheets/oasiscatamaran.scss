@@ -2,9 +2,8 @@ section{
   &.page.oasiscatamaran{
 
     .header-bg{
+      @include header-bg-content;
       @include radial-gradient(#5fc3e6, #4593af);
-      padding: 3em 0;
-      margin-bottom: 2em;
     }
 
     .logo{

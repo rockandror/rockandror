@@ -2,9 +2,8 @@ section{
   &.page.team{
 
     .header-bg{
+      @include header-bg-content;
       @include radial-gradient(#0174c5, #0361a3);
-      padding: 3em 0;
-      margin-bottom: 2em;
     }
 
     .photos{

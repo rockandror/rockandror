@@ -6,7 +6,6 @@ html, body {
       font-size: 1.5em;
     }
   }
-
 }
 
 body{
@@ -29,45 +28,12 @@ ul{
   background: transparent;
 }
 
-.no-padding{
-  padding: 0;
-}
-
-.no-padding-left{
-  padding-left: 0;
-}
-
-section{
-  .logo-rails{
-    width: 75px;
-    height: 30px;
-    margin-top: 2rem;
-    small{
-      color:#fff;
-      float: left;
-      font-size: 0.7em;
-    }
-  }
-  .btn-back{
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 0.5rem;
-    display: inline-block;
-    margin-bottom: 1rem;
-    &:hover{
-      text-decoration: none;
-      border:1px solid transparent;
-      border-bottom: 1px solid #fff;
-    }
-  }
-}
-
 .cookies-eu {
   margin-top:50px;
   background: #fff;
 }
 
-@media (max-width: 767px) {
+@include col-xs() {
   .cookies-eu {
     position: fixed !important;
   }
@@ -83,6 +49,7 @@ section{
   &:hover{
     background: darken($yellow, 5%);
   }
+
   h2{
     font-size: 1.8em;
   }
@@ -142,7 +109,7 @@ section{
 
     p {
       margin-top: 8px;
-      font-size: 0.9rem;
+      font-size: 0.8em;
       text-align: center;
       display: inline-block;
       width: 100%;
@@ -152,17 +119,3 @@ section{
     }
   }
 }
-
-//
-// @-moz-document url-prefix() {
-//   a {
-//     &:active, &:focus{
-//       outline: none;
-//       border:  none;
-//     }
-//   }
-//   .btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active,
-//   .btn.active:focus, .btn.active.focus{
-//     outline: none;border:  none; box-shadow: none;
-//   }
-// }

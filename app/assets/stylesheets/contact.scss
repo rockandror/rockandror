@@ -2,9 +2,8 @@ section{
   &.page.contact,
   &.page.greetings {
     .header-bg{
+    @include header-bg-content;
       @include radial-gradient(#f1b820, #cf891c);
-      padding: 3em 0;
-      margin-bottom: 2em;
     }
   }
 
