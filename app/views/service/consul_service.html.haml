@@ -97,5 +97,98 @@
             %li <strong>Módulo 2:</strong> Configuración de herramientas de monitorización de errores, integración continua e instalación de la aplicación
             %li <strong>Módulo 3:</strong> Adaptación de Consul a su Ayuntamiento (Integración con servicios del censo y adaptación de la imágen corporativa)
             %li <strong>Módulo 4:</strong> Necesidad de personalizar procesos por parte del Ayuntamiento (Análisis, implementación y documentación)
-            %li <strong>Módulo 5:</strong> Manteni
-  = render 'shared/contact_now'
+            %li <strong>Módulo 5:</strong> Mantenimiento y actualización del repositorio con las últimas modificaciones en Consul
+      %div#price
+        %input#price_value.required{:name => "price_value", :type => "number", :value => 0}
+
+      -# %form#example-form{:action => "#"}
+      = form_for @service, url:service_index_path do |f|
+        %div
+          %h3 Módulo 1
+          %section
+            %h3.text-center <strong>Módulo 1: Preparación de servidores</strong>
+            %p Si el Ayuntamiento dispone de un departamento de informática capaz de resolver los siguientes puntos no será necesaria la contratación de este módulo.
+            .row
+              .small-12.medium-12.large-12.columns
+                %ul.text-center
+                  %li Preparación de los servidores Linux
+                  %li Gestión de dominios
+                  %li Gestión de redirecciones
+                  %li Gestión del sevidor de email
+                  %li Actualizaciones periodicas y de seguridad de los Sistemas Operativos / Servidores
+                  %li Instalación y mantenimiento del Sistema gestor de Base de Datos
+                  %li Gestión y monitorización del sistema de copias de seguridad
+            %input#accept_m_1{:name => "accept_m_1", :type => "checkbox"}/
+            %label{:for => "accept_m_1"} Añadir este módulo al presupuesto
+
+          %h3 Módulo 2
+          %section
+            %h3.text-center <strong>Módulo 2: Configuración e Instalación</strong>
+            %p Este módulo es indispensable para cualquier Ayuntamiento que aún no disponga de la aplicación de Consul y pretenda implantarla.
+            .row
+              .small-12.medium-12.large-12.columns
+                %ul.text-center
+                  %li Configuración Integración Continua "Travis"
+                  %li Gestión y monitorización de errores "Rollbar"
+                  %li Configurar Capistrano
+                  %li Instalación de la aplicación
+            %input#accept_m_2{:name => "accept_m_2", :type => "checkbox"}/
+            %label{:for => "accept_m_2"} Añadir este módulo al presupuesto
+
+          %h3 Módulo 3
+          %section
+            %h3.text-center <strong>Módulo 3: Adaptación e Integración</strong>
+            %p Con este módulo se pretende cambiar los estilos, logos y colores de la aplicación para darle un toque distintivo para cada ayuntamiento. También se incluye la integración con el Censo para poder aprovechar al máximo la aplicación.
+            .row
+              .small-12.medium-12.large-12.columns
+                %ul.text-center
+                  %li Adaptación de la imágen corporativa
+                  %li Integración con servicios del censo
+            %input#accept_m_3{:name => "accept_m_3", :type => "checkbox"}/
+            %label{:for => "accept_m_3"} Añadir este módulo al presupuesto
+
+          %h3 Módulo 4
+          %section
+            %h3.text-center <strong>Módulo 4: Personalización de procesos</strong>
+            %p En caso de necesitar personalizaciones de funcionalidades ya existentes en consul o pequeños cambios que se pueden requerir sobre la versión de Consul, ofrecemos un paquete de 60 horas donde se incluye:
+            .row
+              .small-12.medium-12.large-12.columns
+                %ul.text-center
+                  %li Análisis de la necesidad del Ayuntamiento con la necesidad de personalizar alguna parte de la aplicación.
+                  %li Implementación de los cambios analizados
+                  %li Documentación adicional de las customizaciones.
+            %p * Al desconocer las nuevas funcionalidades que puede querer el cliente hemos dimensionado lo que creemos suficiente para hacer customizaciones en 1 o 2 procesos. Por ejemplo "propuestas ciudadanas" y "debates". En este ejemplo hemos puesto 64h entre desarrollo, analisis y documentación.
+            %input#accept_m_4{:name => "accept_m_4", :type => "checkbox"}/
+            %label{:for => "accept_m_4"} Añadir este módulo al presupuesto
+
+          %h3 Módulo 5
+          %section
+            %h3.text-center <strong>Módulo 5: Mantenimiento</strong>
+            %p Para cualquier Ayuntamiento que ya tenga instalado Consul ofrecemos un servicio mensual de actualización.
+            .row
+              .small-12.medium-12.large-12.columns
+                %ul.text-center
+                  %li Servicio de actualización de la plataforma en base a las versiones de consul que vayan saliendo.
+                  %li Formación y transferencia del conocimiento
+            %input#accept_m_5{:name => "accept_m_5", :type => "checkbox"}/
+            %label{:for => "accept_m_5"} Añadir este módulo al presupuesto
+
+          %h3 Enviar solicitud
+          %section
+            %h3.text-center <strong>Contacto</strong>
+            %p Quiere que nos pongamos en contacto con usted? Por favor rellene los siguientes campos, haga click sobre el botón "Enviar solicitud" y le llamaremos en menos de 24h
+            = f.text_field :name, placeholder: 'Nombre o Empresa'
+            = f.text_field :email, placeholder: 'Email'
+            = f.text_area :message, placeholder: 'Mensaje'
+            = f.submit "Contacta ahora", class: "large button expand"
+            -# = render 'shared/contact_now'
+            -# %label{:for => "ayt_name"} Nombre de Ayuntamiento ó entidad
+            -# %input#name{:name => "ayt_name", :type => "text"}/
+            -#
+            -# %label{:for => "ayt_phone"} Teléfono de contacto
+            -# %input#phone{:name => "ayt_phone", :type => "text"}/
+            -#
+            -# %label{:for => "ayt_email"} Email de contacto
+            -# %input#email{:name => "ayt_email", :type => "email"}/
+            -#
+            -# %input#submit{:name => "button", :type => "submit"}/
