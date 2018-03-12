@@ -220,7 +220,7 @@ function animation() {
     });
 
     $(consul_service).on('click',function(link_url_active){
-      link_url_active = "/consul_service";
+      link_url_active = "/service";
       close_submenu(link_url_active);
     });
 
