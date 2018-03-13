@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/oasiscatamaran', to: 'welcome#oasiscatamaran', as: :oasiscatamaran
   resources :contact, only: [:new,:create]
   get '/greetings', to: 'contact#greetings', as: :greetings
-  resources :service, only: [:new,:create]
+  resources :budget, only: [:new,:create]
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/devel/emails"

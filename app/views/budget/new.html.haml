@@ -33,7 +33,7 @@
       %hr
       %p Vaya seleccionando los módulos que necesita su ayuntamiento y calcule el precio total
 
-      = form_for @service, url:service_index_path, html: {data: {errored: params[:action] == "create"} }  do |f|
+      = form_for @budget, url:budget_index_path, html: { data: { errored: params[:action] == "create"} }  do |f|
         = f.text_field :ammount
         %div
           %h3 Módulo 1
@@ -52,7 +52,7 @@
                   %li Gestión y monitorización del sistema de copias de seguridad
             -# %input#accept_m_1{:name => "accept_m_1", :type => "checkbox"}/
             = f.check_box :module_1
-            %label{:for => "service_module_1"} Añadir este módulo al presupuesto
+            %label{:for => "budget_module_1"} Añadir este módulo al presupuesto
 
           %h3 Módulo 2
           %section
@@ -67,7 +67,7 @@
                   %li Instalación de la aplicación
             -# %input#accept_m_2{:name => "accept_m_2", :type => "checkbox"}/
             = f.check_box :module_2
-            %label{:for => "service_module_2"} Añadir este módulo al presupuesto
+            %label{:for => "budget_module_2"} Añadir este módulo al presupuesto
 
           %h3 Módulo 3
           %section
@@ -79,7 +79,7 @@
                   %li Adaptación de la imágen corporativa
             -# %input#accept_m_3{:name => "accept_m_3", :type => "checkbox"}/
             = f.check_box :module_3
-            %label{:for => "service_module_3"} Añadir este módulo al presupuesto
+            %label{:for => "budget_module_3"} Añadir este módulo al presupuesto
 
           %h3 Módulo 4
           %section
@@ -91,7 +91,7 @@
                   %li Integración con servicios del censo
             -# %input#accept_m_3{:name => "accept_m_3", :type => "checkbox"}/
             = f.check_box :module_4
-            %label{:for => "service_module_4"} Añadir este módulo al presupuesto
+            %label{:for => "budget_module_4"} Añadir este módulo al presupuesto
 
           %h3 Módulo 5
           %section
@@ -106,7 +106,7 @@
             %p * Al desconocer las nuevas funcionalidades que puede querer el cliente hemos dimensionado lo que creemos suficiente para hacer customizaciones en 1 o 2 procesos. Por ejemplo "propuestas ciudadanas" y "debates". En este ejemplo hemos puesto 64h entre desarrollo, analisis y documentación.
             -# %input#accept_m_4{:name => "accept_m_4", :type => "checkbox"}/
             = f.check_box :module_5
-            %label{:for => "service_module_5"} Añadir este módulo al presupuesto
+            %label{:for => "budget_module_5"} Añadir este módulo al presupuesto
 
           %h3 Módulo 6
           %section
@@ -119,7 +119,7 @@
                   %li Formación y transferencia del conocimiento
             -# %input#accept_m_5{:name => "accept_m_5", :type => "checkbox"}/
             = f.check_box :module_6
-            %label{:for => "service_module_6"} Añadir este módulo al presupuesto
+            %label{:for => "budget_module_6"} Añadir este módulo al presupuesto
 
           %h3 Enviar solicitud
           %section

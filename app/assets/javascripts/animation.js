@@ -23,7 +23,7 @@ function animation() {
     back = $("#btn_back"),
     home = $("#btn_home"),
     works = $("#btn_works"),
-    consul_service = $("#btn_consul_service"),
+    consul_budget = $("#btn_consul_budget"),
     boatjump = $("#btn_boatjump"),
     webdings = $("#btn_webdings"),
     eatbooking = $("#btn_eatbooking"),
@@ -126,7 +126,7 @@ function animation() {
     tl_back = new TimelineMax();
     tl_home = new TimelineMax();
     tl_works = new TimelineMax();
-    tl_consul_service =  new TimelineMax();
+    tl_consul_budget =  new TimelineMax();
     tl_team = new TimelineMax({onReverseComplete:reset});
     tl_phone = new TimelineMax();
     tl_email = new TimelineMax();
@@ -140,7 +140,7 @@ function animation() {
     tl_submenu.pause();
     tl_home.pause();
     tl_works.pause();
-    tl_consul_service.pause();
+    tl_consul_budget.pause();
     tl_team.pause();
     tl_phone.pause();
     tl_email.pause();
@@ -176,8 +176,8 @@ function animation() {
       .to(works, 0.5, {top: "25%", opacity:1, ease: Back.easeInOut})
       .addPause();
 
-    tl_consul_service
-      .to(consul_service, 0.5, {top: "45%", opacity:1, ease: Back.easeInOut})
+    tl_consul_budget
+      .to(consul_budget, 0.5, {top: "45%", opacity:1, ease: Back.easeInOut})
       .addPause();
 
     tl_team
@@ -219,8 +219,8 @@ function animation() {
       open_submenu();
     });
 
-    $(consul_service).on('click',function(link_url_active){
-      link_url_active = "/service";
+    $(consul_budget).on('click',function(link_url_active){
+      link_url_active = "/budget";
       close_submenu(link_url_active);
     });
 
@@ -256,7 +256,7 @@ function animation() {
       tlContainer.play();
       tl_home.play();
       tl_works.play();
-      tl_consul_service.play();
+      tl_consul_budget.play();
       tl_team.play();
       tl_phone.play();
       tl_email.play();
@@ -264,7 +264,7 @@ function animation() {
     function close_menu(){
       tl_home.reverse();
       tl_works.reverse();
-      tl_consul_service.reverse();
+      tl_consul_budget.reverse();
       tl_team.reverse();
       tl_phone.reverse();
       tl_email.reverse();

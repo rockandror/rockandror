@@ -1,4 +1,4 @@
-class Service
+class Budget
   include ActiveModel::Validations
   include ActiveModel::Conversion
   extend ActiveModel::Naming

@@ -15,7 +15,7 @@
 %a#btn_works
   = inline_svg "svg/works.svg" , class: 'icon-menu'
   %span Trabajos
-%a#btn_consul_service
+%a#btn_consul_budget
   = inline_svg "svg/consul-logo.svg" , class: 'icon-menu'
   %span Servicios Consul
 %a#btn_email{ href: new_contact_path }
@@ -86,4 +86,4 @@
           %li
             = link_to 'Oasis Catamaran', '/oasiscatamaran'
       %li.anim{:class => active?("new", params[:action])}
-        %a{:href => new_service_path} Servicios Consul
+        %a{:href => new_budget_path} Servicios Consul
