@@ -1,32 +1,41 @@
+= content_for :body_class, "body-budget-consul"
+
 .page.budget-consul
   .cont-introduction.medium-12.small-12.large-6
     %h1 Servicios <strong>Consul</strong>
     %span Software libre para la participación ciudadana
 
   .header.row
-    .medium-6.columns
-      .medium-6.large-6.large-offset-6.columns
-        %div.text-center
+    .medium-12.large-8.large-centered.columns
+      .medium-6.columns
+        %div
           = inline_svg "svg/consul-logo.svg"
-          %p CONSUL es la herramienta de participación ciudadana más completa para un gobierno abierto, transparente y democrático.
-          = link_to 'www.consulproject.org', 'http://consulproject.org/es/',  target: :blank
+          %p
+            CONSUL es la herramienta de participación ciudadana más completa para
+            un gobierno abierto, transparente y democrático.
+            %br
+            = link_to 'www.consulproject.org', 'http://consulproject.org/es/',  target: :blank
 
-    .medium-6.columns
-      .medium-6.columns.medium-offset-1.columns
-        %p.text-left
-          En Rock&Ror hemos colaborado en la implementación de funcionalides para Consul. Estamos totalmente alineados en cuanto a buenas prácticas y filosofía de desarrollo con el equipo técnico que ha desarrollado Consul. Estamos convencidos de que somos la empresa perfecta para poder realizar cualquier tarea de implantación y mantenimiento de esta herramienta dado el conocimiento que tenemos de la misma.
+      .medium-6.columns
+        %p
+          En Rock&Ror hemos colaborado en la implementación de funcionalides para Consul.
+          Estamos totalmente alineados en cuanto a buenas prácticas y filosofía de desarrollo
+          con el equipo técnico que ha desarrollado Consul.
+          <br><br>
+          Estamos convencidos de que <strong>somos la empresa perfecta para poder
+          realizar cualquier tarea de implantación y mantenimiento de esta
+          herramienta</strong> dado el conocimiento que tenemos de la misma.
 
-    .medium-12.columns.text-center
-      = link_to 'Calcule su presupuesto', '#scroll_to_rockandror', id: "btn-budget"
+      .medium-12.columns.text-center
+        = link_to 'Calcule su presupuesto', '#scroll_to_calculate_budget', id: "btn-budget"
 
   .row.services
     .content.small-12.medium-10.medium-centered.large-centered.columns
-      %h3.text-center
+      %h2.text-center
         Servicios que ofrecemos
+      %p.medium-8.medium-centered.large-6.large-centered.column En función a las peticiones que hemos recibido de diferentes Ayuntamientos hemos detectado los diferentes módulos que se pueden necesitar relacionados con la herramienta.
 
-      %p.medium-4.medium-centered.column En función a las peticiones que hemos recibido de diferentes Ayuntamientos hemos detectado los diferentes módulos que se pueden necesitar relacionados con la herramienta.
-
-      %section.timeline
+      %section.timeline.small-12
         %ul
           %li
             %div.content
@@ -55,7 +64,7 @@
                 = inline_svg "svg/budget-consul-icon-4.svg"
               .content-text
                 %h3 Módulo 4:
-                %p Integración Censo integración con el Censo para poder aprovechar al máximo la aplicación.
+                %p Integración con el Censo para poder aprovechar al máximo la aplicación.
           %li
             %div.content
               .icon
@@ -70,22 +79,21 @@
               .content-text
                 %h3 Módulo 6:
                 %p Mantenimiento y actualización del repositorio con las últimas modificaciones en Consul
-          %li
+          %li#scroll_to_calculate_budget
             .icon
               = inline_svg "svg/budget-consul-icon-7.svg"
 
-      .columns.medium-8.medium-centered.budget-container.text-center
+      .columns.medium-12.medium-centered.large-10.large-centered.budget-container.text-center
         %h2
           CALCULE SU PRESUPUESTO
         %p
           Vaya seleccionando los módulos que necesita su ayuntamiento y calcule el precio total.
 
         = form_for @budget, url:budget_index_path, html: { data: { errored: params[:action] == "create"} }  do |f|
-          = f.text_field :ammount
 
           %div
-            %h3 Módulo 1 <span>Preparación de servidores</span> <small>1.000€</small>
 
+            %h3 Módulo 1 <small>1.000€</small> <span>Preparación de servidores</span>
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
@@ -100,11 +108,12 @@
                     %li Gestión y monitorización del sistema de copias de seguridad
 
                   .container-checkbox
-                    %label{ :for => "budget_module_1" }
-                    = f.check_box :module_1
 
+                    %input#budget_module_1{:type => "checkbox"}/
+                    %label{ :for => "budget_module_1" } Añadir este módulo al presupuesto
+                    -# = f.check_box :module_1, id: 'budget_module_1'
 
-            %h3 Módulo 2 <span>Configuración e Instalación</span> <small>1.000€</small>
+            %h3 Módulo 2 <small>1.000€</small> <span>Configuración e Instalación</span>
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
@@ -115,10 +124,11 @@
                     %li Configurar Capistrano
                     %li Instalación de la aplicación
                   .container-checkbox
-                    = f.check_box :module_2
-                    %label{:for => "budget_module_2"} Añadir este módulo al presupuesto
+                    %input#budget_module_2{:type => "checkbox"}/
+                    %label{ :for => "budget_module_2" } Añadir este módulo al presupuesto
+                    -# = f.check_box :module_2, id: 'budget_module_2'
 
-            %h3 Módulo 3 <span>Adaptación visual</span> <small>500€</small>
+            %h3 Módulo 3 <small>500€</small> <span>Adaptación visual</span>
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
@@ -126,10 +136,11 @@
                   %ul
                     %li Adaptación de la imágen corporativa
                   .container-checkbox
-                    = f.check_box :module_3
-                    %label{:for => "budget_module_3"} Añadir este módulo al presupuesto
+                    %input#budget_module_3{:type => "checkbox"}/
+                    %label{ :for => "budget_module_3" } Añadir este módulo al presupuesto
+                    -# = f.check_box :module_3, id: 'budget_module_3'
 
-            %h3 Módulo 4 <span>Integración Censo</span> <small>2000€</small>
+            %h3 Módulo 4 <small>2000€</small> <span>Integración Censo</span>
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
@@ -137,10 +148,11 @@
                   %ul
                     %li Integración con servicios del censo
                   .container-checkbox
-                    = f.check_box :module_4
-                    %label{:for => "budget_module_4"} Añadir este módulo al presupuesto
+                    %input#budget_module_4{:type => "checkbox"}/
+                    %label{ :for => "budget_module_4" } Añadir este módulo al presupuesto
+                    -# = f.check_box :module_4, id: 'budget_module_4'
 
-            %h3 Módulo 5 <span>Personalización de procesos</span> <small>3.200€</small>
+            %h3 Módulo 5 <small>3.200€</small> <span>Personalización de procesos</span>
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
@@ -149,13 +161,14 @@
                     %li Análisis de la necesidad del Ayuntamiento con la necesidad de personalizar alguna parte de la aplicación.
                     %li Implementación de los cambios analizados
                     %li Documentación adicional de las customizaciones.
-
+                  %br 
                   %p * Al desconocer las nuevas funcionalidades que puede querer el cliente hemos dimensionado lo que creemos suficiente para hacer customizaciones en 1 o 2 procesos. Por ejemplo "propuestas ciudadanas" y "debates". En este ejemplo hemos puesto 64h entre desarrollo, analisis y documentación.
                   .container-checkbox
-                    = f.check_box :module_5
-                    %label{:for => "budget_module_5"} Añadir este módulo al presupuesto
+                    %input#budget_module_5{:type => "checkbox"}/
+                    %label{ :for => "budget_module_5" } Añadir este módulo al presupuesto
+                    -# = f.check_box :module_5, id: 'budget_module_5'
 
-            %h3 Módulo 6 <span>Mantenimiento</span> <small>7.200€</small>
+            %h3 Módulo 6 <small>7.200€</small> <span>Mantenimiento</span>
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
@@ -164,8 +177,9 @@
                     %li Servicio de actualización de la plataforma en base a las versiones de consul que vayan saliendo.
                     %li Formación y transferencia del conocimiento
                   .container-checkbox
-                    = f.check_box :module_6
-                    %label{:for => "budget_module_6"} Añadir este módulo al presupuesto
+                    %input#budget_module_6{:type => "checkbox"}/
+                    %label{ :for => "budget_module_6" } Añadir este módulo al presupuesto
+                    -# = f.check_box :module_6, id: 'budget_module_6'
 
             %h3 Enviar solicitud <span>Contacta con Rockandror</span>
             %section
@@ -175,3 +189,6 @@
                   = f.text_field :name, placeholder: 'Nombre o Empresa', class: "required"
                   = f.text_field :email, placeholder: 'Email', class: "required"
                   = f.text_area :message, placeholder: 'Mensaje', class: "required"
+
+          %span.total-price Precio total
+          = f.text_field :ammount

@@ -213,15 +213,14 @@ function animation() {
      TweenMax.to(back, 0.6, { opacity:0, ease: Back.easeInOut});
      tl_back.pause();
      close_submenu();
-   });
+    });
 
     $(works).on('click',function(){
       open_submenu();
     });
 
     $(consul_budget).on('click',function(link_url_active){
-      link_url_active = "/budget";
-      close_submenu(link_url_active);
+      location.replace('/budget/new')
     });
 
     $(home).on('click',function(link_url_active){
@@ -233,14 +232,17 @@ function animation() {
       link_url_active = "/boatjump";
       close_submenu(link_url_active);
     });
+
     $(webdings).on('click',function(){
       link_url_active = "/webdings";
       close_submenu(link_url_active);
     });
+
     $(eatbooking).on('click',function(){
       link_url_active = "/eatbooking";
       close_submenu(link_url_active);
     });
+
     $(oasiscatamaran).on('click',function(){
       link_url_active = "/oasiscatamaran";
       close_submenu(link_url_active);
