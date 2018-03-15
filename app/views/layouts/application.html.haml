@@ -18,7 +18,6 @@
     = csrf_meta_tags
     %body{:class => "#{yield (:body_class)}"}
     = render "shared/navbar_animate"
-    = render "shared/notice"
     = render 'cookies_eu/consent_banner'
     = yield
     = render 'shared/footer'

@@ -90,9 +90,7 @@
           Vaya seleccionando los módulos que necesita su ayuntamiento y calcule el precio total.
 
         = form_for @budget, url:budget_index_path, html: { data: { errored: params[:action] == "create"} }  do |f|
-
           %div
-
             %h3 Módulo 1 <small>1.000€</small> <span>Preparación de servidores</span>
             %section
               .row
@@ -161,7 +159,7 @@
                     %li Análisis de la necesidad del Ayuntamiento con la necesidad de personalizar alguna parte de la aplicación.
                     %li Implementación de los cambios analizados
                     %li Documentación adicional de las customizaciones.
-                  %br 
+                  %br
                   %p * Al desconocer las nuevas funcionalidades que puede querer el cliente hemos dimensionado lo que creemos suficiente para hacer customizaciones en 1 o 2 procesos. Por ejemplo "propuestas ciudadanas" y "debates". En este ejemplo hemos puesto 64h entre desarrollo, analisis y documentación.
                   .container-checkbox
                     %input#budget_module_5{:type => "checkbox"}/

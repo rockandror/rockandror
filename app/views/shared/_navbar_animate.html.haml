@@ -59,6 +59,7 @@
     %a{:href => new_contact_path}
       = inline_svg "svg/email.svg", class: 'icon-nav'
 
+= render "shared/notice"
 %nav.top-bar{"data-topbar" => "", :role => "navigation"}
   %ul.title-area.small-12.medium-5.large-4.columns
     %li.logo
@@ -72,8 +73,8 @@
       %li
         %a{:href => new_contact_path} Envíanos un email
     %ul.left.small-4.medium-4.columns.show-for-medium-up
-      %li.anim{:class => active?("home", params[:action])}
-        %a{:href => root_path} Inicio
+      -# %li.anim{:class => active?("home", params[:action])}
+      -#   %a{:href => root_path} Inicio
       %li.anim.has-dropdown.portfolio{:class => active?("portfolio", params[:action])}
         %a{:href => "#"} Últimos trabajos
         %ul.dropdown
@@ -85,5 +86,5 @@
             = link_to 'Eatbooking', '/eatbooking'
           %li
             = link_to 'Oasis Catamaran', '/oasiscatamaran'
-      %li.anim{:class => active?("new", params[:action])}
+      %li.anim.consul{:class => active?("new", params[:action])}
         %a{:href => new_budget_path} Servicios Consul
