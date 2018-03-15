@@ -109,8 +109,8 @@
 
                   .container-checkbox
 
-                    %input#budget_module_1{:type => "checkbox"}/
-                    %label{ :for => "budget_module_1" } Añadir este módulo al presupuesto
+                    %input#budget_module_1{type: "checkbox", name: "budget[module_1]"}/
+                    %label{ for: "budget_module_1" } Añadir este módulo al presupuesto
                     -# = f.check_box :module_1, id: 'budget_module_1'
 
             %h3 Módulo 2 <small>1.000€</small> <span>Configuración e Instalación</span>
@@ -124,7 +124,7 @@
                     %li Configurar Capistrano
                     %li Instalación de la aplicación
                   .container-checkbox
-                    %input#budget_module_2{:type => "checkbox"}/
+                    %input#budget_module_2{type: "checkbox", name: "budget[module_2]"}/
                     %label{ :for => "budget_module_2" } Añadir este módulo al presupuesto
                     -# = f.check_box :module_2, id: 'budget_module_2'
 
@@ -136,7 +136,7 @@
                   %ul
                     %li Adaptación de la imágen corporativa
                   .container-checkbox
-                    %input#budget_module_3{:type => "checkbox"}/
+                    %input#budget_module_3{type: "checkbox", name: "budget[module_3]"}/
                     %label{ :for => "budget_module_3" } Añadir este módulo al presupuesto
                     -# = f.check_box :module_3, id: 'budget_module_3'
 
@@ -148,7 +148,7 @@
                   %ul
                     %li Integración con servicios del censo
                   .container-checkbox
-                    %input#budget_module_4{:type => "checkbox"}/
+                    %input#budget_module_4{type: "checkbox", name: "budget[module_4]"}/
                     %label{ :for => "budget_module_4" } Añadir este módulo al presupuesto
                     -# = f.check_box :module_4, id: 'budget_module_4'
 
@@ -161,10 +161,10 @@
                     %li Análisis de la necesidad del Ayuntamiento con la necesidad de personalizar alguna parte de la aplicación.
                     %li Implementación de los cambios analizados
                     %li Documentación adicional de las customizaciones.
-                  %br 
+                  %br
                   %p * Al desconocer las nuevas funcionalidades que puede querer el cliente hemos dimensionado lo que creemos suficiente para hacer customizaciones en 1 o 2 procesos. Por ejemplo "propuestas ciudadanas" y "debates". En este ejemplo hemos puesto 64h entre desarrollo, analisis y documentación.
                   .container-checkbox
-                    %input#budget_module_5{:type => "checkbox"}/
+                    %input#budget_module_5{type: "checkbox", name: "budget[module_5]"}/
                     %label{ :for => "budget_module_5" } Añadir este módulo al presupuesto
                     -# = f.check_box :module_5, id: 'budget_module_5'
 
@@ -177,7 +177,7 @@
                     %li Servicio de actualización de la plataforma en base a las versiones de consul que vayan saliendo.
                     %li Formación y transferencia del conocimiento
                   .container-checkbox
-                    %input#budget_module_6{:type => "checkbox"}/
+                    %input#budget_module_6{type: "checkbox", name: "budget[module_6]"}/
                     %label{ :for => "budget_module_6" } Añadir este módulo al presupuesto
                     -# = f.check_box :module_6, id: 'budget_module_6'
 
