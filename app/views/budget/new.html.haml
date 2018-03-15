@@ -90,9 +90,7 @@
           Vaya seleccionando los módulos que necesita su ayuntamiento y calcule el precio total.
 
         = form_for @budget, url:budget_index_path, html: { data: { errored: params[:action] == "create"} }  do |f|
-
           %div
-
             %h3 Módulo 1 <small>1.000€</small> <span>Preparación de servidores</span>
             %section
               .row

@@ -22,6 +22,10 @@
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
 
+  .alert-box{
+    margin-top: 50px;
+  }
+
   .budget-consul{
     .header{
       padding: 2em;
@@ -206,6 +210,19 @@
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body{
+    li.consul{
+      margin-left: 15px;
+    }
+  }
+
+  .budget-consul .timeline .icon:last-child{
+    display: block;
+  }
+  .alert-box{
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
 
   .budget-consul{
     .header{
@@ -511,10 +528,10 @@
       .show-for-medium-up{
         width: 250px;
         li{
-          padding-left:1em;
+          // padding-left:1em;
           display: inline-block;
           &.portfolio{
-            margin-left:10px;
+            // margin-left:10px;
           }
           a{
             width: auto;
@@ -527,12 +544,13 @@
 
 @media only screen and (min-width: 800px) and (orientation: portrait){
   .top-bar .top-bar-section .show-for-medium-up{
-    width: 270px;
+    width: 430px;
+
   }
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
-
+  border:1px solid green;
   .home{
     .intro{
       .container{
