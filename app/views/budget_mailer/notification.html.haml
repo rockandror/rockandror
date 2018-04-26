@@ -1,0 +1,28 @@
+%h1 Hola RockAndRor
+%p
+  = @budget.name
+  ha realizado una solicitud por la web rockandror.com
+%p
+  Email del cliente: #{@budget.email}
+%p
+  = @budget.message
+%p
+  Presupuesto de: #{@budget.ammount}€
+
+- if @budget.module_1 == "on"
+  %p Module 1
+
+- if @budget.module_2 == "on"
+  %p Module 2
+
+- if @budget.module_3 == "on"
+  %p Module 3
+
+- if @budget.module_4 == "on"
+  %p Module 4
+
+- if @budget.module_5 == "on"
+  %p Module 5
+
+- if @budget.module_6 == "on"
+  %p Module 6

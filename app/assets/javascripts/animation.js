@@ -23,6 +23,7 @@ function animation() {
     back = $("#btn_back"),
     home = $("#btn_home"),
     works = $("#btn_works"),
+    consul_budget = $("#btn_consul_budget"),
     boatjump = $("#btn_boatjump"),
     webdings = $("#btn_webdings"),
     eatbooking = $("#btn_eatbooking"),
@@ -125,6 +126,7 @@ function animation() {
     tl_back = new TimelineMax();
     tl_home = new TimelineMax();
     tl_works = new TimelineMax();
+    tl_consul_budget =  new TimelineMax();
     tl_team = new TimelineMax({onReverseComplete:reset});
     tl_phone = new TimelineMax();
     tl_email = new TimelineMax();
@@ -138,6 +140,7 @@ function animation() {
     tl_submenu.pause();
     tl_home.pause();
     tl_works.pause();
+    tl_consul_budget.pause();
     tl_team.pause();
     tl_phone.pause();
     tl_email.pause();
@@ -173,6 +176,10 @@ function animation() {
       .to(works, 0.5, {top: "25%", opacity:1, ease: Back.easeInOut})
       .addPause();
 
+    tl_consul_budget
+      .to(consul_budget, 0.5, {top: "45%", opacity:1, ease: Back.easeInOut})
+      .addPause();
+
     tl_team
       .to(team, 0.5, {top: "45%", opacity:1, ease: Back.easeInOut})
       .addPause();
@@ -206,10 +213,14 @@ function animation() {
      TweenMax.to(back, 0.6, { opacity:0, ease: Back.easeInOut});
      tl_back.pause();
      close_submenu();
-   });
+    });
 
     $(works).on('click',function(){
       open_submenu();
+    });
+
+    $(consul_budget).on('click',function(link_url_active){
+      location.replace('/budget/new')
     });
 
     $(home).on('click',function(link_url_active){
@@ -221,14 +232,17 @@ function animation() {
       link_url_active = "/boatjump";
       close_submenu(link_url_active);
     });
+
     $(webdings).on('click',function(){
       link_url_active = "/webdings";
       close_submenu(link_url_active);
     });
+
     $(eatbooking).on('click',function(){
       link_url_active = "/eatbooking";
       close_submenu(link_url_active);
     });
+
     $(oasiscatamaran).on('click',function(){
       link_url_active = "/oasiscatamaran";
       close_submenu(link_url_active);
@@ -244,6 +258,7 @@ function animation() {
       tlContainer.play();
       tl_home.play();
       tl_works.play();
+      tl_consul_budget.play();
       tl_team.play();
       tl_phone.play();
       tl_email.play();
@@ -251,6 +266,7 @@ function animation() {
     function close_menu(){
       tl_home.reverse();
       tl_works.reverse();
+      tl_consul_budget.reverse();
       tl_team.reverse();
       tl_phone.reverse();
       tl_email.reverse();

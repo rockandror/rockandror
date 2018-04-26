@@ -15,6 +15,9 @@
 %a#btn_works
   = inline_svg "svg/works.svg" , class: 'icon-menu'
   %span Trabajos
+%a#btn_consul_budget
+  = inline_svg "svg/consul-logo-responsive.svg" , class: 'icon-menu'
+  %span Servicios Consul
 %a#btn_email{ href: new_contact_path }
   = inline_svg "svg/email.svg", class: 'icon-menu'
   %span Escríbenos
@@ -56,6 +59,7 @@
     %a{:href => new_contact_path}
       = inline_svg "svg/email.svg", class: 'icon-nav'
 
+= render "shared/notice"
 %nav.top-bar{"data-topbar" => "", :role => "navigation"}
   %ul.title-area.small-12.medium-5.large-4.columns
     %li.logo
@@ -82,3 +86,5 @@
             = link_to 'Eatbooking', '/eatbooking'
           %li
             = link_to 'Oasis Catamaran', '/oasiscatamaran'
+      %li.anim.consul{:class => active?("new", params[:action])}
+        %a{:href => new_budget_path} Servicios Consul

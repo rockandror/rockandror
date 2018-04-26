@@ -1,4 +1,5 @@
 @media screen and (min-width: 64em) {
+
   .page{
     margin-top: 100px;
   }
@@ -10,9 +11,117 @@
       }
     }
   }
+  .budget-consul{
+    .timeline{
+      ul li::after{
+        top: 50%;
+      }
+    }
+  }
 }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
+
+  .alert-box{
+    margin-top: 50px;
+  }
+
+  .budget-consul{
+    .header{
+      padding: 2em;
+      svg{
+        max-width: 200px;
+      }
+    }
+
+    .timeline{
+      display: inline-block;
+
+      ul li:nth-child(odd) div{
+        left: -201px !important;
+        text-align: center;
+      }
+
+      ul li:nth-child(even) div{
+        left: -201px !important;
+        text-align: center;
+      }
+
+      ul li::after{
+        bottom: 24px !important;
+      }
+
+      ul:before{
+        height: 90% !important;
+      }
+
+      .icon{
+        display: none;
+      }
+
+      .icon{
+        &:last-child {
+          display: block;
+        }
+      }
+
+      ul li:last-child .icon{
+        top: 100px !important;
+        left: -30px !important;
+      }
+
+      .content-text{
+        width: 100% !important;
+        text-align: center !important;
+        p{
+          padding: 2em;
+        }
+      }
+    }
+
+    .services .budget-container section{
+      .container-checkbox{
+        margin-top: 1em;
+        label{
+          width: 100% !important;
+        }
+      }
+    }
+
+    .budget-container{
+      .new_budget{
+        .steps{
+          a{
+            padding: 1em 0.5em;
+          }
+          small, span{
+            display: none;
+          }
+        }
+      }
+      form{
+
+        .total-price{
+          color: #40cc8a !important;
+          bottom: 110px !important;
+        }
+        input[name="budget[ammount]"]{
+          position: absolute;
+          bottom: 40px;
+          text-align: center !important;
+          background: transparent !important;;
+          color: #40cc8a !important;
+        }
+        .content{
+          overflow: scroll;
+        }
+        .actions{
+          width: auto !important;
+        }
+      }
+    }
+  }
+
 
   #btn_plus{display:block;}
   .top-bar{display: none;}
@@ -101,6 +210,44 @@
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body{
+    li.consul{
+      margin-left: 15px;
+    }
+  }
+
+  .budget-consul .timeline .icon:last-child{
+    display: block;
+  }
+  .alert-box{
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .budget-consul{
+    .header{
+      svg{
+        width: 200px;
+      }
+    }
+
+    .timeline{
+      ul li::after{
+        top: 50%;
+      }
+
+      .icon{
+        display: none;
+      }
+
+      .content-text{
+        width: 300px;
+        max-width: 220px;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    }
+  }
 
   .home{
     .intro{
@@ -174,6 +321,29 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1072px) {
+
+  .budget-consul{
+    .header{
+      svg{
+        width: 200px;
+      }
+    }
+
+    .timeline{
+      ul li::after{
+        top: 50%;
+      }
+
+      .icon{
+        display: none;
+      }
+      .content-text{
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+  }
+
   .oasis h2{
     font-size: 3rem;
   }
@@ -358,10 +528,10 @@
       .show-for-medium-up{
         width: 250px;
         li{
-          padding-left:1em;
+          // padding-left:1em;
           display: inline-block;
           &.portfolio{
-            margin-left:10px;
+            // margin-left:10px;
           }
           a{
             width: auto;
@@ -373,15 +543,14 @@
 }
 
 @media only screen and (min-width: 800px) and (orientation: portrait){
-  //Nexus 10
   .top-bar .top-bar-section .show-for-medium-up{
-    width: 270px;
-    //margin-top: 20px;
+    width: 430px;
+
   }
 }
 
 @media only screen and (max-width: 768px)  and (orientation: portrait){
-
+  border:1px solid green;
   .home{
     .intro{
       .container{

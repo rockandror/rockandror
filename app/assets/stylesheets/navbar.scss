@@ -55,7 +55,7 @@ svg{
   .email{
     background:#333;
     svg{margin-top:16px; }
-  }   
+  }
 }
 
 .top-bar{
@@ -65,13 +65,13 @@ svg{
   height: 100px;
   border-bottom:2px solid #f2f2f2;
   background: white;
-  padding-left: 2em;
-  padding-right: 2em;
+  // padding-left: 2em;
+  // padding-right: 2em;
   ul{
     padding-top: 1.2em;
   }
   .logo{
-    text-align: left; 
+    text-align: left;
     max-height: 75px;
   }
   .logo-center{
@@ -86,7 +86,7 @@ svg{
     fill:$primary-color;
     margin-top: 9px;
   }
-  
+
   .top-bar-section{
     ul{
       li a{text-transform: uppercase;}
@@ -94,7 +94,7 @@ svg{
         color:$secondary-color;
       }
     }
-    .right{ 
+    .right{
       strong{display: block;}
       a{
         font-weight: 300;
@@ -111,5 +111,5 @@ svg{
         }
       }
     }
-  } 
+  }
 }
