@@ -3,7 +3,7 @@ require 'rails_helper'
 feature 'budget request' do
 
   scenario 'should be send', js: true do
-    visit new_budget_path
+    visit consul_budget_path
     check_and_next_step
 
     fill_in 'budget_name', with: "Nombre"
@@ -16,7 +16,7 @@ feature 'budget request' do
   end
 
   scenario 'should be not send', js: true do
-    visit new_budget_path
+    visit consul_budget_path
     check_and_next_step
 
     fill_in 'budget_name', with: ""

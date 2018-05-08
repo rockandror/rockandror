@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :contact, only: [:new,:create]
   get '/greetings', to: 'contact#greetings', as: :greetings
   get '/consul/budget', to: 'budget#new', as: :consul_budget
-  resources :budget, only: [:create]
+  resources :budget, only: [:create, :new]
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/devel/emails"
