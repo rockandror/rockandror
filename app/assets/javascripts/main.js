@@ -39,7 +39,7 @@ function initBudgetSteps(){
       finish: "Enviar solicitud" }
   });
 
-  if ($("#new_budget").data("errored") == true) {
+  if (($("#new_budget").data("errored") == true) || ($("#new_budget").data("received-params") == true)) {
     wizard.steps("next");
     wizard.steps("next");
     wizard.steps("next");
@@ -87,43 +87,55 @@ function updatePrice(){
   $("#budget_module_1").click(function() {
     if ($("#budget_module_1")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 1000 + ' €')
+      $("#checked-1").html("√")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 1000 + ' €')
+      $("#checked-1").html("")
     }
   });
   $("#budget_module_2").click(function() {
     if ($("#budget_module_2")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 1000 + ' €')
+      $("#checked-2").html("√")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 1000 + ' €')
+      $("#checked-2").html("")
     }
   });
   $("#budget_module_3").click(function() {
     if ($("#budget_module_3")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 500 + ' €')
+      $("#checked-3").html("√")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 500 + ' €')
+      $("#checked-3").html("")
     }
   });
   $("#budget_module_4").click(function() {
     if ($("#budget_module_4")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 2000 + ' €')
+      $("#checked-4").html("√")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 2000 + ' €')
+      $("#checked-4").html("")
     }
   });
   $("#budget_module_5").click(function() {
     if ($("#budget_module_5")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 3200 + ' €')
+      $("#checked-5").html("√")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 3200 + ' €')
+      $("#checked-5").html("")
     }
   });
   $("#budget_module_6").click(function() {
     if ($("#budget_module_6")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 7200 + ' €')
+      $("#checked-6").html("√")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 7200 + ' €')
+      $("#checked-6").html("")
     }
   });
 }

@@ -1,16 +1,16 @@
 class BudgetController < ApplicationController
 
   def new
-    @budget = Budget.new
+    @budget = params[:budget].present? ? Budget.new(budget_params) : Budget.new()
   end
 
   def create
     @budget = Budget.new(budget_params)
     if @budget.valid?
       BudgetMailer.notification(@budget).deliver_now
-      redirect_to new_budget_path, notice: "Se ha enviado su presupuesto al equipo de RockAndRor. En menos de 24h nos pondremos en contacto con usted."
+      redirect_to consul_budget_path, notice: "Se ha enviado su presupuesto al equipo de RockAndRor. En menos de 24h nos pondremos en contacto con usted."
     else
-      render "budget/new"
+      render :new
     end
   end
 

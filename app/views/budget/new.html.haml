@@ -83,18 +83,28 @@
             .icon
               = inline_svg "svg/budget-consul-icon-7.svg"
 
-      .columns.medium-12.medium-centered.large-10.large-centered.budget-container.text-center
+      #calculate-budget.columns.medium-12.medium-centered.large-10.large-centered.budget-container.text-center
         %h2
           CALCULE SU PRESUPUESTO
         %p
           Vaya seleccionando los módulos que necesita su ayuntamiento y calcule el precio total.
 
-        = form_for @budget, url:budget_index_path, html: { data: { errored: params[:action] == "create"} }  do |f|
+        = form_for @budget,
+                   url:budget_index_path,
+                   html: { data: { errored: params[:action] == "create", received_params: params[:budget].present? } }  do |f|
           %div
-            %h3 Módulo 1 <small>1.000€</small> <span>Preparación de servidores</span>
+            -# %h3 <div> Módulo 1 <small>1.000€</small></div> <div>Preparación de servidores <span id='checked-1'></span></div>
+            %h3
+              .content-price
+                Módulo 1
+                %small 1.000€
+              .content-title.hide-for-small-only
+                %span.title Preparación de servidores
+                = check_step(@budget, "checked-1", "module_1")
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
+                  %h4 Preparación de servidores
                   %p Si el Ayuntamiento dispone de un departamento de informática capaz de resolver los siguientes puntos no será necesaria la contratación de este módulo.
                   %ul
                     %li Preparación de los servidores Linux
@@ -106,15 +116,21 @@
                     %li Gestión y monitorización del sistema de copias de seguridad
 
                   .container-checkbox
-
-                    %input#budget_module_1{type: "checkbox", name: "budget[module_1]"}/
+                    = f.check_box :module_1, id: 'budget_module_1', label: false, checked: @budget.module_1 == "true" ? "checked" : ""
                     %label{ for: "budget_module_1" } Añadir este módulo al presupuesto
-                    -# = f.check_box :module_1, id: 'budget_module_1'
 
-            %h3 Módulo 2 <small>1.000€</small> <span>Configuración e Instalación</span>
+            -# %h3 <div> Módulo 2 <small>1.000€</small></div> <div>Configuración e Instalación <span id='checked-2'></span><div>
+            %h3
+              .content-price
+                Módulo 2
+                %small 1.000€
+              .content-title.hide-for-small-only
+                %span.title Configuración e Instalación
+                = check_step(@budget, "checked-2", "module_2")
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
+                  %h4 Configuración e Instalación
                   %p Este módulo es indispensable para cualquier Ayuntamiento que aún no disponga de la aplicación de Consul y pretenda implantarla.
                   %ul
                     %li Configuración Integración Continua "Travis"
@@ -122,38 +138,60 @@
                     %li Configurar Capistrano
                     %li Instalación de la aplicación
                   .container-checkbox
-                    %input#budget_module_2{type: "checkbox", name: "budget[module_2]"}/
+                    = f.check_box :module_2, id: 'budget_module_2', label: false, checked: @budget.module_2 == "true" ? "checked" : ""
                     %label{ :for => "budget_module_2" } Añadir este módulo al presupuesto
                     -# = f.check_box :module_2, id: 'budget_module_2'
 
-            %h3 Módulo 3 <small>500€</small> <span>Adaptación visual</span>
+            -# %h3 <div>Módulo 3 <small>500€</small></div> <div>Adaptación visual <span id='checked-3'></span></div>
+            %h3
+              .content-price
+                Módulo 3
+                %small 500€
+              .content-title.hide-for-small-only
+                %span.title Adaptación visual
+                = check_step(@budget, "checked-3", "module_3")
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
+                  %h4 Adaptación visual
                   %p Con este módulo se pretende cambiar los estilos, logos y colores de la aplicación para darle un toque distintivo para cada ayuntamiento.
                   %ul
                     %li Adaptación de la imágen corporativa
                   .container-checkbox
-                    %input#budget_module_3{type: "checkbox", name: "budget[module_3]"}/
+                    = f.check_box :module_3, id: 'budget_module_3', label: false, checked: @budget.module_3 == "true" ? "checked" : ""
                     %label{ :for => "budget_module_3" } Añadir este módulo al presupuesto
-                    -# = f.check_box :module_3, id: 'budget_module_3'
 
-            %h3 Módulo 4 <small>2000€</small> <span>Integración Censo</span>
+            -# %h3 <div> Módulo 4 <small>2000€</small></div> <div>Integración Censo <span id='checked-4'></span></div>
+            %h3
+              .content-price
+                Módulo 4
+                %small 2.000€
+              .content-title.hide-for-small-only
+                %span.title Integración Censo
+                = check_step(@budget, "checked-4", "module_4")
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
+                  %h4 Integración Censo
                   %p También se incluye la integración con el Censo para poder aprovechar al máximo la aplicación.
                   %ul
                     %li Integración con servicios del censo
                   .container-checkbox
-                    %input#budget_module_4{type: "checkbox", name: "budget[module_4]"}/
+                    = f.check_box :module_4, id: 'budget_module_4', label: false, checked: @budget.module_4 == "true" ? "checked" : ""
                     %label{ :for => "budget_module_4" } Añadir este módulo al presupuesto
-                    -# = f.check_box :module_4, id: 'budget_module_4'
 
-            %h3 Módulo 5 <small>3.200€</small> <span>Personalización de procesos</span>
+            -# %h3 <div>Módulo 5 <small>3.200€</small></div> <div>Personalización de procesos <span id='checked-5'></span></div>
+            %h3
+              .content-price
+                Módulo 5
+                %small 3.200€
+              .content-title.hide-for-small-only
+                %span.title Personalización de procesos
+                = check_step(@budget, "checked-5", "module_5")
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
+                  %h4 Personalización de procesos
                   %p En caso de necesitar personalizaciones de funcionalidades ya existentes en consul o pequeños cambios que se pueden requerir sobre la versión de Consul, ofrecemos un paquete de 60 horas donde se incluye:
                   %ul
                     %li Análisis de la necesidad del Ayuntamiento con la necesidad de personalizar alguna parte de la aplicación.
@@ -162,31 +200,38 @@
                   %br
                   %p * Al desconocer las nuevas funcionalidades que puede querer el cliente hemos dimensionado lo que creemos suficiente para hacer customizaciones en 1 o 2 procesos. Por ejemplo "propuestas ciudadanas" y "debates". En este ejemplo hemos puesto 64h entre desarrollo, analisis y documentación.
                   .container-checkbox
-                    %input#budget_module_5{type: "checkbox", name: "budget[module_5]"}/
+                    = f.check_box :module_5, id: 'budget_module_5', label: false, checked: @budget.module_5 == "true" ? "checked" : ""
                     %label{ :for => "budget_module_5" } Añadir este módulo al presupuesto
-                    -# = f.check_box :module_5, id: 'budget_module_5'
 
-            %h3 Módulo 6 <small>7.200€</small> <span>Mantenimiento</span>
+            -# %h3 <div>Módulo 6 <small>7.200€</small></div> <div>Mantenimiento <span id='checked-6'></span></div>
+            %h3
+              .content-price
+                Módulo 6
+                %small 7.200€
+              .content-title.hide-for-small-only
+                %span.title Mantenimiento y monitorización
+                = check_step(@budget, "checked-6", "module_6")
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
+                  %h4 Mantenimiento y monitorización
                   %p Para cualquier Ayuntamiento que ya tenga instalado Consul ofrecemos un servicio mensual de actualización.
                   %ul
                     %li Servicio de actualización de la plataforma en base a las versiones de consul que vayan saliendo.
                     %li Formación y transferencia del conocimiento
                   .container-checkbox
-                    %input#budget_module_6{type: "checkbox", name: "budget[module_6]"}/
+                    = f.check_box :module_6, id: 'budget_module_6', label: false, checked: @budget.module_6 == "true" ? "checked" : ""
                     %label{ :for => "budget_module_6" } Añadir este módulo al presupuesto
-                    -# = f.check_box :module_6, id: 'budget_module_6'
 
             %h3 Enviar solicitud <span>Contacta con Rockandror</span>
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
+                  %h4 Contacta con Rockandror
                   %p Quiere que nos pongamos en contacto con usted? Por favor rellene los siguientes campos, haga click sobre el botón "Enviar solicitud" y le llamaremos en menos de 24h
                   = f.text_field :name, placeholder: 'Nombre o Empresa', class: "required"
                   = f.text_field :email, placeholder: 'Email', class: "required"
                   = f.text_area :message, placeholder: 'Mensaje', class: "required"
 
           %span.total-price Precio total
-          = f.text_field :ammount
+          = f.text_field :ammount, value: calculate_price(@budget)
