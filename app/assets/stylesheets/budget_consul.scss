@@ -179,6 +179,7 @@
           .steps{
             small{
               float: right;
+              font-size: 10px;
             }
             #checked-1, #checked-2, #checked-3,
             #checked-4, #checked-5, #checked-6 {
@@ -191,6 +192,9 @@
               font-size: 13px;
               display: inline;
             }
+            .content-price{
+              font-size: 14px;
+            }
           }
           label[for="budget_ammount"]{
             display: inline-block;
@@ -199,13 +203,24 @@
           }
 
           input[name="budget[ammount]"]{
+            height: auto;
             background: #41cb8a;
             color: #fff;
-            font-weight: 700;
-            margin: 0 0.5em 0.5em;
-            padding: 1em 1em;
+            width: auto;
+            display: inline;
             border: 0;
-            text-align: right;
+            box-shadow: none;
+            margin: auto;
+            padding: auto;
+            // font-weight: 700;
+            // margin: 0 8px 8px;
+            // padding: 16px 16px;
+            // border: 0;
+            // text-align: right;
+          }
+
+          #steps-uid-0-t-6 {
+            background: #41cb8a;
           }
 
         .content{
