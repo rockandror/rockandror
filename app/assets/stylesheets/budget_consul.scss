@@ -190,7 +190,8 @@
             }
             .content-title .title{
               font-size: 13px;
-              display: inline;
+              display: inline-block;
+              max-width:170px;
             }
             .content-price{
               font-size: 14px;
@@ -212,15 +213,11 @@
             box-shadow: none;
             margin: auto;
             padding: auto;
-            // font-weight: 700;
-            // margin: 0 8px 8px;
-            // padding: 16px 16px;
-            // border: 0;
-            // text-align: right;
           }
 
           #steps-uid-0-t-6 {
             background: #41cb8a;
+            color:#fff;
           }
 
         .content{
