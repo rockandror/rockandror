@@ -411,3 +411,39 @@
     }
   }
 }
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .budget-consul .services .budget-container{
+    section .container-checkbox{
+      margin-bottom: 3em;
+    }
+
+    .wizard > .content{
+      min-height: 24em;
+      overflow-y: scroll;
+    }
+
+    form .steps{
+      .content-title .title{
+        display: block;
+      }
+      > ul > li a{
+        min-height: 120px;
+        display: inherit;
+
+        #checked-1,
+        #checked-2,
+        #checked-3,
+        #checked-4,
+        #checked-5,
+        #checked-6{
+          float: left;
+        }
+      }
+    }
+    form .actions{
+      width: 100%;
+      margin-top: 2em;
+    }
+  }
+}
