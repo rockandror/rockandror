@@ -223,13 +223,11 @@
                   .container-checkbox
                     = f.check_box :module_6, id: 'budget_module_6', label: false, checked: @budget.module_6 == "true" ? "checked" : ""
                     %label{ :for => "budget_module_6" } Añadir este módulo al presupuesto
-
             %h3
               .content-title
                 %span.title
                   Total
                 = f.text_field :ammount, value: calculate_price(@budget), label: false, readonly: true
-              -# = f.text_field :ammount, value: calculate_price(@budget)
             %section
               .row
                 .small-12.medium-10.columns.medium-centered.container-text
@@ -254,7 +252,6 @@
                     - if @budget.module_6 == "true" || @budget.module_6 == "6"
                       Mantenimiento y monitorización
 
-
             %h3 Enviar solicitud <span>Contacta con Rockandror</span>
             %section
               .row
@@ -264,22 +261,3 @@
                   = f.text_field :name, placeholder: 'Nombre o Empresa', class: "required"
                   = f.text_field :email, placeholder: 'Email', class: "required"
                   = f.text_area :message, placeholder: 'Mensaje', class: "required"
-
-            -# %h3
-            -#   Precio total
-            -#   = f.text_field :ammount, value: calculate_price(@budget)
-            -#   -# = f.text_field :ammount, value: calculate_price(@budget)
-            -# %section
-            -#   .row
-            -#     .small-12.medium-10.columns.medium-centered.container-text
-            -#       %h4 Modulos seleccionados
-            -#       %ul
-            -#         %li Modulo_1
-            -#         %li Modulo_1
-            -#         %li Modulo_1
-
-                  -# %span.total-price Precio total
-                  -# = f.text_field :ammount, value: calculate_price(@budget)
-
-          -# %span.total-price Precio total
-          -# = f.text_field :ammount, value: calculate_price(@budget)

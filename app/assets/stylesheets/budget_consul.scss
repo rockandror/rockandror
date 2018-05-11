@@ -205,7 +205,7 @@
 
           input[name="budget[ammount]"]{
             height: auto;
-            background: #41cb8a;
+            background: transparent;
             color: #fff;
             width: auto;
             display: inline;
@@ -361,6 +361,53 @@
           }
         }
       }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 40em) {
+
+  .budget-consul .services .budget-container{
+
+    .wizard > .content{
+      min-height: 24em;
+      overflow-y: scroll;
+      .body{
+        padding: 1em;
+        height: auto;
+        width: 100%;
+      }
+      #steps-uid-0-p-7 .row{
+        margin: 0 auto;
+      }
+    }
+
+    .steps{
+      > ul > li{
+        width:33%;
+      }
+      li{
+        text-align: center;
+        &:last-child{
+          width: 100%;
+          display: none;
+        }
+        &:nth-last-child(2){
+          width: 100%;
+          .content-title .title{
+            display: block !important;
+            margin: 0 auto;
+          }
+          input[name="budget[ammount]"]{
+            text-align: center;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    form .actions{
+      width: 100%;
     }
   }
 }

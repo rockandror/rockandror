@@ -13,7 +13,7 @@ function init(){
   });
   initBudgetSteps();
   updatePrice();
-  budgetAmountWidth();
+  // budgetAmountWidth();
 
 }
 
