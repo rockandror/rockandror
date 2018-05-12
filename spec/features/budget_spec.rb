@@ -36,4 +36,5 @@ def check_and_next_step
   find("a[href='#next']").click
   find("a[href='#next']").click
   find("a[href='#next']").click
+  find("a[href='#next']").click
 end

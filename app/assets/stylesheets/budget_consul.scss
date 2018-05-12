@@ -197,6 +197,11 @@
               font-size: 14px;
             }
           }
+          .selected-modules {
+            p {
+              margin-bottom: 0px;
+            }
+          }
           label[for="budget_ammount"]{
             display: inline-block;
             float: left;

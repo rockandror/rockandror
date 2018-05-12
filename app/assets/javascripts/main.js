@@ -100,7 +100,7 @@ function updatePrice(){
     if ($("#budget_module_1")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 1000 + ' €')
       $("#checked-1").html("√")
-      $("#title_mod_1").html("Preparación de servidores")
+      $("#title_mod_1").html("- Preparación de servidores")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 1000 + ' €')
       $("#checked-1").html("")
@@ -111,7 +111,7 @@ function updatePrice(){
     if ($("#budget_module_2")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 1000 + ' €')
       $("#checked-2").html("√")
-      $("#title_mod_2").html("Configuración e Instalación")
+      $("#title_mod_2").html("- Configuración e Instalación")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 1000 + ' €')
       $("#checked-2").html("")
@@ -122,7 +122,7 @@ function updatePrice(){
     if ($("#budget_module_3")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 500 + ' €')
       $("#checked-3").html("√")
-      $("#title_mod_3").html("Adaptación visual")
+      $("#title_mod_3").html("- Adaptación visual")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 500 + ' €')
       $("#checked-3").html("")
@@ -133,7 +133,7 @@ function updatePrice(){
     if ($("#budget_module_4")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 2000 + ' €')
       $("#checked-4").html("√")
-      $("#title_mod_4").html("Integración Censo")
+      $("#title_mod_4").html("- Integración Censo")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 2000 + ' €')
       $("#checked-4").html("")
@@ -144,7 +144,7 @@ function updatePrice(){
     if ($("#budget_module_5")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 3200 + ' €')
       $("#checked-5").html("√")
-      $("#title_mod_5").html("Personalización de procesos")
+      $("#title_mod_5").html("- Personalización de procesos")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 3200 + ' €')
       $("#checked-5").html("")
@@ -155,7 +155,7 @@ function updatePrice(){
     if ($("#budget_module_6")[0].checked == true) {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) + 7200 + ' €')
       $("#checked-6").html("√")
-      $("#title_mod_6").html("Mantenimiento y monitorización")
+      $("#title_mod_6").html("- Mantenimiento y monitorización")
     } else {
       $("#budget_ammount").val(parseInt($("#budget_ammount").val()) - 7200 + ' €')
       $("#checked-6").html("")
