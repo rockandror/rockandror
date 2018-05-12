@@ -13,14 +13,8 @@ function init(){
   });
   initBudgetSteps();
   updatePrice();
-  // budgetAmountWidth();
 
 }
-
-// function budgetAmountWidth(){
-//   var budget_ammount = $('form.new_budget .wizard .steps li a').width();
-//   $('#budget_ammount').width(budget_ammount);
-// }
 
 function isMobile() {
   try{ document.createEvent("TouchEvent"); return true; }
@@ -166,7 +160,6 @@ function updatePrice(){
 
 $(window).on('resize', function(){
   resizeDiv();
-  // budgetAmountWidth();
 });
 
 var ready;
