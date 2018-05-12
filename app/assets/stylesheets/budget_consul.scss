@@ -179,6 +179,7 @@
           .steps{
             small{
               float: right;
+              font-size: 10px;
             }
             #checked-1, #checked-2, #checked-3,
             #checked-4, #checked-5, #checked-6 {
@@ -189,7 +190,16 @@
             }
             .content-title .title{
               font-size: 13px;
-              display: inline;
+              display: inline-block;
+              max-width:170px;
+            }
+            .content-price{
+              font-size: 14px;
+            }
+          }
+          .selected-modules {
+            p {
+              margin-bottom: 0px;
             }
           }
           label[for="budget_ammount"]{
@@ -199,13 +209,20 @@
           }
 
           input[name="budget[ammount]"]{
-            background: #41cb8a;
+            height: auto;
+            background: transparent;
             color: #fff;
-            font-weight: 700;
-            margin: 0 0.5em 0.5em;
-            padding: 1em 1em;
+            width: auto;
+            display: inline;
             border: 0;
-            text-align: right;
+            box-shadow: none;
+            margin: auto;
+            padding: auto;
+          }
+
+          #steps-uid-0-t-6 {
+            background: #41cb8a;
+            color:#fff;
           }
 
         .content{
@@ -219,7 +236,9 @@
         border-radius: 0;
       }
 
-
+      .wizard > .content {
+        min-height: 44em;
+      }
 
       .total-price{
         position: absolute;
@@ -347,6 +366,89 @@
           }
         }
       }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 40em) {
+
+  .budget-consul .services .budget-container{
+
+    .wizard > .content{
+      min-height: 24em;
+      overflow-y: scroll;
+      .body{
+        padding: 1em;
+        height: auto;
+        width: 100%;
+      }
+      #steps-uid-0-p-7 .row{
+        margin: 0 auto;
+      }
+    }
+
+    .steps{
+      > ul > li{
+        width:33%;
+      }
+      li{
+        text-align: center;
+        &:last-child{
+          width: 100%;
+          display: none;
+        }
+        &:nth-last-child(2){
+          width: 100%;
+          .content-title .title{
+            display: block !important;
+            margin: 0 auto;
+          }
+          input[name="budget[ammount]"]{
+            text-align: center;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    form .actions{
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .budget-consul .services .budget-container{
+    section .container-checkbox{
+      margin-bottom: 3em;
+    }
+
+    .wizard > .content{
+      min-height: 24em;
+      overflow-y: scroll;
+    }
+
+    form .steps{
+      .content-title .title{
+        display: block;
+      }
+      > ul > li a{
+        min-height: 120px;
+        display: inherit;
+
+        #checked-1,
+        #checked-2,
+        #checked-3,
+        #checked-4,
+        #checked-5,
+        #checked-6{
+          float: left;
+        }
+      }
+    }
+    form .actions{
+      width: 100%;
+      margin-top: 2em;
     }
   }
 }
