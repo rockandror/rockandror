@@ -1,0 +1,37 @@
+es:
+  pages:
+    consul_budget:
+      meta:
+        title: Servicios Consul, software libre para la partecipación ciutadana
+        description: >
+                      RockAndRor sigue los principios de la metodología Agile
+                      durante el desarrollo de paginas web y aplicaciones flexibles
+                      y dinnamicos con Ruby on Rails.
+        keywords:     >
+                      Herramienta de desarrollo, RockandRor, Rock&Ror, Open source,
+                      Ruby on Rails, MVC, Metodologia agile, Desarrollo web,
+                      Desarrollo Palma de Mallorca, Aplicaciones web
+
+      h1_title_html:  Servicios <strong>Consul</strong> Software libre para la participación ciudadana
+      h1_subtitle_html: Añadir un texto bonito
+
+      h2_1_title:     CONSUL, la herramienta de participación ciudadana.
+      description_1_html: >
+                        CONSUL es la herramienta de participación ciudadana más
+                        completa para un gobierno abierto, transparente y
+                        democrático.
+                        En Rock&Ror hemos colaborado en la implementación de
+                        funcionalides para Consul. Estamos totalmente alineados
+                        en cuanto a buenas prácticas y filosofía de desarrollo
+                        con el equipo técnico que ha desarrollado Consul.
+                        Estamos convencidos de que <strong>somos la empresa
+                        perfecta para poder realizar cualquier tarea de
+                        implantación y mantenimiento de esta herramienta</strong>
+                        dado el conocimiento que tenemos de la misma.
+
+      h2_2_title: Servicios que ofrecemos
+      description_2_html: >
+                        En función a las peticiones que hemos recibido de
+                        diferentes Ayuntamientos hemos detectado los diferentes
+                        módulos que se pueden necesitar relacionados con la
+                        herramienta.
