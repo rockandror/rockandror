@@ -41,6 +41,7 @@ es:
       startup: Quieres lanzar tu Startup
     last_works: Trabajos
     team: Equipo
+    consul: Servicios Consul
     send_email: Contratarnos
 
   common:
