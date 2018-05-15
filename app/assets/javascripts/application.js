@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery_ujs
+//= require jquery.steps
 //= require analytics
 //= require bootstrap-sprockets
 //= require turbolinks
@@ -7,6 +8,7 @@
 //= require navbar
 //= require facebook
 //= require home
+//= require consul_budget
 //= require animate
 //= require scrollto
 //= require cookies_eu
@@ -20,6 +22,7 @@
 var initialize_modules = function() {
   App.Navbar.initialize();
   App.Home.initialize();
+  App.ConsulBudget.initialize();
 }
 
 $(function(){

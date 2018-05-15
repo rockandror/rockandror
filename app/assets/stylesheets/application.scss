@@ -1,7 +1,8 @@
-@import "bootstrap_variables";
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "rails_bootstrap_forms";
+@import 'bootstrap_variables';
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'rails_bootstrap_forms';
+@import 'jquery.steps';
 @import 'mixins';
 @import 'layout';
 @import 'navbar';
@@ -20,6 +21,6 @@
 @import 'contact';
 @import 'development_mallorca';
 @import 'pages';
-@import 'budget_consul';
+@import 'consul_budget';
 @import 'cookies_eu';
 @import 'nprogress';
