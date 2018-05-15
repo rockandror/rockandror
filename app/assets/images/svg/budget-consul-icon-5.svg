@@ -1,0 +1,31 @@
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="45.4px" height="63.7px" viewBox="0 0 45.4 63.7" style="enable-background:new 0 0 45.4 63.7;"
+	 xml:space="preserve">
+<style type="text/css">
+	.budget_5_st0{fill:#FF7058;}
+	.budget_5_st1{fill:#FFFFFF;}
+	.budget_5_st2{fill:#CED5E0;}
+	.budget_5_st3{fill:#324A5E;}
+	.budget_5_st4{fill:#4CDBC4;}
+	.budget_5_st5{fill:#84DBFF;}
+	.budget_5_st6{fill:#E6E9EE;}
+</style>
+<defs>
+</defs>
+<g>
+	<path class="budget_5_st0" d="M44.5,63.7H0.8c-0.4,0-0.8-0.4-0.8-0.8V7.4C0,7,0.4,6.6,0.8,6.6h43.7c0.4,0,0.8,0.4,0.8,0.8v55.4
+		C45.3,63.3,45,63.7,44.5,63.7z"/>
+	<polygon class="budget_5_st1" points="4.5,9.9 4.5,55 34.5,55 34.5,48.7 40.9,48.7 40.9,9.9 	"/>
+	<path class="budget_5_st2" d="M26.2,4.8V3.6c0-2-1.6-3.6-3.6-3.6s-3.6,1.6-3.6,3.6v1.3h-6.3v7.3h19.8V4.8H26.2z"/>
+	<circle class="budget_5_st3" cx="22.7" cy="3.6" r="1.8"/>
+	<path class="budget_5_st4" d="M28.9,22.9c0,3.8-3.1,6.8-6.8,6.8c-3.8,0-6.8-3.1-6.8-6.8s3.1-6.8,6.8-6.8v6.8H28.9z"/>
+	<path class="budget_5_st5" d="M30.1,21.7h-6.8v-6.8C27.1,14.8,30.1,17.9,30.1,21.7z"/>
+	<g>
+		<polygon class="budget_5_st6" points="34.5,55 40.9,48.7 34.5,48.7 		"/>
+		<rect x="8.2" y="37.9" class="st6" width="29" height="1.7"/>
+		<rect x="8.2" y="33.1" class="st6" width="29" height="1.7"/>
+		<rect x="8.2" y="42.7" class="st6" width="29" height="1.7"/>
+	</g>
+</g>
+</svg>

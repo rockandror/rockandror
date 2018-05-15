@@ -27,6 +27,7 @@ gem 'browser'
 #gem 'owlcarousel-rails'
 gem 'fastclick-rails'
 gem 'greensock-rails'
+gem 'rails-jquery-steps'
 
 # Monitoring
 gem 'newrelic_rpm'

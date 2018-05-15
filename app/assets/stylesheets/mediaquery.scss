@@ -1,0 +1,740 @@
+@media screen and (min-width: 64em) {
+
+  .page{
+    margin-top: 100px;
+  }
+  section{
+    &.participation{
+      .content{
+        h3{font-size: 3em;}
+        .text{text-align: left;}
+      }
+    }
+  }
+  .budget-consul{
+    .timeline{
+      ul li::after{
+        top: 50%;
+      }
+    }
+  }
+}
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+
+  .alert-box{
+    margin-top: 50px;
+  }
+
+  .budget-consul{
+    .header{
+      padding: 2em;
+      svg{
+        max-width: 200px;
+      }
+    }
+
+    .timeline{
+      display: inline-block;
+
+      ul li:nth-child(odd) div{
+        left: -201px !important;
+        text-align: center;
+      }
+
+      ul li:nth-child(even) div{
+        left: -201px !important;
+        text-align: center;
+      }
+
+      ul li::after{
+        bottom: 24px !important;
+      }
+
+      ul:before{
+        height: 90% !important;
+      }
+
+      .icon{
+        display: none;
+      }
+
+      .icon{
+        &:last-child {
+          display: block;
+        }
+      }
+
+      ul li:last-child .icon{
+        top: 100px !important;
+        left: -30px !important;
+      }
+
+      .content-text{
+        width: 100% !important;
+        text-align: center !important;
+        p{
+          padding: 2em;
+        }
+      }
+    }
+
+    .services .budget-container section{
+      .container-checkbox{
+        margin-top: 1em;
+        label{
+          width: 100% !important;
+        }
+      }
+    }
+
+    .budget-container{
+      .new_budget{
+        .steps{
+          a{
+            padding: 1em 0.5em;
+          }
+          small, span{
+            display: none;
+          }
+        }
+      }
+      form{
+
+      }
+    }
+  }
+
+
+  #btn_plus{display:block;}
+  .top-bar{display: none;}
+  .home{
+    .intro{
+      .container{
+        top:10%;
+        padding: 1em;
+         .title{font-size:2.3em; }
+         lead{
+          line-height: 1em;
+          margin-top:30px;
+          font-size: 1.4em;
+        }
+      }
+    }
+
+    section{
+      padding:2em 0em 2em 0em;
+      h3{
+        font-size: 3em;
+      }
+      h3,small,span,p,a{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+        font-size: 3em;
+      }
+      &.boatjump,&.webdings,&.eatbooking,&.oasis{
+        .columns{
+          .description{
+            margin-top:-60px;
+          }
+          .image{
+            top: 0px;
+            position: relative;
+            height: 260px;
+          }
+        }
+      }
+
+      &.webdings{
+        padding-top:6em;
+        .image{padding-top: 0em;}
+      }
+      &.rockandror{
+        img{max-width: 200px;}
+      }
+      &.howweworks{
+        .workflow{
+          display: none;
+        }
+        .columns{
+          h3{
+            font-size: 1.6em;
+          }
+        }
+      }
+      &.partecipation{
+        .content{
+          h3{font-size: 2em;}
+          .text{
+            text-align: center;
+            h4{text-align: center;}
+            svg{width: 400px;}
+          }
+        }
+      }
+    }
+  }
+
+  .page{
+    &.contact{
+      h1{
+        font-size:1.4em;
+      }
+    }
+  }
+  .footer{
+    padding-top: 1em;
+    padding-bottom: 1em;
+   .logo{width: 90%;}
+  }
+}
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body{
+    li.consul{
+      margin-left: 15px;
+    }
+  }
+
+  .budget-consul .timeline .icon:last-child{
+    display: block;
+  }
+  .alert-box{
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .budget-consul{
+    .header{
+      svg{
+        width: 200px;
+      }
+    }
+
+    .timeline{
+      ul li::after{
+        top: 50%;
+      }
+
+      .icon{
+        display: none;
+      }
+
+      .content-text{
+        width: 300px;
+        max-width: 220px;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .home{
+    .intro{
+      .container{
+        padding: 1em;
+         h1{
+           font-size:1.3em;
+         }
+         lead{
+          margin-top:20px;
+        }
+      }
+    }
+
+    section{
+
+      h2{
+        font-size: 2.3rem;
+      }
+
+      a{
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 0.8em;
+      }
+
+      &.rockandror{
+        h3 {font-size: 1.2rem;}
+        .inline-list li{
+          padding: 0px;
+        }
+      }
+
+      &.boatjump,&.webdings,&.eatbooking,&.oasis{
+        .columns{
+          .description{
+            padding:3em;
+          }
+        }
+      }
+
+      &.boatjump,&.eatbooking{
+        .columns{
+          .image{
+            right: 10px;
+          }
+        }
+      }
+      &.webdings,&.oasis{
+        .columns{
+          .image{
+            left: 20px;
+          }
+        }
+      }
+
+      &.oasis{
+         h2{
+          font-size: 1.7em;
+         }
+      }
+
+      &.participation{
+        .content{
+          h3{font-size: 3em;}
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1072px) {
+
+  .budget-consul{
+    .header{
+      svg{
+        width: 200px;
+      }
+    }
+
+    .timeline{
+      ul li::after{
+        top: 50%;
+      }
+
+      .icon{
+        display: none;
+      }
+      .content-text{
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+  }
+
+  .oasis h2{
+    font-size: 3rem;
+  }
+  .page.boatjump .brand-design .content svg{width: 70%;}
+}
+
+@media only screen and (min-width: 685px) and (max-width: 760px) {
+  .home .intro .container h2.title {
+    font-size: 3rem;
+  }
+  #btn-discover{
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .page{margin-top:100px;}
+}
+@media only screen and (max-width: 767px) {
+  .cookies-eu{
+    visibility: hidden;
+    position: fixed !important;
+    top: 0;
+    height: 50px;
+    padding: 0;
+    background: #333333 !important;
+    .cookies-eu-content-holder{
+      line-height: 12px !important;
+      padding: 5px 15px 0px 15px !important;
+      display: block !important;
+      max-width: 90% !important;
+      text-align: left;
+      color:white;
+    }
+    .cookies-eu-ok{
+      position: fixed;
+      top: 61px;
+      right: 9px;
+    }
+  }
+  .top-bar{display: none;}
+  .owl-wrapper-outer a{
+    color:grey;
+  }
+
+  .contact-now h3,
+  .home section.contact-now h3{
+    font-size: 1.4em;
+  }
+
+  .page.webdings .cont-introduction,
+  .page.boatjump .cont-introduction,
+  .page.oasiscatamarans .cont-introduction{
+    padding-bottom:2em;
+
+  }
+  .page.webdings .img-background,
+  .page.boatjump .img-background,
+  .page.oasiscatamarans .img-background{
+    background: none;
+  }
+
+  .page.webdings .brand-design,
+  .page.webdings .app-mobile,
+  .page.boatjump .brand-design,
+  .page.oasiscatamarans .brand-design{
+    padding: 3em 0em;
+  }
+
+  .page.boatjump .brand-design .content svg{
+    padding:1em 0em;
+  }
+  .page.boatjump .brand-design{
+    padding:3em 0em;
+  }
+
+  .page{
+    .cont-introduction{
+      padding:1em;
+      padding-top: 5em;
+      padding-bottom: 5em;
+      h2{
+        margin-top: 50px;
+      }
+    }
+    .wrapperIpad .medium-centered{
+      padding:0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+    background-color: #555555;
+    color: #fff;
+    background: #00b0ea;
+  }
+
+
+  .top-bar{
+    overflow: visible !important;
+    .top-bar-section{
+      .show-for-medium-up li{padding-left:0px !important;}
+      .left{
+        .has-dropdown:hover{
+          .dropdown{
+            display:block;
+          }
+        }
+      }
+      .left{
+        margin-top:20px;
+      }
+      .left li {
+        .dropdown{
+          display:none;
+          height: auto;
+          width: auto;
+          clip: auto !important;
+          left: 0;
+          background: white;
+          top:43px;
+          text-align: center;
+          width: 170px;
+          .back{display: none;}
+          li{
+            a{
+              line-height: 4.6875rem;
+              padding: 0 1.5625rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home{
+    .intro{
+      .container{
+        top:15%;
+        padding: 1em;
+        h1{
+          font-size: 1.3em;
+          letter-spacing: 0px;
+          margin-top:15px;
+        }
+        h2.title{
+          font-size:3.3em;
+        }
+         lead{
+          line-height: 1em;
+          margin-top:30px;
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
+
+  .top-bar-section li.active:not(.has-form) a:not(.button){
+    line-height: 0.6875rem;
+    //margin-top: 33px;
+    padding: 0;
+  }
+  .top-bar-section .has-dropdown > a:after{
+    display: none;
+  }
+
+  .top-bar{
+    .top-bar-section{
+      .has-dropdown.moved{
+       .show-for-medium-up{
+        width: 100%;
+       }
+      }
+      .right{
+        position: absolute;
+        right: 0;
+        width: 150px;
+      }
+      .show-for-medium-up{
+        width: 250px;
+        li{
+          // padding-left:1em;
+          display: inline-block;
+          &.portfolio{
+            // margin-left:10px;
+          }
+          a{
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) and (orientation: portrait){
+  .top-bar .top-bar-section .show-for-medium-up{
+    width: 430px;
+
+  }
+}
+
+@media only screen and (max-width: 768px)  and (orientation: portrait){
+  border:1px solid green;
+  .home{
+    .intro{
+      .container{
+        top:10%;
+        padding: 1em;
+        h1{
+          font-size: 1.3em;
+          letter-spacing: 2px;
+          margin-top: 10px;
+        }
+        h2.title{
+          font-size:3.3em;
+        }
+        lead{
+          line-height: 1em;
+          margin-top:20px;
+          font-size: 1.6em;
+        }
+        #btn-discover{
+          display: none;
+        }
+      }
+    }
+  }
+  .top-bar{display: none;}
+  .page{
+    margin-top: 0px;
+    .cont-introduction{
+      padding-top:50px;
+      h2{
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 703px) {
+  #btn_plus{display:block;}
+}/* fix repsponsive menu */
+
+@media only screen and (max-width: 480px) {
+
+  .home {
+    .intro{
+      .container{
+        top:10%;
+        padding: 1em;
+        h1{
+          display: none;
+        }
+        h2.title{
+          font-size:1.3em;
+          line-height: 30px;
+        }
+        lead{
+          line-height: 1em;
+          margin-top:40px;
+          font-size: 1em;
+        }
+      }
+    }
+    section{
+      padding: 2em 0em;
+      &.boatjump,&.webdings,&.eatbooking,&.oasis{
+        span,small{font-size: 0.8em;}
+        a{
+          display: block;
+          margin-bottom:5px;
+          font-size: 0.9em;
+        }
+      }
+      &.oasis{
+        h2{
+          font-size: 2.3rem;
+        }
+      }
+      &.participation{
+         .content{padding: 0px;}
+      }
+      &.howweworks{
+        .workflow{display: none;}
+      }
+    }
+
+  }
+
+  .page,.contact-page{
+    h1{
+      font-size: 2.3em;
+    }
+    .cont-introduction{
+      padding-top: 5em;
+      padding-bottom: 2em;
+    }
+    .brand-design,.back-end,.front-end,.app-mobile, .tecnology,.contact-now{
+      padding: 1em 0em;
+    }
+  }
+  .tecnology{
+    p{ font-size: 0.7em;}
+  }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+  .home {
+    .intro{
+      .container{
+         h2.title{
+          padding: 0px;
+          font-size: 1.7em;
+          line-height: 30px;
+        }
+         lead{
+           line-height: 1em;
+           margin-top: 37px;
+           font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .home {
+    .intro{
+      .container{
+         h2.title{
+          padding: 0px;
+          font-size: 1.7em;
+          line-height: 30px;
+        }
+         lead{
+           line-height: 1em;
+           margin-top: 37px;
+           font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  .page{
+    .cont-introduction span{
+      font-size: 0.8em;
+    }
+    &.oasiscatamarans{
+      h1{
+        font-size: 1.8em;
+      }
+    }
+  }
+
+  #container_submenu_responsive .owl-carousel p{
+    padding-bottom: 0px;
+    min-height: 108px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .home {
+    .intro{
+      .container{
+         h2.title{
+          font-size: 1.5em;
+        }
+         lead{
+          line-height: 1em;
+          margin-top:30px;
+          font-size: 1em;
+        }
+      }
+    }
+    section{
+      h2,h3{font-size: 2em;}
+      &.webdings{
+        padding-top: 2em;
+      }
+      &.howweworks{
+        h3{font-size: 1.3em;}
+        .text{
+          padding: 1em;
+          ul{
+            margin:0;
+          }
+        }
+      }
+    }
+  }
+
+  .owl-carousel .owl-wrapper-outer{
+    max-height: 408px;
+  }
+  .page.contact h1{
+    font-size: 1.2em;
+  }
+  .page.contact p{
+   font-size: 0.8em;
+  }
+  .page.contact textarea{
+    height: 100px;
+  }
+
+}

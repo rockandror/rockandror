@@ -1,0 +1,53 @@
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="60px" height="60px" viewBox="0 0 491.5 491.5" style="enable-background:new 0 0 491.5 491.5;"
+	 xml:space="preserve">
+<style type="text/css">
+	.budget_6_st0{fill:#E1E6E9;}
+	.budget_6_st1{fill:#64798A;}
+	.budget_6_st2{fill:#FCD462;}
+	.budget_6_st3{fill:#44C4A1;}
+	.budget_6_st4{fill:#E56353;}
+	.budget_6_st5{fill:#F6C358;}
+	.budget_6_st6{fill:#3EA69B;}
+	.budget_6_st7{fill:#27A2DB;}
+	.budget_6_st8{fill:#2D93BA;}
+	.budget_6_st9{fill:#EBF0F3;}
+</style>
+<defs>
+</defs>
+<path class="budget_6_st0" d="M332.9,0H15.6C7,0,0,7,0,15.6v214.5c0,8.6,7,15.6,15.6,15.6h317.3c8.6,0,15.6-7,15.6-15.6V15.6
+	C348.6,7,341.6,0,332.9,0z"/>
+<g>
+	<rect x="25.3" y="64.8" class="budget_6_st1" width="297.9" height="155.6"/>
+	<rect x="25.3" y="22.5" class="budget_6_st1" width="213" height="18"/>
+</g>
+<circle class="budget_6_st2" cx="258" cy="31.5" r="9"/>
+<circle class="budget_6_st3" cx="286.1" cy="31.5" r="9"/>
+<circle class="budget_6_st4" cx="314.2" cy="31.5" r="9"/>
+<rect x="39.1" y="85.5" class="budget_6_st2" width="77" height="78.2"/>
+<rect x="39.1" y="150.7" class="budget_6_st5" width="77" height="13"/>
+<rect x="39.1" y="189.8" class="budget_6_st0" width="77" height="12.2"/>
+<rect x="135.8" y="85.5" class="budget_6_st3" width="77" height="78.2"/>
+<rect x="135.8" y="150.7" class="budget_6_st6" width="77" height="13"/>
+<rect x="135.8" y="189.8" class="budget_6_st0" width="77" height="12.2"/>
+<rect x="232.4" y="85.5" class="budget_6_st7" width="77" height="78.2"/>
+<rect x="232.4" y="150.7" class="budget_6_st8" width="77" height="13"/>
+<rect x="232.4" y="189.8" class="budget_6_st0" width="77" height="12.2"/>
+<path class="budget_6_st1" d="M475.9,245.8H158.6c-8.6,0-15.6,7-15.6,15.6v214.5c0,8.6,7,15.6,15.6,15.6h317.3c8.6,0,15.6-7,15.6-15.6V261.4
+	C491.5,252.8,484.5,245.8,475.9,245.8z"/>
+<g>
+	<rect x="168.3" y="310.5" class="budget_6_st9" width="297.9" height="155.6"/>
+	<rect x="168.3" y="268.2" class="budget_6_st9" width="213" height="18"/>
+</g>
+<circle class="budget_6_st2" cx="400.9" cy="277.2" r="9"/>
+<circle class="budget_6_st3" cx="429.1" cy="277.2" r="9"/>
+<circle class="budget_6_st4" cx="457.2" cy="277.2" r="9"/>
+<rect x="182.1" y="331.3" class="budget_6_st2" width="269.6" height="78.2"/>
+<rect x="182.1" y="401.2" class="budget_6_st5" width="269.6" height="8.3"/>
+<rect x="182.1" y="435.6" class="budget_6_st0" width="269.6" height="12.2"/>
+<path class="budget_6_st4" d="M433.5,74.7h-32.1V59.3l-30,30l30,30v-15.5h32.1c0.5,0,0.9,0.4,0.9,0.9v83.5h29v-83.5
+	C463.4,88.1,450,74.7,433.5,74.7z"/>
+<path class="budget_6_st3" d="M58,416.8h32.1v15.5l30-30l-30-30v15.5H58c-0.5,0-0.9-0.4-0.9-0.9v-83.5h-29v83.5
+	C28.1,403.4,41.5,416.8,58,416.8z"/>
+</svg>
