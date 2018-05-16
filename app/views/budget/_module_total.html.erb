@@ -1,0 +1,54 @@
+<h3 class="content-price">
+  Total
+  <small><%= f.text_field :ammount, value: calculate_price(@budget), label: false, readonly: true %></small>
+  <div class="content-title hide-xs">
+    <span class="title">Total</span>
+    <%#= f.text_field :ammount, value: calculate_price(@budget), label: false, readonly: true %>
+  </div>
+</h3>
+
+<section>
+  <div class="row">
+    <div class="container-text">
+      <h4>Modulos seleccionados</h4>
+
+      <div class="selected-modules">
+        <p id="title_mod_1">
+          <% if @budget.module_1 == "true" || @budget.module_1 == "1" %>
+            Preparación de servidores
+          <% end %>
+        </p>
+
+        <p id="title_mod_2">
+          <% if @budget.module_2 == "true" || @budget.module_2 == "1" %>
+            Configuración e Instalación
+          <% end %>
+        </p>
+
+        <p id="title_mod_3">
+          <% if @budget.module_3 == "true" || @budget.module_3 == "1" %>
+            Adaptación visual
+          <% end %>
+        </p>
+
+        <p id="title_mod_4">
+          <% if @budget.module_4 == "true" || @budget.module_4 == "1" %>
+            Integración Censo
+          <% end %>
+        </p>
+
+        <p id="title_mod_5">
+          <% if @budget.module_5 == "true" || @budget.module_5 == "1" %>
+            Personalización de procesos
+          <% end %>
+
+          <p id="title_mod_6">
+            <% if @budget.module_6 == "true" || @budget.module_6 == "1" %>
+            Mantenimiento y monitorización
+            <% end %>
+          </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

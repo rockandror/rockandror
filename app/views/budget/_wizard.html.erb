@@ -1,63 +1,12 @@
 <%= form_for @budget, url:budget_index_path, html: {
   data: { errored: params[:action] == "create", received_params: params[:budget].present? }}   do |f| %>
   <div id="wizard">
-    <h3 class="content-price">Módulo 1</h3>
-    <small>1.000€</small>
-    <div class="content-title hide-xs">
-      <span class="title">Preparación de servidores</span>
-      <%= check_step(@budget, "checked-1", "module_1") %>
-    </div>
-    <section>
-      <div class="row">
-        <div class="container-text">
-          <h4>Preparación de servidores</h4>
-          <p>
-            Si el Ayuntamiento dispone de un departamento de informática capaz
-            de resolver los siguientes puntos no será necesaria la contratación
-            de este módulo.
-          </p>
-          <ul>
-            <li>Preparación de los servidores Linux</li>
-            <li>Gestión de dominios</li>
-            <li>Gestión de redirecciones</li>
-            <li>Gestión del sevidor de email</li>
-            <li>Actualizaciones periodicas y de seguridad de los Sistemas Operativos / Servidores</li>
-            <li>Instalación y mantenimiento del Sistema gestor de Base de Datos</li>
-            <li>Gestión y monitorización del sistema de copias de seguridad</li>
-          </ul>
-          <div class="container-checkbox">
-            <%= f.check_box :module_1, id: 'budget_module_1', label: false, checked: @budget.module_1 == "true" ? "checked" : "" %>
-            <!-- = f.label{ for: "budget_module_1" } Añadir este módulo al presupuesto %> -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <h3 class="content-price">Módulo 2</h3>
-    <small>1.000€</small>
-    <div class="content-title hide-xs">
-      <span class="title">Preparación de servidores</span>
-      <%= check_step(@budget, "checked-2", "module_2") %>
-    </div>
-    <section>
-      <div class="row">
-        <div class="container-text">
-          <h4>Configuración e Instalación</h4>
-          <p>
-            Si el Ayuntamiento dispone de un departamento de informática capaz
-            de resolver los siguientes puntos no será necesaria la contratación
-            de este módulo.
-          </p>
-          <ul>
-            <li>Preparación de los servidores Linux</li>
-            <li>Gestión de dominios</li>
-            <li>Gestión de redirecciones</li>
-            <li>Gestión del sevidor de email</li>
-            <li>Actualizaciones periodicas y de seguridad de los Sistemas Operativos / Servidores</li>
-            <li>Instalación y mantenimiento del Sistema gestor de Base de Datos</li>
-            <li>Gestión y monitorización del sistema de copias de seguridad</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <%= render "module_1",f: f %>
+    <%= render "module_2",f: f %>
+    <%= render "module_3",f: f %>
+    <%= render "module_4",f: f %>
+    <%= render "module_5",f: f %>
+    <%= render "module_6",f: f %>
+    <%= render "module_total", f: f  %>
   </div>
 <% end %>

@@ -1,0 +1,44 @@
+<h3 class="content-price">
+  Módulo 5
+  <div class="content-title hide-xs">
+    <span class="title">Personalización de procesos</span>
+    <small>3.200€</small>
+    <%= check_step(@budget, "checked-5", "module_5") %>
+  </div>
+</h3>
+
+<section>
+  <div class="row">
+    <div class="container-text">
+      <h4>???</h4>
+      <p>
+        En caso de necesitar personalizaciones de funcionalidades ya
+        existentes en consul o pequeños cambios que se pueden requerir sobre
+        la versión de Consul, ofrecemos un paquete de 60 horas donde se incluye:
+      </p>
+      <ul>
+        <li>Análisis de la necesidad del Ayuntamiento con la necesidad de
+          personalizar alguna parte de la aplicación.
+        </li>
+        <li>
+          Implementación de los cambios analizados
+        </li>
+        <li>
+          Documentación adicional de las customizaciones.
+        </li>
+      </ul>
+      <p>
+        Al desconocer las nuevas funcionalidades que puede querer el cliente
+        hemos dimensionado lo que creemos suficiente para hacer
+        customizaciones en 1 o 2 procesos.
+        Por ejemplo "propuestas ciudadanas" y "debates". En este ejemplo
+        hemos puesto 64h entre desarrollo, analisis y documentación.
+      </p>
+      <div class="container-checkbox">
+        <%= f.check_box :module_5, id: 'budget_module_5', label: false, checked: @budget.module_5 == "true" ? "checked" : "" %>
+        <%= f.label :module_5, 'Añadir este módulo al presupuesto' %>
+        <%#= f.label :for "budget_module_1"   %>
+      </div>
+    </div>
+  </div>
+</section>

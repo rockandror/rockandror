@@ -132,10 +132,23 @@ section{
         position: relative;
 
         .steps{
-          small{
-            float: right;
-            font-size: 10px;
+          li a{
+            text-align: left;
+
+            small{
+              font-size: 10px;
+              display: block;
+            }
           }
+        }
+
+        .container-text{
+          text-align: left;
+          padding: 1em;
+        }
+
+        .steps{
+
 
           #checked-1, #checked-2, #checked-3,
           #checked-4, #checked-5, #checked-6 {
@@ -178,7 +191,7 @@ section{
           padding: auto;
         }
 
-        #steps-uid-0-t-6 {
+        #wizard-t-6 {
           background: #41cb8a;
           color:#fff;
         }

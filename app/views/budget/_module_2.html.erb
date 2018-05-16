@@ -1,0 +1,30 @@
+<h3 class="content-price">
+  Módulo 2
+  <div class="content-title hide-xs">
+    <span class="title">Preparación de servidores</span>
+    <small>1.000€</small>
+    <%= check_step(@budget, "checked-2", "module_2") %>
+  </div>
+</h3>
+<section>
+  <div class="row">
+    <div class="container-text">
+      <h4>Configuración e Instalación</h4>
+      <p>
+        Este módulo es indispensable para cualquier Ayuntamiento que aún no
+        disponga de la aplicación de Consul y pretenda implantarla.
+      </p>
+      <ul>
+        <li>Configuración Integración Continua "Travis"</li>
+        <li>Gestión y monitorización de errores "Rollbar"</li>
+        <li>Configurar Capistrano</li>
+        <li>Instalación de la aplicación</li>
+      </ul>
+      <div class="container-checkbox">
+        <%= f.check_box :module_2, id: 'budget_module_2', label: false, checked: @budget.module_2 == "true" ? "checked" : "" %>
+        <%= f.label :module_2, 'Añadir este módulo al presupuesto' %>
+        <%#= f.label :for "budget_module_1"   %>
+      </div>
+    </div>
+  </div>
+</section>
