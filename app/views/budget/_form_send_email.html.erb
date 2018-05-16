@@ -1,0 +1,20 @@
+<h3 class="content-price">
+  Enviar solicitud Contacta con Rockandror
+</h3>
+
+<section>
+  <div class="row">
+    <h4>Contacta con Rockandror</h4>
+    <div class="container-text">
+      <p>
+        Por favor rellene los
+        siguientes campos, haga click sobre el botón "Enviar solicitud" y le
+        llamaremos en menos de 24h.
+      </p>
+      <hr />
+      <%= f.text_field :name, placeholder: 'Nombre o Empresa', class: "required form-group input-lg" %>
+      <%= f.text_field :email, placeholder: 'Email', class: "required form-group input-lg" %>
+      <%= f.text_area :message, placeholder: 'Mensaje', class: "required form-group input-lg" %>
+    </div>
+  </div>
+</section>

@@ -1,28 +1,34 @@
 <h3 class="content-price">
+  <div id="checked-4"></div>
   Módulo 4
   <div class="content-title hide-xs">
     <span class="title">Integración Censo</span>
-    <small>2.000€</small>
-    <%= check_step(@budget, "checked-4", "module_4") %>
+    <%#= check_step(@budget, "checked-4", "module_4") %>
   </div>
 </h3>
 
 <section>
   <div class="row">
+    <h4>Integración Censo</h4>
     <div class="container-text text-left">
-      <h4>Integración Censo</h4>
       <p>
         También se incluye la integración con el Censo para poder aprovechar
         al máximo la aplicación.
       </p>
+      <hr />
       <ul>
         <li>Integración con servicios del censo</li>
       </ul>
+      <hr />
+      <p>
+        Precio: <strong>2000€</strong>
+      </p>
       <div class="container-checkbox">
         <%= f.check_box :module_4, id: 'budget_module_4', label: false, checked: @budget.module_4 == "true" ? "checked" : "" %>
         <%= f.label :module_4, 'Añadir este módulo al presupuesto' %>
         <%#= f.label :for "budget_module_1"   %>
       </div>
     </div>
+
   </div>
 </section>

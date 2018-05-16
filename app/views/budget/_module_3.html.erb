@@ -1,24 +1,29 @@
 <h3 class="content-price">
+  <div id="checked-3"></div>
   Módulo 3
   <div class="content-title hide-xs">
     <span class="title">Adaptación visual</span>
-    <small>500€</small>
-    <%= check_step(@budget, "checked-3", "module_3") %>
+    <%#= check_step(@budget, "checked-3", "module_3") %>
   </div>
 </h3>
 
 <section>
   <div class="row">
+    <h4>Adaptación visual</h4>
     <div class="container-text">
-      <h4>Adaptación visual</h4>
       <p>
         Con este módulo se pretende cambiar los estilos,
         logos y colores de la aplicación para darle un toque distintivo para
         cada ayuntamiento.
       </p>
+      <hr />
       <ul>
         <li>Adaptación de la imágen corporativa</li>
       </ul>
+      <hr />
+      <p>
+        Precio: <strong>500€</strong>
+      </p>
       <div class="container-checkbox">
         <%= f.check_box :module_3, id: 'budget_module_3', label: false, checked: @budget.module_3 == "true" ? "checked" : "" %>
         <%= f.label :module_3, 'Añadir este módulo al presupuesto' %>

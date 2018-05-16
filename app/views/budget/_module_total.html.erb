@@ -1,52 +1,49 @@
 <h3 class="content-price">
   Total
-  <small><%= f.text_field :ammount, value: calculate_price(@budget), label: false, readonly: true %></small>
-  <div class="content-title hide-xs">
-    <span class="title">Total</span>
-    <%#= f.text_field :ammount, value: calculate_price(@budget), label: false, readonly: true %>
-  </div>
+  <small><%= f.text_field :ammount, value: calculate_price(@budget), label: false, readonly: true, class:'budget_ammount' %></small>
 </h3>
 
 <section>
   <div class="row">
+    <h4>Modulos seleccionados</h4>
     <div class="container-text">
-      <h4>Modulos seleccionados</h4>
-
+      <p>Esto son los modulos que has selecionado.</p>
+      <hr />
       <div class="selected-modules">
-        <p id="title_mod_1">
-          <% if @budget.module_1 == "true" || @budget.module_1 == "1" %>
-            Preparación de servidores
-          <% end %>
-        </p>
+        <p id="title_mod_1"></p>
+        <% if @budget.module_1 == "true" || @budget.module_1 == "1" %>
+          <strong>Preparación de servidores</strong>
+        <% end %>
 
-        <p id="title_mod_2">
-          <% if @budget.module_2 == "true" || @budget.module_2 == "1" %>
-            Configuración e Instalación
-          <% end %>
-        </p>
+        <p id="title_mod_2"></p>
+        <% if @budget.module_2 == "true" || @budget.module_2 == "1" %>
+          <strong>Configuración e Instalación</strong>
+        <% end %>
 
-        <p id="title_mod_3">
-          <% if @budget.module_3 == "true" || @budget.module_3 == "1" %>
-            Adaptación visual
-          <% end %>
-        </p>
+        <p id="title_mod_3"></p>
+        <% if @budget.module_3 == "true" || @budget.module_3 == "1" %>
+          <strong>Adaptación visual</strong>
+        <% end %>
 
-        <p id="title_mod_4">
-          <% if @budget.module_4 == "true" || @budget.module_4 == "1" %>
-            Integración Censo
-          <% end %>
-        </p>
+        <p id="title_mod_4"></p>
+        <% if @budget.module_4 == "true" || @budget.module_4 == "1" %>
+          <strong>Integración Censo</strong>
+        <% end %>
 
-        <p id="title_mod_5">
-          <% if @budget.module_5 == "true" || @budget.module_5 == "1" %>
-            Personalización de procesos
-          <% end %>
+        <p id="title_mod_5"></p>
+        <% if @budget.module_5 == "true" || @budget.module_5 == "1" %>
+          <strong>Personalización de procesos</strong>
+        <% end %>
 
-          <p id="title_mod_6">
-            <% if @budget.module_6 == "true" || @budget.module_6 == "1" %>
-            Mantenimiento y monitorización
-            <% end %>
-          </p>
+        <p id="title_mod_6"></p>
+        <% if @budget.module_6 == "true" || @budget.module_6 == "1" %>
+        <strong>Mantenimiento y monitorización</strong>
+        <% end %>
+        <hr />
+        <strong>Precio total: <%= f.text_field :ammount, value: calculate_price(@budget), label: false, readonly: true, class:'budget_ammount' %></strong>
+        <hr />
+        <p>
+          Quiere que nos pongamos en contacto con usted? Sigues adelante..
         </p>
       </div>
     </div>

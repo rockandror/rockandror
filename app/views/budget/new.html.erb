@@ -38,7 +38,7 @@
         <%= t'pages.consul_budget.description_2_html' %>
       </p>
       <div class='timeline col-xs-12'>
-          <ul>
+        <ul>
             <li>
               <div class='content'>
                 <div class="icon">
@@ -98,7 +98,6 @@
               </div>
             </li>
 
-
             <li>
               <div class='content'>
                 <div class="icon">
@@ -111,134 +110,26 @@
               </div>
             </li>
 
-
             <li id='scroll_to_calculate_budget'>
               <div class="icon">
                 <%= inline_svg "svg/budget-consul-icon-7.svg" %>
               </div>
             </li>
           </ul>
-        </div>
-        <div class="col-lg-12 budget-container text-center" id="calculate-budget">
-          <h2>
-            CALCULE SU PRESUPUESTO
-          </h2>
-          <p>
-            Vaya seleccionando los módulos que necesita su ayuntamiento y calcule el precio total.
-          </p>
-          <%= render "wizard" %>
-        </div>
+      </div>
+    </div>
 
-    </div>
-  </div>
-  <!-- <div class='header row'>
-    <div class='col-xs-12 col-md-8'>
-      <div class='col-md-6'>
-        <div>
-          <p>
-            CONSUL es la herramienta de participación ciudadana más completa para
-            un gobierno abierto, transparente y democrático.
-            <br>
-          </p>
-        </div>
-      </div>
-      <div class='col-md-6'>
-        <p>
-          En Rock&Ror hemos colaborado en la implementación de funcionalides para Consul.
-          Estamos totalmente alineados en cuanto a buenas prácticas y filosofía de desarrollo
-          con el equipo técnico que ha desarrollado Consul.
-          <br><br>
-          Estamos convencidos de que <strong>somos la empresa perfecta para poder
-          realizar cualquier tarea de implantación y mantenimiento de esta
-          herramienta</strong> dado el conocimiento que tenemos de la misma.
-        </p>
-      </div>
-      <div class='col-xs-12 text-center'>
-      </div>
-    </div>
-  </div>
-  <div class='row services'>
-    <div class='content col-xs-12 col-md-10'>
-      <h2 class='text-center'>
-        Servicios que ofrecemos
-      </h2>
-      <p class='col-md-6 column'>En función a las peticiones que hemos recibido de diferentes Ayuntamientos hemos detectado los diferentes módulos que se pueden necesitar relacionados con la herramienta.</p>
-      <section class='timeline col-xs-12'>
-        <ul>
-          <li>
-            <div class='content'>
-              <div class='icon'>
-              </div>
-              <div class='content-text'>
-                <h3>Módulo 1:</h3>
-                <p>Preparación del entorno de servidores necesarios para instalar la aplicación</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class='content'>
-              <div class='icon'>
-              </div>
-              <div class='content-text'>
-                <h3>Módulo 2:</h3>
-                <p>Configuración de herramientas de monitorización de errores, integración continua e instalación de la aplicación</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class='content'>
-              <div class='icon'>
-              </div>
-              <div class='content-text'>
-                <h3>Módulo 3:</h3>
-                <p>Adaptación de Consul a su Ayuntamiento (adaptación de la imágen corporativa)</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class='content'>
-              <div class='icon'>
-              </div>
-              <div class='content-text'>
-                <h3>Módulo 4:</h3>
-                <p>Integración con el Censo para poder aprovechar al máximo la aplicación.</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class='content'>
-              <div class='icon'>
-              </div>
-              <div class='content-text'>
-                <h3>Módulo 5:</h3>
-                <p>Necesidad de personalizar procesos por parte del Ayuntamiento (Análisis, implementación y documentación)</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class='content'>
-              <div class='icon'>
-              </div>
-              <div class='content-text'>
-                <h3>Módulo 6:</h3>
-                <p>Mantenimiento y actualización del repositorio con las últimas modificaciones en Consul</p>
-              </div>
-            </div>
-          </li>
-          <li id='scroll_to_calculate_budget'>
-            <div class='icon'>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <div class='columns col-xs-12 col-md-10 budget-container text-center' id='calculate-budget'>
+    <div class="container">
+      <div class="col-md-10 col-md-offset-1 budget-container text-center" id="calculate-budget">
         <h2>
           CALCULE SU PRESUPUESTO
         </h2>
         <p>
-          Vaya seleccionando los módulos que necesita su ayuntamiento y calcule el precio total.
+          Vaya seleccionando los módulos que <br /> necesita <strong>su Ayuntamiento</strong> y calcule el precio total.
         </p>
+        <%= render "wizard" %>
       </div>
     </div>
-  </div> -->
+
+  </div>
 </section>

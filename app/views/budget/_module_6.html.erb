@@ -1,19 +1,21 @@
 <h3 class="content-price">
+  <div id="checked-6"></div>
   Módulo 6
   <div class="content-title hide-xs">
     <span class="title">Mantenimiento y monitorización</span>
-    <small>7.200€</small>
-    <%= check_step(@budget, "checked-4", "module_4") %>
+    <%#= check_step(@budget, "checked-4", "module_4") %>
   </div>
 </h3>
+
 <section>
   <div class="row">
+    <h4>Mantenimiento y monitorización</h4>
     <div class="container-text">
-      <h4>Mantenimiento y monitorización</h4>
       <p>
         Para cualquier Ayuntamiento que ya tenga instalado Consul ofrecemos
         un servicio mensual de actualización.
       </p>
+      <hr />
       <ul>
         <li>Servicio de actualización de la plataforma en base a las
           versiones de consul que vayan saliendo.
@@ -25,6 +27,10 @@
           Monitorización de errores.
         </li>
       </ul>
+      <hr />
+      <p>
+        Precio: <strong>7.200€</strong>
+      </p>
       <div class="container-checkbox">
         <%= f.check_box :module_6, id: 'budget_module_6', label: false, checked: @budget.module_6 == "true" ? "checked" : "" %>
         <%= f.label :module_6, 'Añadir este módulo al presupuesto' %>

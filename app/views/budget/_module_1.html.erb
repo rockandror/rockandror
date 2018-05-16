@@ -1,21 +1,22 @@
 <h3 class="content-price">
+  <div id="checked-1"></div>
   Módulo 1
-
   <div class="content-title hide-xs">
     <span class="title">Preparación de servidores</span>
-    <small>1.000€</small>
-    <%= check_step(@budget, "checked-1", "module_1") %>
+    <%#= check_step(@budget, "checked-1", "module_1") %>
   </div>
 </h3>
+
 <section>
   <div class="row">
+    <h4>Preparación de servidores</h4>
     <div class="container-text">
-      <h4>Preparación de servidores</h4>
       <p>
         Si el Ayuntamiento dispone de un departamento de informática capaz
         de resolver los siguientes puntos no será necesaria la contratación
         de este módulo.
       </p>
+      <hr />
       <ul>
         <li>Preparación de los servidores Linux</li>
         <li>Gestión de dominios</li>
@@ -25,11 +26,18 @@
         <li>Instalación y mantenimiento del Sistema gestor de Base de Datos</li>
         <li>Gestión y monitorización del sistema de copias de seguridad</li>
       </ul>
+      <hr />
+      <p>
+        Precio: <strong>1.000€</strong>
+      </p>
       <div class="container-checkbox">
+
         <%= f.check_box :module_1, id: 'budget_module_1', label: false, checked: @budget.module_1 == "true" ? "checked" : "" %>
         <%= f.label :module_1, 'Añadir este módulo al presupuesto' %>
+
         <%#= f.label :for "budget_module_1"   %>
       </div>
     </div>
+
   </div>
 </section>
