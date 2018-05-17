@@ -55,8 +55,8 @@ section{
         z-index: 10;
 
         @include col-xs() {
-          margin-left: -13%;
           padding-top: 0;
+          width: 100%;
         }
 
         div.content {
@@ -67,7 +67,8 @@ section{
           background: #fff;
 
           @include col-xs() {
-            width: 300px;
+            width: auto;
+            margin: 0 auto;
           }
         }
 
@@ -95,6 +96,9 @@ section{
           .content-text{
             padding: 1em;
             width: 280px;
+            @include col-xs() {
+              width:auto;
+            }
           }
         }
 
@@ -144,9 +148,47 @@ section{
         }
       }
     }
+
     .budget-container{
       background: #fff;
       padding: 3em 0;
+
+      @include col-xs() {
+        .wizard > .content{
+          min-height: 24em;
+          .body{
+            padding: 1em;
+            height: auto;
+            width: 100%;
+          }
+        }
+
+        .steps{
+          > ul > li{
+            width:50%;
+          }
+          li{
+            text-align: center;
+            &:last-child{
+              width: 100%;
+              display: none;
+            }
+            &:nth-last-child(2){
+              width: 100%;
+              .content-title .title{
+                display: block !important;
+                margin: 0 auto;
+              }
+              input[name="budget[ammount]"]{
+                text-align: left;
+                font-weight: 700;
+                font-size: 1.6em;
+              }
+            }
+          }
+        }
+      }
+
 
       h2{
         margin-top:1em;
@@ -398,6 +440,10 @@ section{
         .actions{
           width: 50%;
           margin-top: 10px;
+
+          @include col-xs() {
+            // width: 100%;
+          }
           a{
             border-radius: 0;
           }
