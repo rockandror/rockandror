@@ -7,6 +7,9 @@ section{
         fill:#fff;
       }
     }
+    .consul-logo{
+      max-width: 200px;
+    }
     .services{
       padding: 3em 0;
       margin-top:3em;
@@ -20,6 +23,10 @@ section{
         z-index: 1;
         padding-left: 0;
 
+        @include col-xs() {
+          overflow: inherit;
+        }
+
         &:before{
           content: '';
           position: absolute;
@@ -32,6 +39,9 @@ section{
           left: 0;
           bottom: 0;
           height: 100%;
+          @include col-xs() {
+            top:0;
+          }
         }
       }
 
@@ -44,12 +54,21 @@ section{
         padding: 2em 0;
         z-index: 10;
 
+        @include col-xs() {
+          margin-left: -13%;
+          padding-top: 0;
+        }
+
         div.content {
           position: relative;
           bottom: 0;
           width: 400px;
           padding: 15px;
           background: #fff;
+
+          @include col-xs() {
+            width: 300px;
+          }
         }
 
         &:nth-child(odd) div,
@@ -63,7 +82,11 @@ section{
             border-radius: 50%;
             background: #2184be;
             top: 50%;
+            @include col-xs() {
+              display: none;
+            }
           }
+
           .icon{
             width: 70px;
             text-align: center;
@@ -79,6 +102,10 @@ section{
           left: -401px;
           text-align: right;
 
+          @include col-xs() {
+            left:0;
+            text-align: center;
+          }
           &::after{
             right: -8px;
           }
@@ -89,17 +116,27 @@ section{
 
           .icon{
             float: right;
+            @include col-xs() {
+              float: none;
+              margin: 0 auto;
+            }
           }
-
         }
 
         &:nth-child(even) div {
           left: 1px;
+          @include col-xs() {
+            text-align: center;
+          }
           &::after{
             left: -8px;
           }
           .icon{
             float: left;
+            @include col-xs() {
+              float: none;
+              margin: 0 auto;
+            }
           }
           .content-text{
             display: inline-block;
@@ -369,7 +406,6 @@ section{
     }
   }
 }
-
 
 section.page.budget-consul .budget-container .wizard > .content{
   border:1px solid #f1f1f1;
