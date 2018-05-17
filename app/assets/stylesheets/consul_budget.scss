@@ -2,12 +2,11 @@ section{
   &.page.budget-consul{
     .header-bg{
       @include header-bg-content;
-      @include radial-gradient(#3a778b, #36424a);
+      @include radial-gradient(#2184be, darken(#2184be, 10%));
       .st0{
         fill:#fff;
       }
     }
-
     .services{
       padding: 3em 0;
       margin-top:3em;
@@ -15,6 +14,7 @@ section{
 
       .timeline ul{
         margin-left:0;
+        margin-bottom: 0;
         overflow: hidden;
         position: relative;
         z-index: 1;
@@ -36,49 +36,14 @@ section{
       }
 
       .timeline ul li {
+
         list-style-type: none;
         position: relative;
         width: 0;
         margin: 0 auto;
         padding: 2em 0;
-        background: #385966;
         z-index: 10;
 
-        &:last-child {
-          height: 200px;
-
-          .icon{
-            position: absolute;
-            top: 0;
-            left: -25px;
-            bottom: 0;
-            right: 0;
-            top: 50px;
-            z-index: 9;
-            margin: 0 auto;
-          }
-
-          &::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: inherit;
-          }
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          left: 50%;
-          transform: translateY(-50%);
-          width: 15px;
-          height: 15px;
-          border-radius: 50%;
-          background: inherit;
-        }
         div.content {
           position: relative;
           bottom: 0;
@@ -86,43 +51,65 @@ section{
           padding: 15px;
           background: #fff;
         }
+
+        &:nth-child(odd) div,
+        &:nth-child(even) div {
+
+          &::after{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #2184be;
+            top: 50%;
+          }
+          .icon{
+            width: 70px;
+            text-align: center;
+            margin-top: 3em;
+          }
+          .content-text{
+            padding: 1em;
+            width: 280px;
+          }
+        }
+
         &:nth-child(odd) div {
           left: -401px;
           text-align: right;
 
-          .icon{
-            width: 70px;
-            float: right;
-            text-align: center;
-            margin-top: 3em;
+          &::after{
+            right: -8px;
           }
 
-          .content-text{
-            width: 280px;
-            padding: 1em;
+          &:last-child::after{
+            display: none;
           }
-        }
-        &:nth-child(even) div {
+
           .icon{
-            width: 70px;
+            float: right;
+          }
+
+        }
+
+        &:nth-child(even) div {
+          left: 1px;
+          &::after{
+            left: -8px;
+          }
+          .icon{
             float: left;
-            text-align: center;
-            margin-top: 3em;
           }
           .content-text{
-            width: 280px;
             display: inline-block;
-            padding: 1em;
           }
-          left: 1px;
         }
       }
     }
-
     .budget-container{
       background: #fff;
       padding: 3em 0;
-      margin-top: -75px;
 
       h2{
         margin-top:1em;
@@ -192,15 +179,7 @@ section{
         .container-text{
           text-align: left;
           padding: 1em;
-          .selected-modules .budget_ammount{
-            color:$brand-success;
-          }
         }
-
-
-
-
-
 
         .steps{
           #checked-1, #checked-2, #checked-3,
@@ -396,6 +375,9 @@ section.page.budget-consul .budget-container .wizard > .content{
   border:1px solid #f1f1f1;
   min-height: 31em;
   overflow-y: auto;
+}
+section.page.budget-consul p{
+  font-size: 0.9em;
 }
 
 .wizard > .content > .body{
