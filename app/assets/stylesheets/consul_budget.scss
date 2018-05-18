@@ -7,9 +7,11 @@ section{
         fill:#fff;
       }
     }
+
     .consul-logo{
       max-width: 200px;
     }
+
     .services{
       padding: 3em 0;
       margin-top:3em;
@@ -18,17 +20,9 @@ section{
       .timeline ul{
         margin-left:0;
         margin-bottom: 0;
-        overflow: hidden;
         position: relative;
         z-index: 1;
         padding-left: 0;
-
-        @include col-xs() {
-          overflow: inherit;
-        }
-        @include col-sm() {
-          overflow: inherit;
-        }
 
         &:before{
           content: '';
@@ -251,15 +245,10 @@ section{
           text-align: left;
           position: relative;
           border-radius: 0;
-          #checked-1,
-          #checked-2,
-          #checked-3,
-          #checked-4,
-          #checked-5,
-          #checked-6{
+          .check{
             display: none;
             position: absolute;
-            right: -8px;
+            right: 0px;
             top:0;
             bottom:0;
             width: 1.6em;
@@ -268,7 +257,7 @@ section{
             span{
               position: absolute;
               top: 15px;
-              right: 13px;
+              right: 10px;
               color: #fff;
               font-size: 14px;
             }
