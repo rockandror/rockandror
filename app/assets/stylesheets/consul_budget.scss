@@ -26,6 +26,9 @@ section{
         @include col-xs() {
           overflow: inherit;
         }
+        @include col-sm() {
+          overflow: inherit;
+        }
 
         &:before{
           content: '';
@@ -159,6 +162,7 @@ section{
           width: 50%;
         }
       }
+
       @include col-xs() {
         .wizard > .content{
           min-height: 24em;
@@ -193,6 +197,13 @@ section{
           }
         }
       }
+      @include col-min-361-max-766(){
+        .steps{
+          > ul > li{
+            width:100%;
+          }
+        }
+      }
       @include col-md(){
         .wizard.vertical > .actions{
           width: 50%;
@@ -206,6 +217,7 @@ section{
 
       background: #fff;
       padding: 3em 0;
+      z-index: 1;
 
       h2{
         margin-top:1em;
