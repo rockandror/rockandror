@@ -74,7 +74,14 @@
           </li>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right hidden-xs">
+      <ul class="nav navbar-nav navbar-right visible-sm">
+        <li class="btn-contact-sm">
+          <%= link_to new_contact_path do %>
+            <%= fa_icon "envelope" %>
+          <% end %>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
         <li class="anim btn-contact">
           <%= link_to t('navbar.send_email'), new_contact_path %>
         </li>

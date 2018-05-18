@@ -1,3 +1,7 @@
+.nav > li > a {
+  padding: 15px 13px;
+}
+
 .navbar{
   margin-bottom:0;
   padding: 15px 0;
@@ -6,7 +10,24 @@
 
   @include col-sm() {
     .nav > li > a {
-      padding: 10px 14px;
+      padding: 15px 10px;
+    }
+
+    li.btn-contact-sm{
+      border-left:1px solid #f1f1f1;
+      position: absolute;
+      right: 0;
+      top:20px;
+      bottom:0;
+      width: 50px;
+      a{
+        padding: 0;
+        i{
+          margin-top: 28px;
+          margin-left: 14px;
+          font-size: 1.6em;
+        }
+      }
     }
   }
 
