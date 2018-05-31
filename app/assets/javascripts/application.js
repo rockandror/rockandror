@@ -19,14 +19,26 @@
 //= require 'greensock/TimelineMax'
 //= require 'greensock/jquery.gsap.js'
 
-var initialize_modules = function() {
+var initialize_modules;
+initialize_modules = function() {
   App.Navbar.initialize();
   App.Home.initialize();
   App.ConsulBudget.initialize();
 }
 
-$(function(){
-  $(document).ready(initialize_modules);
-  $(document).on('page:load', initialize_modules);
-  $(document).on('ajax:complete', initialize_modules);
-});
+// $(function(){
+  // $(document).ready(initialize_modules);
+  // $(document).on('page:load', initialize_modules);
+  $(document).on('page:update', initialize_modules);
+  // $(document).on('ajax:complete', initialize_modules);
+// });
+
+//
+// var ready;
+// ready = function() {
+//   $(document).foundation();
+//
+//   init();
+// };
+//
+// $(document).on('page:update', ready);

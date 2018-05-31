@@ -2,7 +2,7 @@
   <div id="checked-2" class="check"></div>
   Módulo 2
   <div class="content-title hide-xs">
-    <span class="title">Preparación de servidores</span>
+    <span class="title">Configuración e Instalación</span>
     <%#= check_step(@budget, "checked-2", "module_2") %>
   </div>
 </h3>
@@ -26,8 +26,9 @@
       <p>
         Precio: <strong>1.000€</strong>
       </p>
-      <div class="container-checkbox">
-        <%= f.check_box :module_2, id: 'budget_module_2', label: false, checked: @budget.module_2 == "true" ? "checked" : "" %>
+      <!-- <div class="container-checkbox"> -->
+      <div class="">
+        <%= f.check_box :module_2, id: 'budget_module_2', label: false, checked: @budget.module_2 == "true" || @budget.module_2 == "1" ? "checked" : "" %>
         <%= f.label :module_2, 'Añadir este módulo al presupuesto' %>
         <%#= f.label :for "budget_module_1"   %>
       </div>

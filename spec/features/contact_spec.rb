@@ -6,8 +6,8 @@ feature 'contact request' do
     visit new_contact_path
     fill_in 'contact_name', with: "Nombre"
     fill_in 'contact_email', with: "email@example.es"
-    fill_in 'contact_message', with: "Solicitud de contacto"  
-    click_on 'Contacta ahora'
+    fill_in 'contact_message', with: "Solicitud de contacto"
+    click_on 'Enviar mensaje'
     expect(page).to have_content "Gracias por contactar con nosotros."
     expect(page).to have_content "Obtendrá una respuesta en menos de 24 horas."
   end
@@ -16,9 +16,9 @@ feature 'contact request' do
     visit new_contact_path
     fill_in 'contact_name', with: ""
     fill_in 'contact_email', with: "email@example.es"
-    fill_in 'contact_message', with: "Solicitud de contacto"  
-    click_on 'Contacta ahora'
-    expect(page).to have_content "no puede estar en blanco"    
-  end  
+    fill_in 'contact_message', with: "Solicitud de contacto"
+    click_on 'Enviar mensaje'
+    expect(page).to have_content "no puede estar en blanco"
+  end
 
 end

@@ -24,8 +24,9 @@
       <p>
         Precio: <strong>500€</strong>
       </p>
-      <div class="container-checkbox">
-        <%= f.check_box :module_3, id: 'budget_module_3', label: false, checked: @budget.module_3 == "true" ? "checked" : "" %>
+      <!-- <div class="container-checkbox"> -->
+      <div class="">
+        <%= f.check_box :module_3, id: 'budget_module_3', label: false, checked: @budget.module_3 == "true" || @budget.module_3 == "1" ? "checked" : "" %>
         <%= f.label :module_3, 'Añadir este módulo al presupuesto' %>
         <%#= f.label :for "budget_module_1"   %>
       </div>

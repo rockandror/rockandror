@@ -42,9 +42,13 @@
         </small>
       </p>
       <hr />
-      <div class="container-checkbox">
-        <%= f.check_box :module_5, id: 'budget_module_5', label: false, checked: @budget.module_5 == "true" ? "checked" : "" %>
+      <!-- <div class="container-checkbox"> -->
+      <div class="">
+        <%= f.check_box :module_5, id: 'budget_module_5', label: false, checked: @budget.module_5 == "true" || @budget.module_5 == "1" ? "checked" : "" %>
         <%= f.label :module_5, 'Añadir este módulo al presupuesto' %>
+
+
+
         <%#= f.label :for "budget_module_1"   %>
       </div>
     </div>
