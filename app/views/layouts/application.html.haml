@@ -11,6 +11,14 @@
     %meta{:content => "mXNBRXCqbOYP9B5OIPiHpEDeM8tHM4jEWIjsqsqqlh0", :name => "google-site-verification"}/
     = favicon_link_tag 'favicon.ico'
 
+    %meta{:content => "Desarrollo web en Palma de Mallorca - RockAndRoR", :property => "og:title"}/
+    %meta{:content => "Desarrollo web ágil a medida en RubyOnRails para Baleares y el resto de España. Desarrollo web en Palma de Mallorca. Expertos desarrolladores y diseñadores web.", :property => "og:description"}/
+    %meta{:content => "es", :property => "og:locale"}/
+    %meta{:content => "http://www.rockandror.com", :property => "og:url"}/
+    %meta{:content => "png", :property => "og:image:type"}/
+    %meta{:content => "#{asset_url('logo-center-share.png')}", :property => "og:image"}/
+
+
     %title= content_for?(:title) ? yield(:title) : "Desarrollo web en Palma de Mallorca - RockAndRoR"
     = stylesheet_link_tag    "application"
     = javascript_include_tag "vendor/modernizr"
