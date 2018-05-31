@@ -1,28 +1,33 @@
-%h1 Hola RockAndRor
-%p
-  = @budget.name
+<h1>Hola RockAndRor</h1>
+
+<p>
+  <%= @budget.name %>
   ha realizado una solicitud por la web rockandror.com
-%p
-  Email del cliente: #{@budget.email}
-%p
-  = @budget.message
-%p
-  Presupuesto de: #{@budget.ammount}
-
-- if @budget.module_1 == "on"
-  %p Module 1
-
-- if @budget.module_2 == "on"
-  %p Module 2
-
-- if @budget.module_3 == "on"
-  %p Module 3
-
-- if @budget.module_4 == "on"
-  %p Module 4
-
-- if @budget.module_5 == "on"
-  %p Module 5
-
-- if @budget.module_6 == "on"
-  %p Module 6
+</p>
+<p>
+  Email del cliente: <%= @budget.email %>
+</p>
+<p>
+  <%= @budget.message %>
+</p>
+<p>
+  Presupuesto de: <%= @budget.ammount %>
+</p>
+<% if @budget.module_1 == "1" %>
+  <p>Module 1</p>
+<% end %>
+<% if @budget.module_2 == "1" %>
+  <p>Module 2</p>
+<% end %>
+<% if @budget.module_3 == "1" %>
+  <p>Module 3</p>
+<% end %>
+<% if @budget.module_4 == "1" %>
+  <p>Module 4</p>
+<% end %>
+<% if @budget.module_5 == "1" %>
+  <p>Module 5</p>
+<% end %>
+<% if @budget.module_6 == "1" %>
+  <p>Module 6</p>
+<% end %>
