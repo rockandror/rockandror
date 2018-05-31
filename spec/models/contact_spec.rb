@@ -1,6 +1,6 @@
 describe Contact do
 
-  let!(:contact) { Contact.new(name: "Name", email: "email@example.com", message: "message") } 
+  let!(:contact) { Contact.new(name: "Name", email: "email@example.com", message: "message", budget: "5.000") } 
 
   subject { contact }
 
@@ -14,16 +14,16 @@ describe Contact do
   it 'is invalid without a user email' do
     contact.email = ""
     expect(contact).to be_invalid
-  end  
+  end
 
   it 'is invalid without a user message' do
     contact.message = ""
     expect(contact).to be_invalid
-  end        
+  end
 
   it 'is invalid without wrong email' do
     contact.email = "email@example."
     expect(contact).to be_invalid
-  end          
+  end
 
 end
