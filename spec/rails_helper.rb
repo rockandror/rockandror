@@ -10,8 +10,6 @@ require 'capybara/poltergeist'
 
 I18n.default_locale = :es
 
-ActiveRecord::Migration.maintain_test_schema!
-
 RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 end
