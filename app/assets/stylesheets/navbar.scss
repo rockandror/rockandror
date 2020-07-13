@@ -20,7 +20,7 @@ svg{
 
 .logo-smartphone{
   float:left;
-  height: 24px;
+  height: 22px;
   margin-top: 13px;
 }
 
@@ -42,13 +42,21 @@ svg{
     margin-top: 4px;
     width: 20px;
   }
-  .tel,.email{
+  .tel,.email, .locale{
     padding: 0px;
     text-align: center;
     background: #2ECC71;
     height: 50px;
     a{
       display: block;
+    }
+  }
+  .locale {
+    background:#333;
+
+    a {
+      margin-top:13px;
+      color: white;
     }
   }
   .tel svg{margin-top:13px; }

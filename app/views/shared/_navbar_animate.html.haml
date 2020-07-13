@@ -18,6 +18,9 @@
 %a#btn_consul_budget
   = inline_svg "svg/consul-logo-responsive.svg" , class: 'icon-menu'
   %span Servicios Consul
+%a#btn_consul_budget
+  = inline_svg "svg/consul-logo-responsive.svg" , class: 'icon-menu'
+  %span Servicios Consul
 %a#btn_email{ href: new_contact_path }
   = inline_svg "svg/email.svg", class: 'icon-menu'
   %span Escríbenos
@@ -49,9 +52,13 @@
       = image_tag "oasis-catamaran/background-page.jpg"
 
 .row.top-contact
-  .small-8.columns
+  .small-6.columns
     %a{:href => root_path}
       = inline_svg "svg/logo-smartphone.svg", class: 'logo-smartphone'
+  .small-2.columns.locale
+    - I18n.available_locales.reject{|locale| locale == I18n.locale }.each do |locale|
+      %a{:href => url_for(locale: locale)}
+        = t("locale.#{locale}")
   .small-2.columns.tel
     %a{:href => "tel:+34607320876"}
       = inline_svg "svg/phone.svg", class: 'icon-nav'
@@ -70,6 +77,13 @@
         %span Menú
   %section.top-bar-section
     %ul.right
+      %li.anim.has-dropdown
+        %a{:href => "#"}
+          = t("locale.#{I18n.locale}")
+        %ul.dropdown
+          - I18n.available_locales.reject{|locale| locale == I18n.locale }.each do |locale|
+            %li
+              = link_to t("locale.#{locale}"), url_for(locale: locale)
       %li
         %a{:href => new_contact_path} Envíanos un email
     %ul.left.small-4.medium-4.columns.show-for-medium-up
