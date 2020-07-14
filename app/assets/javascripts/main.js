@@ -44,16 +44,3 @@ function scrollToSection(){
     }
   });
 }
-
-$(window).on('resize', function(){
-  resizeDiv();
-});
-
-var ready;
-ready = function() {
-  $(document).foundation();
-
-  init();
-};
-
-$(document).on('page:update', ready);
