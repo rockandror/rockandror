@@ -2,8 +2,10 @@
 
 .page.budget-consul
   .cont-introduction.medium-12.small-12.large-6
-    %h1 Servicios <strong>Consul</strong>
-    %span Software libre para la participación ciudadana
+    %h1
+      = t(".title_html")
+    %span
+      = t(".subtitle_html")
 
   .header.row
     .medium-12.large-8.large-centered.columns
@@ -11,253 +13,84 @@
         %div
           = inline_svg "svg/consul-logo.svg"
           %p
-            CONSUL es la herramienta de participación ciudadana más completa para
-            un gobierno abierto, transparente y democrático.
+            = t(".description")
             %br
             = link_to 'www.consulproject.org', 'http://consulproject.org/es/',  target: :blank
 
       .medium-6.columns
         %p
-          En Rock&Ror hemos colaborado en la implementación de funcionalides para Consul.
-          Estamos totalmente alineados en cuanto a buenas prácticas y filosofía de desarrollo
-          con el equipo técnico que ha desarrollado Consul.
-          <br><br>
-          Estamos convencidos de que <strong>somos la empresa perfecta para poder
-          realizar cualquier tarea de implantación y mantenimiento de esta
-          herramienta</strong> dado el conocimiento que tenemos de la misma.
+          = t(".experience.part1")
 
-      .medium-12.columns.text-center
-        = link_to 'Calcule su presupuesto', '#scroll_to_calculate_budget', id: "btn-budget"
+          <br><br>
+
+          = t(".experience.part2_html")
 
   .row.services
-    .content.small-12.medium-10.medium-centered.large-centered.columns
+    .content.small-8.small-offset-2.text-center
+      %h2
+        = t(".services.title")
+      %p
+        = t(".services.description")
+
+  .row.services.no-padding-top{"data-equalizer" => ""}
+    %section.small-12.column.large-6
+      %ul.pricing-table.installation{"data-equalizer-watch" => ""}
+        %li.title
+          %h2
+            = t(".installation.title")
+        %li.price
+          = t(".installation.price")
+        %li.description
+          = t(".installation.latest")
+        %li.description
+          = t(".installation.design")
+        %li.description
+          = t(".installation.census")
+        %li.description
+          = t(".installation.updates")
+        %li.description
+          = t(".installation.monitoring")
+        %li.cta-button
+          %a.button{:href => "#"}
+            = t(".installation.submit")
+    %section.small-12.column.large-6
+      %ul.pricing-table.development{"data-equalizer-watch" => ""}
+        %li.title
+          %h2
+            = t(".development.title")
+        %li.price
+          = t(".development.price")
+        %li.description
+          = t(".development.new")
+        %li.description
+          = t(".development.mods")
+        %li.description
+          = t(".development.technical_support")
+
+        %li.cta-button
+          %a.button.floor{:href => "#"}
+            = t(".development.submit")
+
+  .row.services.no-padding-top
+    .content.small-12.text-center
+      %p
+        = t(".custom")
+
+  .row.team
+    .content.small-12
       %h2.text-center
-        Servicios que ofrecemos
-      %p.medium-8.medium-centered.large-6.large-centered.column En función a las peticiones que hemos recibido de diferentes Ayuntamientos hemos detectado los diferentes módulos que se pueden necesitar relacionados con la herramienta.
+        = t(".team.title")
 
-      %section.timeline.small-12
-        %ul
-          %li
-            %div.content
-              .icon
-                = inline_svg "svg/budget-consul-icon-1.svg"
-              .content-text
-                %h3 Módulo 1:
-                %p Preparación del entorno de servidores necesarios para instalar la aplicación
-          %li
-            %div.content
-              .icon
-                = inline_svg "svg/budget-consul-icon-2.svg"
-              .content-text
-                %h3 Módulo 2:
-                %p Configuración de herramientas de monitorización de errores, integración continua e instalación de la aplicación
-          %li
-            %div.content
-              .icon
-                = inline_svg "svg/budget-consul-icon-3.svg"
-              .content-text
-                %h3 Módulo 3:
-                %p Adaptación de Consul a su Ayuntamiento (adaptación de la imágen corporativa)
-          %li
-            %div.content
-              .icon
-                = inline_svg "svg/budget-consul-icon-4.svg"
-              .content-text
-                %h3 Módulo 4:
-                %p Integración con el Censo para poder aprovechar al máximo la aplicación.
-          %li
-            %div.content
-              .icon
-                = inline_svg "svg/budget-consul-icon-5.svg"
-              .content-text
-                %h3 Módulo 5:
-                %p Necesidad de personalizar procesos por parte del Ayuntamiento (Análisis, implementación y documentación)
-          %li
-            %div.content
-              .icon
-                = inline_svg "svg/budget-consul-icon-6.svg"
-              .content-text
-                %h3 Módulo 6:
-                %p Mantenimiento y actualización del repositorio con las últimas modificaciones en Consul
-          %li#scroll_to_calculate_budget
-            .icon
-              = inline_svg "svg/budget-consul-icon-7.svg"
-
-      #calculate-budget.columns.medium-12.medium-centered.large-10.large-centered.budget-container.text-center
-        %h2
-          CALCULE SU PRESUPUESTO
-        %p
-          Vaya seleccionando los módulos que necesita su ayuntamiento y calcule el precio total.
-
-        = form_for @budget,
-                   url:budget_index_path,
-                   html: { data: { errored: params[:action] == "create", received_params: params[:budget].present? } }  do |f|
-          %div
-            -# %h3 <div> Módulo 1 <small>1.000€</small></div> <div>Preparación de servidores <span id='checked-1'></span></div>
-            %h3
-              .content-price
-                Módulo 1
-                %small 1.000€
-              .content-title.hide-for-small-only
-                %span.title Preparación de servidores
-                = check_step(@budget, "checked-1", "module_1")
-            %section
-              .row
-                .small-12.medium-10.columns.medium-centered.container-text
-                  %h4 Preparación de servidores
-                  %p Si el Ayuntamiento dispone de un departamento de informática capaz de resolver los siguientes puntos no será necesaria la contratación de este módulo.
-                  %ul
-                    %li Preparación de los servidores Linux
-                    %li Gestión de dominios
-                    %li Gestión de redirecciones
-                    %li Gestión del sevidor de email
-                    %li Actualizaciones periodicas y de seguridad de los Sistemas Operativos / Servidores
-                    %li Instalación y mantenimiento del Sistema gestor de Base de Datos
-                    %li Gestión y monitorización del sistema de copias de seguridad
-
-                  .container-checkbox
-                    = f.check_box :module_1, id: 'budget_module_1', label: false, checked: @budget.module_1 == "true" ? "checked" : ""
-                    %label{ for: "budget_module_1" } Añadir este módulo al presupuesto
-
-            -# %h3 <div> Módulo 2 <small>1.000€</small></div> <div>Configuración e Instalación <span id='checked-2'></span><div>
-            %h3
-              .content-price
-                Módulo 2
-                %small 1.000€
-              .content-title.hide-for-small-only
-                %span.title Configuración e Instalación
-                = check_step(@budget, "checked-2", "module_2")
-            %section
-              .row
-                .small-12.medium-10.columns.medium-centered.container-text
-                  %h4 Configuración e Instalación
-                  %p Este módulo es indispensable para cualquier Ayuntamiento que aún no disponga de la aplicación de Consul y pretenda implantarla.
-                  %ul
-                    %li Configuración Integración Continua "Travis"
-                    %li Gestión y monitorización de errores "Rollbar"
-                    %li Configurar Capistrano
-                    %li Instalación de la aplicación
-                  .container-checkbox
-                    = f.check_box :module_2, id: 'budget_module_2', label: false, checked: @budget.module_2 == "true" ? "checked" : ""
-                    %label{ :for => "budget_module_2" } Añadir este módulo al presupuesto
-                    -# = f.check_box :module_2, id: 'budget_module_2'
-
-            -# %h3 <div>Módulo 3 <small>500€</small></div> <div>Adaptación visual <span id='checked-3'></span></div>
-            %h3
-              .content-price
-                Módulo 3
-                %small 500€
-              .content-title.hide-for-small-only
-                %span.title Adaptación visual
-                = check_step(@budget, "checked-3", "module_3")
-            %section
-              .row
-                .small-12.medium-10.columns.medium-centered.container-text
-                  %h4 Adaptación visual
-                  %p Con este módulo se pretende cambiar los estilos, logos y colores de la aplicación para darle un toque distintivo para cada ayuntamiento.
-                  %ul
-                    %li Adaptación de la imágen corporativa
-                  .container-checkbox
-                    = f.check_box :module_3, id: 'budget_module_3', label: false, checked: @budget.module_3 == "true" ? "checked" : ""
-                    %label{ :for => "budget_module_3" } Añadir este módulo al presupuesto
-
-            -# %h3 <div> Módulo 4 <small>2000€</small></div> <div>Integración Censo <span id='checked-4'></span></div>
-            %h3
-              .content-price
-                Módulo 4
-                %small 2.000€
-              .content-title.hide-for-small-only
-                %span.title Integración Censo
-                = check_step(@budget, "checked-4", "module_4")
-            %section
-              .row
-                .small-12.medium-10.columns.medium-centered.container-text
-                  %h4 Integración Censo
-                  %p También se incluye la integración con el Censo para poder aprovechar al máximo la aplicación.
-                  %ul
-                    %li Integración con servicios del censo
-                  .container-checkbox
-                    = f.check_box :module_4, id: 'budget_module_4', label: false, checked: @budget.module_4 == "true" ? "checked" : ""
-                    %label{ :for => "budget_module_4" } Añadir este módulo al presupuesto
-
-            -# %h3 <div>Módulo 5 <small>3.200€</small></div> <div>Personalización de procesos <span id='checked-5'></span></div>
-            %h3
-              .content-price
-                Módulo 5
-                %small 3.200€
-              .content-title.hide-for-small-only
-                %span.title Personalización de procesos
-                = check_step(@budget, "checked-5", "module_5")
-            %section
-              .row
-                .small-12.medium-10.columns.medium-centered.container-text
-                  -# %h4 Personalización de procesos
-                  %p En caso de necesitar personalizaciones de funcionalidades ya existentes en consul o pequeños cambios que se pueden requerir sobre la versión de Consul, ofrecemos un paquete de 60 horas donde se incluye:
-                  %ul
-                    %li Análisis de la necesidad del Ayuntamiento con la necesidad de personalizar alguna parte de la aplicación.
-                    %li Implementación de los cambios analizados
-                    %li Documentación adicional de las customizaciones.
-                  %br
-                  %p * Al desconocer las nuevas funcionalidades que puede querer el cliente hemos dimensionado lo que creemos suficiente para hacer customizaciones en 1 o 2 procesos. Por ejemplo "propuestas ciudadanas" y "debates". En este ejemplo hemos puesto 64h entre desarrollo, analisis y documentación.
-                  .container-checkbox
-                    = f.check_box :module_5, id: 'budget_module_5', label: false, checked: @budget.module_5 == "true" ? "checked" : ""
-                    %label{ :for => "budget_module_5" } Añadir este módulo al presupuesto
-
-            -# %h3 <div>Módulo 6 <small>7.200€</small></div> <div>Mantenimiento <span id='checked-6'></span></div>
-            %h3
-              .content-price
-                Módulo 6
-                %small 7.200€
-              .content-title.hide-for-small-only
-                %span.title Mantenimiento y monitorización
-                = check_step(@budget, "checked-6", "module_6")
-            %section
-              .row
-                .small-12.medium-10.columns.medium-centered.container-text
-                  %h4 Mantenimiento y monitorización
-                  %p Para cualquier Ayuntamiento que ya tenga instalado Consul ofrecemos un servicio mensual de actualización.
-                  %ul
-                    %li Servicio de actualización de la plataforma en base a las versiones de consul que vayan saliendo.
-                    %li Formación y transferencia del conocimiento.
-                    %li Monitorización de errores.
-                  .container-checkbox
-                    = f.check_box :module_6, id: 'budget_module_6', label: false, checked: @budget.module_6 == "true" ? "checked" : ""
-                    %label{ :for => "budget_module_6" } Añadir este módulo al presupuesto
-            %h3
-              .content-title
-                %span.title
-                  Total
-                = f.text_field :ammount, value: calculate_price(@budget), label: false, readonly: true
-            %section 
-              .row
-                .small-12.medium-10.columns.medium-centered.container-text
-                  %h4 Modulos seleccionados
-                  .selected-modules
-                    %p#title_mod_1
-                    - if @budget.module_1 == "true" || @budget.module_1 == "1"
-                      > Preparación de servidores
-                    %p#title_mod_2
-                    - if @budget.module_2 == "true" || @budget.module_2 == "2"
-                      > Configuración e Instalación
-                    %p#title_mod_3
-                    - if @budget.module_3 == "true" || @budget.module_3 == "3"
-                      > Adaptación visual
-                    %p#title_mod_4
-                    - if @budget.module_4 == "true" || @budget.module_4 == "4"
-                      > Integración Censo
-                    %p#title_mod_5
-                    - if @budget.module_5 == "true" || @budget.module_5 == "5"
-                      > Personalización de procesos
-                    %p#title_mod_6
-                    - if @budget.module_6 == "true" || @budget.module_6 == "6"
-                      > Mantenimiento y monitorización
-
-            %h3 Enviar solicitud <span>Contacta con Rockandror</span>
-            %section
-              .row
-                .small-12.medium-10.columns.medium-centered.container-text
-                  %h4 Contacta con Rockandror
-                  %p Quiere que nos pongamos en contacto con usted? Por favor rellene los siguientes campos, haga click sobre el botón "Enviar solicitud" y le llamaremos en menos de 24h
-                  = f.text_field :name, placeholder: 'Nombre o Empresa', class: "required"
-                  = f.text_field :email, placeholder: 'Email', class: "required"
-                  = f.text_area :message, placeholder: 'Mensaje', class: "required"
+    .small-12.medium-4.medium-offset-2.column
+      %p.description
+        = t(".team.description")
+    .small-12.medium-4.end.column
+      %ul.members
+        %li
+          = link_to t(".team.javi.name"), "https://github.com/javierm/", target: :blank
+        %li
+          = link_to t(".team.senen.name"), "https://github.com/Senen/", target: :blank
+        %li
+          = link_to t(".team.sebas.name"), "https://github.com/taitus/", target: :blank
+      %p
+        = t(".team.certified_html")

@@ -15,6 +15,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36424a', endColorstr='#3a778b',GradientType=1 );
     color: #fff;
 
+    h2 {
+      color: white;
+    }
     svg{
       margin-top:4em;
     }
@@ -41,16 +44,77 @@
     }
   }
 
-  .services{
+  .services {
     padding: 3em 0;
+
+    &.no-padding-top {
+      padding-top: 0;
+    }
+
 
     h3{
       font-size: 1.2em;
       font-weight: bold;
     }
 
+    ul.pricing-table {
+      background: white;
 
+      > li {
+        list-style: none;
       }
+
+      h2 {
+        color: white;
+        text-transform: none;
+      }
+
+      .button.floor {
+        position: relative;
+        margin-top: 15%;
+      }
+    }
+  }
+
+  .team {
+    padding: 4em 0;
+    background: #36424a;
+    background: -moz-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
+    background: -webkit-linear-gradient(-45deg, #36424a 0%,#3a778b 100%);
+    background: linear-gradient(135deg, #36424a 0%,#3a778b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36424a', endColorstr='#3a778b',GradientType=1 );
+    color: #fff;
+
+
+    h2 {
+      color: white;
+    }
+    svg {
+      margin-top:4em;
+    }
+
+    p {
+      margin: 0 auto;
+      text-align: left;
+      margin-top: 1em;
+    }
+
+    ul.members {
+      padding-top: 1em;
+    }
+
+    a{
+      margin-top:1em;
+    }
+
+    #btn-budget{
+      margin-top:5em;
+      border: 1px solid transparent;
+      display: inline-block;
+      padding: 0.9em;
+      text-transform: uppercase;
+      background: #00b0ea;
+      color: white;
     }
   }
 }
