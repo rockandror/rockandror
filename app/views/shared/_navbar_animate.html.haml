@@ -84,8 +84,6 @@
           - I18n.available_locales.reject{|locale| locale == I18n.locale }.each do |locale|
             %li
               = link_to t("locale.#{locale}"), url_for(locale: locale)
-      %li
-        %a{:href => new_contact_path} Envíanos un email
     %ul.left.small-4.medium-4.columns.show-for-medium-up
       %li.anim{:class => active?("home", params[:action])}
         %a{:href => root_path} Inicio
@@ -102,3 +100,5 @@
             = link_to 'Oasis Catamaran', '/oasiscatamaran'
       %li.anim.consul{:class => active?("new", params[:action])}
         %a{:href => consul_budget_path} Servicios Consul
+      %li.anim.consul{:class => active?("new", "contact")}
+        %a{:href => new_contact_path} Envíanos un email
