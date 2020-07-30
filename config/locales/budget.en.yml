@@ -1,6 +1,10 @@
 en:
   budget:
     new:
+      meta:
+        title: "Rock&RoR ♥ Consul: Development services for Consul"
+        description: Rock&RoR has a highly qualified and certified team for Consul development.
+        keywords: Expert Ruby On Rails developers, certified team into development, installation and maintenance of Consul for everyone.
       title_html: <strong>Consul</strong> services
       subtitle_html: Free software for citizen participation.
       description: CONSUL is the most complete citizen participation tool for an open, transparent and democratic government.
