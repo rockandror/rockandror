@@ -2,3 +2,10 @@ en:
   locale:
     es: "Español"
     en: "English"
+  navbar:
+    menu: Menu
+    home: Home
+    works: Latest works
+    contact: Contact us
+    call_us: Call us
+    consul: Consul Services

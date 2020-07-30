@@ -11,22 +11,19 @@
   = inline_svg "svg/back.svg" , class: 'icon-menu'
 %a#btn_home{:href => root_path}
   = inline_svg "svg/home.svg" , class: 'icon-menu'
-  %span Inicio
+  %span= t("navbar.home")
 %a#btn_works
   = inline_svg "svg/works.svg" , class: 'icon-menu'
-  %span Trabajos
+  %span= t("navbar.works")
 %a#btn_consul_budget
   = inline_svg "svg/consul-logo-responsive.svg" , class: 'icon-menu'
-  %span Servicios Consul
-%a#btn_consul_budget
-  = inline_svg "svg/consul-logo-responsive.svg" , class: 'icon-menu'
-  %span Servicios Consul
+  %span= t("navbar.consul")
 %a#btn_email{ href: new_contact_path }
   = inline_svg "svg/email.svg", class: 'icon-menu'
-  %span Escríbenos
+  %span= t("navbar.contact")
 %a#btn_tel{ href: "tel:+34607320876" }
   = inline_svg "svg/phone.svg", class: 'icon-menu'
-  %span Llámanos
+  %span= t("navbar.call_us")
 
 #container_submenu_responsive
   .owl-carousel
@@ -74,7 +71,7 @@
         = inline_svg "svg/logo.svg", class: 'logo-horiz show-for-medium-up'
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
-        %span Menú
+        %span= t("navbar.home")
   %section.top-bar-section
     %ul.right
       %li.anim.has-dropdown
@@ -86,9 +83,9 @@
               = link_to t("locale.#{locale}"), url_for(locale: locale)
     %ul.left.small-4.medium-4.columns.show-for-medium-up
       %li.anim{:class => active?("home", params[:action])}
-        %a{:href => root_path} Inicio
+        %a{:href => root_path}= t("navbar.home")
       %li.anim.has-dropdown.portfolio{:class => active?("portfolio", params[:action])}
-        %a{:href => "#"} Últimos trabajos
+        %a{:href => "#"}= t("navbar.works")
         %ul.dropdown
           %li
             = link_to 'Boatjump', '/boatjump'
@@ -99,6 +96,6 @@
           %li
             = link_to 'Oasis Catamaran', '/oasiscatamaran'
       %li.anim.consul{:class => active?("new", params[:action])}
-        %a{:href => consul_budget_path} Servicios Consul
+        %a{:href => consul_budget_path} = t("navbar.consul")
       %li.anim.consul{:class => active?("new", "contact")}
-        %a{:href => new_contact_path} Envíanos un email
+        %a{:href => new_contact_path} = t("navbar.contact")
