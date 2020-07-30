@@ -4,7 +4,6 @@ feature 'budget request' do
 
   scenario 'should be send', js: true do
     visit consul_budget_path
-    check_and_next_step
 
     fill_in 'budget_name', with: "Nombre"
     fill_in 'budget_email', with: "email@example.es"
@@ -17,7 +16,6 @@ feature 'budget request' do
 
   scenario 'should be not send', js: true do
     visit consul_budget_path
-    check_and_next_step
 
     fill_in 'budget_name', with: ""
     fill_in 'budget_email', with: "email@example.es"
@@ -26,15 +24,4 @@ feature 'budget request' do
 
     expect(page).to have_content "no puede estar en blanco"
   end
-
-end
-
-def check_and_next_step
-  find("a[href='#next']").click
-  find("a[href='#next']").click
-  find("a[href='#next']").click
-  find("a[href='#next']").click
-  find("a[href='#next']").click
-  find("a[href='#next']").click
-  find("a[href='#next']").click
 end
