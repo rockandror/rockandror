@@ -201,51 +201,28 @@ function animation() {
       .to(containerSubMenu, 1, {bottom: "15%", opacity:1, ease: Back.easeInOut, onComplete: load_owlCarousel})
       .addPause();
 
-    $(plus).on('click',function(){
+    $(plus).on("click", function(){
       switchButton();
     });
 
-    $(close).on('click',function(){
+    $(close).on("click", function(){
       close_menu();
     });
 
-    $(back).on('click',function(){
+    $(back).on("click", function(){
      TweenMax.to(back, 0.6, { opacity:0, ease: Back.easeInOut});
      tl_back.pause();
      close_submenu();
     });
 
-    $(works).on('click',function(){
+    $(works).on("click", function(){
       open_submenu();
     });
 
-    $(consul_budget).on('click',function(link_url_active){
-      location.replace('/budget/new')
-    });
-
-    $(home).on('click',function(link_url_active){
-      link_url_active = "/";
-      close_submenu(link_url_active);
-    });
-
-    $(boatjump).on('click',function(){
-      link_url_active = "/boatjump";
-      close_submenu(link_url_active);
-    });
-
-    $(webdings).on('click',function(){
-      link_url_active = "/webdings";
-      close_submenu(link_url_active);
-    });
-
-    $(eatbooking).on('click',function(){
-      link_url_active = "/eatbooking";
-      close_submenu(link_url_active);
-    });
-
-    $(oasiscatamaran).on('click',function(){
-      link_url_active = "/oasiscatamaran";
-      close_submenu(link_url_active);
+    $(".js-animate-on-click").on("click", function(event) {
+      event.preventDefault();
+      close_submenu(event.currentTarget.href);
+      Turbolinks.visit(event.currentTarget.href)
     });
 
     function switchButton(){

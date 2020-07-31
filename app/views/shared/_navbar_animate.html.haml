@@ -4,45 +4,45 @@
 #overlay_menu_responsive
 
 %a#btn_plus
-  = inline_svg "svg/plus.svg" , class: 'icon-menu'
+  = inline_svg "svg/plus.svg" , class: "icon-menu"
 %a#btn_close
-  = inline_svg "svg/close.svg" , class: 'icon-menu'
+  = inline_svg "svg/close.svg" , class: "icon-menu"
 %a#btn_back
-  = inline_svg "svg/back.svg" , class: 'icon-menu'
-%a#btn_home{:href => root_path}
-  = inline_svg "svg/home.svg" , class: 'icon-menu'
+  = inline_svg "svg/back.svg" , class: "icon-menu"
+%a#btn_home.js-animate-on-click{ href: root_path }
+  = inline_svg "svg/home.svg" , class: "icon-menu"
   %span= t("navbar.home")
-%a#btn_works
-  = inline_svg "svg/works.svg" , class: 'icon-menu'
-  %span= t("navbar.works")
-%a#btn_consul_budget
-  = inline_svg "svg/consul-logo-responsive.svg" , class: 'icon-menu'
+%a#btn_consul_budget.js-animate-on-click{ href: consul_budget_path }
+  = inline_svg "svg/consul-logo-responsive.svg" , class: "icon-menu"
   %span= t("navbar.consul")
-%a#btn_email{ href: new_contact_path }
-  = inline_svg "svg/email.svg", class: 'icon-menu'
+%a#btn_works
+  = inline_svg "svg/works.svg" , class: "icon-menu"
+  %span= t("navbar.works")
+%a#btn_email.js-animate-on-click{ href: new_contact_path }
+  = inline_svg "svg/email.svg", class: "icon-menu"
   %span= t("navbar.contact")
 %a#btn_tel{ href: "tel:+34607320876" }
-  = inline_svg "svg/phone.svg", class: 'icon-menu'
+  = inline_svg "svg/phone.svg", class: "icon-menu"
   %span= t("navbar.call_us")
 
 #container_submenu_responsive
   .owl-carousel
-    %a#btn_boatjump{:href => '#'}
+    %a#btn_boatjump.js-animate-on-click{ href: boatjump_path }
       %h2
         %strong BoatJump
       %span Alquiler de barcos
       = image_tag "boatjump/background-page.jpg"
-    %a#btn_webdings{:href => '#'}
+    %a#btn_webdings.js-animate-on-click{ href: webdings_path }
       %h2
         %strong Webdings
       %span Crea la app y la web de tu boda
       = image_tag "webdings/background-page.jpg"
-    %a#btn_eatbooking{:href => '#'}
+    %a#btn_eatbooking.js-animate-on-click{ href: eatbooking_path }
       %h2
         %strong Eatbooking
       %span Reservas electrónico para restaurantes
       = image_tag "eatbooking/background-page.jpg"
-    %a#btn_oasiscatamaran{:href => '#'}
+    %a#btn_oasiscatamaran.js-animate-on-click{ href: oasiscatamaran_path }
       %h2
         %strong  Oasis Catamarán
       %span Venta online de excursiones en catamarán.
@@ -50,52 +50,52 @@
 
 .row.top-contact
   .small-6.columns
-    %a{:href => root_path}
-      = inline_svg "svg/logo-smartphone.svg", class: 'logo-smartphone'
+    %a{ href: root_path }
+      = inline_svg "svg/logo-smartphone.svg", class: "logo-smartphone"
   .small-2.columns.locale
     - I18n.available_locales.reject{|locale| locale == I18n.locale }.each do |locale|
-      %a{:href => url_for(locale: locale)}
+      %a{ href: url_for(locale: locale) }
         = t("locale.#{locale}")
   .small-2.columns.tel
-    %a{:href => "tel:+34607320876"}
-      = inline_svg "svg/phone.svg", class: 'icon-nav'
+    %a{ href: "tel:+34607320876" }
+      = inline_svg "svg/phone.svg", class: "icon-nav"
   .small-2.columns.email
-    %a{:href => new_contact_path}
-      = inline_svg "svg/email.svg", class: 'icon-nav'
+    %a{ href: new_contact_path }
+      = inline_svg "svg/email.svg", class: "icon-nav"
 
 = render "shared/notice"
-%nav.top-bar{"data-topbar" => "", :role => "navigation"}
+%nav.top-bar{data: { topbar: "" }, role: "navigation"}
   %ul.title-area.small-12.medium-5.large-4.columns
     %li.logo
-      %a{:href => root_path}
-        = inline_svg "svg/logo.svg", class: 'logo-horiz show-for-medium-up'
+      %a{ href: root_path }
+        = inline_svg "svg/logo.svg", class: "logo-horiz show-for-medium-up"
     %li.toggle-topbar.menu-icon
-      %a{:href => "#"}
+      %a{ href: "#" }
         %span= t("navbar.home")
   %section.top-bar-section
     %ul.right
       %li.anim.has-dropdown
-        %a{:href => "#"}
+        %a{ href: "#" }
           = t("locale.#{I18n.locale}")
         %ul.dropdown
           - I18n.available_locales.reject{|locale| locale == I18n.locale }.each do |locale|
             %li
               = link_to t("locale.#{locale}"), url_for(locale: locale)
     %ul.left.small-4.medium-4.columns.show-for-medium-up
-      %li.anim{:class => active?("welcome", "home")}
-        %a{:href => root_path}= t("navbar.home")
-      %li.anim.has-dropdown.portfolio{:class => active?("welcome", ["boatjump", "webdings", "eatbooking", "oasiscatamaran"])}
-        %a{:href => "#"}= t("navbar.works")
+      %li.anim{ class: active?("welcome", "home")}
+        %a{ href: root_path }= t("navbar.home")
+      %li.anim.has-dropdown.portfolio{ class: active?("welcome", ["boatjump", "webdings", "eatbooking", "oasiscatamaran"]) }
+        %a{ href: "#" }= t("navbar.works")
         %ul.dropdown
-          %li{:class => active?("welcome", "boatjump")}
-            = link_to 'Boatjump', '/boatjump'
-          %li{:class => active?("welcome", "webdings")}
-            = link_to 'Webdings', '/webdings'
-          %li{:class => active?("welcome", "eatbooking")}
-            = link_to 'Eatbooking', '/eatbooking'
-          %li{:class => active?("welcome", "oasiscatamaran")}
-            = link_to 'Oasis Catamaran', '/oasiscatamaran'
-      %li.anim.consul{:class => active?("budget", "new")}
-        %a{:href => consul_budget_path}= t("navbar.consul")
-      %li.anim.consul{:class => active?("contact", ["new", "create"])}
-        %a{:href => new_contact_path}= t("navbar.contact")
+          %li{class: active?("welcome", "boatjump") }
+            = link_to "Boatjump", "/boatjump"
+          %li{class: active?("welcome", "webdings") }
+            = link_to "Webdings", webdings_path
+          %li{class: active?("welcome", "eatbooking") }
+            = link_to "Eatbooking", "/eatbooking"
+          %li{class: active?("welcome", "oasiscatamaran") }
+            = link_to "Oasis Catamaran", "/oasiscatamaran"
+      %li.anim.consul{class: active?("budget", "new")}
+        %a{ href: consul_budget_path }= t("navbar.consul")
+      %li.anim.consul{class: active?("contact", ["new", "create"]) }
+        %a{ href: new_contact_path }= t("navbar.contact")
