@@ -82,20 +82,20 @@
             %li
               = link_to t("locale.#{locale}"), url_for(locale: locale)
     %ul.left.small-4.medium-4.columns.show-for-medium-up
-      %li.anim{:class => active?("home", params[:action])}
+      %li.anim{:class => active?("welcome", "home")}
         %a{:href => root_path}= t("navbar.home")
-      %li.anim.has-dropdown.portfolio{:class => active?("portfolio", params[:action])}
+      %li.anim.has-dropdown.portfolio{:class => active?("welcome", ["boatjump", "webdings", "eatbooking", "oasiscatamaran"])}
         %a{:href => "#"}= t("navbar.works")
         %ul.dropdown
-          %li
+          %li{:class => active?("welcome", "boatjump")}
             = link_to 'Boatjump', '/boatjump'
-          %li
+          %li{:class => active?("welcome", "webdings")}
             = link_to 'Webdings', '/webdings'
-          %li
+          %li{:class => active?("welcome", "eatbooking")}
             = link_to 'Eatbooking', '/eatbooking'
-          %li
+          %li{:class => active?("welcome", "oasiscatamaran")}
             = link_to 'Oasis Catamaran', '/oasiscatamaran'
-      %li.anim.consul{:class => active?("new", params[:action])}
-        %a{:href => consul_budget_path} = t("navbar.consul")
-      %li.anim.consul{:class => active?("new", "contact")}
-        %a{:href => new_contact_path} = t("navbar.contact")
+      %li.anim.consul{:class => active?("budget", "new")}
+        %a{:href => consul_budget_path}= t("navbar.consul")
+      %li.anim.consul{:class => active?("contact", ["new", "create"])}
+        %a{:href => new_contact_path}= t("navbar.contact")
