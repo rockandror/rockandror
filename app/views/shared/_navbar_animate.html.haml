@@ -87,12 +87,12 @@
         %a{ href: "#" }= t("navbar.works")
         %ul.dropdown
           %li{class: active?("welcome", "boatjump") }
-            = link_to "Boatjump", "/boatjump"
+            = link_to "Boatjump", boatjump_path
           %li{class: active?("welcome", "webdings") }
             = link_to "Webdings", webdings_path
           %li{class: active?("welcome", "eatbooking") }
-            = link_to "Eatbooking", "/eatbooking"
+            = link_to "Eatbooking", eatbooking_path
           %li{class: active?("welcome", "oasiscatamaran") }
-            = link_to "Oasis Catamaran", "/oasiscatamaran"
+            = link_to "Oasis Catamaran", oasiscatamaran_path
       %li.anim.consul{class: active?("contact", ["new", "create"]) }
         %a{ href: new_contact_path }= t("navbar.contact")
