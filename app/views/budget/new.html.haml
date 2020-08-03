@@ -7,18 +7,18 @@
   .cont-introduction.medium-12.small-12.large-6
     %h1
       = t(".title_html")
-    %span
+    .logo
+      = inline_svg "svg/consul-logo.svg"
+    %div
       = t(".subtitle_html")
 
   .header.row
     .medium-12.large-8.large-centered.columns
       .medium-6.columns
-        %div
-          = inline_svg "svg/consul-logo.svg"
-          %p
-            = t(".description")
-            %br
-            = link_to 'www.consulproject.org', 'http://consulproject.org/es/',  target: :blank
+        %p
+          = t(".description")
+          %br
+          = link_to 'www.consulproject.org', 'http://consulproject.org/es/',  target: :blank
 
       .medium-6.columns
         %p
@@ -54,9 +54,8 @@
         %li.description
           = t(".installation.monitoring")
         %li.cta-button
-          %a.button{:href => "#"}
-            = t(".installation.submit")
-    %section.small-12.column.large-6
+          = link_to t(".installation.submit"), url_for(anchor: "contact"), class: "button floor"
+    %section.small-10.small-offset-1.column.medium-6.medium-offset-0.end
       %ul.pricing-table.development{"data-equalizer-watch" => ""}
         %li.title
           %h2
@@ -69,13 +68,11 @@
           = t(".development.mods")
         %li.description
           = t(".development.technical_support")
-
         %li.cta-button
-          %a.button.floor{:href => "#"}
-            = t(".development.submit")
+          = link_to t(".development.submit"), url_for(anchor: "contact"), class: "button floor"
 
   .row.services.no-padding-top
-    .content.small-12.text-center
+    .content.small-10.small-offset-1.text-center
       %p
         = t(".custom")
 
@@ -84,10 +81,10 @@
       %h2.text-center
         = t(".team.title")
 
-    .small-12.medium-4.medium-offset-2.column
+    .small-10.small-offset-1.medium-4.medium-offset-2.large-3.large-offset-3.column
       %p.description
         = t(".team.description")
-    .small-12.medium-4.end.column
+    .small-10.small-offset-1.medium-4.large-3.end.column
       %ul.members
         %li
           = link_to t(".team.javi.name"), "https://github.com/javierm/", target: :blank
