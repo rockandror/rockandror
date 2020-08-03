@@ -5,22 +5,21 @@ feature 'budget request' do
   scenario 'should be send', js: true do
     visit consul_budget_path
 
-    fill_in 'budget_name', with: "Nombre"
-    fill_in 'budget_email', with: "email@example.es"
-    fill_in 'budget_message', with: "Solicitud de contacto"
-    click_on 'Enviar solicitud'
+    fill_in 'contact_name', with: "Nombre"
+    fill_in 'contact_email', with: "email@example.es"
+    fill_in 'contact_message', with: "Solicitud de contacto"
+    click_on 'Enviar mensaje'
 
-    expect(page).to have_content "¡Acción realizada con éxito!"
-    expect(page).to have_content "Se ha enviado su presupuesto al equipo de RockAndRor. En menos de 24h nos pondremos en contacto con usted."
+    expect(page).to have_content "Gracias por contactar con nosotros. Le responderemos lo antes posible. "
   end
 
   scenario 'should be not send', js: true do
     visit consul_budget_path
 
-    fill_in 'budget_name', with: ""
-    fill_in 'budget_email', with: "email@example.es"
-    fill_in 'budget_message', with: "Solicitud de contacto"
-    click_on 'Enviar solicitud'
+    fill_in 'contact_name', with: ""
+    fill_in 'contact_email', with: "email@example.es"
+    fill_in 'contact_message', with: "Solicitud de contacto"
+    click_on 'Enviar mensaje'
 
     expect(page).to have_content "no puede estar en blanco"
   end
