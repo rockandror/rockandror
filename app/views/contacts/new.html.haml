@@ -1,0 +1,7 @@
+.page.contact
+  .row
+    .small-12.large-6.small-centered.columns.cont-introduction
+      %h1= t(".title")
+      %p.text-center= t(".description")
+
+      = render "shared/contact/form", contact: @contact, remote: false

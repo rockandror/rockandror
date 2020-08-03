@@ -13,3 +13,14 @@ es:
     contact: Contacto
     call_us: Llámanos
     consul: Servicios Consul
+  contacts:
+    new:
+      title: Gracias por su interés en los servicios de RockAndRor
+      description: Write to us, we will answer you in less than 24 hours.
+    show:
+      title_html: <strong>Gracias </strong> por contactar con nosotros.
+      description: Obtendrá una respuesta en menos de 24 horas.
+  shared:
+    contact:
+      form:
+        submit: "Enviar mensaje"

@@ -97,3 +97,12 @@
           = link_to t(".team.sebas.name"), "https://github.com/taitus/", target: :blank
       %p
         = t(".team.certified_html")
+
+  .row.services#contact
+    .content.small-12
+      %h2.text-center= t(".contact.title")
+
+    .small-12.large-6.large-offset-3.column.end
+      #contact-notice-placeholder
+    .small-12.large-6.large-offset-3.column.end
+      = render "shared/contact/form", contact: @contact, remote: true

@@ -1,0 +1,13 @@
+es:
+  activemodel:
+    attributes:
+      contact:
+        name: Nombre
+        email: Email
+        message: Mensaje
+  helpers:
+    placeholder:
+      contact:
+        name: Introduzca su nombre o el de su empresa
+        email: Email
+        message: Introduzca su mensaje
