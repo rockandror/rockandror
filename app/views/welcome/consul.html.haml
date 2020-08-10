@@ -54,7 +54,7 @@
         %li.description
           = t(".installation.monitoring")
         %li.cta-button
-          = link_to t(".installation.submit"), url_for(anchor: "contact"), class: "button floor"
+          = link_to t(".installation.submit"), url_for(anchor: "contact-anchor"), class: "button floor"
     %section.small-10.small-offset-1.column.medium-6.medium-offset-0.end
       %ul.pricing-table.development{"data-equalizer-watch" => ""}
         %li.title
@@ -69,7 +69,7 @@
         %li.description
           = t(".development.technical_support")
         %li.cta-button
-          = link_to t(".development.submit"), url_for(anchor: "contact"), class: "button floor"
+          = link_to t(".development.submit"), url_for(anchor: "contact-anchor"), class: "button floor"
 
   .row.services.no-padding-top
     .content.small-10.small-offset-1.text-center
@@ -95,6 +95,7 @@
       %p
         = t(".team.certified_html")
 
+  %a#contact-anchor.anchor
   .row.services#contact
     .content.small-12
       %h2.text-center= t(".contact.title")

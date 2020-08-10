@@ -164,45 +164,49 @@ $facebook-color: #45619d;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $small-breakpoint:  em-calc(640);
-// $medium-breakpoint: em-calc(1024);
-// $large-breakpoint:  em-calc(1440);
-// $xlarge-breakpoint: em-calc(1920);
+// Here we define the breakpoints which will become the upper border for each media size.
+// The function em-calc() calculates the em-value from a px-value.
+$small-breakpoint:  em-calc(640)  !default;
+$medium-breakpoint: em-calc(1024) !default;
+$large-breakpoint:  em-calc(1440) !default;
+$xlarge-breakpoint: em-calc(1920) !default;
 
-// $small-range:   (0, $small-breakpoint);
-// $medium-range:  ($small-breakpoint  + em-calc(1), $medium-breakpoint);
-// $large-range:   ($medium-breakpoint + em-calc(1), $large-breakpoint);
-// $xlarge-range:  ($large-breakpoint  + em-calc(1), $xlarge-breakpoint);
-// $xxlarge-range: ($xlarge-breakpoint + em-calc(1), em-calc(99999999));
+// Here we define the lower and upper bounds for each media size
+$small-range:   (0, $small-breakpoint) !default; /* 0, 640px */
+$medium-range:  ($small-breakpoint  + em-calc(1), $medium-breakpoint) !default; /* 641px, 1024px */
+$large-range:   ($medium-breakpoint + em-calc(1), $large-breakpoint)  !default; /* 1025px, 1440px */
+$xlarge-range:  ($large-breakpoint  + em-calc(1), $xlarge-breakpoint) !default; /* 1441px, 1920px */
+$xxlarge-range: ($xlarge-breakpoint + em-calc(1), em-calc(99999999)) !default; /* 1921px, ... */
 
-// $screen: "only screen";
+// Media Queries
+$screen: "only screen" !default;
 
-// $landscape: "#{$screen} and (orientation: landscape)";
-// $portrait: "#{$screen} and (orientation: portrait)";
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
 
-// $small-up: $screen;
-// $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+$small-up: $screen !default;
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})" !default;
 
-// $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
-// $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})" !default;
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})" !default;
 
-// $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
-// $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})" !default;
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})" !default;
 
-// $xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
-// $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})" !default;
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})" !default;
 
-// $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
-// $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})" !default;
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})" !default;
 
-// $retina: (
-//  "#{$screen} and (-webkit-min-device-pixel-ratio: 2)",
-//  "#{$screen} and (min--moz-device-pixel-ratio: 2)",
-//  "#{$screen} and (-o-min-device-pixel-ratio: 2/1)",
-//  "#{$screen} and (min-device-pixel-ratio: 2)",
-//  "#{$screen} and (min-resolution: 192dpi)",
-//  "#{$screen} and (min-resolution: 2dppx)"
-// );
+$retina: (
+  "#{$screen} and (-webkit-min-device-pixel-ratio: 2)",
+  "#{$screen} and (min--moz-device-pixel-ratio: 2)",
+  "#{$screen} and (-o-min-device-pixel-ratio: 2/1)",
+  "#{$screen} and (min-device-pixel-ratio: 2)",
+  "#{$screen} and (min-resolution: 192dpi)",
+  "#{$screen} and (min-resolution: 2dppx)"
+);
 
 // Legacy
 // $small: $medium-up;
@@ -1416,7 +1420,7 @@ $header-font-color: $steel;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: $black_opacity;
+$topbar-bg-color: $white;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1430,16 +1434,16 @@ $topbar-height: rem-calc(75);
 // Set the link colors and styles for top-level nav
  $topbar-link-color: $primary-color;
  $topbar-link-color-hover: $secondary-color;
- $topbar-link-color-active:$primary-color;
- $topbar-link-color-active-hover:$secondary-color;
+ $topbar-link-color-active: $secondary-color;
+ $topbar-link-color-active-hover: $secondary-color;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: transparent;
-// $topbar-link-bg-hover: $jet;
-// $topbar-link-bg-color-hover: $charcoal;
-$topbar-link-bg-active: $primary-color;
-$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-hover: $white;
+$topbar-link-bg-color-hover: $white;
+$topbar-link-bg-active: $white;
+$topbar-link-bg-active-hover: $white;
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
@@ -1450,7 +1454,7 @@ $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: transparent;
-$topbar-dropdown-link-color: $secondary-color;
+$topbar-dropdown-link-color: $primary-color;
 $topbar-dropdown-link-color-hover: #fff;
 $topbar-dropdown-link-bg:#fff;
 $topbar-dropdown-link-bg-hover:$secondary-color;
@@ -1467,12 +1471,12 @@ $topbar-dropdown-toggle-color: $primary-color;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: rem-calc(13);
+$topbar-menu-link-font-size: rem-calc(20);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: $white;
-// $topbar-menu-icon-color: $white;
-// $topbar-menu-link-color-toggled: $jumbo;
-// $topbar-menu-icon-color-toggled: $jumbo;
+$topbar-menu-link-color: $primary-color;
+$topbar-menu-icon-color: $primary-color;
+$topbar-menu-link-color-toggled: $primary-color;
+$topbar-menu-icon-color-toggled: $primary-color;
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles
@@ -1483,8 +1487,8 @@ $topbar-dropdown-toggle-color: $primary-color;
 //$topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
 
 // If i set 1024 it's ok for ipad but in desktop hide button
-$topbar-breakpoint: (1024px) !default; // Change to 9999px for always mobile layout
-$topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
+$topbar-breakpoint: 711px; // Change to 9999px for always mobile layout
+$topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
 
 // Top-bar input styles
 // $topbar-input-height: rem-calc(28);

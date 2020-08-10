@@ -1,0 +1,160 @@
+@media #{$small-up} {
+  .show-for-topbar-breakpoint-up {
+    display: none !important;
+  }
+}
+@media #{$small-only} {
+  .cookies-eu {
+    .cookies-eu-content-holder {
+      display: block !important;
+      max-width: 85% !important;
+      text-align: left;
+      float: left;
+    }
+    .cookies-eu-button-holder{
+      padding-right: 0;
+      float: left;
+      margin-top: 10px;
+    }
+  }
+  .home {
+    .intro {
+      .container {
+        h2.title {
+          padding: 0px;
+          font-size: 1.7em;
+          line-height: 30px
+        }
+
+        lead {
+          line-height: 1em;
+          margin-top: 37px;
+          font-size: 1.5em
+        }
+      }
+    }
+
+    section{
+      padding:2em 0em 2em 0em;
+      h3{
+        font-size: 3em;
+      }
+      h3,small,span,p,a{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+        font-size: 3em;
+      }
+      &.boatjump,&.webdings,&.eatbooking,&.oasis{
+        .columns{
+          .description{
+            margin-top:-60px;
+          }
+          .image{
+            top: 0px;
+            position: relative;
+            height: 260px;
+          }
+        }
+      }
+
+      &.webdings{
+        padding-top:6em;
+        .image{padding-top: 0em;}
+      }
+      &.rockandror{
+        img{max-width: 200px;}
+      }
+      &.howweworks{
+        .workflow{
+          display: none;
+        }
+        .columns{
+          h3{
+            font-size: 1.6em;
+          }
+        }
+      }
+      &.participation{
+        .content{
+          h3{font-size: 2em;}
+          .text{
+            text-align: center;
+            h4{text-align: center;}
+            svg{width: 200px;}
+          }
+        }
+      }
+      &.oasis{
+        .description{
+          h2{font-size: 2em;}
+        }
+      }
+    }
+  }
+}
+
+@media #{$medium-up} { }
+@media #{$medium-only} {
+  #logo {
+    width: 230px;
+  }
+  // Reduce ther space between menu elements so we can display our big logo
+  .top-bar:not(.expanded) .top-bar-section ul:not(.dropdown) li:not(.has-form) a:not(.button),.top-bar:not(.expanded) .top-bar-section ul:not(.dropdown) li.active:not(.has-form) a:not(.button) {
+    padding: 0 0.5rem;
+  }
+
+  .home {
+    .intro {
+      .container {
+        h2.title {
+          padding: 0px;
+          font-size: 3em;
+          line-height: 4px
+        }
+
+        lead {
+          line-height: 1.5em;
+          margin-top: 57px;
+          font-size: 1.5em
+        }
+
+        h1 {
+          letter-spacing: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  section.work {
+    h2 {
+      font-size: 2.3em;
+    }
+  }
+}
+
+@media #{$topbar-media-query} {
+  .show-for-topbar-breakpoint-up {
+    display: block !important;
+  }
+  .hide-for-topbar-breakpoint-up {
+    display: none
+  }
+}
+@media #{$large-up} {
+  .show-for-topbar-breakpoint-up {
+    display: block;
+  }
+  .hide-for-topbar-breakpoint-up {
+    display: none
+  }
+}
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }

@@ -3,8 +3,6 @@
 //= require jquery_ujs
 //= require owl.carousel
 //= require foundation
-//= require main
-//= require animation
 //= require cookies_eu
 //= require nprogress
 //= require nprogress-turbolinks
@@ -12,17 +10,15 @@
 //= require 'greensock/TweenMax'
 //= require 'greensock/TimelineMax'
 //= require 'greensock/jquery.gsap.js'
+//= require app
+//= require animate
 //= require turbolinks
-
-$(window).on('resize', function(){
-  resizeDiv();
-});
 
 var ready;
 ready = function() {
   $(document).foundation();
 
-  init();
+  App.Animate.initialize();
 };
 
 $(document).on('page:update', ready);

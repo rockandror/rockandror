@@ -2,12 +2,26 @@
 @import 'mixins';
 @import 'owl.carousel';
 @import 'owl.theme';
+@import 'cookies_eu';
+@import 'nprogress';
 @import 'welcome';
 @import 'navbar';
 @import 'home';
 @import 'pages';
 @import 'consul';
-@import 'nav_responsive';
-@import 'mediaquery';
-@import 'cookies_eu';
-@import 'nprogress';
+@import 'cookies';
+@import 'mediaqueries';
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// To fix problem anchoring using a sticky top-bar
+a.anchor {
+  height: 0;
+  position: relative;
+  top: -50px;
+}

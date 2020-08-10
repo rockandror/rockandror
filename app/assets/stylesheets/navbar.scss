@@ -1,119 +1,44 @@
-.top-bar-section li.active:not(.has-form) a:not(.button),
-.top-bar-section li.active:not(.has-form) a:not(.button):hover,
-.top-bar-section ul li:hover:not(.has-form) > a,
-.top-bar-section li:not(.has-form) a:not(.button):hover
-{background: transparent;}
+#top-bar {
+  opacity: 0;
+}
+ul li {
+  &.logo {
+    padding: 12px 0px;
+    padding-left: 10px;
+  }
+}
+svg {
+  &#logo {
+    fill: #333;
+    height: 100%;
 
-.toggle-topbar{display: none;}
-
-svg{
-  &#logo{
-    circle{
+    circle {
       stroke-width: 4px;
-      stroke:$primary-color;
+      stroke: #333;
       fill:none;
       visibility: hidden;
     }
-    #robot{visibility: hidden;}
-  }
-}
-
-.logo-smartphone{
-  float:left;
-  height: 22px;
-  margin-top: 13px;
-}
-
-.top-contact{
-  background: #333333;
-  text-align: center;
-  position: fixed;
-  z-index: 9;
-  .icon-nav{
-    fill:white;
-    margin: 0 auto;
-    display: block;
-    margin-top: 4px;
-    width: 20px;
-  }
-  .tel,.email, .locale{
-    padding: 0px;
-    text-align: center;
-    background: #2ECC71;
-    height: 50px;
-    a{
-      display: block;
+    #robot {
+      visibility: hidden;
     }
   }
-  .locale {
-    background:#333;
-
-    a {
-      margin-top:13px;
-      color: white;
-    }
-  }
-  .tel svg{margin-top:13px; }
-  .email{
-    background:#333;
-    svg{margin-top:16px; }
-  }
 }
 
-.top-bar{
-  visibility: hidden;
-  margin-top: -120px;
+.top-bar {
   z-index: 3;
-  height: 100px;
-  border-bottom:2px solid #f2f2f2;
-  background: white;
-  // padding-left: 2em;
-  // padding-right: 2em;
-  ul{
-    padding-top: 1.2em;
-  }
-  .logo{
-    text-align: left;
-    max-height: 75px;
-  }
-  .logo-center{
-    fill:$primary-color;
-    margin: 0px auto;
-    max-height: 90px;
-    max-width:230px;
-    margin-top: -10px;
-  }
-  .logo-horiz{
-    width: 260px;
-    fill:$primary-color;
-    margin-top: 9px;
+  border-bottom: 2px solid #f2f2f2;
+  box-sizing: initial;
+
+  .dropdown {
+    border: 2px solid #f2f2f2;
+    border-top: none;
   }
 
-  .top-bar-section{
-    ul{
-      li a{text-transform: uppercase;}
-      li:not(.active):not(.has-form) > a:not(.button){
-        color: #666;
-      }
-      li.active:not(.has-form) > a:not(.button){
-        color: $secondary-color;
-      }
-    }
-    .right{
-      strong{display: block;}
-      a{
-        font-weight: 300;
-        cursor: pointer;
-      }
-      li:not(.has-form) a:not(.button){
-        color:$secondary-color;
-        padding: 0em .6em;
-        text-align:center;
-        &:hover{
-          background: $secondary-color;
-          color: #fff;
-        }
-      }
+  .top-bar-section {
+    ul {
+      background: white;
     }
   }
+
+  ul li a { text-transform: uppercase; }
 }
