@@ -13,6 +13,7 @@ en:
     contact: Contact us
     call_us: Call us
     consul: Consul Services
+    language: Language
   contacts:
     new:
       title: Thank you for your interest in RockAndRor's services

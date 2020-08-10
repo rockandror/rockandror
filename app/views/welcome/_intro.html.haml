@@ -1,6 +1,4 @@
 .intro
-  -# #animate-area
-  -# #animate-area2
   .bg-man
   .bg-stars
   .bg-background
@@ -9,5 +7,5 @@
       ¿Tienes una gran idea?
     %lead
       Construimos empresas tecnológicas
-    %h1 Desarrollo de aplicaciones web y móviles
-    = link_to 'Descubre más', '#scroll_to_rockandror', id: "btn-discover"
+    %h1.show-for-medium-up Desarrollo de aplicaciones web y móviles
+    = link_to 'Descubre más', url_for(anchor: "scroll_to_rockandror"), id: "btn-discover", class: "btn-ror"

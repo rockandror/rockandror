@@ -1,23 +1,23 @@
 @mixin text($color, $transform, $size, $align) {
-  color: $color; 
+  color: $color;
   text-transform: $transform;
   font-size: $size;
   text-align: $align;
 }
 
 @mixin btn-ror($border, $bg, $color) {
-  a{
+  a.btn-ror{
     border:1px solid $border;
     display: inline-block;
     padding: 0.9em;
     text-transform: uppercase;
-    background: $bg; 
+    background: $bg;
     color:$color;
     &:hover{
      color:$color;
      background: darken($bg,10%);
     }
-  } 
+  }
 }
 
 .gradient-white{

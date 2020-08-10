@@ -13,10 +13,11 @@ es:
     contact: Contacto
     call_us: Llámanos
     consul: Servicios Consul
+    language: Idioma
   contacts:
     new:
       title: Gracias por su interés en los servicios de RockAndRor
-      description: Write to us, we will answer you in less than 24 hours.
+      description: Escríbanos, le responderemos en menos de 24 horas.
     show:
       title_html: <strong>Gracias </strong> por contactar con nosotros.
       description: Obtendrá una respuesta en menos de 24 horas.
