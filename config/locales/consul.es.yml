@@ -1,6 +1,6 @@
 es:
-  budget:
-    new:
+  welcome:
+    consul:
       meta:
         title: "Rock&RoR ♥ Consul: Servicios de desarrollo para Consul"
         description: Equipo altamente cualificado y certificado para el desarrollo de Consul.

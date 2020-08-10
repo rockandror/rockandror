@@ -11,7 +11,7 @@
       }
     }
   }
-  .budget-consul{
+  .consul-services{
     .timeline{
       ul li::after{
         top: 50%;
@@ -26,7 +26,7 @@
     margin-top: 50px;
   }
 
-  .budget-consul{
+  .consul-services{
     .header{
       padding: 2em;
       svg{
@@ -200,7 +200,7 @@
     }
   }
 
-  .budget-consul .timeline .icon:last-child{
+  .consul-services .timeline .icon:last-child{
     display: block;
   }
   .alert-box{
@@ -208,7 +208,7 @@
     margin-bottom: 0;
   }
 
-  .budget-consul{
+  .consul-services{
     .header{
       svg{
         width: 200px;
@@ -306,7 +306,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1072px) {
 
-  .budget-consul{
+  .consul-services{
     .header{
       svg{
         width: 200px;

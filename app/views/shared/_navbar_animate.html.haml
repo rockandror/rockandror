@@ -9,7 +9,7 @@
 %a#btn_home.js-animate-on-click{ href: root_path }
   = inline_svg "svg/home.svg" , class: "icon-menu"
   %span= t("navbar.home")
-%a#btn_consul_budget.js-animate-on-click{ href: consul_budget_path }
+%a#btn_consul_budget.js-animate-on-click{ href: consul_development_services_path }
   = inline_svg "svg/consul-logo-responsive.svg" , class: "icon-menu"
   %span= t("navbar.consul")
 %a#btn_works
@@ -82,7 +82,7 @@
       %li.anim{ class: active?("welcome", "home")}
         %a{ href: root_path }= t("navbar.home")
       %li.anim.consul{class: active?("budget", "new")}
-        %a{ href: consul_budget_path }= t("navbar.consul")
+        %a{ href: consul_development_services_path }= t("navbar.consul")
       %li.anim.has-dropdown.portfolio{ class: active?("welcome", ["boatjump", "webdings", "eatbooking", "oasiscatamaran"]) }
         %a{ href: "#" }= t("navbar.works")
         %ul.dropdown

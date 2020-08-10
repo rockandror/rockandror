@@ -25,4 +25,28 @@ feature 'Main page' do
       expect(page).to have_link('Contacto')
     end
   end
+
+  describe "Consul services contact" do
+    scenario 'should be send', :js do
+      visit consul_development_services_path
+
+      fill_in 'contact_name', with: "Nombre"
+      fill_in 'contact_email', with: "email@example.es"
+      fill_in 'contact_message', with: "Solicitud de contacto"
+      click_on 'Enviar mensaje'
+
+      expect(page).to have_content "Gracias por contactar con nosotros. Le responderemos lo antes posible. "
+    end
+
+    scenario 'should be not send', :js do
+      visit consul_development_services_path
+
+      fill_in 'contact_name', with: ""
+      fill_in 'contact_email', with: "email@example.es"
+      fill_in 'contact_message', with: "Solicitud de contacto"
+      click_on 'Enviar mensaje'
+
+      expect(page).to have_content "no puede estar en blanco"
+    end
+  end
 end

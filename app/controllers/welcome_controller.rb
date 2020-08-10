@@ -15,5 +15,8 @@ class WelcomeController < ApplicationController
 
   def oasiscatamaran
   end
-  
+
+  def consul
+    @contact = Contact.new
+  end
 end
