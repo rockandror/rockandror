@@ -1,0 +1,45 @@
+en:
+  welcome:
+    consul:
+      meta:
+        title: "Rock&RoR ♥ Consul: Development services for Consul"
+        description: Rock&RoR has a highly qualified and certified team for Consul development.
+        keywords: Expert Ruby On Rails developers, certified team into development, installation and maintenance of Consul for everyone.
+      title_html: <strong>Consul</strong> services
+      subtitle_html: Free software for citizen participation.
+      description: CONSUL is the most complete citizen participation tool for an open, transparent and democratic government.
+      experience:
+        part1: In Rock&Ror we have collaborated in the implementation of functionalities for Consul. We are totally aligned in terms of best practices and development philosophy with the technical team that has developed Consul.
+        part2_html: We are convinced that we are the perfect company to carry out any task of implementation and maintenance of this tool given the knowledge we have of it.
+      services:
+        title: Services we offer
+        description: Based on the requests we have received from different city Councils and institutions around the world we have detected the different modules that may be needed related to the tool.
+      installation:
+        title: Start
+        latest: Installing of the latest version of Consul
+        design: Adaptating to your corporate image
+        census: Connecting to your remote census system
+        updates: Update to new application versions
+        monitoring: Status monitoring and error tracking
+        price: From 5.000 €
+        submit: Contact
+      development:
+        title: Development & Support
+        new: New features to suite your particular institution needs
+        mods: Modification of existing features
+        technical_support: Technical support for development teams
+        price: 75 €/hour
+        submit: Contact
+      custom: We can develop a custom package for your institution. Contact us to tell us what you need!
+      team:
+        title: Certified team
+        description: Our team consists of 3 engineers specialized in the development and maintenance of Consul. We have the necessary experience to face any project for Consul. All of us have had the opportunity to work both for the City of Madrid in the platform Decide Madrid and for other international entities in the implementation, customization and development of new functionalities of Consul.
+        certified_html: We belong to the group of privileged companies certified through the <a href="https://consulfoundation.org/" target="blank">Fundación de Consul</a> for the development and implementation of Consul.
+        javi:
+          name: Javier Martín
+        sebas:
+          name: Sebastià Roig Pieras
+        senen:
+          name: Senén Rodero Rodríguez
+      contact:
+        title: Need more information or an appointment?

@@ -1,0 +1,26 @@
+es:
+  locale:
+    es: "Español"
+    en: "English"
+  meta:
+    title: Desarrollo web en RubyOnRails en Palma de Mallorca - RockAndRoR
+    description: Desarrollo web ágil a medida en RubyOnRails para Baleares y el resto de España. Desarrollo web en Palma de Mallorca. Expertos desarrolladores y diseñadores web.
+    keywords: RockAndRoR, desarrollo web ágil a medida, desarrollo RubyOnRails, desarrollo Ruby on Rails, desarrollo RoR, desarrollo web, desarrollo web desde Mallorca, desarrollo web para Baleares y el resto de España
+  navbar:
+    menu: Menú
+    home: Inicio
+    works: Trabajos
+    contact: Contacto
+    call_us: Llámanos
+    consul: Servicios Consul
+  contacts:
+    new:
+      title: Gracias por su interés en los servicios de RockAndRor
+      description: Write to us, we will answer you in less than 24 hours.
+    show:
+      title_html: <strong>Gracias </strong> por contactar con nosotros.
+      description: Obtendrá una respuesta en menos de 24 horas.
+  shared:
+    contact:
+      form:
+        submit: "Enviar mensaje"

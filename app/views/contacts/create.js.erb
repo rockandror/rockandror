@@ -1,0 +1,2 @@
+$('#contact-notice-placeholder').html("<%= j (render 'shared/notice') %>");
+$('#new_contact').replaceWith("<%= j (render 'shared/contact/form', contact: @contact, remote: true ) %>");

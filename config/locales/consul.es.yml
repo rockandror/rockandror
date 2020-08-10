@@ -1,0 +1,45 @@
+es:
+  welcome:
+    consul:
+      meta:
+        title: "Rock&RoR ♥ Consul: Servicios de desarrollo para Consul"
+        description: Equipo altamente cualificado y certificado para el desarrollo de Consul.
+        keywords: Desarrolladores expertos en Ruby On Rails, cerficicación en el desarrollo, instalación y mantenimiento de Consul para todo el mundo
+      title_html: Servicios <strong>desarrollo <span class="show-for-sr">Consul</span></strong>
+      subtitle_html: Software libre para la participación ciudadana
+      description: CONSUL es la herramienta de participación ciudadana más completa para un gobierno abierto, transparente y democrático.
+      experience:
+        part1: En Rock&Ror hemos colaborado en la implementación de funcionalides para Consul. Estamos totalmente alineados en cuanto a buenas prácticas y filosofía de desarrollo con el equipo técnico que ha desarrollado Consul.
+        part2_html: Estamos convencidos de que <strong>somos la empresa perfecta para poder realizar cualquier tarea de implantación y mantenimiento de esta herramienta</strong> dado el conocimiento que tenemos de la misma.
+      services:
+        title: Servicios que ofrecemos
+        description: En función a las peticiones que hemos recibido de diferentes Ayuntamientos e instituciones de todo el mundo hemos detectado los diferentes módulos que se pueden necesitar relacionados con la herramienta.
+      installation:
+        title: Arranque
+        latest: Instalación de la última versión de Consul
+        design: Adaptación del diseño a su imagen corporativa
+        census: Conexión con su sistema de censo remoto
+        updates: Actualización a nuevas versiones del aplicativo
+        monitoring: Monitorización de estado servicio y seguimiento de errores
+        price: Desde 5.000 €
+        submit: Contactar
+      development:
+        title: Desarrollo & Soporte
+        new: Nuevas funcionalidades.
+        mods: Modificación de las funcionalidades existentes
+        technical_support: Soporte técnico para equipos de desarollo
+        price: 75 €/hora
+        submit: Contactar
+      custom: Podemos confeccionar paquetes a medida de su institución.
+      team:
+        title: Equipo certificado
+        description: Nuestro equipo está formado por 3 ingenieros especializados en el desarollo y mantenimiento de Consul. Tenemos la experiencia necesaria para afrontar cualquier proyecto para Consul. Todos nosotros hemos tenido la oportunidad de trabajar tanto para el Ayuntamiento de Madrid en la plataforma Decide Madrid como para otras entidades internacionales en la implantación, personalización y desarrollo de nuevas funcionalides de Consul.
+        certified_html: Pertenecemos al grupo de empresas privilegiadas cerficadas a través de la <a href="https://consulfoundation.org/" target="blank">Fundación de Consul</a> para el desarrollo e implantación de Consul.
+        javi:
+          name: Javier Martín
+        sebas:
+          name: Sebastià Roig Pieras
+        senen:
+          name: Senén Rodero Rodríguez
+      contact:
+        title: ¿Necesita más información o una cita?

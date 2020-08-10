@@ -1,9 +1,8 @@
 - if notice.present?
   .alert-box.success{"data-alert" => ""}
-    ¡Acción realizada con éxito!
     %a.close{:href => "#"} &times;
     = notice
 - if alert.present?
   .alert-box.alert{"data-alert" => ""}
-    ¡Hubo un error! / #{alert}
     %a.close{:href => "#"} &times;
+    = alert
