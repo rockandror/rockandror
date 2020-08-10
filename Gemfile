@@ -12,7 +12,6 @@ gem 'turbolinks'
 gem 'jquery-turbolinks', '~> 0.2.1'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
-gem 'normalize-rails'
 gem 'foundation-rails'
 gem 'foundation_rails_helper'
 gem "haml-rails", "~> 0.9"
