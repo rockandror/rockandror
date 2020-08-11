@@ -1,7 +1,6 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require owl.carousel
 //= require foundation
 //= require cookies_eu
 //= require nprogress
