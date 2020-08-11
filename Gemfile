@@ -23,8 +23,6 @@ gem 'cookies_eu'
 gem 'fastclick-rails'
 gem 'greensock-rails'
 
-# Monitoring
-gem 'newrelic_rpm'
 # Error monitoring
 gem 'rollbar', '~> 2.5.1'
 
