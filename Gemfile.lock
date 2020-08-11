@@ -77,8 +77,6 @@ GEM
     email_spec (1.6.0)
       launchy (~> 2.1)
       mail (~> 2.2)
-    email_validator (1.6.0)
-      activemodel
     erubis (2.7.0)
     execjs (2.6.0)
     factory_girl (4.5.0)
@@ -299,7 +297,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   cookies_eu
   email_spec
-  email_validator
   factory_girl_rails
   fastclick-rails
   font-awesome-rails

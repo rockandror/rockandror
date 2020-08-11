@@ -1,3 +1,5 @@
+require "active_model"
+
 class Contact
   include ActiveModel::Validations
   include ActiveModel::Conversion
@@ -6,7 +8,8 @@ class Contact
   attr_accessor :name, :email, :message
 
   validates_presence_of :name, :email, :message
-  validates :email, :email => true
+  validates :email, format: { with: /\A(.+)@(.+)\z/, message: "Email invalid" },
+                    length: { minimum: 4, maximum: 254 }
 
   def initialize(attributes = {})
     attributes.each do |name, value|

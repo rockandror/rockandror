@@ -19,7 +19,6 @@ gem 'nprogress-rails'
 gem 'inline_svg'
 gem "non-stupid-digest-assets"
 gem 'premailer-rails'
-gem 'email_validator'
 gem 'rb-fsevent'
 gem 'cookies_eu'
 gem 'browser'
