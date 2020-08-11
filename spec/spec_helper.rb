@@ -1,5 +1,4 @@
 require 'factory_girl_rails'
-require 'database_cleaner'
 require 'email_spec'
 Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
 
@@ -12,19 +11,6 @@ RSpec.configure do |config|
   config.include(EmailSpec::Helpers)
   config.include(EmailSpec::Matchers)
   config.include(CommonActions)
-
-  config.before(:suite) do
-    DatabaseCleaner.clean_with :truncation
-  end
-
-  config.before(:each) do |example|
-    DatabaseCleaner.strategy = example.metadata[:js] ? :truncation : :transaction
-    DatabaseCleaner.start
-  end
-
-  config.after(:each) do
-    DatabaseCleaner.clean
-  end
 
   config.before(:each, type: :feature) do
     Bullet.start_request
