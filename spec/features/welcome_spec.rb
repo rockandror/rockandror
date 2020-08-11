@@ -15,7 +15,7 @@ feature 'Main page' do
   scenario 'should have navbar with section links' do
     visit root_path
 
-    within('.top-bar-section ul.show-for-medium-up') do
+    within('.top-bar-section') do
       expect(page).to have_link('Inicio')
       expect(page).to have_link('Servicios Consul')
       expect(page).to have_link('Trabajos')
