@@ -42,7 +42,6 @@ group :development, :test do
   gem 'letter_opener_web', '~> 1.3.0'
   gem 'i18n-tasks'
   gem 'bullet'
-  gem "byebug"
 end
 
 group :test do
