@@ -20,7 +20,6 @@ gem 'inline_svg'
 gem "non-stupid-digest-assets"
 gem 'premailer-rails'
 gem 'cookies_eu'
-gem 'browser'
 gem 'fastclick-rails'
 gem 'greensock-rails'
 
