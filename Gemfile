@@ -34,7 +34,6 @@ gem 'newrelic_rpm'
 gem 'rollbar', '~> 2.5.1'
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
