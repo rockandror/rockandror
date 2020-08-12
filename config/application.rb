@@ -1,6 +1,11 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+require 'action_controller/railtie'
+require 'action_view/railtie'
+require 'action_mailer/railtie'
+require 'active_job/railtie'
+require 'rails/test_unit/railtie'
+require 'sprockets/railtie'
 require 'i18n/backend/fallbacks'
 
 # Require the gems listed in Gemfile, including any gems
@@ -25,6 +30,6 @@ module Rockadndror
     config.i18n.fallbacks = { :en => :es, :es => :en }
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
+    # config.active_record.raise_in_transactional_callbacks = true
   end
 end
