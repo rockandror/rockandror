@@ -36,7 +36,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'fuubar'
   gem 'letter_opener_web', '~> 1.3.0'
   gem 'i18n-tasks'
   gem 'bullet'
