@@ -12,6 +12,10 @@ RSpec.configure do |config|
   config.include(EmailSpec::Matchers)
   config.include(CommonActions)
 
+  config.before(:all, type: :feature) do
+    Capybara.server = :puma, { Silent: true }
+  end
+
   config.before(:each, type: :feature) do
     Bullet.start_request
   end

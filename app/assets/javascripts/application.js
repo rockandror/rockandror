@@ -1,8 +1,6 @@
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
 //= require foundation
-//= require cookies_eu
 //= require nprogress
 //= require nprogress-turbolinks
 //= require nprogress-ajax
@@ -11,13 +9,15 @@
 //= require 'greensock/jquery.gsap.js'
 //= require app
 //= require animate
+//= require turbolinks_anchors
 //= require turbolinks
+//= require cookies_eu
 
-var ready;
-ready = function() {
+var initialize_modules;
+initialize_modules = function() {
   $(document).foundation();
 
   App.Animate.initialize();
 };
 
-$(document).on('page:update', ready);
+$(document).on('turbolinks:load', initialize_modules);
