@@ -25,7 +25,7 @@
         }
 
         lead {
-          font-size: 1.5em
+          font-size: 1.5em;
         }
       }
     }
@@ -98,7 +98,7 @@
   }
   // Reduce ther space between menu elements so we can display our big logo
   .top-bar:not(.expanded) .top-bar-section ul:not(.dropdown) li:not(.has-form) a:not(.button),.top-bar:not(.expanded) .top-bar-section ul:not(.dropdown) li.active:not(.has-form) a:not(.button) {
-    padding: 0 0.5rem;
+    padding: 0 0.6rem;
   }
 
   .home {
