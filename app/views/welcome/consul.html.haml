@@ -12,31 +12,34 @@
     %div
       = t(".subtitle_html")
 
-  .header.row
-    .medium-12.large-8.large-centered.columns
-      .medium-6.columns
-        %p
-          = t(".description")
-          %br
-          = link_to 'www.consulproject.org', 'http://consulproject.org/es/',  target: :blank
+  .row.team
+    .content.small-12
+      %h2.text-center
+        = t(".team.title")
 
-      .medium-6.columns
-        %p
-          = t(".experience.part1")
-
-          <br><br>
-
-          = t(".experience.part2_html")
+    .small-10.small-offset-1.column.medium-5.medium-offset-1.large-4.large-offset-2
+      %p.description
+        = t(".team.description")
+    .small-10.small-offset-1.column.medium-5.medium-offset-0.large-4.end
+      %ul.members
+        %li
+          = link_to t(".team.javi.name"), "https://github.com/javierm/", target: :blank
+        %li
+          = link_to t(".team.senen.name"), "https://github.com/Senen/", target: :blank
+        %li
+          = link_to t(".team.sebas.name"), "https://github.com/taitus/", target: :blank
+      %p
+        = t(".team.certified_html")
 
   .row.services
-    .content.small-8.small-offset-2.text-center
+    .content.small-10.small-offset-1.text-center
       %h2
         = t(".services.title")
       %p
         = t(".services.description")
 
   .row.services.no-padding-top{"data-equalizer" => ""}
-    %section.small-10.small-offset-1.column.medium-6.medium-offset-0
+    %section.small-10.small-offset-1.column.medium-5.medium-offset-1.large-4.large-offset-2
       %ul.pricing-table.installation{"data-equalizer-watch" => ""}
         %li.title
           %h2
@@ -54,8 +57,8 @@
         %li.description
           = t(".installation.monitoring")
         %li.cta-button
-          = link_to t(".installation.submit"), url_for(anchor: "contact-anchor"), class: "button floor"
-    %section.small-10.small-offset-1.column.medium-6.medium-offset-0.end
+          = link_to t(".installation.submit"), url_for(anchor: "contact-anchor"), class: "button floor success"
+    %section.small-10.small-offset-1.column.medium-5.medium-offset-0.large-4.end
       %ul.pricing-table.development{"data-equalizer-watch" => ""}
         %li.title
           %h2
@@ -68,32 +71,35 @@
           = t(".development.mods")
         %li.description
           = t(".development.technical_support")
+        %li.description
+          = t(".development.consultancy")
+        %li.description
+          = t(".development.audit")
         %li.cta-button
-          = link_to t(".development.submit"), url_for(anchor: "contact-anchor"), class: "button floor"
+          = link_to t(".development.submit"), url_for(anchor: "contact-anchor"), class: "button floor success"
 
   .row.services.no-padding-top
     .content.small-10.small-offset-1.text-center
       %p
         = t(".custom")
 
-  .row.team
+  .row.info
     .content.small-12
       %h2.text-center
-        = t(".team.title")
-
-    .small-10.small-offset-1.medium-4.medium-offset-2.large-3.large-offset-3.column
-      %p.description
-        = t(".team.description")
-    .small-10.small-offset-1.medium-4.large-3.end.column
-      %ul.members
-        %li
-          = link_to t(".team.javi.name"), "https://github.com/javierm/", target: :blank
-        %li
-          = link_to t(".team.senen.name"), "https://github.com/Senen/", target: :blank
-        %li
-          = link_to t(".team.sebas.name"), "https://github.com/taitus/", target: :blank
+        = t(".info.title")
+    .small-10.small-offset-1.column.medium-5.medium-offset-1.large-4.large-offset-2
       %p
-        = t(".team.certified_html")
+        = t(".description")
+        %br
+        = link_to 'www.consulproject.org', 'http://consulproject.org/es/',  target: :blank
+
+    .small-10.small-offset-1.column.medium-5.medium-offset-0.large-4.end
+      %p
+        = t(".experience.part1")
+
+        <br><br>
+
+        = t(".experience.part2_html")
 
   %a#contact-anchor.anchor
   .row.services#contact

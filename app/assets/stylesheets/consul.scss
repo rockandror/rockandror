@@ -15,8 +15,8 @@
       }
     }
   }
-  .header{
-    padding: 8em 0;
+  .info{
+    padding: 4em 0;
     background: #36424a;
     background: -moz-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
     background: -webkit-linear-gradient(-45deg, #36424a 0%,#3a778b 100%);
@@ -32,7 +32,6 @@
     }
 
     p{
-      max-width: 300px;
       margin: 0 auto;
       text-align: left;
       margin-top: 1em;
@@ -62,7 +61,7 @@
       .price {
         color: #3a778b;
       }
-      li.title, .cta-button a {
+      li.title {
         background: #00A8E0;
       }
 
