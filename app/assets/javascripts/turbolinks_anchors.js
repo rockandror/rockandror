@@ -2,19 +2,25 @@
   "use strict";
 
   document.addEventListener("turbolinks:click", function(event) {
-    var link, linkUrl, pageUrl;
+    var anchorElement = event.target
+    var isSamePageAnchor = (
+      anchorElement.hash &&
+      anchorElement.origin === window.location.origin &&
+      anchorElement.pathname === window.location.pathname
+    )
 
-    link = event.target;
-    linkUrl = link.href.replace(link.hash, '');
-    pageUrl = location.href.replace(location.hash, '');
-
-    if (link.hash !== '' && linkUrl === pageUrl) {
+    if (isSamePageAnchor) {
       event.preventDefault();
       event.stopPropagation();
-      return $('html, body').animate({
-        scrollTop: $(link.hash).offset().top
+      Turbolinks.controller.pushHistoryWithLocationAndRestorationIdentifier(
+        event.data.url,
+        Turbolinks.uuid()
+      )
+
+      $('html, body').animate({
+        scrollTop: $(anchorElement.hash).offset().top
       }, 800, function() {
-        return window.location.hash = link.hash;
+        window.location.hash = anchorElement.hash;
       });
     }
   });
