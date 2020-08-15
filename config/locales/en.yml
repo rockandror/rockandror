@@ -16,8 +16,8 @@ en:
     language: Language
   contacts:
     new:
-      title: Thank you for your interest in RockAndRor's services
-      description: Write to us, we will answer you in less than 24 hours.
+      title: Write to us
+      description: We will answer you in less than 24 hours.
     show:
       title_html: <strong>Thanks </strong> for contacting us.
       description: You will get an answer in less than 24 hours.

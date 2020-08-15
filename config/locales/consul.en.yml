@@ -9,13 +9,13 @@ en:
       subtitle_html: Free software for citizen participation.
       description: CONSUL is the most complete citizen participation tool for an open, transparent and democratic government.
       experience:
-        part1: In Rock&Ror we have collaborated in the implementation of functionalities for Consul. We are totally aligned in terms of best practices and development philosophy with the technical team that has developed Consul.
+        part1: Rock&Ror collaborates on a daily basis in the implementation of many features, bug resolution and code improvements for Consul. We are totally aligned in terms of best practices and development philosophy with the technical team that has developed Consul.
         part2_html: We are convinced that we are the perfect company to carry out any task of implementation and maintenance of this tool given the knowledge we have of it.
       services:
-        title: Services we offer
-        description: Based on the requests we have received from different city Councils and institutions around the world we have detected the different modules that may be needed related to the tool.
+        title: Development services for Consul
+        description: Based on the requests we have received from different city Councils and institutions around the world we have prepared the following as orientative pricing.
       installation:
-        title: Start
+        title: Deploy
         latest: Installing of the latest version of Consul
         design: Adaptating to your corporate image
         census: Connecting to your remote census system
@@ -24,12 +24,16 @@ en:
         price: From 5.000 €
         submit: Contact
       development:
-        title: Development & Support
+        title: Customization
         new: New features to suite your particular institution needs
         mods: Modification of existing features
-        technical_support: Technical support for development teams
+        technical_support: Technical online support for development teams
+        consultancy: Consultancy service
+        audit: Audit service
         price: 75 €/hour
         submit: Contact
+      info:
+        title: What is Consul for?
       custom: We can develop a custom package for your institution. Contact us to tell us what you need!
       team:
         title: Certified team
