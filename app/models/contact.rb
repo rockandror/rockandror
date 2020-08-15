@@ -8,8 +8,8 @@ class Contact
   attr_accessor :name, :email, :message
 
   validates_presence_of :name, :email, :message
-  validates :email, format: { with: /\A(.+)@(.+)\z/, message: "Email invalid" },
-                    length: { minimum: 4, maximum: 254 }
+  validates :email, format: { with: /\A(.+)@(.+)\z/, message: :invalid },
+                    length: { minimum: 4, maximum: 254 }, allow_blank: true
 
   def initialize(attributes = {})
     attributes.each do |name, value|
