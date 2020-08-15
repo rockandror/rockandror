@@ -6,16 +6,19 @@ ul li {
 }
 svg {
   &#logo {
-    fill: #333;
+    fill: red;
     height: 100%;
 
-    circle {
-      stroke-width: 4px;
-      stroke: #333;
-      fill: #333;
+    ellipse {
+      stroke: $rockandror_color !important;
+    }
+    text {
+      stroke: $rockandror_color !important;
+      fill: $rockandror_color !important;
     }
     #robot {
-      // visibility: hidden;
+      fill: $rockandror_color !important;
+      fill: $rockandror_color !important;
     }
   }
 }
