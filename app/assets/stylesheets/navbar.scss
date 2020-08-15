@@ -1,6 +1,3 @@
-#top-bar {
-  opacity: 0;
-}
 ul li {
   &.logo {
     padding: 12px 0px;
@@ -15,11 +12,10 @@ svg {
     circle {
       stroke-width: 4px;
       stroke: #333;
-      fill:none;
-      visibility: hidden;
+      fill: #333;
     }
     #robot {
-      visibility: hidden;
+      // visibility: hidden;
     }
   }
 }

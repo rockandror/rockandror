@@ -4,13 +4,13 @@
     %ul.title-area
       %li.logo.name
         %a{ href: root_path }
-          = inline_svg_tag "svg/logo.svg", class: "logo"
+          = inline_svg_tag "svg/logo-static.svg", class: "logo"
       %li.toggle-topbar.menu-icon
         %a{ title: t("navbar.menu") }
           %span
     %section.top-bar-section
       %ul.right.show-for-topbar-breakpoint-up
-        %li.anim.has-dropdown
+        %li.has-dropdown
           %a{ href: "#" }
             = t("locale.#{I18n.locale}")
           %ul.dropdown
@@ -18,11 +18,11 @@
               %li
                 = link_to t("locale.#{locale}"), url_for(locale: locale)
       %ul.left
-        %li.anim{ class: active?("welcome", "home")}
+        %li{ class: active?("welcome", "home")}
           %a{ href: root_path }= t("navbar.home")
-        %li.anim.consul{class: active?("welcome", "consul")}
+        %li.consul{class: active?("welcome", "consul")}
           %a{ href: consul_development_services_path }= t("navbar.consul")
-        %li.anim.has-dropdown.portfolio{ class: active?("welcome", ["boatjump", "webdings", "eatbooking", "oasiscatamaran"]) }
+        %li.has-dropdown.portfolio{ class: active?("welcome", ["boatjump", "webdings", "eatbooking", "oasiscatamaran"]) }
           %a{ href: "#" }= t("navbar.works")
           %ul.dropdown
             %li{class: active?("welcome", "boatjump") }
@@ -33,9 +33,9 @@
               = link_to "Eatbooking", eatbooking_path
             %li{class: active?("welcome", "oasiscatamaran") }
               = link_to "Oasis Catamaran", oasiscatamaran_path
-        %li.anim.consul{class: active?("contact", ["new", "create"]) }
+        %li.consul{class: active?("contact", ["new", "create"]) }
           %a{ href: new_contact_path }= t("navbar.contact")
-        %li.anim.has-dropdown.hide-for-topbar-breakpoint-up
+        %li.has-dropdown.hide-for-topbar-breakpoint-up
           %a{ href: "#" }
             = t("navbar.language")
           %ul.dropdown
