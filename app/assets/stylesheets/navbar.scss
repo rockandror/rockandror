@@ -23,9 +23,8 @@ svg {
   }
 }
 
-.top-bar {
+#top-bar {
   z-index: 3;
-  border-bottom: 2px solid #f2f2f2;
   box-sizing: initial;
 
   .dropdown {
@@ -40,4 +39,8 @@ svg {
   }
 
   ul li a { text-transform: uppercase; }
+}
+
+#top-bar-wrapper {
+  border-bottom: 2px solid #f2f2f2;
 }
