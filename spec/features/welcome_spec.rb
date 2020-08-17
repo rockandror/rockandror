@@ -35,7 +35,7 @@ feature 'Main page' do
       fill_in 'contact_message', with: "Solicitud de contacto"
       click_on 'Enviar mensaje'
 
-      expect(page).to have_content "Gracias por contactar con nosotros. Le responderemos lo antes posible."
+      expect(page).to have_content "Gracias por contactar con nosotros. Te responderemos lo antes posible."
     end
 
     scenario 'should be not send', :js do

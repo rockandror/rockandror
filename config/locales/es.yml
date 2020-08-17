@@ -22,6 +22,12 @@ es:
     show:
       title_html: <strong>Gracias </strong> por contactar con nosotros.
       description: Obtendrá una respuesta en menos de 24 horas.
+    create:
+      notice: Gracias por contactar con nosotros. Te responderemos lo antes posible.
+  consul:
+    contacts:
+      create:
+        notice: Gracias por contactar con nosotros. Te responderemos lo antes posible.
   shared:
     contact:
       form:

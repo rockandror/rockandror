@@ -4,4 +4,4 @@
       %h1= t(".title")
       %p.text-center= t(".description")
 
-      = render "shared/contact/form", contact: @contact, remote: false
+      = render "shared/contact/form", contact: @contact, url: contacts_path, remote: false
