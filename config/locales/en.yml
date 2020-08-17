@@ -22,6 +22,12 @@ en:
     show:
       title_html: <strong>Thanks </strong> for contacting us.
       description: You will get an answer in less than 24 hours.
+    create:
+      notice: Thank you for contacting us. We will get back to you as soon as possible.
+  consul:
+    contacts:
+      create:
+        notice: Thank you for contacting us. We will get back to you as soon as possible.
   shared:
     contact:
       form:

@@ -1,22 +1,13 @@
-class ContactsController < ApplicationController
-  respond_to :html
-
-  def new
-    @contact = Contact.new
-  end
+class Consul::ContactsController < ApplicationController
+  respond_to :js
 
   def create
     @contact = Contact.new(contact_params)
     if @contact.valid?
       ContactMailer.notification(@contact).deliver_now
-      flash[:notice] = t(".notice")
-      redirect_to greetings_path
-    else
-      render :new
+      flash.now[:notice] = t(".notice")
+      @contact = Contact.new
     end
-  end
-
-  def show
   end
 
   private

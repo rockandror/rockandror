@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get '/consul/budget', to: redirect("/consul/development_services")
   get "/consul/development-services", to: "welcome#consul", as: :consul_development_services
 
+  namespace :consul do
+    resources :contacts, only: :create
+  end
+
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/devel/emails"
   end
