@@ -19,8 +19,8 @@ class ContactMailer < ActionMailer::Base
   private
 
   def consul_recipients
-    return DEFAULT_RECIPIENT if ENV["consul_recipients"].blank?
+    return DEFAULT_RECIPIENT if ENV["CONSUL_RECIPIENTS"].blank?
 
-    [DEFAULT_RECIPIENT] + ENV["consul_recipients"].split(",")
+    [DEFAULT_RECIPIENT] + ENV["CONSUL_RECIPIENTS"].split(",")
   end
 end

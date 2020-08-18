@@ -39,9 +39,9 @@ describe ContactMailer do
     end
 
     it "send mail to default recipient and ENV recipients email" do
-      ENV["consul_recipients"] = "<example@recipient.net>"
+      ENV["CONSUL_RECIPIENTS"] = "<example@recipient.net>"
       expect(mail.to).to eq(["info@rockandror.com", "example@recipient.net"])
-      ENV["consul_recipients"] = nil
+      ENV["CONSUL_RECIPIENTS"] = nil
     end
 
     it "send mail from contact email" do
