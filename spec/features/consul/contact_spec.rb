@@ -30,7 +30,7 @@ feature 'Contact', :js do
   scenario 'is not sent when honeypot field is filled' do
     visit consul_development_services_path
 
-    fill_in 'contact_subject', with: "Trap for bots"
+    fill_in 'contact_subject', with: "Trap for bots", visible: false
     fill_in 'contact_name', with: "My Name"
     fill_in 'contact_email', with: "email@example.es"
     fill_in 'contact_message', with: "Solicitud de contacto"
