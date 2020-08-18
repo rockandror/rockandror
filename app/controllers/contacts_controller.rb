@@ -1,4 +1,8 @@
 class ContactsController < ApplicationController
+  invisible_captcha only: :create,
+                    honeypot: :subject,
+                    on_spam: :redirect_spam,
+                    on_timestamp_spam: :redirect_timestamp_spam
   respond_to :html
 
   def new
@@ -23,5 +27,15 @@ class ContactsController < ApplicationController
 
   def contact_params
     params.require(:contact).permit([:name, :email, :message])
+  end
+
+  def redirect_spam
+    flash[:notice] = t(".notice")
+    return redirect_to greetings_path
+  end
+
+  def redirect_timestamp_spam
+    flash[:alert] = t("invisible_captcha.timestamp_error_message")
+    return new_contact_path
   end
 end

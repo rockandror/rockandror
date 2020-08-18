@@ -24,6 +24,7 @@ gem 'fastclick-rails', '~> 1.0.1'
 gem 'sprockets', '~> 3.7.2'
 gem 'puma', '~> 4.3.5'
 gem 'non-stupid-digest-assets', '~> 1.0.9'
+gem 'invisible_captcha', '~> 1.0.1'
 
 # Error monitoring
 gem 'rollbar', '~> 2.27.0s'

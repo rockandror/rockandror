@@ -1,4 +1,5 @@
 = form_for contact, url: url, remote: remote do |f|
+  = f.invisible_captcha :subject
   = f.text_field :name, placeholder: t("helpers.placeholder.contact.name"), label: false
   = f.text_field :email, placeholder: t("helpers.placeholder.contact.email"), label: false
   = f.text_area :message, placeholder: t("helpers.placeholder.contact.message"), rows: 7, label: false
