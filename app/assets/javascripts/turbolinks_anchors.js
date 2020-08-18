@@ -21,6 +21,7 @@
         scrollTop: $(anchorElement.hash).offset().top
       }, 800, function() {
         window.location.hash = anchorElement.hash;
+        App.NProgressapp.stop();
       });
     }
   });
