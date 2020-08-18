@@ -6,7 +6,8 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
     %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui", :name => "viewport"}/
-    %meta{:content => "mXNBRXCqbOYP9B5OIPiHpEDeM8tHM4jEWIjsqsqqlh0", :name => "google-site-verification"}/
+    - if Rails.env.production?
+      %meta{ content: Rails.application.secrets.google_site_verification, name: "google-site-verification"}/
     = favicon_link_tag 'favicon.ico'
 
     %title= meta_title
