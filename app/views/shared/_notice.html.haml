@@ -1,8 +1,8 @@
 - if notice.present?
-  .alert-box.success{"data-alert" => ""}
-    %a.close{:href => "#"} &times;
+  .alert-box.success{"aria-live" => "assertive", "data-alert" => "", :role => "alertdialog", :tabindex => "0"}
     = notice
+    %button.close{"aria-label" => "Close Alert", :tabindex => "0"} ×
 - if alert.present?
-  .alert-box.alert{"data-alert" => ""}
-    %a.close{:href => "#"} &times;
+  .alert-box.alert{"aria-live" => "assertive", "data-alert" => "", :role => "alertdialog", :tabindex => "0"}
     = alert
+    %button.close{"aria-label" => "Close Alert", :tabindex => "0"} ×
