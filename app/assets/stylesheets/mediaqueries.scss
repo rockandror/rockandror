@@ -4,19 +4,6 @@
   }
 }
 @media #{$small-only} {
-  .cookies-eu {
-    .cookies-eu-content-holder {
-      display: block !important;
-      max-width: 85% !important;
-      text-align: left;
-      float: left;
-    }
-    .cookies-eu-button-holder{
-      padding-right: 0;
-      float: left;
-      margin-top: 10px;
-    }
-  }
   .home {
     .intro {
       .container {
