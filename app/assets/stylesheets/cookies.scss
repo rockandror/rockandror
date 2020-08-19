@@ -1,13 +1,21 @@
 .cookies-eu {
-  opacity: 0;
   position: fixed;
-  margin-top: 0;
+  bottom: 0;
+  left: 0;
   background: #333333;
+  padding: 0;
 
   .cookies-eu-content-holder {
+    max-width: 85% !important;
     color: white;
+    font-size: 12px;
+    padding: 20px;
+    text-align: left;
+    line-height: 1em;
   }
 
-  .cookies-eu-button-holder{
+  .cookies-eu-button-holder {
+    padding-right: 0;
+    margin-top: 10px;
   }
 }
