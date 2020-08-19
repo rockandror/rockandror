@@ -40,6 +40,23 @@ feature 'Contact', :js do
     expect(ActionMailer::Base.deliveries.size).to eq(0)
   end
 
+  scenario 'can close notice after successful send', :js do
+    visit consul_development_services_path
+    page.current_window.resize_to(1200, 3000)
+
+    fill_in 'contact_name', with: "My Name"
+    fill_in 'contact_email', with: "email@example.es"
+    fill_in 'contact_message', with: "Solicitud de contacto"
+    click_on 'Enviar mensaje'
+
+    expect(page).to have_content "Gracias por contactar con nosotros. Te responderemos lo antes posible."
+    within ".alert-box" do
+      find(".close").click
+    end
+
+    expect(page).not_to have_content "Gracias por contactar con nosotros. Te responderemos lo antes posible."
+  end
+
   describe "timestamp spam detection" do
     before do
       InvisibleCaptcha.timestamp_enabled = true
