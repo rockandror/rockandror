@@ -36,6 +36,6 @@ class ContactsController < ApplicationController
 
   def redirect_timestamp_spam
     flash[:alert] = t("invisible_captcha.timestamp_error_message")
-    return new_contact_path
+    return redirect_to new_contact_path
   end
 end
