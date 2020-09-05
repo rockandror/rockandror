@@ -1,0 +1,58 @@
+.row.services
+  .content.small-10.small-offset-1.medium-8.medium-offset-2.text-center
+    %h2
+      = t(".title")
+    %p
+      = t(".description")
+
+  %div{"data-equalizer" => ""}
+    %section.small-10.small-offset-1.column.medium-5.medium-offset-1.large-4.large-offset-2
+      %ul.pricing-table.installation{"data-equalizer-watch" => ""}
+        %li.title
+          %h2
+            = t(".installation.title")
+        %li.price
+          = t(".installation.price")
+        %li.description
+          = t(".installation.latest")
+        %li.description
+          = t(".installation.design")
+        %li.description
+          = t(".installation.census")
+        %li.description
+          = t(".installation.updates")
+        %li.description
+          = t(".installation.monitoring")
+        %li.cta-button
+          = link_to t(".installation.submit"), url_for(anchor: "contact-anchor"), class: "button floor success"
+    %section.small-10.small-offset-1.column.medium-5.medium-offset-0.large-4.end
+      %ul.pricing-table.development{"data-equalizer-watch" => ""}
+        %li.title
+          %h2
+            = t(".development.title")
+        %li.price
+          = t(".development.price")
+        %li.description
+          = t(".development.new")
+        %li.description
+          = t(".development.mods")
+        %li.description
+          = t(".development.technical_support")
+        %li.description
+          = t(".development.audit")
+        %li.description
+          = t(".development.consultancy")
+        %li.cta-button
+          = link_to t(".development.submit"), url_for(anchor: "contact-anchor"), class: "button floor success"
+
+  .content.small-10.small-offset-1.medium-8.medium-offset-2.column.end
+    %h3
+      = t(".custom.title")
+    %p
+      = t(".custom.description")
+    %ul
+      %li= t(".custom.servers")
+      %li= t(".custom.infrastructure")
+      %li= t(".custom.maintenace")
+      %li= t(".custom.formation")
+    %p= t(".custom.compatibility")

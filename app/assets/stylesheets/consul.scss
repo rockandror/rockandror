@@ -5,13 +5,17 @@
     background: #fff;
 
     h1 {
-      line-height: 45px;
-      padding-top: 1em;
+      margin-top: 0;
+      margin-bottom: 20px;
+      line-height: 1em;
+      font-size: 2.5em;
     }
 
     svg {
+      width: 80%;
       path#CONSUL {
         fill: #666666;
+        font-size: 2.5em;
       }
     }
   }
@@ -51,8 +55,8 @@
 
 
     h3{
-      font-size: 1.2em;
-      font-weight: bold;
+      text-align: center;
+      padding: 10px 0px;
     }
 
     ul.pricing-table {
@@ -74,10 +78,6 @@
         text-transform: none;
       }
 
-      .button.floor {
-        position: relative;
-        margin-top: 15%;
-      }
     }
   }
 

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   get '/greetings', to: 'contacts#show', as: :greetings
   get '/consul/budget', to: redirect("/consul/development_services")
-  get "/consul/development-services", to: "welcome#consul", as: :consul_development_services
+  get "/consul/development-services", to: "consul#show", as: :consul
 
   namespace :consul do
     resources :contacts, only: :create

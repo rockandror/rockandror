@@ -1,0 +1,18 @@
+.row.team
+  .content.small-12
+    %h2.text-center
+      = t(".title")
+
+  .small-10.small-offset-1.column.medium-4.medium-offset-2
+    %p.description
+      = t(".description")
+  .small-10.small-offset-1.column.medium-4.medium-offset-0.end
+    %ul.members
+      %li
+        = link_to t(".javi.name"), "https://github.com/javierm/", target: :blank
+      %li
+        = link_to t(".senen.name"), "https://github.com/Senen/", target: :blank
+      %li
+        = link_to t(".sebas.name"), "https://github.com/taitus/", target: :blank
+    %p
+      = t(".certified_html")

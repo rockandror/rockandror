@@ -4,7 +4,7 @@ feature 'Contact', :js do
   before { ActionMailer::Base.deliveries = [] }
 
   scenario 'is send when all fields are valid' do
-    visit consul_development_services_path
+    visit consul_path
 
     fill_in 'contact_name', with: "Nombre"
     fill_in 'contact_email', with: "email@example.es"
@@ -16,7 +16,7 @@ feature 'Contact', :js do
   end
 
   scenario 'is not send when form has errors' do
-    visit consul_development_services_path
+    visit consul_path
 
     fill_in 'contact_name', with: ""
     fill_in 'contact_email', with: "email@example.es"
@@ -28,7 +28,7 @@ feature 'Contact', :js do
   end
 
   scenario 'is not sent when honeypot field is filled' do
-    visit consul_development_services_path
+    visit consul_path
 
     fill_in 'contact_subject', with: "Trap for bots", visible: false
     fill_in 'contact_name', with: "My Name"
@@ -41,7 +41,7 @@ feature 'Contact', :js do
   end
 
   scenario 'can close notice after successful send', :js do
-    visit consul_development_services_path
+    visit consul_path
     page.current_window.resize_to(1200, 3000)
 
     fill_in 'contact_name', with: "My Name"
@@ -67,7 +67,7 @@ feature 'Contact', :js do
     end
 
     scenario 'is done when form is submitted too fast', :js do
-      visit consul_development_services_path
+      visit consul_path
 
       click_on 'Enviar mensaje'
 

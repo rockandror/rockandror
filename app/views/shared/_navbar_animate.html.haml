@@ -21,7 +21,7 @@
         %li{ class: active?("welcome", "home")}
           %a{ href: root_path }= t("navbar.home")
         %li.consul{class: active?("welcome", "consul")}
-          %a{ href: consul_development_services_path }= t("navbar.consul")
+          %a{ href: consul_path }= t("navbar.consul")
         %li.has-dropdown.portfolio{ class: active?("welcome", ["boatjump", "webdings", "eatbooking", "oasiscatamaran"]) }
           %a{ href: "#" }= t("navbar.works")
           %ul.dropdown

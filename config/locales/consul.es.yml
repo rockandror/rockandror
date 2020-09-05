@@ -1,6 +1,6 @@
 es:
-  welcome:
-    consul:
+  consul:
+    show:
       meta:
         title: "Rock&RoR ♥ Consul: Servicios de desarrollo para Consul"
         description: Equipo altamente cualificado y certificado para el desarrollo de Consul.
@@ -8,12 +8,9 @@ es:
       title_html: Servicios <strong>desarrollo <span class="show-for-sr">Consul</span></strong>
       subtitle_html: Software libre para la participación ciudadana
       description: CONSUL es la herramienta de participación ciudadana más completa para un gobierno abierto, transparente y democrático.
-      experience:
-        part1: En Rock&Ror colaboramos diariamente en la implementación de funcionalidades, resolución de errores y mejora del código de Cónsul. Estamos totalmente alineados en términos de mejores prácticas y filosofía de desarrollo con el equipo técnico que ha desarrollado Consul.
-        part2_html: Estamos convencidos de que <strong>somos la empresa perfecta para poder realizar cualquier tarea de implantación y mantenimiento de esta herramienta</strong> dado el conocimiento que tenemos de la misma.
-      services:
-        title: Servicios de desarrollo para consul
-        description: Basándonos en las peticiones que hemos recibido de diferentes ayuntamientos e instituciones de todo el mundo hemos preparado lo siguiente como precios orientativos.
+    services:
+      title: Servicios de desarrollo para consul
+      description: Basándonos en las peticiones que hemos recibido de diferentes ayuntamientos e instituciones de todo el mundo hemos preparado lo siguiente como precios orientativos.
       installation:
         title: Implantación
         latest: Instalación de la última versión de Consul
@@ -25,25 +22,37 @@ es:
         submit: Contactar
       development:
         title: Personalización
-        new: Nuevas funcionalidades.
+        new: Nuevas funcionalidades
         mods: Modificación de las funcionalidades existentes
         technical_support: Soporte técnico online para equipos de desarrollo
+        price: 75 €/hora
         consultancy: Servicio de consultoría
         audit: Servicio de auditoría
-        price: 75 €/hora
         submit: Contactar
-      info:
-        title: ¿Qué es Consul?
-      custom: Podemos confeccionar paquetes a medida de su institución.
-      team:
-        title: Equipo certificado
-        description: Nuestro equipo está formado por 3 ingenieros especializados en el desarrollo y mantenimiento de Consul. Tenemos la experiencia necesaria para afrontar cualquier proyecto para Consul. Todos nosotros hemos tenido la oportunidad de trabajar tanto para el Ayuntamiento de Madrid en la plataforma Decide Madrid como para otras entidades internacionales en la implantación, personalización y desarrollo de nuevas funcionalides de Consul.
-        certified_html: Pertenecemos al grupo de empresas privilegiadas cerficadas a través de la <a href="https://consulfoundation.org/" target="blank">Fundación de Consul</a> para el desarrollo e implantación de Consul.
-        javi:
-          name: Javier Martín
-        sebas:
-          name: Sebastià Roig Pieras
-        senen:
-          name: Senén Rodero Rodríguez
-      contact:
-        title: ¿Necesita más información o una cita?
+      custom:
+        title: Un paquete de servicios a su medida
+        description: La mayoría de las instituciones que usan Consul disponen de parte de los recursos de infraestructura (servidores) y de personal (desarrolladores) para realizar algunas de las tareas de mantenimiento de sistemas o del aplicativo. Para aquellas que no disponen de recursos ofrecemos estos otros servicios en un paquete personalizado.
+        servers: Sino dispone de ellos le proporcionamos los servidores
+        infrastructure: Creación y mantenimiento de una infraestructura preparada para escalar.
+        maintenace: Monitorización y mantenimiento proactivo de la aplicación. Intentamos anticiparnos a los problemas.
+        formation: Formación de equipos de desarollo en el mantenimiento del aplicativo.
+        reviews: Revisiónes de código. Ayudamos a los equipos de desarrollo de las instituciones a crear el código según la convenciones Consul.
+        compatibility: Es importante que los desarrollos personalizados que se hagan en la aplicación se hagan siguiendo las convenciones y las directrices de personalización de proyecto para facilitar la integración de las nuevas versiones que vayan saliendo de Consul. Nuestros desarrollos son plenamente compatibles con nuevas versiones de Consul.
+
+    how_we_work:
+      title: How we work
+      collaboration: Colaboramos con los equipos de participación ciudadana de las instituciones para buscar soluciones a las nuevas necesidades que van surgiendo.
+      remote: Tenemos amplia experienca trabajando en remoto y proporcionamos los mecanismos necesarios para que resulte muy cómodo hacer el seguimiento de las tareas del proyecto.
+      support: Estamos acostumbrados a dar soporte online a instituciones que usan Consul por distintos canales, reuniones online, salas de chat además de soporte telefónico.
+    team:
+      title: Equipo certificado
+      description: Nuestro equipo está formado por 3 ingenieros especializados en el desarrollo y mantenimiento de Consul. Tenemos la experiencia necesaria para afrontar cualquier proyecto para Consul. Todos nosotros hemos tenido la oportunidad de trabajar tanto para el Ayuntamiento de Madrid en la plataforma Decide Madrid como para otras entidades internacionales en la implantación, personalización y desarrollo de nuevas funcionalides de Consul.
+      certified_html: Pertenecemos al grupo de empresas privilegiadas cerficadas a través de la <a href="https://consulfoundation.org/" target="blank">Fundación de Consul</a> para el desarrollo e implantación de Consul.
+      javi:
+        name: Javier Martín
+      sebas:
+        name: Sebastià Roig Pieras
+      senen:
+        name: Senén Rodero Rodríguez
+    contact:
+      title: ¿Necesita más información o una cita?

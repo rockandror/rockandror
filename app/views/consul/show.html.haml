@@ -1,0 +1,18 @@
+= content_for :body_class, "body-consul-services"
+= content_for :meta_title, t(".meta.title")
+= content_for :meta_description, t(".meta.description")
+= content_for :meta_keywords, t(".meta.keywords")
+
+.page.consul-services
+  .row.cont-introduction
+    %h1= t(".title_html")
+    .logo= inline_svg_tag "svg/consul-logo.svg"
+    %div= t(".subtitle_html")
+
+  = render "team"
+
+  = render "services"
+
+  = render "how_we_work"
+
+  = render "contact"

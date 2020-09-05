@@ -1,5 +1,4 @@
 class WelcomeController < ApplicationController
-
   def home
     @contact = Contact.new
   end
@@ -14,9 +13,5 @@ class WelcomeController < ApplicationController
   end
 
   def oasiscatamaran
-  end
-
-  def consul
-    @contact = Contact.new
   end
 end
