@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/oasiscatamaran', to: 'welcome#oasiscatamaran', as: :oasiscatamaran
   resources :contacts, only: [:new, :create]
   get '/greetings', to: 'contacts#show', as: :greetings
-  get '/consul/budget', to: redirect("/consul/development_services")
+  get '/consul/budget', to: redirect("/consul/development-services")
   get "/consul/development-services", to: "consul#show", as: :consul
 
   namespace :consul do
@@ -17,5 +17,4 @@ Rails.application.routes.draw do
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/devel/emails"
   end
-
 end
