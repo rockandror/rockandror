@@ -9,6 +9,7 @@
     - if Rails.env.production?
       %meta{ content: Rails.application.secrets.google_site_verification, name: "google-site-verification"}/
       %meta{ content: Rails.application.secrets.yandex_site_verification, name: "yandex-verification"}/
+      %meta{ content: Rails.application.secrets.bing_site_verification, name: "msvalidate.01"}/
     = favicon_link_tag 'favicon.ico'
 
     %title= meta_title
