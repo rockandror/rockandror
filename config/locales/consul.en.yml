@@ -4,7 +4,7 @@ en:
       meta:
         title: "Rock&RoR ♥ CONSUL: Development services for CONSUL"
         description: Rock&RoR has a highly qualified and certified team for CONSUL development.
-        keywords: Expert Ruby On Rails developers, certified team into development, installation and maintenance of CONSUL for everyone.
+        keywords: Expert Ruby On Rails developers, certified team into development, installation and maintenance of CONSUL.
       title_html: <strong>CONSUL</strong> services
       subtitle_html: Free software for citizen participation.
       description: CONSUL is the most complete citizen participation tool for an open, transparent and democratic government.
@@ -12,8 +12,8 @@ en:
       title: Development services for CONSUL
       description: Based on the requests we have received from different city Councils and institutions around the world we have prepared the following as orientative pricing.
       installation:
-        title: Deploy
-        latest: Installing of the latest version of CONSUL
+        title: Installation
+        latest: Installing the latest version of CONSUL
         design: Adaptating to your corporate image
         census: Connecting to your remote census system
         updates: Update to new application versions
@@ -22,7 +22,7 @@ en:
         submit: Contact
       development:
         title: Customization
-        new: New features to suite your particular institution needs
+        new: New features to suit your particular institution needs
         mods: Modification of existing features
         technical_support: Technical online support for development teams
         consultancy: Consultancy service
@@ -39,15 +39,16 @@ en:
         reviews: Code reviews. We help the institutions' development teams to create the code according to the CONSUL conventions.
         compatibility: It is important that the customized developments made in the application are made following the conventions and guidelines of project customization to facilitate the integration of new releases that are coming out of CONSUL. Our developments are fully compatible with new versions of CONSUL.
     how_we_work:
-      collaboration: Colaboramos con los equipos de participación ciudadana de las instituciones para buscar soluciones a las nuevas necesidades que van surgiendo.
-      remote: Tenemos amplia experienca trabajando en remoto y proporcionamos los mecanismos necesarios para que resulte muy cómodo hacer el seguimiento de las tareas del proyecto.
-      support: Estamos acostumbrados a dar soporte online a instituciones que usan CONSUL por distintos canales, reuniones online, salas de chat además de soporte telefónico.
+      title: How we work
+      collaboration: We collaborate with the institutions' citizen participation teams to seek solutions to the new needs that arise.
+      remote: We have extensive experience in working remotely and provide the necessary mechanisms to make it very convenient to follow up on project tasks.We have experience in working remotely and provide the necessary mechanisms to facilitate the monitoring of project tasks.
+      support: We are used to giving online support to institutions that use CONSUL through different channels, online meetings, chat rooms as well as telephone support.
     team:
       title: Certified team
-      description: Our team consists of three engineers specialized in the development and maintenance of CONSUL. We have the necessary experience to face any project for CONSUL. All of us have had the opportunity to work both for the City of Madrid in the platform Decide Madrid and for other international entities in the implementation, customization and development of new functionalities of CONSUL.
+      description: Our team consists of three engineers specialized in the development and maintenance of CONSUL. All of us have had the opportunity to work both for the City of Madrid in the platform Decide Madrid and for other international entities in the implementation, customization and development of new functionalities of CONSUL.
       certified_html: We belong to the group of privileged companies certified through the <a href="https://consulfoundation.org/" target="blank">CONSUL DEMOCRACY Foundation</a> for the development and implementation of CONSUL.
       javi:
-        name: Javier Martín
+        name: Javi Martín
       sebas:
         name: Sebastià Roig Pieras
       senen:
