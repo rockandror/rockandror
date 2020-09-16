@@ -46,7 +46,7 @@
     }
   }
 
-  .services {
+  .services, .contact {
     padding: 3em 0;
 
     &.no-padding-top {
@@ -78,6 +78,12 @@
         text-transform: none;
       }
 
+    }
+  }
+
+  .contact {
+    form {
+      margin-top: 20px;
     }
   }
 
