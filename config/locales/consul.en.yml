@@ -2,18 +2,18 @@ en:
   consul:
     show:
       meta:
-        title: "Rock&RoR ♥ Consul: Development services for Consul"
-        description: Rock&RoR has a highly qualified and certified team for Consul development.
-        keywords: Expert Ruby On Rails developers, certified team into development, installation and maintenance of Consul for everyone.
-      title_html: <strong>Consul</strong> services
+        title: "Rock&RoR ♥ CONSUL: Development services for CONSUL"
+        description: Rock&RoR has a highly qualified and certified team for CONSUL development.
+        keywords: Expert Ruby On Rails developers, certified team into development, installation and maintenance of CONSUL for everyone.
+      title_html: <strong>CONSUL</strong> services
       subtitle_html: Free software for citizen participation.
       description: CONSUL is the most complete citizen participation tool for an open, transparent and democratic government.
     services:
-      title: Development services for Consul
+      title: Development services for CONSUL
       description: Based on the requests we have received from different city Councils and institutions around the world we have prepared the following as orientative pricing.
       installation:
         title: Deploy
-        latest: Installing of the latest version of Consul
+        latest: Installing of the latest version of CONSUL
         design: Adaptating to your corporate image
         census: Connecting to your remote census system
         updates: Update to new application versions
@@ -31,21 +31,21 @@ en:
         submit: Contact
       custom:
         title: A tailor-made service
-        description: Most of the institutions that use Consul have part of the infrastructure resources (servers) and personnel (developers) to perform some of the maintenance tasks of systems or the application. For those who do not have resources we offer these other services in a customized package.
+        description: Most of the institutions using CONSUL have part of the infrastructure resources (servers) and personnel (developers) to perform some of the maintenance tasks of systems or the application. For those who do not have resources we offer these other services in a customized package.
         servers: If you do not have them, we will provide you with the servers.
         infrastructure: Creation and maintenance of a scalable infrastructure.
         maintenace: Proactive monitoring and maintenance of the application. We try to anticipate problems.
         formation: Training of development teams in application maintenance
-        reviews: Code reviews. We help the institutions' development teams to create the code according to the Consul conventions.
-        compatibility: It is important that the customized developments made in the application are made following the conventions and guidelines of project customization to facilitate the integration of new releases that are coming out of Consul. Our developments are fully compatible with new versions of Consul.
+        reviews: Code reviews. We help the institutions' development teams to create the code according to the CONSUL conventions.
+        compatibility: It is important that the customized developments made in the application are made following the conventions and guidelines of project customization to facilitate the integration of new releases that are coming out of CONSUL. Our developments are fully compatible with new versions of CONSUL.
     how_we_work:
       collaboration: Colaboramos con los equipos de participación ciudadana de las instituciones para buscar soluciones a las nuevas necesidades que van surgiendo.
       remote: Tenemos amplia experienca trabajando en remoto y proporcionamos los mecanismos necesarios para que resulte muy cómodo hacer el seguimiento de las tareas del proyecto.
-      support: Estamos acostumbrados a dar soporte online a instituciones que usan Consul por distintos canales, reuniones online, salas de chat además de soporte telefónico.
+      support: Estamos acostumbrados a dar soporte online a instituciones que usan CONSUL por distintos canales, reuniones online, salas de chat además de soporte telefónico.
     team:
       title: Certified team
-      description: Our team consists of 3 engineers specialized in the development and maintenance of Consul. We have the necessary experience to face any project for Consul. All of us have had the opportunity to work both for the City of Madrid in the platform Decide Madrid and for other international entities in the implementation, customization and development of new functionalities of Consul.
-      certified_html: We belong to the group of privileged companies certified through the <a href="https://consulfoundation.org/" target="blank">Fundación de Consul</a> for the development and implementation of Consul.
+      description: Our team consists of three engineers specialized in the development and maintenance of CONSUL. We have the necessary experience to face any project for CONSUL. All of us have had the opportunity to work both for the City of Madrid in the platform Decide Madrid and for other international entities in the implementation, customization and development of new functionalities of CONSUL.
+      certified_html: We belong to the group of privileged companies certified through the <a href="https://consulfoundation.org/" target="blank">CONSUL DEMOCRACY Foundation</a> for the development and implementation of CONSUL.
       javi:
         name: Javier Martín
       sebas:
