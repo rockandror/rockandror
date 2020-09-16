@@ -47,11 +47,5 @@ en:
       title: Certified team
       description: Our team consists of three engineers specialized in the development and maintenance of CONSUL. All of us have had the opportunity to work both for the City of Madrid in the platform Decide Madrid and for other international entities in the implementation, customization and development of new functionalities of CONSUL.
       certified_html: We belong to the group of privileged companies certified through the <a href="https://consulfoundation.org/" target="blank">CONSUL DEMOCRACY Foundation</a> for the development and implementation of CONSUL.
-      javi:
-        name: Javi Martín
-      sebas:
-        name: Sebastià Roig Pieras
-      senen:
-        name: Senén Rodero Rodríguez
     contact:
       title: Need more information or an appointment?
