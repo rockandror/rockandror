@@ -29,15 +29,7 @@ en:
         audit: Audit service
         price: 75 €/hour
         submit: Contact
-      custom:
-        title: A tailor-made service
-        description: Most of the institutions using CONSUL have part of the infrastructure resources (servers) and personnel (developers) to perform some of the maintenance tasks of systems or the application. For those who do not have resources we offer these other services in a customized package.
-        servers: If you do not have them, we will provide you with the servers.
-        infrastructure: Creation and maintenance of a scalable infrastructure.
-        maintenace: Proactive monitoring and maintenance of the application. We try to anticipate problems.
-        formation: Training of development teams in application maintenance
-        reviews: Code reviews. We help the institutions' development teams to create the code according to the CONSUL conventions.
-        compatibility: It is important that the customized developments made in the application are made following the conventions and guidelines of project customization to facilitate the integration of new releases that are coming out of CONSUL. Our developments are fully compatible with new versions of CONSUL.
+      custom: We can tailor a package to suit your institution.
     how_we_work:
       title: How we work
       collaboration: We collaborate with the institutions' citizen participation teams to seek solutions to the new needs that arise.

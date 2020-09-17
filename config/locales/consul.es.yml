@@ -29,15 +29,7 @@ es:
         consultancy: Servicio de consultoría
         audit: Servicio de auditoría
         submit: Contactar
-      custom:
-        title: Un paquete de servicios a su medida
-        description: La mayoría de las instituciones que usan CONSUL disponen de parte de los recursos de infraestructura (servidores) y de personal (desarrolladores) para realizar algunas de las tareas de mantenimiento de sistemas o del aplicativo. Para aquellas que no disponen de recursos ofrecemos estos otros servicios en un paquete personalizado.
-        servers: Si no dispone de ellos le proporcionamos los servidores
-        infrastructure: Creación y mantenimiento de una infraestructura preparada para escalar.
-        maintenace: Monitorización y mantenimiento proactivo de la aplicación. Intentamos anticiparnos a los problemas.
-        formation: Formación de equipos de desarollo en el mantenimiento del aplicativo.
-        reviews: Revisiónes de código. Ayudamos a los equipos de desarrollo de las instituciones a crear el código según la convenciones CONSUL.
-        compatibility: Es importante que los desarrollos personalizados que se hagan en la aplicación se hagan siguiendo las convenciones y las directrices de personalización de proyecto para facilitar la integración de las nuevas versiones que vayan saliendo de CONSUL. Nuestros desarrollos son plenamente compatibles con nuevas versiones de CONSUL.
+      custom: Podemos confeccionar un paquete de servicios a medida para su institución.
     how_we_work:
       title: Cómo trabajamos
       collaboration: Colaboramos con los equipos de participación ciudadana de las instituciones para buscar soluciones a las nuevas necesidades que van surgiendo.
