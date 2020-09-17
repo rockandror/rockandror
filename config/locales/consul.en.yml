@@ -32,9 +32,10 @@ en:
       custom: We can tailor a package to suit your institution.
     how_we_work:
       title: How we work
-      collaboration: We collaborate with the institutions' citizen participation teams to seek solutions to the new needs that arise.
-      remote: We have extensive experience in working remotely and provide the necessary mechanisms to make it very convenient to follow up on project tasks.We have experience in working remotely and provide the necessary mechanisms to facilitate the monitoring of project tasks.
-      support: We are used to giving online support to institutions that use CONSUL through different channels, online meetings, chat rooms as well as telephone support.
+      collaboration: We collaborate with the institution's citizen participation team to define solutions to the new needs that arise.
+      agile: We work with agile development methodologies and have continuous integration systems that allow us to evolve the application quickly.
+      remote: We have experience working remotely and tools to make it easy to follow the status of the project.
+      support: "We give online support to your institution via different channels: email, chat, videoconference and phone."
     team:
       title: Certified team
       description: Our team consists of three engineers specialized in the development and maintenance of CONSUL. All of us have had the opportunity to work both for the City of Madrid in the platform Decide Madrid and for other international entities in the implementation, customization and development of new functionalities of CONSUL.

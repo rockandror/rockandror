@@ -32,9 +32,10 @@ es:
       custom: Podemos confeccionar un paquete de servicios a medida para su institución.
     how_we_work:
       title: Cómo trabajamos
-      collaboration: Colaboramos con los equipos de participación ciudadana de las instituciones para buscar soluciones a las nuevas necesidades que van surgiendo.
-      remote: Tenemos amplia experiencia trabajando en remoto y proporcionamos los mecanismos necesarios para que resulte muy cómodo hacer el seguimiento de las tareas del proyecto.
-      support: Estamos acostumbrados a dar soporte online a instituciones que usan CONSUL por distintos canales, reuniones online, salas de chat además de soporte telefónico.
+      collaboration: Colaboramos con los equipos de participación ciudadana de las instituciones para definir soluciones a las nuevas necesidades.
+      agile: Trabajamos con metodologías ágiles de desarrollo y disponemos de sistemas de integración continua que nos permiten evolucionar la aplicación rápidamente.
+      remote: Tenemos experiencia trabajando en remoto y disponemos de los mecanismos necesarios para facilitar el seguimiento del trabajo.
+      support: "Damos soporte online a su institución por distintos canales: email, chat, videoconferencia además de soporte telefónico."
     team:
       title: Equipo certificado
       description: Nuestro equipo está formado por tres ingenieros especializados en el desarrollo y mantenimiento de CONSUL. Tenemos la experiencia necesaria para afrontar cualquier proyecto de adaptación o extensión de la aplicación. Todos nosotros hemos tenido la oportunidad de trabajar tanto para el Ayuntamiento de Madrid en la plataforma Decide Madrid como para otras entidades internacionales en la implantación, personalización y desarrollo de nuevas funcionalides de CONSUL.
