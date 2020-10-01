@@ -35,3 +35,5 @@ es:
     contact:
       form:
         submit: "Enviar mensaje"
+    footer:
+      freepick_html: Utilizamos iconos de <a href="http://www.freepik.com" target="blank">Freepick</a>

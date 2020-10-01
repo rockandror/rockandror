@@ -35,3 +35,5 @@ en:
     contact:
       form:
         submit: "Send message"
+    footer:
+      freepick_html: We use <a href="http://www.freepik.com" target="blank">Freepick</a> icons

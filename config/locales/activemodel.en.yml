@@ -9,5 +9,5 @@ en:
     placeholder:
       contact:
         name: Enter your name or your institution's name
-        email: Valid email address
+        email: Email address
         message: Enter your message
