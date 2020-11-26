@@ -8,7 +8,7 @@ class Consul::ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.valid?
-      ContactMailer.notification(@contact).deliver_now
+      ContactMailer.consul_notification(@contact).deliver_now
       flash.now[:notice] = t(".notice")
       @contact = Contact.new
     end
