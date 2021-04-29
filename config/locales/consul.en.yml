@@ -16,7 +16,7 @@ en:
         latest: Installing the latest version of CONSUL
         design: Adaptating to your corporate image
         census: Connecting to your remote census system
-        updates: Update to new application versions
+        development: Set up the development environment in your copy
         monitoring: Status monitoring and error tracking
         price: From 5.000 €
         submit: Contact
