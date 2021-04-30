@@ -1,6 +1,6 @@
 [![tests](https://github.com/rockandror/rockandror/actions/workflows/tests.yml/badge.svg)](https://github.com/rockandror/rockandror/actions/workflows/tests.yml)
 
-# Web corporativa de Rock And Ror
+# Web corporativa de Rock&RoR
 
 Url producción:
 [rockandror.com](http://www.rockandror.com)
