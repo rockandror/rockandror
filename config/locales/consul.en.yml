@@ -20,6 +20,15 @@ en:
         environments: Set up production and pre-production environments
         price: From 5.000 €
         submit: Contact
+      support:
+        title: Support
+        upgrade: Update to latest CONSUL releases
+        channel: Exclusive support channel with us
+        deploy: We tare care of deployments
+        training: Developer training, code reviews
+        monitoring: Status monitoring and error tracking
+        price: From 3.900 €/year<br><small>(60 support hours anually)<small>
+        submit: Contact
       development:
         title: Customization
         new: New features to suit your particular institution needs

@@ -20,6 +20,15 @@ es:
         environments: Configuración de los entornos de producción y preproducción
         price: Desde 5.000 €
         submit: Contactar
+      support:
+        title: Soporte
+        upgrade: Actualización a nuevas versiones de CONSUL
+        channel: Canal exclusivo de soporte con nosotros
+        deploy: Nos encargamos de los despliegues
+        training: Formación de desarrolladores, revisiones de código
+        monitoring: Monitorización de estado servicio y seguimiento de errores
+        price: Desde 3.900 €/año<br><small>(60 horas de soporte anual)<small>
+        submit: Contactar
       development:
         title: Personalización
         new: Nuevas funcionalidades
