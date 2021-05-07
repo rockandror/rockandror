@@ -17,14 +17,23 @@ en:
         design: Adaptating to your corporate image
         census: Connecting to your remote census system
         development: Set up the development environment in your copy
-        monitoring: Status monitoring and error tracking
+        environments: Set up production and pre-production environments
         price: From 5.000 €
+        submit: Contact
+      support:
+        title: Support
+        upgrade: Update to latest CONSUL releases
+        channel: Exclusive support channel with us
+        deploy: We tare care of deployments
+        training: Developer training, code reviews
+        monitoring: Status monitoring and error tracking
+        price: From 3.900 €/year<br><small>(60 support hours anually)<small>
         submit: Contact
       development:
         title: Customization
         new: New features to suit your particular institution needs
         mods: Modification of existing features
-        technical_support: Technical online support for development teams
+        advanced_design: Design changes and user interface customization
         consultancy: Consultancy service
         audit: Audit service
         price: 75 €/hour

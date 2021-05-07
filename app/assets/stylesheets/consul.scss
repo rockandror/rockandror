@@ -78,6 +78,20 @@
         text-transform: none;
       }
 
+      @media #{$medium-up} {
+        .price {
+          height: 100px;
+        }
+
+        &.development .price {
+          height: auto;
+        }
+      }
+      @media #{$large-up} {
+        &.development .price {
+          height: 100px;
+        }
+      }
     }
   }
 
