@@ -19,3 +19,4 @@
 config/database.yml
 spec/examples.txt
 .DS_Store
+.byebug_history
