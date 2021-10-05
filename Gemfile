@@ -34,7 +34,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'byebug', '~> 6.0.2'
+  gem 'byebug', '~> 11.1.3'
   gem 'spring', '~> 1.3.6'
   gem 'rspec-rails', '~> 4.0.1s'
   gem 'capybara', '~> 3.33.0'
