@@ -27,7 +27,7 @@
     = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "application", 'data-turbolinks-track' => true
     = csrf_meta_tags
-    %body{:class => "#{yield (:body_class)}"}
+  %body{:class => "#{yield (:body_class)}"}
     = render "shared/navbar_animate"
     = render 'cookies_eu/consent_banner'
     = yield
