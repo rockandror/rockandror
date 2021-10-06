@@ -6,13 +6,12 @@
       = t(".description")
 
   %div{"data-equalizer" => ""}
-    %section.small-10.small-offset-1.column.medium-6.medium-offset-0.large-4.large-offset-0
-      %ul.pricing-table.installation{"data-equalizer-watch" => ""}
-        %li.title
-          %h2
-            = t(".installation.title")
-        %li.price
-          = t(".installation.price")
+    %section.installation.small-10.small-offset-1.column.medium-6.medium-offset-0.large-4.large-offset-0
+      %h3.title
+        = t(".installation.title")
+      %p.price
+        = t(".installation.price")
+      %ul.pricing-table{"data-equalizer-watch" => ""}
         %li.description
           = t(".installation.latest")
         %li.description
@@ -25,13 +24,12 @@
           = t(".installation.environments")
         %li.cta-button
           = link_to t(".installation.submit"), url_for(anchor: "contact-anchor"), class: "button floor success"
-    %section.small-10.small-offset-1.column.medium-6.medium-offset-0.large-4
-      %ul.pricing-table.development{"data-equalizer-watch" => ""}
-        %li.title
-          %h2
-            = t(".support.title")
-        %li.price
-          = sanitize(t(".support.price"))
+    %section.support.small-10.small-offset-1.column.medium-6.medium-offset-0.large-4
+      %h3.title
+        = t(".support.title")
+      %p.price
+        = sanitize(t(".support.price"))
+      %ul.pricing-table{"data-equalizer-watch" => ""}
         %li.description
           = t(".support.upgrade")
         %li.description
@@ -44,13 +42,12 @@
           = t(".support.monitoring")
         %li.cta-button
           = link_to t(".development.submit"), url_for(anchor: "contact-anchor"), class: "button floor success"
-    %section.small-10.small-offset-1.column.medium-6.medium-offset-3.large-4.large-offset-0.end
-      %ul.pricing-table.development{"data-equalizer-watch" => ""}
-        %li.title
-          %h2
-            = t(".development.title")
-        %li.price
-          = t(".development.price")
+    %section.development.small-10.small-offset-1.column.medium-6.medium-offset-3.large-4.large-offset-0.end
+      %h3.title
+        = t(".development.title")
+      %p.price
+        = t(".development.price")
+      %ul.pricing-table{"data-equalizer-watch" => ""}
         %li.description
           = t(".development.new")
         %li.description
