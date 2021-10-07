@@ -21,11 +21,7 @@
   }
   .info{
     padding: 4em 0;
-    background: #36424a;
-    background: -moz-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
-    background: -webkit-linear-gradient(-45deg, #36424a 0%,#3a778b 100%);
-    background: linear-gradient(135deg, #36424a 0%,#3a778b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36424a', endColorstr='#3a778b',GradientType=1 );
+    @extend %consul-gradient;
     color: #fff;
 
     h2 {
@@ -107,11 +103,7 @@
 
   .team {
     padding: 4em 0;
-    background: #36424a;
-    background: -moz-linear-gradient(-45deg, #36424a 0%, #3a778b 100%);
-    background: -webkit-linear-gradient(-45deg, #36424a 0%,#3a778b 100%);
-    background: linear-gradient(135deg, #36424a 0%,#3a778b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36424a', endColorstr='#3a778b',GradientType=1 );
+    @extend %consul-gradient;
     color: #fff;
 
     h2 {
