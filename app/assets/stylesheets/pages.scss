@@ -162,6 +162,10 @@
     .cont-introduction{
       color:white;
       @extend .pattern-eatbooking;
+
+      a {
+        color:$yellow;
+      }
     }
   }
 

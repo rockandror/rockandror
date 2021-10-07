@@ -172,15 +172,21 @@
       @include btn-ror(transparent, transparent, $secondary-color);
     }
 
-    &.boatjump{
-      h3{
+    &.boatjump {
+      @extend .gradient-boatjump;
+      color:#fff;
+
+      h3 {
         color:white;
       }
-      @extend .gradient-boatjump;
-      h2{
+
+      h2 {
         @include text(#fff,uppercase, null,null);
       }
-      color:#fff;
+
+      a {
+        color:#fff;
+      }
 
       .columns{
         .description{
