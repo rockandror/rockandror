@@ -1,11 +1,9 @@
 !!!
-%html{:lang => "en"}
+%html{:lang => I18n.locale}
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui", :name => "viewport"}/
     - if Rails.env.production?
       %meta{ content: Rails.application.secrets.google_site_verification, name: "google-site-verification"}/
       %meta{ content: Rails.application.secrets.yandex_site_verification, name: "yandex-verification"}/
@@ -27,7 +25,7 @@
     = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "application", 'data-turbolinks-track' => true
     = csrf_meta_tags
-    %body{:class => "#{yield (:body_class)}"}
+  %body{:class => "#{yield (:body_class)}"}
     = render "shared/navbar_animate"
     = render 'cookies_eu/consent_banner'
     = yield
