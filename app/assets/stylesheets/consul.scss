@@ -19,26 +19,31 @@
       }
     }
   }
-  .info{
+  .info, .team{
     padding: 4em 0;
-    @extend %consul-gradient;
     color: #fff;
+    text-align: left;
+    @extend %consul-gradient;
 
     h2 {
-      color: white;
-    }
-    svg{
-      margin-top:4em;
+      color: inherit;
     }
 
-    p{
-      margin: 0 auto;
-      text-align: left;
-      margin-top: 1em;
+    svg {
+      margin-top: 4em;
     }
 
     a{
-      margin-top:1em;
+      margin-top: 1em;
+    }
+
+    p {
+      margin-top: 1em;
+      margin-bottom: 0;
+    }
+
+    ul.members {
+      padding-top: 1em;
     }
   }
 
@@ -101,30 +106,4 @@
     }
   }
 
-  .team {
-    padding: 4em 0;
-    @extend %consul-gradient;
-    color: #fff;
-
-    h2 {
-      color: white;
-    }
-    svg {
-      margin-top:4em;
-    }
-
-    p {
-      margin: 0 auto;
-      text-align: left;
-      margin-top: 1em;
-    }
-
-    ul.members {
-      padding-top: 1em;
-    }
-
-    a{
-      margin-top:1em;
-    }
-  }
 }
