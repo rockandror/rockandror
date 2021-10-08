@@ -18,6 +18,7 @@ en:
     consul: Consul Services
     language: Language
     back: Back
+    logo: Rock&RoR
   contacts:
     new:
       title: Write to us

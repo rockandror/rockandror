@@ -4,6 +4,8 @@
     %ul.title-area
       %li.logo.name
         %a{ href: root_path }
+          %span.show-for-sr
+            = t("navbar.logo")
           = inline_svg_tag "svg/logo.svg", class: "logo"
       %li.toggle-topbar.menu-icon
         %a{ title: t("navbar.menu") }
