@@ -42,15 +42,6 @@ ul{
   list-style: none;
 }
 
-.disable{
-  opacity: 0.65;
-  a{
-    color:$secondary-color;
-    cursor: default;
-    pointer-events: none;
-  }
-}
-
 .contact-now{
   background: #fff;
   border-bottom:10px solid #dbdbdb;
