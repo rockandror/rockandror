@@ -36,4 +36,20 @@ es:
       form:
         submit: "Enviar mensaje"
     footer:
+      facebook: Página de Rock&RoR en Facebook
+      twitter: Página de Rock&RoR en Twitter
+      github: Página de Rock&RoR en Github
+      linkedin: Página de Rock&RoR en LinkedIn
       freepick_html: Utilizamos iconos de <a href="http://www.freepik.com" target="blank">Freepick</a>
+  twitter:
+    sebas: Cuenta de Sebastià de Twitter
+    senen: Cuenta de Senén de Twitter
+    cuoghi: Cuenta de Alessandro de Twitter
+  github:
+    sebas: Cuenta de Sebastià de Github
+    senen: Cuenta de Senén de Github
+    cuoghi: Cuenta de Alessandro de Github
+  linkedin:
+    sebas: Cuenta de Sebastià de LinkedIn
+    senen: Cuenta de Senén de LinkedIn
+    cuoghi: Cuenta de Alessandro de LinkedIn
