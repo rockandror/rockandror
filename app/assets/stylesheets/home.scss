@@ -74,8 +74,8 @@
       #btn-discover{
         margin-top: 10px;
         font-weight: 700;
+        text-transform: uppercase;
       }
-      @include btn-ror(transparent, $yellow, white);
     }
   }
   section{
