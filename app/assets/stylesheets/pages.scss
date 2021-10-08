@@ -188,7 +188,7 @@
       @include text($steel,uppercase, 2.3em,center);
     }
     .new_contact label {
-      display: none;
+      text-align: left;
     }
     textarea{
       height: 150px;
