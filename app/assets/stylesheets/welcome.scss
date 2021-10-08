@@ -79,14 +79,6 @@ ul{
   }
 }
 
-@-moz-document url-prefix() {
-  a {
-    &:active, &:focus{
-      outline: none;
-      border:  none;
-    }
-  }
-  .btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
-    outline: none;border:  none; box-shadow: none;
-  }
+:focus {
+  outline: 3px solid $yellow;
 }
