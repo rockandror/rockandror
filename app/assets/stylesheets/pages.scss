@@ -171,17 +171,14 @@
 
   &.oasiscatamarans{
     h1{
-      color: #5fc3e6;
+      color: $secondary-color;
     }
     .img-background{
       background: image_url('oasis-catamaran/background-page-cut.jpg');
       background-position: center center;
     }
-    .cont-introduction{
+    .cont-introduction, .front-end{
       background: #f3f3f3;
-    }
-    .front-end{
-     background:#f3f3f3;
     }
   }
 
