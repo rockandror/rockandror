@@ -20,6 +20,10 @@
 
     .cookies-eu-ok {
       background: $secondary-color;
+
+      &:focus {
+        outline: 3px solid $yellow;
+      }
     }
   }
 }
