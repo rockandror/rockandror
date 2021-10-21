@@ -187,6 +187,10 @@
         color:#fff;
       }
 
+      .button {
+        border: solid 1px white;
+      }
+
       .columns{
         .description{
           text-align: left;
@@ -235,6 +239,11 @@
         @include text(#5fc3e6,uppercase, null,null);
       }
       color:#fff;
+
+      .button {
+        border: solid 1px white;
+      }
+
       .columns{
         .description{
           text-align: right;
