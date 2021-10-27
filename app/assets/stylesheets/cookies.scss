@@ -17,5 +17,9 @@
   .cookies-eu-button-holder {
     padding-right: 0;
     margin-top: 10px;
+
+    .cookies-eu-ok {
+      background: $secondary-color;
+    }
   }
 }

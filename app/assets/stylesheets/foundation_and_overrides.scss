@@ -122,8 +122,8 @@ $black_opacity  : rgba(0,0,0,0.7);
 $rockandror_color: #443758;
 
 // We use these as default colors throughout
-$primary-color: #666;
-$secondary-color: #00b0ea;
+$primary-color: #555;
+$secondary-color: #017EA7;
 $optin:           #88cd3e;
 
 $thirdary-color: #9a7dc0;
@@ -133,7 +133,7 @@ $facebook-color: #45619d;
 
 
 // $alert-color: #f04124;
-// $success-color: #43AC6A;
+$success-color: #338552;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
@@ -1059,7 +1059,7 @@ $form-label-font-color: #666;
 
 // We use these to control the description styles
 // $price-bg: $white;
-// $price-desc-color: $monsoon;
+$price-desc-color: $primary-color;
 // $price-desc-padding: rem-calc(15);
 // $price-desc-align: center;
 // $price-desc-font-size: rem-calc(12);

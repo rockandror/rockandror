@@ -43,7 +43,7 @@
       h1 {
         font-size: 20px;
         text-align: center;
-        color:#ccc;
+        color: white;
         line-height: 1em;
       }
       h2.title{
@@ -74,8 +74,8 @@
       #btn-discover{
         margin-top: 10px;
         font-weight: 700;
+        text-transform: uppercase;
       }
-      @include btn-ror(transparent, $yellow, white);
     }
   }
   section{
@@ -116,6 +116,7 @@
        font-family: Georgia, serif;
        font-size: 18px;
        margin:0;
+       color: inherit;
        &:before, &:after{
          content: '';
          content: none;
@@ -124,7 +125,6 @@
      .author{
        font-family: Georgia, serif;
        font-size: 14px;
-       opacity: .6;
      }
      .curly-quotes{
        &:after,&:before{
@@ -133,7 +133,6 @@
          height: 30px;
          line-height: 48px;
          font-size: 50px;
-         opacity: .6;
        }
        &:before{
          content: '\201C';
@@ -172,15 +171,25 @@
       @include btn-ror(transparent, transparent, $secondary-color);
     }
 
-    &.boatjump{
-      h3{
+    &.boatjump {
+      @extend .gradient-boatjump;
+      color:#fff;
+
+      h3 {
         color:white;
       }
-      @extend .gradient-boatjump;
-      h2{
+
+      h2 {
         @include text(#fff,uppercase, null,null);
       }
-      color:#fff;
+
+      a {
+        color:#fff;
+      }
+
+      .button {
+        border: solid 1px white;
+      }
 
       .columns{
         .description{
@@ -230,6 +239,11 @@
         @include text(#5fc3e6,uppercase, null,null);
       }
       color:#fff;
+
+      .button {
+        border: solid 1px white;
+      }
+
       .columns{
         .description{
           text-align: right;

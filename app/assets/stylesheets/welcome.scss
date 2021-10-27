@@ -17,10 +17,12 @@ input[type="text"]{
   outline: none;
 }
 
-a{
-  color:$secondary-color;
-  &:hover{
-    color:darken($secondary-color,10%);
+a {
+  color: $secondary-color;
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: underline;
   }
 }
 
@@ -58,10 +60,9 @@ ul{
     fill: $rockandror_color;
     padding: 1em;
   }
-  a{
+  a {
     display: block;
     margin-top: 2em;
-    color:$secondary-color;
   }
   .social{
     svg{
