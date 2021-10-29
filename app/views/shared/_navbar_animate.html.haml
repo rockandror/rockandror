@@ -6,7 +6,7 @@
         %a{ href: root_path }
           %span.show-for-sr
             = t("navbar.logo")
-          = inline_svg_tag "svg/logo.svg", class: "logo"
+          = inline_svg_tag "svg/logo.svg", class: "logo", aria_hidden: true
       %li.toggle-topbar.menu-icon
         %a{ title: t("navbar.menu") }
           %span
