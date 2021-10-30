@@ -389,11 +389,11 @@ $header-font-color: $steel;
 $alert-bottom-margin: 0px;
 
 // We use these to style the close buttons
-// $alert-close-color: $oil;
+$alert-close-color: $white;
 // $alert-close-top: 50%;
 // $alert-close-position: rem-calc(4);
 // $alert-close-font-size: rem-calc(22);
-// $alert-close-opacity: .3;
+$alert-close-opacity: 1;
 // $alert-close-opacity-hover: .5;
 // $alert-close-padding: 9px 6px 4px;
 // $alert-close-background: inherit;
