@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+input:not([type]):focus, input[type="text"]:focus,
+input[type="password"]:focus, input[type="date"]:focus,
+input[type="datetime"]:focus, input[type="datetime-local"]:focus,
+input[type="month"]:focus, input[type="week"]:focus,
+input[type="email"]:focus, input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus, input[type="time"]:focus,
+input[type="url"]:focus, input[type="color"]:focus,
+textarea:focus {
+  outline: 3px solid $yellow;
+}
+
 body{
   font-family: $font-family-sans-serif;
   font-size: 16px;
@@ -14,7 +26,6 @@ body{
 
 input[type="text"]{
   height: 60px;
-  outline: none;
 }
 
 a {
@@ -28,15 +39,6 @@ a {
 
 ul{
   list-style: none;
-}
-
-.disable{
-  opacity: 0.65;
-  a{
-    color:$secondary-color;
-    cursor: default;
-    pointer-events: none;
-  }
 }
 
 .contact-now{
@@ -79,14 +81,6 @@ ul{
   }
 }
 
-@-moz-document url-prefix() {
-  a {
-    &:active, &:focus{
-      outline: none;
-      border:  none;
-    }
-  }
-  .btn:focus, .btn.focus, .btn:active:focus, .btn.focus:active, .btn.active:focus, .btn.active.focus{
-    outline: none;border:  none; box-shadow: none;
-  }
+:focus {
+  outline: 3px solid $yellow;
 }
