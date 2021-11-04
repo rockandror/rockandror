@@ -1,3 +1,3 @@
 $('#contact-notice-placeholder').html("<%= j (render 'shared/notice') %>");
-$('#new_contact').replaceWith("<%= j (render 'consul/contacts/form', contact: @contact, url: consul_contacts_path, remote: true ) %>");
+$('#new_contact').replaceWith("<%= j (render 'shared/contact/form', contact: @contact, url: consul_contacts_path, remote: true ) %>");
 $(document).foundation('alert', 'reflow');

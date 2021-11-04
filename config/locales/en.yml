@@ -18,6 +18,7 @@ en:
     consul: Consul Services
     language: Language
     back: Back
+    logo: Rock&RoR
   contacts:
     new:
       title: Write to us
@@ -37,3 +38,19 @@ en:
         submit: "Send message"
     footer:
       freepick_html: We use <a href="http://www.freepik.com" target="blank">Freepick</a> icons
+      facebook: Rock&RoR Facebook page
+      twitter: Rock&RoR Twitter page
+      github: Rock&RoR Github page
+      linkedin: Rock&RoR LinkedIn page
+  twitter:
+    sebas: Sebastia's Twitter account
+    senen: Senen's Twitter account
+    cuoghi: Alessandro's Twitter account
+  github:
+    sebas: Sebastià's Github account
+    senen: Senén's Github account
+    cuoghi: Alessandro's Github account
+  linkedin:
+    sebas: Sebastià's LinkedIn account
+    senen: Senén's LinkedIn account
+    cuoghi: Alessandro's LinkedIn account

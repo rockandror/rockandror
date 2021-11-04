@@ -187,11 +187,25 @@
     h1{
       @include text($steel,uppercase, 2.3em,center);
     }
-    .new_contact label {
-      display: none;
-    }
     textarea{
       height: 150px;
+    }
+  }
+
+  form {
+    text-align: left;
+
+    label {
+      font-size: 1em;
+    }
+
+    small {
+      font-size: 0.9em;
+    }
+
+    .error {
+      font-style: normal;
+      text-align: left;
     }
   }
 

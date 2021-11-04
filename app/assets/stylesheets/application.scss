@@ -18,8 +18,9 @@ html {
 }
 
 // To fix problem anchoring using a sticky top-bar
-a.anchor {
+span.anchor {
   height: 0;
   position: relative;
   top: -50px;
+  margin: 0;
 }

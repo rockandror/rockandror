@@ -8,9 +8,10 @@
    height="51"
    viewBox="0 0 223.26231 60.1"
    xml:space="preserve"
-   id="logo"><metadata
-   id="metadata446"></metadata><defs
-   id="defs444" />
+   id="logo">
+   <metadata id="metadata446"></metadata>
+   <defs id="defs444" />
+   <title>Rock&#38;RoR logo</title>
   <ellipse
    ry="28.02762"
    rx="28.027624"
@@ -19,10 +20,6 @@
    cy="30.165487"
    id="circle348"
    style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
- <!--  <path id="circle" d="M30.1,60.1c-0.5,0-1,0-1.5,0C12,59.2-0.8,45.1,0,28.5l0,0C0.9,12,15-0.8,31.5,0c8,0.4,15.4,3.9,20.8,9.8
-    s8.1,13.6,7.7,21.7C59.2,47.6,45.9,60.1,30.1,60.1z M3.2,28.7C2.5,43.5,13.9,56.1,28.7,56.9c14.8,0.7,27.4-10.7,28.2-25.5
-    c0.4-7.2-2.1-14-6.9-19.4c-4.8-5.3-11.4-8.4-18.6-8.8C16.6,2.5,3.9,13.9,3.2,28.7L3.2,28.7z"/>
- -->
   <g
    id="robot">
     <path
@@ -45,34 +42,13 @@
 <g
    id="rockandror-text"
    transform="translate(-9.4274353,7.2020001)">
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-   
 <text
    id="text860"
    y="33.966434"
    x="74.153442"
-   style="font-style:normal;font-weight:normal;font-size:32.0089px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.20034"
-   xml:space="preserve"><tspan
-     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:32.0089px;font-family:'Titillium Web';-inkscape-font-specification:'Titillium Web Semi-Bold';stroke-width:1.20034"
-     y="33.966434"
-     x="74.153442"
-     id="tspan858">ROCK&amp;ROR</tspan></text></g>
+   style="ffont-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:32.0089px;font-family:'Titillium Web';-inkscape-font-specification:'Titillium Web Semi-Bold';stroke-width:1.20034"
+   xml:space="preserve">ROCK&amp;ROR</text>
+</g>
 
 
 
