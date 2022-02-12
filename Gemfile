@@ -22,7 +22,7 @@ gem 'premailer-rails', '~> 1.11.1'
 gem 'cookies_eu', '~> 1.7.6'
 gem 'fastclick-rails', '~> 1.0.1'
 gem 'sprockets', '~> 3.7.2'
-gem 'puma', '~> 4.3.9'
+gem 'puma', '~> 4.3.11'
 gem 'non-stupid-digest-assets', '~> 1.0.9'
 gem 'invisible_captcha', '~> 1.0.1'
 
